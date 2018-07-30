@@ -1,0 +1,27 @@
+has_legitimate_subject = {
+    any_country = {
+		is_subject_of = ROOT
+	}
+	ROOT = {
+		is_subject = no
+	}
+}
+
+subject_state = {
+	any_country = {
+		owns_state = FROM.FROM
+		is_subject_of = ROOT
+		OR = {
+			has_autonomy_state = autonomy_integrated_puppet
+			has_autonomy_state = autonomy_puppet
+		}
+	}
+}
+
+master_subject_state = {
+	any_country = {
+		is_subject_of = ROOT
+		FROM.FROM = { is_core_of = PREV }
+		OVERLORD = { owns_state = FROM.FROM }
+	}
+}

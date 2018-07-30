@@ -1,0 +1,69 @@
+SOV = {
+	name = "Russian great plan"
+	desc = "Great Russian COnquest"
+
+	enable = {
+		original_tag = SOV
+	}
+	
+	ai_national_focuses = {
+		SOV_economic_focus
+		SOV_industrial_project
+		SOV_military_industrial_program
+		SOV_grozny_offensive
+		SOV_appease_chechnya
+		SOV_the_red_menace
+		SOV_support_gazprom
+		SOV_focis_on_the_oligarchy
+		SOV_restore_the_union
+	}
+
+	research = {
+		infantry_weapons = 50.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+		low_economic_mobilisation = 10
+		partial_economic_mobilisation = 15
+		war_economy = 30
+		communist_taxes = 100
+	}
+
+	traits = {
+		captain_of_industry = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+	ai_strategy = {
+		type = invade
+		id = "POL"
+		value = 50
+	}
+	ai_strategy = {
+		type = support
+		id = "ETH"
+		value = 125
+	}
+	ai_strategy = {
+		type = support
+		id = "ROM"
+		value = 25
+	}
+	ai_strategy = {
+		type = alliance
+		id = "PRC"
+		value = 75
+	}
+
+}
+

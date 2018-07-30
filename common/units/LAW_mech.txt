@@ -1,0 +1,146 @@
+sub_units = {
+	recon_mechanized = {
+		sprite = mechanized
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = no
+
+		type = {
+			mechanized
+			support
+		}
+		
+		group = support
+		
+		categories = {
+			category_front_line
+			category_support_battalions
+			category_army
+		}
+
+	
+		combat_width = 0
+	
+		#Size Definitions
+		max_strength = 2
+		max_organisation = 20
+		default_morale = 0.3
+		manpower = 400
+		training_time = 150
+
+		#Misc Abilities
+		weight = 0.1
+		supply_consumption = 0.40
+		recon = 1
+		can_be_parachuted = yes
+
+		# Support nerfs to combat abilities
+		defense = -0.4
+		breakthrough = -0.4
+		soft_attack = -0.8
+		hard_attack = -0.8
+		
+		essential = {
+			infantry_equipment
+			recon_mechanized_equipment
+		}
+
+		need = {
+			recon_mechanized_equipment = 24
+		}
+
+		forest = {
+			movement = 0.1
+		}
+		hills = {
+			movement = 0.1
+		}
+		mountain = {
+			movement = 0.1
+		}
+		jungle = {
+			movement = 0.1
+		}
+		marsh = {
+			movement = 0.1
+		}
+		plains = {
+			movement = 0.1
+		}
+		desert = {
+			movement = 0.1
+		}
+		river = {
+			movement = 0.1
+		}
+	}
+
+	mech_tank_destroyer_brigade = {
+		sprite = "medium_armor"
+		map_icon_category = armored
+		priority = 500
+		ai_priority = 200
+		active = yes
+		
+		type = {
+			armor
+			anti_tank
+		}
+		
+		group = armor
+		
+		categories = {
+			category_front_line
+			category_all_armor
+			category_army
+		}
+
+
+		combat_width = 4
+
+		need = {
+			mech_tank_destroyer_equipment = 24
+		}
+		manpower = 500
+		max_organisation = 0
+		default_morale = 0.3
+		max_strength = 0.6
+		training_time = 135
+		weight = 1.25
+		supply_consumption = 0.22
+
+		forest = {
+		    attack = -0.3
+			movement = -0.4
+		}
+		hills = 	{
+		    attack = -0.1
+		}
+		mountain = 	{
+		    attack = -0.2
+		}
+		jungle = {
+		    attack = -0.4
+			movement = -0.4
+		}
+		marsh = {
+		    attack = -0.1 
+			movement = -0.1
+		}
+		urban = {
+			attack = -0.4
+			defence = 0.1
+			movement = -0.3
+		}
+		river = { 
+			attack = -0.2 
+			movement = -0.2
+		}
+		amphibious = { 
+			attack = -0.7
+		}
+	}
+
+	
+}

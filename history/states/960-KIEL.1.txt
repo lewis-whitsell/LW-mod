@@ -1,0 +1,28 @@
+state={
+	id=960
+	name="STATE_960"
+	provinces={
+		317 3231 11366 
+	}
+	resources={
+		oil=1.000
+		steel=4.000
+	}
+
+	history={
+		owner = GER
+		add_core_of = GER
+		buildings = {
+			infrastructure = 6
+			air_base = 5
+			industrial_complex = 5
+			3231 = {naval_base = 8}
+
+		}
+		victory_points = {317 5}
+		victory_points = {3231 1}
+	}
+		manpower=2848150
+		buildings_max_level_factor=1.000
+		state_category=state_level_8
+}

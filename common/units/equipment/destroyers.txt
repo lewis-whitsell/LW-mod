@@ -1,0 +1,324 @@
+equipments = {
+
+	destroyer = {
+		is_archetype = yes
+		is_buildable = no
+		type = screen_ship
+		group_by = archetype
+		interface_category = interface_category_screen_ships
+		
+		upgrades = {
+			ship_torpedo_upgrade
+			destroyer_engine_upgrade
+			ship_ASW_upgrade
+			ship_anti_air_upgrade
+		}
+
+		ap_attack = 10
+		attack = 8
+		fire_range = 20
+		torpedo_attack = 2
+		shore_bombardment = 2
+		sub_attack = 8
+
+		anti_air_attack = 7
+		
+		armor_value = 8
+		evasion = 12
+		
+		surface_detection = 15
+		sub_detection = 10
+		surface_visibility = 17
+		naval_speed = 25
+		reliability = 0.80
+
+		naval_range = 8100
+		
+		max_strength = 200
+		
+		port_capacity_usage = 1
+				
+		type = { 
+			screen_ship
+			anti_air
+		}
+
+		
+		build_cost_ic = 2000
+		resources = {
+			tungsten = 1
+			steel = 4
+			chromium = 1
+		}
+		
+		manpower = 260
+	}
+
+	destroyer_1 = {
+		year = 1960
+
+		archetype = destroyer
+		priority = 20
+
+		ap_attack = 50
+		attack = 30
+		torpedo_attack = 100
+		sub_attack = 60
+		shore_bombardment = 7
+		fire_range = 25
+
+		anti_air_attack = 100
+
+		armor_value = 0
+		evasion = 60
+
+		surface_detection = 85
+		sub_detection = 115
+		surface_visibility = 10
+		naval_speed = 36
+		reliability = 0.95
+
+		naval_range = 4000
+
+		max_strength = 260
+
+		port_capacity_usage = 1
+
+		type = {
+			screen_ship
+			anti_air
+		}
+
+		build_cost_ic = 9000
+		resources = {
+			tungsten = 1
+			steel = 4
+			chromium = 1
+		}
+		manpower = 550
+	}
+
+	destroyer_2 = {
+		year = 1980
+
+		archetype = destroyer
+		parent = destroyer_1
+		priority = 20
+
+		ap_attack = 100
+		attack = 50
+		torpedo_attack = 100
+		sub_attack = 70
+		shore_bombardment = 9
+		fire_range = 35
+
+		anti_air_attack = 125
+
+		armor_value = 0
+		evasion = 75
+
+		surface_detection = 105
+		sub_detection = 135
+		surface_visibility = 10
+		naval_speed = 37
+		reliability = 0.95
+
+		naval_range = 5000
+
+		max_strength = 260
+
+		port_capacity_usage = 1
+
+		type = {
+			screen_ship
+			anti_air
+		}
+
+		build_cost_ic = 12000
+		resources = {
+			tungsten = 2
+			steel = 5
+			chromium = 2
+		}
+		manpower = 550
+	}
+
+	destroyer_3 = {
+		year = 2000
+
+		archetype = destroyer
+		parent = destroyer_2
+		priority = 20
+
+		ap_attack = 100
+		attack = 50
+		torpedo_attack = 250
+		sub_attack = 80
+		shore_bombardment = 30
+		fire_range = 40
+
+		anti_air_attack = 150
+
+		armor_value = 0
+		evasion = 144
+
+		surface_detection = 115
+		sub_detection = 145
+		surface_visibility = 10
+		naval_speed = 38
+		reliability = 0.95
+
+		naval_range = 5500
+
+		max_strength = 300
+
+		port_capacity_usage = 1
+
+		type = {
+			screen_ship
+			anti_air
+		}
+
+		build_cost_ic = 15000
+		resources = {
+			tungsten = 3
+			steel = 6
+			chromium = 3
+		}
+		manpower = 550
+	}
+
+	destroyer_4 = {
+		year = 2008
+
+		archetype = destroyer
+		parent = destroyer_3
+		priority = 20
+
+		ap_attack = 100
+		attack = 50
+		torpedo_attack = 250
+		sub_attack = 90
+		shore_bombardment = 13
+		fire_range = 45
+
+		anti_air_attack = 175
+
+		armor_value = 0
+		evasion = 120
+
+		surface_detection = 135
+		sub_detection = 165
+		surface_visibility = 10
+		naval_speed = 39
+		reliability = 0.95
+
+		naval_range = 6500
+
+		max_strength = 300
+
+		port_capacity_usage = 1
+
+		type = {
+			screen_ship
+			anti_air
+		}
+
+		build_cost_ic = 18000
+		resources = {
+			tungsten = 4
+			steel = 7
+			chromium = 4
+		}
+		manpower = 550
+	}
+
+	destroyer_5 = {
+		year = 2020
+
+		archetype = destroyer
+		parent = destroyer_4
+		priority = 20
+
+		ap_attack = 100
+		attack = 50
+		torpedo_attack = 250
+		sub_attack = 100
+		shore_bombardment = 30
+		fire_range = 50
+
+		anti_air_attack = 200
+
+		armor_value = 0
+		evasion = 200
+
+		surface_detection = 165
+		sub_detection = 195
+		surface_visibility = 10
+		naval_speed = 40
+		reliability = 0.95
+
+		naval_range = 8000
+
+		max_strength = 400
+
+		port_capacity_usage = 1
+
+		type = {
+			screen_ship
+			anti_air
+		}
+
+		build_cost_ic = 20000
+		resources = {
+			tungsten = 5
+			steel = 8
+			chromium = 5
+		}
+		manpower = 550
+	}
+	destroyer_6 = {
+		year = 2025
+
+		archetype = destroyer
+		parent = destroyer_5
+		priority = 20
+
+		ap_attack = 110
+		attack = 55
+		torpedo_attack = 275
+		sub_attack = 110
+		shore_bombardment = 33
+		fire_range = 55
+
+		anti_air_attack = 220
+
+		armor_value = 0
+		evasion = 220
+
+		surface_detection = 180
+		sub_detection = 210
+		surface_visibility = 10
+		naval_speed = 40
+		reliability = 0.95
+
+		naval_range = 8000
+
+		max_strength = 420
+
+		port_capacity_usage = 1
+
+		type = {
+			screen_ship
+			anti_air
+		}
+
+		build_cost_ic = 22000
+		resources = {
+			tungsten = 6
+			steel = 8
+			chromium = 6
+		}
+		manpower = 500
+	}
+}

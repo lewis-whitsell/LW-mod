@@ -1,0 +1,182 @@
+objectTypes = {
+	
+	####################
+	# attack submarine #
+	####################
+	
+	pdxmesh = {
+		name = "generic_attack_submarine_mesh"
+		file = "gfx/models/units/ships/USA_submarine.mesh"
+	}
+	pdxmesh = {
+		name = "USA_attack_submarine_mesh"
+		file = "gfx/models/units/ships/USA_submarine.mesh"
+	}
+
+	####################
+	# missile submarine #
+	####################
+	
+	pdxmesh = {
+		name = "generic_missile_submarine_mesh"
+		file = "gfx/models/units/ships/USA_submarine.mesh"
+	}
+	pdxmesh = {
+		name = "USA_missile_submarine_mesh"
+		file = "gfx/models/units/ships/USA_submarine.mesh"
+	}
+
+	##########################
+	# diesel attack submarine#
+	##########################
+	
+	pdxmesh = {
+		name = "generic_submarine_mesh"
+		file = "gfx/models/units/ships/USA_submarine.mesh"
+	}
+	pdxmesh = {
+		name = "USA_submarine_mesh"
+		file = "gfx/models/units/ships/USA_submarine.mesh"
+	}
+	
+	###########
+	# CARRIER #
+	###########
+
+	pdxmesh = {
+		name = "generic_carrier_mesh"
+		file = "gfx/models/units/ships/USA_carrier.mesh"
+	}
+	pdxmesh = {
+		name = "USA_carrier_mesh"
+		file = "gfx/models/units/ships/USA_carrier.mesh"
+	}
+	
+	pdxmesh = {
+		name = "SOV_carrier_mesh"
+		file = "gfx/models/units/ships/SOV_carrier.mesh"
+	}
+
+	pdxmesh = {
+		name = "ENG_carrier_mesh"
+		file = "gfx/models/units/ships/ENG_carrier.mesh"
+	}
+	###########
+	#   LHD   #
+	###########
+
+	pdxmesh = {
+		name = "generic_LHD_mesh"
+		file = "gfx/models/units/ships/USA_carrier.mesh"
+	}
+	pdxmesh = {
+		name = "USA_LHD_mesh"
+		file = "gfx/models/units/ships/USA_carrier.mesh"
+	}
+	
+	pdxmesh = {
+		name = "SOV_LHD_mesh"
+		file = "gfx/models/units/ships/SOV_carrier.mesh"
+	}
+
+	pdxmesh = {
+		name = "ENG_LHD_mesh"
+		file = "gfx/models/units/ships/ENG_carrier.mesh"
+	}
+
+	#################
+	# cruiser #
+	#################
+	
+	pdxmesh = {
+		name = "generic_battle_cruiser_mesh"
+		file = "gfx/models/units/ships/USA_light_cruiser.mesh"
+	}
+	pdxmesh = {
+		name = "USA_battle_cruiser_mesh"
+		file = "gfx/models/units/ships/USA_light_cruiser.mesh"
+	}
+	
+	pdxmesh = {
+		name = "ENG_battle_cruiser_mesh"
+		file = "gfx/models/units/ships/ENG_light_cruiser.mesh"
+		
+	}	
+
+	pdxmesh = {
+		name = "SOV_battle_cruiser_mesh"
+		file = "gfx/models/units/ships/SOV_light_cruiser.mesh"
+		
+	}	
+	
+	#############
+	# DESTROYER #
+	#############
+
+	pdxmesh = {
+		name = "generic_destroyer_mesh"
+		file = "gfx/models/units/ships/USA_destroyer.mesh"
+	}
+	pdxmesh = {
+		name = "USA_destroyer_mesh"
+		file = "gfx/models/units/ships/USA_destroyer.mesh"
+	}
+	
+	pdxmesh = {
+		name = "ENG_destroyer_mesh"
+		file = "gfx/models/units/ships/ENG_destroyer.mesh"
+	}
+
+	pdxmesh = {
+		name = "SOV_destroyer_mesh"
+		file = "gfx/models/units/ships/SOV_destroyer.mesh"
+	}
+
+	###########
+	# FRIGATE #
+	###########
+
+	pdxmesh = {
+		name = "generic_frigate_mesh"
+		file = "gfx/models/units/ships/generic_frigate.mesh"
+	}
+
+	pdxmesh = {
+		name = "ENG_frigate_mesh"
+		file = "gfx/models/units/ships/ENG_frigate.mesh"
+	}
+
+	pdxmesh = {
+		name = "SOV_frigate_mesh"
+		file = "gfx/models/units/ships/SOV_frigate.mesh"
+	}
+
+	pdxmesh = {
+		name = "USA_frigate_mesh"
+		file = "gfx/models/units/ships/USA_frigate.mesh"
+	}
+
+	pdxmesh = {
+		name = "GER_frigate_mesh"
+		file = "gfx/models/units/ships/GER_frigate_BW.mesh"
+	}
+
+	############
+	# CORVETTE #
+	############
+
+	pdxmesh = {
+		name = "generic_corvette_mesh"
+		file = "gfx/models/units/ships/generic_corvette.mesh"
+	}
+
+	pdxmesh = {
+		name = "ENG_corvette_mesh"
+		file = "gfx/models/units/ships/ENG_corvette.mesh"
+	}
+
+	pdxmesh = {
+		name = "SOV_corvette_mesh"
+		file = "gfx/models/units/ships/SOV_corvette.mesh"
+	}
+}

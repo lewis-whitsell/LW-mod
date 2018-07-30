@@ -1,0 +1,152 @@
+ideas = {
+hidden_ideas = {
+tax_rate_0 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			on_add = {
+				set_variable = { var = money_rate value = 5 }
+			}
+			
+			modifier = {
+
+			}
+		}		
+		tax_rate_1 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			on_add = {
+				set_variable = { var = money_rate value = 10 }
+			}			
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.05
+			}
+		}
+		tax_rate_2 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			on_add = {
+				set_variable = { var = money_rate value = 15 }
+			}			
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+			}
+		}
+		tax_rate_3 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			on_add = {
+				set_variable = { var = money_rate value = 20 }
+			}			
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.15
+			}
+		}
+		tax_rate_4 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			on_add = {
+				set_variable = { var = money_rate value = 25 }
+			}			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.2
+				war_support_factor = -0.2
+			}
+		}
+		tax_rate_5 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			on_add = {
+				set_variable = { var = money_rate value = 30 }
+			}			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.25
+				war_support_factor = -0.25			
+			}
+		}
+		tax_rate_6 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			on_add = {
+				set_variable = { var = money_rate value = 35 }
+			}			
+			modifier = {
+				stability_factor = -0.3
+				war_support_factor = -0.3
+			}
+		}
+		tax_rate_7 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			on_add = {
+				set_variable = { var = money_rate value = 40 }
+			}			
+			removal_cost = -1
+			
+			on_add = {
+			
+			}
+			
+			modifier = {
+				stability_factor = -0.35
+				war_support_factor = -0.35
+			}
+		}
+	}
+}

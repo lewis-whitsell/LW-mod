@@ -1,0 +1,439 @@
+# options for map_icon_category:
+# For land units: infantry,armored,other
+# For sea units: ship,transport,uboat
+
+sub_units = {
+	
+	special_force = {
+		sprite = infantry
+		map_icon_category = infantry
+		special_forces = yes
+
+		priority = 500
+		ai_priority = 300
+		active = yes
+
+		type = {
+			infantry
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+		
+		combat_width = 2
+		
+		# this is what moves us and sets speed
+		transport = infantry_equipment
+		
+		#Size Definitions
+		max_strength = 8
+		max_organisation = 61
+		default_morale = 0.4
+		manpower = 200
+
+		#Offensive Abilities
+		soft_attack = 0.5
+		hard_attack = 0.2	
+		
+		#Misc Abilities
+		training_time = 380
+		suppression = 1
+		weight = 0.2
+		supply_consumption = 0.02
+		soft_attack = -0.15		
+
+		can_be_parachuted = yes
+	
+		need = {
+			infantry_equipment = 200
+			
+		}
+		
+		hills = {
+			attack = 0.1
+		}
+		forest = {
+			attack = 0.1
+		}
+		mountain = {
+			attack = 0.1
+		}
+		marsh = {
+			attack = 0.3
+		}
+		river = {
+			attack = 0.4
+		}
+		amphibious = {
+			attack = 0.5
+		}
+		jungle = {
+			attack = 0.1
+			movement = 0.1
+		}
+		marsh = {
+			attack = 0.1
+			movement = 0.1
+		}
+		urban = {
+			attack = 0.15
+			defence = 0.1
+		}
+		desert = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.25
+		}
+		
+	}
+
+	heli_special_force = {
+		sprite = infantry
+		map_icon_category = infantry
+		special_forces = yes
+
+		priority = 500
+		ai_priority = 300
+		active = yes
+
+		type = {
+			mechanized
+		}
+		
+		group = mobile
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+		
+		combat_width = 2
+
+		essential = {
+			infantry_equipment
+			utility_helicopter_equipment
+		}
+		
+		# this is what moves us and sets speed
+		transport = utility_helicopter_equipment
+		
+		#Size Definitions
+		max_strength = 9
+		max_organisation = 61
+		default_morale = 0.4
+		manpower = 200
+		
+		#Offensive Abilities
+		soft_attack = 0.5
+		hard_attack = 0.5
+
+		#Misc Abilities
+		training_time = 420
+		suppression = 1
+		weight = 0.5
+		supply_consumption = 0.02
+		soft_attack = -0.15		
+
+		can_be_parachuted = yes
+	
+		need = {
+			utility_helicopter_equipment = 18		
+			infantry_equipment = 200
+			
+		}
+		
+		hills = {
+			attack = 0.1
+		}
+		forest = {
+			attack = 0.1
+		}
+		mountain = {
+			attack = 0.1
+		}
+		marsh = {
+			attack = 0.3
+		}
+		river = {
+			attack = 0.4
+		}
+		amphibious = {
+			attack = 0.5
+		}
+		jungle = {
+			attack = 0.1
+			movement = 0.1
+		}
+		marsh = {
+			attack = 0.1
+			movement = 0.1
+		}
+		urban = {
+			attack = 0.15
+			defence = 0.1
+		}
+		desert = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.25
+		}			
+		
+	}
+
+	mechanized_airborne = {
+		sprite = motorized
+		map_icon_category = infantry
+
+		special_forces = yes
+		can_be_parachuted = yes
+
+		priority = 500
+		ai_priority = 400
+		active = yes
+		type = {
+			mechanized
+		}
+		
+		group = mobile
+		
+		categories = {
+			category_front_line
+			category_all_infantry
+			category_army
+		}
+
+		combat_width = 2
+
+		#Offensive Abilities
+		soft_attack = 0.2
+		hard_attack = 4.5
+		
+		#Size Definitions
+		max_strength = 30
+		max_organisation = 60
+		default_morale = 0.3
+		manpower = 1300
+
+		#Misc Abilities
+		training_time = 190
+		suppression = 1
+		weight = 0.05
+		
+		can_be_parachuted = yes
+		
+		supply_consumption = 0.02
+		
+		# needed since we give so much bonus to infantry even with no mech equipment
+		essential = {
+			infantry_equipment
+			mechanized_airborne_equipment
+		}
+
+		# this is what moves us and sets speed
+		transport = mechanized_airborne_equipment
+
+		need = {
+			mechanized_airborne_equipment = 50
+			infantry_equipment = 1100
+			motorized_equipment = 50
+			
+			
+		}
+
+		forest = {
+			attack = -0.5
+		}
+		mountain = {
+			attack = -0.05
+		}
+		jungle = {
+			attack = -0.5
+		}
+		urban = {
+			attack = -0.2
+			defence = -0.05
+		}
+		river = {
+			attack = -0.2
+			movement = -0.2
+		}
+		amphibious = {
+			attack = -0.4
+		}
+
+		hardness = 0.3
+	}	
+
+	mechanized_marine = {
+		sprite = motorized
+		map_icon_category = infantry
+
+		priority = 500
+		ai_priority = 500
+		active = yes
+		special_forces = yes
+		marines = yes
+
+		type = {
+			mechanized
+		}
+		
+		group = mobile
+		
+		categories = {
+			category_front_line
+			category_all_infantry
+			category_army
+		}
+
+		combat_width = 2
+
+		#Offensive Abilities
+		soft_attack = 0.1
+		hard_attack = 4.0
+		
+		#Size Definitions
+		max_strength = 30
+		max_organisation = 60
+		default_morale = 0.3
+		manpower = 1300
+
+		#Misc Abilities
+		training_time = 180
+		suppression = 1
+		weight = 0.05
+		
+		supply_consumption = 0.02
+		
+		# needed since we give so much bonus to infantry even with no mech equipment
+		essential = {
+			infantry_equipment
+			mechanized_marine_equipment
+		}
+
+		# this is what moves us and sets speed
+		transport = mechanized_marine_equipment
+
+		need = {
+			mechanized_marine_equipment = 50
+			infantry_equipment = 1100
+			motorized_equipment = 50
+			
+			
+		}
+
+		forest = {
+			attack = -0.2
+		}
+		mountain = {
+			attack = -0.2
+		}
+		jungle = {
+			attack = -0.3
+		}
+		marsh = {
+			attack = 0.3
+		}
+		river = {
+			attack = 0.4
+		}
+		amphibious = {
+			attack = 0.5
+		}	
+		urban = {
+			attack = -0.2
+			defence = -0.05
+		}
+
+		hardness = 0.1
+	}
+	
+	light_mechanized = {
+		sprite = mechanized
+		map_icon_category = infantry
+
+		priority = 600
+		active = yes
+
+		type = {
+			mechanized
+		}
+		
+		group = mobile
+		
+		categories = {
+			category_front_line
+			category_all_infantry
+			category_army
+		}
+
+		combat_width = 2
+
+		#Offensive Abilities
+		soft_attack = 0.1
+		hard_attack = 4.0
+		
+		#Size Definitions
+		max_strength = 30
+		max_organisation = 60
+		default_morale = 0.3
+		manpower = 1200
+
+		#Misc Abilities
+		training_time = 120
+		suppression = 1
+		weight = 1
+		
+		supply_consumption = 0.14
+		
+		# needed since we give so much bonus to infantry even with no mech equipment
+		essential = {
+			infantry_equipment
+			light_mechanized_equipment
+		}
+
+		# this is what moves us and sets speed
+		transport = light_mechanized_equipment
+
+		need = {
+			light_mechanized_equipment = 100
+			infantry_equipment = 100
+		}
+
+		forest = {
+			attack = -0.1
+			movement = -0.25
+		}
+		mountain = {
+			attack = -0.1
+			movement = -0.25
+		}
+		jungle = {
+			attack = -0.25
+			movement = -0.3
+		}
+		marsh = {
+			attack = -0.1
+			movement = -0.1
+		}
+		urban = {
+			attack = -0.1
+		}
+		river = {
+			attack = -0.1
+		}
+		amphibious = {
+			attack = -0.1
+		}
+
+		hardness = 0.1
+	}
+}

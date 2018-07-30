@@ -1,0 +1,142 @@
+add_namespace = LAW
+country_event = {
+	id = LAW.1
+	title = LAW.1.t
+	desc = LAW.1.d
+	hidden = yes
+	fire_only_once = yes
+	trigger = {date > 2000.1.3}
+	mean_time_to_happen = {days = 2}
+	immediate = {
+		SOV	= {
+			add_manpower = 15000000
+		}
+		SAF = {
+			annex_country = { target = NAM } 
+			annex_country = { target = BOT } 
+			annex_country = { target = LES } 
+			annex_country = { target = SWZ } 
+			annex_country = { target = ANG } 
+			every_owned_state = {add_core_of = SAF} 
+		}
+		KAZ = {
+			annex_country = { target = UZB } 
+			annex_country = { target = TRM } 
+			annex_country = { target = KYR } 
+			annex_country = { target = TJI } 
+			every_owned_state = {add_core_of = KAZ} 
+			 
+		}
+		CYP = {annex_country = { target = NCY }}
+		ETH = {
+				annex_country = { target = SOM } 
+				annex_country = { target = SML } 
+				annex_country = { target = SUD } 
+				annex_country = { target = ERI } 
+				annex_country = { target = DJI } 
+				annex_country = { target = KEN }
+				every_owned_state = {add_core_of = ETH}  
+		}
+		USA = {
+				add_war_support = 200
+				random_owned_controlled_state = { add_resource = { type = steel amount = 300}  }
+				random_owned_controlled_state = { add_resource = { type = steel amount = 300}  }  
+				random_owned_controlled_state = { add_resource = { type = steel amount = 300}  } 
+				random_owned_controlled_state = { add_resource = { type = steel amount = 300}  } 
+				random_owned_controlled_state = { add_resource = { type = steel amount = 300}  } 
+				random_owned_controlled_state = { add_resource = { type = steel amount = 300}  } 
+				random_owned_controlled_state = { add_resource = { type = steel amount = 300}  } 
+				random_owned_controlled_state = { add_resource = { type = steel amount = 300}  } 
+				random_owned_controlled_state = { add_resource = { type = steel amount = 300}  } 
+				random_owned_controlled_state = { add_resource = { type = steel amount = 300}  } 
+				random_owned_controlled_state = { add_resource = { type = oil amount = 300}  } 
+				random_owned_controlled_state = { add_resource = { type = oil amount = 250}  }
+				random_owned_controlled_state = { add_resource = { type = rubber amount = 450}  }
+				random_owned_controlled_state = { add_resource = { type = chromium amount = 800}  }
+				random_owned_controlled_state = { add_resource = { type = aluminium amount = 350}  }
+				random_owned_controlled_state = { add_resource = { type = tungsten amount = 550}  }
+				set_political_party = { ideology = conservative popularity = 80 }
+				set_politics = { ruling_party = conservative elections_allowed = no }
+				add_country_leader_trait = warmonger 
+				add_ideas = tot_economic_mobilisation
+				every_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+				}
+			
+				annex_country = { target = PAN } 
+				annex_country = { target = COS } 
+				annex_country = { target = NIC } 
+				annex_country = { target = HON } 
+				annex_country = { target = ELS } 
+				annex_country = { target = GUA } 
+				annex_country = { target = CUB } 
+				annex_country = { target = HAI } 
+				annex_country = { target = DOM }
+				annex_country = { target = MEX }
+				annex_country = { target = CAN }
+				annex_country = { target = BLZ } 
+				annex_country = { target = JAM } 
+				annex_country = { target = BHM } 
+				annex_country = { target = ANT } 
+				annex_country = { target = DMN } 
+				annex_country = { target = STL } 
+				annex_country = { target = STV } 
+				annex_country = { target = GND } 
+				annex_country = { target = BRB }
+				annex_country = { target = TAT }  
+				annex_country = { target = COL } 
+				annex_country = { target = VEN } 
+				every_owned_state = {add_core_of = USA} 
+				every_owned_state = {add_extra_state_shared_building_slots = 10 add_manpower = 20000000}
+				every_owned_state = {
+				limit = {
+					free_building_slots = {	building = dockyard	}
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+								
+			}
+			NIG = {
+			annex_country = { target = BKF } 
+			annex_country = { target = BEN } 
+			annex_country = { target = TOG } 
+			annex_country = { target = GHA } 
+			annex_country = { target = NGR } 
+			annex_country = { target = CAM } 
+			annex_country = { target = MAL } 
+			annex_country = { target = IVO } 
+			annex_country = { target = LIB } 
+			annex_country = { target = GUI } 
+			annex_country = { target = SIE } 
+			annex_country = { target = MRT } 
+			annex_country = { target = SEN } 
+			annex_country = { target = GBS } 
+			annex_country = { target = GAM } 
+			annex_country = { target = EQU } 
+			every_owned_state = {add_core_of = NIG} 
+			add_manpower = 8000000 
+			every_owned_state = {add_extra_state_shared_building_slots = 3}
+			}
+			AZR ={
+			annex_country = { target = NGK } 
+			annex_country = { target = ARM } 
+			annex_country = { target = GEO } 
+			annex_country = { target = ABK } 
+			every_owned_state = {add_core_of = AZR} 
+
+			}
+			
+	}
+		option = {
+		name = LAW.1.a # The localisable text that appears on the button.
+		}
+} 
+

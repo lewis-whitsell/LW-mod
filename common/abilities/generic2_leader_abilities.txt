@@ -1,0 +1,139 @@
+ability = {
+	tactical_nuke_strike = {
+        name = "Tactical Nuke Strike"
+        desc = ABILITY_TACTICAL_NUKE_DESC
+        
+        sound_effect = nuke
+        
+        type = army_leader
+        
+        allowed = {
+            is_border_war = no
+            OWNER = {
+            	AND = {
+            		num_of_nukes > 1
+					has_tech = nukes
+					has_tech = srbm1
+					OR = {
+						has_equipment = { srbm_equipment_1 > 1 }
+						has_equipment = { srbm_equipment_2 > 1 }
+						has_equipment = { srbm_equipment_3 > 1 }
+						has_equipment = { srbm_equipment_4 > 1 }			
+	       
+	           		 }
+           		}
+       		}
+        }
+        
+        ai_will_do = {
+			factor = -1
+			modifier = {
+				FROM = {
+					has_war_support > 0.1
+					command_power > 1.5
+				}
+				check_variable = { num_units_offensive_combats > 6 }
+				
+				set_temp_variable = { temp = avg_offensive_combat_status }
+				check_variable = { temp > 0.45 }
+				check_variable = { ai_random > temp }
+				
+				add = 2
+			}
+		}
+        
+        cost = 0.20
+        duration = 240
+		one_time_effect = {
+				owner =  { 
+				add_threat = 10	
+				if = { 
+					limit = {
+						has_equipment = { srbm_equipment_1 > 1 }
+					}
+					add_equipment_to_stockpile = { type = srbm_equipment_1 amount = -1  }
+					break = yes
+				}
+				if = { 
+					limit = {
+						has_equipment = { srbm_equipment_2 > 1 }
+					}
+					add_equipment_to_stockpile = { type = srbm_equipment_2 amount = -1  }
+					break = yes
+				}
+				if = { 
+					limit = {
+						has_equipment = { srbm_equipment_3 > 1 }
+					}
+					add_equipment_to_stockpile = { type = srbm_equipment_3 amount = -1  }
+					break = yes
+				}
+				if = { 
+					limit = {
+						has_equipment = { srbm_equipment_4 > 1 }
+					}
+					add_equipment_to_stockpile = { type = srbm_equipment_4 amount = -1  }
+					break = yes
+				}				
+			}
+        }
+        unit_modifiers = {
+            offence = 1
+            defence = 1
+			attrition = 0.50
+			heat_attrition_factor = 0.50
+			winter_attrition_factor = 0.50
+			supply_consumption_factor = 1
+            river_crossing_factor = -1
+        }
+    }
+   napalm = {
+        name = "Napalm"
+        desc = ABILITY_NAPALM_DESC
+        
+        sound_effect = command_power_ability_special
+        
+        type = army_leader
+        
+        allowed = {
+            is_border_war = no
+			has_trait = jungle_rat
+        }
+        
+        ai_will_do = {
+            factor = 0
+        }
+        
+        cost = 0.20
+        duration = 240
+		one_time_effect = {
+
+        }
+        unit_modifiers = {
+			jungle = {
+				attack = 0.15
+				defence = 0.10
+				movement = 0.10
+			}
+			marsh = {
+				attack = 0.10
+				defence = 0.05
+				movement = 0.05
+			}
+			forest = {
+				attack = 0.10
+				defence = 0.05
+				movement = 0.05
+			}
+			desert = {
+				attack = 0.10
+				defence = 0.05
+			}
+			plains = {
+				attack = 0.05
+				defence = 0.05
+			}
+        }
+    }
+
+}

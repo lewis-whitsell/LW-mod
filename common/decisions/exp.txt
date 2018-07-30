@@ -1,0 +1,18 @@
+exp_category = {
+
+	exp = {
+	
+		available = {
+			NOT = { has_country_flag = exp_used } 
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		complete_effect = {
+				army_experience = 50
+				set_country_flag = exp_used
+		}
+	}
+}

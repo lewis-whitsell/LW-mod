@@ -1,0 +1,18 @@
+sub_units = {
+		rocket_interceptor = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { interceptor }
+		need = { rocket_interceptor_equipment = 1 }
+	}
+	
+	guided_missile = {
+		sprite = missile_default
+		priority = 1
+		active = yes
+		type = { missile }
+		need = { guided_missile_equipment = 1 }
+	}	
+			
+}

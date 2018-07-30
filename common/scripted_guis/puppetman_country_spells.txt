@@ -1,0 +1,174 @@
+scripted_gui = {
+	
+	fuhrer_mana_enemy_country_powers = {
+	
+		context_type = selected_country_context
+		
+		window_name = "puppetman_subject_powers_container"
+		
+		visible = {
+			ROOT = {
+                has_legitimate_subject = yes
+			}
+			is_subject_of = ROOT
+		}
+		
+		effects = {
+		
+			found_national_integration_movement_click = {
+				ROOT = { 
+					add_political_power = -100 
+				}
+				add_timed_idea = { idea = national_integration_movement  days = 360 }
+			}
+			
+			claim_colonial_states_click = {
+				ROOT = { 
+					add_political_power = -200 
+				}
+				set_temp_variable = { ROOT.claims = this}
+				var:claims = {
+					every_owned_state = {
+						limit = {
+							NOT = { is_in_home_area = yes }
+							NOT = { is_core_of = PREV }
+						}
+						add_claim_by = ROOT
+					}
+				}
+			}
+			
+			relocate_civilian_industry_click = {
+				ROOT = { 
+					add_political_power = -100 
+					add_timed_idea = { idea = civilian_industry_relocated_out  days = 180 }
+				}
+				add_timed_idea = { idea = civilian_industry_relocated_in  days = 180 }
+			}
+			
+			set_subject_free_click = {
+				ROOT = { 
+					add_political_power = -50 
+				}
+				set_temp_variable = { ROOT.release = this}
+				var:release = {
+					ROOT = { end_puppet = PREV }
+				}
+				add_ai_strategy = {
+					type = befriend
+					id = "ROOT"			
+					value = 100
+				}
+				add_ai_strategy = {
+					type = alliance
+					id = "ROOT"			
+					value = 100
+				}
+				drop_cosmetic_tag = yes
+				country_event = puppetman.4
+			}
+			
+			award_states_click = {
+				ROOT = { 
+					multiply_variable = { var = marked_states value = -1 }
+					add_political_power = marked_states
+					set_variable = { marked_states = 0 }
+				}
+				set_temp_variable = { taker = this}
+				every_state = {
+					limit = {
+						is_owned_by = ROOT
+						has_state_flag = marked_for_transfer
+					}
+					var:taker = { transfer_state = PREV }
+					clr_state_flag = marked_for_transfer
+				}
+			}
+		}
+		
+		triggers = {
+		
+			found_national_integration_movement_click_enabled = {
+				check_variable = { ROOT.political_power > 99.99 }
+				NOT = { has_idea = national_integration_movement }
+			}
+			
+			claim_colonial_states_click_enabled = {
+				check_variable = { ROOT.political_power > 199.99 }
+				any_owned_state = {
+					NOT = { is_in_home_area = yes }
+					NOT = { is_claimed_by = ROOT }
+					NOT = { is_core_of = this }
+				}
+				ROOT = { NOT = { has_government = democratic } }
+			}
+			
+			relocate_civilian_industry_click_enabled = {
+				check_variable = { ROOT.political_power > 99.99 }
+				NOT = { has_idea = civilian_industry_relocated_in }
+				ROOT = { NOT = { has_idea = civilian_industry_relocated_out } }
+				num_of_civilian_factories_available_for_projects > 14
+			}
+			
+			set_subject_free_click_enabled = {
+				check_variable = { ROOT.political_power > 49.99 }
+			}
+			
+			award_states_click_enabled = {
+				check_variable = { ROOT.political_power > ROOT.marked_states }
+				check_variable = { ROOT.marked_states > 0 }
+			}
+		}
+		
+		ai_test_scopes = test_if_only_major
+		ai_test_interval = 24
+		ai_test_variance = 0.1
+		
+		ai_enabled = {
+            has_legitimate_subject = yes
+		}
+        
+		ai_check = {
+			check_variable = { ROOT.political_power > 199.99 }
+			check_variable = { ai_random > 0.65 }
+		}
+		
+		ai_weights = {
+			relocate_civilian_industry_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = 200
+						has_war = yes
+					}
+				}
+			}
+			
+			found_national_integration_movement_click = {
+				ai_will_do = {
+					factor = 0
+				}
+			}
+			
+			claim_colonial_states_click = {
+				ai_will_do = {
+					factor = 0
+				}
+			}
+			
+			set_subject_free_click = {
+				ai_will_do = {
+					factor = 0
+				}
+			}
+			
+			award_states_click = {
+				ai_will_do = {
+					factor = 0
+				}
+			}
+		}
+        
+	}
+}
+

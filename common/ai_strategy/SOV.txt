@@ -1,0 +1,131 @@
+common_ai_behaviour_SOV = {
+	enable = {
+		tag = SOV
+	}
+	abort = {
+		always = no
+	}
+	ai_strategy = {
+		type = befriend
+		id = NOV
+		value = 75
+	}
+}
+SOV_asia_strategy = {
+	enable = {
+		tag = SOV
+	}
+	abort = {
+		NOT = { country_exists = VIN }	
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "VIN"
+		value = 100
+	}
+}
+
+SOV_asia_strategy2 = {
+	enable = {
+		tag = SOV
+	}
+	abort = {
+		NOT = { country_exists = KPA }	
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "KPA"
+		value = 200
+	}
+
+	ai_strategy = {
+		type = protect
+		id = "KPA"
+		value = 100
+	}
+}
+
+SOV_europe_strategy = {
+	enable = {
+		tag = SOV
+	}
+	abort = {
+		NOT = { country_exists = YUG }	
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = "YUG"
+		value = 100
+	}
+}
+
+SOV_europe_strategy2 = {
+	enable = {
+		tag = SOV
+		NOT = { is_in_faction_with = ALB }			
+	}
+	abort = {
+		is_in_faction_with = ALB	
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = "ALB"
+		value = 100
+	}
+}
+
+SOV_american_policy = {
+    enable = {
+	tag = SOV
+    }
+ 
+    abort = {
+        NOT = { country_exists = USA }
+    }
+   
+    ai_strategy = {
+        type = antagonize
+        id = "USA"            
+        value = 800
+    }
+}
+seek_russian_alliance = {
+	enable = {
+		NOT = { tag = SOV }
+		has_country_flag = seeks_russian_alliance
+	}
+	
+	abort = {
+		NOT = { has_country_flag = seeks_russian_alliance }
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "SOV"
+		value = 150
+	}
+	ai_strategy = {
+		type = alliance
+		id = "SOV"
+		value = 150
+	}
+}
+SOV_main1 = {
+	enable = {
+		tag = SOV
+		NOT = { is_in_faction_with = ALB }			
+	}
+	abort = {
+		is_in_faction_with = ALB	
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = "ALB"
+		value = 100
+	}
+}

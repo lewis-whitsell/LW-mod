@@ -1,0 +1,76 @@
+ideas = {
+
+	country = {
+
+		national_integration_movement = {
+
+			allowed = {
+				is_subject = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			cancel = {
+				is_subject = no
+			}
+
+			picture = generic_oppression
+
+			modifier = {
+				autonomy_gain = -3
+			}
+		}
+
+		civilian_industry_relocated_in = {
+			
+			allowed = {
+				is_subject = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			cancel = {
+				is_subject = no	
+			}
+				
+			removal_cost = -1
+				
+			picture = generic_goods_red_bonus
+		
+			modifier = {
+				consumer_goods_factor = 0.2
+				autonomy_gain = 3
+			}
+		}
+		
+		civilian_industry_relocated_out = {
+			
+			allowed = {
+				has_legitimate_subject = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			cancel = {
+				has_legitimate_subject = no	
+			}
+				
+			removal_cost = -1
+				
+			picture = man_five_year_plan_industry
+		
+			modifier = {
+				consumer_goods_factor = -0.2
+			}
+		}
+	}
+
+}

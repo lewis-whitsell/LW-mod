@@ -1,0 +1,31 @@
+
+state={
+	id=100
+	name="STATE_100"
+	resources={
+		aluminium=40.000
+	}
+
+	history={
+		owner = GRN
+		victory_points = {12674 5}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 3
+			12674 = {
+				naval_base = 2
+
+			}
+
+		}
+		add_core_of = GRN
+
+	}
+
+	provinces={
+		12674 
+	}
+	manpower=330000
+	buildings_max_level_factor=1.000
+	state_category=state_level_7
+}

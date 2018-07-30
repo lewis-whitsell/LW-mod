@@ -1,0 +1,282 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "st_open_container"
+		position = { x = 1000 y = 2 }
+
+		buttonType = {
+			name = "open_ST"
+			quadTextureSprite = "GFX_generic_text_bg_203"
+			position = { x = 0 y = 0 }
+			shortcut = "ctrl+shift+t"
+			pdx_tooltip = "[ST_TOOLTIP]"
+			clicksound = click_ok
+			oversound = ui_menu_over
+		}
+		
+		instantTextboxType = {
+			name = "title"
+			position = {x=22 y=5}
+			font = "hoi_18mbs"
+			text = "[transfer_states_tooltip]"
+			maxWidth = 200
+			maxHeight = 23
+			format = left
+		}
+
+	}
+	
+	containerWindowType = {
+		name = "st_hide_container"
+		position = { x = 10000 y = 2 }
+
+		buttonType = {
+			name = "hide_ST"
+			quadTextureSprite = "GFX_generic_text_bg_203"
+			position = { x = 0 y = 0 }
+			shortcut = "ctrl+shift+h"
+			clicksound = click_ok
+			oversound = ui_menu_over
+		}
+
+	}
+	
+	containerWindowType = {
+		name = "st_state_manager_powers_container"
+		position = {x=1250 y=170}
+		size = { width=400 height=500 }
+
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		
+		
+
+		instantTextboxType = {
+			name = "title"
+			position = {x=14 y=6}
+			font = "hoi_18mbs"
+			text = "[This.GetName]"
+			maxWidth = 200
+			maxHeight = 23
+			format = left
+		}
+		
+		buttonType = {
+			name = "st_state_manager_power_mark_for_transfer" 
+			position = {x=23 y=35}
+			shortcut = "ctrl+z"
+			spriteType = "GFX_sort_button_140x29"
+			frame = 1
+			pdx_tooltip = "ST_STATE_MARK_FOR_TRANSFER"
+		}
+		
+		
+		buttonType = {
+			name = "st_state_manager_power_unmark_for_transfer" 
+			position = {x=23 y=35}
+			shortcut = "ctrl+z"			
+			spriteType = "GFX_sort_button_140x29"
+			frame = 2
+			pdx_tooltip = "ST_STATE_UNMARK_FOR_TRANSFER"
+		}
+
+		buttonType = {
+			name = "urbanize_state" 
+			position = {x=175 y=27}		
+			spriteType = "GFX_global_alert_icons"
+			frame = 5
+			pdx_tooltip = "urbanization_TT"
+		}
+		buttonType = {
+			name = "make_core" 
+			position = {x=225 y=27}		
+			spriteType = "GFX_global_alert_icons"
+			frame = 15
+			pdx_tooltip = "st_make_core_TT"
+		}
+
+		buttonType = {
+			name = "construction_cic" 
+			position = {x=275 y=27}		
+			spriteType = "GFX_global_alert_icons"
+			frame = 6
+			pdx_tooltip = "construction_cic_TT"
+		}
+		buttonType = {
+			name = "construction_mic" 
+			position = {x=325 y=27}		
+			spriteType = "GFX_global_alert_icons"
+			frame = 7
+			pdx_tooltip = "construction_mic_TT"
+		}
+		buttonType = {
+			name = "construction_nic" 
+			position = {x=375 y=27}		
+			spriteType = "GFX_global_alert_icons"
+			frame = 8
+			pdx_tooltip = "construction_nic_TT"
+		}
+
+		buttonType = {
+			name = "add_resources_steel" 
+			position = {x=23 y=80}		
+			spriteType = "GFX_resources_strip"
+			frame = 5
+			scale = 1.5
+			pdx_tooltip = "prospect_for_steel"
+		}
+		buttonType = {
+			name = "add_resources_aluminium" 
+			position = {x=73 y=80}		
+			spriteType = "GFX_resources_strip"
+			frame = 2
+			scale = 1.5
+			pdx_tooltip = "prospect_foraluminium_TT"
+		}
+		buttonType = {
+			name = "add_resources_tungston" 
+			position = {x=123 y=80}		
+			spriteType = "GFX_resources_strip"
+			frame = 4
+			scale = 1.5
+			pdx_tooltip = "add_resources_tungston_TT"
+		}
+		buttonType = {
+			name = "add_resources_chromium" 
+			position = {x=173 y=80}		
+			spriteType = "GFX_resources_strip"
+			frame = 6
+			scale = 1.5
+			pdx_tooltip = "add_resources_chromium_TT"
+		}
+		buttonType = {
+			name = "add_resources_oil" 
+			position = {x=223 y=80}		
+			spriteType = "GFX_resources_strip"
+			frame = 1
+			scale = 1.5
+			pdx_tooltip = "add_resources_oil_TT"
+		}
+		buttonType = {
+			name = "add_resources_rubber" 
+			position = {x=273 y=80}		
+			spriteType = "GFX_resources_strip"
+			frame = 3
+			scale = 1.5
+			pdx_tooltip = "add_resources_rubber_TT"
+		}
+		buttonType = {
+			name = "add_homes" 
+			position = {x=323 y=80}		
+			spriteType = "GFX_global_alert_icons"
+			frame = 16
+			pdx_tooltip = "add_homes_TT"
+		}
+		
+		instantTextboxType = {
+			name = "mark_button"
+			position = {x=32 y=39}
+			font = "hoi_18mbs"
+			text = "[This.mark_status]"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+		}
+		
+		instantTextboxType = {
+			name = "marking"
+			position = { x=174 y=20 }
+			textureFile = ""
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = "[This.mark_state_tooltip]"
+			maxWidth = 300
+			maxHeight = 100
+		}
+
+	}
+	
+	containerWindowType = {
+		name = "st_subject_powers_container"
+		position = {x=1250 y=50}
+		size = { width=700 height=200 }
+
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_generic_bg_307x113"
+		}
+		
+		iconType ={
+			name ="title_background"
+			spriteType = "GFX_generic_text_bg_154"
+			position = { x=3 y=3}
+			Orientation = "UPPER_LEFT"
+			allwaystransparent = yes
+		}
+
+		instantTextboxType = {
+			name = "title"
+			position = {x=14 y=8}
+			font = "hoi_18mbs"
+			text = "[This.GetName]"
+			maxWidth = 200
+			maxHeight = 23
+			format = left
+		}
+		
+		buttonType = {
+			name = "mark_all_states" 
+			position = {x=15 y=50}
+			shortcut = "ctrl+a"
+			spriteType = "GFX_global_alert_icons"
+            frame = 39
+			pdx_tooltip = "MARK_ALL_STATES"
+			pdx_tooltip_delayed = "MARK_ALL_STATES_DELAYED"
+			scale = 1
+		}
+		
+		buttonType = {
+			name = "clear_all_markings" 
+			position = {x=70 y=50}	
+			shortcut = "ctrl+x"
+			spriteType = "GFX_global_alert_icons"
+            frame = 38
+			pdx_tooltip = "CLEAR_ALL_MARKINGS"
+			pdx_tooltip_delayed = "CLEAR_ALL_MARKINGS_DELAYED"
+			scale = 1
+		}
+		
+		buttonType = {
+			name = "mark_colonial_states"	
+			position = {x=125 y=51}
+			shortcut = "ctrl+c"
+			spriteType = "GFX_global_diplorequest_icons"
+            frame = 37 
+			pdx_tooltip = "MARK_COLONIES"
+			pdx_tooltip_delayed = "MARK_COLONIES_DELAYED"
+			scale = 0.95
+		}
+		iconType ={
+			name ="Transfer_background"
+			spriteType = "GFX_tiled_window_small"
+			position = { x=189 y=9}
+			Orientation = "UPPER_LEFT"
+			allwaystransparent = yes
+		}
+		
+		buttonType = {
+			name = "award_states" 
+			position = {x=420 y=20}	
+			shortcut = "ctrl+t"
+			spriteType = "GFX_global_alert_icons"
+			pdx_tooltip = "AWARD_STATES"
+			pdx_tooltip_delayed = "AWARD_STATES_DELAYED"
+		}
+	}
+	
+}

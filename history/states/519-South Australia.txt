@@ -1,0 +1,30 @@
+
+state={
+	id=519
+	name="STATE_519"
+	resources={
+		tungsten=21.000
+		chromium=29.000
+		aluminium=1.000
+		steel=2.000
+	}
+
+	history={
+		owner = AST
+		buildings = {
+			infrastructure = 2
+			air_base = 5
+
+		}
+		add_core_of = AST
+
+	}
+	manpower=1644000
+	buildings_max_level_factor=1.000
+	state_category=state_level_8
+
+	provinces={
+		1773 2219 5183 5197 5225 7567 8186 8220 10925 10927 12910 12918 12924 
+	}
+	
+}

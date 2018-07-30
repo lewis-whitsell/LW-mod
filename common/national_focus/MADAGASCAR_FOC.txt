@@ -1,0 +1,3936 @@
+focus_tree = {
+	id = madagascar_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 15
+			tag = MAD
+		}
+	}
+	default = no
+	focus = {
+		id = MAD_4indstart
+		icon = GFX_goal_generic_construct_civilian
+		cost = 5.00
+		x = 4
+		y = 0
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = MAD_4the_unified_islands_plan
+							bonus = 0.5
+							uses = 3
+							category = construction_tech
+							category = industry
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4armystart
+		icon = GFX_focus_generic_license_production
+		cost = 10.00
+		x = 30
+		y = 0
+			completion_reward = {
+					add_political_power = 120
+				}
+
+	}
+	focus = {
+		id = MAD_4govstart1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 63
+		y = 0
+			completion_reward = {
+					add_ideas = idea_focus_generic_neo_fascist_doctrine
+				}
+
+	}
+	focus = {
+		id = MAD_4mil4
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 5.00
+		x = 0
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			prerequisite = {
+				focus = MAD_4mil3
+			}
+			completion_reward = {
+					random_owned_state = {
+							add_building_construction = {
+									type = arms_factory
+									level = 3
+									instant_build = yes
+								}
+							add_extra_state_shared_building_slots = 3
+						}
+					random_owned_state = {
+							add_building_construction = {
+									type = arms_factory
+									level = 3
+									instant_build = yes
+								}
+							add_extra_state_shared_building_slots = 3
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4mil1
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4indstart
+		}
+		x = 0
+		y = 1
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					random_owned_state = {
+							add_building_construction = {
+									type = arms_factory
+									level = 3
+									instant_build = yes
+								}
+							add_extra_state_shared_building_slots = 3
+						}
+					random_owned_state = {
+							add_building_construction = {
+									type = arms_factory
+									level = 3
+									instant_build = yes
+								}
+							add_extra_state_shared_building_slots = 3
+						}
+					random_owned_state = {
+							add_building_construction = {
+									type = arms_factory
+									level = 3
+									instant_build = yes
+								}
+							add_extra_state_shared_building_slots = 3
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4mil2
+		icon = GFX_focus_chi_army_reform
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4mil1
+		}
+		x = 0
+		y = 2
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					random_owned_state = {
+							add_building_construction = {
+									type = arms_factory
+									level = 3
+									instant_build = yes
+								}
+							add_extra_state_shared_building_slots = 3
+						}
+					random_owned_state = {
+							add_building_construction = {
+									type = arms_factory
+									level = 3
+									instant_build = yes
+								}
+							add_extra_state_shared_building_slots = 3
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4mil3
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4mil2
+		}
+		x = 0
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					random_owned_state = {
+							add_building_construction = {
+									type = arms_factory
+									level = 3
+									instant_build = yes
+								}
+							add_extra_state_shared_building_slots = 3
+						}
+					random_owned_state = {
+							add_building_construction = {
+									type = arms_factory
+									level = 3
+									instant_build = yes
+								}
+							add_extra_state_shared_building_slots = 3
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4civ1
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4indstart
+		}
+		x = 2
+		y = 1
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					random_owned_state = {
+							add_building_construction = {
+									type = industrial_complex
+									level = 3
+									instant_build = yes
+								}
+							add_extra_state_shared_building_slots = 3
+						}
+					random_owned_state = {
+							add_building_construction = {
+									type = industrial_complex
+									level = 3
+									instant_build = yes
+								}
+							add_extra_state_shared_building_slots = 3
+						}
+					random_owned_state = {
+							add_building_construction = {
+									type = industrial_complex
+									level = 3
+									instant_build = yes
+								}
+							add_extra_state_shared_building_slots = 3
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4civ2
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4civ1
+		}
+		x = 2
+		y = 2
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					random_owned_state = {
+							add_building_construction = {
+									type = industrial_complex
+									level = 3
+									instant_build = yes
+								}
+							add_extra_state_shared_building_slots = 3
+						}
+					random_owned_state = {
+							add_building_construction = {
+									type = industrial_complex
+									level = 3
+									instant_build = yes
+								}
+							add_extra_state_shared_building_slots = 3
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4civ3
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4civ2
+		}
+		x = 2
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					random_owned_state = {
+							add_building_construction = {
+									type = industrial_complex
+									level = 3
+									instant_build = yes
+								}
+							add_extra_state_shared_building_slots = 3
+						}
+					random_owned_state = {
+							add_building_construction = {
+									type = industrial_complex
+									level = 3
+									instant_build = yes
+								}
+							add_extra_state_shared_building_slots = 3
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4civ4
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4civ3
+		}
+		x = 2
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					random_owned_state = {
+							add_building_construction = {
+									type = industrial_complex
+									level = 3
+									instant_build = yes
+								}
+							add_extra_state_shared_building_slots = 3
+						}
+					random_owned_state = {
+							add_building_construction = {
+									type = industrial_complex
+									level = 3
+									instant_build = yes
+								}
+							add_extra_state_shared_building_slots = 3
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4gov3
+		icon = GFX_focus_generic_tank_production
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4civ4
+		}
+		prerequisite = {
+			focus = MAD_4mil4
+		}
+		x = 1
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = defensive_constructions
+				}
+
+	}
+	focus = {
+		id = MAD_4resource2
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4indstart
+		}
+		x = 5
+		y = 1
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = MAD_4resource
+				}
+
+	}
+	focus = {
+		id = MAD_4alumn
+		icon = GFX_focus_generic_aluminum
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4resource2
+		}
+		x = 4
+		y = 2
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					random_owned_state = {
+							add_resource = {
+									type = aluminium
+									amount = 16
+								}
+						}
+					random_owned_state = {
+							add_resource = {
+									type = aluminium
+									amount = 20
+								}
+						}
+					random_owned_state = {
+							add_resource = {
+									type = aluminium
+									amount = 39
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4oil
+		icon = GFX_goal_generic_oil_refinery
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4alumn
+		}
+		x = 4
+		y = 3
+			ai_will_do = {
+					factor = 1
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					random_owned_state = {
+							add_resource = {
+									type = oil
+									amount = 12
+								}
+						}
+					random_owned_state = {
+							add_resource = {
+									type = oil
+									amount = 22
+								}
+						}
+					random_owned_state = {
+							add_resource = {
+									type = oil
+									amount = 29
+								}
+						}
+					add_tech_bonus = {
+							name = synth_bonus
+							bonus = 0.5
+							uses = 4
+							category = synth_resources
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4chromium
+		icon = GFX_goal_continuous_non_factory_construct
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4oil
+		}
+		x = 4
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					random_owned_state = {
+							add_resource = {
+									type = chromium
+									amount = 36
+								}
+						}
+					random_owned_state = {
+							add_resource = {
+									type = chromium
+									amount = 15
+								}
+						}
+					random_owned_state = {
+							add_resource = {
+									type = chromium
+									amount = 9
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4resource1
+		icon = GFX_focus_generic_steel
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4resource2
+		}
+		x = 6
+		y = 2
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					random_owned_state = {
+							add_resource = {
+									type = steel
+									amount = 54
+								}
+						}
+					random_owned_state = {
+							add_resource = {
+									type = steel
+									amount = 83
+								}
+						}
+					random_owned_state = {
+							add_resource = {
+									type = steel
+									amount = 116
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4rubber
+		icon = GFX_focus_generic_rubber
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4resource1
+		}
+		x = 6
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					random_owned_state = {
+							add_resource = {
+									type = rubber
+									amount = 28
+								}
+						}
+					random_owned_state = {
+							add_resource = {
+									type = rubber
+									amount = 15
+								}
+						}
+					random_owned_state = {
+							add_resource = {
+									type = rubber
+									amount = 9
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4resource3
+		icon = GFX_focus_generic_tungsten
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4rubber
+		}
+		x = 6
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					random_owned_state = {
+							add_resource = {
+									type = tungsten
+									amount = 36
+								}
+						}
+					random_owned_state = {
+							add_resource = {
+									type = tungsten
+									amount = 15
+								}
+						}
+					random_owned_state = {
+							add_resource = {
+									type = tungsten
+									amount = 9
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4indtech5
+		icon = GFX_goal_generic_construction2
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4resource3
+		}
+		prerequisite = {
+			focus = MAD_4chromium
+		}
+		x = 5
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = MAD_4resource2
+				}
+
+	}
+	focus = {
+		id = MAD_4construc1
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4gov3
+		}
+		prerequisite = {
+			focus = MAD_4indtech5
+		}
+		x = 3
+		y = 6
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					every_owned_state = {
+							add_extra_state_shared_building_slots = 5
+						}
+					add_ideas = MAD_4industrial
+				}
+
+	}
+	focus = {
+		id = MAD_4manila_central_railway
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4indstart
+		}
+		x = 9
+		y = 1
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					every_owned_state = {
+							add_building_construction = {
+									type = infrastructure
+									level = 3
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4econ2
+		icon = GFX_focus_generic_treaty
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4manila_central_railway
+		}
+		x = 8
+		y = 2
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = MAD_4grand_deal
+				}
+
+	}
+	focus = {
+		id = MAD_4econ3
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4econ2
+		}
+		x = 8
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = MAD_4trade1
+				}
+
+	}
+	focus = {
+		id = MAD_4develop_mindano
+		icon = GFX_goal_generic_consumer_goods
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4econ3
+		}
+		x = 8
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = MAD_4trade2
+				}
+
+	}
+	focus = {
+		id = MAD_4indtech2
+		icon = GFX_goal_generic_production2
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4manila_central_railway
+		}
+		x = 10
+		y = 2
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = MAD_4the_unified_islands_plan
+							bonus = 0.5
+							uses = 2
+							category = construction_tech
+							category = industry
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4indtech3
+		icon = GFX_goal_generic_production2
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4indtech2
+		}
+		x = 10
+		y = 3
+			ai_will_do = {
+					factor = 1
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = MAD_4ef
+				}
+
+	}
+	focus = {
+		id = MAD_4indtech4
+		icon = GFX_goal_generic_production2
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4indtech3
+		}
+		x = 10
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = MAD_4the_unified_islands_plan
+							bonus = 0.5
+							uses = 3
+							category = construction_tech
+							category = industry
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4additional_research_slot1
+		icon = GFX_focus_research
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4develop_mindano
+		}
+		prerequisite = {
+			focus = MAD_4indtech4
+		}
+		x = 9
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_stability = 0.05
+					add_research_slot = 1
+				}
+
+	}
+	focus = {
+		id = MAD_4rocket1
+		icon = GFX_focus_rocketry
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4additional_research_slot1
+		}
+		x = 8
+		y = 6
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = secret_bonus2
+							bonus = 0.5
+							uses = 2
+							category = rocketry
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4research_new_enegry_options
+		icon = GFX_focus_wonderweapons
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4additional_research_slot1
+		}
+		x = 10
+		y = 6
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = MAD_4research_new_enegry_options
+							bonus = 0.5
+							uses = 1
+							category = nuclear
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4army_modernisation
+		icon = GFX_goal_generic_army_doctrines
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4armystart
+		}
+		x = 15
+		y = 1
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = idea_focus_army_officer_school
+				}
+
+	}
+	focus = {
+		id = MAD_4support1
+		icon = GFX_goal_generic_build_tank
+		cost = 4.00
+		prerequisite = {
+			focus = MAD_4army_modernisation
+		}
+		x = 13
+		y = 2
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = MAD_4army_modernisation
+							bonus = 0.5
+							uses = 2
+							category = support_tech
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4support2
+		icon = GFX_goal_generic_build_tank
+		cost = 4.00
+		prerequisite = {
+			focus = MAD_4support1
+		}
+		x = 13
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = MAD_4army_modernisation
+							bonus = 0.5
+							uses = 2
+							category = support_tech
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4infequip1
+		icon = GFX_focus_secret_rearmament
+		cost = 4.00
+		prerequisite = {
+			focus = MAD_4army_modernisation
+		}
+		x = 15
+		y = 2
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = MAD_4army_modernisation
+							bonus = 0.5
+							uses = 2
+							category = infantry_weapons
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4infequip2
+		icon = GFX_focus_secret_rearmament
+		cost = 4.00
+		prerequisite = {
+			focus = MAD_4infequip1
+		}
+		x = 15
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = MAD_4army_modernisation
+							bonus = 0.5
+							uses = 2
+							category = infantry_weapons
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4mech1
+		icon = GFX_goal_generic_army_motorized
+		cost = 4.00
+		prerequisite = {
+			focus = MAD_4army_modernisation
+		}
+		x = 17
+		y = 2
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = POL_modernising_the_cavalry
+							bonus = 0.75
+							uses = 1
+							category = light_mechanized
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4tank1
+		icon = GFX_goal_generic_army_tanks
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4mech1
+		}
+		x = 17
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = MAD_4create_main_battle_tanks
+							bonus = 0.5
+							uses = 2
+							category = armor
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4armystg2
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4infequip2
+			focus = MAD_4tank1
+			focus = MAD_4support2
+		}
+		x = 15
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = MAD_4arty3
+				}
+
+	}
+	focus = {
+		id = MAD_4import_new_howitzers
+		icon = GFX_goal_generic_army_artillery2
+		cost = 4.00
+		prerequisite = {
+			focus = MAD_4armystg2
+		}
+		x = 13
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = MAD_4import_new_howitzers
+							bonus = 0.5
+							uses = 2
+							category = artillery
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4mech2
+		icon = GFX_goal_generic_army_motorized
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4armystg2
+		}
+		x = 17
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = MAD_4study_european_tanks
+							bonus = 0.5
+							uses = 2
+							category = heavy_mechanized
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4tank2
+		icon = GFX_goal_generic_army_tanks
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4mech2
+		}
+		x = 17
+		y = 6
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = MAD_4study_european_tanks
+							bonus = 0.5
+							uses = 2
+							category = armor
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4army_modernisation2
+		icon = GFX_goal_generic_army_doctrines
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4armystart
+		}
+		x = 21
+		y = 1
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = MAD_4american_advisors
+				}
+
+	}
+	focus = {
+		id = MAD_4leader1
+		icon = GFX_focus_generic_military_mission
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4army_modernisation2
+		}
+		x = 19
+		y = 2
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					army_experience = 10
+					create_corps_commander = {
+							traits = { infantry_officer  career_officer }
+							skill = 2
+							attack_skill = 2
+							defense_skill = 2
+							planning_skill = 2
+							logistics_skill = 2
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4leader2
+		icon = GFX_focus_generic_military_mission
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4leader1
+		}
+		x = 19
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					army_experience = 10
+					create_field_marshal = {
+							name = "Paulino Santo Jr"
+							traits = { combined_arms_expert  career_officer }
+							skill = 2
+							attack_skill = 3
+							defense_skill = 3
+							planning_skill = 3
+							logistics_skill = 3
+						}
+					create_navy_leader = {
+							traits = { fly_swatter  spotter }
+							skill = 2
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4doc1
+		icon = GFX_goal_generic_air_doctrine
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4army_modernisation2
+		}
+		x = 21
+		y = 2
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 0.5
+							uses = 2
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4doc2
+		icon = GFX_goal_generic_air_doctrine
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4doc1
+		}
+		x = 21
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 0.5
+							uses = 2
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4spec1
+		icon = GFX_goal_generic_amMADbious_assault
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4army_modernisation2
+		}
+		x = 23
+		y = 2
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = special_forces_bonus
+							bonus = 0.5
+							uses = 2
+							category = infantry_weapons
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4spec2
+		icon = GFX_goal_generic_special_forces
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4spec1
+		}
+		x = 23
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = special_forces_bonus
+							bonus = 0.5
+							uses = 2
+							category = infantry_weapons
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4armystg3
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4spec2
+			focus = MAD_4doc2
+			focus = MAD_4leader2
+		}
+		x = 21
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = enigma
+							bonus = 0.5
+							uses = 2
+							category = encryption_tech
+							category = computing_tech
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4leader3
+		icon = GFX_focus_generic_military_mission
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4armystg3
+		}
+		x = 19
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					army_experience = 10
+					create_corps_commander = {
+							traits = { trickster  urban_assault_specialist }
+							skill = 2
+							attack_skill = 2
+							defense_skill = 2
+							planning_skill = 2
+							logistics_skill = 2
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4spec3
+		icon = GFX_goal_generic_amMADbious_assault
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4armystg3
+		}
+		x = 23
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = MAD_4island_hopping
+					add_tech_bonus = {
+							name = MAD_4spec3
+							bonus = 0.5
+							uses = 1
+							category = land_doctrine
+							category = tp_tech
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4spec4
+		icon = GFX_focus_generic_paratrooper
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4spec3
+		}
+		x = 23
+		y = 6
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = special_forces_bonus
+							bonus = 0.5
+							uses = 2
+							category = marine_tech
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4pacific_navy
+		icon = GFX_goal_generic_navy_battleship
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4armystart
+		}
+		x = 30
+		y = 1
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = MAD_4navy
+				}
+
+	}
+	focus = {
+		id = MAD_4navaldoc1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4pacific_navy
+		}
+		x = 26
+		y = 2
+			ai_will_do = {
+
+}
+			completion_reward = {
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 0.5
+							uses = 2
+							category = naval_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4navaldoc2
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4navaldoc1
+		}
+		x = 26
+		y = 3
+			ai_will_do = {
+
+}
+			completion_reward = {
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 0.5
+							uses = 2
+							category = naval_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4navaldoc3
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4navaldoc2
+		}
+		x = 26
+		y = 4
+			ai_will_do = {
+
+}
+			completion_reward = {
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 0.5
+							uses = 2
+							category = naval_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4navaldoc4
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4navaldoc3
+		}
+		x = 26
+		y = 5
+			ai_will_do = {
+
+}
+			completion_reward = {
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 0.5
+							uses = 2
+							category = naval_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4sub1
+		icon = GFX_goal_generic_wolf_pack
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4pacific_navy
+		}
+		x = 28
+		y = 2
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = POL_import_submarine_technology
+							bonus = 0.5
+							uses = 3
+							category = ss_tech
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4sub3
+		icon = GFX_goal_poland_goal
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4sub1
+		}
+		x = 28
+		y = 3
+			completion_reward = {
+					add_tech_bonus = {
+							name = POL_import_submarine_technology
+							bonus = 0.5
+							uses = 1
+							category = ss_tech
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4sub2
+		icon = GFX_goal_generic_navy_submarine
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4sub3
+		}
+		x = 28
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = POL_commerce_attack
+							bonus = 0.5
+							uses = 1
+							category = ss_tech
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4island_defense
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4pacific_navy
+		}
+		x = 30
+		y = 2
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = POL_coastal_defense
+							bonus = 0.5
+							uses = 2
+							category = dd_tech
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4navyscrn1
+		icon = GFX_focus_generic_destroyer
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4island_defense
+		}
+		x = 30
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = POL_coastal_defense
+							bonus = 0.5
+							uses = 2
+							category = dd_tech
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4navyscrn2
+		icon = GFX_focus_generic_cruiser2
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4navyscrn1
+		}
+		x = 30
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = POL_coastal_defense
+							bonus = 0.5
+							uses = 2
+							category = ca_tech
+						}
+						
+				}
+
+	}
+	focus = {
+		id = MAD_4anti_sub_defense_force
+		icon = GFX_goal_generic_navy_anti_submarine
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4sub2
+		}
+		prerequisite = {
+			focus = MAD_4navyscrn2
+		}
+		x = 29
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = POL_a_cruiser_navy
+							bonus = 0.5
+							uses = 2
+							category = naval_bomber
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4carrier1
+		icon = GFX_goal_generic_navy_carrier
+		cost = 4.00
+		prerequisite = {
+			focus = MAD_4pacific_navy
+		}
+		x = 32
+		y = 2
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = POL_a_cv_navy
+							bonus = 0.5
+							uses = 1
+							category = cv_tech
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4carrier2
+		icon = GFX_goal_generic_navy_carrier
+		cost = 4.00
+		prerequisite = {
+			focus = MAD_4carrier1
+		}
+		x = 32
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = POL_a_cv_navy
+							bonus = 0.5
+							uses = 1
+							category = cv_tech
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4carrier3
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 4.00
+		prerequisite = {
+			focus = MAD_4carrier2
+		}
+		x = 32
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = POL_a_cv_navy
+							bonus = 0.5
+							uses = 1
+							category = cv_tech
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4navydef2
+		icon = GFX_goal_generic_navy_battleship
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4navyscrn2
+		}
+		prerequisite = {
+			focus = MAD_4carrier3
+		}
+		x = 31
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = MAD_4navy2
+				}
+
+	}
+	focus = {
+		id = MAD_4navymisc1
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4navydef2
+			focus = MAD_4anti_sub_defense_force
+		}
+		x = 30
+		y = 6
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = MAD_4navy_cost
+				}
+
+	}
+	focus = {
+		id = MAD_4dockyard1
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4pacific_navy
+		}
+		x = 34
+		y = 2
+			ai_will_do = {
+					factor = 2
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 6
+											include_locked = yes
+										}
+								}
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+									type = dockyard
+									level = 5
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4dockyards2
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4dockyard1
+		}
+		x = 34
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 6
+											include_locked = yes
+										}
+								}
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+									type = dockyard
+									level = 5
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4dockyard3
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4dockyards2
+		}
+		x = 34
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 6
+											include_locked = yes
+										}
+								}
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+									type = dockyard
+									level = 5
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4dockyard4
+		icon = GFX_goal_continuous_naval_production
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4dockyard3
+		}
+		x = 34
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 6
+											include_locked = yes
+										}
+								}
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+									type = dockyard
+									level = 5
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4air_innovations
+		icon = GFX_goal_generic_build_airforce
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4armystart
+		}
+		x = 41
+		y = 1
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = POL_air_innovations
+							bonus = 0.5
+							uses = 3
+							category = air_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4airbuild1
+		icon = GFX_goal_generic_air_production
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4air_innovations
+		}
+		x = 37
+		y = 2
+			ai_will_do = {
+					factor = 1
+				}
+			available_if_capitulated = yes
+			complete_tooltip = {
+				}
+			completion_reward = {
+						random_owned_controlled_state = {
+							prioritize = { 10 }
+							limit = {
+									free_building_slots = {
+											building = air_base
+											size > 1
+										}
+								}
+							add_building_construction = {
+									type = air_base
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4airbuild2
+		icon = GFX_goal_generic_build_airforce
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4airbuild1
+		}
+		x = 37
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					random_owned_state = {
+							add_building_construction = {
+									type = air_base
+									level = 8
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4airbuild3
+		icon = GFX_goal_generic_radar
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4airbuild2
+		}
+		x = 37
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					random_owned_state = {
+							add_building_construction = {
+									type = air_base
+									level = 8
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4airbuild4
+		icon = GFX_goal_generic_air_production
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4airbuild3
+		}
+		x = 37
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = MAD_4airbase
+				}
+
+	}
+	focus = {
+		id = MAD_4light_bomber_focus
+		icon = GFX_goal_generic_CAS
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4air_innovations
+		}
+		x = 39
+		y = 2
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = POL_light_bomber_focus
+							bonus = 0.5
+							uses = 2
+							category = tactical_bomber
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4study_allied_and_axis_naval_tactics
+		icon = GFX_goal_generic_air_bomber
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4light_bomber_focus
+		}
+		x = 39
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = idea_focus_air_force_military_school
+				}
+
+	}
+	focus = {
+		id = MAD_4medium_bomber_focus
+		icon = GFX_goal_generic_occupy_start_war
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4study_allied_and_axis_naval_tactics
+		}
+		x = 39
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = POL_medium_bomber_focus
+							bonus = 0.5
+							uses = 2
+							category = cat_strategic_bomber
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4naval_bomber_experiments
+		icon = GFX_goal_generic_air_naval_bomber
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4air_innovations
+		}
+		x = 41
+		y = 2
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = MAD_4the_unified_islands_plan
+							bonus = 0.5
+							uses = 2
+							category = air_equipment
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4heavy_fighter_concept
+		icon = GFX_goal_generic_air_fighter2
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4naval_bomber_experiments
+		}
+		x = 41
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = fighter_production_bonus
+				}
+
+	}
+	focus = {
+		id = MAD_4airmisc1
+		icon = GFX_goal_generic_air_fighter2
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4heavy_fighter_concept
+		}
+		x = 41
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = MAD_4air3
+				}
+
+	}
+	focus = {
+		id = MAD_4airtech1
+		icon = GFX_focus_generic_cryptologic_bomb
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4airmisc1
+		}
+		prerequisite = {
+			focus = MAD_4medium_bomber_focus
+		}
+		x = 40
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+				add_ideas = MAD_4airsup
+				}
+
+	}
+	focus = {
+		id = MAD_4fighter_modernisation
+		icon = GFX_goal_generic_air_fighter
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4air_innovations
+		}
+		x = 43
+		y = 2
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = POL_fighter_modernisation
+							bonus = 0.5
+							uses = 2
+							category = light_fighter
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4air_modernisations_program
+		icon = GFX_goal_generic_air_doctrine
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4fighter_modernisation
+		}
+		x = 43
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+				add_tech_bonus = {
+							name = POL_fighter_modernisation
+							bonus = 0.5
+							uses = 2
+							category = light_fighter
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4jet2
+		icon = GFX_focus_chi_flying_tigers
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4air_modernisations_program
+		}
+		x = 43
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+			add_ideas = MAD_4air
+
+			}
+
+	}
+	focus = {
+		id = MAD_4rocket_development
+		icon = GFX_focus_rocketry
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4airmisc1
+		}
+		prerequisite = {
+			focus = MAD_4jet2
+		}
+		x = 42
+		y = 5
+			ai_will_do = {
+					factor = 1
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = POL_rocket_development
+							bonus = 0.5
+							uses = 2
+							category = rocketry
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4airfin
+		icon = GFX_goal_continuous_air_production
+		cost = 20.00
+		prerequisite = {
+			focus = MAD_4airtech1
+			focus = MAD_4rocket_development
+		}
+		x = 41
+		y = 6
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = MAD_4air2
+				}
+
+	}
+	focus = {
+		id = MAD_4airdoc1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4air_innovations
+		}
+		x = 45
+		y = 2
+			ai_will_do = {
+
+}
+			completion_reward = {
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 0.5
+							uses = 2
+							category = air_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4airdoc2
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4airdoc1
+		}
+		x = 45
+		y = 3
+			ai_will_do = {
+
+}
+			completion_reward = {
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 0.5
+							uses = 2
+							category = air_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4airdoc3
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4airdoc2
+		}
+		x = 45
+		y = 4
+			ai_will_do = {
+
+}
+			completion_reward = {
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 0.5
+							uses = 2
+							category = air_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4a_new_regime
+		icon = GFX_goal_generic_attack_allies
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4govstart1
+		}
+		x = 63
+		y = 1
+			ai_will_do = {
+					factor = 2.5
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = idea_focus_generic_path_of_order
+				}
+
+	}
+	focus = {
+		id = MAD_4ideological_fanaticism
+		icon = GFX_goal_generic_propaganda
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4govstart1
+		}
+		x = 61
+		y = 1
+			ai_will_do = {
+					factor = 1
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = infrastructure_project2
+				}
+
+	}
+	focus = {
+		id = MAD_4gov1
+		icon = GFX_focus_generic_self_management
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4govstart1
+		}
+		x = 65
+		y = 1
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_war_support = .05
+					add_stability = .10
+				}
+
+	}
+	focus = {
+		id = MAD_4post_indenpence_stabilization
+		icon = GFX_goal_generic_demand_territory
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4a_new_regime
+		}
+		prerequisite = {
+			focus = MAD_4ideological_fanaticism
+		}
+		prerequisite = {
+			focus = MAD_4gov1
+		}
+		x = 57
+		y = 2
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_political_power = 250
+				}
+
+	}
+	focus = {
+		id = MAD_4support_the_ganap_party
+		icon = GFX_goal_support_fascism
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4post_indenpence_stabilization
+		}
+		x = 52
+		y = 3
+			ai_will_do = {
+					factor = 1
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = ideological_defense
+				}
+
+	}
+	focus = {
+		id = MAD_4goal1
+		icon = GFX_goal_support_democracy
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4support_the_ganap_party
+		}
+		x = 48
+		y = 4
+			ai_will_do = {
+					factor = 5
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_state_core = 281
+					transfer_state = 281
+					281 = {
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+									type = industrial_complex
+									level = 5
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4goal2
+		icon = GFX_goal_generic_military_deal
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4support_the_ganap_party
+		}
+		x = 50
+		y = 4
+			ai_will_do = {
+					factor = 5
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					transfer_state = 659
+				}
+
+	}
+	focus = {
+		id = MAD_4goal4
+		icon = GFX_focus_generic_coastal_fort
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4support_the_ganap_party
+		}
+		x = 54
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					transfer_state = 944
+					944 = {
+							add_core_of = MAD
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = infrastructure
+									level = 3
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = dockyard
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4goal5
+		icon = GFX_focus_prc_remove_chiang_kai_shek
+		cost = 5
+		prerequisite = {
+			focus = MAD_4support_the_ganap_party
+		}
+		x = 56
+		y = 4
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = OMA
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = YEM
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4addon1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4post_indenpence_stabilization
+		}
+		x = 61
+		y = 3
+			ai_will_do = {
+
+}
+			completion_reward = {
+					set_rule = {
+							can_create_factions = yes
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4build_slot1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4addon1
+		}
+		x = 59
+		y = 4
+			ai_will_do = {
+
+}
+			completion_reward = {
+					every_owned_state = {
+							add_extra_state_shared_building_slots = 3
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4build_slot2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4build_slot1
+		}
+		x = 59
+		y = 5
+			ai_will_do = {
+
+}
+			completion_reward = {
+					every_owned_state = {
+							add_extra_state_shared_building_slots = 3
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4build_slot3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4build_slot2
+		}
+		x = 59
+		y = 6
+			ai_will_do = {
+
+}
+			completion_reward = {
+					every_owned_state = {
+							add_extra_state_shared_building_slots = 3
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4build_slot4
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4build_slot3
+		}
+		x = 59
+		y = 7
+			ai_will_do = {
+
+}
+			completion_reward = {
+					every_owned_state = {
+							add_extra_state_shared_building_slots = 3
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4core1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4addon1
+		}
+		x = 61
+		y = 4
+			ai_will_do = {
+
+}
+			completion_reward = {
+					every_owned_state = {
+							add_core_of = MAD
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4core2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4core1
+		}
+		x = 61
+		y = 5
+			ai_will_do = {
+
+}
+			completion_reward = {
+					every_owned_state = {
+							add_core_of = MAD
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4core3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4core2
+		}
+		x = 61
+		y = 6
+			ai_will_do = {
+
+}
+			completion_reward = {
+					every_owned_state = {
+							add_core_of = MAD
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4core4
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4core3
+		}
+		x = 61
+		y = 7
+			ai_will_do = {
+
+}
+			completion_reward = {
+					every_owned_state = {
+							add_core_of = MAD
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4gov5
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4addon1
+		}
+		x = 63
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = government_expansion
+				}
+
+	}
+	focus = {
+		id = MAD_4gov6
+		icon = GFX_goal_tfv_generic_tech_sharing
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4gov5
+		}
+		x = 63
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = government_expansion
+							add_idea = government_expansion2
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4gov8
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4gov6
+		}
+		x = 63
+		y = 6
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = government_expansion2
+							add_idea = government_expansion3
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4gov9
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4gov8
+		}
+		x = 63
+		y = 7
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = government_expansion3
+							add_idea = government_expansion4
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4may_2nd_uprising
+		icon = GFX_goal_generic_political_pressure
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4gov1
+		}
+		prerequisite = {
+			focus = MAD_4a_new_regime
+		}
+		prerequisite = {
+			focus = MAD_4ideological_fanaticism
+		}
+		x = 69
+		y = 2
+			ai_will_do = {
+					factor = 1
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					set_politics = {
+							parties = {
+									conservative = {
+											popularity = 0
+										}
+									fascist = {
+											popularity = 100
+										}
+									communist = {
+											popularity = 0
+										}
+									reactionary = {
+											popularity = 0
+										}
+								}
+							ruling_party = fascist
+							elections_allowed = no
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4focus_on_war
+		icon = GFX_focus_cze_german_puppet
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4may_2nd_uprising
+		}
+		x = 67
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					set_rule = {
+							can_use_kamikaze_pilots = yes
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4pop1
+		icon = GFX_focus_prc_infiltration
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4focus_on_war
+		}
+		x = 66
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = additional_recruits
+				}
+
+	}
+	focus = {
+		id = MAD_4militarized_police
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4focus_on_war
+		}
+		x = 68
+		y = 4
+			ai_will_do = {
+					factor = 1
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = MAD_4paramilitarism_focus
+				}
+
+	}
+	focus = {
+		id = MAD_4ruin1
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4militarized_police
+		}
+		x = 68
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = MAD_4end1
+				}
+
+	}
+	focus = {
+		id = MAD_4ruin2
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4ruin1
+		}
+		x = 68
+		y = 6
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+				swap_ideas = {
+					remove_idea = MAD_4end1
+					add_idea = MAD_4end2
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4ruin3
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4ruin2
+		}
+		x = 68
+		y = 7
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+				swap_ideas = {
+					remove_idea = MAD_4end2
+					add_idea = MAD_4end3
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4gov4
+		icon = GFX_focus_generic_the_giant_wakes
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4may_2nd_uprising
+		}
+		x = 71
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = MAD_4stablized_state
+				}
+
+	}
+	focus = {
+		id = MAD_4autoc
+		icon = GFX_goal_generic_territory_or_war
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4gov4
+		}
+		mutually_exclusive = {
+			focus = MAD_4freedom
+		}
+		x = 70
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					random_owned_state = {
+							add_manpower = 250000
+						}
+					random_owned_state = {
+							add_manpower = 250000
+						}
+					random_owned_state = {
+							add_manpower = 250000
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4freedom
+		icon = GFX_goal_continuous_boost_freedom
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4gov4
+		}
+		mutually_exclusive = {
+			focus = MAD_4autoc
+		}
+		x = 72
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = idea_focus_generic_national_heritage
+				}
+
+	}
+	focus = {
+		id = MAD_4fighting_men1
+		icon = GFX_goal_generic_small_arms
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4autoc
+			focus = MAD_4freedom
+		}
+		x = 70
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					army_experience = 20
+					add_ideas = MAD_4inf1
+				}
+
+	}
+	focus = {
+		id = MAD_4fighting_men2
+		icon = GFX_goal_generic_political_pressure
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4fighting_men1
+		}
+		x = 70
+		y = 6
+			ai_will_do = {
+					factor = 4
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = MAD_4plan1
+				}
+
+	}
+	focus = {
+		id = MAD_4peace_keeping_youth
+		icon = GFX_focus_generic_military_academy
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4ruin6
+			focus = MAD_4add_people4
+		}
+		x = 69
+		y = 11
+			ai_will_do = {
+					factor = 1
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = MAD_4military_youth_focus
+				}
+
+	}
+	focus = {
+		id = MAD_4add_people1
+		icon = GFX_goal_generic_military_deal
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4comp_war
+		}
+		prerequisite = {
+			focus = MAD_4fighting_men2
+		}
+		x = 70
+		y = 7
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					random_owned_state = {
+							add_manpower = 250000
+						}
+					random_owned_state = {
+							add_manpower = 250000
+						}
+					random_owned_state = {
+							add_manpower = 250000
+						}
+					random_owned_state = {
+							add_manpower = 250000
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4additional_research_slot2
+		icon = GFX_focus_research
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4research_new_enegry_options
+		}
+		prerequisite = {
+			focus = MAD_4rocket1
+		}
+		x = 9
+		y = 7
+			available = {
+					num_of_factories > 50
+				}
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_research_slot = 1
+				}
+
+	}
+	focus = {
+		id = MAD_4arty2
+		icon = GFX_goal_generic_army_artillery2
+		cost = 4.00
+		prerequisite = {
+			focus = MAD_4import_new_howitzers
+		}
+		x = 13
+		y = 6
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = MAD_4import_new_howitzers
+							bonus = 0.5
+							uses = 2
+							category = artillery
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4at1
+		icon = GFX_goal_generic_army_artillery
+		cost = 4.00
+		prerequisite = {
+			focus = MAD_4armystg2
+		}
+		x = 15
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = MAD_4anti_tank_guns
+							bonus = 0.5
+							uses = 2
+							category = cat_anti_tank
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4doc3
+		icon = GFX_goal_generic_air_doctrine
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4armystg3
+		}
+		x = 21
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 0.5
+							uses = 2
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4goal3
+		icon = GFX_goal_generic_trade
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4support_the_ganap_party
+		}
+		x = 52
+		y = 4
+			ai_will_do = {
+					factor = 1
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					transfer_state = 422
+				}
+
+	}
+	focus = {
+		id = MAD_4claim3
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4goal3
+		}
+		x = 52
+		y = 5
+			ai_will_do = {
+					factor = 1
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					422 = {
+							add_core_of = MAD
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = infrastructure
+									level = 3
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = dockyard
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4war3
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4claim3
+		}
+		x = 52
+		y = 6
+			ai_will_do = {
+					factor = 1
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					422 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = infrastructure
+									level = 3
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = dockyard
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4vic3
+		icon = GFX_focus_generic_strike_at_democracy2
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4war3
+		}
+		x = 52
+		y = 7
+			ai_will_do = {
+					factor = 10
+				}
+				completion_reward = {
+					create_wargoal = { type = annex_everything target = RAJ } 
+					create_wargoal = { type = annex_everything target = BNG }
+					create_wargoal = { type = annex_everything target = PAK }  
+				}
+
+	}
+	focus = {
+		id = MAD_4claim4
+		icon = GFX_goal_generic_defence
+		cost = 2.00
+		prerequisite = {
+			focus = MAD_4goal4
+		}
+		x = 54
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					transfer_state = 453
+					453 = {
+							add_core_of = MAD
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = infrastructure
+									level = 3
+									instant_build = yes
+								}
+						}
+				ISR = {
+					transfer_state = 813
+						813 = {
+								add_core_of = ISR
+								add_extra_state_shared_building_slots = 2
+								add_building_construction = {
+										type = infrastructure
+										level = 3
+										instant_build = yes
+									}
+								add_building_construction = {
+										type = dockyard
+										level = 2
+										instant_build = yes
+									}
+						}
+					}
+				}
+
+	}
+	focus = {
+		id = MAD_4war4
+		icon = GFX_focus_jap_cast_the_die
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4claim4
+		}
+		x = 54
+		y = 6
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+				transfer_state = 789
+					789 = {
+							add_core_of = MAD
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = infrastructure
+									level = 3
+									instant_build = yes
+								}
+						}	
+				}
+
+	}
+	focus = {
+		id = MAD_4vic4
+		icon = GFX_focus_rom_abdicate
+		cost = 10.00
+			prerequisite = {
+			focus = MAD_4war4
+		}
+		
+		x = 54
+		y = 7
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+				create_wargoal = {
+							type = annex_everything
+							target = JOR
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = ISR
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = PAL
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = EGY
+						}	
+				}
+
+	}
+	focus = {
+		id = MAD_4claim5
+		icon = GFX_focus_renounce_the_treaty_of_triannon
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4goal5
+		}
+		x = 56
+		y = 5
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = UAE
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = QAT
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4war5
+		icon = GFX_focus_generic_military_mission
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4claim5
+		}
+		x = 56
+		y = 6
+			completion_reward = {
+					declare_war_on = {
+							target = SAU
+							type = annex_everything
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4vic5
+		icon = GFX_goal_molotov_ribbentrop_pact
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4war5
+		}
+		x = 56
+		y = 7
+			completion_reward = {
+					declare_war_on = {
+							target = IRQ
+							type = annex_everything
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4greater_MADlippines_established
+		icon = GFX_goal_generic_military_deal
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4vic5
+			focus = MAD_4vic4
+			focus = MAD_4vic3
+		}
+		x = 54
+		y = 8
+			ai_will_do = {
+					factor = 1
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_political_power = 120
+					add_ideas = MAD_4greater
+				}
+
+	}
+	focus = {
+		id = MAD_4comp_war
+		icon = GFX_focus_rom_parties_end
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4freedom
+			focus = MAD_4autoc
+		}
+		x = 72
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = MAD_4grand_deal3
+				}
+
+	}
+	focus = {
+		id = MAD_4claim1
+		icon = GFX_goal_generic_production
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4goal1
+		}
+		x = 48
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					281 = {
+							add_extra_state_shared_building_slots = 6
+							add_building_construction = {
+									type = industrial_complex
+									level = 5
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4war1
+		icon = GFX_goal_generic_production
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4claim1
+		}
+		x = 48
+		y = 6
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					281 = {
+							add_resource = {
+									type = steel
+									amount = 16
+								}
+							add_resource = {
+									type = aluminium
+									amount = 37
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4claim2
+		icon = GFX_focus_generic_strike_at_democracy3
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4goal2
+		}
+		x = 50
+		y = 5
+			available = {
+					country_exists = USA
+				}
+			ai_will_do = {
+					factor = 1
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_state_core = 856
+					transfer_state = 856
+				}
+
+	}
+	focus = {
+		id = MAD_4war2
+		icon = GFX_goal_generic_construction
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4claim2
+		}
+		x = 50
+		y = 6
+			ai_will_do = {
+					factor = 1
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					659 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 3
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+					856 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 3
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4vic1
+		icon = GFX_goal_generic_consumer_goods
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4war1
+		}
+		x = 48
+		y = 7
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = MZB
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4aa1
+		icon = GFX_focus_generic_air_defense
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4at1
+		}
+		x = 15
+		y = 6
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = MAD_4arty1
+				}
+
+	}
+	focus = {
+		id = MAD_4armyupgradef
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4tank2
+			focus = MAD_4aa1
+			focus = MAD_4arty2
+		}
+		mutually_exclusive = {
+			focus = MAD_4armyupgradef2
+		}
+		x = 15
+		y = 7
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = MAD_4arty2
+				}
+
+	}
+	focus = {
+		id = MAD_4leader4
+		icon = GFX_focus_generic_military_mission
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4leader3
+		}
+		x = 19
+		y = 6
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					army_experience = 10
+					create_corps_commander = {
+							traits = { armor_officer }
+							skill = 2
+							attack_skill = 2
+							defense_skill = 2
+							planning_skill = 2
+							logistics_skill = 2
+						}
+					create_navy_leader = {
+							traits = { air_controller }
+							skill = 2
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4doc4
+		icon = GFX_goal_generic_air_doctrine
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4doc3
+		}
+		x = 21
+		y = 6
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 0.5
+							uses = 2
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4vic2
+		icon = GFX_goal_generic_national_unity
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4war2
+		}
+		x = 50
+		y = 7
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = USA
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4Gvic1
+		icon = GFX_focus_generic_provoke_border_clashes
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4vic1
+		}
+		prerequisite = {
+			focus = MAD_4vic2
+		}
+		x = 49
+		y = 8
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+
+}
+
+	}
+	focus = {
+		id = MAD_4armyupgradef2
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4leader4
+			focus = MAD_4doc4
+			focus = MAD_4spec4
+		}
+		mutually_exclusive = {
+			focus = MAD_4armyupgradef
+		}
+		x = 21
+		y = 7
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = idea_focus_generic_army_of_purity
+				}
+
+	}
+	focus = {
+		id = MAD_4units1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4armyupgradef
+			focus = MAD_4armyupgradef2
+		}
+		x = 19
+		y = 8
+			available = {
+
+}
+			completion_reward = {
+					load_oob = "MAD_unit1"
+					create_corps_commander = {
+							traits = { career_officer  armor_officer }
+							skill = 2
+							attack_skill = 2
+							defense_skill = 2
+							planning_skill = 2
+							logistics_skill = 2
+						}
+					create_navy_leader = {
+							traits = { blockade_runner}
+							skill = 2
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4units2
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4armyupgradef
+			focus = MAD_4armyupgradef2
+		}
+		x = 17
+		y = 8
+			available = {
+
+}
+			completion_reward = {
+					load_oob = "MAD_unit2"
+					create_corps_commander = {
+							traits = { fortress_buster  naval_invader }
+							skill = 2
+							attack_skill = 2
+							defense_skill = 2
+							planning_skill = 2
+							logistics_skill = 2
+						}
+					create_navy_leader = {
+							traits = { seawolf  spotter }
+							skill = 2
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4pop2
+		icon = GFX_focus_prc_infiltration
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4pop1
+		}
+		x = 66
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = additional_recruits
+							add_idea = additional_recruits2
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4pop3
+		icon = GFX_focus_prc_infiltration
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4pop2
+		}
+		x = 66
+		y = 6
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = additional_recruits2
+							add_idea = additional_recruits3
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4pop4
+		icon = GFX_focus_prc_infiltration
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_4pop3
+		}
+		x = 66
+		y = 7
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = additional_recruits3
+							add_idea = additional_recruits4
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4ruin4
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4ruin3
+		}
+		prerequisite = {
+			focus = MAD_4pop4
+		}
+		x = 68
+		y = 8
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+				swap_ideas = {
+					remove_idea = MAD_4end3
+					add_idea = MAD_4end4
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4ruin5
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4ruin4
+		}
+		x = 68
+		y = 9
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+				swap_ideas = {
+					remove_idea = MAD_4end4
+					add_idea = MAD_4end5
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4ruin6
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4ruin5
+		}
+		x = 68
+		y = 10
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+				swap_ideas = {
+					remove_idea = MAD_4end5
+					add_idea = MAD_4end6 
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4add_people2
+		icon = GFX_goal_generic_military_deal
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4add_people1
+		}
+		x = 70
+		y = 8
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					random_owned_state = {
+							add_manpower = 250000
+						}
+					random_owned_state = {
+							add_manpower = 250000
+						}
+					random_owned_state = {
+							add_manpower = 250000
+						}
+					random_owned_state = {
+							add_manpower = 250000
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4add_people3
+		icon = GFX_goal_generic_military_deal
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4add_people2
+		}
+		x = 70
+		y = 9
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					random_owned_state = {
+							add_manpower = 250000
+						}
+					random_owned_state = {
+							add_manpower = 250000
+						}
+					random_owned_state = {
+							add_manpower = 250000
+						}
+					random_owned_state = {
+							add_manpower = 250000
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_4add_people4
+		icon = GFX_goal_generic_military_deal
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_4add_people3
+		}
+		x = 70
+		y = 10
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					random_owned_state = {
+							add_manpower = 250000
+						}
+					random_owned_state = {
+							add_manpower = 250000
+						}
+					random_owned_state = {
+							add_manpower = 250000
+						}
+					random_owned_state = {
+							add_manpower = 250000
+						}
+				}
+
+	}
+}

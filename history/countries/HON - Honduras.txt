@@ -1,0 +1,202 @@
+﻿capital = 312
+
+oob = "HON_2000"
+
+set_research_slots = 3
+set_convoys = 200
+set_stability = 0.3
+
+set_country_flag = country_language_spanish
+
+set_technology = {
+	jet_multirole1=1
+	jet_multirole2=1
+	jet_multirole3=1
+	jet_CAS1=1
+	cv_jet_CAS1=1
+	jet_CAS2=1
+	cv_jet_CAS2=1
+	naval_bomber1=1
+	naval_bomber2=1
+	naval_bomber3=1
+	jet_tactical_bomber1=1
+	jet_tactical_bomber2=1
+	jet_strategic_bomber1=1
+	jet_strategic_bomber2=1
+	transport1=1
+	gen1_ucav=1
+	gen1_mbt=1
+	gen2_mbt=1
+	gen3_mbt=1
+	gen3_light=1
+	gen1_ifv=1
+	airborne_ifv_infantry1=1
+	gen1_apc=1
+	armored_engineering_1=1
+	recon_mechanized_1=1
+	sp_rocket1=1
+	gw_artillery=1
+	interwar_artillery=1
+	rocket_artillery=1
+	sp_artillery1=1
+	interwar_antiair=1
+	antitank=1
+	antitank1=1
+	medrange_sp_aa1=1
+	shortrange_sp_aa1=1
+	sp_aa1=1
+	sp_aa2=1
+	cold_war_engineering=1
+	modern_communication_systems=1
+	modern_university_systems=1
+	internet=1
+	experimental_rockets=1
+	rocket_engines=1
+	improved_rocket_engines=1
+	advanced_rocket_engines=1
+	early_helicopter=1
+	assembly_line=1
+	software1=1
+	software2=1
+	software3=1
+	machine_tools1=1
+	machine_tools2=1
+	machine_tools3=1
+	manufacturing1=1
+	robotics1=1
+	construction1=1
+	excavation1=1
+	oil1=1
+	oil2=1
+	infantry_weapons=1
+	infantry_weapons1=1
+	rail_integration_system=1
+	infantry_weapons2=1
+	improved_infantry_weapons=1
+	support_weapons=1
+	squad_automatic_weapon=1
+	tandem_charge_warheads=1
+	night_vision=1
+	body_armor=1
+	body_armor2=1
+	camouflage=1
+	special_forces=1
+	motorised_infantry=1
+	motorized_rocket_unit=1
+	cold_war_ship_design=1
+
+	frigate1=1
+	destroyer1=1
+	destroyer_improved_engines=1
+	destroyer_advanced_engines=1
+	destroyer2=1
+	missile_cruiser1=1
+	carrier1=1
+	lhd1=1
+	submarine1=1
+	submarine_nuclear_reactor=1
+	submarine2=1
+
+	tech_support=1
+	tech_engineers=1
+	tech_recon=1
+	tech_military_police=1
+	tech_maintenance_company=1
+	tech_field_hospital=1
+	tech_logistics_company=1
+	tech_signal_company=1
+}
+
+add_ideas = {
+	population_growth_rapid
+	limited_conscription
+}
+
+set_politics = {
+
+	parties = {
+		islamist = {
+			popularity = 1
+		}
+		nationalist = {
+			popularity = 1
+		}
+		reactionary = {
+			popularity = 35
+		}
+		conservative = {
+			popularity = 2
+		}
+		market_liberal = {
+			popularity = 6
+		}
+		social_liberal = {
+			popularity = 20
+		}
+		social_democrat = {
+			popularity = 5
+		}
+		progressive = {
+			popularity = 10
+		}
+		democratic_socialist = {
+			popularity = 10
+		}
+		communist = {
+			popularity = 10
+		}
+	}
+	
+	ruling_party = reactionary
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+create_country_leader = {
+	name = "Carlos Flores Facussé"
+	ideology = counter_progressive_democrat
+	picture = "Carlos_Flores.dds"
+}
+
+create_country_leader = {
+	name = "Manuel Zelaya"
+	ideology = liberalist 
+	picture = "Manuel_Zelaya.dds"
+}
+
+create_country_leader = {
+	name = "Ceaser Ham"
+	ideology = democratic_socialist_ideology 
+	picture = "Ceaser_Ham.dds"
+}
+
+create_country_leader = {
+	name = "Guillermo Enrique Valle"
+	ideology = social_democrat_ideology  
+	picture = "Guillermo_Enrique_Valle.dds"
+}
+
+create_country_leader = {
+	name = "Felicito Avila"
+	ideology = christian_democrat  
+	picture = "Guillermo_Enrique_Valle.dds"
+}
+
+2015.1.1 = {
+	create_country_leader = {
+		name = "Juan Orlando Hernández"
+		ideology = counter_progressive_democrat
+		picture = "Juan_Orlando.dds"
+	}
+	create_country_leader = {
+		name = "Xiomara Castro"
+		ideology = democratic_socialist_ideology
+		picture = "Xiomara_Castro.dds"
+	}
+	create_country_leader = {
+		name = "Mauricio Villeda"
+		ideology = centrist 
+		picture = "Mauricio_Villeda.dds"
+	}
+}

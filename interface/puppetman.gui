@@ -1,0 +1,196 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "puppet_state_manager_powers_container"
+		position = {x=1250 y=150}
+		size = { width=400 height=200 }
+
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_BPT_areadef_conf_bg"
+		}
+
+		instantTextboxType = {
+			name = "title"
+			position = {x=14 y=6}
+			font = "hoi_18mbs"
+			text = "[This.GetName]"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+		}
+		
+		buttonType = {
+			name = "puppet_state_manager_power_transfer" 
+			position = {x=20 y=35}	
+			spriteType = "GFX_global_alert_icons"
+            frame = 45
+			pdx_tooltip = "PUPPETMAN_STATE_TRANSFER"
+			pdx_tooltip_delayed = "PUPPETMAN_STATE_TRANSFER_DELAYED"
+			scale = 0.75
+		}
+		
+		buttonType = {
+			name = "puppet_state_manager_power_claim" 
+			position = {x=60 y=35}	
+			spriteType = "GFX_global_alert_icons"
+            frame = 33
+			pdx_tooltip = "PUPPETMAN_STATE_CLAIM"
+			scale = 0.75
+		}
+		
+		instantTextboxType = {
+			name = "claiming"
+			position = { x=100 y=40 }
+			textureFile = ""
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = "[Root.CLAIMING_INFO]"
+			maxWidth = 300
+			maxHeight = 100
+		}
+	}
+	
+	containerWindowType = {
+		name = "master_state_manager_powers_container"
+		position = {x=1250 y=150}
+		size = { width=500 height=500 }
+
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_BPT_areadef_conf_bg"
+		}
+
+		instantTextboxType = {
+			name = "title"
+			position = {x=14 y=6}
+			font = "hoi_18mbs"
+			text = "[This.GetName]"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+		}
+		
+		buttonType = {
+			name = "master_state_manager_power_transfer" 
+			position = {x=20 y=35}	
+			spriteType = "GFX_global_diplorequest_icons"
+            frame = 1
+			pdx_tooltip = "PUPPETMAN_MASTER_STATE_TRANSFER"
+			scale = 0.75
+		}
+		
+		buttonType = {
+			name = "master_state_manager_power_mark_for_transfer" 
+			position = {x=60 y=35}	
+			spriteType = "GFX_global_alert_icons"
+            frame = 37
+			pdx_tooltip = "PUPPETMAN_MASTER_STATE_MARK_FOR_TRANSFER"
+			scale = 0.75
+		}
+		
+		buttonType = {
+			name = "master_state_manager_power_unmark_for_transfer" 
+			position = {x=60 y=35}	
+			spriteType = "GFX_global_alert_icons"
+            frame = 38
+			pdx_tooltip = "PUPPETMAN_MASTER_STATE_UNMARK_FOR_TRANSFER"
+			scale = 0.75
+		}
+		
+		instantTextboxType = {
+			name = "claiming"
+			position = { x=100 y=25 }
+			textureFile = ""
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = "[This.mark_state_tooltip]"
+			maxWidth = 300
+			maxHeight = 100
+		}
+	}
+	
+	containerWindowType = {
+		name = "puppetman_subject_powers_container"
+		position = {x=1250 y=50}
+		size = { width=400 height=200 }
+
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_BPT_areadef_conf_bg"
+		}
+
+		instantTextboxType = {
+			name = "master_state_manager_headline"
+			position = {x=14 y=6}
+			font = "hoi_18mbs"
+			text = "[This.GetName]"
+			maxWidth = 340
+			maxHeight = 23
+			format = left
+		}
+		
+		buttonType = {
+			name = "found_national_integration_movement" 
+			position = {x=20 y=35}	
+			spriteType = "GFX_global_alert_icons"
+            frame = 29
+			pdx_tooltip = "FOUND_NIM"
+			pdx_tooltip_delayed = "FOUND_NIM_DELAYED"
+			scale = 0.75
+		}
+		
+		buttonType = {
+			name = "claim_colonial_states" 
+			position = {x=70 y=35}	
+			spriteType = "GFX_global_diplorequest_icons"
+            frame = 11 
+			pdx_tooltip = "CLAIM_COLONIES"
+			pdx_tooltip_delayed = "CLAIM_COLONIES_DELAYED"
+			scale = 0.75
+		}
+		
+		buttonType = {
+			name = "relocate_civilian_industry" 
+			position = {x=120 y=35}	
+			spriteType = "GFX_global_alert_icons"
+            frame = 42
+			pdx_tooltip = "RELOCATE_CIV_INDUSTRY"
+			pdx_tooltip_delayed = "RELOCATE_CIV_INDUSTRY_DELAYED"
+			scale = 0.75
+		}
+		
+		buttonType = {
+			name = "set_subject_free" 
+			position = {x=170 y=35}	
+			spriteType = "GFX_global_diplorequest_icons"
+            frame = 5
+			pdx_tooltip = "LET_HIM_GO"
+			pdx_tooltip_delayed = "LET_HIM_GO_DELAYED"
+			scale = 0.75
+		}
+		
+		buttonType = {
+			name = "award_states" 
+			position = {x=220 y=35}	
+			spriteType = "GFX_global_diplorequest_icons"
+            frame = 12
+			pdx_tooltip = "AWARD_STATES"
+			pdx_tooltip_delayed = "AWARD_STATES_DELAYED"
+			scale = 0.75
+		}
+	}
+	
+}

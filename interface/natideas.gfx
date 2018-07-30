@@ -1,0 +1,339 @@
+spriteTypes = {	
+	
+### NATECONOMIC ###
+	spriteType = {
+		name = "GFX_idea_nateconomic_0"
+		texturefile = "gfx/interface/ideas/natideas/economic/nateconomic_0.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_nateconomic_1"
+		texturefile = "gfx/interface/ideas/natideas/economic/nateconomic_1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_nateconomic_2"
+		texturefile = "gfx/interface/ideas/natideas/economic/nateconomic_2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_nateconomic_3"
+		texturefile = "gfx/interface/ideas/natideas/economic/nateconomic_3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_nateconomic_4"
+		texturefile = "gfx/interface/ideas/natideas/economic/nateconomic_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_nateconomic_5"
+		texturefile = "gfx/interface/ideas/natideas/economic/nateconomic_5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_nateconomic_6"
+		texturefile = "gfx/interface/ideas/natideas/economic/nateconomic_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_nateconomic_7"
+		texturefile = "gfx/interface/ideas/natideas/economic/nateconomic_7.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_nateconomic_8"
+		texturefile = "gfx/interface/ideas/natideas/economic/nateconomic_8.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_nateconomic_9"
+		texturefile = "gfx/interface/ideas/natideas/economic/nateconomic_9.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_nateconomic_10"
+		texturefile = "gfx/interface/ideas/natideas/economic/nateconomic_10.dds"
+	}
+	
+### NATEXPANSION ###
+	spriteType = {
+		name = "GFX_idea_natexpansion_0"
+		texturefile = "gfx/interface/ideas/natideas/expansion/natexpansion_0.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_natexpansion_1"
+		texturefile = "gfx/interface/ideas/natideas/expansion/natexpansion_1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_natexpansion_2"
+		texturefile = "gfx/interface/ideas/natideas/expansion/natexpansion_2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_natexpansion_3"
+		texturefile = "gfx/interface/ideas/natideas/expansion/natexpansion_3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_natexpansion_4"
+		texturefile = "gfx/interface/ideas/natideas/expansion/natexpansion_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_natexpansion_5"
+		texturefile = "gfx/interface/ideas/natideas/expansion/natexpansion_5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_natexpansion_6"
+		texturefile = "gfx/interface/ideas/natideas/expansion/natexpansion_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_natexpansion_7"
+		texturefile = "gfx/interface/ideas/natideas/expansion/natexpansion_7.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_natexpansion_8"
+		texturefile = "gfx/interface/ideas/natideas/expansion/natexpansion_8.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_natexpansion_9"
+		texturefile = "gfx/interface/ideas/natideas/expansion/natexpansion_9.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_natexpansion_10"
+		texturefile = "gfx/interface/ideas/natideas/expansion/natexpansion_10.dds"
+	}
+	
+### NATINNOVATION ###
+	spriteType = {
+		name = "GFX_idea_natinnovation_0"
+		texturefile = "gfx/interface/ideas/natideas/innovation/natinnovation_0.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_natinnovation_1"
+		texturefile = "gfx/interface/ideas/natideas/innovation/natinnovation_1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_natinnovation_2"
+		texturefile = "gfx/interface/ideas/natideas/innovation/natinnovation_2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_natinnovation_3"
+		texturefile = "gfx/interface/ideas/natideas/innovation/natinnovation_3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_natinnovation_4"
+		texturefile = "gfx/interface/ideas/natideas/innovation/natinnovation_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_natinnovation_5"
+		texturefile = "gfx/interface/ideas/natideas/innovation/natinnovation_5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_natinnovation_6"
+		texturefile = "gfx/interface/ideas/natideas/innovation/natinnovation_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_natinnovation_7"
+		texturefile = "gfx/interface/ideas/natideas/innovation/natinnovation_7.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_natinnovation_8"
+		texturefile = "gfx/interface/ideas/natideas/innovation/natinnovation_8.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_natinnovation_9"
+		texturefile = "gfx/interface/ideas/natideas/innovation/natinnovation_9.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_natinnovation_10"
+		texturefile = "gfx/interface/ideas/natideas/innovation/natinnovation_10.dds"
+	}
+	
+### NATDIPLOMATIC ###
+	spriteType = {
+		name = "GFX_idea_natdiplomatic_0"
+		texturefile = "gfx/interface/ideas/natideas/diplomatic/natdiplomatic_0.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_natdiplomatic_1"
+		texturefile = "gfx/interface/ideas/natideas/diplomatic/natdiplomatic_1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_natdiplomatic_2"
+		texturefile = "gfx/interface/ideas/natideas/diplomatic/natdiplomatic_2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_natdiplomatic_3"
+		texturefile = "gfx/interface/ideas/natideas/diplomatic/natdiplomatic_3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_natdiplomatic_4"
+		texturefile = "gfx/interface/ideas/natideas/diplomatic/natdiplomatic_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_natdiplomatic_5"
+		texturefile = "gfx/interface/ideas/natideas/diplomatic/natdiplomatic_5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_natdiplomatic_6"
+		texturefile = "gfx/interface/ideas/natideas/diplomatic/natdiplomatic_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_natdiplomatic_7"
+		texturefile = "gfx/interface/ideas/natideas/diplomatic/natdiplomatic_7.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_natdiplomatic_8"
+		texturefile = "gfx/interface/ideas/natideas/diplomatic/natdiplomatic_8.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_natdiplomatic_9"
+		texturefile = "gfx/interface/ideas/natideas/diplomatic/natdiplomatic_9.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_natdiplomatic_10"
+		texturefile = "gfx/interface/ideas/natideas/diplomatic/natdiplomatic_10.dds"
+	}
+	
+### NATQUALITY ###
+	spriteType = {
+		name = "GFX_idea_natquality_0"
+		texturefile = "gfx/interface/ideas/natideas/quality/natquality_0.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_natquality_1"
+		texturefile = "gfx/interface/ideas/natideas/quality/natquality_1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_natquality_2"
+		texturefile = "gfx/interface/ideas/natideas/quality/natquality_2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_natquality_3"
+		texturefile = "gfx/interface/ideas/natideas/quality/natquality_3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_natquality_4"
+		texturefile = "gfx/interface/ideas/natideas/quality/natquality_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_natquality_5"
+		texturefile = "gfx/interface/ideas/natideas/quality/natquality_5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_natquality_6"
+		texturefile = "gfx/interface/ideas/natideas/quality/natquality_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_natquality_7"
+		texturefile = "gfx/interface/ideas/natideas/quality/natquality_7.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_natquality_8"
+		texturefile = "gfx/interface/ideas/natideas/quality/natquality_8.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_natquality_9"
+		texturefile = "gfx/interface/ideas/natideas/quality/natquality_9.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_natquality_10"
+		texturefile = "gfx/interface/ideas/natideas/quality/natquality_10.dds"
+	}
+	
+### NATQUANTITY ###
+	spriteType = {
+		name = "GFX_idea_natquantity_0"
+		texturefile = "gfx/interface/ideas/natideas/quantity/natquantity_0.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_natquantity_1"
+		texturefile = "gfx/interface/ideas/natideas/quantity/natquantity_1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_natquantity_2"
+		texturefile = "gfx/interface/ideas/natideas/quantity/natquantity_2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_natquantity_3"
+		texturefile = "gfx/interface/ideas/natideas/quantity/natquantity_3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_natquantity_4"
+		texturefile = "gfx/interface/ideas/natideas/quantity/natquantity_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_natquantity_5"
+		texturefile = "gfx/interface/ideas/natideas/quantity/natquantity_5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_natquantity_6"
+		texturefile = "gfx/interface/ideas/natideas/quantity/natquantity_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_natquantity_7"
+		texturefile = "gfx/interface/ideas/natideas/quantity/natquantity_7.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_natquantity_8"
+		texturefile = "gfx/interface/ideas/natideas/quantity/natquantity_8.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_natquantity_9"
+		texturefile = "gfx/interface/ideas/natideas/quantity/natquantity_9.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_natquantity_10"
+		texturefile = "gfx/interface/ideas/natideas/quantity/natquantity_10.dds"
+	}
+	
+}

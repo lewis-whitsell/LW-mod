@@ -1,0 +1,30 @@
+
+state={
+	id=101
+	name="STATE_101"
+
+	history={
+		owner = GRN
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 2
+			12512 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = GRN
+		victory_points = {
+			12512 1 
+		}
+
+	}
+	manpower=58000
+	buildings_max_level_factor=1.000
+	state_category=state_level_10
+	provinces={
+		12512 
+	}
+	
+}

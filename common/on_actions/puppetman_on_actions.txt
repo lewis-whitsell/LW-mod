@@ -1,0 +1,31 @@
+on_actions = {
+
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				set_variable = { ROOT.marked_states = 0 }
+			}
+		}
+	}
+
+    on_daily = {
+		effect = {
+            if = {
+				limit = { NOT = { check_variable = { claiming = 0 } } }
+					
+				add_to_variable = { claiming_day = 1 }
+				if = {
+					limit = { check_variable = { claiming_day = 60 } }
+						
+					var:claiming = {
+						add_claim_by = ROOT
+						state_event = { id = puppetman.3 trigger_for = ROOT }
+					}
+				}
+			}
+        }
+    }
+}

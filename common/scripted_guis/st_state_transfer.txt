@@ -1,0 +1,241 @@
+scripted_gui = {
+
+	st_state_manager_powers = {
+	
+		context_type = selected_state_context
+		
+		window_name = "st_state_manager_powers_container"
+		
+		visible = {
+			ROOT = {
+				is_ai = no
+				has_country_flag = transfer_enabled
+			}
+			is_owned_and_controlled_by = ROOT
+		}
+		
+		effects = {
+			
+			st_state_manager_power_mark_for_transfer_click = {
+				FROM.FROM = { 
+					set_state_flag = marked_for_transfer
+					#set_demilitarized_zone = yes
+				}
+				add_to_variable = { ROOT.marked_states = 1 }
+			}
+			
+			st_state_manager_power_unmark_for_transfer_click = {
+				FROM.FROM = { 
+					clr_state_flag = marked_for_transfer 
+					#set_demilitarized_zone = no
+				}
+				subtract_from_variable = { ROOT.marked_states = 1 }
+			}
+			urbanize_state_click = {
+				ROOT = {
+					subtract_from_variable = { dx = 50 }
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			make_core_click = {
+				ROOT = {
+					subtract_from_variable = { dx = 50 }
+				}
+				if = {
+					limit = {
+						is_fully_controlled_by = ROOT
+						is_owned_by = ROOT
+						NOT = { 
+							is_core_of = ROOT
+						}
+					}
+					add_core_of = root 	
+				}
+			}
+
+			add_resources_steel_click = {
+				zz_steel_add = yes
+				ROOT = {
+					subtract_from_variable = { dx = 100 }
+				}
+			}
+			add_resources_aluminium_click = { 
+				zz_aluminium_add = yes
+				ROOT = {
+					subtract_from_variable = { dx = 100 }
+				}			}
+			add_resources_tungston_click = { 
+				zz_tungsten_add = yes
+				ROOT = {
+					subtract_from_variable = { dx = 100 }
+				}
+			}
+			add_resources_chromium_click = { 
+				zz_chromium_add = yes
+				ROOT = {
+					subtract_from_variable = { dx = 100 }
+				}
+			}
+			add_resources_oil_click = { 
+				zz_oil_add = yes
+				ROOT = {
+					subtract_from_variable = { dx = 100 }
+				}
+			}
+			add_resources_rubber_click = { 
+				zz_rubber_add = yes
+				ROOT = {
+					subtract_from_variable = { dx = 100 }
+				}
+			}
+			add_homes_click = {
+			zz_homes_add = yes
+				ROOT = {
+					subtract_from_variable = { dx = 200 }
+				}
+			}
+
+			construction_cic_click = {
+				save_event_target_as = target
+					add_building_construction = { 
+					type = industrial_complex
+					level = 1 
+					instant_build = yes 
+				} 
+				state_event = { id = build_building.10 days = 25  }
+				
+				ROOT = {
+					subtract_from_variable = { dx = 200 }
+				}
+			}
+			construction_mic_click = { 
+				save_event_target_as = target
+				add_building_construction = { 
+					type = arms_factory 
+					level = 1 
+					instant_build = yes 
+				}
+				state_event = { id = build_building.11 days = 25  }
+				ROOT = {
+					subtract_from_variable = { dx = 200 }
+				}			
+			}
+			construction_nic_click = { 
+				save_event_target_as = target
+				add_building_construction = { 
+					type = dockyard 
+					level = 1 
+					instant_build = yes 
+				}
+				state_event = { id = build_building.12 days = 25  }
+				ROOT = {
+					subtract_from_variable = { dx = 200 }
+				}
+			}
+			
+		}
+		
+		triggers = {
+		
+			st_state_manager_power_mark_for_transfer_click_enabled = {
+				FROM.FROM = {
+					NOT = { has_state_flag = marked_for_transfer }
+				}
+			}
+			st_state_manager_power_mark_for_transfer_visible = {
+				FROM.FROM = {
+					NOT = { has_state_flag = marked_for_transfer }
+				}
+			}
+			st_state_manager_power_unmark_for_transfer_visible = {
+				FROM.FROM = {
+					has_state_flag = marked_for_transfer
+				}
+			}
+
+			urbanize_state_click_enabled = {
+				root = {
+					check_variable = { dx > 49.99 }
+				}
+			}
+			make_core_click_enabled = {
+				is_fully_controlled_by = ROOT
+				is_owned_by = ROOT
+				NOT = { 
+					is_core_of = ROOT
+				}
+				root = {
+					check_variable = { dx > 49.99 }
+				}
+			}
+			
+			add_resources_steel_click_enabled = {
+				ROOT = {
+					check_variable = { dx > 99.99 }
+				}
+			}
+			add_resources_aluminium_click_enabled = {
+				ROOT = {
+					check_variable = { dx > 99.99 }
+				}
+			}
+			add_resources_tungston_click_enabled = {
+				ROOT = {
+					check_variable = { dx > 99.99 }
+				}
+			}
+			add_resources_chromium_click_enabled = {
+				ROOT = {
+					check_variable = { dx > 99.99 }
+				}
+			}
+			add_resources_oil_click_enabled = {
+				ROOT = {
+					check_variable = { dx > 99.99 }
+				}
+			}
+			add_resources_rubber_click_enabled = {
+				ROOT = {
+					check_variable = { dx > 99.99 }
+				}
+
+			}
+			add_homes_click_enabled = {
+				ROOT = {
+					check_variable = { dx > 199.99 }
+				}
+
+			}
+
+			construction_cic_click_enabled = {
+				ROOT = {
+					check_variable = { dx > 199.99 }
+				}
+			}
+			construction_mic_click_enabled = {
+				ROOT = {
+					check_variable = { dx > 199.99 }
+				}
+			}
+			construction_nic_click_enabled = {
+				ROOT = {
+					check_variable = { dx > 199.99 }
+				}
+			}
+			construction_ato_click_enabled = {
+				ROOT = {
+					check_variable = { dx > 199.99 }
+				}
+			}
+			construction_syn_click_enabled = {
+				ROOT = {
+					check_variable = { dx > 199.99 }
+				}
+			}
+
+		ai_test_scopes = test_self_controlled_states
+		
+	}
+	
+}
+

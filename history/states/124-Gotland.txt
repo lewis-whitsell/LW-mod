@@ -1,0 +1,31 @@
+
+state={
+	id=124
+	name="STATE_124"
+
+	history={
+		owner = DEN
+		victory_points = {
+			408 1 
+		}
+		add_core_of = SWE
+		add_core_of = DEN
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+			408 = {
+				naval_base = 1
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		408 
+	}
+	manpower=57255
+	buildings_max_level_factor=1.000
+	state_category=state_level_2
+}

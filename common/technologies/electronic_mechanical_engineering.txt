@@ -1,0 +1,1748 @@
+@1980 = 0
+@1990 = 2
+@2000 = 4
+@2002 = 6
+@2004 = 8
+@2006 = 10
+@2008 = 12
+@2010 = 14
+@2012 = 16
+@2014 = 18
+@2016 = 20
+@2018 = 22
+@2020 = 24
+@2024 = 26
+@2028 = 28
+
+@rck1950 = 2
+@rck1960 = 4
+@rck1970 = 6
+@rck1980 = 8
+@rck1990 = 10
+@rck2000 = 12
+@rck2002 = 14
+@rck2005 = 16
+@rck2010 = 18
+@rck2013 = 20
+@rck2015 = 22
+@rck2020 = 24
+@rck2025 = 26
+
+@far_left = -4
+@more_left = -3
+@left = -2
+@center_left = -1
+@center = 0
+@center_right = 1
+@right = 2
+@more_right = 3
+@far_right = 4
+
+technologies = {
+
+	cold_war_engineering = {
+		
+		path = {
+			leads_to_tech = modern_communication_systems
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = modern_university_systems 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = internet
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 1980
+		
+		folder = {
+			name = electronics_folder
+			position = { x = @center y = @1980 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		categories = {
+			electronics
+		}
+		
+		enable_building = {
+			building = radar_station
+			level = 1
+		}
+		
+	}
+	
+	modern_communication_systems = {
+
+		land_reinforce_rate = 0.02
+		
+		path = {
+			leads_to_tech = modern_detection_devices
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 1990
+		
+		folder = {
+			name = electronics_folder
+			position = { x = @left y = @1990 }
+		}
+		
+		folder = {
+			name = support_folder
+			position = { x = 11 y = 9 } # x = 12 y = 0
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+	
+	modern_detection_devices = {
+		
+		path = {
+			leads_to_tech = modern_detection_devices2
+			research_cost_coeff = 1
+		}
+		enable_building = {
+			building = radar_station
+			level = 2
+		}
+		
+		research_cost = 1.5
+		start_year = 2000
+		
+		folder = {
+			name = electronics_folder
+			position = { x = @left y = @2000 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+	}
+	modern_detection_devices2 = {
+		path = {
+			leads_to_tech = modern_detection_devices3
+			research_cost_coeff = 1
+		}
+		enable_building = {
+			building = radar_station
+			level = 3
+		}
+		
+		research_cost = 1.5
+		start_year = 2000
+		
+		folder = {
+			name = electronics_folder
+			position = { x = @left y = @2002 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+	}
+	modern_detection_devices3 = {
+		path = {
+			leads_to_tech = modern_detection_devices4
+			research_cost_coeff = 1
+		}
+		enable_building = {
+			building = radar_station
+			level = 4
+		}
+		
+		research_cost = 1.5
+		start_year = 2000
+		
+		folder = {
+			name = electronics_folder
+			position = { x = @left y = @2004 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+	}
+		modern_detection_devices4 = {
+		path = {
+			leads_to_tech = modern_detection_devices5
+			research_cost_coeff = 1
+		}
+		enable_building = {
+			building = radar_station
+			level = 5
+		}
+		
+		research_cost = 1.5
+		start_year = 2000
+		
+		folder = {
+			name = electronics_folder
+			position = { x = @left y = @2006 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+	}
+	modern_university_systems = {
+
+		research_time_factor = -0.01
+		
+		path = {
+			leads_to_tech = decryption_algorithm_1
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = encryption_algorithm_1 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1990
+		
+		folder = {
+			name = electronics_folder
+			position = { x = @center_right y = @1990 }
+		}
+		
+		ai_will_do = {
+			factor = 6
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}
+	
+	internet = {
+
+		research_time_factor = -0.01
+		land_reinforce_rate = 0.01
+		decryption = -1
+		encryption = -1
+		
+		path = {
+			leads_to_tech = protected_networks
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1990
+		
+		folder = {
+			name = electronics_folder
+			position = { x = @far_right y = @1990 }
+		}
+		
+		ai_will_do = {
+			factor = 6
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}
+	
+	protected_networks = {
+
+		decryption = 2
+		encryption = 2
+		
+		research_cost = 2
+		start_year = 2000
+		
+		path = {
+			leads_to_tech = modern_hardware_1
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = electronics_folder
+			position = { x = @far_right y = @2000 }
+		}
+		
+		ai_will_do = {
+			factor = 6
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}
+	
+	modern_hardware_1 = {
+		
+		research_time_factor = -0.02
+		
+		research_cost = 2.5
+		start_year = 2004
+		
+		path = {
+			leads_to_tech = modern_hardware_2
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = electronics_folder
+			position = { x = @far_right y = @2004 }
+		}
+		
+		ai_will_do = {
+			factor = 4
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}
+	
+	modern_hardware_2 = {
+		
+		research_time_factor = -0.02
+		
+		research_cost = 4
+		start_year = 2008
+		
+		folder = {
+			name = electronics_folder
+			position = { x = @far_right y = @2008 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}
+	
+	encryption_algorithm_1 = {
+
+		encryption = 1
+		
+		path = {
+			leads_to_tech = encryption_algorithm_2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 2000
+		
+		folder = {
+			name = electronics_folder
+			position = { x = @center y = @2000 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}
+	
+	encryption_algorithm_2 = {
+
+		encryption = 1
+		
+		path = {
+			leads_to_tech = encryption_algorithm_3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 2002
+		
+		folder = {
+			name = electronics_folder
+			position = { x = @center y = @2002 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}
+	
+	encryption_algorithm_3 = {
+
+		encryption = 1
+		
+		research_cost = 1
+		start_year = 2006
+		
+		folder = {
+			name = electronics_folder
+			position = { x = @center y = @2006 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}
+	
+	decryption_algorithm_1 = {
+
+		decryption = 1
+		
+		path = {
+			leads_to_tech = decryption_algorithm_2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 2000
+		
+		folder = {
+			name = electronics_folder
+			position = { x = @right y = @2000 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}
+	
+	decryption_algorithm_2 = {
+
+		decryption = 1
+		
+		path = {
+			leads_to_tech = decryption_algorithm_3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 2002
+		
+		folder = {
+			name = electronics_folder
+			position = { x = @right y = @2002 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}
+	
+	decryption_algorithm_3 = {
+
+		decryption = 1
+		
+		research_cost = 1
+		start_year = 2006
+		
+		folder = {
+			name = electronics_folder
+			position = { x = @right y = @2006 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}
+	
+		experimental_rockets = {
+
+
+		
+		path = {
+			leads_to_tech = rocket_engines 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1950
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = @rck1950 }
+		}
+	
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			rocketry
+		}
+	}
+	
+	rocket_engines = {
+
+		show_equipment_icon = yes
+
+		# can build v1s/rocket planes
+		#enable_equipments = {
+		#	rocket_interceptor_equipment_1
+		#	guided_missile_equipment_1
+		#}
+		
+		rocket_artillery = {
+			soft_attack = 0.05
+		}
+		rocket_artillery_brigade = {
+			soft_attack = 0.05
+		}
+		motorized_rocket_brigade = {
+			soft_attack = 0.05
+		}
+		
+		path = {
+			leads_to_tech = improved_rocket_engines 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1960
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = @rck1960 }
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			rocketry
+		}		
+	}
+	
+	improved_rocket_engines = {
+
+		show_equipment_icon = yes
+		
+		# can build v2s
+		
+		#enable_equipments = {
+		#	rocket_interceptor_equipment_2
+		#	guided_missile_equipment_2
+		#}
+		
+		rocket_artillery = {
+			soft_attack = 0.05
+		}
+		rocket_artillery_brigade = {
+			soft_attack = 0.05
+		}
+		motorized_rocket_brigade = {
+			soft_attack = 0.05
+		}
+		
+		path = {
+			leads_to_tech = advanced_rocket_engines 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1970
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = @rck1970 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			rocketry
+		}
+	}
+	
+	advanced_rocket_engines = {
+
+		show_equipment_icon = yes
+
+		# can build ICBMs?
+		path = {
+			leads_to_tech = srbm1 
+			research_cost_coeff = 1
+		}				
+		#enable_equipments = {
+		#	rocket_interceptor_equipment_3
+		#	guided_missile_equipment_3
+		#}
+		
+		rocket_artillery = {
+			soft_attack = 0.05
+		}
+		rocket_artillery_brigade = {
+			soft_attack = 0.05
+		}
+		motorized_rocket_brigade = {
+			soft_attack = 0.05
+		}
+		
+		research_cost = 1.5
+		start_year = 1980
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = @rck1980 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			rocketry
+		}
+	}
+
+	srbm1 = {
+
+		enable_equipments = {
+			srbm_equipment_1
+		}
+		path = {
+			leads_to_tech = srbm2
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 1990
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = @rck1990 }
+		}
+		
+		categories = {
+			nuclear
+			rocketry
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	
+	srbm2 = {
+	
+		enable_equipments = {
+			srbm_equipment_2
+		}
+
+		path = {
+			leads_to_tech = irbm1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = srbm3
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 2000
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = @rck2000 }
+		}
+		
+		categories = {
+			nuclear
+			rocketry
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	
+	srbm3 = {
+
+		enable_equipments = {
+			srbm_equipment_3
+		}
+	
+		path = {
+			leads_to_tech = srbm4
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 2010
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = @rck2010 }
+		}
+		
+		categories = {
+			nuclear
+			rocketry
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+
+	srbm4 = {
+
+		enable_equipments = {
+			srbm_equipment_4
+		}
+	
+		research_cost = 2
+		start_year = 2020
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = @rck2020 }
+		}
+		
+		categories = {
+			nuclear
+			rocketry
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+
+	irbm1 = {
+
+		enable_equipments = {
+			irbm_equipment_1
+		}
+				
+		path = {
+			leads_to_tech = icbm1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = irbm2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 2002
+		folder = {
+			name = electronics_folder
+			position = { x = @left y = @rck2002 }
+		}
+		
+		categories = {
+			nuclear
+			rocketry
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	
+	irbm2 = {
+
+		enable_equipments = {
+			irbm_equipment_2
+		}
+		
+		path = {
+			leads_to_tech = irbm3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 2010
+		folder = {
+			name = electronics_folder
+			position = { x = @left y = @rck2010 }
+		}
+		
+		categories = {
+			nuclear
+			rocketry
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	
+	irbm3 = {
+
+		enable_equipments = {
+			irbm_equipment_3
+		}
+		
+		path = {
+			leads_to_tech = irbm4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 2015
+		folder = {
+			name = electronics_folder
+			position = { x = @left y = @rck2015 }
+		}
+		
+		categories = {
+			nuclear
+			rocketry
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	
+	irbm4 = {
+
+		enable_equipments = {
+			irbm_equipment_4
+		}
+		
+		research_cost = 2
+		start_year = 2020
+		folder = {
+			name = electronics_folder
+			position = { x = @left y = @rck2020 }
+		}
+		
+		categories = {
+			nuclear
+			rocketry
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+
+	icbm1 = {
+
+		enable_equipments = {
+			icbm_equipment_1
+		}
+	
+		path = {
+			leads_to_tech = icbm2
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 2010
+		folder = {
+			name = electronics_folder
+			position = { x = @far_left y = @rck2010 }
+		}
+		
+		categories = {
+			nuclear
+			rocketry
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	
+	icbm2 = {
+	
+		enable_equipments = {
+			icbm_equipment_2
+		}
+		path = {
+			leads_to_tech = icbm3
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 2013
+		folder = {
+			name = electronics_folder
+			position = { x = @far_left y = @rck2013 }
+		}
+		
+		categories = {
+			nuclear
+			rocketry
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	
+	icbm3 = {
+
+		enable_equipments = {
+			icbm_equipment_3
+		}
+
+		decryption = 1
+	
+		path = {
+			leads_to_tech = icbm4
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 2015
+		folder = {
+			name = electronics_folder
+			position = { x = @far_left y = @rck2015 }
+		}
+		
+		categories = {
+			nuclear
+			rocketry
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	
+	icbm4 = {
+
+		enable_equipments = {
+			icbm_equipment_4
+		}
+
+		path = {
+			leads_to_tech = icbm5
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 2020
+		folder = {
+			name = electronics_folder
+			position = { x = @far_left y = @rck2020 }
+		}
+		
+		categories = {
+			nuclear
+			rocketry
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	
+	icbm5 = {
+
+		enable_equipments = {
+			icbm_equipment_5
+		}
+
+		research_cost = 2
+		start_year = 2025
+		folder = {
+			name = electronics_folder
+			position = { x = @far_left y = @rck2025 }
+		}
+		
+		categories = {
+			nuclear
+			rocketry
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	
+	atomic_research = {
+
+		research_time_factor = -0.02
+		
+		path = {
+			leads_to_tech = nuclear_reactor 
+			research_cost_coeff = 1
+		}
+		
+		start_year = 2004
+		research_cost = 5
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			nuclear
+		}
+		
+
+	}
+	
+	nuclear_reactor = {
+
+		# can build reactors
+		
+		start_year = 2007
+		research_cost = 5
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 2 }
+		}
+
+		path = {
+			leads_to_tech = nukes 
+			research_cost_coeff = 1
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			nuclear
+		}
+		
+		enable_building = {
+			building = nuclear_reactor
+			level = 1
+		}
+	}
+
+	nukes = {
+	
+		start_year = 2010
+		research_cost = 5
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		nuclear_production = 1
+		
+		categories = {
+			nuclear
+		}
+	}
+	########PCs
+	
+	ww_pc = {
+	
+		research_time_factor = -0.025
+	
+		path = {
+			leads_to_tech = hardware_I 
+			research_cost_coeff = 1
+		}
+	
+		path = {
+			leads_to_tech = software_I 
+			research_cost_coeff = 1
+		}
+	
+		research_cost = 1
+		start_year = 1940
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 75
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}	
+	}
+	
+###Hardware 	
+	
+	hardware_I = {
+		
+		research_time_factor = -0.01
+	
+		path = {
+			leads_to_tech = hardware_II
+			research_cost_coeff = 1
+		}
+	
+		research_cost = 3
+		start_year = 1955
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 70
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}
+	
+	hardware_II = {
+		
+		research_time_factor = -0.01
+	
+		path = {
+			leads_to_tech = hardware_III
+			research_cost_coeff = 1
+		}
+	
+		research_cost = 3
+		start_year = 1970
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 65
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}
+	
+	
+	hardware_III = {
+		
+		research_time_factor = -0.01
+	
+		path = {
+			leads_to_tech = hardware_IV
+			research_cost_coeff = 1
+		}
+	
+		research_cost = 3
+		start_year = 1990
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 60
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}
+	
+	
+	hardware_IV = {
+		
+		research_time_factor = -0.01
+	
+		path = {
+			leads_to_tech = hardware_V
+			research_cost_coeff = 1
+		}
+	
+		research_cost = 3
+		start_year = 2000
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 55
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}
+	
+	hardware_V = {
+		
+		research_time_factor = -0.01
+	
+		path = {
+			leads_to_tech = hardware_VI
+			research_cost_coeff = 1
+		}
+	
+		research_cost = 3
+		start_year = 2002
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}
+	
+	hardware_VI = {
+		
+		research_time_factor = -0.01
+	
+		path = {
+			leads_to_tech = hardware_VII
+			research_cost_coeff = 1
+		}
+	
+		research_cost = 3
+		start_year = 2004
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 45
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}
+	
+	hardware_VII = {
+		
+		research_time_factor = -0.01
+	
+		path = {
+			leads_to_tech = hardware_VIII
+			research_cost_coeff = 1
+		}
+	
+		research_cost = 3
+		start_year = 2006
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 40
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}
+	
+	hardware_VIII = {
+		
+		research_time_factor = -0.01
+	
+		path = {
+			leads_to_tech = hardware_IX
+			research_cost_coeff = 1
+		}
+	
+		research_cost = 3
+		start_year = 2008
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 35
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}
+	
+	hardware_IX = {
+		
+		research_time_factor = -0.01
+	
+		path = {
+			leads_to_tech = hardware_X
+			research_cost_coeff = 1
+		}
+	
+		research_cost = 3
+		start_year = 2010
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}
+	
+	hardware_X = {
+		
+		research_time_factor = -0.01
+	
+		path = {
+			leads_to_tech = hardware_XI
+			research_cost_coeff = 1
+		}
+	
+		research_cost = 3
+		start_year = 2012
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 20}
+		}
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}
+	
+	hardware_XI = {
+		
+		research_time_factor = -0.01
+	
+		research_cost = 3
+		start_year = 2014
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 22}
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}
+	
+###Software	
+	
+	software_I = {
+		
+		research_time_factor = -0.01
+	
+		path = {
+			leads_to_tech = software_II
+			research_cost_coeff = 1
+		}
+	
+		research_cost = 3
+		start_year = 1955
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 3 }
+		}
+		
+		ai_will_do = {
+			factor = 70
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}
+	
+	software_II = {
+		
+		research_time_factor = -0.01
+	
+		path = {
+			leads_to_tech = software_III
+			research_cost_coeff = 1
+		}
+	
+		research_cost = 3
+		start_year = 1970
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 5 }
+		}
+		
+		ai_will_do = {
+			factor = 2010
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}
+	
+	
+	software_III = {
+		
+		research_time_factor = -0.01
+	
+		path = {
+			leads_to_tech = software_IV
+			research_cost_coeff = 1
+		}
+	
+		research_cost = 3
+		start_year = 1990
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 7 }
+		}
+		
+		ai_will_do = {
+			factor = 2012
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}
+	
+	
+	software_IV = {
+		
+		research_time_factor = -0.01
+	
+		path = {
+			leads_to_tech = software_V
+			research_cost_coeff = 1
+		}
+	
+		research_cost = 3
+		start_year = 2000
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 9 }
+		}
+		
+		ai_will_do = {
+			factor = 55
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}
+	
+	software_V = {
+		
+		research_time_factor = -0.01
+	
+		path = {
+			leads_to_tech = software_VI
+			research_cost_coeff = 1
+		}
+	
+		research_cost = 3
+		start_year = 2002
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 11 }
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}
+	
+	software_VI = {
+		
+		research_time_factor = -0.01
+	
+		path = {
+			leads_to_tech = software_VII
+			research_cost_coeff = 1
+		}
+	
+		research_cost = 3
+		start_year = 2004
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 13 }
+		}
+		
+		ai_will_do = {
+			factor = 45
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}
+	
+	software_VII = {
+		
+		research_time_factor = -0.01
+	
+		path = {
+			leads_to_tech = software_VIII
+			research_cost_coeff = 1
+		}
+	
+		research_cost = 3
+		start_year = 2006
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 15 }
+		}
+		
+		ai_will_do = {
+			factor = 40
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}
+	
+	software_VIII = {
+		
+		research_time_factor = -0.01
+	
+		path = {
+			leads_to_tech = software_IX
+			research_cost_coeff = 1
+		}
+	
+		research_cost = 3
+		start_year = 2008
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 17 }
+		}
+		
+		ai_will_do = {
+			factor = 35
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}
+	
+	software_IX = {
+		
+		research_time_factor = -0.01
+	
+		path = {
+			leads_to_tech = software_X
+			research_cost_coeff = 1
+		}
+	
+		research_cost = 3
+		start_year = 2010
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 19 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}
+	
+	software_X = {
+		
+		research_time_factor = -0.01
+	
+		research_cost = 3
+		start_year = 2012
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 21 }
+		}
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}
+}

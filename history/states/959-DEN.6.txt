@@ -1,0 +1,34 @@
+state={
+	id=959
+	name="STATE_959"
+	provinces={
+		316 394 399 3206 6235 
+	}
+		manpower=3500000
+		buildings_max_level_factor=1.000
+		state_category=state_level_10
+		history={
+		owner = DEN
+		add_core_of = DEN
+		victory_points = {
+			399 5  
+		}
+		victory_points = {
+			6235 5  
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 3
+			arms_factory = 1
+			dockyard = 1
+			air_base = 1
+			399 = {
+				naval_base = 2
+
+			}
+
+		}
+
+	}
+
+}

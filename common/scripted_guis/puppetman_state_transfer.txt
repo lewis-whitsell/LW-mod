@@ -1,0 +1,209 @@
+scripted_gui = {
+
+	puppet_state_manager_powers = {
+	
+		context_type = selected_state_context
+		
+		window_name = "puppet_state_manager_powers_container"
+		
+		visible = {
+			ROOT = {
+                has_legitimate_subject = yes
+			}
+			subject_state = yes
+		}
+		
+		effects = {
+			puppet_state_manager_power_transfer_click = {
+				ROOT = { 
+					add_political_power = -50 
+				}
+				
+				every_country  = {
+					limit = { owns_state = FROM.FROM }
+					if = {
+						limit = { 
+							FROM.FROM = { 
+								is_core_of = PREV
+							} 
+						}
+						add_autonomy_ratio = { value = 0.3 localization = STATES_TAKEN }
+						else = {
+							if = {
+								limit = { 
+									FROM.FROM = { 
+										AND = {
+											NOT = { is_core_of = PREV }
+											is_in_home_area = yes
+										}
+									} 
+								}
+								add_autonomy_ratio = { value = 0.1 localization = STATES_TAKEN }
+								else = {
+									add_autonomy_ratio = { value = 0.05 localization = STATES_TAKEN }
+								}	
+							}
+						}
+					}
+					country_event = puppetman.1
+					OVERLORD = { transfer_state = FROM.FROM }
+				}
+			}
+			
+			puppet_state_manager_power_claim_click = {
+				set_variable = { ROOT.claiming = this }
+				set_variable = { ROOT.claiming_day = 0 }
+				ROOT = { 
+					add_political_power = -100 
+				}
+			}
+			
+		}
+		
+		triggers = {
+			puppet_state_manager_power_transfer_click_enabled = {
+				check_variable = { ROOT.political_power > 49.99 }
+				OR = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			
+			puppet_state_manager_power_claim_click_enabled = {
+				check_variable = { ROOT.political_power > 99.99 }
+				check_variable = { ROOT.claiming = 0 }
+				AND = {
+					NOT = { is_core_of = ROOT }
+					NOT = { is_claimed_by = ROOT }
+				}
+				ROOT = { NOT = { has_government = democratic } }
+			}
+		}
+		
+		ai_test_scopes = test_if_only_major
+		
+		ai_enabled = {
+            has_legitimate_subject = yes
+		}
+        
+		ai_check = {
+			check_variable = { ROOT.political_power > 199.99 }
+			check_variable = { ai_random > 0.65 }
+		}
+		
+		ai_weights = {
+			puppet_state_manager_power_transfer_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = 200
+						FROM.FROM = { is_core_of = ROOT }
+					}
+				}
+			}
+			
+			puppet_state_manager_power_claim_click = {
+				ai_will_do = {
+					factor = 0
+				}
+			}
+		}
+	}
+	
+	master_state_manager_powers = {
+	
+		context_type = selected_state_context
+		
+		window_name = "master_state_manager_powers_container"
+		
+		visible = {
+			ROOT = {
+                has_legitimate_subject = yes
+			}
+			is_owned_by = ROOT
+		}
+		
+		effects = {
+			master_state_manager_power_transfer_click = {
+				ROOT = { 
+					add_political_power = -50 
+				}
+				
+				every_country  = {
+					limit = { 
+						FROM.FROM = { is_core_of = PREV } 
+						is_subject_of = ROOT
+					}
+					add_autonomy_ratio = { value = -0.2 localization = STATES_TAKEN }
+					country_event = puppetman.2
+					transfer_state = FROM.FROM 
+				}
+			}
+			
+			master_state_manager_power_mark_for_transfer_click = {
+				FROM.FROM = { set_state_flag = marked_for_transfer }
+				add_to_variable = { ROOT.marked_states = 10 }
+			}
+			
+			master_state_manager_power_unmark_for_transfer_click = {
+				FROM.FROM = { clr_state_flag = marked_for_transfer }
+				subtract_from_variable = { ROOT.marked_states = 10 }
+			}
+		}
+		
+		triggers = {
+			master_state_manager_power_transfer_click_enabled = {
+				check_variable = { ROOT.political_power > 49.99 }
+				master_subject_state = yes
+			}
+			master_state_manager_power_mark_for_transfer_click_enabled = {
+				FROM.FROM = {
+					NOT = { has_state_flag = marked_for_transfer }
+				}
+				check_variable = { ROOT.marked_states < 100 }
+			}
+			master_state_manager_power_mark_for_transfer_visible = {
+				FROM.FROM = {
+					NOT = { has_state_flag = marked_for_transfer }
+				}
+			}
+			master_state_manager_power_unmark_for_transfer_visible = {
+				FROM.FROM = {
+					has_state_flag = marked_for_transfer
+				}
+			}
+		}
+		
+		
+		ai_test_scopes = test_self_controlled_states
+		
+		ai_enabled = {
+            has_legitimate_subject = yes
+		}
+        
+		ai_check = {
+			check_variable = { ROOT.political_power > 199.99 }
+			check_variable = { ai_random > 0.65 }
+		}
+		
+		ai_weights = {
+			master_state_manager_power_transfer_click = {
+				ai_will_do = {
+					factor = 0
+				}
+			}
+			master_state_manager_power_mark_for_transfer_click = {
+				ai_will_do = {
+					factor = 0
+				}
+			}
+			master_state_manager_power_unmark_for_transfer_click = {
+				ai_will_do = {
+					factor = 0
+				}
+			}
+		}
+	}
+	
+}
+

@@ -1,0 +1,109 @@
+defined_text = { # Country
+	name = CLAIMING_INFO
+
+	text = {
+		trigger = {
+			check_variable = { claiming = 0 }
+		}
+		localization_key = CLAIMING_INFO_NO
+	}
+	text = {
+		localization_key = CLAIMING_INFO_YES
+	}
+}
+
+defined_text = { # Country
+	name = puppetman_state_claim_tooltip
+
+	text = {
+		trigger = {
+			NOT = { check_variable = { claiming = 0 } }
+		}
+		localization_key = puppetman_state_claim_no1
+	}
+	text = {
+		trigger = {
+			ROOT = { has_government = democratic }
+		}
+		localization_key = puppetman_state_claim_no2
+	}
+	text = {
+		trigger = {
+			check_variable = { claiming = 0 }
+		}
+		localization_key =  puppetman_state_claim_yes
+	}
+}
+
+defined_text = { # Country
+	name = claim_colonies_tooltip
+
+	text = {
+		trigger = {
+			any_owned_state = {
+				AND = {
+					NOT = { is_in_home_area = yes }
+					NOT = { is_claimed_by = OVERLORD }
+					NOT = { is_core_of = ROOT }
+				}
+			}
+		}
+		localization_key = claim_colonies_yes
+	}
+	text = {
+		localization_key = claim_colonies_no
+	}
+}
+
+defined_text = { # Country
+	name = found_nim_tooltip
+
+	text = {
+		trigger = {
+			has_idea = national_integration_movement
+		}
+		localization_key = found_nim_no
+	}
+	text = {
+		localization_key = found_nim_yes
+	}
+}
+
+defined_text = { # Country
+	name = relocate_civilian_industry_tooltip
+
+	text = {
+		trigger = {
+			is_subject = no
+			has_idea = civilian_industry_relocated_out
+		}
+		localization_key = relocate_civilian_industry_no
+	}
+	text = {
+		trigger = {
+			is_subject = no
+		}
+		localization_key = relocate_civilian_industry_yes
+	}
+	text = {
+		trigger = {
+			is_subject = yes
+			num_of_civilian_factories_available_for_projects < 15
+		}
+		localization_key = relocate_civilian_industry_subject_no
+	}
+}
+
+defined_text = { # state
+	name = mark_state_tooltip
+
+	text = {
+		trigger = {
+			has_state_flag = marked_for_transfer
+		}
+		localization_key = mark_state_no
+	}
+	text = {
+		localization_key = mark_state_yes
+	}
+}

@@ -1,0 +1,73 @@
+seek_ethiopian_alliance = {
+
+	enable = {
+		has_country_flag = seeks_ethiopian_alliance
+	}
+	
+	abort = {
+		NOT = { has_country_flag = seeks_ethiopian_alliance }
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "ETH"
+		value = 50
+	}
+	ai_strategy = {
+		type = alliance
+		id = "ETH"
+		value = 125
+	}
+}
+
+main_eth_mood = {
+
+	enable = {
+		tag = ETH
+	}
+	
+	abort = {
+		
+	}
+	
+	ai_strategy = {
+		type = contain
+		id = "MAD"
+		value = 10
+	}
+	ai_strategy = {
+		type = contain
+		id = "SAF"
+		value = 50
+	}
+	ai_strategy = {
+		type = contain
+		id = "NIG"
+		value = 50
+	}
+	ai_strategy = {
+		type = conquer
+		id = "UGA"
+		value = 125
+	}
+	ai_strategy = {
+		type = conquer
+		id = "CHD"
+		value = 125
+	}
+	ai_strategy = {
+		type = conquer
+		id = "TNZ"
+		value = 125
+	}
+	ai_strategy = {
+		type = conquer
+		id = "CAF"
+		value = 125
+	}
+	ai_strategy = {
+		type = conquer
+		id = "DRC"
+		value = 125
+	}
+}

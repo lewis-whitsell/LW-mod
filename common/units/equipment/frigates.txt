@@ -1,0 +1,273 @@
+equipments = {
+
+	frigate = {
+		is_archetype = yes
+		is_buildable = no
+		type = screen_ship
+		
+		interface_category = interface_category_screen_ships
+		
+		upgrades = {
+			ship_torpedo_upgrade
+			destroyer_engine_upgrade
+			ship_ASW_upgrade
+			ship_anti_air_upgrade
+		}
+
+		ap_attack = 4
+		attack = 4
+		fire_range = 12
+		torpedo_attack = 100
+		sub_attack = 30
+
+		anti_air_attack = 8
+
+		armor_value = 0
+		evasion = 145
+
+		surface_detection = 50
+		sub_detection = 80
+		surface_visibility = 6
+		naval_speed = 35
+		reliability = 0.95
+
+		naval_range = 2333
+
+		max_strength = 53
+
+		port_capacity_usage = 1
+
+		type = {
+			screen_ship
+			anti_air
+		}
+		build_cost_ic = 900
+		resources = {
+			oil = 2
+			steel = 3
+		}
+		manpower = 333
+	}
+
+	frigate_1 = {
+		archetype = frigate
+		priority = 20
+		type = { 
+			screen_ship
+			anti_air
+		}
+
+	}
+	
+	frigate_2 = {
+		archetype = frigate
+		parent = frigate_1
+		priority = 20
+		
+		ap_attack = 50
+		attack = 40
+		fire_range = 20
+		torpedo_attack = 7
+		sub_attack = 40
+
+		anti_air_attack = 20
+
+		armor_value = 0
+		evasion = 70
+
+		surface_detection = 56
+		sub_detection = 86
+		surface_visibility = 6
+		naval_speed = 36
+		reliability = 0.95
+
+		naval_range = 2666
+
+		max_strength = 120
+
+		port_capacity_usage = 1
+
+		type = {
+			screen_ship
+			anti_air
+		}
+
+		build_cost_ic = 3000
+		resources = {
+			oil = 2
+			steel = 4
+			chromium = 1
+		}
+		manpower = 366
+	}
+	
+	frigate_3 = {
+		archetype = frigate
+		parent = frigate_2
+		priority = 20
+		
+		ap_attack = 75
+		attack = 60
+		torpedo_attack = 150
+		sub_attack = 50
+		fire_range = 40
+
+		anti_air_attack = 50
+
+		armor_value = 0
+		evasion = 75
+
+		surface_detection = 63
+		sub_detection = 93
+		surface_visibility = 6
+		naval_speed = 40
+		reliability = 0.95
+
+		naval_range = 3000
+
+		max_strength = 260
+
+		port_capacity_usage = 1
+
+		type = {
+			screen_ship
+			anti_air
+		}
+
+		build_cost_ic = 6000
+		resources = {
+			oil = 2
+			steel = 5
+			chromium = 2
+		}
+		manpower = 366
+	}
+	
+	frigate_4 = {
+		archetype = frigate
+		parent = frigate_3
+		priority = 20
+		
+		ap_attack = 75
+		attack = 80
+		torpedo_attack = 8.5
+		sub_attack = 60
+		shore_bombardment = 6
+		fire_range = 40
+
+		anti_air_attack = 75
+
+		armor_value = 0
+		evasion = 75
+
+		surface_detection = 70
+		sub_detection = 100
+		surface_visibility = 6
+		naval_speed = 37
+		reliability = 0.95
+
+		naval_range = 3333
+
+		max_strength = 260
+
+		port_capacity_usage = 1
+
+		type = {
+			screen_ship
+			anti_air
+		}
+		build_cost_ic = 7000
+		resources = {
+			oil = 3
+			steel = 6
+			chromium = 3
+		}
+		manpower = 366
+	}
+	
+	frigate_5 = {
+		archetype = frigate
+		parent = frigate_4
+		priority = 20
+		
+		ap_attack = 100
+		attack = 100
+		torpedo_attack = 250
+		sub_attack = 100
+		shore_bombardment = 9
+		fire_range = 50
+
+		anti_air_attack = 75
+
+		armor_value = 0
+		evasion = 125
+
+		surface_detection = 103
+		sub_detection = 133
+		surface_visibility = 6
+		naval_speed = 40
+		reliability = 0.95
+
+		naval_range = 8000
+
+		max_strength = 260
+
+		port_capacity_usage = 1
+
+		type = {
+			screen_ship
+			anti_air
+		}
+
+		build_cost_ic = 12000
+		resources = {
+			oil = 4
+			steel = 6
+			chromium = 3
+		}
+		manpower = 366
+	}
+	
+	frigate_6 = {
+		archetype = frigate
+		parent = frigate_5
+		priority = 20
+		
+		ap_attack = 100
+		attack = 120
+		torpedo_attack = 250
+		sub_attack = 110
+		shore_bombardment = 30
+		fire_range = 55
+
+		anti_air_attack = 100
+
+		armor_value = 0
+		evasion = 150
+
+		surface_detection = 116
+		sub_detection = 146
+		surface_visibility = 6
+		naval_speed = 40
+		reliability = 0.95
+
+		naval_range = 8000
+
+		max_strength = 260
+
+		port_capacity_usage = 1
+
+		type = {
+			screen_ship
+			anti_air
+		}
+
+		build_cost_ic = 15000
+		resources = {
+			oil = 5
+			steel = 6
+			chromium = 3
+		}
+		manpower = 366
+	}
+}

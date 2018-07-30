@@ -1,0 +1,26 @@
+﻿units = {
+	navy = {
+		name = "Offshore Combat Force2"
+		base = 4170
+		location = 4170
+		ship = { name = "Refurb FF 21" definition = frigate equipment = { frigate_1 = { amount = 1 owner = CYP } } }
+		ship = { name = "Refurb FF 22" definition = frigate equipment = { frigate_1 = { amount = 1 owner = CYP } } }
+		ship = { name = "Refurb FF 23" definition = frigate equipment = { frigate_1 = { amount = 1 owner = CYP } } }
+		ship = { name = "Refurb FF 24" definition = frigate equipment = { frigate_1 = { amount = 1 owner = CYP } } }
+		ship = { name = "Refurb FF 25" definition = frigate equipment = { frigate_1 = { amount = 1 owner = CYP } } }
+		ship = { name = "Refurb FF 26" definition = frigate equipment = { frigate_1 = { amount = 1 owner = CYP } } }
+		ship = { name = "Refurb DD 21" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CYP } } }
+		ship = { name = "Refurb DD 22" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CYP } } }
+		ship = { name = "Refurb DD 23" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CYP } } }
+		ship = { name = "Refurb DD 24" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CYP } } }
+		ship = { name = "Refurb LHD 21" definition = LHD equipment = { LHD_1 = { amount = 1 owner = CYP } } }
+		ship = {
+			name = "Refurb CV 21" 
+			definition = carrier 
+			equipment = { carrier_1 = { amount = 1 owner = CYP } }
+			air_wings = {
+			}
+		}
+	}
+}	
+
