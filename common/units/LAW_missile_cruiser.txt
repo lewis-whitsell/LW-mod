@@ -1,6 +1,6 @@
 sub_units = {
 	missile_cruiser = {
-		sprite = battle_cruiser
+		sprite = battleship
 		map_icon_category = ship
 		priority = 7
 		active = yes
