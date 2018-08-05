@@ -24,7 +24,7 @@ equipments = {
 	}
 	#1975
 	support_equipment_0 = {
-		year = 1960
+		year = 1970
 		
 		archetype = support_equipment
 		active = no
@@ -48,7 +48,7 @@ equipments = {
 	}
 	#1985
 	support_equipment_1 = {
-		year = 1980
+		year = 1990
 		
 		archetype = support_equipment
 		parent = support_equipment_0
@@ -71,7 +71,7 @@ equipments = {
 	}
 	#1995
 	support_equipment_2 = {
-		year = 1990
+		year = 2000
 		
 		archetype = support_equipment
 		parent = support_equipment_1
@@ -94,7 +94,7 @@ equipments = {
 	}
 	#2005
 	support_equipment_3 = {
-		year = 2005
+		year = 2006
 		
 		archetype = support_equipment
 		parent = support_equipment_2
@@ -117,7 +117,7 @@ equipments = {
 	}
 	#2015
 	support_equipment_4 = {
-		year = 2015
+		year = 2012
 		
 		archetype = support_equipment
 		parent = support_equipment_3
@@ -140,7 +140,7 @@ equipments = {
 	}
 	#2025
 	support_equipment_5 = {
-		year = 2025
+		year = 2020
 		
 		archetype = support_equipment
 		parent = support_equipment_4
@@ -163,7 +163,7 @@ equipments = {
 	}
 	#2035
 	support_equipment_6 = {
-		year = 2035
+		year = 2030
 		
 		archetype = support_equipment
 		parent = support_equipment_5
