@@ -6,9 +6,9 @@
 @frigate_line = 3
 @frigate_lower_line = 4
 
-@destroyer_upper_line = 5
+@destroyer_upper_line = 6
 @destroyer_main_line = 7
-@destroyer_lower_line = 9
+@destroyer_lower_line = 8
 
 @cruiser_upper_line = 9
 @cruiser_main_line = 10
@@ -25,12 +25,13 @@
 @LHD_main_line = 22
 @LHD_lower_line = 24
 
-@ssn = 22
-@ssbn = 24
-@submarine_main_line = 26
-@submarine_lower_line = 28
+@ssn = 26
+@sub_upg_mid = 27	
+@ssbn = 28
+@submarine_main_line = 30
+@submarine_lower_line = 32
 @ASM = 11
-@SLBM = 32
+@SLBM = 34
 
 #year coordinates
 
@@ -42,7 +43,9 @@
 @1980 = 10
 @1980_2 = 12
 @2000 = 16
+@2000_2 = 20
 @2002 = 22
+@2003 = 24
 @2004 = 28
 @2006 = 34
 @2008 = 40
@@ -536,9 +539,14 @@ frigate_stats = {
 			leads_to_tech = destroyer2
 			research_cost_coeff = 1
 		}
-		
+
 		path = {
-			leads_to_tech = destroyer_improved_engines
+			leads_to_tech = destroyer_stats
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = destroyer_cost
 			research_cost_coeff = 1
 		}
 		
@@ -579,13 +587,13 @@ frigate_stats = {
 		
 		research_cost = 0.5
 		
-		start_year = 1960
+		start_year = 2000
 		
 		folder = {
 			name = naval_folder
 			position = {
 				x = @destroyer_upper_line
-				y = @1960_2
+				y = @2000_2
 			}
 		}
 		
@@ -610,13 +618,13 @@ frigate_stats = {
 		
 		research_cost = 1.25
 		
-		start_year = 1960
+		start_year = 2003
 		
 		folder = {
 			name = naval_folder
 			position = {
 				x = @destroyer_upper_line
-				y = @1960_3
+				y = @2003
 			}
 		}
 		
@@ -643,24 +651,19 @@ frigate_stats = {
 		}
 
 		path = {
-			leads_to_tech = destroyer_stats
+			leads_to_tech = destroyer_improved_engines
 			research_cost_coeff = 1
 		}
-
-		path = {
-			leads_to_tech = destroyer_cost
-			research_cost_coeff = 1
-		}
-		
+	
 		research_cost = 1.5
 
-		start_year = 1980
+		start_year = 2000
 		
 		folder = {
 			name = naval_folder
 			position = {
 				x = @destroyer_main_line
-				y = @1980
+				y = @2000
 			}
 		}
 		
@@ -692,13 +695,13 @@ frigate_stats = {
 		
 		research_cost = 1.75
 
-		start_year = 2002
+		start_year = 2004
 		
 		folder = {
 			name = naval_folder
 			position = {
 				x = @destroyer_main_line
-				y = @2002
+				y = @2004
 			}
 		}
 		
@@ -723,13 +726,13 @@ frigate_stats = {
 		
 		research_cost = 2.25
 
-		start_year = 2002
+		start_year = 2006
 		
 		folder = {
 			name = naval_folder
 			position = {
 				x = @destroyer_upper_line
-				y = @2002
+				y = @2006
 			}
 		}
 		
@@ -888,7 +891,7 @@ frigate_stats = {
 
 	research_cost = 1
 	
-	start_year = 2000
+	start_year = 1980
 
 	XOR = {
             destroyer_stats
@@ -898,7 +901,7 @@ frigate_stats = {
 		name = naval_folder
 		position = {
 			x = @destroyer_upper_line
-			y = @2000
+			y = @1980
 		}
 	}
 	
@@ -927,7 +930,7 @@ destroyer_stats = {
 
 	research_cost = 1
 	
-	start_year = 2000
+	start_year = 1980
 
 	XOR = {
             destroyer_cost
@@ -937,7 +940,7 @@ destroyer_stats = {
 		name = naval_folder
 		position = {
 			x = @destroyer_lower_line
-			y = @2000
+			y = @1980
 		}
 	}
 	
@@ -1306,7 +1309,6 @@ missile_cruiser_stats = {
 			position = {
 				x = @carrier_upper_line
 				y = @1960_2
-			}
 		}
 		
 		ai_will_do = {
@@ -1359,10 +1361,68 @@ missile_cruiser_stats = {
 		carrier = {
 			carrier_size = 0.2
 		}
+			
+		research_cost = 1
+		
+		start_year = 2002
+		
+		folder = {
+			name = naval_folder
+			position = {
+				x = @carrier_catapult_upg_up
+				y = @2002
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			cv_tech
+		}
+		
+	}
+
+	carrier_def1 = {
+	
+		carrier = {
+			carrier_size = 0.2
+		}
 		
 		path = {
-			leads_to_tech = carrier_catapult
+			leads_to_tech = carrier_def2
 			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		
+		start_year = 2000
+		
+		folder = {
+			name = naval_folder
+			position = {
+				x = @carrier_catapult_upg_dwn
+				y = @2000
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			cv_tech
+		}
+		
+	}
+
+	carrier_def2 = {
+	
+		carrier = {
+			carrier_size = 0.2
 		}
 		
 		research_cost = 1
@@ -1372,7 +1432,7 @@ missile_cruiser_stats = {
 		folder = {
 			name = naval_folder
 			position = {
-				x = @carrier_catapult_upg_up
+				x = @carrier_catapult_upg_dwn
 				y = @2002
 			}
 		}
@@ -1612,6 +1672,11 @@ carrier_stats = {
 			research_cost_coeff = 1
 		}
 
+		path = {
+			leads_to_tech = carrier_def1
+			research_cost_coeff = 1
+		}
+
 	start_year = 1980
 
 	XOR = {
@@ -1647,6 +1712,16 @@ carrier_stats = {
 			leads_to_tech = lhd2
 			research_cost_coeff = 1
 		}
+
+		path = {
+			leads_to_tech = lhd_cost
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = lhd_stats
+			research_cost_coeff = 1
+		}
 		
 		research_cost = 3
 		
@@ -1670,6 +1745,85 @@ carrier_stats = {
 		}
 		
 	}
+
+	LHD_cost = {
+
+    LHD = {
+    	build_cost_ic = -0.4 
+    	fire_range = -0.2
+    	naval_speed = -0.2 
+    	evasion = -0.2
+    	surface_detection = -0.2
+    	sub_detection = -0.2
+    	surface_visibility = -0.2
+    	naval_range = -0.2
+    }
+
+	research_cost = 1
+	
+	start_year = 1980
+
+	XOR = {
+            LHD_stats
+        }
+	
+	folder = {
+		name = naval_folder
+		position = {
+			x = @LHD_upper_line
+			y = @1980
+		}
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+	
+	categories = {
+		naval_equipment
+	}
+	
+}
+
+LHD_stats = {
+
+    LHD = {
+    	build_cost_ic = 0.2 
+    	fire_range = 0.15
+    	naval_speed = 0.15 
+    	evasion = 0.15
+    	surface_detection = 0.15
+    	sub_detection = 0.15
+    	surface_visibility = 0.15
+    	naval_range = 0.15
+    }
+
+	research_cost = 1
+	
+	start_year = 1980
+
+	XOR = {
+            LHD_cost
+        }
+	
+	folder = {
+		name = naval_folder
+		position = {
+			x = @LHD_lower_line
+			y = @1980
+		}
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+	
+	categories = {
+		naval_equipment
+	}
+	
+}
+
 	lhd2 = {
 		
 		enable_equipments = {
@@ -1873,7 +2027,7 @@ carrier_stats = {
 		folder = {
 			name = naval_folder
 			position = {
-				x = 23
+				x = @sub_upg_mid
 				y = @1960
 			}
 		}
