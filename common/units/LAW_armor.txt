@@ -41,11 +41,11 @@ sub_units = {
 
 		essential = {
 			infantry_equipment
-			armored_engineering_equipment
+			modern_tank_equipment
 		}
 
 		need = {
-			armored_engineering_equipment = 60
+			modern_tank_equipment = 60
 			support_equipment = 10
 		}
 
