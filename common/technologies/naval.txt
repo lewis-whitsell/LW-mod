@@ -10,20 +10,20 @@
 @destroyer_main_line = 7
 @destroyer_lower_line = 8
 
-@cruiser_upper_line = 9
-@cruiser_main_line = 10
-@cruiser_lower_line = 11
+@cruiser_upper_line = 10
+@cruiser_main_line = 11
+@cruiser_lower_line = 12
 
-@carrier_upper_line = 13
-@carrier_main_line = 15
-@carrier_catapult_upg_up =16
-@carrier_lower_line = 17
-@carrier_catapult_upg_dwn = 18
+@carrier_upper_line = 14
+@carrier_main_line = 16
+@carrier_catapult_upg_up =17
+@carrier_lower_line = 18
+@carrier_catapult_upg_dwn = 19
 
 
-@LHD_upper_line = 20
+@LHD_upper_line = 21
 @LHD_main_line = 22
-@LHD_lower_line = 24
+@LHD_lower_line = 23
 
 @ssn = 26
 @sub_upg_mid = 27	
@@ -1309,6 +1309,7 @@ missile_cruiser_stats = {
 			position = {
 				x = @carrier_upper_line
 				y = @1960_2
+			}
 		}
 		
 		ai_will_do = {
@@ -1714,12 +1715,12 @@ carrier_stats = {
 		}
 
 		path = {
-			leads_to_tech = lhd_cost
+			leads_to_tech = LHD_cost
 			research_cost_coeff = 1
 		}
 
 		path = {
-			leads_to_tech = lhd_stats
+			leads_to_tech = LHD_stats
 			research_cost_coeff = 1
 		}
 		
@@ -1833,6 +1834,14 @@ LHD_stats = {
 			leads_to_tech =  lhd3
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech =  LHD_support
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech =  LHD_air_support
+			research_cost_coeff = 1
+		}
 
 		
 		research_cost = 3
@@ -1857,6 +1866,71 @@ LHD_stats = {
 		}
 		
 	}
+
+	LHD_support = {
+
+    LHD = {
+
+    }
+
+	research_cost = 1
+	
+	start_year = 2002
+
+	XOR = {
+            LHD_air_support
+        }
+	
+	folder = {
+		name = naval_folder
+		position = {
+			x = @LHD_upper_line
+			y = @2002
+		}
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+	
+	categories = {
+		naval_equipment
+	}
+	
+}
+
+LHD_air_support = {
+
+    LHD = {
+
+    }
+
+	research_cost = 1
+	
+	start_year = 2002
+
+	XOR = {
+            LHD_support
+        }
+	
+	folder = {
+		name = naval_folder
+		position = {
+			x = @LHD_lower_line
+			y = @2002
+		}
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+	
+	categories = {
+		naval_equipment
+	}
+	
+}
+
 	lhd3 = {
 		
 		enable_equipments = {
