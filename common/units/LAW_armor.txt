@@ -7,15 +7,15 @@ sub_units = {
 		active = no
 
 		type = {
-			infantry
-			support
+			armor
 		}
 		
-		group = support
+		group = armor
 		
 		categories = {
+			category_tanks
 			category_front_line
-			category_support_battalions
+			category_all_armor
 			category_army
 		}
 
@@ -39,19 +39,17 @@ sub_units = {
 		defense = 0.1
 		breakthrough = 0.5
 
-		# Support nerfs to combat abilities
-		soft_attack = -0.5
-
 		essential = {
 			infantry_equipment
 			armored_engineering_equipment
 		}
 
 		need = {
-			armored_engineering_equipment = 12
+			armored_engineering_equipment = 60
+			support_equipment = 10
 		}
 
-		can_be_parachuted = yes
+		can_be_parachuted = no
 
 		forest = {
 			defence = 0.25
@@ -85,4 +83,5 @@ sub_units = {
 			attack = 0.25
 		}
 	}
+
 }
