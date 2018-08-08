@@ -48,13 +48,9 @@ on_actions = {
 						}
 							set_variable = { a = 1}
 							set_variable = { dx = a }
-							set_variable = { taxrate = .6 }
-							set_variable = { tarrif = 1.05 }
 						else={
 							set_variable = { a = 10 }
 							set_variable = { dx = a }
-							set_variable = { taxrate = .6 }
-							set_variable = { tarrif = 1.05 }
 						}
 						}
 					}

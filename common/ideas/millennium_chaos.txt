@@ -1,0 +1,13 @@
+ideas = {
+	millennium_chaos_settings_ideas = {
+		millennium_chaos_settings_idea = {
+			picture = international_treaty
+			on_add = {
+				country_event = { id = war_creation.5 }
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+}
