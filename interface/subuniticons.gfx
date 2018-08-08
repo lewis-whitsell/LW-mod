@@ -234,13 +234,14 @@ spriteTypes = {
 	spriteType = { name = "GFX_unit_LHD_icon_medium_white"							texturefile = "gfx/interface/counters/ships_small/onmap_carrier.dds" }
 	spriteType = { name = "GFX_unit_destroyer_icon_medium_white"						texturefile = "gfx/interface/counters/ships_small/onmap_destroyer.dds" }
 	spriteType = { name = "GFX_unit_escort_carrier_icon_medium_white"					texturefile = "gfx/interface/counters/ships_small/onmap_carrier.dds" }
+	spriteType = { name = "GFX_unit_LHD_icon_medium_white"								texturefile = "gfx/interface/counters/ships_small/onmap_LHD.dds" }
 	spriteType = { name = "GFX_unit_heavy_cruiser_icon_medium_white"					texturefile = "gfx/interface/counters/ships_small/onmap_heavy_cruiser.dds" }
 	spriteType = { name = "GFX_unit_light_cruiser_icon_medium_white"					texturefile = "gfx/interface/counters/ships_small/onmap_light_cruiser.dds" }
 	spriteType = { name = "GFX_unit_sh_battleship_icon_medium_white"					texturefile = "gfx/interface/counters/ships_small/onmap_sh_battleship.dds" }
 	spriteType = { name = "GFX_unit_submarine_icon_medium_white"						texturefile = "gfx/interface/counters/ships_small/onmap_submarine.dds" }
 	spriteType = { name = "GFX_unit_transport_icon_medium_white"						texturefile = "gfx/interface/counters/ships_small/onmap_transport.dds" }
-	spriteType = { name = "GFX_unit_ballistic_submarine_icon_medium_white"				texturefile = "gfx/interface/counters/ships_small/onmap_submarine.dds" }
-	spriteType = { name = "GFX_unit_nuclear_submarine_icon_medium_white"				texturefile = "gfx/interface/counters/ships_small/onmap_submarine.dds" }
+	spriteType = { name = "GFX_unit_ballistic_submarine_icon_medium_white"				texturefile = "gfx/interface/counters/ships_small/onmap_missile_submarine.dds" }
+	spriteType = { name = "GFX_unit_nuclear_submarine_icon_medium_white"				texturefile = "gfx/interface/counters/ships_small/onmap_attack_submarine.dds" }
 	spriteType = { name = "GFX_unit_light_carrier_icon_medium_white"					texturefile = "gfx/interface/counters/ships_small/onmap_carrier.dds" }
 
 

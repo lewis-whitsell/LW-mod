@@ -1,0 +1,82 @@
+# Scripted by Mechano for use in determining valid targets for sporradic conflicts in events/Warcreation
+
+# Protected nations that will not get involved in random conflicts, makes sure that nations or even regions are considerably more stable.
+is_protected_lore_faction = {
+	OR = {
+		has_country_flag = random_war_protected
+	}
+}
+
+elgible_wargoal_sender = {
+	NOT = {
+		surrender_progress > 0.1
+	}
+	is_ai = yes
+	has_war = no
+	is_protected_lore_faction = no
+	OR = {
+		is_in_faction = no
+		has_global_flag = faction_min_claim_temp_0
+		threat > 0.9
+		AND = {
+			has_global_flag = faction_min_claim_temp_60
+			threat > 60
+		}
+		AND = {
+			has_global_flag = faction_min_claim_temp_30
+			threat > 30
+		}
+	}
+	has_capitulated = no
+	#exists = yes
+}
+elgible_wargoal_receiver = {
+	OR = {
+		has_war = no
+		AND = {
+				is_ai = no # is meaner to players, so if they are fighting an offensive war and and winning they can still get a claim put on them
+				has_defensive_war = no
+				NOT = {
+					surrender_progress > 0.1
+				}
+		}
+	}
+	OR = {
+		NOT = { # democracies will not start wars with each other unless they strongly hate them for whatever reason
+			AND = {
+				OR = {
+					has_government = market_liberal
+					has_government = social_liberal
+					has_government = social_democrat
+					has_government = progressive
+					has_government = democratic_socialist
+					has_government = conservative
+				}
+				OR = {
+					ROOT = { has_government = market_liberal }
+					ROOT = { has_government = social_liberal }
+					ROOT = { has_government = social_democrat }
+					ROOT = { has_government = progressive }
+					ROOT = { has_government = democratic_socialist }
+					ROOT = { has_government = conservative }
+				}
+			}
+		}
+		ROOT = {has_opinion = { target = PREV value < -100 }}
+		has_global_flag = remove_democratic_protections
+	}
+	# considers strength ratios, invading someone who has more troops is generally a bad idea
+	OR = {
+		AND = {
+			has_war = yes
+			any_enemy_country = {
+				strength_ratio = { tag = PREV ratio > 1.0 }
+			}
+		}
+		ROOT = { strength_ratio = { tag = PREV ratio > 1.0}}
+	}
+	#is_protected_lore_faction = no
+	#exists = yes
+	has_capitulated = no
+	ROOT = {has_opinion = { target = PREV value < 30 }} # will not start wars with countries they like
+}
