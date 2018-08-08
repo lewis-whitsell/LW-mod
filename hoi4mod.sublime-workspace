@@ -1,0 +1,1172 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"inc",
+				"incband"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "carrier_cost = {\n\n    carrier = {\n    \tbuild_cost_ic = -0.4 \n    \tfire_range = -0.2\n    \tnaval_speed = -0.2 \n    \tevasion = -0.2\n    \tsurface_detection = -0.2\n    \tsub_detection = -0.2\n    \tsurface_visibility = -0.2\n    \tnaval_range = -0.2\n    }\n\n\tresearch_cost = 1\n\t\n\tstart_year = 1980\n\n\tXOR = {\n            carrier_stats\n        }\n\t\n\tfolder = {\n\t\tname = naval_folder\n\t\tposition = {\n\t\t\tx = @carrier_upper_line\n\t\t\ty = @1980\n\t\t}\n\t}\n\t\n\tai_will_do = {\n\t\tfactor = 1\n\t}\n\t\n\tcategories = {\n\t\tnaval_equipment\n\t}\n\t\n}\n\ncarrier_stats = {\n\n    carrier = {\n    \tbuild_cost_ic = 0.2 \n    \tfire_range = 0.15\n    \tnaval_speed = 0.15 \n    \tevasion = 0.15\n    \tsurface_detection = 0.15\n    \tsub_detection = 0.15\n    \tsurface_visibility = 0.15\n    \tnaval_range = 0.15\n    }\n\n\tresearch_cost = 1\n\t\n\tstart_year = 1980\n\n\tXOR = {\n            carrier_cost\n        }\n\t\n\tfolder = {\n\t\tname = naval_folder\n\t\tposition = {\n\t\t\tx = @carrier_lower_line\n\t\t\ty = @1980\n\t\t}\n\t}\n\t\n\tai_will_do = {\n\t\tfactor = 1\n\t}\n\t\n\tcategories = {\n\t\tnaval_equipment\n\t}\n\t\n}\nair_support_lhd = {\n\t\n\t\tcarrier = {\n\t\t\tcarrier_size = 0.1\n\t\t}\n\t\tresearch_cost = 1\n\t\tstart_year = 2000\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = {\n\t\t\t\tx = 18\n\t\t\t\ty = 16\n\t\t\t}\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t\tcv_tech\n\t\t}\n\t\t\n\t}",
+			"settings":
+			{
+				"buffer_size": 1301,
+				"line_ending": "Windows",
+				"name": "carrier_cost = {"
+			}
+		},
+		{
+			"file": "common/autonomous_states/Soviet_Socialist_Republic.txt",
+			"settings":
+			{
+				"buffer_size": 850,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "hoi4mod.sublime-project",
+			"settings":
+			{
+				"buffer_size": 45,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "#ship type coordinates\n\n@headline = 0\n\n@frigate_upper_line = 2\n@frigate_line = 3\n@frigate_lower_line = 4\n\n@destroyer_upper_line = 5\n@destroyer_main_line = 7\n@destroyer_lower_line = 9\n\n@` = 9\n@cruiser_main_line = 10\n@cruiser_lower_line = 11\n\n@carrier_upper_line = 13\n@carrier_main_line = 15\n@carrier_catapult_upg_up =16\n@carrier_lower_line = 17\n@carrier_catapult_upg_dwn = 18\n\n\n@LHD_upper_line = 20\n@LHD_main_line = 22\n@LHD_lower_line = 24\n\n@ssn = 22\n@ssbn = 24\n@submarine_main_line = 26\n@submarine_lower_line = 28\n@ASM = 11\n@SLBM = 32\n\n#year coordinates\n\n@1950 = -1\n@1950_2 = 1\n@1960 = 4\n@1960_2 = 6\n@1960_3 = 8\n@1980 = 10\n@1980_2 = 12\n@2000 = 16\n@2002 = 22\n@2004 = 28\n@2006 = 34\n@2008 = 40\n@2010 = 46\n@2012 = 52\n@2014 = 58\n@2016 = 64\n@2018 = 70\n@2020 = 76\n@2025 = 82\n@2030 = 88\n@2030_2 = 90\n@2030_3 = 92\n\ntechnologies = {\n\n\tcold_war_ship_design = {\n\t\n\t\ttransport_capacity = -0.5\n\t\tnaval_invasion_capacity = 30\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = cold_war_transport_ships\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\tpath = {\n\t\t\tleads_to_tech = slbm1\n\t\t\tresearch_cost_coeff = 1\n\t\t}\t\n\t\tpath = {\n\t\t\tleads_to_tech = frigate1\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = destroyer1\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = missile_cruiser1\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = carrier1\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = lhd1\n\t\t\tresearch_cost_coeff = 1\n\t\t}\t\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = submarine1\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\n\t\t\n\t\tresearch_cost = 0.5\n\t\t\n\t\tstart_year = 1950\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = {\n\t\t\t\tx = @headline\n\t\t\t\ty = @1950\n\t\t\t}\n\t\t}\n\t\t\n\t\tai_will_do = {\n            factor = 20\n            modifier = {\n                factor = -100\n                num_of_naval_factories < 1\n            }\n        }\n\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t}\n\t\t\n\t}\n\n\tcold_war_transport_ships = {\n\t\n\t\tnaval_invasion_capacity = 20\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = modern_transport_ships\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tresearch_cost = 0.75\n\t\t\n\t\tstart_year = 1980\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = {\n\t\t\t\tx = @headline\n\t\t\t\ty = @1980\n\t\t\t}\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t}\n\t\t\n\t}\n\n\tmodern_transport_ships = {\n\t\n\t\tnaval_invasion_capacity = 20\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = advanced_transport_ships\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tresearch_cost = 1\n\t\t\n\t\tstart_year = 2004\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = {\n\t\t\t\tx = @headline\n\t\t\t\ty = @2004\n\t\t\t}\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t}\n\t\t\n\t}\n\n\tadvanced_transport_ships = {\n\t\n\t\tnaval_invasion_capacity = 20\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = future_transport_ships\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tresearch_cost = 1\n\t\t\n\t\tstart_year = 2010\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = {\n\t\t\t\tx = @headline\n\t\t\t\ty = @2010\n\t\t\t}\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t}\n\t\t\n\t}\n\n\tfuture_transport_ships = {\n\t\n\t\tnaval_invasion_capacity = 50\n\t\t\n\t\tresearch_cost = 2\n\t\t\n\t\tstart_year = 2020\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = {\n\t\t\t\tx = @headline\n\t\t\t\ty = @2020\n\t\t\t}\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t}\n\t\t\n\t}\n\t\t\n\tfrigate1 = {\n\t\t\n\t\tenable_equipments = {\n\t\t\tfrigate_1\n\t\t}\n\t\t\n\t\tresearch_cost = 1\n\n\t\tstart_year = 1960\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = frigate2\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\n\t\tpath = {\n\t\t\tleads_to_tech = frigate_cost\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\n\t\tpath = {\n\t\t\tleads_to_tech = frigate_stats\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = {\n\t\t\t\tx = @frigate_line\n\t\t\t\ty = @1960\n\t\t\t}\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t}\n\t}\n\t\n\tfrigate2 = {\n\t\t\n\t\tenable_equipments = {\n\t\t\tfrigate_2\n\t\t}\n\t\t\n\t\tresearch_cost = 1\n\n\t\tstart_year = 2000\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = frigate3\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = {\n\t\t\t\tx = @frigate_line\n\t\t\t\ty = @2000\n\t\t\t}\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t}\n\t}\n\t\n\tfrigate3 = {\n\t\t\n\t\tenable_equipments = {\n\t\t\tfrigate_3\n\t\t}\n\t\t\n\t\tresearch_cost = 1\n\n\t\tstart_year = 2002\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = frigate4\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = {\n\t\t\t\tx = @frigate_line\n\t\t\t\ty = @2002\n\t\t\t}\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t}\n\t}\n\t\n\tfrigate4 = {\n\t\t\n\t\tenable_equipments = {\n\t\t\tfrigate_4\n\t\t}\n\t\t\n\t\tresearch_cost = 1\n\n\t\tstart_year = 2006\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = frigate5\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = {\n\t\t\t\tx = @frigate_line\n\t\t\t\ty = @2006\n\t\t\t}\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t}\n\t}\n\t\n\tfrigate5 = {\n\t\t\n\t\tenable_equipments = {\n\t\t\tfrigate_5\n\t\t}\n\t\t\n\t\tresearch_cost = 1\n\n\t\tstart_year = 2012\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = frigate6\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = {\n\t\t\t\tx = @frigate_line\n\t\t\t\ty = @2012\n\t\t\t}\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t}\n\t}\n\t\n\tfrigate6 = {\n\t\t\n\t\tenable_equipments = {\n\t\t\tfrigate_6\n\t\t}\n\t\t\n\t\tresearch_cost = 1\n\n\t\tstart_year = 2018\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = {\n\t\t\t\tx = @frigate_line\n\t\t\t\ty = @2018\n\t\t\t}\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t}\n\t}\n\n\tfrigate_cost = {\n\n    frigate = {\n    \tbuild_cost_ic = -0.4 \n    \tfire_range = -0.2\n    \tnaval_speed = -0.2 \n    \tevasion = -0.2\n    \tsurface_detection = -0.2\n    \tsub_detection = -0.2\n    \tsurface_visibility = -0.2\n    \tnaval_range = -0.2\n    }\n\n\tresearch_cost = 1\n\t\n\tstart_year = 1980\n\n\tXOR = {\n            frigate_stats\n        }\n\t\n\tfolder = {\n\t\tname = naval_folder\n\t\tposition = {\n\t\t\tx = @frigate_upper_line\n\t\t\ty = @1980\n\t\t}\n\t}\n\t\n\tai_will_do = {\n\t\tfactor = 1\n\t}\n\t\n\tcategories = {\n\t\tnaval_equipment\n\t}\n\t\n}\n\nfrigate_stats = {\n\n    frigate = {\n    \tbuild_cost_ic = 0.2 \n    \tfire_range = 0.15\n    \tnaval_speed = 0.15 \n    \tevasion = 0.15\n    \tsurface_detection = 0.15\n    \tsub_detection = 0.15\n    \tsurface_visibility = 0.15\n    \tnaval_range = 0.15\n    }\n\n\tresearch_cost = 1\n\t\n\tstart_year = 1980\n\n\tXOR = {\n            frigate_cost\n        }\n\t\n\tfolder = {\n\t\tname = naval_folder\n\t\tposition = {\n\t\t\tx = @frigate_lower_line\n\t\t\ty = @1980\n\t\t}\n\t}\n\t\n\tai_will_do = {\n\t\tfactor = 1\n\t}\n\t\n\tcategories = {\n\t\tnaval_equipment\n\t}\n\t\n}\n\t\n\t##DESTROYERS##\n\t\n\tdestroyer1 = {\n\t\t\n\t\tenable_equipments = {\n\t\t\tdestroyer_1\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = destroyer2\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = destroyer_improved_engines\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tresearch_cost = 1\n\n\t\tstart_year = 1960\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = {\n\t\t\t\tx = @destroyer_main_line\n\t\t\t\ty = @1960\n\t\t\t}\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t\tdd_tech\n\t\t}\n\t}\n\t\n\tdestroyer_improved_engines = {\n\t\n\t\tdestroyer = {\n\t\t\tnaval_range = 0.05\n\t\t\tnaval_speed = 0.1\n\t\t\tbuild_cost_ic = 0.02\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = destroyer_advanced_engines\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tresearch_cost = 0.5\n\t\t\n\t\tstart_year = 1960\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = {\n\t\t\t\tx = @destroyer_upper_line\n\t\t\t\ty = @1960_2\n\t\t\t}\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t\tdd_tech\n\t\t}\n\t\t\n\t}\n\t\n\tdestroyer_advanced_engines = {\n\t\n\t\tdestroyer = {\n\t\t\tnaval_range = 0.1\n\t\t\tnaval_speed = 0.1\n\t\t\tbuild_cost_ic = 0.02\n\t\t}\n\t\t\n\t\tresearch_cost = 1.25\n\t\t\n\t\tstart_year = 1960\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = {\n\t\t\t\tx = @destroyer_upper_line\n\t\t\t\ty = @1960_3\n\t\t\t}\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t\tdd_tech\n\t\t}\n\t\t\n\t}\n\t\n\tdestroyer2 = {\n\t\t\n\t\tenable_equipments = {\n\t\t\tdestroyer_2\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = destroyer3\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\n\t\tpath = {\n\t\t\tleads_to_tech = destroyer_stats\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\n\t\tpath = {\n\t\t\tleads_to_tech = destroyer_cost\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tresearch_cost = 1.5\n\n\t\tstart_year = 1980\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = {\n\t\t\t\tx = @destroyer_main_line\n\t\t\t\ty = @1980\n\t\t\t}\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t\tdd_tech\n\t\t}\n\t}\n\t\n\tdestroyer3 = {\n\t\t\n\t\tenable_equipments = {\n\t\t\tdestroyer_3\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = destroyer4\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = modern_destroyer_armament\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tresearch_cost = 1.75\n\n\t\tstart_year = 2002\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = {\n\t\t\t\tx = @destroyer_main_line\n\t\t\t\ty = @2002\n\t\t\t}\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t\tdd_tech\n\t\t}\n\t}\n\t\n\tmodern_destroyer_armament = {\n\t\t\n\t\tdestroyer = {\n\t\t\tattack = 0.15\n\t\t\ttorpedo_attack = 0.15\n\t\t\tsub_attack = 0.15\n\t\t\tbuild_cost_ic = 0.05\n\t\t}\n\t\t\n\t\tresearch_cost = 2.25\n\n\t\tstart_year = 2002\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = {\n\t\t\t\tx = @destroyer_upper_line\n\t\t\t\ty = @2002\n\t\t\t}\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t\tdd_tech\n\t\t}\n\t}\n\t\n\tdestroyer4 = {\n\t\t\n\t\tenable_equipments = {\n\t\t\tdestroyer_4\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = destroyer5\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tresearch_cost = 2.25\n\n\t\tstart_year = 2008\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = {\n\t\t\t\tx = @destroyer_main_line\n\t\t\t\ty = @2008\n\t\t\t}\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t\tdd_tech\n\t\t}\n\t}\n\t\n\tdestroyer5 = {\n\t\t\n\t\tenable_equipments = {\n\t\t\tdestroyer_5\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = destroyer6\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tresearch_cost = 3\n\n\t\tstart_year = 2020\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = {\n\t\t\t\tx = @destroyer_main_line\n\t\t\t\ty = @2020\n\t\t\t}\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t\tdd_tech\n\t\t}\n\t}\n\t\n\tdestroyer6 = {\n\t\t\n\t\tenable_equipments = {\n\t\t\tdestroyer_6\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = future_destroyer_armament\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tresearch_cost = 3\n\n\t\tstart_year = 2030\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = {\n\t\t\t\tx = @destroyer_main_line\n\t\t\t\ty = @2030\n\t\t\t}\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t\tdd_tech\n\t\t}\n\t}\n\t\n\tfuture_destroyer_armament = {\n\t\t\n\t\tdestroyer = {\n\t\t\tattack = 0.2\n\t\t\ttorpedo_attack = 0.2\n\t\t\tsub_attack = 0.2\n\t\t\tsub_detection = 0.3\n\t\t}\n\t\t\n\t\tresearch_cost = 1.75\n\n\t\tstart_year = 2030\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = {\n\t\t\t\tx = @destroyer_main_line\n\t\t\t\ty = @2030_3\n\t\t\t}\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t\tdd_tech\n\t\t}\n\t}\n\n\tdestroyer_cost = {\n\n    destroyer = {\n    \tbuild_cost_ic = -0.4 \n    \tfire_range = -0.2\n    \tnaval_speed = -0.2 \n    \tevasion = -0.2\n    \tsurface_detection = -0.2\n    \tsub_detection = -0.2\n    \tsurface_visibility = -0.2\n    \tnaval_range = -0.2\n    }\n\n\tresearch_cost = 1\n\t\n\tstart_year = 2000\n\n\tXOR = {\n            destroyer_stats\n        }\n\t\n\tfolder = {\n\t\tname = naval_folder\n\t\tposition = {\n\t\t\tx = @destroyer_upper_line\n\t\t\ty = @2000\n\t\t}\n\t}\n\t\n\tai_will_do = {\n\t\tfactor = 1\n\t}\n\t\n\tcategories = {\n\t\tnaval_equipment\n\t}\n\t\n}\n\ndestroyer_stats = {\n\n    destroyer = {\n    \tbuild_cost_ic = 0.2 \n    \tfire_range = 0.15\n    \tnaval_speed = 0.15 \n    \tevasion = 0.15\n    \tsurface_detection = 0.15\n    \tsub_detection = 0.15\n    \tsurface_visibility = 0.15\n    \tnaval_range = 0.15\n    }\n\n\tresearch_cost = 1\n\t\n\tstart_year = 2000\n\n\tXOR = {\n            destroyer_cost\n        }\n\t\n\tfolder = {\n\t\tname = naval_folder\n\t\tposition = {\n\t\t\tx = @destroyer_lower_line\n\t\t\ty = @2000\n\t\t}\n\t}\n\t\n\tai_will_do = {\n\t\tfactor = 1\n\t}\n\t\n\tcategories = {\n\t\tnaval_equipment\n\t}\n\t\n}\n\n\t##MISSILE CRUISERS##\n\t\n\tmissile_cruiser1 = {\n\t\t\n\t\tenable_equipments = {\n\t\t\tmissile_cruiser_1\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = missile_cruiser2\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\n\t\tpath = {\n\t\t\tleads_to_tech = missile_cruiser_cost\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\n\t\tpath = {\n\t\t\tleads_to_tech = missile_cruiser_stats\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tresearch_cost = 1\n\t\t\n\t\tstart_year = 1960\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = {\n\t\t\t\tx = @cruiser_main_line\n\t\t\t\ty = @1960\n\t\t\t}\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t\tca_tech\n\t\t}\n\t\t\n\t}\n\t\n\tmissile_cruiser2 = {\n\t\t\n\t\tenable_equipments = {\n\t\t\tmissile_cruiser_2\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = missile_cruiser3\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tresearch_cost = 1.5\n\t\t\n\t\tstart_year = 2000\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = {\n\t\t\t\tx = @cruiser_main_line\n\t\t\t\ty = @2000\n\t\t\t}\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t\tca_tech\n\t\t}\n\t\t\n\t}\n\t\n\tmissile_cruiser3 = {\n\t\t\n\t\tenable_equipments = {\n\t\t\tmissile_cruiser_3\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = missile_cruiser4\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tresearch_cost = 2\n\t\t\n\t\tstart_year = 2006\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = {\n\t\t\t\tx = @cruiser_main_line\n\t\t\t\ty = @2006\n\t\t\t}\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t\tca_tech\n\t\t}\n\t\t\n\t}\n\t\n\tmissile_cruiser4 = {\n\t\t\n\t\tenable_equipments = {\n\t\t\tmissile_cruiser_4\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = missile_cruiser5\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tresearch_cost = 2.5\n\t\t\n\t\tstart_year = 2010\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = {\n\t\t\t\tx = @cruiser_main_line\n\t\t\t\ty = @2010\n\t\t\t}\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t\tca_tech\n\t\t}\n\t\t\n\t}\n\t\n\tmissile_cruiser5 = {\n\t\t\n\t\tenable_equipments = {\n\t\t\tmissile_cruiser_5\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = missile_cruiser6\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tresearch_cost = 3\n\t\t\n\t\tstart_year = 2020\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = {\n\t\t\t\tx = @cruiser_main_line\n\t\t\t\ty = @2020\n\t\t\t}\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t\tca_tech\n\t\t}\n\t\t\n\t}\n\t\n\tmissile_cruiser6 = {\n\t\t\n\t\tenable_equipments = {\n\t\t\tmissile_cruiser_6\n\t\t}\n\t\t\n\t\tresearch_cost = 3\n\t\t\n\t\tstart_year = 2030\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = {\n\t\t\t\tx = @cruiser_main_line\n\t\t\t\ty = @2030\n\t\t\t}\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t\tca_tech\n\t\t}\n\t\t\n\t}\n\n\tmissile_cruiser_cost = {\n\n    missile_cruiser = {\n    \tbuild_cost_ic = -0.4 \n    \tfire_range = -0.2\n    \tnaval_speed = -0.2 \n    \tevasion = -0.2\n    \tsurface_detection = -0.2\n    \tsub_detection = -0.2\n    \tsurface_visibility = -0.2\n    \tnaval_range = -0.2\n    }\n\n\tresearch_cost = 1\n\t\n\tstart_year = 1980\n\n\tXOR = {\n            missile_cruiser_stats\n        }\n\t\n\tfolder = {\n\t\tname = naval_folder\n\t\tposition = {\n\t\t\tx = @cruiser_upper_line\n\t\t\ty = @1980\n\t\t}\n\t}\n\t\n\tai_will_do = {\n\t\tfactor = 1\n\t}\n\t\n\tcategories = {\n\t\tnaval_equipment\n\t}\n\t\n}\n\nmissile_cruiser_stats = {\n\n    missile_cruiser = {\n    \tbuild_cost_ic = 0.2 \n    \tfire_range = 0.15\n    \tnaval_speed = 0.15 \n    \tevasion = 0.15\n    \tsurface_detection = 0.15\n    \tsub_detection = 0.15\n    \tsurface_visibility = 0.15\n    \tnaval_range = 0.15\n    }\n\n\tresearch_cost = 1\n\t\n\tstart_year = 1980\n\n\tXOR = {\n            missile_cruiser_cost\n        }\n\t\n\tfolder = {\n\t\tname = naval_folder\n\t\tposition = {\n\t\t\tx = @cruiser_lower_line\n\t\t\ty = @1980\n\t\t}\n\t}\n\t\n\tai_will_do = {\n\t\tfactor = 1\n\t}\n\t\n\tcategories = {\n\t\tnaval_equipment\n\t}\n\t\n}\n\n\t##CARRIERS##\n\t\n\tcarrier1 = {\n\t\t\n\t\tenable_equipments = {\n\t\t\tcarrier_1\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = carrier2\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = carrier_nuclear_reactor\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = carrier_cost\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\n\t\tpath = {\n\t\t\tleads_to_tech = carrier_stats\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tresearch_cost = 3\n\t\t\n\t\tstart_year = 1960\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = {\n\t\t\t\tx = @carrier_main_line\n\t\t\t\ty = @1960\n\t\t\t}\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t\tcv_tech\n\t\t}\n\t\t\n\t}\n\t\n\tcarrier_nuclear_reactor = {\n\t\n\t\tcarrier = {\n\t\t\tnaval_range = 0.6\n\t\t}\n\t\t\n\t\tresearch_cost = 0.75\n\t\t\n\t\tstart_year = 1960\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = {\n\t\t\t\tx = @carrier_upper_line\n\t\t\t\ty = @1960_2\n\t\t\t}\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t\tcv_tech\n\t\t}\n\t\t\n\t}\n\t\n\tcarrier_advanced_ramp_system = {\n\t\n\t\tcarrier = {\n\t\t\tcarrier_size = 0.1\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = carrier_catapult\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tresearch_cost = 1\n\t\t\n\t\tstart_year = 2000\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = {\n\t\t\t\tx = @carrier_catapult_upg_up\n\t\t\t\ty = @2000\n\t\t\t}\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t\tcv_tech\n\t\t}\n\t\t\n\t}\n\t\n\tcarrier_catapult = {\n\t\n\t\tcarrier = {\n\t\t\tcarrier_size = 0.2\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = carrier_catapult\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tresearch_cost = 1\n\t\t\n\t\tstart_year = 2002\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = {\n\t\t\t\tx = @carrier_catapult_upg_up\n\t\t\t\ty = @2002\n\t\t\t}\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t\tcv_tech\n\t\t}\n\t\t\n\t}\n\t\n\tcarrier2 = {\n\t\t\n\t\tenable_equipments = {\n\t\t\tcarrier_2\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = carrier3\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tresearch_cost = 4\n\t\t\n\t\tstart_year = 2000\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = {\n\t\t\t\tx = @carrier_main_line\n\t\t\t\ty = @2000\n\t\t\t}\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t\tcv_tech\n\t\t}\n\t\t\n\t}\n\t\n\tcarrier3 = {\n\t\t\n\t\tenable_equipments = {\n\t\t\tcarrier_3\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = carrier4\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tresearch_cost = 5\n\t\t\n\t\tstart_year = 2004\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = {\n\t\t\t\tx = @carrier_main_line\n\t\t\t\ty = @2004\n\t\t\t}\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t\tcv_tech\n\t\t}\n\t\t\n\t}\n\t\n\tcarrier4 = {\n\t\t\n\t\tenable_equipments = {\n\t\t\tcarrier_4\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = carrier5\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tresearch_cost = 6\n\t\t\n\t\tstart_year = 2012\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = {\n\t\t\t\tx = @carrier_main_line\n\t\t\t\ty = @2012\n\t\t\t}\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t\tcv_tech\n\t\t}\n\t\t\n\t}\n\t\n\tcarrier5 = {\n\t\t\n\t\tenable_equipments = {\n\t\t\tcarrier_5\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = carrier6\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tresearch_cost = 7\n\t\t\n\t\tstart_year = 2018\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = {\n\t\t\t\tx = @carrier_main_line\n\t\t\t\ty = @2018\n\t\t\t}\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t\tcv_tech\n\t\t}\n\t\t\n\t}\n\t\n\tcarrier6 = {\n\t\t\n\t\tenable_equipments = {\n\t\t\tcarrier_6\n\t\t}\n\t\t\n\t\tresearch_cost = 8\n\t\t\n\t\tstart_year = 2030\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = {\n\t\t\t\tx = @carrier_main_line\n\t\t\t\ty = @2030\n\t\t\t}\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t\tcv_tech\n\t\t}\n\t\t\n\t}\n\n\tcarrier_cost = {\n\n    carrier = {\n    \tbuild_cost_ic = -0.4 \n    \tfire_range = -0.2\n    \tnaval_speed = -0.2 \n    \tevasion = -0.2\n    \tsurface_detection = -0.2\n    \tsub_detection = -0.2\n    \tsurface_visibility = -0.2\n    \tnaval_range = -0.2\n    }\n\n\tresearch_cost = 1\n\t\n\tstart_year = 1980\n\n\tXOR = {\n            carrier_stats\n        }\n\t\n\tfolder = {\n\t\tname = naval_folder\n\t\tposition = {\n\t\t\tx = @carrier_upper_line\n\t\t\ty = @1980\n\t\t}\n\t}\n\t\n\tai_will_do = {\n\t\tfactor = 1\n\t}\n\t\n\tcategories = {\n\t\tnaval_equipment\n\t}\n\t\n}\n\ncarrier_stats = {\n\n    carrier = {\n    \tbuild_cost_ic = 0.2 \n    \tfire_range = 0.15\n    \tnaval_speed = 0.15 \n    \tevasion = 0.15\n    \tsurface_detection = 0.15\n    \tsub_detection = 0.15\n    \tsurface_visibility = 0.15\n    \tnaval_range = 0.15\n    }\n\n\tresearch_cost = 1\n\t\n\tpath = {\n\t\t\tleads_to_tech = carrier_advanced_ramp_system\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\n\tstart_year = 1980\n\n\tXOR = {\n            carrier_cost\n        }\n\t\n\tfolder = {\n\t\tname = naval_folder\n\t\tposition = {\n\t\t\tx = @carrier_lower_line\n\t\t\ty = @1980\n\t\t}\n\t}\n\t\n\tai_will_do = {\n\t\tfactor = 1\n\t}\n\t\n\tcategories = {\n\t\tnaval_equipment\n\t}\n\t\n}\n\t\n\t##LHDs##\n\tlhd1 = {\n\t\t\n\t\tenable_equipments = {\n\t\t\tLHD_1\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = lhd2\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tresearch_cost = 3\n\t\t\n\t\tstart_year = 1960\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = {\n\t\t\t\tx = @LHD_main_line\n\t\t\t\ty = @1960\n\t\t\t}\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t\tcv_tech\n\t\t}\n\t\t\n\t}\n\tlhd2 = {\n\t\t\n\t\tenable_equipments = {\n\t\t\tLHD_2\n\t\t}\n\t\tpath = {\n\t\t\tleads_to_tech =  lhd3\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\n\t\t\n\t\tresearch_cost = 3\n\t\t\n\t\tstart_year = 2000\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = {\n\t\t\t\tx = @LHD_main_line\n\t\t\t\ty = @2000\n\t\t\t}\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t\tcv_tech\n\t\t}\n\t\t\n\t}\n\tlhd3 = {\n\t\t\n\t\tenable_equipments = {\n\t\t\tLHD_3\n\t\t}\n\t\tpath = {\n\t\t\tleads_to_tech = lhd4\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\tpath = {\n\t\t\tleads_to_tech = shore_support_lhd\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\tpath = {\n\t\t\tleads_to_tech = air_support_lhd\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\tresearch_cost = 3\n\t\t\n\t\tstart_year = 2006\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = {\n\t\t\t\tx = @LHD_main_line\n\t\t\t\ty = @2006\n\t\t\t}\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t\tcv_tech\n\t\t}\n\t\t\n\t}\n\t\n\tlhd4 = {\n\t\t\n\t\tenable_equipments = {\n\t\t\tLHD_4\n\t\t}\n\t\tpath = {\n\t\t\tleads_to_tech = lhd5\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tresearch_cost = 3\n\t\t\n\t\tstart_year = 2010\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = {\n\t\t\t\tx = @LHD_main_line\n\t\t\t\ty = @2010\n\t\t\t}\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t\tcv_tech\n\t\t}\n\t\t\n\t}\n\tlhd5 = {\n\t\t\n\t\tenable_equipments = {\n\t\t\tLHD_5\n\t\t}\n\n\t\t\n\t\tresearch_cost = 3\n\t\t\n\t\tstart_year = 2020\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = {\n\t\t\t\tx = @LHD_main_line\n\t\t\t\ty = @2020\n\t\t\t}\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t\tcv_tech\n\t\t}\n\t\t\n\t}\n\n\n\t##SUBMARINES##\n\t\n\tsubmarine1 = {\n\t\t\n\t\tenable_equipments = {\n\t\t\tsubmarine_1\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = submarine2\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = submarine_nuclear_reactor\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = submarine_cold_war_torpedo\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tresearch_cost = 0.75\n\t\t\n\t\tstart_year = 1960\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = {\n\t\t\t\tx = @submarine_main_line\n\t\t\t\ty = @1960\n\t\t\t}\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t\tss_tech\n\t\t}\n\t\t\n\t}\n\t\n\tsubmarine_nuclear_reactor = {\n\t\t\n\t\tsubmarine = {\n\t\t\tnaval_range = 1\n\t\t}\n\t\tpath = {\n\t\t\tleads_to_tech = ballistic_submarine_1 \n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\tpath = {\n\t\t\tleads_to_tech = ssn_1 \n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tresearch_cost = 1.25\n\t\t\n\t\tstart_year = 1960\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = {\n\t\t\t\tx = 23\n\t\t\t\ty = @1960\n\t\t\t}\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t\tss_tech\n\t\t}\n\t\t\n\t}\n\t\n\tsubmarine_cold_war_torpedo = {\n\t\t\n\t\tsubmarine = {\n\t\t\ttorpedo_attack = 0.2\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = submarine_modern_torpedo\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tresearch_cost = 1.25\n\t\t\n\t\tstart_year = 1960\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = {\n\t\t\t\tx = @submarine_lower_line\n\t\t\t\ty = @1960\n\t\t\t}\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t\tss_tech\n\t\t}\n\t\t\n\t}\n\t\n\tssn_1 = {\n\n\t\tenable_equipments = { \n\t\t\tnuclear_submarine_1\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = ssn_2 \n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tresearch_cost = 3.5\n\n\t\tstart_year = 1980\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = { x = @ssn y = @1980 }\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 0\n\t\t\tmodifier = {\n\t\t\t\tadd = 4\n\t\t\t\ttag = SOV\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 3\n\t\t\t\ttag = USA\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 2\n\t\t\t\ttag = ENG\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 1\n\t\t\t\ttag = FRA\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 1\n\t\t\t\ttag = CHI\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 1\n\t\t\t\ttag = PRC\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 1\n\t\t\t\ttag = RAJ\n\t\t\t}\n\t\t}\n\t\t\n\t\tdependencies = {\n\t\t\tsubmarine_nuclear_reactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t\tss_tech\n\t\t}\n\t}\n\t\n\tssn_2 = {\n\n\t\tenable_equipments = { \n\t\t\tnuclear_submarine_2\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = ssn_3 \n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = ballistic_submarine_3 \n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tresearch_cost = 3\n\t\tstart_year = 2000\n\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = { x = @ssn y = @2000 }\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 0\n\t\t\tmodifier = {\n\t\t\t\tadd = 4\n\t\t\t\ttag = SOV\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 3\n\t\t\t\ttag = USA\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 2\n\t\t\t\ttag = ENG\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 1\n\t\t\t\ttag = FRA\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 1\n\t\t\t\ttag = CHI\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 1\n\t\t\t\ttag = PRC\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 1\n\t\t\t\ttag = RAJ\n\t\t\t}\n\t\t}\n\t\t\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t\tss_tech\n\t\t}\n\t}\n\t\n\tssn_3 = {\n\n\t\tenable_equipments = { \n\t\t\tnuclear_submarine_3\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = ssn_4 \n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = ballistic_submarine_4\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tresearch_cost = 3\n\n\t\tstart_year = 2008\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = { x = @ssn y = @2008 }\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 0\n\t\t\tmodifier = {\n\t\t\t\tadd = 4\n\t\t\t\ttag = SOV\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 3\n\t\t\t\ttag = USA\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 2\n\t\t\t\ttag = ENG\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 1\n\t\t\t\ttag = FRA\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 1\n\t\t\t\ttag = CHI\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 1\n\t\t\t\ttag = PRC\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 1\n\t\t\t\ttag = RAJ\n\t\t\t}\n\t\t}\n\t\t\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t\tss_tech\n\t\t}\n\t}\n\t\n\tssn_4 = {\n\n\t\tenable_equipments = { \n\t\t\tnuclear_submarine_4\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = ssn_5 \n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = ballistic_submarine_5\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tresearch_cost = 3\n\n\t\tstart_year = 2014\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = { x = @ssn y = @2014 }\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 0\n\t\t\tmodifier = {\n\t\t\t\tadd = 4\n\t\t\t\ttag = SOV\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 3\n\t\t\t\ttag = USA\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 2\n\t\t\t\ttag = ENG\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 1\n\t\t\t\ttag = FRA\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 1\n\t\t\t\ttag = CHI\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 1\n\t\t\t\ttag = PRC\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 1\n\t\t\t\ttag = RAJ\n\t\t\t}\n\t\t}\n\t\t\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t\tss_tech\n\t\t}\n\t}\n\t\n\tssn_5 = {\n\n\t\tenable_equipments = { \n\t\t\tnuclear_submarine_5\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = ssn_6 \n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = ballistic_submarine_6\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tresearch_cost = 4\n\t\tstart_year = 2020\n\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = { x = @ssn y = @2020 }\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 0\n\t\t\tmodifier = {\n\t\t\t\tadd = 4\n\t\t\t\ttag = SOV\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 3\n\t\t\t\ttag = USA\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 2\n\t\t\t\ttag = ENG\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 1\n\t\t\t\ttag = FRA\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 1\n\t\t\t\ttag = CHI\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 1\n\t\t\t\ttag = PRC\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 1\n\t\t\t\ttag = RAJ\n\t\t\t}\n\t\t}\n\t\t\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t\tss_tech\n\t\t}\n\t}\n\t\n\tssn_6 = {\n\n\t\tenable_equipments = { \n\t\t\tnuclear_submarine_6\n\t\t}\n\t\t\n\t\tresearch_cost = 4\n\n\t\tstart_year = 2030\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = { x = @ssn y = @2030 }\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 0\n\t\t\tmodifier = {\n\t\t\t\tadd = 4\n\t\t\t\ttag = SOV\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 3\n\t\t\t\ttag = USA\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 2\n\t\t\t\ttag = ENG\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 1\n\t\t\t\ttag = FRA\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 1\n\t\t\t\ttag = CHI\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 1\n\t\t\t\ttag = PRC\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 1\n\t\t\t\ttag = RAJ\n\t\t\t}\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t\tss_tech\n\t\t}\n\t}\n\nballistic_submarine_1 = {\n\n\t\tenable_equipments = { \n\t\t\tballistic_submarine_1\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = ballistic_submarine_2 \n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tresearch_cost = 3.5\n\n\t\tstart_year = 1980\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = { x = @ssbn y = @1980 }\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 0\n\t\t\tmodifier = {\n\t\t\t\tadd = 2\n\t\t\t\ttag = USA\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 3\n\t\t\t\ttag = SOV\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 1\n\t\t\t\ttag = FRA\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 1\n\t\t\t\ttag = PRC\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 1\n\t\t\t\ttag = CHI\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 1\n\t\t\t\ttag = RAJ\n\t\t\t}\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t\tss_tech\n\t\t}\n\t}\n\t\n\tballistic_submarine_2 = {\n\n\t\tenable_equipments = { \n\t\t\tballistic_submarine_2\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = ballistic_submarine_3 \n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tresearch_cost = 3\n\t\tstart_year = 2000\n\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = { x = @ssbn y = @2000 }\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 0\n\t\t\tmodifier = {\n\t\t\t\tadd = 2\n\t\t\t\ttag = USA\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 3\n\t\t\t\ttag = SOV\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 1\n\t\t\t\ttag = FRA\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 1\n\t\t\t\ttag = PRC\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 1\n\t\t\t\ttag = CHI\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 1\n\t\t\t\ttag = RAJ\n\t\t\t}\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t\tss_tech\n\t\t}\n\t}\n\t\n\tballistic_submarine_3 = {\n\n\t\tenable_equipments = { \n\t\t\tballistic_submarine_3\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = ballistic_submarine_4 \n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tresearch_cost = 3\n\n\t\tstart_year = 2004\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = { x = @ssbn y = @2004 }\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 0\n\t\t\tmodifier = {\n\t\t\t\tadd = 2\n\t\t\t\ttag = USA\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 3\n\t\t\t\ttag = SOV\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 2\n\t\t\t\ttag = ENG\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 1\n\t\t\t\ttag = FRA\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 1\n\t\t\t\ttag = PRC\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 1\n\t\t\t\ttag = CHI\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 1\n\t\t\t\ttag = RAJ\n\t\t\t}\n\t\t}\n\t\t\n\t\tdependencies = {\n\t\t\tsubmarine_nuclear_reactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t\tss_tech\n\t\t}\n\t}\n\t\n\tballistic_submarine_4 = {\n\n\t\tenable_equipments = { \n\t\t\tballistic_submarine_4\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = ballistic_submarine_5 \n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tresearch_cost = 3\n\n\t\tstart_year = 2008\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = { x = @ssbn y = @2008 }\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 0\n\t\t\tmodifier = {\n\t\t\t\tadd = 2\n\t\t\t\ttag = USA\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 3\n\t\t\t\ttag = SOV\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 1\n\t\t\t\ttag = FRA\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 1\n\t\t\t\ttag = PRC\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 1\n\t\t\t\ttag = CHI\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 1\n\t\t\t\ttag = RAJ\n\t\t\t}\n\t\t}\n\t\t\n\t\tdependencies = {\n\t\t\tsubmarine_nuclear_reactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t\tss_tech\n\t\t}\n\t}\n\t\n\tballistic_submarine_5 = {\n\n\t\tenable_equipments = { \n\t\t\tballistic_submarine_5\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = ballistic_submarine_6 \n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tresearch_cost = 4\n\t\tstart_year = 2016\n\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = { x = @ssbn y = @2016 }\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 0\n\t\t\tmodifier = {\n\t\t\t\tadd = 2\n\t\t\t\ttag = USA\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 3\n\t\t\t\ttag = SOV\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 1\n\t\t\t\ttag = FRA\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 1\n\t\t\t\ttag = PRC\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 1\n\t\t\t\ttag = CHI\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 1\n\t\t\t\ttag = RAJ\n\t\t\t}\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t\tss_tech\n\t\t}\n\t}\n\t\n\tballistic_submarine_6 = {\n\n\t\tenable_equipments = { \n\t\t\tballistic_submarine_6\n\t\t}\n\t\tresearch_cost = 4\n\n\t\tstart_year = 2025\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = { x = @ssbn y = @2025 }\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 0\n\t\t\tmodifier = {\n\t\t\t\tadd = 2\n\t\t\t\ttag = USA\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 3\n\t\t\t\ttag = SOV\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 1\n\t\t\t\ttag = FRA\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 1\n\t\t\t\ttag = PRC\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 1\n\t\t\t\ttag = CHI\n\t\t\t}\n\t\t\tmodifier = {\n\t\t\t\tadd = 1\n\t\t\t\ttag = RAJ\n\t\t\t}\n\t\t}\n\t\t\n\t\tdependencies = {\n\t\t\tsubmarine_nuclear_reactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t\tss_tech\n\t\t}\n\t}\n\n\tsubmarine2 = {\n\t\t\n\t\tenable_equipments = {\n\t\t\tsubmarine_2\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = submarine3\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tresearch_cost = 1.25\n\t\t\n\t\tstart_year = 1980\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = {\n\t\t\t\tx = @submarine_main_line\n\t\t\t\ty = @1980\n\t\t\t}\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t\tss_tech\n\t\t}\n\t\t\n\t}\n\t\n\tsubmarine3 = {\n\t\t\n\t\tenable_equipments = {\n\t\t\tsubmarine_3\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = submarine4\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tresearch_cost = 1.75\n\t\t\n\t\tstart_year = 2006\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = {\n\t\t\t\tx = @submarine_main_line\n\t\t\t\ty = @2006\n\t\t\t}\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t\tss_tech\n\t\t}\n\t\t\n\t}\n\t\n\tsubmarine_modern_torpedo = {\n\t\t\n\t\tsubmarine = {\n\t\t\ttorpedo_attack = 0.2\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = submarine_future_torpedo\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tresearch_cost = 1.25\n\t\t\n\t\tstart_year = 2006\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = {\n\t\t\t\tx = @submarine_lower_line\n\t\t\t\ty = @2006\n\t\t\t}\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t\tss_tech\n\t\t}\n\t\t\n\t}\n\t\n\tsubmarine4 = {\n\t\t\n\t\tenable_equipments = {\n\t\t\tsubmarine_4\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = submarine5\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tresearch_cost = 2\n\t\t\n\t\tstart_year = 2014\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = {\n\t\t\t\tx = @submarine_main_line\n\t\t\t\ty = @2014\n\t\t\t}\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t\tss_tech\n\t\t}\n\t\t\n\t}\n\t\n\tsubmarine5 = {\n\t\t\n\t\tenable_equipments = {\n\t\t\tsubmarine_5\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = submarine6\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tresearch_cost = 3\n\t\t\n\t\tstart_year = 2025\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = {\n\t\t\t\tx = @submarine_main_line\n\t\t\t\ty = @2025\n\t\t\t}\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t\tss_tech\n\t\t}\n\t\t\n\t}\n\t\n\tsubmarine_future_torpedo = {\n\t\t\n\t\tsubmarine = {\n\t\t\ttorpedo_attack = 0.25\n\t\t}\n\t\t\n\t\tresearch_cost = 2\n\t\t\n\t\tstart_year = 2025\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = {\n\t\t\t\tx = @submarine_lower_line\n\t\t\t\ty = @2025\n\t\t\t}\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t\tss_tech\n\t\t}\n\t\t\n\t}\n\t\n\tsubmarine6 = {\n\t\t\n\t\tenable_equipments = {\n\t\t\tsubmarine_6\n\t\t}\n\t\t\n\t\tresearch_cost = 4\n\t\t\n\t\tstart_year = 2030\n\t\t\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = {\n\t\t\t\tx = @submarine_main_line\n\t\t\t\ty = @2030\n\t\t\t}\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnaval_equipment\n\t\t\tss_tech\n\t\t}\n\t\t\n\t}\n\tslbm1 = {\n\n\t\tenable_equipments = {\n\t\t\tslbm_equipment_1\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = slbm2\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tresearch_cost = 2\n\t\tstart_year = 1960\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = { x = @SLBM y = @1960 }\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnuclear\n\t\t\trocketry\n\t\t}\n\t\t\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t\t\n\t\t\tmodifier = {\n\t\t\t\tfactor = 2\n\t\t\t\tis_major = yes\n\t\t\t}\n\t\t}\n\t}\n\t\n\tslbm2 = {\n\n\t\tenable_equipments = {\n\t\t\tslbm_equipment_2\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = slbm3\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tresearch_cost = 2\n\t\tstart_year = 1980\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = { x = @SLBM y = @1980 }\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnuclear\n\t\t\trocketry\n\t\t}\n\t\t\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t\t\n\t\t\tmodifier = {\n\t\t\t\tfactor = 2\n\t\t\t\tis_major = yes\n\t\t\t}\n\t\t}\n\t}\n\t\n\tslbm3 = {\n\n\t\tenable_equipments = {\n\t\t\tslbm_equipment_3\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = slbm4\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tresearch_cost = 2\n\t\tstart_year = 2000\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = { x = @SLBM y = @2000 }\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnuclear\n\t\t\trocketry\n\t\t}\n\t\t\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t\t\n\t\t\tmodifier = {\n\t\t\t\tfactor = 2\n\t\t\t\tis_major = yes\n\t\t\t}\n\t\t}\n\t}\n\t\n\tslbm4 = {\n\n\t\tenable_equipments = {\n\t\t\tslbm_equipment_4\n\t\t}\n\t\n\t\tpath = {\n\t\t\tleads_to_tech = slbm5\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tresearch_cost = 2\n\t\tstart_year = 2006\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = { x = @SLBM y = @2006 }\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnuclear\n\t\t\trocketry\n\t\t}\n\t\t\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t\t\n\t\t\tmodifier = {\n\t\t\t\tfactor = 2\n\t\t\t\tis_major = yes\n\t\t\t}\n\t\t}\n\t}\n\t\n\tslbm5 = {\n\n\t\tenable_equipments = {\n\t\t\tslbm_equipment_5\n\t\t}\n\t\n\t\tpath = {\n\t\t\tleads_to_tech = slbm6\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\tresearch_cost = 2\n\t\tstart_year = 2012\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = { x = @SLBM y = @2012 }\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnuclear\n\t\t\trocketry\n\t\t}\n\t\t\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t\t\n\t\t\tmodifier = {\n\t\t\t\tfactor = 2\n\t\t\t\tis_major = yes\n\t\t\t}\n\t\t}\n\t}\n\t\n\tslbm6 = {\n\n\t\tenable_equipments = {\n\t\t\tslbm_equipment_6\n\t\t}\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = slbm7\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\t\t\n\t\tresearch_cost = 2\n\t\tstart_year = 2018\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = { x = @SLBM y = @2018 }\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnuclear\n\t\t\trocketry\n\t\t}\n\t\t\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t\t\n\t\t\tmodifier = {\n\t\t\t\tfactor = 2\n\t\t\t\tis_major = yes\n\t\t\t}\n\t\t}\n\t}\n\t\n\tslbm7 = {\n\n\t\tenable_equipments = {\n\t\t\tslbm_equipment_7\n\t\t}\n\t\t\n\t\tresearch_cost = 2\n\t\tstart_year = 2030\n\t\tfolder = {\n\t\t\tname = naval_folder\n\t\t\tposition = { x = @SLBM y = @2030 }\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tnuclear\n\t\t\trocketry\n\t\t}\n\t\t\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 1\n\t\t\t\n\t\t\tmodifier = {\n\t\t\t\tfactor = 2\n\t\t\t\tis_major = yes\n\t\t\t}\n\t\t}\n\t}\n\t\n\t\n}",
+			"file": "common/technologies/naval.txt",
+			"file_size": 40760,
+			"file_write_time": 131779032199151714,
+			"settings":
+			{
+				"buffer_size": 37657,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"sy",
+				"Set Syntax: HOI 4"
+			],
+			[
+				"hoi",
+				"Set Syntax: HOI 4"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: is",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: b",
+				"Package Control: Enable Package"
+			],
+			[
+				"PRV:",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 444.0
+	},
+	"console":
+	{
+		"height": 364.0,
+		"history":
+		[
+			"PRV",
+			"PRV: 0",
+			"Package Control: Install Package",
+			"package control: install package",
+			"PackageResourceViewer: Open Resource",
+			"PRV: 0"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/autonomous_states",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/continuous_focus",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/units"
+	],
+	"file_history":
+	[
+		"/C/Users/lewis/AppData/Roaming/Sublime Text 3/Packages/PackageResourceViewer/PackageResourceViewer.sublime-settings",
+		"/C/Users/lewis/AppData/Roaming/Sublime Text 3/Packages/User/PackageResourceViewer.sublime-settings",
+		"/C/Users/lewis/AppData/Roaming/Sublime Text 3/Packages/PackageResourceViewer/README.md",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/hoi4mod.sublime-project",
+		"/C/Users/lewis/Downloads/Syntax-Highlighting-For-HOI4-master/Syntax-Highlighting-For-HOI4-master/HOI4.sublime-package",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/units/destroyer.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/units/LAW_missile_cruiser.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/technology_tags/00_technology.txt",
+		"/C/Users/lewis/Documents/BACKUP/MM Dawn LW mod/interface/Technologies_GER.gfx",
+		"/F/SteamLibrary/steamapps/common/Cold Waters/ColdWaters_Data/StreamingAssets/default/editor.txt",
+		"/C/Users/lewis/lab4.m",
+		"/C/Users/lewis/lab5.m",
+		"/C/Users/lewis/Documents/BACKUP/MM Dawn LW mod/common/scripted_effects/zz_scripted_effects.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod2/interface/statetransf.gui",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod2/common/scripted_guis/st_state_transfer.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod2/common/ideas/philipines.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod2/common/ideas/GREENLAND.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod2/common/ideas/australia.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod2/common/ideas/denmark.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod2/common/ideas/CYPRUS.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod2/common/ideas/MADAGASCAR.txt",
+		"/F/SteamLibrary/steamapps/common/Hearts of Iron IV/common/unit_leader/00_traits.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod2/common/scripted_effects/zz_scripted_effects.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod2/common/abilities/generic2_leader_abilities.txt",
+		"/F/SteamLibrary/steamapps/common/Hearts of Iron IV/common/ideas/zzz_generic.txt",
+		"/F/SteamLibrary/steamapps/workshop/content/394360/1444730775/MM Dawn LW mod/common/scripted_effects/zz_scripted_effects.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/scripted_effects/SS_scripted_effects.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/technologies/naval.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/units/AST_2000.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/ARM - Armenia.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/AST - Australia.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/AUS - Austria.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/AZR - Azerbaijan.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/BAH - Bahrain.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/BAV - Bavaria.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/BEL - Belgium.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/BEN - Benin.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/BHM - Bahamas.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/BHU - Bhutan.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/BKF - Burkina Faso.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/BLR - Belarus.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/BLZ - Belize.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/BNG - Bangladesh.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/BOL - Bolivia.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/BOS - Bosnia.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/BOT - Botswana.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/BRA - Brazil.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/BRB - Barbados.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/BRI - Brittany.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/BRU - Brunei.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/BSQ - Basque Country.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/BUL - Bulgaria.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/BUR - Burundi.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/CAB - Cabo Verde.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/CAF - Central Africa.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/CAL - California.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/CAM - Cameroon.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/CAN - Canada.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/CAT - Catalonia.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/CHD - Chad.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/CHE - Chechnya.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/CHI - China.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/CHL - Chile.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/CMB - Cambodia.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/COG - Congo.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/COL - Colombia.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/COM - Comoros.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/COS - Costa Rica.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/CRO - Croatia.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/CRS - Corsica.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/CSA - Confederate States of America.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/CUB - Cuba.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/CYP - Cyprus.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/CZE - Czechoslovakia.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/DEN - Denmark.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/DJI - Djibouti.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/DMN - Dominica.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/DOM - Dominican Republic.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/DRC - Congo DR.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/ECU - Ecuador.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/EGY - Egypt.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/ELS - El Salvador.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/ENG - Britain.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/EQU - Equatorial Guinea.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/ERI - Eritrea.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/EST - Estonia.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/ETH - Ethiopia.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/ETI - East Timor.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/FAI - Faroe Islands.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/FIJ - Fiji.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/FIN - Finland.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/FLN - Flanders.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/FRA - France.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/GAB - Gabon.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/GAM - Gambia.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/GBS - Guinea-Bissau.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/GEO - Georgia.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/GER - Germany.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/GHA - Ghana.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/GND - Grenada.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/GRE - Greece.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/GRN - Greenland.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/GUA - Guatemla.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/GUI - Guinea.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/GUY - Guyana.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/HAI - Haiti.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/HKN - Hong Kong.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/HLS - HolySee.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/HOL - Holland.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/HON - Honduras.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/HUN - Hungary.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/ICE - Iceland.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/INS - Indonesia.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/IRE - Ireland.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/IRQ - Iraq.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/ISR - Israel.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/ISS - Islamic State.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/ITA - Italy.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/IVO - Ivory Coast.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/JAM - Jamaica.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/JAP - Japan.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/JOR - Jordan.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/KAZ - Kazakhstan.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/KEN - Kenya.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/KIR - Kiribati.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/KOR - Korea.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/KOS - Kosovo.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/KUR - Kurdistan.txt"
+	],
+	"find":
+	{
+		"height": 42.0
+	},
+	"find_in_files":
+	{
+		"height": 108.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"aas_lower_line",
+			"aas_main_line",
+			"2002",
+			"2000",
+			"1980",
+			"LHD2",
+			"carrier_cat",
+			"carrier_stats",
+			"1980",
+			"carrier_catapult_upg_up",
+			"1960",
+			"1980",
+			"carrier1",
+			"cruiser",
+			"missile_cruiser",
+			"@missile_cruiser_upper_line",
+			"2000",
+			"destroyer",
+			"destroyer2",
+			"1980",
+			"frigate",
+			"destro",
+			"4",
+			"frig",
+			"<technology>",
+			"torp",
+			"@ssn ",
+			"SLBM",
+			"cruiser_lower_line",
+			"destroyer",
+			"incband == 0",
+			"band1",
+			"ch",
+			"1",
+			"lpf",
+			"Do you want the left or right channel? L/R",
+			"=",
+			"=\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"LHD_lower_line",
+			"LHD_main_line",
+			"SLBM"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1301,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								286,
+								286
+							]
+						],
+						"settings":
+						{
+							"auto_name": "carrier_cost = {",
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "common/autonomous_states/Soviet_Socialist_Republic.txt",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 850,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								194,
+								194
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "hoi4mod.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 45,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": 118,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										43,
+										44
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										0,
+										1
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"syntax": "Packages/PackageDev/Package/Sublime Text Project/Sublime Text Project.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 3,
+					"file": "common/technologies/naval.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 37657,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								190,
+								190
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"syntax": "Packages/HOI4/hoi4.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 42.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 133.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.hex_viewer_inspector":
+	{
+		"height": 127.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/PackageDev/Package/Convert to ....sublime-build",
+	"project": "hoi4mod.sublime-project",
+	"replace":
+	{
+		"height": 75.0
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 185.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
