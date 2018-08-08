@@ -71,8 +71,6 @@ technologies = {
 
 		enable_subunits = {
 			engineer
-			armored_engineers
-			engineer_mechanized
 		}
 		
 		path = {
@@ -754,7 +752,6 @@ technologies = {
 
 		signal_company = {
 			initiative = 0.03
-			default_morale = 0.1
 		}
 		
 		
@@ -784,7 +781,6 @@ technologies = {
 
 		signal_company = {
 			initiative = 0.03
-			default_morale = 0.1
 		}
 		path = {
 			leads_to_tech = tech_signal_company4
@@ -811,7 +807,6 @@ technologies = {
 
 		signal_company = {
 			initiative = 0.03
-			default_morale = 0.1
 		}
 
 		research_cost = 1.5

@@ -242,7 +242,7 @@ sub_units = {
 
 		need = {
 			mechanized_airborne_equipment = 50
-			infantry_equipment = 400
+			infantry_equipment = 1100
 			motorized_equipment = 50
 			
 			
@@ -324,7 +324,7 @@ sub_units = {
 
 		need = {
 			mechanized_marine_equipment = 50
-			infantry_equipment = 400
+			infantry_equipment = 1100
 			motorized_equipment = 50
 			
 			
@@ -436,5 +436,4 @@ sub_units = {
 
 		hardness = 0.1
 	}
-	
 }

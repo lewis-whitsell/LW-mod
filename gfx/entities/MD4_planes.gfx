@@ -14,7 +14,7 @@ objectTypes = {
 	}
 	pdxmesh = {
 		name = "generic_jet_multirole_mesh"
-		file = file = "gfx/models/units/planes/USA_mr_fighter_f16.mesh"
+		file = "gfx/models/units/planes/USA_strike_fighter_f15.mesh"
 	}
 	pdxmesh = {
 		name = "generic_jump_jet_mesh"
@@ -29,16 +29,12 @@ objectTypes = {
 		file = "gfx/models/units/planes/USA_strat_bomber_nighthawk.mesh"
 	}
 	pdxmesh = {
-		name = "generic_strat_bomber_mesh"
-		file = "gfx/models/units/planes/strat_bomber.mesh"
-	}
-	pdxmesh = {
 		name = "generic_nav_bomber_mesh"
 		file = "gfx/models/units/planes/USA_nav_plane_P3.mesh"
 	}
 	pdxmesh = {
 		name = "generic_jet_cas_mesh"
-		file = "gfx/models/units/planes/jetcas.mesh"
+		file = "gfx/models/units/planes/USA_cas_thunderbolt.mesh"
 	}
 	pdxmesh = {
 		name = "generic_cv_jet_cas_mesh"
@@ -57,5 +53,5 @@ objectTypes = {
 		file = "gfx/models/units/planes/SOV_attack_helicopter_m24.mesh"
 		animation = { id = "idle" type = "SOV_attack_helicopter_m24_idle_animation"}
 	}
-#"gfx/models/units/planes/USA_strike_fighter_f15.mesh"
+
 }

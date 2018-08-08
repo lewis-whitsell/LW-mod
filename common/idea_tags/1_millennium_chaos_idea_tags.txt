@@ -1,7 +1,0 @@
-idea_categories = {
-	millennium_chaos_settings = {
-		slot = millennium_chaos_settings_ideas
-		cost = 0
-		removal_cost = 0
-	}
-}
