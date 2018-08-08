@@ -1,4 +1,4 @@
-Merge Ideas from MAD,DEN,GRN,AST,CYP,PHI to LAW
+Merge Ideas from MAD,DEN,GRN,AST,CYP,PHI to LAW - DONE 8/4
 Replace ideas in national focus tree to ones in LAW
-take new/edited units and equipment out of core files and place in LAW_* see folder (LAW in prog)
+take new/edited units and equipment out of core files and place in LAW_* see folder
 add entries to the .gfx file in interface to match gfx\interface\goals pcs for all new national focus pictures

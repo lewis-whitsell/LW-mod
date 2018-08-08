@@ -2,471 +2,100 @@ ideas = {
 
 	country = {
 
-		MAD_4prod = {
-			picture = generic_production_bonus
-			allowed = {	always = no	original_tag = MAD}
-			removal_cost = -1
-			research_bonus = {
-				air_equipment = 0.05
-			}
-			modifier = {min_export = -0.05 local_resources_factor = 0.05 industrial_capacity_factory = 0.05 }
-		}
-		
-		MAD_4resource = {
-			allowed = {	always = no	original_tag = MAD}
-			picture = generic_morale_bonus
-			removal_cost = -1
-			modifier = {local_resources_factor = 0.05}
-		}
-		MAD_4resource2 = {
-			allowed = {	always = no	original_tag = MAD}
-			picture = generic_morale_bonus
-			removal_cost = -1
-			modifier = {min_export = -0.05 industrial_capacity_factory = 0.05}
-		}
-		MAD_4inf1 = {
-			allowed = {	always = no	original_tag = MAD}
-			picture = generic_morale_bonus
-			removal_cost = -1
-			modifier = {army_infantry_defence_factor = 0.05 army_infantry_attack_factor = 0.05}
-		}
-		MAD_4plan1 = {
-			allowed = {	always = no	original_tag = MAD}
-			picture = generic_morale_bonus
-			removal_cost = -1
-			modifier = {max_planning = 0.45 planning_speed = -0.05 }
-		}
-		MAD_4industrial = {
-			allowed = {	always = no	original_tag = MAD}
-			removal_cost = -1
-			picture = generic_production_bonus
-			modifier = {production_speed_arms_factory_factor = 0.15 production_speed_industrial_complex_factor = 0.15}
-		}
-		MAD_4arty1 = {
-			allowed = {	always = no	original_tag = MAD}
-			removal_cost = -1
-			picture = generic_production_bonus
-			modifier = {army_artillery_attack_factor = 0.05 air_paradrop_attack_factor = 0.1 }
-
-		}
-		MAD_4arty2 = {
-			allowed = {	always = no	original_tag = MAD}
-			removal_cost = -1
-			picture = generic_production_bonus
-			modifier = {special_forces_attack_factor = 0.1 special_forces_defence_factor = 0.1}
-
-		}
-		MAD_4arty3 = {
-			allowed = {	always = no	original_tag = MAD}
-			removal_cost = -1
-			picture = generic_production_bonus
-			modifier = {heat_attrition_factor = -0.5 }
-
-		}
-		
-		MAD_4airsup = {
-			allowed = {	always = no	original_tag = MAD}
-			removal_cost = -1
-			picture = generic_production_bonus
-			modifier = {enemy_army_bonus_air_superiority_factor = -0.075}
-
-		}
-		MAD_4trade1 = {
-			allowed = {	always = no	original_tag = MAD}
-			removal_cost = -1
-			picture = generic_production_bonus
-			modifier = {political_power_gain = 0.2}
-		}
-		MAD_4airbase = {
-			allowed = {	always = no	original_tag = MAD}
-			removal_cost = -1
-			picture = generic_production_bonus
-			modifier = {production_speed_anti_air_building_factor = 0.3 production_speed_air_base_factor = 0.15 }
-		}
-		MAD_4trade2 = {
-			allowed = {	always = no	original_tag = MAD}
-			removal_cost = -1
-			picture = generic_production_bonus
-			modifier = {foreign_subversive_activites = -0.50}
-		}
-		MAD_4trade3 = {
-			allowed = {	always = no	original_tag = MAD}
-			removal_cost = -1
-			picture = generic_production_bonus
-			modifier = {political_power_gain = 0.2}
-		}
-		MAD_4grand_deal = {
-			allowed = {	always = no	original_tag = MAD}
-			removal_cost = -1
-			picture = generic_production_bonus
-			modifier = {global_building_slots_factor = 0.10 consumer_goods_factor = 0.02}
-		}
-		MAD_4grand_deal2 = {
-			allowed = {	always = no	original_tag = MAD}
-			removal_cost = -1
-			picture = generic_production_bonus
-			modifier = {global_building_slots_factor = 0.10 production_speed_infrastructure_factor = 0.2 consumer_goods_factor = 0.02}
-		}
-		MAD_4grand_deal3 = {
-			allowed = {	always = no	original_tag = MAD}
-			removal_cost = -1
-			picture = generic_production_bonus
-			modifier = {research_time_factor = -0.03 production_speed_synthetic_refinery_factor = 0.15 consumer_goods_factor = 0.02}
-		}
-		MAD_4american_advisors = {
-			allowed = {	always = no	original_tag = MAD}
-			removal_cost = -1
-			picture = generic_production_bonus
-			equipment_bonus = {
-				mechanized_equipment = {
-					build_cost_ic = -0.1
-					instant = yes
-				}
-			}
-		}
-		MAD_4end1 = {
-			allowed = {	always = no	original_tag = MAD}
-			removal_cost = -1
-			picture = generic_production_bonus
-			modifier = {
-				conscription = 0.02 
-				army_defence_factor = -0.05 
-				army_attack_factor = -0.05
-				stability_factor = -0.01 
-			}
-
-		}
-		MAD_4end2 = {
-			allowed = {	always = no	original_tag = MAD}
-			removal_cost = -1
-			picture = generic_production_bonus
-			modifier = {
-				conscription = 0.05 
-				army_defence_factor = -0.1 
-				army_attack_factor = -0.1 
-				production_factory_max_efficiency_factor = -0.05 
-				stability_factor = -0.05
-			}
-
-		}
-		MAD_4end3 = {
-			allowed = {	always = no	original_tag = MAD}
-			removal_cost = -1
-			picture = generic_production_bonus
-			modifier = {
-				conscription = 0.10 
-				army_defence_factor = -0.175 
-				army_attack_factor = -0.175 
-				production_factory_max_efficiency_factor = -0.125
-				production_speed_buildings_factor = -0.10 
-				stability_factor = -0.1
-			}
-
-		}
-		MAD_4end4 = {
-			allowed = {	always = no	original_tag = MAD}
-			removal_cost = -1
-			picture = generic_production_bonus
-			modifier = {
-				conscription = 0.15 
-				army_defence_factor = -0.25 
-				army_attack_factor = -0.25 
-				production_factory_max_efficiency_factor = -0.2
-				production_speed_buildings_factor = -0.175
-				local_resources_factor = -0.05
-				stability_factor = -0.15
-			 }
-
-		}
-		MAD_4end5 = {
-			allowed = {	always = no	original_tag = MAD}
-			removal_cost = -1
-			picture = generic_production_bonus
-			modifier = {
-				conscription = 0.20 
-				army_defence_factor = -0.275
-				army_attack_factor = -0.275 
-				production_factory_max_efficiency_factor = -0.25
-				production_speed_buildings_factor = -0.2
-				local_resources_factor = -0.1
-				industry_air_damage_factor = 0.2 
-				stability_factor = -0.2
-			 }
-
-		}
-		MAD_4end6 = {
-			allowed = {	always = no	original_tag = MAD}
-			removal_cost = -1
-			picture = generic_production_bonus
-			modifier = {
-				conscription = 0.25 
-				army_defence_factor = -0.33 
-				army_attack_factor = -0.33 
-				production_factory_max_efficiency_factor = -0.3
-				production_speed_buildings_factor = -0.25
-				local_resources_factor = -0.2
-				industry_air_damage_factor = 0.3
-				stability_factor = -0.3
-				 political_power_factor = -0.25 
-
-			 }
-
-		}
-		MAD_4air3 = {
-			allowed = {	always = no	original_tag = MAD}
-			removal_cost = -1
-			picture = generic_production_bonus
-			modifier = {naval_strike_attack_factor = 0.02 naval_strike_targetting_factor = 0.04}
-		}
-		MAD_4island_hopping = {
-			allowed = {	always = no }
-			removal_cost = -1
-			picture = generic_infantry_bonus
-			modifier = {attrition = -0.1 special_forces_cap = 0.08 }
-		}
-		MAD_4ef = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1	
-			modifier = {
-				production_speed_industrial_complex_factor = 0.05
-				consumer_goods_factor = -0.05
-				production_factory_efficiency_gain_factor = 0.1
-			}
-		}
-		MAD_4air = {
-				allowed = {always = no}
-				picture = strategic_bombing_focus
-				removal_cost = -1
-				modifier = {
-					air_ace_generation_chance_factor = 0.10
-					local_resources_factor = 0.03
-					research_time_factor = -0.03
-				}
-
-			}
-
-		MAD_4greater = {
-			allowed = {always = no}
-			removal_cost = -1
-			picture = generic_manpower_bonus
-			modifier = {conscription = 0.020 army_core_defence_factor = 0.15 army_core_attack_factor = 0.15}
-		}
-		MAD_4navy2 = {
-			allowed = {always = no}
-			removal_cost = -1
-			picture = generic_manpower_bonus
-			modifier = {naval_torpedo_range_factor = 1 convoy_raiding_efficiency_factor = 0.1 }
-		}
-		MAD_4navy_cost = {
-		
-			allowed = {always = no}
-			allowed_civil_war = {always = yes}			
-			picture = generic_navy_bonus			
-			removal_cost = -1
-
-			equipment_bonus = {
-				capital_ship = {build_cost_ic = -0.05 instant = yes}				
-				screen_ship = {build_cost_ic = -0.05 instant = yes}
-				submarine = {build_cost_ic = -0.05 instant = yes}
-				destroyer = {build_cost_ic = -0.05 instant = yes}				
-				carrier = {build_cost_ic = -0.05 instant = yes}				
-			}
-		}
-
-		MAD_4air2 = {
-				
-				allowed = {
-					always = yes
-				}
-
-				allowed_civil_war = {
-					always = yes
-				}
-				
-				removal_cost = -1
-			
-				picture = generic_air_bonus
-				
-				equipment_bonus = {
-					jet_multirole_equipment = {
-					build_cost_ic = -0.05 instant = yes
-					}
-					nav_bomber_equipment = {
-					build_cost_ic = -0.05 instant = yes
-					}
-					ucav_equipment ={
-					build_cost_ic = -0.05 instant = yes
-					}
-					jet_strat_bomber_equipment = {
-					build_cost_ic = -0.05 instant = yes
-					}
-				}
-			}
-		
-		MAD_4stablized_state = {
-			allowed = {always = no}
-			removal_cost = -1
-			picture = generic_morale_bonus
-			allowed = {always = no}
-			modifier = {political_power_factor = 0.1 army_morale_factor = 0.05}
-		}
-
-		MAD_4navy = {
-			allowed = {always = no}
-			removal_cost = -1
-			picture = generic_morale_bonus
-			allowed = {always = no}
-			modifier = {industrial_capacity_dockyard = 0.2 experience_gain_navy = 0.1 }
-		}
-		MAD_4military_youth_focus = {
-			
-			
-			allowed = {
-				always = no
-			}
-			
-			removal_cost = -1
-
-			picture = generic_manpower_bonus
-	
-			modifier = {
-				conscription = 0.02
-			}
-		}
-		MAD_4paramilitarism_focus = {
-			
-			
-			allowed = {
-				always = no
-			}
-			
-			removal_cost = -1
-
-			picture = generic_infantry_bonus
-	
-			modifier = {
-				training_time_army_factor = -0.1
-			}
-		}
-
-	}
-	political_advisor = {
 
 
-		future_ind_leader = {
+#		 MAD_4end1 = {
+#			allowed = {	always = no	original_tag = MAD}
+#			removal_cost = -1
+#			picture = generic_production_bonus
+#			modifier = {
+#				conscription = 0.02
+#				army_defence_factor = -0.05
+#				army_attack_factor = -0.05
+#				stability_factor = -0.01
+#			}
+#		}
 
-			picture = generic_political_advisor_asia_3
-			allowed = {
-				OR = {
-				tag = MAD
-				tag = PHI
-				tag = DEN
-				tag = GRN
-				tag = AST
-				tag = CYP
-				}
-			}
-			research_bonus = {
-			industry = 0.05
-			}
-			modifier ={production_speed_radar_station_factor = 0.1 production_speed_anti_air_building_factor = 0.3}
-			traits = { captain_of_industry }
-		}
-		goal_mil_leader = {
+#		 MAD_4end2 = {
+#			allowed = {	always = no	original_tag = MAD}
+#			removal_cost = -1
+#			picture = generic_production_bonus
+#			modifier = {
+#				conscription = 0.05
+#				army_defence_factor = -0.1
+#				army_attack_factor = -0.1
+#				production_factory_max_efficiency_factor = -0.05
+#				stability_factor = -0.05
+#			}
+#
+#		}
 
-			picture = generic_political_advisor_asia_1
-			allowed = {
-				OR = {
-				tag = MAD
-				tag = PHI
-				tag = DEN
-				tag = GRN
-				tag = AST
-				tag = CYP
-				}
-			}			
-			modifier ={max_command_power = 10}
-			
-			traits = { war_industrialist }
-		}
+#		MAD_4end3 = {
+#			allowed = {	always = no	original_tag = MAD}
+#			removal_cost = -1
+#			picture = generic_production_bonus
+#			modifier = {
+#				conscription = 0.10
+#				army_defence_factor = -0.175
+#				army_attack_factor = -0.175
+#				production_factory_max_efficiency_factor = -0.125
+#				production_speed_buildings_factor = -0.10
+#				stability_factor = -0.1
+#			}
+#
+#		}
 
-		fort_leader = {
+#		MAD_4end4 = {
+#			allowed = {	always = no	original_tag = MAD}
+#			removal_cost = -1
+#			picture = generic_production_bonus
+#			modifier = {
+#				conscription = 0.15
+#				army_defence_factor = -0.25
+#				army_attack_factor = -0.25
+#				production_factory_max_efficiency_factor = -0.2
+#				production_speed_buildings_factor = -0.175
+#				local_resources_factor = -0.05
+#				stability_factor = -0.15
+#			 }
+#
+#		}
 
-			picture = generic_political_advisor_asia_1
-			allowed = {
-				OR = {
-				tag = MAD
-				tag = PHI
-				tag = DEN
-				tag = GRN
-				tag = AST
-				tag = CYP
-				}
-			}
-			modifier ={army_leader_start_level = 1 army_core_defence_factor = -0.35 army_org_Factor = -0.5 }
-			
-			traits = { fortification_engineer }
-		}
+#		MAD_4end5 = {
+#			allowed = {	always = no	original_tag = MAD}
+#			removal_cost = -1
+#			picture = generic_production_bonus
+#			modifier = {
+#				conscription = 0.20
+#				army_defence_factor = -0.275
+#				army_attack_factor = -0.275
+#				production_factory_max_efficiency_factor = -0.25
+#				production_speed_buildings_factor = -0.2
+#				local_resources_factor = -0.1
+#				industry_air_damage_factor = 0.2
+#				stability_factor = -0.2
+#			 }
+#
+#		}
 
-		plan_leader = {
-
-			picture = generic_political_advisor_asia_1
-			allowed = {
-				OR = {
-				tag = MAD
-				tag = PHI
-				tag = DEN
-				tag = GRN
-				tag = AST
-				tag = CYP
-				}
-			}
-			modifier ={max_command_power = 10 max_planning = 0.15 stability_factor = 0.05}
-			
-		}
-
-		defe_leader = {
-
-			picture = generic_political_advisor_asia_1
-			allowed = {
-				OR = {
-				tag = MAD
-				tag = PHI
-				tag = DEN
-				tag = GRN
-				tag = AST
-				tag = CYP
-				}
-			}
-			modifier ={ max_dig_in = 1 mobilization_speed = 0.1 stability_factor = 0.05 }
-			
-		}
-
-		polpower_leader = {
-
-			picture = generic_political_advisor_asia_2
-			allowed = {
-				OR = {
-				tag = MAD
-				tag = PHI
-				tag = DEN
-				tag = GRN
-				tag = AST
-				tag = CYP
-				}
-			}
-			modifier ={	political_power_gain = 0.25}
-			
-			traits = {brutal_dictator}
-		}	
-	}
+#		MAD_4end6 = {
+#			allowed = {	always = no	original_tag = MAD}
+#			removal_cost = -1
+#			picture = generic_production_bonus
+#			modifier = {
+#				conscription = 0.25
+#				army_defence_factor = -0.33
+#				army_attack_factor = -0.33
+#				production_factory_max_efficiency_factor = -0.3
+#				production_speed_buildings_factor = -0.25
+#				local_resources_factor = -0.2
+#				industry_air_damage_factor = 0.3
+#				stability_factor = -0.3
+#				 political_power_factor = -0.25
+#
+#			 }
+#
+#		}
 
 	air_chief = {
 			MAD_4airc = {
@@ -480,8 +109,8 @@ ideas = {
 				tag = AST
 				tag = CYP
 				}
-			}	
-			modifier = {air_accidents_factor = -0.1}	
+			}
+			modifier = {air_accidents_factor = -0.1}
 			traits = {air_chief_night_operations_1}
 		}
 	}
@@ -498,8 +127,8 @@ ideas = {
 				tag = AST
 				tag = CYP
 				}
-			}	
-			modifier = {special_forces_attack_factor = 0.1 invasion_preparation = -0.25 }		
+			}
+			modifier = {special_forces_attack_factor = 0.1 invasion_preparation = -0.25 }
 			traits = {army_chief_organizational_1}
 		}
 	}
@@ -517,14 +146,14 @@ ideas = {
 				tag = CYP
 				}
 			}
-			modifier = {naval_strike_targetting_factor = 0.08}			
+			modifier = {naval_strike_targetting_factor = 0.08}
 			traits = {navy_chief_reform_3}
 		}
 	}
 	high_command = {
 		MAD_4Jon_Arty = {
 
-			
+
 			allowed = {
 				OR = {
 				tag = MAD
@@ -535,7 +164,7 @@ ideas = {
 				tag = CYP
 				}
 			}
-			modifier = {army_artillery_attack_factor = 0.05}			
+			modifier = {army_artillery_attack_factor = 0.05}
 			traits = {army_regrouping_2}
 
 		}
@@ -552,12 +181,12 @@ ideas = {
 				tag = CYP
 				}
 			}
-			modifier = {army_infantry_defence_factor = 0.2}			
+			modifier = {army_infantry_defence_factor = 0.2}
 			traits = {army_artillery_3}
 		}
 		MAD_4Ire_air = {
 
-			
+
 			allowed = {
 				OR = {
 				tag = MAD
@@ -568,10 +197,10 @@ ideas = {
 				tag = CYP
 				}
 			}
-			modifier = {air_accidents_factor = -0.1}			
+			modifier = {air_accidents_factor = -0.1}
 			traits = {air_bomber_interception_3}
 			picture = generic_air_asia_1
-		}	
+		}
 	}
 
 	tank_manufacturer =
@@ -599,7 +228,7 @@ ideas = {
 				light_mechanized_equipment = {
 					build_cost_ic = -0.15 breakthrough = 0.1
 				}
-			} 
+			}
 			traits = {}
 		}
 		MED_Motors = {
@@ -621,7 +250,7 @@ ideas = {
 				mechanized_equipment = {
 				build_cost_ic = -0.15 breakthrough = 0.1
 				}
-			} 
+			}
 			traits = {}
 		}
 		ENGR_Motors = {
@@ -646,7 +275,7 @@ ideas = {
 				motorized_rocket_equipment = {
 				build_cost_ic = -0.15 breakthrough = 0.1 defense = 0.1
 				}
-			} 
+			}
 			traits = {}
 		}
 	}
@@ -756,7 +385,7 @@ ideas = {
 			}
 			research_bonus = {air_equipment = 0.10}
 			equipment_bonus = {
-				
+
 				jet_strat_bomber_equipment = {
 				air_agility = 0.1 air_bombing = 0.10 maximum_speed = 0.1 reliability = 0.05
 				}
@@ -769,7 +398,7 @@ ideas = {
 				stealth_strategic_bomber_equipment = {
 				air_agility = 0.1 air_bombing = 0.10 maximum_speed = 0.1 reliability = 0.05
 				}
-				
+
 			}
 		}
 
@@ -818,8 +447,8 @@ ideas = {
 	naval_manufacturer =
 	{
 		designer = yes
-		Carrier_Yards = 
-		{	
+		Carrier_Yards =
+		{
 			allowed = {
 			OR = {
 			tag = MAD
@@ -833,24 +462,24 @@ ideas = {
 			research_bonus = {
 				naval_equipment = 0.10
 			}
-			equipment_bonus = 
+			equipment_bonus =
 			{
 				carrier = {
-					build_cost_ic = -0.05 
+					build_cost_ic = -0.05
 					carrier_size = 0.2
-					naval_speed = 0.05 
+					naval_speed = 0.05
 					surface_detection = 0.15
 					anti_air_attack = 0.2
 				}
 				light_carrier = {
-					build_cost_ic = -0.05 
+					build_cost_ic = -0.05
 					carrier_size = 0.2
-					naval_speed = 0.05 
+					naval_speed = 0.05
 					surface_detection = 0.15
 					anti_air_attack = 0.2
 				}
 				LHD = {
-				build_cost_ic = -0.05 
+				build_cost_ic = -0.05
 				naval_speed = 0.25
 				surface_detection = -0.15
 				shore_bombardment  = 0.25
@@ -858,8 +487,8 @@ ideas = {
 			}
 		}
 
-		Submarine_Yards = 
-		{	
+		Submarine_Yards =
+		{
 			allowed = {
 			OR = {
 			tag = MAD
@@ -873,24 +502,24 @@ ideas = {
 			research_bonus = {
 				naval_equipment = 0.10
 			}
-			equipment_bonus = 
+			equipment_bonus =
 			{
 				submarine = {
-					build_cost_ic = -0.05 
+					build_cost_ic = -0.05
 					sub_visibility = -0.1
 					fire_range = 0.05
 					torpedo_attack = 0.05
 					evasion = 0.1
 				}
 				nuclear_submarine = {
-					build_cost_ic = 0.05 
+					build_cost_ic = 0.05
 					sub_visibility = -0.2
 					fire_range = 0.1
 					torpedo_attack = 0.11
 					evasion = 0.15
 				}
 				ballistic_submarine = {
-					build_cost_ic = -0.05 
+					build_cost_ic = -0.05
 					sub_visibility = -0.25
 					evasion = 0.2
 				}
@@ -900,8 +529,8 @@ ideas = {
 			}
 		}
 
-		Screen_Yards = 
-		{	
+		Screen_Yards =
+		{
 			allowed = {
 			OR = {
 			tag = MAD
@@ -915,16 +544,16 @@ ideas = {
 			research_bonus = {
 				naval_equipment = 0.10
 			}
-			equipment_bonus = 
+			equipment_bonus =
 			{
 				corvette = {
-					build_cost_ic = -0.05 
+					build_cost_ic = -0.05
 					fire_range = 0.05
 					evasion = 0.1
 					naval_range = 0.15
 				}
 				frigate = {
-					build_cost_ic = -0.05 
+					build_cost_ic = -0.05
 					fire_range = 0.05
 					evasion = 0.1
 					naval_range = 0.15
@@ -939,8 +568,8 @@ ideas = {
 			}
 		}
 
-		Capital_Yards = 
-		{	
+		Capital_Yards =
+		{
 			allowed = {
 			OR = {
 			tag = MAD
@@ -954,16 +583,16 @@ ideas = {
 			research_bonus = {
 				naval_equipment = 0.10
 			}
-			equipment_bonus = 
+			equipment_bonus =
 			{
 				missile_cruiser = {
-					build_cost_ic = -0.1 
+					build_cost_ic = -0.1
 					fire_range = 0.05
 					evasion = 0.1
 					naval_range = 0.15
 				}
 				carrier = {
-					build_cost_ic = -0.1 
+					build_cost_ic = -0.1
 					surface_detection = 0.1
 					anti_air_attack = 0.25
 				}
@@ -973,8 +602,8 @@ ideas = {
 					anti_air_attack = 0.25
 				}
 			}
-		}	
-	}	
+		}
+	}
 
 	industrial_concern = {
 		designer = yes
@@ -992,7 +621,7 @@ ideas = {
 					}
 				}
 
-				research_bonus = {industry = 0.1} 
+				research_bonus = {industry = 0.1}
 				modifier = {line_change_production_efficiency_factor = 0.1 industrial_capacity_factory = 0.05 industrial_capacity_dockyard = 0.1 production_factory_max_efficiency_factor = 0.05}
 				traits = { industrial_concern }
 			}
@@ -1010,7 +639,7 @@ ideas = {
 					}
 				}
 
-				research_bonus = {industry = 0.1} 
+				research_bonus = {industry = 0.1}
 				modifier = {min_export = -0.05}
 				traits = { industrial_concern }
 			}
@@ -1028,21 +657,21 @@ ideas = {
 					}
 				}
 
-				research_bonus = {industry = 0.1} 
+				research_bonus = {industry = 0.1}
 				modifier = {production_speed_buildings_factor = 0.05}
 				traits = { industrial_concern }
 			}
 
 	}
 
-	materiel_manufacturer = 
+	materiel_manufacturer =
 	{
-		
+
 		designer = yes
-		
-		Company1 = 
+
+		Company1 =
 		{
-			
+
 			allowed = {
 			OR = {
 			tag = MAD
@@ -1062,9 +691,9 @@ ideas = {
 			modifier ={	production_factory_max_efficiency_factor = 0.05}
 		}
 
-		Company2 = 
+		Company2 =
 		{
-			
+
 			allowed = {
 			OR = {
 			tag = MAD
@@ -1084,9 +713,9 @@ ideas = {
 			modifier ={research_time_factor = -0.01}
 		}
 
-		Company3 = 
+		Company3 =
 		{
-			
+
 			allowed = {
 			OR = {
 			tag = MAD
@@ -1108,5 +737,5 @@ ideas = {
 			}
 			modifier ={ army_infantry_attack_factor = 0.02 }
 		}
-	} 
+	}
 }

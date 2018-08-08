@@ -35,6 +35,9 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 		}
+		sub_technologies = {
+			armored_engineering_1
+		}
 		categories = {
 			armor
 		}
@@ -75,7 +78,9 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 		}
-		
+		sub_technologies = {
+			armored_engineering_2
+		2
 		categories = {
 			armor
 		}
@@ -104,7 +109,9 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 		}
-
+		sub_technologies = {
+			armored_engineering_3
+		}
 		categories = {
 			armor
 		}
@@ -133,7 +140,9 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 		}
-
+		sub_technologies = {
+			armored_engineering_4
+		}
 		categories = {
 			armor
 		}
@@ -162,7 +171,9 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 		}
-
+		sub_technologies = {
+			armored_engineering_5
+		}
 		categories = {
 			armor
 		}
@@ -191,7 +202,9 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 		}
-
+		sub_technologies = {
+			armored_engineering_6
+		}
 		categories = {
 			armor
 		}
@@ -220,7 +233,9 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 		}
-
+		sub_technologies = {
+			armored_engineering_7
+		}
 		categories = {
 			armor
 		}
@@ -249,7 +264,9 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 		}
-
+		sub_technologies = {
+			armored_engineering_8
+		}
 		categories = {
 			armor
 		}
@@ -995,6 +1012,182 @@ technologies = {
 			motorized_equipment
 			mechanized_tech
 			cat_mechanized_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armored_engineering_1 = {
+	
+		enable_subunits = {
+			armored_engineers
+		}	
+
+		enable_equipments = {
+			armored_engineering_equipment_1
+		}	
+
+		research_cost = 2
+		start_year = 1942
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+#1944	
+	
+	armored_engineering_2 = {
+
+		enable_equipments = {
+		armored_engineering_equipment_2
+		}
+		
+
+		research_cost = 2
+		start_year = 1944
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#1947	
+	
+	armored_engineering_3 = {
+
+		enable_equipments = {
+		armored_engineering_equipment_3
+		}
+		
+
+		research_cost = 2
+		start_year = 1947
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#1950	
+	
+	armored_engineering_4 = {
+
+		enable_equipments = {
+		armored_engineering_equipment_4
+		}
+		
+
+		research_cost = 2
+		start_year = 1950
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	
+	armored_engineering_5 = {
+
+		enable_equipments = {
+		armored_engineering_equipment_5
+		}
+		
+
+		research_cost = 2
+		start_year = 1955
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+	
+	armored_engineering_6 = {
+
+		enable_equipments = {
+		armored_engineering_equipment_6
+		}
+		
+
+		research_cost = 2
+		start_year = 1965
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+	
+	armored_engineering_7 = {
+
+		enable_equipments = {
+		armored_engineering_equipment_7
+		}
+		
+
+		research_cost = 2
+		start_year = 1975
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+	
+		armored_engineering_8 = {
+
+		enable_equipments = {
+		armored_engineering_equipment_8
+		}
+		
+
+		research_cost = 2
+		start_year = 1985
+		
+		categories = {
+			armor
+			cat_medium_armor
 		}
 		
 		ai_will_do = {
