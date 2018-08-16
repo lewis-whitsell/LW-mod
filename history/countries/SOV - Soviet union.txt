@@ -39,7 +39,7 @@ set_technology = {
 	gen1_apc = 1
 	gen2_apc = 1
 	amphibious1 = 1
-	armored_engineering_1 = 1
+	
 	armored_engineering_4 = 1
 	recon_mechanized_1 = 1
 	recon_mechanized_2 = 1

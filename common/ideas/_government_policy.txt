@@ -202,7 +202,7 @@ ideas = {
 			modifier = {
 				lend_lease_tension = -0.20
 				trade_opinion_factor = 0.5 
-				min_export = 0.20
+				min_export = 0.15
 				local_resources_factor = 0.10 
 			}
 
@@ -211,6 +211,12 @@ ideas = {
 			cancel_if_invalid = no
 		}
 		ai_tarrif = {
+		available = {
+				is_ai = yes
+			}
+			visible = {
+				is_ai = yes
+			}
 			cost = 150
 			removal_cost = -1
 			level = 5

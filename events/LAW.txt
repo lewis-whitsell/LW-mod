@@ -66,30 +66,22 @@ country_event = {
 					instant_build = yes
 				}
 				}
-			
+				transfer_state = 465
+				transfer_state = 468
+				transfer_state = 464
+				transfer_state = 276
+				transfer_state = 740
+				transfer_state = 739
+				transfer_state = 696
+				transfer_state = 649
 				annex_country = { target = PAN } 
 				annex_country = { target = COS } 
 				annex_country = { target = NIC } 
 				annex_country = { target = HON } 
 				annex_country = { target = ELS } 
 				annex_country = { target = GUA } 
-				annex_country = { target = CUB } 
-				annex_country = { target = HAI } 
-				annex_country = { target = DOM }
 				annex_country = { target = MEX }
-				annex_country = { target = CAN }
-				annex_country = { target = BLZ } 
-				annex_country = { target = JAM } 
-				annex_country = { target = BHM } 
-				annex_country = { target = ANT } 
-				annex_country = { target = DMN } 
-				annex_country = { target = STL } 
-				annex_country = { target = STV } 
-				annex_country = { target = GND } 
-				annex_country = { target = BRB }
-				annex_country = { target = TAT }  
-				annex_country = { target = COL } 
-				annex_country = { target = VEN } 
+				annex_country = { target = BLZ }  
 				every_owned_state = {add_core_of = USA} 
 				every_owned_state = {add_extra_state_shared_building_slots = 10 add_manpower = 20000000}
 				every_owned_state = {

@@ -40,7 +40,7 @@ airborne_ifv_infantry2 = 1
 gen1_apc = 1
 gen2_apc = 1
 amphibious1 = 1
-armored_engineering_1 = 1
+
 armored_engineering_3 = 1
 recon_mechanized_1 = 1
 recon_mechanized_2 = 1

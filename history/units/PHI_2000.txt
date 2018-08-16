@@ -1,232 +1,390 @@
-﻿division_template = {
-	name = "Infantry Brigade"
+﻿
+division_template = {
+	name = "PHI Starting Garri"
 	
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }
+
+		artillery_brigade = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
+		artillery_brigade = { x = 2 y = 2 }
+		artillery_brigade = { x = 2 y = 3 }
+		artillery_brigade = { x = 2 y = 4 }
+
+		infantry = { x = 3 y = 0 }
+		anti_tank_brigade = { x = 3 y = 1 }
+		anti_tank_brigade = { x = 3 y = 2 }
+		anti_air_brigade = { x = 3 y = 3 }
 	}
-	support = {
-		artillery = { x = 0 y = 0 }
-	}
-}
-division_template = {
-	name = "Motorized Brigade"
-	
-	regiments = {
-		motorized = { x = 0 y = 0 }
-		motorized = { x = 0 y = 1 }
-		motorized = { x = 0 y = 2 }
-	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-	}
-}
-division_template = {
-	name = "Mechanized Brigade"
-	
-	regiments = {
-		mechanized = { x = 0 y = 0 }
-		mechanized = { x = 0 y = 1 }
-		mechanized = { x = 0 y = 2 }
-	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-	}
+
 }
 
 division_template = {
-	name = "Light Armor Brigade"
+	name = "PHI Starting INF"
 	
 	regiments = {
-		mechanized = { x = 0 y = 0 }
-		light_mechanized = { x = 0 y = 1 }
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+
+		artillery_brigade = { x = 1 y = 0 } 
+		artillery_brigade = { x = 1 y = 1 }
+		artillery_brigade = { x = 1 y = 2 }
+
+		anti_tank_brigade = { x = 2 y = 0 }
+
 	}
-	support = {
-		engineer = { x = 0 y = 0 }
-	}
+
 }
 
 division_template = {
-	name = "Main Infantry Division"
+	name = "PHI Starting ToDo"
 	
 	regiments = {
-		mechanized = { x = 0 y = 0 }
-		mechanized = { x = 0 y = 1 }
-		motorized = { x = 0 y = 2 }
-		motorized = { x = 0 y = 3 }
-		motorized = { x = 0 y = 4 }
-		motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
-		motorized = { x = 1 y = 2 }
-		motorized = { x = 1 y = 3 }
-		light_mechanized = { x = 1 y = 4 }
-		light_mechanized = { x = 2 y = 0 }
-		light_mechanized = { x = 2 y = 1 }
-		light_mechanized = { x = 2 y = 2 }
-		motorized = { x = 2 y = 3 }
-		motorized = { x = 2 y = 4 }
-	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-		recon = { x = 0 y = 2 }
-		artillery = { x = 0 y = 3 }
-	}
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+
+		artillery_brigade = { x = 1 y = 0 } 
 	
-	priority = 2
-}
-division_template = {
-	name = "Infantry Division"
-	
-	regiments = {
-		mechanized = { x = 0 y = 0 }
-		motorized = { x = 0 y = 1 }
-		motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
-		light_mechanized = { x = 2 y = 0 }
-		motorized = { x = 2 y = 1 }
+		anti_tank_brigade = { x = 1 y = 1 }
+
 	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-		recon = { x = 0 y = 2 }
-	}
+
 }
+
 division_template = {
-	name = "Armored Brigade"
+	name = "PHI Starting ARM"
 	
 	regiments = {
 		modern_armor = { x = 0 y = 0 }
 		modern_armor = { x = 0 y = 1 }
-		motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		sp_artillery_brigade = { x = 2 y = 0 }
+		sp_artillery_brigade = { x = 2 y = 1 }
+
+
 	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
-	}
+
 }
 
 division_template = {
-	name = "Special Forces Regiment"
+	name = "PHI Starting Marine Division"
 	
 	regiments = {
-		paratrooper = { x = 0 y = 0 }
-		paratrooper = { x = 0 y = 1 }
-		paratrooper = { x = 0 y = 2 }
-		paratrooper = { x = 0 y = 3 }
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 0 y = 3 }
+		marine = { x = 0 y = 4 }
 	}
-	support = {
-		recon = { x = 0 y = 0 }
-	}
+
 }
 
+	
 units = {
-	
+
 	division = {
-		name = "1st Infantry Division"
-		location = 1221
-		division_template = "Main Infantry Division"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "2nd Infantry Division"
-		location = 12236
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "3rd Infantry Division"
-		location = 7423
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "4th Infantry Division"
-		location = 10214
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "5th Infantry Division"
-		location = 4214
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "6th Infantry Division"
-		location = 4427
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "7th Infantry Division"
+		name = "PHI Starting Marine 1"
 		location = 10265
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
+		division_template = "PHI Starting Marine Division"
+		start_experience_factor = 0.75
 	}
-	
 	division = {
-		name = "8th Infantry Division"
-		location = 1340
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "Light Armor Brigade"
-		location = 1340
-		division_template = "Light Armor Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "1st Scout Ranger Regiment"
+		name = "PHI Starting Marine 2"
 		location = 10265
-		division_template = "Special Forces Regiment"
-		start_experience_factor = 0.3
+		division_template = "PHI Starting Marine Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "PHI Starting Marine 3"
+		location = 10265
+		division_template = "PHI Starting Marine Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "PHI Starting Marine 4"
+		location = 10265
+		division_template = "PHI Starting Marine Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "PHI Starting Marine 5"
+		location = 10265
+		division_template = "PHI Starting Marine Division"
+		start_experience_factor = 0.75
+	}
+
+	division = {
+		name = "PHI Starting Todo 1"
+		location = 10265
+		division_template = "PHI Starting ARM"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "PHI Starting Todo 2"
+		location = 10265
+		division_template = "PHI Starting ARM"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "PHI Starting Todo 3"
+		location = 10265
+		division_template = "PHI Starting ARM"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "PHI Starting Todo 4"
+		location = 10265
+		division_template = "PHI Starting ARM"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "PHI Starting Todo 5"
+		location = 10265
+		division_template = "PHI Starting ARM"
+		start_experience_factor = 0.5
+	}
+
+
+	division = {
+		name = "PHI Starting ARM 1"
+		location = 10265
+		division_template = "PHI Starting ARM"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "PHI Starting ARM 2"
+		location = 10265
+		division_template = "PHI Starting ARM"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "PHI Starting ARM 3"
+		location = 10265
+		division_template = "PHI Starting ARM"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "PHI Starting ARM 4"
+		location = 10265
+		division_template = "PHI Starting ARM"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "PHI Starting ARM 5"
+		location = 10265
+		division_template = "PHI Starting ARM"
+		start_experience_factor = 0.5
 	}
 	
 	division = {
-		name = "Special Forces Regiment"
+		name = "PHI Starting Army Garri 1"
 		location = 10265
-		division_template = "Special Forces Regiment"
-		start_experience_factor = 0.3
+		division_template = "PHI Starting Garri"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "PHI Starting Army Garri 2"
+		location = 10265
+		division_template = "PHI Starting Garri"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "PHI Starting Army Garri 3"
+		location = 10265
+		division_template = "PHI Starting Garri"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "PHI Starting Army Garri 4"
+		location = 10265
+		division_template = "PHI Starting Garri"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "PHI Starting Army Garri 5"
+		location = 10265
+		division_template = "PHI Starting Garri"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "PHI Starting Army Garri 6"
+		location = 10265
+		division_template = "PHI Starting Garri"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "PHI Starting Army Garri 7"
+		location = 10265
+		division_template = "PHI Starting Garri"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "PHI Starting Army Garri 8"
+		location = 10265
+		division_template = "PHI Starting Garri"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "PHI Starting Army Garri 9"
+		location = 10265
+		division_template = "PHI Starting Garri"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "PHI Starting Army Garri 10"
+		location = 10265
+		division_template = "PHI Starting Garri"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "PHI Starting Army Garri 11"
+		location = 10265
+		division_template = "PHI Starting Garri"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "PHI Starting Army Garri 12"
+		location = 10265
+		division_template = "PHI Starting Garri"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "PHI Starting Army Garri 13"
+		location = 10265
+		division_template = "PHI Starting Garri"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "PHI Starting Army Garri 14"
+		location = 10265
+		division_template = "PHI Starting Garri"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "PHI Starting Army Garri 15"
+		location = 10265
+		division_template = "PHI Starting Garri"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "PHI Starting Army Garri 16"
+		location = 10265
+		division_template = "PHI Starting Garri"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "PHI Starting Army Garri 17"
+		location = 10265
+		division_template = "PHI Starting Garri"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "PHI Starting Army Garri 18"
+		location = 10265
+		division_template = "PHI Starting Garri"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "PHI Starting Army Garri 19"
+		location = 10265
+		division_template = "PHI Starting Garri"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "PHI Starting Army Garri 20"
+		location = 10265
+		division_template = "PHI Starting Garri"
+		start_experience_factor = 0.5
 	}
 	
 	navy = {
 		name = "Offshore Combat Force"
 		base = 10265
 		location = 10265
-		ship = { name = "BRP Rajah Humabon (PF-11)" definition = frigate equipment = { frigate_1 = { amount = 1 owner = USA } } }
-		ship = { name = "BRP Emilio Jacinto (PS-35)" definition = frigate equipment = { submarine_1 = { amount = 1 owner = ENG } } }
-		ship = { name = "BRP Apolinario Mabini (PS-36)" definition = frigate equipment = { submarine_1 = { amount = 1 owner = ENG } } }
-		ship = { name = "BRP Artemio Ricarte (PS-37)" definition = frigate equipment = { submarine_1 = { amount = 1 owner = ENG } } }
-		
+		ship = { name = "Refurb FF 1" definition = frigate equipment = { frigate_1 = { amount = 1 owner = PHI } } }
+		ship = { name = "Refurb FF 2" definition = frigate equipment = { frigate_1 = { amount = 1 owner = PHI } } }
+		ship = { name = "Refurb FF 3" definition = frigate equipment = { frigate_1 = { amount = 1 owner = PHI } } }
+		ship = { name = "Refurb FF 4" definition = frigate equipment = { frigate_1 = { amount = 1 owner = PHI } } }
+		ship = { name = "Refurb FF 5" definition = frigate equipment = { frigate_1 = { amount = 1 owner = PHI } } }
+		ship = { name = "Refurb FF 6" definition = frigate equipment = { frigate_1 = { amount = 1 owner = PHI } } }
+		ship = { name = "Refurb FF 7" definition = frigate equipment = { frigate_1 = { amount = 1 owner = PHI } } }
+		ship = { name = "Refurb FF 8" definition = frigate equipment = { frigate_1 = { amount = 1 owner = PHI } } }
+		ship = { name = "Refurb FF 9" definition = frigate equipment = { frigate_1 = { amount = 1 owner = PHI } } }
+		ship = { name = "Refurb FF 10" definition = frigate equipment = { frigate_1 = { amount = 1 owner = PHI } } }
+		ship = { name = "Refurb DD 1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = PHI } } }
+		ship = { name = "Refurb DD 2" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = PHI } } }
+
+		ship = {
+			name = "Refurb CV 1" 
+			definition = LHD 
+			equipment = { LHD_1 = { amount = 1 owner = PHI } }
+			air_wings = {
+			}
+		}
 	}
+
 	navy = {
-		name = "Patrol Force"
+		name = "Offshore Combat Force 2"
 		base = 10265
 		location = 10265
-		ship = { name = "BRP Quezon (PS-70)" definition = frigate equipment = { submarine_1 = { amount = 1 owner = PHI } } }
-		ship = { name = "BRP Rizal (PS-74)" definition = frigate equipment = { submarine_1 = { amount = 1 owner = PHI } } }
-		ship = { name = "BRP Datu Tupas (PS-18)" definition = frigate equipment = { submarine_1 = { amount = 1 owner = PHI } } }
-		ship = { name = "BRP Miguel Malvar (PS-19)" definition = frigate equipment = { submarine_1 = { amount = 1 owner = PHI } } }
-		ship = { name = "BRP Magat Salamat (PS-20)" definition = frigate equipment = { submarine_1 = { amount = 1 owner = PHI } } }
-		ship = { name = "BRP Sultan Kudarat (PS-22)" definition = frigate equipment = { submarine_1 = { amount = 1 owner = PHI } } }
-		ship = { name = "BRP Datu Marikudo (PS-23)" definition = frigate equipment = { submarine_1 = { amount = 1 owner = PHI } } }
-		ship = { name = "BRP Cebu (PS-28)" definition = frigate equipment = { submarine_1 = { amount = 1 owner = PHI } } }
-		ship = { name = "BRP Negros Occidental (PS-29)" definition = frigate equipment = { submarine_1 = { amount = 1 owner = PHI } } }
-		ship = { name = "BRP Pangasinan (PS-31)" definition = frigate equipment = { submarine_1 = { amount = 1 owner = PHI } } }
-		ship = { name = "BRP Iloilo (PS-32)" definition = frigate equipment = { submarine_1 = { amount = 1 owner = PHI } } }
-		
+		ship = { name = "Refurb FF 11" definition = frigate equipment = { frigate_1 = { amount = 1 owner = PHI } } }
+		ship = { name = "Refurb FF 12" definition = frigate equipment = { frigate_1 = { amount = 1 owner = PHI } } }
+		ship = { name = "Refurb FF 13" definition = frigate equipment = { frigate_1 = { amount = 1 owner = PHI } } }
+		ship = { name = "Refurb FF 14" definition = frigate equipment = { frigate_1 = { amount = 1 owner = PHI } } }
+		ship = { name = "Refurb FF 15" definition = frigate equipment = { frigate_1 = { amount = 1 owner = PHI } } }
+		ship = { name = "Refurb FF 16" definition = frigate equipment = { frigate_1 = { amount = 1 owner = PHI } } }
+		ship = { name = "Refurb FF 17" definition = frigate equipment = { frigate_1 = { amount = 1 owner = PHI } } }
+		ship = { name = "Refurb FF 18" definition = frigate equipment = { frigate_1 = { amount = 1 owner = PHI } } }
+		ship = { name = "Refurb FF 19" definition = frigate equipment = { frigate_1 = { amount = 1 owner = PHI } } }
+		ship = { name = "Refurb FF 110" definition = frigate equipment = { frigate_1 = { amount = 1 owner = PHI } } }
+		ship = { name = "Refurb DD 11" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = PHI } } }
+		ship = { name = "Refurb DD 12" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = PHI } } }
+
+		ship = {
+			name = "Refurb CV 11" 
+			definition = LHD 
+			equipment = { LHD_1 = { amount = 1 owner = PHI } }
+			air_wings = {
+			}
+		}
 	}
+
 }

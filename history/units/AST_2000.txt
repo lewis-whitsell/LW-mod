@@ -1,206 +1,390 @@
-﻿division_template = {
-	name = "Infantry Brigade"
-	
-	regiments = {
-		mechanized = { x = 0 y = 0 }
-		mechanized = { x = 0 y = 1 }
-		motorized = { x = 0 y = 1 }
-		motorized = { x = 0 y = 2 }
-	}
-	
-	support = {
-		field_hospital = { x = 0 y = 0 }
-		artillery = { x = 0 y = 0 }
-	}
-}
-
+﻿
 division_template = {
-	name = "Armoured Regiment"
-	
-	regiments = {
-		modern_armor = { x = 0 y = 0 }
-		modern_armor = { x = 0 y = 1 }
-		mechanized = { x = 1 y = 0 }
-		mechanized = { x = 1 y = 1 }
-		mechanized = { x = 1 y = 2 }
-	}
-	
-	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-	}
-}
-
-
-division_template = {
-	name = "Infantry Reserve Brigade"
+	name = "AST Starting Garri"
 	
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }
+
+		artillery_brigade = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
+		artillery_brigade = { x = 2 y = 2 }
+		artillery_brigade = { x = 2 y = 3 }
+		artillery_brigade = { x = 2 y = 4 }
+
+		infantry = { x = 3 y = 0 }
+		anti_tank_brigade = { x = 3 y = 1 }
+		anti_tank_brigade = { x = 3 y = 2 }
+		anti_air_brigade = { x = 3 y = 3 }
 	}
-	
-	support = {
-		field_hospital = { x = 0 y = 0 }
-		artillery = { x = 0 y = 0 }
-	}
-	
-	priority = 0
+
 }
 
 division_template = {
-	name = "Cavalry Reserve Brigade"
+	name = "AST Starting INF"
 	
 	regiments = {
-		cavalry = { x = 0 y = 0 }
-		cavalry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+
+		artillery_brigade = { x = 1 y = 0 } 
+		artillery_brigade = { x = 1 y = 1 }
+		artillery_brigade = { x = 1 y = 2 }
+
+		anti_tank_brigade = { x = 2 y = 0 }
+
 	}
-	
-	support = {
-		field_hospital = { x = 0 y = 0 }
-		artillery = { x = 0 y = 0 }
-	}
-	
-	priority = 0
+
 }
 
 division_template = {
-	name = "Special Operations Brigade"
+	name = "AST Starting ToDo"
 	
 	regiments = {
-		mechanized = { x = 0 y = 0 }
-		mechanized = { x = 0 y = 1 }
-	}
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+
+		artillery_brigade = { x = 1 y = 0 } 
 	
-	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-		anti_air = { x = 0 y = 2 }
+		anti_tank_brigade = { x = 1 y = 1 }
+
 	}
-	
-	priority = 2
+
 }
 
+division_template = {
+	name = "AST Starting ARM"
+	
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		sp_artillery_brigade = { x = 2 y = 0 }
+		sp_artillery_brigade = { x = 2 y = 1 }
+
+
+	}
+
+}
+
+division_template = {
+	name = "AST Starting Marine Division"
+	
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 0 y = 3 }
+		marine = { x = 0 y = 4 }
+	}
+
+}
+
+	
 units = {
 
 	division = {
-		name = "Special Operations Command"
-		location = 12406 #Sydney
-		division_template = "Special Operations Brigade"
-		start_experience_factor = 0.3
+		name = "AST Starting Marine 1"
+		location = 12406
+		division_template = "AST Starting Marine Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "AST Starting Marine 2"
+		location = 12406
+		division_template = "AST Starting Marine Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "AST Starting Marine 3"
+		location = 12406
+		division_template = "AST Starting Marine Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "AST Starting Marine 4"
+		location = 12406
+		division_template = "AST Starting Marine Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "AST Starting Marine 5"
+		location = 12406
+		division_template = "AST Starting Marine Division"
+		start_experience_factor = 0.75
 	}
 
 	division = {
-		name = "1st Armoured Regiment"
-		location = 7669	#Darwin
-		division_template = "Armoured Regiment"
-		start_experience_factor = 0.3
+		name = "AST Starting Todo 1"
+		location = 12406
+		division_template = "AST Starting ARM"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "AST Starting Todo 2"
+		location = 12406
+		division_template = "AST Starting ARM"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "AST Starting Todo 3"
+		location = 12406
+		division_template = "AST Starting ARM"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "AST Starting Todo 4"
+		location = 12406
+		division_template = "AST Starting ARM"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "AST Starting Todo 5"
+		location = 12406
+		division_template = "AST Starting ARM"
+		start_experience_factor = 0.5
+	}
+
+
+	division = {
+		name = "AST Starting ARM 1"
+		location = 12406
+		division_template = "AST Starting ARM"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "AST Starting ARM 2"
+		location = 12406
+		division_template = "AST Starting ARM"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "AST Starting ARM 3"
+		location = 12406
+		division_template = "AST Starting ARM"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "AST Starting ARM 4"
+		location = 12406
+		division_template = "AST Starting ARM"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "AST Starting ARM 5"
+		location = 12406
+		division_template = "AST Starting ARM"
+		start_experience_factor = 0.5
+	}
+	
+	division = {
+		name = "AST Starting Army Garri 1"
+		location = 12406
+		division_template = "AST Starting Garri"
+		start_experience_factor = 0.5
 	}
 
 	division = {
-		name = "1st Brigade"
-		location = 7669	#Darwin
-		division_template = "Infantry Brigade"
-		start_experience_factor = 0.3
+		name = "AST Starting Army Garri 2"
+		location = 12406
+		division_template = "AST Starting Garri"
+		start_experience_factor = 0.5
 	}
 
 	division = {
-		name = "3rd Brigade"
-		location = 7566 #Townsville
-		division_template = "Infantry Brigade"
-		start_experience_factor = 0.3
+		name = "AST Starting Army Garri 3"
+		location = 12406
+		division_template = "AST Starting Garri"
+		start_experience_factor = 0.5
 	}
 
 	division = {
-		name = "7th Brigade"
-		location = 7564	#Enoggera (Brisbane)
-		division_template = "Infantry Brigade"
-		start_experience_factor = 0.3
+		name = "AST Starting Army Garri 4"
+		location = 12406
+		division_template = "AST Starting Garri"
+		start_experience_factor = 0.5
 	}
 
 	division = {
-		name = "4th Reserve Brigade"
-		location = 7798	#Melbourne
-		division_template = "Infantry Reserve Brigade"
-		start_experience_factor = 0.3
+		name = "AST Starting Army Garri 5"
+		location = 12406
+		division_template = "AST Starting Garri"
+		start_experience_factor = 0.5
 	}
 
 	division = {
-		name = "5th Reserve Brigade"
-		location = 12406 #Sydney
-		division_template = "Infantry Reserve Brigade"
-		start_experience_factor = 0.3
+		name = "AST Starting Army Garri 6"
+		location = 12406
+		division_template = "AST Starting Garri"
+		start_experience_factor = 0.5
 	}
 
 	division = {
-		name = "8th Reserve Brigade"
-		location = 12406 #Sydney
-		division_template = "Infantry Reserve Brigade"
-		start_experience_factor = 0.3
+		name = "AST Starting Army Garri 7"
+		location = 12406
+		division_template = "AST Starting Garri"
+		start_experience_factor = 0.5
 	}
 
 	division = {
-		name = "9th Reserve Brigade"
-		location = 12910 #Keswick (Adelaide)
-		division_template = "Infantry Reserve Brigade"
-		start_experience_factor = 0.3
+		name = "AST Starting Army Garri 8"
+		location = 12406
+		division_template = "AST Starting Garri"
+		start_experience_factor = 0.5
 	}
 
 	division = {
-		name = "11th Reserve Brigade"
-		location = 7566 #Townsville
-		division_template = "Infantry Reserve Brigade"
-		start_experience_factor = 0.3
+		name = "AST Starting Army Garri 9"
+		location = 12406
+		division_template = "AST Starting Garri"
+		start_experience_factor = 0.5
 	}
 
 	division = {
-		name = "13th Reserve Brigade"
-		location = 1652	#Perth
-		division_template = "Infantry Reserve Brigade"
-		start_experience_factor = 0.3
+		name = "AST Starting Army Garri 10"
+		location = 12406
+		division_template = "AST Starting Garri"
+		start_experience_factor = 0.5
 	}
 
 	division = {
-		name = "Combat Training Centre"
-		location = 7522 #Tully
-		division_template = "Infantry Reserve Brigade"
-		start_experience_factor = 0.3
+		name = "AST Starting Army Garri 11"
+		location = 12406
+		division_template = "AST Starting Garri"
+		start_experience_factor = 0.5
 	}
 
 	division = {
-		name = "North-West Mobile Force"
-		location = 7669	#Larrakeyah (Darwin)
-		division_template = "Cavalry Reserve Brigade"
-		start_experience_factor = 0.3
+		name = "AST Starting Army Garri 12"
+		location = 12406
+		division_template = "AST Starting Garri"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "AST Starting Army Garri 13"
+		location = 12406
+		division_template = "AST Starting Garri"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "AST Starting Army Garri 14"
+		location = 12406
+		division_template = "AST Starting Garri"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "AST Starting Army Garri 15"
+		location = 12406
+		division_template = "AST Starting Garri"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "AST Starting Army Garri 16"
+		location = 12406
+		division_template = "AST Starting Garri"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "AST Starting Army Garri 17"
+		location = 12406
+		division_template = "AST Starting Garri"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "AST Starting Army Garri 18"
+		location = 12406
+		division_template = "AST Starting Garri"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "AST Starting Army Garri 19"
+		location = 12406
+		division_template = "AST Starting Garri"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "AST Starting Army Garri 20"
+		location = 12406
+		division_template = "AST Starting Garri"
+		start_experience_factor = 0.5
 	}
 	
 	navy = {
-		name = "Fleet Base East"
+		name = "Offshore Combat Force"
 		base = 12406
 		location = 12406
-		ship = { name = "HMAS Anzac (FFH-150)" definition = frigate equipment = { frigate_1 = { amount = 1 owner = AST } } }
-		ship = { name = "HMAS Adelaide (FFG-01)" definition = frigate equipment = { frigate_1 = { amount = 1 owner = AST } } }
-		ship = { name = "HMAS Canberra (FFG-02)" definition = frigate equipment = { frigate_1 = { amount = 1 owner = AST } } }
-		ship = { name = "HMAS Sydney (FFG-03)" definition = frigate equipment = { frigate_1 = { amount = 1 owner = AST } } }
-		ship = { name = "HMAS Darwin (FFG-04)" definition = frigate equipment = { frigate_1 = { amount = 1 owner = AST } } }
-		ship = { name = "HMAS Melbourne (FFG-05)" definition = frigate equipment = { frigate_1 = { amount = 1 owner = AST } } }
-		ship = { name = "HMAS Newcastle (FFG-06)" definition = frigate equipment = { frigate_1 = { amount = 1 owner = AST } } }
-		ship = { name = "HMAS Hobart (D-39)" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = AST } } }
-		ship = { name = "HMAS Brisbane (D-41)" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = AST } } }
-		ship = { name = "HMAS Huon (M-82)" definition = frigate equipment = { submarine_1 = { amount = 1 owner = AST } } }
+		ship = { name = "Refurb FF 1" definition = frigate equipment = { frigate_1 = { amount = 1 owner = AST } } }
+		ship = { name = "Refurb FF 2" definition = frigate equipment = { frigate_1 = { amount = 1 owner = AST } } }
+		ship = { name = "Refurb FF 3" definition = frigate equipment = { frigate_1 = { amount = 1 owner = AST } } }
+		ship = { name = "Refurb FF 4" definition = frigate equipment = { frigate_1 = { amount = 1 owner = AST } } }
+		ship = { name = "Refurb FF 5" definition = frigate equipment = { frigate_1 = { amount = 1 owner = AST } } }
+		ship = { name = "Refurb FF 6" definition = frigate equipment = { frigate_1 = { amount = 1 owner = AST } } }
+		ship = { name = "Refurb FF 7" definition = frigate equipment = { frigate_1 = { amount = 1 owner = AST } } }
+		ship = { name = "Refurb FF 8" definition = frigate equipment = { frigate_1 = { amount = 1 owner = AST } } }
+		ship = { name = "Refurb FF 9" definition = frigate equipment = { frigate_1 = { amount = 1 owner = AST } } }
+		ship = { name = "Refurb FF 10" definition = frigate equipment = { frigate_1 = { amount = 1 owner = AST } } }
+		ship = { name = "Refurb DD 1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = AST } } }
+		ship = { name = "Refurb DD 2" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = AST } } }
+
+		ship = {
+			name = "Refurb CV 1" 
+			definition = LHD 
+			equipment = { LHD_1 = { amount = 1 owner = AST } }
+			air_wings = {
+			}
+		}
 	}
+
 	navy = {
-		name = "Fleet Base West"
-		base = 1652
-		location = 1652
-		ship = { name = "HMAS Arunta (FFH-151)" definition = frigate equipment = { frigate_1 = { amount = 1 owner = AST } } }
-		ship = { name = "HMAS Collins (SSG-73)" definition = submarine equipment = { submarine_1 = { amount = 1 owner = AST } } }
-		ship = { name = "HMAS Farncomb (SSG-74)" definition = submarine equipment = { submarine_1 = { amount = 1 owner = AST } } }
-		ship = { name = "HMAS Waller (SSG-75)" definition = submarine equipment = { submarine_1 = { amount = 1 owner = AST } } }
-		ship = { name = "HMAS Otama (SSG-62)" definition = submarine equipment = { submarine_1 = { amount = 1 owner = AST } } }
+		name = "Offshore Combat Force 2"
+		base = 12406
+		location = 12406
+		ship = { name = "Refurb FF 11" definition = frigate equipment = { frigate_1 = { amount = 1 owner = AST } } }
+		ship = { name = "Refurb FF 12" definition = frigate equipment = { frigate_1 = { amount = 1 owner = AST } } }
+		ship = { name = "Refurb FF 13" definition = frigate equipment = { frigate_1 = { amount = 1 owner = AST } } }
+		ship = { name = "Refurb FF 14" definition = frigate equipment = { frigate_1 = { amount = 1 owner = AST } } }
+		ship = { name = "Refurb FF 15" definition = frigate equipment = { frigate_1 = { amount = 1 owner = AST } } }
+		ship = { name = "Refurb FF 16" definition = frigate equipment = { frigate_1 = { amount = 1 owner = AST } } }
+		ship = { name = "Refurb FF 17" definition = frigate equipment = { frigate_1 = { amount = 1 owner = AST } } }
+		ship = { name = "Refurb FF 18" definition = frigate equipment = { frigate_1 = { amount = 1 owner = AST } } }
+		ship = { name = "Refurb FF 19" definition = frigate equipment = { frigate_1 = { amount = 1 owner = AST } } }
+		ship = { name = "Refurb FF 110" definition = frigate equipment = { frigate_1 = { amount = 1 owner = AST } } }
+		ship = { name = "Refurb DD 11" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = AST } } }
+		ship = { name = "Refurb DD 12" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = AST } } }
+
+		ship = {
+			name = "Refurb CV 11" 
+			definition = LHD 
+			equipment = { LHD_1 = { amount = 1 owner = AST } }
+			air_wings = {
+			}
+		}
 	}
-	
+
 }
-
-### Air OOB ###
-

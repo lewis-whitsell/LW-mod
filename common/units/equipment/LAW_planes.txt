@@ -653,7 +653,7 @@ equipments = {
 
 		manpower = 12
 
-		build_cost_ic = 26
+		build_cost_ic = 260
 		resources = {
 			oil = 1
 			aluminium = 2
@@ -685,7 +685,7 @@ equipments = {
 
 		manpower = 12
 
-		build_cost_ic = 28
+		build_cost_ic = 280
 		resources = {
 			oil = 1
 			aluminium = 3
@@ -717,7 +717,7 @@ equipments = {
 
 		manpower = 12
 
-		build_cost_ic = 30
+		build_cost_ic = 300
 		resources = {
 			oil = 2
 			aluminium = 3
@@ -749,7 +749,7 @@ equipments = {
 
 		manpower = 12
 
-		build_cost_ic = 68
+		build_cost_ic = 680
 		resources = {
 			oil = 2
 			aluminium = 3
@@ -781,7 +781,7 @@ equipments = {
 
 		manpower = 16
 
-		build_cost_ic = 92
+		build_cost_ic = 920
 		resources = {
 			oil = 2
 			aluminium = 3
@@ -813,7 +813,7 @@ equipments = {
 
 		manpower = 20
 
-		build_cost_ic = 200
+		build_cost_ic = 1200
 		resources = {
 			oil = 2
 			aluminium = 3
@@ -845,7 +845,7 @@ equipments = {
 
 		manpower = 20
 
-		build_cost_ic = 250
+		build_cost_ic = 1250
 		resources = {
 			oil = 2
 			aluminium = 3
@@ -877,11 +877,11 @@ equipments = {
 
 		manpower = 20
 
-		build_cost_ic = 270
+		build_cost_ic = 1300
 		resources = {
 			oil = 2
 			aluminium = 3
-			rubber = 1
+			rubber = 1 
 		}
 
 		reliability = 0.95

@@ -2532,8 +2532,7 @@ technologies = {
 		}
 		
 		categories = {
-			Cat_INF
-			Cat_CnC
+			support_tech
 		}
 		
 		ai_will_do = {
@@ -2560,8 +2559,7 @@ technologies = {
 		}
 		
 		categories = {
-			Cat_INF
-			Cat_CnC
+			support_tech
 		}
 		
 		ai_will_do = {
@@ -2588,8 +2586,7 @@ technologies = {
 		}
 		
 		categories = {
-			Cat_INF
-			Cat_CnC
+			support_tech
 		}
 		
 		ai_will_do = {
@@ -2616,8 +2613,7 @@ technologies = {
 		}
 		
 		categories = {
-			Cat_INF
-			Cat_CnC
+			support_tech
 		}
 		
 		ai_will_do = {
@@ -2644,8 +2640,7 @@ technologies = {
 		}
 		
 		categories = {
-			Cat_INF
-			Cat_CnC
+			support_tech
 		}
 		
 		ai_will_do = {
@@ -2672,8 +2667,7 @@ technologies = {
 		}
 		
 		categories = {
-			Cat_INF
-			Cat_CnC
+			support_tech
 		}
 		
 		ai_will_do = {
@@ -2695,8 +2689,7 @@ technologies = {
 		}
 		
 		categories = {
-			Cat_INF
-			Cat_CnC
+			support_tech
 		}
 		
 		ai_will_do = {
