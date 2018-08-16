@@ -1,7 +1,9 @@
-
 state={
-	id=682
-	name="STATE_682"
+	id=961
+	name="STATE_961"
+	provinces={
+		602 777 1299 1769 1782 4775 4784 4869 6510 7366 7899 9467 9480 10718 12278 12582 13161 
+	}
 	resources={
 		aluminium=30.000
 	}
@@ -16,16 +18,12 @@ state={
 		}
 		add_core_of = CAN
 		victory_points = {
-			4875 8 
+			9467 8 
 		}
 		victory_points = {
-			763 3 
+			7899 3 
 		}
 
-	}
-
-	provinces={
-		761 763 3736 4753 4875 7794 9740 10621 11571 12701 13094 
 	}
 	manpower=2149059
 	buildings_max_level_factor=1.000
