@@ -74,6 +74,8 @@ country_event = {
 				transfer_state = 739
 				transfer_state = 696
 				transfer_state = 649
+				transfer_state = 961
+				transfer_state = 962
 				annex_country = { target = PAN } 
 				annex_country = { target = COS } 
 				annex_country = { target = NIC } 
