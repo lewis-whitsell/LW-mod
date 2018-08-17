@@ -7,7 +7,7 @@ state={
 	state_category = state_level_12
 	
 	history={
-		owner = SYR
+		owner = ISR
 		add_core_of = SYR
 		victory_points = { 4111 25 }	#Damascus
 		victory_points = { 4550 10 }		#Homs

@@ -7,7 +7,7 @@ state={
 	state_category = state_level_7
 
 	history={
-		owner = MON
+		owner = PRC
 		victory_points = {
 			4801 5
 		}

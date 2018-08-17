@@ -118,6 +118,8 @@ add_ideas = {
 
 set_politics = {
 
+	give_guarantee = PAL
+
 	parties = {
 		
 		islamist = {

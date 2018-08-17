@@ -6,7 +6,7 @@ state={
 	state_category = state_level_5
 
 	history={
-		owner = BHM
+		owner = CUB
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 3

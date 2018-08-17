@@ -10,7 +10,7 @@ state={
 	}
 
 	history={
-		owner = USA
+		owner = ANT
 		victory_points = {
 			1440 1 
 		}

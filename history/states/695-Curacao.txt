@@ -6,7 +6,7 @@ state={
 	state_category = state_level_2
 
 	history={
-		owner = HOL
+		owner = 695
 		buildings = {
 			infrastructure = 3
 			153 = { naval_base = 2 }

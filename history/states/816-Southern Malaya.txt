@@ -8,8 +8,9 @@ state={
 		steel=12
 	}
 	history = { 
-		owner = MAY
+		owner = SIG
 		add_core_of = MAY
+		add_core_of = SIG
 		buildings = {
 			infrastructure = 7
 			industrial_complex = 5
