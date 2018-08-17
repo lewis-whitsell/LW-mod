@@ -3,7 +3,7 @@ state={
 	name="STATE_802"
 
 	history={
-		owner = TRM
+		owner = KAZ
 		add_core_of = TRM
 		buildings = {
 			infrastructure = 2

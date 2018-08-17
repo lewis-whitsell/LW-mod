@@ -6,7 +6,7 @@ state={
 		4920 7979 13222 13223 13224 13225 13226
 	}
 	history = {
-		owner = WSH
+		owner = MOR
 		add_claim_by = MOR
 		
 		buildings = {

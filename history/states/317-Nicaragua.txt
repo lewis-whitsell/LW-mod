@@ -5,7 +5,7 @@ state={
 	state_category = state_level_7
 
 	history={
-		owner = NIC
+		owner = USA
 		add_core_of = NIC
 		buildings = {
 			infrastructure = 3

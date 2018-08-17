@@ -7,7 +7,7 @@ state={
 	}
 	
 	history = {
-		owner = GUI
+		owner = IVO
 		add_core_of = GUI
 		buildings = {
 			infrastructure = 4

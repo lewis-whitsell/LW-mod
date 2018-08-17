@@ -3,7 +3,7 @@ state={
 	name="STATE_773"
 	
 	history = {
-		owner = MRT
+		owner = MAL
 		add_core_of = MRT
 		buildings = {
 			infrastructure = 2

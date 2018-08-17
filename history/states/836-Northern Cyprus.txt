@@ -7,7 +7,7 @@ state={
 	}
 	
 	history={
-		owner = NCY
+		owner = CYP
 		buildings = {
 			infrastructure = 4
 			11984 = {

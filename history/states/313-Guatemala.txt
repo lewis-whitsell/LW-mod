@@ -11,7 +11,7 @@ state={
 	state_category = state_level_7
 
 	history={
-		owner = GUA
+		owner = USA
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 4

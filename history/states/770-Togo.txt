@@ -3,7 +3,7 @@ state={
 	name="STATE_770"
 	
 	history = {
-		owner = TOG
+		owner = IVO
 		add_core_of = TOG
 		buildings = {
 			infrastructure = 4

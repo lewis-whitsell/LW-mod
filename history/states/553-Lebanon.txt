@@ -7,7 +7,7 @@ state={
 	state_category = state_level_8
 
 	history={
-		owner = LEB
+		owner = ISR
 		add_core_of = LEB
 		victory_points = { 792 20 } 	#Beirut
 		victory_points = { 1108 5 } 	#Tripoli

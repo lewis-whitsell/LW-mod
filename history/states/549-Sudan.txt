@@ -9,7 +9,7 @@ state={
 	}
 
 	history={
-		owner = SUD
+		owner = ETH
 		add_core_of = SUD
 		buildings = {
 			infrastructure = 3

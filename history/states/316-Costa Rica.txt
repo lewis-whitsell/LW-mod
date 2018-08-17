@@ -8,7 +8,7 @@ state={
 	
 
 	history={
-		owner = COS
+		owner = USA
 		add_core_of = COS
 		buildings = {
 			infrastructure = 4

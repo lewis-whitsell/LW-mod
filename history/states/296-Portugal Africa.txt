@@ -7,7 +7,7 @@ state={
 	state_category = state_level_5
 
 	history={
-		owner = GBS
+		owner = IVO
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 3

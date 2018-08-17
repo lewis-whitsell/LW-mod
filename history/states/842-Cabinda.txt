@@ -5,7 +5,7 @@ state={
 		oil=148
 	}
 	history = {
-		owner = ANG
+		owner = SAF
 		add_core_of = ANG
 		buildings = {
 			infrastructure = 5

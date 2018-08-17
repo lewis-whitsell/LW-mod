@@ -7,7 +7,7 @@ state={
 	state_category = state_level_8
 	
 	history={
-		owner = PAN
+		owner = USA
 		add_core_of = PAN
 		buildings = {
 			infrastructure = 3

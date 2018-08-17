@@ -11,7 +11,7 @@ state={
 	}
 	
 	history={
-		owner = CMB
+		owner = VIN
 		add_core_of = CMB
 		buildings = {
 			infrastructure = 5

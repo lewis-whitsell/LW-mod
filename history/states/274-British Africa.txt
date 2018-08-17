@@ -10,7 +10,7 @@ state={
 	}
 
 	history={
-		owner = GHA
+		owner = IVO
 		add_core_of = GHA
 		buildings = {
 			infrastructure = 4

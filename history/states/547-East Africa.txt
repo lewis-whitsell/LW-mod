@@ -11,7 +11,7 @@ state={
 	}
 
 	history={
-		owner = KEN
+		owner = ETH
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 5

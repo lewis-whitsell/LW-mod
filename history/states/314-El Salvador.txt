@@ -8,7 +8,7 @@ state=
 	
 	history=
 	{
-		owner = ELS
+		owner = USA
 		add_core_of = ELS
 		buildings = {
 			infrastructure = 4

@@ -7,7 +7,7 @@ state=
 	state_category = state_level_7
 	
 	history= {
-		owner = SML
+		owner = ETH
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 3

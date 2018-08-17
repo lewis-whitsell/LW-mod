@@ -7,7 +7,7 @@ state={
 	}
 	
 	history = {
-		owner = NIG
+		owner = MAL
 		add_core_of = NIG
 		buildings = {
 			infrastructure = 4

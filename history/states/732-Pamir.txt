@@ -8,7 +8,7 @@ state={
 	}
 
 	history={
-		owner = TJI
+		owner = KAZ
 		add_core_of = TJI
 		buildings = {
 			infrastructure = 1

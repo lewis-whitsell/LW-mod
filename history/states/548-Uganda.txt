@@ -8,7 +8,7 @@ state={
 	state_category = state_level_7
 
 	history={
-		owner = UGA
+		owner = ETH
 		add_core_of = UGA
 		buildings = {
 			infrastructure = 4

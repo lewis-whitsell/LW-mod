@@ -12,7 +12,7 @@ state={
 	}
 
 	history={
-		owner = BOT
+		owner = SAF
 		add_core_of = BOT
 		buildings = {
 			infrastructure = 4

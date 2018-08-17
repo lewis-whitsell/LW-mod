@@ -8,7 +8,7 @@ state={
 		7548 
 	}
 	history = {
-		owner = ANG
+		owner = SAF
 		add_core_of = ANG
 		buildings = {
 			infrastructure = 2
