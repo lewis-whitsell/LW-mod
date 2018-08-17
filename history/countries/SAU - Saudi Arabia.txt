@@ -110,6 +110,14 @@ set_technology = {
 set_country_flag = dominant_religion_islam
 set_country_flag = sunni_islam
 
+
+
+give_guarantee = PAL
+create_faction = MidEastPact
+add_to_faction = SYR
+add_to_faction = IRQ
+add_to_faction = EGY
+
 add_ideas = {
 	population_growth_rapid
 	arab_league_member
@@ -117,8 +125,6 @@ add_ideas = {
 }
 
 set_politics = {
-
-	give_guarantee = PAL
 
 	parties = {
 		

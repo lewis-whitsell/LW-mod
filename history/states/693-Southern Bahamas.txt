@@ -15,6 +15,7 @@ state={
 			1513 = { naval_base = 1 }
 		}
 		add_core_of = BHM
+		add_core_of = CUB
 	}
 	
 	provinces={

@@ -944,7 +944,209 @@ scripted_gui = {
 			}
 			}
 
+
+
+
 	}
   }
+
+
+  frigate_click={
+			if ={
+			limit={
+				check_variable = { dx > 250 }
+				check_variable = {  global.frigatestock > 1 }
+				has_tech=frigate1
+				NOT={has_tech=frigate2}
+			}
+			subtract_from_variable = { var = dx value = 250 }
+			subtract_from_variable = { var = global.frigatestock value = 1 }
+			add_equipment_production = {
+				    equipment = {
+				        type = frigate_1
+				    }
+				    requested_factories = 1
+				    progress = 1
+				    amount = 1
+			}
+			else={
+			if ={
+			limit={
+				check_variable = { dx > 250 }
+				check_variable = {  global.frigatestock > 1 }
+				has_tech=frigate2
+				NOT={has_tech=frigate3}
+			}
+			subtract_from_variable = { var = dx value = 250 }
+			subtract_from_variable = { var = global.frigatestock value = 1 }
+			add_equipment_production = {
+				    equipment = {
+				        type = frigate_2
+				    }
+				    requested_factories = 1
+				    progress = 1
+				    amount = 1
+			}
+			else={
+			if ={
+			limit={
+				check_variable = { dx > 250 }
+				check_variable = {  global.frigatestock > 1 }
+				has_tech=frigate3
+				NOT={has_tech=frigate4}
+			}
+			subtract_from_variable = { var = dx value = 250 }
+			subtract_from_variable = { var = global.frigatestock value = 1 }
+			add_equipment_production = {
+				    equipment = {
+				        type = frigate_3
+				    }
+				    requested_factories = 1
+				    progress = 1
+				    amount = 1
+			}
+			else={
+			if ={
+			limit={
+				check_variable = { dx > 250 }
+				check_variable = {  global.frigatestock > 1 }
+				has_tech=frigate4
+				NOT={has_tech=frigate5}
+			}
+			subtract_from_variable = { var = dx value = 250 }
+			subtract_from_variable = { var = global.frigatestock value = 1 }
+			add_equipment_production = {
+				    equipment = {
+				        type = frigate_4
+				    }
+				    requested_factories = 1
+				    progress = 1
+				    amount = 1
+			}
+			else={
+			if ={
+			limit={
+				check_variable = { dx > 250 }
+				check_variable = {  global.frigatestock > 1 }
+				has_tech=frigate5
+				NOT={has_tech=frigate6}
+			}
+			subtract_from_variable = { var = dx value = 250 }
+			subtract_from_variable = { var = global.frigatestock value = 1 }
+			add_equipment_production = {
+				    equipment = {
+				        type = frigate_5
+				    }
+				    requested_factories = 1
+				    progress = 1
+				    amount = 1
+			}
+			else={
+			if ={
+			limit={
+				check_variable = { dx > 250 }
+				check_variable = {  global.frigatestock > 1 }
+				has_tech=frigate6
+				NOT={has_tech=frigate7}
+			}
+			subtract_from_variable = { var = dx value = 250 }
+			subtract_from_variable = { var = global.frigatestock value = 1 }
+			add_equipment_production = {
+				    equipment = {
+				        type = frigate_6
+				    }
+				    requested_factories = 1
+				    progress = 1
+				    amount = 1
+			}
+			
+			}
+			}
+			}
+			}
+			}
+			}
+			}
+			}
+			}
+			}
+			}
+			}
+			frigate_sell_click={
+			if ={
+			limit={
+				has_equipment = { frigate_1 > 499 }
+				has_tech=gen1_mbt
+				NOT={has_tech=gen2_mbt}
+			}
+			add_to_variable = { var = dx value = 750 }
+			add_to_variable = { var = global.frigatestock value = 500 }
+			add_equipment_to_stockpile = { type = frigate_1  amount = -500  }
+			else={
+			if ={
+			limit={
+				has_equipment = { frigate_2 > 499 }
+				has_tech=gen2_mbt
+				NOT={has_tech=gen3_mbt}
+			}
+			add_to_variable = { var = dx value = 750 }
+			add_to_variable = { var = global.frigatestock value = 500 }
+			add_equipment_to_stockpile = { type = frigate_2  amount = -500  }
+			else={
+			if ={
+			limit={
+				has_equipment = { frigate_3 > 499 }
+				has_tech=gen3_mbt
+				NOT={has_tech=modern_gen3_mbt}
+			}
+			add_to_variable = { var = dx value = 750 }
+			add_to_variable = { var = global.frigatestock value = 500 }
+			add_equipment_to_stockpile = { type = frigate_3  amount = -500  }
+			else={
+			if ={
+			limit={
+				has_equipment = { frigate_4 > 499 }
+				has_tech=modern_gen3_mbt
+				NOT={has_tech=advanced_gen3_mbt}
+			}
+			add_to_variable = { var = dx value = 750 }
+			add_to_variable = { var = global.frigatestock value = 500 }
+			add_equipment_to_stockpile = { type = frigate_4  amount = -500  }
+			else={
+			if ={
+			limit={
+				has_equipment = { frigate_5 > 499 }
+				has_tech=advanced_gen3_mbt
+				NOT={has_tech=gen4_mbt}
+			}
+			add_to_variable = { var = dx value = 750 }
+			add_to_variable = { var = global.frigatestock value = 500 }
+			add_equipment_to_stockpile = { type = frigate_5  amount = -500  }
+			else={
+			if ={
+			limit={
+				has_equipment = { frigate_6 > 499 }
+				has_tech=gen4_mbt
+				NOT={has_tech=gen5_mbt}
+			}
+			add_to_variable = { var = dx value = 750 }
+			add_to_variable = { var = global.frigatestock value = 500 }
+			add_equipment_to_stockpile = { type = frigate_6  amount = -500  }
+
+			}
+			}
+			}
+			}
+			}
+			}
+			}
+			}
+			}
+			}
+
+	}
+  }
+
+
 }
 

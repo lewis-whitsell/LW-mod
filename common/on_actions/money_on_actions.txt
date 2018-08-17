@@ -13,6 +13,12 @@ on_actions = {
 		set_variable = { global.mediumtankstock = 2000 }
 		set_variable = { global.heavytankstock = 2000 }
 		set_variable = { global.convoystock = 1000 }
+		set_variable = { global.frigatestock = 25 }
+		set_variable = { global.LHDstock = 5 }
+		set_variable = { global.destroyerstock = 20 }
+		set_variable = { global.sskstock = 20 }
+		set_variable = { global.ssnstock = 20 }
+		set_variable = { global.ssbnstock = 20 }
 		}
 		every_country={
 		limit={

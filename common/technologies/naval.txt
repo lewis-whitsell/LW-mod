@@ -1941,11 +1941,11 @@ LHD_air_support = {
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = shore_support_lhd
+			leads_to_tech = LHD_ATK
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = air_support_lhd
+			leads_to_tech = LHD_DEF
 			research_cost_coeff = 1
 		}
 		research_cost = 3
@@ -1970,6 +1970,70 @@ LHD_air_support = {
 		}
 		
 	}
+
+	LHD_ATK = {
+
+    LHD = {
+
+    }
+
+	research_cost = 1
+	
+	start_year = 2008
+
+	XOR = {
+            LHD_DEF
+        }
+	
+	folder = {
+		name = naval_folder
+		position = {
+			x = @LHD_upper_line
+			y = @2008
+		}
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+	
+	categories = {
+		naval_equipment
+	}
+	
+}
+
+	LHD_DEF = {
+
+    LHD = {
+
+    }
+
+	research_cost = 1
+	
+	start_year = 2008
+
+	XOR = {
+            LHD_ATK
+        }
+	
+	folder = {
+		name = naval_folder
+		position = {
+			x = @LHD_lower_line
+			y = @2008
+		}
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+	
+	categories = {
+		naval_equipment
+	}
+	
+}
 	
 	lhd4 = {
 		
@@ -2032,6 +2096,9 @@ LHD_air_support = {
 		}
 		
 	}
+
+
+
 
 
 	##SUBMARINES##

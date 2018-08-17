@@ -452,6 +452,228 @@ containerWindowType = {
 			maxHeight = 23
 			format = left
 		}
+
+		iconType = {
+			name = "text_back11" 
+			position = {x=669 y=64}	
+			spriteType = "GFX_generic_bg_307x113"
+		}
+		instantTextboxType = {
+			name = "frigate_headline"
+			position = {x=675 y=68}
+			font = "hoi_18mbs"
+			text = "Frigate Equipment 1/250 Million"
+			maxWidth = 340
+			maxHeight = 23
+			format = left
+		}
+		iconType = {
+			name = "equipment_back11" 
+			position = {x=670 y=90}	
+			spriteType = "GFX_equipment_item"
+		}
+		buttonType = {
+			name = "frigate" 
+			position = {x=854 y=90}	
+			spriteType = "GFX_buy"
+		}
+		buttonType = {
+			name = "frigate_sell" 
+			position = {x=854 y=130}	
+			spriteType = "GFX_sell"
+		}
+		iconType = {
+			name = "frigate_ico" 
+			position = {x=675 y=98}	
+			spriteType = "GFX_frigate3_medium"
+		}
+		instantTextboxType = {
+			name = "frigate_stock"
+			position = {x=675 y=155}
+			font = "hoi_18mbs"
+			text = "Stock : [?global.frigatestock]"
+			maxWidth = 340
+			maxHeight = 23
+			format = left
+		}
+
+		iconType = {
+			name = "text_back12" 
+			position = {x=669 y=180}	
+			spriteType = "GFX_generic_bg_307x113"
+		}
+		instantTextboxType = {
+			name = "LHD_headline"
+			position = {x=675 y=185}
+			font = "hoi_18mbs"
+			text = "LHD Equipment 1/250 Million"
+			maxWidth = 340
+			maxHeight = 23
+			format = left
+		}
+		iconType = {
+			name = "equipment_back12" 
+			position = {x=670 y=205}	
+			spriteType = "GFX_equipment_item"
+		}
+		buttonType = {
+			name = "LHD" 
+			position = {x=854 y=204}	
+			spriteType = "GFX_buy"
+		}
+		buttonType = {
+			name = "LHD_sell" 
+			position = {x=854 y=244}	
+			spriteType = "GFX_sell"
+		}
+		iconType = {
+			name = "LHD_ico" 
+			position = {x=675 y=211}	
+			spriteType = "GFX_lhd1_medium"
+		}
+		instantTextboxType = {
+			name = "LHD_stock"
+			position = {x=675 y=270}
+			font = "hoi_18mbs"
+			text = "Stock : [?global.LHDstock]"
+			maxWidth = 340
+			maxHeight = 23
+			format = left
+		}
+
+		iconType = {
+			name = "text_back13" 
+			position = {x=669 y=296}	
+			spriteType = "GFX_generic_bg_307x113"
+		}
+		instantTextboxType = {
+			name = "Destroyer_headline"
+			position = {x=675 y=299}
+			font = "hoi_18mbs"
+			text = "Destroyer Equipment 1/250 Million"
+			maxWidth = 340
+			maxHeight = 23
+			format = left
+		}
+		iconType = {
+			name = "equipment_back13" 
+			position = {x=670 y=320}	
+			spriteType = "GFX_equipment_item"
+		}
+		buttonType = {
+			name = "destroyer" 
+			position = {x=854 y=321}	
+			spriteType = "GFX_buy"
+		}
+		buttonType = {
+			name = "destroyer_sell" 
+			position = {x=854 y=361}	
+			spriteType = "GFX_sell"
+		}
+		iconType = {
+			name = "destroyer_ico" 
+			position = {x=675 y=329}	
+			spriteType = "GFX_improved_destroyer_medium"
+		}
+		instantTextboxType = {
+			name = "destroyer_stock"
+			position = {x=675 y=385}
+			font = "hoi_18mbs"
+			text = "Stock : [?global.destroyerstock]"
+			maxWidth = 340
+			maxHeight = 23
+			format = left
+		}
+
+		iconType = {
+			name = "text_back14" 
+			position = {x=669 y=412}	
+			spriteType = "GFX_generic_bg_307x113"
+		}
+		instantTextboxType = {
+			name = "ssk_headline"
+			position = {x=675 y=415}
+			font = "hoi_18mbs"
+			text = "ssk Equipment 1/250 Million"
+			maxWidth = 340
+			maxHeight = 23
+			format = left
+		}
+		iconType = {
+			name = "equipment_back14" 
+			position = {x=670 y=440}	
+			spriteType = "GFX_equipment_item"
+		}
+		buttonType = {
+			name = "ssk" 
+			position = {x=854 y=435}	
+			spriteType = "GFX_buy"
+		}
+		buttonType = {
+			name = "ssk_sell" 
+			position = {x=854 y=476}	
+			spriteType = "GFX_sell"
+		}
+		iconType = {
+			name = "ssk_ico" 
+			position = {x=675 y=452}	
+			spriteType = "GFX_submarine2_medium"
+		}
+		instantTextboxType = {
+			name = "ssk_stock"
+			position = {x=675 y=503}
+			font = "hoi_18mbs"
+			text = "Stock : [?global.sskstock]"
+			maxWidth = 340
+			maxHeight = 23
+			format = left
+		}
+
+		iconType = {
+			name = "text_back15" 
+			position = {x=669 y=528}	
+			spriteType = "GFX_generic_bg_307x113"
+		}
+		instantTextboxType = {
+			name = "ssn_headline"
+			position = {x=675 y=530}
+			font = "hoi_18mbs"
+			text = "ssn Equipment 1/250 Million"
+			maxWidth = 340
+			maxHeight = 23
+			format = left
+		}
+		iconType = {
+			name = "equipment_back15" 
+			position = {x=670 y=550}	
+			spriteType = "GFX_equipment_item"
+		}
+		buttonType = {
+			name = "ssn" 
+			position = {x=854 y=549}	
+			spriteType = "GFX_buy"
+		}
+		buttonType = {
+			name = "ssn_sell" 
+			position = {x=854 y=588}	
+			spriteType = "GFX_sell"
+		}
+		iconType = {
+			name = "ssn_ico" 
+			position = {x=675 y=562}	
+			spriteType = "GFX_ssn_1_medium"
+		}
+		instantTextboxType = {
+			name = "ssn_stock"
+			position = {x=675 y=615}
+			font = "hoi_18mbs"
+			text = "Stock : [?global.ssnstock]"
+			maxWidth = 340
+			maxHeight = 23
+			format = left
+		}
+
+
 		buttonType = {
 			name = "exitbutton" 
 			position = {x=1065 y=15}	
@@ -529,6 +751,8 @@ containerWindowType = {
 			pdx_tooltip = "MONEY_TOOLTIP"
 		}
 	}
+
+
 	
 	
 
