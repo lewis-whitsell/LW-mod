@@ -2157,7 +2157,7 @@ LHD_air_support = {
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = ssn_1 
+			leads_to_tech = ssn1 
 			research_cost_coeff = 1
 		}
 		
@@ -2218,14 +2218,14 @@ LHD_air_support = {
 		
 	}
 	
-	ssn_1 = {
+	ssn1 = {
 
 		enable_equipments = { 
 			nuclear_submarine_1
 		}
 		
 		path = {
-			leads_to_tech = ssn_2 
+			leads_to_tech = ssn2 
 			research_cost_coeff = 1
 		}
 		
@@ -2280,14 +2280,14 @@ LHD_air_support = {
 		}
 	}
 	
-	ssn_2 = {
+	ssn2 = {
 
 		enable_equipments = { 
 			nuclear_submarine_2
 		}
 		
 		path = {
-			leads_to_tech = ssn_3 
+			leads_to_tech = ssn3 
 			research_cost_coeff = 1
 		}
 		
@@ -2343,14 +2343,14 @@ LHD_air_support = {
 		}
 	}
 	
-	ssn_3 = {
+	ssn3 = {
 
 		enable_equipments = { 
 			nuclear_submarine_3
 		}
 		
 		path = {
-			leads_to_tech = ssn_4 
+			leads_to_tech = ssn4 
 			research_cost_coeff = 1
 		}
 		
@@ -2407,14 +2407,14 @@ LHD_air_support = {
 		}
 	}
 	
-	ssn_4 = {
+	ssn4 = {
 
 		enable_equipments = { 
 			nuclear_submarine_4
 		}
 		
 		path = {
-			leads_to_tech = ssn_5 
+			leads_to_tech = ssn5 
 			research_cost_coeff = 1
 		}
 		
@@ -2471,14 +2471,14 @@ LHD_air_support = {
 		}
 	}
 	
-	ssn_5 = {
+	ssn5 = {
 
 		enable_equipments = { 
 			nuclear_submarine_5
 		}
 		
 		path = {
-			leads_to_tech = ssn_6 
+			leads_to_tech = ssn6 
 			research_cost_coeff = 1
 		}
 		
@@ -2534,7 +2534,7 @@ LHD_air_support = {
 		}
 	}
 	
-	ssn_6 = {
+	ssn6 = {
 
 		enable_equipments = { 
 			nuclear_submarine_6

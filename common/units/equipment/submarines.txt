@@ -305,6 +305,7 @@ equipments = {
 		}
 		type = {
 			submarine
+			SSN
 		}
 
 	}

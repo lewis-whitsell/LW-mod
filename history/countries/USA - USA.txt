@@ -167,6 +167,7 @@ add_to_faction = ENG
 add_to_faction = HOL
 add_to_faction = BEL
 add_to_faction = LUX
+add_to_faction = EST
 
 set_politics = {
 
