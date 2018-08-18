@@ -356,7 +356,7 @@ focus_tree = {
 					factor = 10
 				}
 			completion_reward = {
-					add_ideas = PHI_resource
+					add_ideas = LAW_resource
 				}
 
 	}
@@ -587,7 +587,7 @@ focus_tree = {
 					factor = 10
 				}
 			completion_reward = {
-					add_ideas = PHI_resource2
+					add_ideas = LAW_resource2
 				}
 
 	}
@@ -610,7 +610,7 @@ focus_tree = {
 					every_owned_state = {
 							add_extra_state_shared_building_slots = 5
 						}
-					add_ideas = PHI_industrial
+					add_ideas = LAW_industrial
 				}
 
 	}
@@ -650,7 +650,7 @@ focus_tree = {
 					factor = 10
 				}
 			completion_reward = {
-					add_ideas = PHI_grand_deal
+					add_ideas = LAW_grand_deal
 				}
 
 	}
@@ -667,7 +667,7 @@ focus_tree = {
 					factor = 10
 				}
 			completion_reward = {
-					add_ideas = PHI_trade1
+					add_ideas = LAW_trade1
 				}
 
 	}
@@ -684,7 +684,7 @@ focus_tree = {
 					factor = 10
 				}
 			completion_reward = {
-					add_ideas = PHI_trade2
+					add_ideas = LAW_trade2
 				}
 
 	}
@@ -725,7 +725,7 @@ focus_tree = {
 				}
 			available_if_capitulated = yes
 			completion_reward = {
-					add_ideas = PHI_ef
+					add_ideas = LAW_ef
 				}
 
 	}
@@ -986,7 +986,7 @@ focus_tree = {
 					factor = 10
 				}
 			completion_reward = {
-					add_ideas = PHI_arty3
+					add_ideas = LAW_arty3
 				}
 
 	}
@@ -1071,7 +1071,7 @@ focus_tree = {
 					factor = 10
 				}
 			completion_reward = {
-					add_ideas = PHI_american_advisors
+					add_ideas = LAW_american_advisors
 				}
 
 	}
@@ -1283,7 +1283,7 @@ focus_tree = {
 				}
 			available_if_capitulated = yes
 			completion_reward = {
-					add_ideas = PHI_island_hopping
+					add_ideas = LAW_island_hopping
 					add_tech_bonus = {
 							name = PHI_spec3
 							bonus = 0.5
@@ -1330,7 +1330,7 @@ focus_tree = {
 				}
 			available_if_capitulated = yes
 			completion_reward = {
-					add_ideas = PHI_navy
+					add_ideas = LAW_navy
 				}
 
 	}
@@ -1551,7 +1551,7 @@ focus_tree = {
 							uses = 2
 							category = ca_tech
 						}
-						
+
 				}
 
 	}
@@ -1663,7 +1663,7 @@ focus_tree = {
 					factor = 10
 				}
 			completion_reward = {
-					add_ideas = PHI_navy2
+					add_ideas = LAW_navy2
 				}
 
 	}
@@ -1681,7 +1681,7 @@ focus_tree = {
 					factor = 10
 				}
 			completion_reward = {
-					add_ideas = PHI_navy_cost
+					add_ideas = LAW_navy_cost
 				}
 
 	}
@@ -1926,7 +1926,7 @@ focus_tree = {
 					factor = 10
 				}
 			completion_reward = {
-					add_ideas = PHI_airbase
+					add_ideas = LAW_airbase
 				}
 
 	}
@@ -2048,7 +2048,7 @@ focus_tree = {
 					factor = 10
 				}
 			completion_reward = {
-					add_ideas = PHI_air3
+					add_ideas = LAW_air3
 				}
 
 	}
@@ -2068,7 +2068,7 @@ focus_tree = {
 					factor = 10
 				}
 			completion_reward = {
-				add_ideas = PHI_airsup
+				add_ideas = LAW_airsup
 				}
 
 	}
@@ -2131,7 +2131,7 @@ focus_tree = {
 					factor = 10
 				}
 			completion_reward = {
-			add_ideas = PHI_air
+			add_ideas = LAW_air
 
 			}
 
@@ -2176,7 +2176,7 @@ focus_tree = {
 					factor = 10
 				}
 			completion_reward = {
-					add_ideas = PHI_air2
+					add_ideas = LAW_air2
 				}
 
 	}
@@ -2778,7 +2778,7 @@ focus_tree = {
 				}
 			available_if_capitulated = yes
 			completion_reward = {
-					add_ideas = PHI_paramilitarism_focus
+					add_ideas = LAW_paramilitarism_focus
 				}
 
 	}
@@ -2795,7 +2795,7 @@ focus_tree = {
 					factor = 10
 				}
 			completion_reward = {
-					add_ideas = PHI_end1
+					add_ideas = LAW_ruin_1
 				}
 
 	}
@@ -2852,7 +2852,7 @@ focus_tree = {
 					factor = 10
 				}
 			completion_reward = {
-					add_ideas = PHI_stablized_state
+					add_ideas = LAW_stablized_state
 				}
 
 	}
@@ -2920,7 +2920,7 @@ focus_tree = {
 			available_if_capitulated = yes
 			completion_reward = {
 					army_experience = 20
-					add_ideas = PHI_inf1
+					add_ideas = LAW_inf1
 				}
 
 	}
@@ -2938,7 +2938,7 @@ focus_tree = {
 				}
 			available_if_capitulated = yes
 			completion_reward = {
-					add_ideas = PHI_plan1
+					add_ideas = LAW_plan1
 				}
 
 	}
@@ -2957,7 +2957,7 @@ focus_tree = {
 				}
 			available_if_capitulated = yes
 			completion_reward = {
-					add_ideas = PHI_military_youth_focus
+					add_ideas = LAW_military_youth_focus
 				}
 
 	}
@@ -3344,7 +3344,7 @@ focus_tree = {
 			available_if_capitulated = yes
 			completion_reward = {
 					add_political_power = 120
-					add_ideas = PHI_greater_philipines
+					add_ideas = LAW_greater_philipines
 				}
 
 	}
@@ -3362,7 +3362,7 @@ focus_tree = {
 					factor = 10
 				}
 			completion_reward = {
-					add_ideas = PHI_grand_deal3
+					add_ideas = LAW_grand_deal3
 				}
 
 	}
@@ -3521,7 +3521,7 @@ focus_tree = {
 					factor = 10
 				}
 			completion_reward = {
-					add_ideas = PHI_arty1
+					add_ideas = LAW_arty1
 				}
 
 	}
@@ -3543,7 +3543,7 @@ focus_tree = {
 					factor = 10
 				}
 			completion_reward = {
-					add_ideas = PHI_arty2
+					add_ideas = LAW_arty2
 				}
 
 	}
@@ -3838,7 +3838,7 @@ focus_tree = {
 			completion_reward = {
 				swap_ideas = {
 					remove_idea = PHI_end5
-					add_idea = PHI_end6 
+					add_idea = PHI_end6
 						}
 				}
 
