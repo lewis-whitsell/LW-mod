@@ -1047,7 +1047,6 @@ scripted_gui = {
 				check_variable = { dx > 250 }
 				check_variable = {  global.frigatestock > 1 }
 				has_tech=frigate6
-				NOT={has_tech=frigate7}
 			}
 			subtract_from_variable = { var = dx value = 250 }
 			subtract_from_variable = { var = global.frigatestock value = 1 }
@@ -1072,66 +1071,96 @@ scripted_gui = {
 			}
 			}
 			}
-			frigate_sell_click={
+
+ LHD_click={
 			if ={
 			limit={
-				has_equipment = { frigate_1 > 499 }
-				has_tech=gen1_mbt
-				NOT={has_tech=gen2_mbt}
+				check_variable = { dx > 250 }
+				check_variable = {  global.lhdstock > 1 }
+				has_tech=lhd1
+				NOT={has_tech=lhd2}
 			}
-			add_to_variable = { var = dx value = 750 }
-			add_to_variable = { var = global.frigatestock value = 500 }
-			add_equipment_to_stockpile = { type = frigate_1  amount = -500  }
+			subtract_from_variable = { var = dx value = 250 }
+			subtract_from_variable = { var = global.lhdstock value = 1 }
+			add_equipment_production = {
+				    equipment = {
+				        type = lhd_1
+				    }
+				    requested_factories = 1
+				    progress = 1
+				    amount = 1
+			}
 			else={
 			if ={
 			limit={
-				has_equipment = { frigate_2 > 499 }
-				has_tech=gen2_mbt
-				NOT={has_tech=gen3_mbt}
+				check_variable = { dx > 250 }
+				check_variable = {  global.lhdstock > 1 }
+				has_tech=lhd2
+				NOT={has_tech=lhd3}
 			}
-			add_to_variable = { var = dx value = 750 }
-			add_to_variable = { var = global.frigatestock value = 500 }
-			add_equipment_to_stockpile = { type = frigate_2  amount = -500  }
+			subtract_from_variable = { var = dx value = 250 }
+			subtract_from_variable = { var = global.lhdstock value = 1 }
+			add_equipment_production = {
+				    equipment = {
+				        type = lhd_2
+				    }
+				    requested_factories = 1
+				    progress = 1
+				    amount = 1
+			}
 			else={
 			if ={
 			limit={
-				has_equipment = { frigate_3 > 499 }
-				has_tech=gen3_mbt
-				NOT={has_tech=modern_gen3_mbt}
+				check_variable = { dx > 250 }
+				check_variable = {  global.lhdstock > 1 }
+				has_tech=lhd3
+				NOT={has_tech=lhd4}
 			}
-			add_to_variable = { var = dx value = 750 }
-			add_to_variable = { var = global.frigatestock value = 500 }
-			add_equipment_to_stockpile = { type = frigate_3  amount = -500  }
+			subtract_from_variable = { var = dx value = 250 }
+			subtract_from_variable = { var = global.lhdstock value = 1 }
+			add_equipment_production = {
+				    equipment = {
+				        type = lhd_3
+				    }
+				    requested_factories = 1
+				    progress = 1
+				    amount = 1
+			}
 			else={
 			if ={
 			limit={
-				has_equipment = { frigate_4 > 499 }
-				has_tech=modern_gen3_mbt
-				NOT={has_tech=advanced_gen3_mbt}
+				check_variable = { dx > 250 }
+				check_variable = {  global.lhdstock > 1 }
+				has_tech=lhd4
+				NOT={has_tech=lhd5}
 			}
-			add_to_variable = { var = dx value = 750 }
-			add_to_variable = { var = global.frigatestock value = 500 }
-			add_equipment_to_stockpile = { type = frigate_4  amount = -500  }
+			subtract_from_variable = { var = dx value = 250 }
+			subtract_from_variable = { var = global.lhdstock value = 1 }
+			add_equipment_production = {
+				    equipment = {
+				        type = lhd_4
+				    }
+				    requested_factories = 1
+				    progress = 1
+				    amount = 1
+			}
 			else={
 			if ={
 			limit={
-				has_equipment = { frigate_5 > 499 }
-				has_tech=advanced_gen3_mbt
-				NOT={has_tech=gen4_mbt}
+				check_variable = { dx > 250 }
+				check_variable = {  global.lhdstock > 1 }
+				has_tech=lhd5
 			}
-			add_to_variable = { var = dx value = 750 }
-			add_to_variable = { var = global.frigatestock value = 500 }
-			add_equipment_to_stockpile = { type = frigate_5  amount = -500  }
-			else={
-			if ={
-			limit={
-				has_equipment = { frigate_6 > 499 }
-				has_tech=gen4_mbt
-				NOT={has_tech=gen5_mbt}
+			subtract_from_variable = { var = dx value = 250 }
+			subtract_from_variable = { var = global.lhdstock value = 1 }
+			add_equipment_production = {
+				    equipment = {
+				        type = lhd_5
+				    }
+				    requested_factories = 1
+				    progress = 1
+				    amount = 1
 			}
-			add_to_variable = { var = dx value = 750 }
-			add_to_variable = { var = global.frigatestock value = 500 }
-			add_equipment_to_stockpile = { type = frigate_6  amount = -500  }
 
 			}
 			}
@@ -1144,8 +1173,669 @@ scripted_gui = {
 			}
 			}
 
-	}
-  }
+  destroyer_click={
+			if ={
+			limit={
+				check_variable = { dx > 250 }
+				check_variable = {  global.destroyerstock > 1 }
+				has_tech=destroyer1
+				NOT={has_tech=destroyer2}
+			}
+			subtract_from_variable = { var = dx value = 250 }
+			subtract_from_variable = { var = global.destroyerstock value = 1 }
+			add_equipment_production = {
+				    equipment = {
+				        type = destroyer_1
+				    }
+				    requested_factories = 1
+				    progress = 1
+				    amount = 1
+			}
+			else={
+			if ={
+			limit={
+				check_variable = { dx > 250 }
+				check_variable = {  global.destroyerstock > 1 }
+				has_tech=destroyer2
+				NOT={has_tech=destroyer3}
+			}
+			subtract_from_variable = { var = dx value = 250 }
+			subtract_from_variable = { var = global.destroyerstock value = 1 }
+			add_equipment_production = {
+				    equipment = {
+				        type = destroyer_2
+				    }
+				    requested_factories = 1
+				    progress = 1
+				    amount = 1
+			}
+			else={
+			if ={
+			limit={
+				check_variable = { dx > 250 }
+				check_variable = {  global.destroyerstock > 1 }
+				has_tech=destroyer3
+				NOT={has_tech=destroyer4}
+			}
+			subtract_from_variable = { var = dx value = 250 }
+			subtract_from_variable = { var = global.destroyerstock value = 1 }
+			add_equipment_production = {
+				    equipment = {
+				        type = destroyer_3
+				    }
+				    requested_factories = 1
+				    progress = 1
+				    amount = 1
+			}
+			else={
+			if ={
+			limit={
+				check_variable = { dx > 250 }
+				check_variable = {  global.destroyerstock > 1 }
+				has_tech=destroyer4
+				NOT={has_tech=destroyer5}
+			}
+			subtract_from_variable = { var = dx value = 250 }
+			subtract_from_variable = { var = global.destroyerstock value = 1 }
+			add_equipment_production = {
+				    equipment = {
+				        type = destroyer_4
+				    }
+				    requested_factories = 1
+				    progress = 1
+				    amount = 1
+			}
+			else={
+			if ={
+			limit={
+				check_variable = { dx > 250 }
+				check_variable = {  global.destroyerstock > 1 }
+				has_tech=destroyer5
+			}
+			subtract_from_variable = { var = dx value = 250 }
+			subtract_from_variable = { var = global.destroyerstock value = 1 }
+			add_equipment_production = {
+				    equipment = {
+				        type = destroyer_5
+				    }
+				    requested_factories = 1
+				    progress = 1
+				    amount = 1
+			}
+
+			}
+			}
+			}
+			}
+			}
+			}
+			}
+			}
+			}
+			}
+
+
+  ssk_click={
+			if ={
+			limit={
+				check_variable = { dx > 250 }
+				check_variable = {  global.sskstock > 1 }
+				has_tech=submarine1
+				NOT={has_tech=submarine2}
+			}
+			subtract_from_variable = { var = dx value = 250 }
+			subtract_from_variable = { var = global.sskstock value = 1 }
+			add_equipment_production = {
+				    equipment = {
+				        type = submarine_1
+				    }
+				    requested_factories = 1
+				    progress = 1
+				    amount = 1
+			}
+			else={
+			if ={
+			limit={
+				check_variable = { dx > 250 }
+				check_variable = {  global.sskstock > 1 }
+				has_tech=submarine2
+				NOT={has_tech=submarine3}
+			}
+			subtract_from_variable = { var = dx value = 250 }
+			subtract_from_variable = { var = global.sskstock value = 1 }
+			add_equipment_production = {
+				    equipment = {
+				        type = submarine_2
+				    }
+				    requested_factories = 1
+				    progress = 1
+				    amount = 1
+			}
+			else={
+			if ={
+			limit={
+				check_variable = { dx > 250 }
+				check_variable = {  global.sskstock > 1 }
+				has_tech=submarine3
+				NOT={has_tech=submarine4}
+			}
+			subtract_from_variable = { var = dx value = 250 }
+			subtract_from_variable = { var = global.sskstock value = 1 }
+			add_equipment_production = {
+				    equipment = {
+				        type = submarine_3
+				    }
+				    requested_factories = 1
+				    progress = 1
+				    amount = 1
+			}
+			else={
+			if ={
+			limit={
+				check_variable = { dx > 250 }
+				check_variable = {  global.sskstock > 1 }
+				has_tech=submarine4
+				NOT={has_tech=submarine5}
+			}
+			subtract_from_variable = { var = dx value = 250 }
+			subtract_from_variable = { var = global.sskstock value = 1 }
+			add_equipment_production = {
+				    equipment = {
+				        type = submarine_4
+				    }
+				    requested_factories = 1
+				    progress = 1
+				    amount = 1
+			}
+			else={
+			if ={
+			limit={
+				check_variable = { dx > 250 }
+				check_variable = {  global.sskstock > 1 }
+				has_tech=submarine5
+			}
+			subtract_from_variable = { var = dx value = 250 }
+			subtract_from_variable = { var = global.sskstock value = 1 }
+			add_equipment_production = {
+				    equipment = {
+				        type = submarine_5
+				    }
+				    requested_factories = 1
+				    progress = 1
+				    amount = 1
+			}
+
+			}
+			}
+			}
+			}
+			}
+			}
+			}
+			}
+			}
+			}
+
+  ssn_click={
+			if ={
+			limit={
+				check_variable = { dx > 250 }
+				check_variable = {  global.ssnstock > 1 }
+				has_tech=ssn1
+				NOT={has_tech=ssn2}
+			}
+			subtract_from_variable = { var = dx value = 250 }
+			subtract_from_variable = { var = global.ssnstock value = 1 }
+			add_equipment_production = {
+				    equipment = {
+				        type = nuclear_submarine_1
+				    }
+				    requested_factories = 1
+				    progress = 1
+				    amount = 1
+			}
+			else={
+			if ={
+			limit={
+				check_variable = { dx > 250 }
+				check_variable = {  global.ssnstock > 1 }
+				has_tech=ssn2
+				NOT={has_tech=ssn3}
+			}
+			subtract_from_variable  = { var = dx value = 250 }
+			subtract_from_variable = { var = global.ssnstock value = 1 }
+			add_equipment_production = {
+				    equipment = {
+				        type = nuclear_submarine_2
+				    }
+				    requested_factories = 1
+				    progress = 1
+				    amount = 1
+			}
+			else={
+			if ={
+			limit={
+				check_variable = { dx > 250 }
+				check_variable = {  global.ssnstock > 1 }
+				has_tech=ssn3
+				NOT={has_tech=ssn4}
+			}
+			subtract_from_variable = { var = dx value = 250 }
+			subtract_from_variable = { var = global.ssnstock value = 1 }
+			add_equipment_production = {
+				    equipment = {
+				        type = nuclear_submarine_3
+				    }
+				    requested_factories = 1
+				    progress = 1
+				    amount = 1
+			}
+			else={
+			if ={
+			limit={
+				check_variable = { dx > 250 }
+				check_variable = {  global.ssnstock > 1 }
+				has_tech=ssn4
+				NOT={has_tech=ssn5}
+			}
+			subtract_from_variable = { var = dx value = 250 }
+			subtract_from_variable = { var = global.ssnstock value = 1 }
+			add_equipment_production = {
+				    equipment = {
+				        type = nuclear_submarine_4
+				    }
+				    requested_factories = 1
+				    progress = 1
+				    amount = 1
+			}
+			else={
+			if ={
+			limit={
+				check_variable = { dx > 250 }
+				check_variable = {  global.ssnstock > 1 }
+				has_tech=ssn5
+			}
+			subtract_from_variable = { var = dx value = 250 }
+			subtract_from_variable = { var = global.ssnstock value = 1 }
+			add_equipment_production = {
+				    equipment = {
+				        type = nuclear_submarine_5
+				    }
+				    requested_factories = 1
+				    progress = 1
+				    amount = 1
+			}
+
+			}
+			}
+			}
+			}
+			}
+			}
+			}
+			}
+			}
+			}
+
+			cas_click={
+			if ={
+			limit={
+				check_variable = { dx > 250 }
+				check_variable = {  global.casstock > 1 }
+				has_tech=jet_CAS1
+				NOT={has_tech=jet_CAS2}
+			}
+			subtract_from_variable = { var = dx value = 20 }
+			subtract_from_variable = { var = global.casstock value = 1 }
+			
+			add_equipment_to_stockpile = { type = jet_CAS_equipment_3  amount = 1  }
+				    
+			else={
+			if ={
+			limit={
+				check_variable = { dx > 250 }
+				check_variable = {  global.casstock > 1 }
+				has_tech=jet_CAS2
+				NOT={has_tech=jet_CAS3}
+			}
+			subtract_from_variable = { var = dx value = 20 }
+			subtract_from_variable = { var = global.casstock value = 1 }
+			add_equipment_to_stockpile = { type = jet_CAS_equipment_4  amount = 1  }
+				    
+			else={
+			if ={
+			limit={
+				check_variable = { dx > 250 }
+				check_variable = {  global.casstock > 1 }
+				has_tech=jet_CAS3
+				NOT={has_tech=jet_CAS4}
+			}
+			subtract_from_variable = { var = dx value = 20 }
+			subtract_from_variable = { var = global.casstock value = 1 }
+			add_equipment_to_stockpile = { type = jet_CAS_equipment_5  amount = 1  }
+				    
+			else={
+			if ={
+			limit={
+				check_variable = { dx > 250 }
+				check_variable = {  global.casstock > 1 }
+				has_tech=jet_CAS4
+				NOT={has_tech=jet_CAS5}
+			}
+			subtract_from_variable = { var = dx value = 20 }
+			subtract_from_variable = { var = global.casstock value = 1 }
+			add_equipment_to_stockpile = { type = jet_CAS_equipment_6  amount = 1  }
+				    
+			else={
+			if ={
+			limit={
+				check_variable = { dx > 250 }
+				check_variable = {  global.casstock > 1 }
+				has_tech=jet_CAS5
+			}
+			subtract_from_variable = { var = dx value = 20 }
+			subtract_from_variable = { var = global.casstock value = 1 }
+			add_equipment_to_stockpile = { type = jet_CAS_equipment_7  amount = 1  }
+				    
+
+			}
+			}
+			}
+			}
+			}
+			}
+			}
+			}
+			}
+			}
+
+			multirole_click={
+			if ={
+			limit={
+				check_variable = { dx > 30 }
+				check_variable = {  global.multirolestock > 1 }
+				has_tech=jet_multirole1
+				NOT={has_tech=jet_multirole2}
+			}
+			subtract_from_variable = { var = dx value = 30 }
+			subtract_from_variable = { var = global.multirolestock value = 1 }
+			
+			add_equipment_to_stockpile = { type = jet_multirole_equipment_4  amount = 1  }
+				    
+			else={
+			if ={
+			limit={
+				check_variable = { dx > 30 }
+				check_variable = {  global.multirolestock > 1 }
+				has_tech=jet_multirole2
+				NOT={has_tech=jet_multirole3}
+			}
+			subtract_from_variable = { var = dx value = 30 }
+			subtract_from_variable = { var = global.multirolestock value = 1 }
+			add_equipment_to_stockpile = { type = jet_multirole_equipment_5  amount = 1  }
+				    
+			else={
+			if ={
+			limit={
+				check_variable = { dx > 30 }
+				check_variable = {  global.multirolestock > 1 }
+				has_tech=jet_multirole3
+				NOT={has_tech=jet_multirole4}
+			}
+			subtract_from_variable = { var = dx value = 30 }
+			subtract_from_variable = { var = global.multirolestock value = 1 }
+			add_equipment_to_stockpile = { type = jet_multirole_equipment_6  amount = 1  }
+				    
+			else={
+			if ={
+			limit={
+				check_variable = { dx > 30 }
+				check_variable = {  global.multirolestock > 1 }
+				has_tech=jet_multirole4
+				NOT={has_tech=jet_multirole6}
+			}
+			subtract_from_variable = { var = dx value = 30 }
+			subtract_from_variable = { var = global.multirolestock value = 1 }
+			add_equipment_to_stockpile = { type = jet_multirole_equipment_7  amount = 1  }
+				    
+			else={
+			if ={
+			limit={
+				check_variable = { dx > 30 }
+				check_variable = {  global.multirolestock > 1 }
+				has_tech=jet_multirole6
+			}
+			subtract_from_variable = { var = dx value = 30 }
+			subtract_from_variable = { var = global.multirolestock value = 1 }
+			add_equipment_to_stockpile = { type = jet_multirole_equipment_8  amount = 1  }
+				    
+
+			}
+			}
+			}
+			}
+			}
+			}
+			}
+			}
+			}
+			}
+
+			asf_click={
+			if ={
+			limit={
+				check_variable = { dx > 30 }
+				check_variable = {  global.asfstock > 1 }
+				has_tech=jet_interceptor1
+				NOT={has_tech=jet_interceptor2}
+			}
+			subtract_from_variable = { var = dx value = 30 }
+			subtract_from_variable = { var = global.asfstock value = 1 }
+			
+			add_equipment_to_stockpile = { type = jet_interceptor_equipment_4  amount = 1  }
+				    
+			else={
+			if ={
+			limit={
+				check_variable = { dx > 30 }
+				check_variable = {  global.asfstock > 1 }
+				has_tech=jet_interceptor2
+				NOT={has_tech=jet_interceptor3}
+			}
+			subtract_from_variable = { var = dx value = 30 }
+			subtract_from_variable = { var = global.asfstock value = 1 }
+			add_equipment_to_stockpile = { type = jet_interceptor_equipment_5  amount = 1  }
+				    
+			else={
+			if ={
+			limit={
+				check_variable = { dx > 30 }
+				check_variable = {  global.asfstock > 1 }
+				has_tech=jet_interceptor3
+				NOT={has_tech=jet_interceptor4}
+			}
+			subtract_from_variable = { var = dx value = 30 }
+			subtract_from_variable = { var = global.asfstock value = 1 }
+			add_equipment_to_stockpile = { type = jet_interceptor_equipment_6  amount = 1  }
+				    
+			else={
+			if ={
+			limit={
+				check_variable = { dx > 30 }
+				check_variable = {  global.asfs6tock > 1 }
+				has_tech=jet_interceptor4
+				NOT={has_tech=jet_interceptor6}
+			}
+			subtract_from_variable = { var = dx value = 30 }
+			subtract_from_variable = { var = global.asfstock value = 1 }
+			add_equipment_to_stockpile = { type = jet_interceptor_equipment_7  amount = 1  }
+				    
+			else={
+			if ={
+			limit={
+				check_variable = { dx > 30 }
+				check_variable = {  global.asfstock > 1 }
+				has_tech=jet_interceptor6
+			}
+			subtract_from_variable = { var = dx value = 30 }
+			subtract_from_variable = { var = global.asfstock value = 1 }
+			add_equipment_to_stockpile = { type = jet_interceptor_equipment_9  amount = 1  }
+				    
+
+			}
+			}
+			}
+			}
+			}
+			}
+			}
+			}
+			}
+			}
+
+			uav_click={
+			if ={
+			limit={
+				check_variable = { dx > 30 }
+				check_variable = {  global.uavstock > 1 }
+				has_tech=gen1_ucav
+				NOT={has_tech=gen2_ucav}
+			}
+			subtract_from_variable = { var = dx value = 30 }
+			subtract_from_variable = { var = global.uavstock value = 1 }
+			
+			add_equipment_to_stockpile = { type = ucav_equipment_1  amount = 1  }
+				    
+			else={
+			if ={
+			limit={
+				check_variable = { dx > 30 }
+				check_variable = {  global.uavstock > 1 }
+				has_tech=gen2_ucav
+				NOT={has_tech=gen1_ucav}
+			}
+			subtract_from_variable = { var = dx value = 30 }
+			subtract_from_variable = { var = global.uavstock value = 1 }
+			add_equipment_to_stockpile = { type = ucav_equipment_2  amount = 1  }
+				    
+			else={
+			if ={
+			limit={
+				check_variable = { dx > 30 }
+				check_variable = {  global.uavstock > 1 }
+				has_tech=gen3_ucav
+				NOT={has_tech=gen3.5_ucav}
+			}
+			subtract_from_variable = { var = dx value = 30 }
+			subtract_from_variable = { var = global.uavstock value = 1 }
+			add_equipment_to_stockpile = { type = ucav_equipment_3  amount = 1  }
+				    
+			else={
+			if ={
+			limit={
+				check_variable = { dx > 30 }
+				check_variable = {  global.asfs6tock > 1 }
+				has_tech=gen3.5_ucav
+				NOT={has_tech=jet_interceptor6}
+			}
+			subtract_from_variable = { var = dx value = 30 }
+			subtract_from_variable = { var = global.uavstock value = 1 }
+			add_equipment_to_stockpile = { type = ucav_equipment_4  amount = 1  }
+				    
+			else={
+			if ={
+			limit={
+				check_variable = { dx > 30 }
+				check_variable = {  global.uavstock > 1 }
+				has_tech=gen4_ucav
+			}
+			subtract_from_variable = { var = dx value = 30 }
+			subtract_from_variable = { var = global.uavstock value = 1 }
+			add_equipment_to_stockpile = { type = ucav_equipment_5  amount = 1  }
+				    
+
+			}
+			}
+			}
+			}
+			}
+			}
+			}
+			}
+			}
+			}
+
+			navbmb_click={
+			if ={
+			limit={
+				check_variable = { dx > 30 }
+				check_variable = {  global.navbmbstock > 1 }
+				has_tech=naval_bomber1
+				NOT={has_tech=naval_bomber2}
+			}
+			subtract_from_variable = { var = dx value = 30 }
+			subtract_from_variable = { var = global.navbmbstock value = 1 }
+			add_equipment_to_stockpile = { type = nav_bomber_equipment_1  amount = 1  }
+				    
+			else={
+			if ={
+			limit={
+				check_variable = { dx > 30 }
+				check_variable = {  global.navbmbstock > 1 }
+				has_tech=naval_bomber2
+				NOT={has_tech=naval_bomber3}
+			}
+			subtract_from_variable = { var = dx value = 30 }
+			subtract_from_variable = { var = global.navbmbstock value = 1 }
+			add_equipment_to_stockpile = { type = nav_bomber_equipment_2  amount = 1  }
+				    
+			else={
+			if ={
+			limit={
+				check_variable = { dx > 30 }
+				check_variable = {  global.navbmbstock > 1 }
+				has_tech=naval_bomber3
+				NOT={has_tech=naval_bomber4}
+			}
+			subtract_from_variable = { var = dx value = 30 }
+			subtract_from_variable = { var = global.navbmbstock value = 1 }
+			add_equipment_to_stockpile = { type = nav_bomber_equipment_3  amount = 1  }
+				    
+			else={
+			if ={
+			limit={
+				check_variable = { dx > 30 }
+				check_variable = {  global.navbmbstock > 1 }
+				has_tech=naval_bomber4
+				NOT={has_tech=naval_bomber6}
+			}
+			subtract_from_variable = { var = dx value = 30 }
+			subtract_from_variable = { var = global.navbmbstock value = 1 }
+			add_equipment_to_stockpile = { type = nav_bomber_equipment_4  amount = 1  }
+				    
+			else={
+			if ={
+			limit={
+				check_variable = { dx > 30 }
+				check_variable = {  global.navbmbstock > 1 }
+				has_tech=naval_bomber6
+			}
+			subtract_from_variable = { var = dx value = 30 }
+			subtract_from_variable = { var = global.navbmbstock value = 1 }
+			add_equipment_to_stockpile = { type = nav_bomber_equipment_5  amount = 1  }
+				    
+
+			}
+			}
+			}
+			}
+			}
+			}
+			}
+			}
+			}
+			}
+
 
 
 }
