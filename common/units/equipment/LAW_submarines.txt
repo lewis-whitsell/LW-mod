@@ -44,7 +44,7 @@ equipments = {
 			steel = 1
 		}
 		
-		manpower = 200
+		manpower = 100
 	}
 
 	submarine_1 = {
@@ -88,6 +88,7 @@ equipments = {
 		max_strength = 20
 		
 		port_capacity_usage = 0.5
+		manpower = 90
 		
 		build_cost_ic = 500
 		resources = {
@@ -108,6 +109,7 @@ equipments = {
 		attack = 0
 		fire_range = 8
 		torpedo_attack = 20
+		manpower = 80
 		
 		anti_air_attack = 1.5
 		
@@ -148,6 +150,7 @@ equipments = {
 		torpedo_attack = 24
 		
 		anti_air_attack = 1.5
+
 		
 		armor_value = 0
 		evasion = 50
@@ -164,6 +167,7 @@ equipments = {
 		max_strength = 35
 		
 		port_capacity_usage = 0.5
+		manpower = 75
 		
 		build_cost_ic = 600
 		resources = {
@@ -197,6 +201,7 @@ equipments = {
 		sub_visibility = 9
 		naval_speed = 20
 		reliability = 0.80
+		manpower = 70
 
 		naval_range = 8000
 		
@@ -226,6 +231,7 @@ equipments = {
 		torpedo_attack = 45
 		
 		anti_air_attack = 1.75
+		manpower = 60
 		
 		armor_value = 0
 		evasion = 65
@@ -285,6 +291,7 @@ equipments = {
 
 		armor_value = 0
 		evasion = 70
+		manpower = 175
 
 		surface_detection = 80
 		sub_detection = 50
@@ -293,6 +300,7 @@ equipments = {
 		reliability = 0.70
 
 		naval_range = 50000
+		manpower = 
 
 		max_strength = 50
 
@@ -325,6 +333,7 @@ equipments = {
 
 		armor_value = 0
 		evasion = 80
+		manpower = 150
 
 		surface_detection = 90
 		sub_detection = 75
@@ -364,6 +373,7 @@ equipments = {
 
 		armor_value = 0
 		evasion = 90
+		manpower = 145
 
 		surface_detection = 100
 		sub_detection = 100
@@ -403,6 +413,7 @@ equipments = {
 
 		armor_value = 0
 		evasion = 100
+		manpower = 140
 
 		surface_detection = 110
 		sub_detection = 125
@@ -440,6 +451,7 @@ equipments = {
 		torpedo_attack = 250
 
 		anti_air_attack = 1.5
+		manpower = 120
 
 		armor_value = 0
 		evasion = 140
@@ -481,6 +493,7 @@ equipments = {
 		torpedo_attack = 250
 
 		anti_air_attack = 1.5
+		manpower = 100
 
 		armor_value = 0
 		evasion = 150
@@ -508,7 +521,7 @@ equipments = {
 		}
 	}
 	ballistic_submarine = {
-		year = 1922
+		year = 1980
 
  		is_archetype = yes
 		is_buildable = no
