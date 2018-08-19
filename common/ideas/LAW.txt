@@ -2,7 +2,7 @@ ideas = {
 
 	country = {	
 
-		prod = {
+		LAW_prod = {
 			picture = generic_production_bonus
 			allowed = {
 				OR = {
@@ -21,7 +21,7 @@ ideas = {
 			modifier = {min_export = -0.05 industrial_capacity_factory = 0.05 }
 		}
 		
-		resource = {
+		LAW_resource = {
 			allowed = {
 				OR = {
 				tag = MAD
@@ -37,7 +37,7 @@ ideas = {
 			modifier = {local_resources_factor = 0.05}
 		}
 
-		resource2 = {
+		LAW_resource2 = {
 			allowed = {
 				OR = {
 				tag = MAD
@@ -53,7 +53,7 @@ ideas = {
 			modifier = {min_export = -0.05 industrial_capacity_factory = 0.05}
 		}
 
-		inf1 = {
+		LAW_inf1 = {
 			allowed = {
 				OR = {
 				tag = MAD
@@ -69,7 +69,7 @@ ideas = {
 			modifier = {army_infantry_defence_factor = 0.05 army_infantry_attack_factor = 0.05}
 		}
 
-		plan1 = {
+		LAW_plan1 = {
 			allowed = {
 				OR = {
 				tag = MAD
@@ -85,7 +85,7 @@ ideas = {
 			modifier = {max_planning = 0.45 planning_speed = -0.05 }
 		}
 
-		industrial = {
+		LAW_industrial = {
 			allowed = {
 				OR = {
 				tag = MAD
@@ -100,7 +100,7 @@ ideas = {
 			picture = generic_production_bonus
 			modifier = {production_speed_arms_factory_factor = 0.15 production_speed_industrial_complex_factor = 0.15}
 		}
-		arty1 = {
+		LAW_arty1 = {
 			allowed = {
 				OR = {
 				tag = MAD
@@ -116,7 +116,7 @@ ideas = {
 			modifier = {air_paradrop_defence_factor = 0.1 air_paradrop_attack_factor = 0.1 }
 
 		}
-		arty2 = {
+		LAW_arty2 = {
 			allowed = {
 				OR = {
 				tag = MAD
@@ -132,7 +132,7 @@ ideas = {
 			modifier = {special_forces_attack_factor = 0.1 special_forces_defence_factor = 0.1}
 
 		}
-		arty3 = {
+		LAW_arty3 = {
 			allowed = {
 				OR = {
 				tag = MAD
@@ -149,7 +149,7 @@ ideas = {
 
 		}
 		
-		airsup = {
+		LAW_airsup = {
 			allowed = {
 				OR = {
 				tag = MAD
@@ -165,7 +165,7 @@ ideas = {
 			modifier = {enemy_army_bonus_air_superiority_factor = -0.075}
 
 		}
-		trade1 = {
+		LAW_trade1 = {
 			allowed = {
 				OR = {
 				tag = MAD
@@ -180,7 +180,7 @@ ideas = {
 			picture = generic_production_bonus
 			modifier = {political_power_gain = 0.2}
 		}
-		airbase = {
+		LAW_airbase = {
 			allowed = {
 				OR = {
 				tag = MAD
@@ -195,7 +195,7 @@ ideas = {
 			picture = generic_production_bonus
 			modifier = {production_speed_anti_air_building_factor = 0.3 production_speed_air_base_factor = 0.15 }
 		}
-		trade2 = {
+		LAW_trade2 = {
 			allowed = {
 				OR = {
 				tag = MAD
@@ -210,7 +210,7 @@ ideas = {
 			picture = generic_production_bonus
 			modifier = {foreign_subversive_activites = -0.50 economy_cost_factor = -0.25}
 		}
-		trade3 = {
+		LAW_trade3 = {
 			allowed = {
 				OR = {
 				tag = MAD
@@ -225,7 +225,7 @@ ideas = {
 			picture = generic_production_bonus
 			modifier = {political_power_gain = 0.2}
 		}
-		grand_deal = {
+		LAW_grand_deal = {
 			allowed = {
 				OR = {
 				tag = MAD
@@ -240,7 +240,7 @@ ideas = {
 			picture = generic_production_bonus
 			modifier = {global_building_slots_factor = 0.10 consumer_goods_factor = 0.02}
 		}
-		grand_deal2 = {
+		LAW_grand_deal2 = {
 			allowed = {
 				OR = {
 				tag = MAD
@@ -255,7 +255,7 @@ ideas = {
 			picture = generic_production_bonus
 			modifier = {global_building_slots_factor = 0.10 production_speed_infrastructure_factor = 0.2 consumer_goods_factor = 0.02}
 		}
-		grand_deal3 = {
+		LAW_grand_deal3 = {
 			allowed = {
 				OR = {
 				tag = MAD
@@ -270,7 +270,7 @@ ideas = {
 			picture = generic_production_bonus
 			modifier = {research_time_factor = -0.03 production_speed_synthetic_refinery_factor = 0.15 consumer_goods_factor = 0.02}
 		}
-		american_advisors = {
+		LAW_american_advisors = {
 			allowed = {
 				OR = {
 				tag = MAD
@@ -291,7 +291,7 @@ ideas = {
 			}
 		}
 
-		ruin_1 = {
+		LAW_ruin_1 = {
 			allowed = {
 				OR = {
 				tag = MAD
@@ -313,7 +313,7 @@ ideas = {
 
 		}
 
-		ruin_2 = {
+		LAW_ruin_2 = {
 			allowed = {
 				OR = {
 				tag = MAD
@@ -336,7 +336,7 @@ ideas = {
 
 		}
 
-		ruin_3 = {
+		LAW_ruin_3 = {
 			allowed = {
 				OR = {
 				tag = MAD
@@ -360,7 +360,7 @@ ideas = {
 
 		}
 
-		ruin_4 = {
+		LAW_ruin_4 = {
 			allowed = {
 				OR = {
 				tag = MAD
@@ -385,7 +385,7 @@ ideas = {
 
 		}
 
-		ruin_5 = {
+		LAW_ruin_5 = {
 			allowed = {
 				OR = {
 				tag = MAD
@@ -410,7 +410,7 @@ ideas = {
 			 }
 
 		}
-		ruin_6 = {
+		LAW_ruin_6 = {
 			allowed = {
 				OR = {
 				tag = MAD
@@ -438,7 +438,7 @@ ideas = {
 
 		}
 
-		air3 = {
+		LAW_air3 = {
 			allowed = {
 				OR = {
 				tag = MAD
@@ -453,7 +453,7 @@ ideas = {
 			picture = generic_production_bonus
 			modifier = {naval_strike_attack_factor = 0.02 naval_strike_targetting_factor = 0.04}
 		}
-		island_hopping = {
+		LAW_island_hopping = {
 			allowed = {
 				OR = {
 				tag = MAD
@@ -468,7 +468,7 @@ ideas = {
 			picture = generic_infantry_bonus
 			modifier = {attrition = -0.1 special_forces_cap = 0.08 }
 		}
-		ef = {
+		LAW_ef = {
 			allowed = {
 				always = no
 			}
@@ -484,7 +484,7 @@ ideas = {
 				production_factory_efficiency_gain_factor = 0.1
 			}
 		}
-		air = {
+		LAW_air = {
 			allowed = {
 				OR = {
 				tag = MAD
@@ -505,7 +505,7 @@ ideas = {
 
 		}
 
-		greater_philipines = {
+		LAW_greater_philipines = {
 			allowed = {
 				OR = {
 				tag = MAD
@@ -520,7 +520,7 @@ ideas = {
 			picture = generic_manpower_bonus
 			modifier = {conscription = 0.020 army_core_defence_factor = 0.15 army_core_attack_factor = 0.15}
 		}
-		navy2 = {
+		LAW_navy2 = {
 			allowed = {
 				OR = {
 				tag = MAD
@@ -535,7 +535,7 @@ ideas = {
 			picture = generic_manpower_bonus
 			modifier = {naval_torpedo_range_factor = 1 convoy_raiding_efficiency_factor = 0.1 }
 		}
-		navy_cost = {
+		LAW_navy_cost = {
 			allowed = {
 				OR = {
 				tag = MAD
@@ -559,7 +559,7 @@ ideas = {
 			}
 		}
 
-		air2 = {
+		LAW_air2 = {
 				
 			allowed = {
 				OR = {
@@ -596,7 +596,7 @@ ideas = {
 				}
 			}
 		
-		stablized_state = {
+		LAW_stablized_state = {
 			allowed = {
 				OR = {
 				tag = MAD
@@ -622,7 +622,7 @@ ideas = {
 			modifier = {political_power_factor = 0.1 army_morale_factor = 0.05}
 		}
 
-		navy = {
+		LAW_navy = {
 			allowed = {
 				OR = {
 				tag = MAD
@@ -647,7 +647,7 @@ ideas = {
 			}
 			modifier = {industrial_capacity_dockyard = 0.2 experience_gain_navy = 0.1 }
 		}
-		military_youth_focus = {
+		LAW_military_youth_focus = {
 			
 			
 			allowed = {
@@ -662,7 +662,7 @@ ideas = {
 				conscription = 0.02
 			}
 		}
-		paramilitarism_focus = {
+		LAW_paramilitarism_focus = {
 			
 			
 			allowed = {
@@ -1335,11 +1335,6 @@ political_advisor = {
 					evasion = 0.1
 					naval_range = 0.15
 				}
-				carrier = {
-					build_cost_ic = -0.1 
-					surface_detection = 0.1
-					anti_air_attack = 0.25
-				}
 			}
 		}	
 	}	
@@ -1468,7 +1463,6 @@ political_advisor = {
 			research_bonus = {helicopter = 0.15 infantry_weapons = 0.05}
 			equipment_bonus = {
 			transport_helo_equipment = {build_cost_ic = -0.15 reliability = 0.1}
-			naval_helicopter_equipment = {build_cost_ic = 0.1 reliability = 0.1 sub_detection = 0.05 sub_attack = 0.05 air_range = 0.1 }
 			attack_helicopter_equipment = {build_cost_ic = 0.05 reliability = 0.1 soft_attack = 0.05 hard_attack = 0.05 supply_consumption = 0.05}
 			scout_helicopter_equipment = {build_cost_ic = -0.15 reliability = 0.1 }
 			utility_helicopter_equipment = {build_cost_ic = -0.05 reliability = 0.1 air_range = 0.10}
