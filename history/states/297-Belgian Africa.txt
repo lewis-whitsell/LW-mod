@@ -12,6 +12,7 @@ state=
 	
 	history = {
 		owner = DRC
+		add_core_of = DRC
 		add_core_of = EQU
 		victory_points = { 1903 3 }
 		victory_points = { 8244 1 }

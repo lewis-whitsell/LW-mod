@@ -521,7 +521,7 @@ containerWindowType = {
 		}
 		iconType = {
 			name = "LHD_ico" 
-			position = {x=675 y=211}	
+			position = {x=675 y=200}	
 			spriteType = "GFX_lhd1_medium"
 		}
 		instantTextboxType = {

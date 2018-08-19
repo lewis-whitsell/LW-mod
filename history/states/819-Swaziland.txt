@@ -5,6 +5,7 @@ state={
 	history = {
 		owner = SAF
 		add_core_of = SWZ
+		add_core_of = SAF
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 3

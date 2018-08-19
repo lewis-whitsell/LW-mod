@@ -9,6 +9,7 @@ state={
 	history={
 		owner = ISR
 		add_core_of = LEB
+		add_core_of = ISR
 		victory_points = { 792 20 } 	#Beirut
 		victory_points = { 1108 5 } 	#Tripoli
 		victory_points = { 11919 1 }	#Sidon

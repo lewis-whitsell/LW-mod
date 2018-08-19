@@ -415,7 +415,7 @@ air_wings = {
 
 	}
 
-	554 = {
+	677 = {
 		#MiG-29
 		jet_multirole_equipment_5 = {
 			owner = "SOV" 
@@ -424,7 +424,7 @@ air_wings = {
 		name = "697 Squadron"
 	}
 	
-	554 = {
+	677 = {
 		#MiG-29
 		jet_multirole_equipment_5 = {
 			owner = "SOV" 
@@ -433,7 +433,7 @@ air_wings = {
 		name = "698 Squadron"
 	}
 	
-	554 = {
+	677 = {
 		#MiG-29
 		jet_multirole_equipment_5 = {
 			owner = "SOV" 
@@ -443,7 +443,7 @@ air_wings = {
 
 	}
 
-	554 = {
+	677 = {
 		#MiG-23
 		jet_multirole_equipment_5 = {
 			owner = "SOV" 
@@ -452,7 +452,7 @@ air_wings = {
 		name = "695 Squadron"
 
 	}
-	554 = {
+	677 = {
 		#MiG-23
 		jet_multirole_equipment_5 = {
 			owner = "SOV" 
@@ -461,7 +461,7 @@ air_wings = {
 		name = "698 Squadron"
 
 	}
-	554 = {
+	677 = {
 		#MiG-23
 		jet_multirole_equipment_5 = {
 			owner = "SOV" 
@@ -470,7 +470,7 @@ air_wings = {
 		name = "67 Squadron"
 
 	}
-	554 = {
+	677 = {
 		#MiG-23
 		jet_multirole_equipment_5 = {
 			owner = "SOV" 
@@ -479,7 +479,7 @@ air_wings = {
 		name = "54 Squadron"
 
 	}
-	554 = {
+	677 = {
 		#MiG-21
 		jet_multirole_equipment_4 = {
 			owner = "SOV" 
@@ -488,7 +488,7 @@ air_wings = {
 		name = "77 Squadron"
 
 	}
-	554 = {
+	677 = {
 		#Su-22
 		jet_multirole_equipment_5 = {
 			owner = "SOV" 
@@ -497,7 +497,7 @@ air_wings = {
 		name = "677 Squadron"
 
 	}
-	554 = {
+	677 = {
 		#Su-22
 		jet_multirole_equipment_5 = {
 			owner = "SOV" 

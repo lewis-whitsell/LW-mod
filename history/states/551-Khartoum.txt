@@ -6,6 +6,7 @@ state={
 	history={
 		owner = ETH
 		add_core_of = SUD
+		add_core_of = ETH
 		buildings = {
 			infrastructure = 7
 			industrial_complex = 5

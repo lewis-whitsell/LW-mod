@@ -11,6 +11,7 @@ state={
 	history = { 
 		owner = MYA
 		add_core_of = MAY
+		add_core_of = MYA
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 5
