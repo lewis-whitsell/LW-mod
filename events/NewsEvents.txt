@@ -822,3 +822,4 @@ news_event = {
 		trigger = { has_democratic_form_of_government = no }
 	}
 }
+

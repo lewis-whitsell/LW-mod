@@ -100,7 +100,7 @@ units = {
 ### Air OOB ###
 
 air_wings = {
-	315 = {
+	318 = {
 		#MiG-29
 		jet_multirole_equipment_5 = {
 			owner = "CUB" 
@@ -108,19 +108,19 @@ air_wings = {
 		}
 
 	}
-	315 = {
+	318 = {
 		#MiG-23
 		jet_multirole_equipment_5 = {
 			owner = "CUB" 
-			amount = 69
+			amount = 30
 		}
 
 	}
-	315 = {
+	318 = {
 		#MiG-21
 		jet_multirole_equipment_4 = {
 			owner = "CUB" 
-			amount = 183
+			amount = 150
 		}
 
 	}

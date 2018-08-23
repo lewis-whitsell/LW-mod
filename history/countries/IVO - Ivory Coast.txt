@@ -112,6 +112,14 @@ add_ideas = {
 	african_union_member
 }
 
+create_faction = Free_Africa
+add_to_faction = BKF
+add_to_faction = LIB
+add_to_faction = NGR
+add_to_faction = MAL
+add_to_faction = MOR
+add_to_faction = ALG
+
 set_politics = {
 
 	parties = {

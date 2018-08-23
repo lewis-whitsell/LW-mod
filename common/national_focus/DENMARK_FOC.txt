@@ -356,7 +356,7 @@ focus_tree = {
 					factor = 10
 				}
 			completion_reward = {
-					add_ideas = DEN_2resource
+					add_ideas = LAW_resource
 				}
 
 	}
@@ -587,7 +587,7 @@ focus_tree = {
 					factor = 10
 				}
 			completion_reward = {
-					add_ideas = DEN_2resource2
+					add_ideas = LAW_resource2
 				}
 
 	}
@@ -610,7 +610,7 @@ focus_tree = {
 					every_owned_state = {
 							add_extra_state_shared_building_slots = 5
 						}
-					add_ideas = DEN_2industrial
+					add_ideas = LAW_industrial
 				}
 
 	}
@@ -650,7 +650,7 @@ focus_tree = {
 					factor = 10
 				}
 			completion_reward = {
-					add_ideas = DEN_2grand_deal
+					add_ideas = LAW_grand_deal
 				}
 
 	}
@@ -667,7 +667,7 @@ focus_tree = {
 					factor = 10
 				}
 			completion_reward = {
-					add_ideas = DEN_2trade1
+					add_ideas = LAW_trade1
 				}
 
 	}
@@ -684,7 +684,7 @@ focus_tree = {
 					factor = 10
 				}
 			completion_reward = {
-					add_ideas = DEN_2trade2
+					add_ideas = LAW_trade2
 				}
 
 	}
@@ -725,7 +725,7 @@ focus_tree = {
 				}
 			available_if_capitulated = yes
 			completion_reward = {
-					add_ideas = DEN_2ef
+					add_ideas = LAW_ef
 				}
 
 	}
@@ -986,7 +986,7 @@ focus_tree = {
 					factor = 10
 				}
 			completion_reward = {
-					add_ideas = DEN_2arty3
+					add_ideas = LAW_arty3
 				}
 
 	}
@@ -1071,7 +1071,7 @@ focus_tree = {
 					factor = 10
 				}
 			completion_reward = {
-					add_ideas = DEN_2american_advisors
+					add_ideas = LAW_american_advisors
 				}
 
 	}
@@ -1283,7 +1283,7 @@ focus_tree = {
 				}
 			available_if_capitulated = yes
 			completion_reward = {
-					add_ideas = DEN_2island_hopping
+					add_ideas = LAW_island_hopping
 					add_tech_bonus = {
 							name = DEN_2spec3
 							bonus = 0.5
@@ -1330,7 +1330,7 @@ focus_tree = {
 				}
 			available_if_capitulated = yes
 			completion_reward = {
-					add_ideas = DEN_2navy
+					add_ideas = LAW_navy
 				}
 
 	}
@@ -1551,7 +1551,7 @@ focus_tree = {
 							uses = 2
 							category = ca_tech
 						}
-						
+
 				}
 
 	}
@@ -1663,7 +1663,7 @@ focus_tree = {
 					factor = 10
 				}
 			completion_reward = {
-					add_ideas = DEN_2navy2
+					add_ideas = LAW_navy2
 				}
 
 	}
@@ -1681,7 +1681,7 @@ focus_tree = {
 					factor = 10
 				}
 			completion_reward = {
-					add_ideas = DEN_2navy_cost
+					add_ideas = LAW_navy_cost
 				}
 
 	}
@@ -1926,7 +1926,7 @@ focus_tree = {
 					factor = 10
 				}
 			completion_reward = {
-					add_ideas = DEN_2airbase
+					add_ideas = LAW_airbase
 				}
 
 	}
@@ -2048,7 +2048,7 @@ focus_tree = {
 					factor = 10
 				}
 			completion_reward = {
-					add_ideas = DEN_2air3
+					add_ideas = LAW_air3
 				}
 
 	}
@@ -2068,7 +2068,7 @@ focus_tree = {
 					factor = 10
 				}
 			completion_reward = {
-				add_ideas = DEN_2airsup
+				add_ideas = LAW_airsup
 				}
 
 	}
@@ -2131,7 +2131,7 @@ focus_tree = {
 					factor = 10
 				}
 			completion_reward = {
-			add_ideas = DEN_2air
+			add_ideas = LAW_air
 
 			}
 
@@ -2176,7 +2176,7 @@ focus_tree = {
 					factor = 10
 				}
 			completion_reward = {
-					add_ideas = DEN_2air2
+					add_ideas = LAW_air2
 				}
 
 	}
@@ -2779,7 +2779,7 @@ focus_tree = {
 				}
 			available_if_capitulated = yes
 			completion_reward = {
-					add_ideas = DEN_2paramilitarism_focus
+					add_ideas = LAW_paramilitarism_focus
 				}
 
 	}
@@ -2796,7 +2796,7 @@ focus_tree = {
 					factor = 10
 				}
 			completion_reward = {
-					add_ideas = DEN_2end1
+					add_ideas = LAW_ruin_1
 				}
 
 	}
@@ -2853,7 +2853,7 @@ focus_tree = {
 					factor = 10
 				}
 			completion_reward = {
-					add_ideas = DEN_2stablized_state
+					add_ideas = LAW_stablized_state
 				}
 
 	}
@@ -2921,7 +2921,7 @@ focus_tree = {
 			available_if_capitulated = yes
 			completion_reward = {
 					army_experience = 20
-					add_ideas = DEN_2inf1
+					add_ideas = LAW_inf1
 				}
 
 	}
@@ -2939,7 +2939,7 @@ focus_tree = {
 				}
 			available_if_capitulated = yes
 			completion_reward = {
-					add_ideas = DEN_2plan1
+					add_ideas = LAW_plan1
 				}
 
 	}
@@ -2958,7 +2958,7 @@ focus_tree = {
 				}
 			available_if_capitulated = yes
 			completion_reward = {
-					add_ideas = DEN_2military_youth_focus
+					add_ideas = LAW_military_youth_focus
 				}
 
 	}
@@ -3103,7 +3103,7 @@ focus_tree = {
 							bonus = 0.75
 							uses = 1
 							category = land_doctrine
-						} 
+						}
 				}
 
 	}
@@ -3338,7 +3338,7 @@ focus_tree = {
 			available_if_capitulated = yes
 			completion_reward = {
 					add_political_power = 120
-					add_ideas = DEN_2greater
+					add_ideas = LAW_greater
 				}
 
 	}
@@ -3356,7 +3356,7 @@ focus_tree = {
 					factor = 10
 				}
 			completion_reward = {
-					add_ideas = DEN_2grand_deal3
+					add_ideas = LAW_grand_deal3
 				}
 
 	}
@@ -3449,7 +3449,7 @@ focus_tree = {
 				add_state_core = 139
 				transfer_state = 139
 				add_state_core = 140
-				transfer_state = 140				
+				transfer_state = 140
 			}
 
 	}
@@ -3483,7 +3483,7 @@ focus_tree = {
 					factor = 10
 				}
 			completion_reward = {
-					add_ideas = DEN_2arty1
+					add_ideas = LAW_arty1
 				}
 
 	}
@@ -3505,7 +3505,7 @@ focus_tree = {
 					factor = 10
 				}
 			completion_reward = {
-					add_ideas = DEN_2arty2
+					add_ideas = LAW_arty2
 				}
 
 	}
@@ -3811,7 +3811,7 @@ focus_tree = {
 			completion_reward = {
 				swap_ideas = {
 					remove_idea = DEN_2end5
-					add_idea = DEN_2end6 
+					add_idea = DEN_2end6
 						}
 				}
 

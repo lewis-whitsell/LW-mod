@@ -8,6 +8,7 @@ state={
 	state_category = state_level_7
 	history={
 		owner = CUB
+		add_core_of = CUB
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 3

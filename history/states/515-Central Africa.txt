@@ -5,6 +5,7 @@ state={
 
 	history={
 		owner = LBA
+		set_demilitarized_zone = yes
 		add_core_of = CHD
 		buildings = {
 			infrastructure = 1

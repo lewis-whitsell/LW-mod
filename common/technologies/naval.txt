@@ -1941,11 +1941,11 @@ LHD_air_support = {
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = shore_support_lhd
+			leads_to_tech = LHD_ATK
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = air_support_lhd
+			leads_to_tech = LHD_DEF
 			research_cost_coeff = 1
 		}
 		research_cost = 3
@@ -1970,6 +1970,70 @@ LHD_air_support = {
 		}
 		
 	}
+
+	LHD_ATK = {
+
+    LHD = {
+
+    }
+
+	research_cost = 1
+	
+	start_year = 2008
+
+	XOR = {
+            LHD_DEF
+        }
+	
+	folder = {
+		name = naval_folder
+		position = {
+			x = @LHD_upper_line
+			y = @2008
+		}
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+	
+	categories = {
+		naval_equipment
+	}
+	
+}
+
+	LHD_DEF = {
+
+    LHD = {
+
+    }
+
+	research_cost = 1
+	
+	start_year = 2008
+
+	XOR = {
+            LHD_ATK
+        }
+	
+	folder = {
+		name = naval_folder
+		position = {
+			x = @LHD_lower_line
+			y = @2008
+		}
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+	
+	categories = {
+		naval_equipment
+	}
+	
+}
 	
 	lhd4 = {
 		
@@ -2034,6 +2098,9 @@ LHD_air_support = {
 	}
 
 
+
+
+
 	##SUBMARINES##
 	
 	submarine1 = {
@@ -2090,7 +2157,7 @@ LHD_air_support = {
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = ssn_1 
+			leads_to_tech = ssn1 
 			research_cost_coeff = 1
 		}
 		
@@ -2151,14 +2218,14 @@ LHD_air_support = {
 		
 	}
 	
-	ssn_1 = {
+	ssn1 = {
 
 		enable_equipments = { 
 			nuclear_submarine_1
 		}
 		
 		path = {
-			leads_to_tech = ssn_2 
+			leads_to_tech = ssn2 
 			research_cost_coeff = 1
 		}
 		
@@ -2213,14 +2280,14 @@ LHD_air_support = {
 		}
 	}
 	
-	ssn_2 = {
+	ssn2 = {
 
 		enable_equipments = { 
 			nuclear_submarine_2
 		}
 		
 		path = {
-			leads_to_tech = ssn_3 
+			leads_to_tech = ssn3 
 			research_cost_coeff = 1
 		}
 		
@@ -2276,14 +2343,14 @@ LHD_air_support = {
 		}
 	}
 	
-	ssn_3 = {
+	ssn3 = {
 
 		enable_equipments = { 
 			nuclear_submarine_3
 		}
 		
 		path = {
-			leads_to_tech = ssn_4 
+			leads_to_tech = ssn4 
 			research_cost_coeff = 1
 		}
 		
@@ -2340,14 +2407,14 @@ LHD_air_support = {
 		}
 	}
 	
-	ssn_4 = {
+	ssn4 = {
 
 		enable_equipments = { 
 			nuclear_submarine_4
 		}
 		
 		path = {
-			leads_to_tech = ssn_5 
+			leads_to_tech = ssn5 
 			research_cost_coeff = 1
 		}
 		
@@ -2404,14 +2471,14 @@ LHD_air_support = {
 		}
 	}
 	
-	ssn_5 = {
+	ssn5 = {
 
 		enable_equipments = { 
 			nuclear_submarine_5
 		}
 		
 		path = {
-			leads_to_tech = ssn_6 
+			leads_to_tech = ssn6 
 			research_cost_coeff = 1
 		}
 		
@@ -2467,7 +2534,7 @@ LHD_air_support = {
 		}
 	}
 	
-	ssn_6 = {
+	ssn6 = {
 
 		enable_equipments = { 
 			nuclear_submarine_6

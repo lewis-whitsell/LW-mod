@@ -6,6 +6,7 @@ state={
 	history={
 		owner = GEO
 		add_core_of = GEO
+		add_core_of = AZR
 		victory_points = { 1599 5 }
 		victory_points = { 3653 3 }
 		buildings = {

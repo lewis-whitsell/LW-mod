@@ -39,8 +39,6 @@ set_technology = {
 	gen1_apc = 1
 	gen2_apc = 1
 	amphibious1 = 1
-	
-	armored_engineering_4 = 1
 	recon_mechanized_1 = 1
 	recon_mechanized_2 = 1
 	sp_rocket1 = 1
@@ -194,6 +192,13 @@ give_guarantee = ABK
 give_guarantee = SOS
 give_guarantee = TRA
 
+create_faction = WarsawPact
+add_to_faction = UKR
+add_to_faction = BLR
+add_to_faction = POL
+add_to_faction = ROM
+add_to_faction = HUN
+
 give_military_access = SOS
 give_military_access = ABK
 give_military_access = TRA
@@ -215,6 +220,22 @@ set_autonomy = {
 set_autonomy = {
 		target = AZR
 		autonomous_state = autonomy_ssr
+	}
+set_autonomy = {
+		target = POL
+		autonomous_state = autonomy_easternbloc
+	}
+set_autonomy = {
+		target = SLO
+		autonomous_state = autonomy_easternbloc
+	}
+set_autonomy = {
+		target = ROM
+		autonomous_state = autonomy_easternbloc
+	}
+set_autonomy = {
+		target = ROM
+		autonomous_state = autonomy_easternbloc
 	}
 	
 create_country_leader = {

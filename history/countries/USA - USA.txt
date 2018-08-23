@@ -160,6 +160,15 @@ tech_logistics_company = 1
 tech_signal_company = 1
 }
 
+create_faction = Free_Nations
+add_to_faction = GER
+add_to_faction = FRA
+add_to_faction = ENG
+add_to_faction = HOL
+add_to_faction = BEL
+add_to_faction = LUX
+add_to_faction = EST
+
 set_politics = {
 
 	parties = {
