@@ -36,24 +36,14 @@
 	"buffers":
 	[
 		{
-			"file": "common/technologies/naval.txt",
+			"file": "common/on_actions/money_on_actions.txt",
 			"settings":
 			{
-<<<<<<< HEAD
-				"buffer_size": 40307,
-=======
 				"buffer_size": 8548,
->>>>>>> 38b0f93db564ac0b9c2d3e8e0c13398b4d38d95f
 				"line_ending": "Windows"
 			}
 		},
 		{
-<<<<<<< HEAD
-			"file": "common/units/equipment/LAW_LHD.txt",
-			"settings":
-			{
-				"buffer_size": 2939,
-=======
 			"file": "common/ideas/LAW.txt",
 			"settings":
 			{
@@ -386,7 +376,15 @@
 			"settings":
 			{
 				"buffer_size": 407,
->>>>>>> 38b0f93db564ac0b9c2d3e8e0c13398b4d38d95f
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "common/units/equipment/LAW_submarines.txt",
+			"settings":
+			{
+				"buffer_size": 11195,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		}
@@ -497,154 +495,16 @@
 	},
 	"expanded_folders":
 	[
-<<<<<<< HEAD
-		"/C/Users/Lewis/Documents/GitHub/LW-mod",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/common",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/common/technologies",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/common/units",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/common/units/equipment"
-	],
-	"file_history":
-	[
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/common/technologies/tests",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/276-Canada.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/432-Assam.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/433-Manipur.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/434-Arunachal Pradesh.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/441-Kashmir.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/789-Sikkim.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/330-Mongolia.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/915-Palestinian West Bank.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/554-Syria.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/695-Curacao.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/694-French Caribbean.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/686-Puerto Rico.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/720-South Georgia.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/507-Southern Chile.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/816-Southern Malaya.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/817-Northern Malay.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/892-Prachuap Khiri Khan.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/724-Khorat.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/464-Nova Scotia.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/465-New Brunswick.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/468-Nunavut.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/961-LAKES.N.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/962-LAKES.E.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/countries/SAU.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/countries/SAU - Saudi Arabia.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/688-Chaco Boreal.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/common/on_actions/money_on_actions.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/events/LAW.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/474-Yucatan.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/475-Chiapas.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/476-Oaxaca.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/477-Veracruz.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/478-Nayarit.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/479-Tamaulipas.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/480-Coahuila.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/481-Sinaloa.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/482-Chihuahua.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/483-Sonora.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/484-Baja California.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/485-Guerrero.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/313-Guatemala.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/311-BritMex.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/314-El Salvador.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/312-Honduras.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/317-Nicaragua.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/316-Costa Rica.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/304-Panama.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/685-Panama Canal.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/889-Western Panama.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/909-Darien.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/430-Bangladesh.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/670-Laos.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/286-Indochina.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/324-Bhutan.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/584-Turkmenistan.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/799-Anau.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/801-Dasoguz.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/802-Lebap.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/803-Mary.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/585-Uzbekistan.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/587-Western Kazakstan.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/821-Qashqadaryo.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/823-Tashkent.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/405-Atyrau.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/732-Pamir.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/586-Kyrgyzstan.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/822-Northern Pamir.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/832-Nagorno-Karabakh.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/230-Armenia.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/796-Abkhazia.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/797-South Ossetia.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/836-Northern Cyprus.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/455-Jordan.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/553-Lebanon.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/294-Oman.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/549-Sudan.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/551-Khartoum.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/761-Darfur.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/762-South Sudan.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/763-Sudanese Desert.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/798-Halaib.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/550-Eritiea.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/268-French Somaliland.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/559-Somaliland.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/807-Horn of Africa.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/269-British Somaliland.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/547-East Africa.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/548-Uganda.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/541-South West Africa.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/542-Bechuana Land.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/819-Swaziland.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/818-Lesotho.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/540-Angola.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/842-Cabinda.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/843-Moxico.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/844-Cuanda Cobango.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/845-Lunda.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/846-Huila.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/782-Zimbabwe.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/820-Malawi.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/757-Likouala.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/758-Sangha.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/759-Brazzaville.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/760-Pointe Noire.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/539-Gabon.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/297-Belgian Africa.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/780-Burundi.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/274-British Africa.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/777-Upper Ghana.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/770-Togo.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/769-Benin.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/774-Guinea.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/775-Conakry.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/700-Sierra Leone.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/296-Portugal Africa.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/754-Northern Cameroon.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/755-Douala.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/756-Yaounde.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/557-Dakar.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/773-Nouakchott.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/272-French Africa.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/771-Casamance.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/772-Dakar.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/701-Gambia.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/749-Western Niger.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/747-Niger Desert.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/748-Eastern Niger.txt"
-	],
-	"find":
-	{
-		"height": 40.8
-=======
 		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod",
 		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common",
-		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/ideas"
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/technology_sharing",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/units",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/units/equipment"
 	],
 	"file_history":
 	[
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/units/equipment/LAW_submarines.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/units/equipment/LAW_LHD.txt",
 		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/units/SYR_2000.txt",
 		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/ideas/GREENLAND.txt",
 		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/national_focus/australia.txt",
@@ -652,7 +512,6 @@
 		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/units/equipment/LAW_planes.txt",
 		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/Regex.txt",
 		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/units/equipment/submarines.txt",
-		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/units/equipment/LAW_LHD.txt",
 		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/technologies/naval.txt",
 		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/interface/navalcombat.gfx",
 		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/units/LAW_air.txt",
@@ -771,24 +630,18 @@
 		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/states/585-Uzbekistan.txt",
 		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/states/587-Western Kazakstan.txt",
 		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/states/821-Qashqadaryo.txt",
-		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/states/823-Tashkent.txt",
-		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/states/405-Atyrau.txt"
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/states/823-Tashkent.txt"
 	],
 	"find":
 	{
 		"height": 41.0
->>>>>>> 38b0f93db564ac0b9c2d3e8e0c13398b4d38d95f
 	},
 	"find_in_files":
 	{
 		"height": 108.0,
 		"where_history":
 		[
-<<<<<<< HEAD
-			"C:\\Users\\Lewis\\Documents\\GitHub\\LW-mod\\history\\states",
-=======
 			"<open files>",
->>>>>>> 38b0f93db564ac0b9c2d3e8e0c13398b4d38d95f
 			"C:\\Users\\lewis\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\MM Dawn LW mod\\history\\states",
 			"C:\\Users\\lewis\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\MM Dawn LW mod\\history\\countries\\states",
 			"C:\\Users\\lewis\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\MM Dawn LW mod\\history\\countries",
@@ -802,136 +655,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-<<<<<<< HEAD
-			"lhd",
-			"frigate_cost",
-			"owner = HAI",
-			"owner = BRB",
-			"owner = GND",
-			"owner = TAT",
-			"owner = BHM",
-			"owner = PAR",
-			"owner = SUR",
-			"owner = GUY",
-			"owner = URG",
-			"owner = BOL",
-			"owner = ECU",
-			"owner = BOL",
-			"owner = WSH",
-			"owner = GAM",
-			"owner = SEN",
-			"owner = MRT",
-			"owner = CAM",
-			"owner = GBS",
-			"owner = SIE",
-			"owner = GUI",
-			"owner = BEN",
-			"owner = TOG",
-			"owner = GHA",
-			"owner = BUR",
-			"owner = EQU",
-			"owner = GAB",
-			"owner = COG",
-			"owner = MLW",
-			"owner = ZIM",
-			"owner = ANG",
-			"owner = LES",
-			"owner = SWZ",
-			"owner = BOT",
-			"owner = NAM",
-			"owner = UGA",
-			"owner = KEN",
-			"owner = SML",
-			"owner = SOM",
-			"owner = DJI",
-			"owner = ERI",
-			"owner = SUD",
-			"owner = OMA",
-			"owner = LEB",
-			"owner = JOR",
-			"owner = NCY",
-			"owner = SOS",
-			"owner = ABK",
-			"owner = ARM",
-			"owner = NGK",
-			"owner = KYR",
-			"owner = TJI",
-			"owner = UZB",
-			"owner = TRM",
-			"owner = BHU",
-			"owner = CMB",
-			"owner = LAO",
-			"owner = BNG",
-			"owner = PAN",
-			"owner = COS",
-			"owner = NIC",
-			"owner = HON",
-			"owner = ELS",
-			"owner = BLZ",
-			"owner = GUA",
-			"owner = MEX",
-			"7590",
-			"10265",
-			"PHI",
-			"10265",
-			"PHI",
-			"10265",
-			"PHI",
-			"10265",
-			"PHI",
-			"10265",
-			"engineers",
-			"armored_",
-			"armored_\narmored_",
-			"armored_",
-			"10265",
-			"PHI",
-			"10265",
-			"PHI",
-			"10265",
-			"PHI",
-			"10265",
-			"PHI",
-			"name = \"PHI Starting Marine",
-			"\"PHI Starting Marine",
-			"10235",
-			"DD 2",
-			"FF 2",
-			"carrier",
-			"12512",
-			"\"Starting",
-			"name = \"Starting",
-			"ast",
-			"x = 3",
-			"x = 2",
-			"GRE",
-			"anti_tank",
-			"GRE",
-			"LAW",
-			"x = 2",
-			"artillery",
-			"mechanized_",
-			"PHI",
-			"10265",
-			"PHI",
-			"10265",
-			"PHI",
-			"10265",
-			"name = \"\"",
-			"BRP Rajah Humabon (PF-11)",
-			"USS Leyte Gulf (CG-55)",
-			"BRP Rajah Humabon (PF-11)",
-			"USA",
-			"destroyer",
-			"frigate",
-			"name = \"Starting ARM 1\"",
-			"name = \"Starting ARM\"",
-			"name = \"Starting ARM",
-			"Free Marines",
-			"Special Forces Regiment",
-			"Starting Army Garri",
-			"x = 0"
-=======
+			"ssn",
 			"315",
 			"armored_engineers",
 			"554",
@@ -1058,24 +782,11 @@
 			"LAW.",
 			".0",
 			"take_core_state",
-			".3",
-			".2"
->>>>>>> 38b0f93db564ac0b9c2d3e8e0c13398b4d38d95f
+			".3"
 		],
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-<<<<<<< HEAD
-		"regex": false,
-		"replace_history":
-		[
-			"owner = CUB",
-			"owner = BRA",
-			"owner = ARG",
-			"owner = CHL",
-			"owner = COL",
-			"owner = CHL",
-=======
 		"regex": true,
 		"replace_history":
 		[
@@ -1091,7 +802,6 @@
 			"sskstock",
 			"frigatestock",
 			"frigate",
->>>>>>> 38b0f93db564ac0b9c2d3e8e0c13398b4d38d95f
 			"owner = MOR",
 			"owner = MAL",
 			"owner = NGR",
@@ -1167,19 +877,7 @@
 	"groups":
 	[
 		{
-<<<<<<< HEAD
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 0,
-					"file": "common/technologies/naval.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 40307,
-=======
-			"selected": 34,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -1370,7 +1068,7 @@
 						"translation.y": 1893.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 38,
+					"stack_index": 39,
 					"type": "text"
 				},
 				{
@@ -1577,7 +1275,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 36,
+					"stack_index": 37,
 					"type": "text"
 				},
 				{
@@ -1696,7 +1394,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 37,
+					"stack_index": 38,
 					"type": "text"
 				},
 				{
@@ -1903,7 +1601,7 @@
 						"translation.y": 14977.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 39,
+					"stack_index": 40,
 					"type": "text"
 				},
 				{
@@ -2080,7 +1778,7 @@
 						"translation.y": 6110.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 35,
+					"stack_index": 36,
 					"type": "text"
 				},
 				{
@@ -2096,8 +1794,8 @@
 						"selection":
 						[
 							[
-								16495,
-								16495
+								12205,
+								12205
 							]
 						],
 						"settings":
@@ -2110,8 +1808,8 @@
 								{
 									"1":
 									[
-										16678,
-										16679
+										12569,
+										12570
 									]
 								},
 								"icon":
@@ -2126,8 +1824,8 @@
 								{
 									"1":
 									[
-										16648,
-										16649
+										12085,
+										12086
 									]
 								},
 								"unmatched":
@@ -2136,26 +1834,11 @@
 							},
 							"bracket_highlighter.clone_regions":
 							[
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
@@ -2166,11 +1849,11 @@
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
@@ -2181,16 +1864,31 @@
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
-								"bh_tag_content"
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
 							],
 							"bracket_highlighter.locations":
 							{
@@ -2198,8 +1896,8 @@
 								{
 									"1":
 									[
-										16602,
-										16603
+										12569,
+										12570
 									]
 								},
 								"icon":
@@ -2214,8 +1912,8 @@
 								{
 									"1":
 									[
-										16238,
-										16239
+										12085,
+										12086
 									]
 								},
 								"unmatched":
@@ -2224,26 +1922,11 @@
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
@@ -2254,11 +1937,11 @@
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
@@ -2269,26 +1952,41 @@
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
-								"bh_tag_content"
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
 							],
 							"history_list_is_closing": true,
 							"syntax": "Packages/HOI4/hoi4.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 15348.0,
+						"translation.y": 11422.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 34,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -2344,26 +2042,11 @@
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
@@ -2374,11 +2057,11 @@
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
@@ -2389,16 +2072,31 @@
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
-								"bh_tag_content"
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
 							],
 							"syntax": "Packages/HOI4/hoi4.tmLanguage",
 							"translate_tabs_to_spaces": false
@@ -2407,7 +2105,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 33,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -2526,7 +2224,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 32,
+					"stack_index": 35,
 					"type": "text"
 				},
 				{
@@ -2645,7 +2343,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 31,
+					"stack_index": 34,
 					"type": "text"
 				},
 				{
@@ -2764,7 +2462,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 30,
+					"stack_index": 33,
 					"type": "text"
 				},
 				{
@@ -2883,7 +2581,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 29,
+					"stack_index": 32,
 					"type": "text"
 				},
 				{
@@ -3002,7 +2700,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 28,
+					"stack_index": 31,
 					"type": "text"
 				},
 				{
@@ -3121,7 +2819,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 27,
+					"stack_index": 30,
 					"type": "text"
 				},
 				{
@@ -3240,7 +2938,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 26,
+					"stack_index": 29,
 					"type": "text"
 				},
 				{
@@ -3359,7 +3057,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 25,
+					"stack_index": 28,
 					"type": "text"
 				},
 				{
@@ -3463,7 +3161,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 24,
+					"stack_index": 27,
 					"type": "text"
 				},
 				{
@@ -3582,7 +3280,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 23,
+					"stack_index": 26,
 					"type": "text"
 				},
 				{
@@ -3701,7 +3399,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 22,
+					"stack_index": 25,
 					"type": "text"
 				},
 				{
@@ -3805,7 +3503,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 21,
+					"stack_index": 24,
 					"type": "text"
 				},
 				{
@@ -3924,7 +3622,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 20,
+					"stack_index": 23,
 					"type": "text"
 				},
 				{
@@ -4043,7 +3741,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 19,
+					"stack_index": 22,
 					"type": "text"
 				},
 				{
@@ -4162,7 +3860,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 18,
+					"stack_index": 21,
 					"type": "text"
 				},
 				{
@@ -4281,7 +3979,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 17,
+					"stack_index": 20,
 					"type": "text"
 				},
 				{
@@ -4400,7 +4098,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 16,
+					"stack_index": 19,
 					"type": "text"
 				},
 				{
@@ -4519,7 +4217,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 15,
+					"stack_index": 18,
 					"type": "text"
 				},
 				{
@@ -4638,7 +4336,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 17,
 					"type": "text"
 				},
 				{
@@ -4757,7 +4455,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 16,
 					"type": "text"
 				},
 				{
@@ -4876,7 +4574,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 15,
 					"type": "text"
 				},
 				{
@@ -4995,7 +4693,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
@@ -5114,7 +4812,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
@@ -5233,7 +4931,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
@@ -5352,7 +5050,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
@@ -5529,7 +5227,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
@@ -5632,7 +5330,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
@@ -5735,7 +5433,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
@@ -5942,7 +5640,7 @@
 						"translation.y": 2022.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
@@ -5952,20 +5650,14 @@
 					"settings":
 					{
 						"buffer_size": 2295,
->>>>>>> 38b0f93db564ac0b9c2d3e8e0c13398b4d38d95f
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-<<<<<<< HEAD
-								21121,
-								21124
-=======
 								901,
 								901
->>>>>>> 38b0f93db564ac0b9c2d3e8e0c13398b4d38d95f
 							]
 						],
 						"settings":
@@ -5976,14 +5668,6 @@
 							{
 								"close":
 								{
-<<<<<<< HEAD
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-=======
 									"1":
 									[
 										2103,
@@ -6005,7 +5689,6 @@
 										2066,
 										2067
 									]
->>>>>>> 38b0f93db564ac0b9c2d3e8e0c13398b4d38d95f
 								},
 								"unmatched":
 								{
@@ -6013,8 +5696,6 @@
 							},
 							"bracket_highlighter.clone_regions":
 							[
-<<<<<<< HEAD
-=======
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
@@ -6153,14 +5834,10 @@
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
->>>>>>> 38b0f93db564ac0b9c2d3e8e0c13398b4d38d95f
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
-<<<<<<< HEAD
-								"bh_tag_content",
-=======
 								"bh_tag_content"
 							],
 							"syntax": "Packages/HOI4/hoi4.tmLanguage",
@@ -6170,7 +5847,7 @@
 						"translation.y": 1015.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
@@ -6246,73 +5923,26 @@
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
->>>>>>> 38b0f93db564ac0b9c2d3e8e0c13398b4d38d95f
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
-<<<<<<< HEAD
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-=======
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
->>>>>>> 38b0f93db564ac0b9c2d3e8e0c13398b4d38d95f
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
-<<<<<<< HEAD
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content"
-=======
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
 								"bh_tag_content"
->>>>>>> 38b0f93db564ac0b9c2d3e8e0c13398b4d38d95f
 							],
 							"bracket_highlighter.locations":
 							{
@@ -6331,13 +5961,6 @@
 							},
 							"bracket_highlighter.regions":
 							[
-<<<<<<< HEAD
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-=======
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
@@ -6373,52 +5996,21 @@
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
->>>>>>> 38b0f93db564ac0b9c2d3e8e0c13398b4d38d95f
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
-<<<<<<< HEAD
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-=======
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
->>>>>>> 38b0f93db564ac0b9c2d3e8e0c13398b4d38d95f
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
-<<<<<<< HEAD
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-=======
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
@@ -6432,7 +6024,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
@@ -6473,14 +6065,11 @@
 							},
 							"bracket_highlighter.regions":
 							[
->>>>>>> 38b0f93db564ac0b9c2d3e8e0c13398b4d38d95f
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
-<<<<<<< HEAD
-=======
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
@@ -6506,27 +6095,20 @@
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
->>>>>>> 38b0f93db564ac0b9c2d3e8e0c13398b4d38d95f
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
-<<<<<<< HEAD
-=======
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
->>>>>>> 38b0f93db564ac0b9c2d3e8e0c13398b4d38d95f
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
-<<<<<<< HEAD
-								"bh_square_content"
-=======
 								"bh_square_content",
 								"bh_regex",
 								"bh_regex_center",
@@ -6538,20 +6120,15 @@
 								"bh_tag_open",
 								"bh_tag_close",
 								"bh_tag_content"
->>>>>>> 38b0f93db564ac0b9c2d3e8e0c13398b4d38d95f
 							],
-							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"syntax": "Packages/HOI4/hoi4.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 35739.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-<<<<<<< HEAD
-					"stack_index": 0,
-=======
-					"stack_index": 3,
->>>>>>> 38b0f93db564ac0b9c2d3e8e0c13398b4d38d95f
+					"stack_index": 6,
 					"type": "text"
 				}
 			]
@@ -6561,34 +6138,20 @@
 			"sheets":
 			[
 				{
-<<<<<<< HEAD
-					"buffer": 1,
-					"file": "common/units/equipment/LAW_LHD.txt",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 2939,
-=======
 					"buffer": 36,
 					"file": "history/units/CUB_2000.txt",
 					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 2295,
->>>>>>> 38b0f93db564ac0b9c2d3e8e0c13398b4d38d95f
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-<<<<<<< HEAD
-								571,
-								571
-=======
 								2100,
 								2100
->>>>>>> 38b0f93db564ac0b9c2d3e8e0c13398b4d38d95f
 							]
 						],
 						"settings":
@@ -6615,14 +6178,11 @@
 								},
 								"open":
 								{
-<<<<<<< HEAD
-=======
 									"1":
 									[
 										2066,
 										2067
 									]
->>>>>>> 38b0f93db564ac0b9c2d3e8e0c13398b4d38d95f
 								},
 								"unmatched":
 								{
@@ -6630,13 +6190,6 @@
 							},
 							"bracket_highlighter.clone_regions":
 							[
-<<<<<<< HEAD
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-=======
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
@@ -6672,100 +6225,52 @@
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
->>>>>>> 38b0f93db564ac0b9c2d3e8e0c13398b4d38d95f
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
-<<<<<<< HEAD
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-=======
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
->>>>>>> 38b0f93db564ac0b9c2d3e8e0c13398b4d38d95f
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
-<<<<<<< HEAD
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content"
-=======
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
 								"bh_tag_content"
->>>>>>> 38b0f93db564ac0b9c2d3e8e0c13398b4d38d95f
 							],
 							"bracket_highlighter.locations":
 							{
 								"close":
 								{
-<<<<<<< HEAD
-=======
 									"1":
 									[
 										2103,
 										2104
 									]
->>>>>>> 38b0f93db564ac0b9c2d3e8e0c13398b4d38d95f
 								},
 								"icon":
 								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
 								},
 								"open":
 								{
-<<<<<<< HEAD
-=======
 									"1":
 									[
 										2066,
 										2067
 									]
->>>>>>> 38b0f93db564ac0b9c2d3e8e0c13398b4d38d95f
 								},
 								"unmatched":
 								{
@@ -6773,33 +6278,11 @@
 							},
 							"bracket_highlighter.regions":
 							[
-<<<<<<< HEAD
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-=======
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
@@ -6810,96 +6293,262 @@
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
->>>>>>> 38b0f93db564ac0b9c2d3e8e0c13398b4d38d95f
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
-<<<<<<< HEAD
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-=======
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
->>>>>>> 38b0f93db564ac0b9c2d3e8e0c13398b4d38d95f
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-<<<<<<< HEAD
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content"
-							],
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 3391.2,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-=======
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content"
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
 							],
 							"syntax": "Packages/HOI4/hoi4.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 429.0,
+						"translation.y": 169.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
->>>>>>> 38b0f93db564ac0b9c2d3e8e0c13398b4d38d95f
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 39,
+					"file": "common/units/equipment/LAW_submarines.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11195,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3958,
+								3958
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										3961,
+										3962
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										3861,
+										3862
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										3961,
+										3962
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										3861,
+										3862
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"syntax": "Packages/HOI4/hoi4.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4498.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -6907,11 +6556,7 @@
 	],
 	"incremental_find":
 	{
-<<<<<<< HEAD
-		"height": 27.0
-=======
 		"height": 22.0
->>>>>>> 38b0f93db564ac0b9c2d3e8e0c13398b4d38d95f
 	},
 	"input":
 	{
@@ -6971,11 +6616,7 @@
 	"project": "hoi4mod.sublime-project",
 	"replace":
 	{
-<<<<<<< HEAD
-		"height": 50.0
-=======
 		"height": 73.0
->>>>>>> 38b0f93db564ac0b9c2d3e8e0c13398b4d38d95f
 	},
 	"save_all_on_build": false,
 	"select_file":
@@ -6985,10 +6626,6 @@
 		"selected_items":
 		[
 			[
-<<<<<<< HEAD
-				"",
-				"common\\technologies\\naval.txt"
-=======
 				"cub_2",
 				"history\\units\\CUB_2000.txt"
 			],
@@ -7271,7 +6908,6 @@
 			[
 				"PER",
 				"history\\countries\\PER - Persia.txt"
->>>>>>> 38b0f93db564ac0b9c2d3e8e0c13398b4d38d95f
 			]
 		],
 		"width": 0.0
@@ -7294,7 +6930,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 	},
@@ -7302,7 +6938,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 205.0,
+	"side_bar_width": 373.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
