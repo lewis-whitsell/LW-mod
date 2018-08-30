@@ -306,7 +306,7 @@ equipments = {
 
 		manpower = 12
 
-		build_cost_ic = 1502.4
+		build_cost_ic = 250
 		resources = {
 			oil = 1
 			aluminium = 2
@@ -2249,7 +2249,7 @@ equipments = {
 		air_bombing = 12
 		air_ground_attack = 30
 		
-		build_cost_ic = 40
+		build_cost_ic = 45
 		
 	}
 	
@@ -2266,7 +2266,7 @@ equipments = {
 		air_bombing = 14
 		air_ground_attack = 34
 		
-		build_cost_ic = 45
+		build_cost_ic = 60
 		
 	}
 
@@ -2283,7 +2283,7 @@ equipments = {
 		air_bombing = 14
 		air_ground_attack = 34
 		
-		build_cost_ic = 45
+		build_cost_ic = 72
 		
 	}
 
@@ -2300,7 +2300,7 @@ equipments = {
 		air_bombing = 14
 		air_ground_attack = 34
 		
-		build_cost_ic = 45
+		build_cost_ic = 100
 		
 	}
 
