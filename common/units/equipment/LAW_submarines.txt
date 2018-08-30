@@ -43,12 +43,9 @@ equipments = {
 			oil = 1
 			steel = 1
 		}
-		
-<<<<<<< HEAD:common/units/equipment/LAW_submarines.txt
 		manpower = 100
-=======
-		manpower = 80
->>>>>>> 38b0f93db564ac0b9c2d3e8e0c13398b4d38d95f:common/units/equipment/submarines.txt
+
+
 	}
 
 	submarine_1 = {
@@ -317,8 +314,7 @@ equipments = {
 		}
 		type = {
 			submarine
-			SSN
-		}
+			}
 
 	}
 
