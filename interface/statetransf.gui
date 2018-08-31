@@ -149,14 +149,7 @@ guiTypes = {
 			frame = 13
 			pdx_tooltip = "construction_nuke"
 		}
-		buttonType = {
-			name = "construction_airbase" 
-			position = {x=473 y=80}		
-			spriteType = "GFX_buildings_strip"
-			frame = 5
-			pdx_tooltip = "construction_airbase"
-		}
-
+		
 		buttonType = {
 			name = "add_resources_steel" 
 			position = {x=23 y=125}		

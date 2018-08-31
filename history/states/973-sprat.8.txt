@@ -1,28 +1,28 @@
 state={
-	id=879
-	name="STATE_879"
+	id=973
+	name="STATE_973"
 	provinces={
-		13274 
+		13271 
 	}
 	manpower=3264030
 	buildings_max_level_factor=1.000
-	state_category=state_level_19
+	state_category=state_level_12
 	resources={
-		oil=86.000
+		oil=19.000
 	}
 
 	history={
-		owner = PRC
+		owner = PHI
 		buildings = {
 			infrastructure = 4
 			arms_factory = 1
 			industrial_complex = 2
-			air_base = 2
-			13274 = {
+			air_base = 1
+			13271 = {
 				naval_base = 3
-			}
 
+			}
 		}
-		add_core_of = PRC 
-		victory_points = { 13274 5 }
-	}
+		add_core_of = PHI 
+		victory_points = { 13271 1 }
+}
