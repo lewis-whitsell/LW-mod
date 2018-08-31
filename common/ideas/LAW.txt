@@ -674,17 +674,6 @@ ideas = {
 			}
 			removal_cost = -1
 			picture = generic_morale_bonus
-			allowed = {
-				OR = {
-				tag = MAD
-				tag = CUB
-				tag = PHI
-				tag = DEN
-				tag = GRN
-				tag = AST
-				tag = CYP
-				}
-			}
 			modifier = {industrial_capacity_dockyard = 0.2 experience_gain_navy = 0.1 }
 		}
 		LAW_military_youth_focus = {
@@ -834,6 +823,23 @@ political_advisor = {
 			
 			traits = {brutal_dictator}
 		}	
+		spymaster_leader = {
+
+			picture = generic_political_advisor_asia_4
+			allowed = {
+				OR = {
+				tag = MAD
+				tag = CUB
+				tag = PHI
+				tag = DEN
+				tag = GRN
+				tag = AST
+				tag = CYP
+				}
+			}
+	
+			traits = {spymaster}
+		}
 	}
 
 	air_chief = {

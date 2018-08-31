@@ -44,17 +44,21 @@ guiTypes = {
 	containerWindowType = {
 		name = "st_state_manager_powers_container"
 		position = {x=1250 y=170}
-		size = { width=400 height=500 }
+		size = { width=500 height=200 }
 
 		fade_time = 300
 		fade_type = linear
 		moveable = yes
 		
+		background = {
+            name = "Background"
+            quadTextureSprite ="GFX_tiled_window_2b_border"
+        }
 		
 
 		instantTextboxType = {
 			name = "title"
-			position = {x=14 y=6}
+			position = {x=25 y=14}
 			font = "hoi_18mbs"
 			text = "[This.GetName]"
 			maxWidth = 200
@@ -83,95 +87,138 @@ guiTypes = {
 
 		buttonType = {
 			name = "urbanize_state" 
-			position = {x=175 y=27}		
-			spriteType = "GFX_global_alert_icons"
-			frame = 5
+			position = {x=23 y=80}		
+			spriteType = "GFX_buildings_strip"
+			frame = 3
 			pdx_tooltip = "urbanization_TT"
 		}
 		buttonType = {
 			name = "make_core" 
-			position = {x=225 y=27}		
+			position = {x=73 y=80}		
 			spriteType = "GFX_global_alert_icons"
 			frame = 15
-			pdx_tooltip = "st_make_core_TT"
+			pdx_tooltip = "make_core_TT"
 		}
 
 		buttonType = {
 			name = "construction_cic" 
-			position = {x=275 y=27}		
-			spriteType = "GFX_global_alert_icons"
-			frame = 6
+			position = {x=123 y=80}		
+			spriteType = "GFX_buildings_strip"
+			frame = 1
 			pdx_tooltip = "construction_cic_TT"
 		}
 		buttonType = {
 			name = "construction_mic" 
-			position = {x=325 y=27}		
-			spriteType = "GFX_global_alert_icons"
-			frame = 7
+			position = {x=173 y=80}		
+			spriteType = "GFX_buildings_strip"
+			frame = 2
 			pdx_tooltip = "construction_mic_TT"
 		}
 		buttonType = {
 			name = "construction_nic" 
-			position = {x=375 y=27}		
-			spriteType = "GFX_global_alert_icons"
-			frame = 8
+			position = {x=223 y=80}		
+			spriteType = "GFX_buildings_strip"
+			frame = 4
 			pdx_tooltip = "construction_nic_TT"
+		}
+		buttonType = {
+			name = "construction_port" 
+			position = {x=273 y=80}		
+			spriteType = "GFX_buildings_strip"
+			frame = 6
+			pdx_tooltip = "construction_port"
+		}
+		buttonType = {
+			name = "construction_airbase" 
+			position = {x=323 y=80}		
+			spriteType = "GFX_buildings_strip"
+			frame = 5
+			pdx_tooltip = "construction_airbase"
+		}
+		buttonType = {
+			name = "construction_radar" 
+			position = {x=373 y=80}		
+			spriteType = "GFX_buildings_strip"
+			frame = 11
+			pdx_tooltip = "construction_radar"
+		}
+		buttonType = {
+			name = "construction_nuke" 
+			position = {x=423 y=80}		
+			spriteType = "GFX_buildings_strip"
+			frame = 13
+			pdx_tooltip = "construction_nuke"
+		}
+		buttonType = {
+			name = "construction_airbase" 
+			position = {x=473 y=80}		
+			spriteType = "GFX_buildings_strip"
+			frame = 5
+			pdx_tooltip = "construction_airbase"
 		}
 
 		buttonType = {
 			name = "add_resources_steel" 
-			position = {x=23 y=80}		
-			spriteType = "GFX_resources_strip"
-			frame = 5
-			scale = 1.5
-			pdx_tooltip = "prospect_for_steel"
+			position = {x=23 y=125}		
+			spriteType = "GFX_buildings_strip"
+			frame = 14
+			pdx_tooltip = "add_resources_steel_TT"
 		}
 		buttonType = {
 			name = "add_resources_aluminium" 
-			position = {x=73 y=80}		
-			spriteType = "GFX_resources_strip"
-			frame = 2
-			scale = 1.5
-			pdx_tooltip = "prospect_foraluminium_TT"
+			position = {x=73 y=125}		
+			spriteType = "GFX_buildings_strip"
+			frame = 16
+			pdx_tooltip = "add_resources_aluminium_TT"
 		}
 		buttonType = {
 			name = "add_resources_tungston" 
-			position = {x=123 y=80}		
-			spriteType = "GFX_resources_strip"
-			frame = 4
-			scale = 1.5
+			position = {x=123 y=125}		
+			spriteType = "GFX_buildings_strip"
+			frame = 17
 			pdx_tooltip = "add_resources_tungston_TT"
 		}
 		buttonType = {
 			name = "add_resources_chromium" 
-			position = {x=173 y=80}		
-			spriteType = "GFX_resources_strip"
-			frame = 6
-			scale = 1.5
+			position = {x=173 y=125}		
+			spriteType = "GFX_buildings_strip"
+			frame = 18
 			pdx_tooltip = "add_resources_chromium_TT"
 		}
 		buttonType = {
 			name = "add_resources_oil" 
-			position = {x=223 y=80}		
-			spriteType = "GFX_resources_strip"
-			frame = 1
-			scale = 1.5
+			position = {x=223 y=125}		
+			spriteType = "GFX_buildings_strip"
+			frame = 10
 			pdx_tooltip = "add_resources_oil_TT"
 		}
 		buttonType = {
 			name = "add_resources_rubber" 
-			position = {x=273 y=80}		
-			spriteType = "GFX_resources_strip"
-			frame = 3
-			scale = 1.5
+			position = {x=273 y=125}		
+			spriteType = "GFX_buildings_strip"
+			frame = 15
 			pdx_tooltip = "add_resources_rubber_TT"
 		}
 		buttonType = {
 			name = "add_homes" 
-			position = {x=323 y=80}		
+			position = {x=323 y=125}		
 			spriteType = "GFX_global_alert_icons"
 			frame = 16
 			pdx_tooltip = "add_homes_TT"
+		}
+		buttonType = {
+			name = "construction_fort" 
+			position = {x=373 y=125}		
+			spriteType = "GFX_buildings_strip"
+			frame = 7
+			pdx_tooltip = "construction_fort"
+		}
+		buttonType = {
+			name = "construction_coastfort" 
+			position = {x=423 y=125}		
+			spriteType = "GFX_buildings_strip"
+			frame = 8
+			pdx_tooltip = "construction_coastfort"
 		}
 		
 		instantTextboxType = {
@@ -192,7 +239,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}
 			text = "[This.mark_state_tooltip]"
 			maxWidth = 300
-			maxHeight = 100
+			maxHeight = 20
 		}
 
 	}

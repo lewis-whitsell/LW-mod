@@ -128,34 +128,34 @@ set_politics = {
 	parties = {
 		
 		islamist = {
-			popularity = 0
+			popularity = 10
 		}
 		nationalist = {
-			popularity = 0
+			popularity = 25
 		}
 		reactionary = {
-			popularity = 5
+			popularity = 15
 		}
 		conservative = {
 			popularity = 5
 		}
 		market_liberal = {
-			popularity = 9
+			popularity = 10
 		}
 		social_liberal = {
 			popularity = 15
 		}
 		social_democrat = {
-			popularity = 65
+			popularity = 10
 		}
 		progressive = {
 			popularity = 0
 		}
 		democratic_socialist = {
-			popularity = 1
+			popularity = 5
 		}
 		communist = {
-			popularity = 0
+			popularity = 5
 		}
 	}
 	

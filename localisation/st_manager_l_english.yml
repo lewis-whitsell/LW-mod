@@ -28,7 +28,7 @@
  urbanization_TT:0 "§HAdd 1 Build Slot\n50 million!§!"
  construction_cic_TT:0 "§HAdd 1 Civ Factory\n200 million!§!"
  construction_mic_TT:0 "§HAdd 1 Mil Factory\n175 million!§!"
- make_core_TT:0 "§HMake state core\n100 million!§!"
+ make_core_TT:0 "§HMake state core\n100 million and 40k Manpower!§!"
  add_resources_steel_TT:0 "§HAdd 1 - 10 steel\n100 million!§!"
  add_resources_aluminium_TT:0 "§HAdd 1 - 10 aluminium \n100 million!§!"
  add_resources_tungston_TT:0 "§HAdd 1 - 10 tungston\n100 million!§!"
@@ -36,6 +36,11 @@
  add_resources_oil_TT:0 "§HAdd 1 - 10 oil\n100 million!§!"
  add_resources_rubber_TT:0 "§HAdd 1 - 10 rubber\n100 million!§!"
  add_homes_TT:0 "§HAdd 100k - 1M people\n200 million!§!"
- construction_nic_TT:0 "§HAdd 1 Naval Dockyard\n175 million!§!"
-
+ construction_nic_TT:0 "§HAdd Naval Dockyard\n175 million!§!"
+ construction_port:0 "§HAdd Naval Port\n50 million!§!"
+ construction_airbase:0 "§HAdd Airbase\n25 million!§!"
+  construction_radar:0 "§HAdd radar\n75 million!§!"
+ construction_fort:0 "§HAdd Land Fort\n25 million!§!"
+ construction_coastfort:0 "§HAdd Coastal Fort\n25 million!§!"
+ construction_nuke:0 "§HAdd Nuke Factory\n450 million!§!"
  

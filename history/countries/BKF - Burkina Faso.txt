@@ -119,23 +119,23 @@ set_politics = {
 
 	parties = {
 		nationalist = {
-			popularity = 50
+			popularity = 10
 		}
 		social_liberal = {
-			popularity = 25
+			popularity = 50
 		}
 		conservative = {
 			popularity = 10
 		}
 		communist = {
-			popularity = 15
+			popularity = 30
 		}
 	}
 	
-	ruling_party = nationalist
+	ruling_party = social_liberal
 	last_election = "1997.1.1"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
 
 create_country_leader = {

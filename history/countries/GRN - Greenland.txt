@@ -139,6 +139,41 @@ create_country_leader = {
 	picture = "Jonathan_Motzfeldt.dds"
 	ideology = social_democrat_ideology
 }
+add_namespace = {
+	name = "GRN_unit_leader"
+	type = unit_leader
+}
+
+create_field_marshal = {
+	name = "Greenland 1"
+	picture = "generals/Georgios_Basiakoulis.dds"
+	traits = {  offensive_doctrine }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Greenland 2"
+	picture = "generals/Ilias_Leontaris.dds"
+	skill = 2
+}
+
+create_corps_commander = {
+	name = "Greenland 3"
+	picture = "generals/Dimitrios_Agorakis.dds"
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Greenland Best"
+	picture = "admirals/Caeser_Taccad.dds"
+	skill = 2
+}
+
+create_navy_leader = {
+	name = "Greenland 2nd Best"
+	picture = "admirals/Jesus_Millan.dds"
+	skill = 1
+}
 
 2016.1.1 = {
 	create_country_leader = {

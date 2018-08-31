@@ -77,6 +77,66 @@ SOV_europe_strategy2 = {
 		value = 100
 	}
 }
+SOV_europe_strategy3 = {
+	enable = {
+		tag = SOV
+		NOT = { is_in_faction_with = BUL }			
+	}
+	abort = {
+		is_in_faction_with = BUL	
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = "BUL"
+		value = 100
+	}
+}
+SOV_europe_strategy4 = {
+	enable = {
+		tag = SOV
+		NOT = { is_in_faction_with = FIN }			
+	}
+	abort = {
+		is_in_faction_with = FIN	
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = "FIN"
+		value = 100
+	}
+}
+SOV_europe_strategy5 = {
+	enable = {
+		tag = SOV
+		NOT = { is_in_faction_with = TUR }			
+	}
+	abort = {
+		is_in_faction_with = TUR	
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = "TUR"
+		value = 100
+	}
+}
+SOV_europe_strategy6 = {
+	enable = {
+		tag = SOV
+		NOT = { is_in_faction_with = GRE }			
+	}
+	abort = {
+		is_in_faction_with = GRE	
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = "GRE"
+		value = 100
+	}
+}
 
 SOV_american_policy = {
     enable = {

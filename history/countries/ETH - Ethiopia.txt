@@ -128,22 +128,22 @@ set_politics = {
 
 	parties = {
 		islamist = { popularity = 1 }
-		fascist = { popularity = 0 }
+		fascist = { popularity = 1 }
 		nationalist = { popularity = 1 }
 		reactionary = { popularity = 1 }
-		conservative = { popularity = 15 }
-		market_liberal = { popularity = 1 }
-		social_liberal = { popularity = 11 }
-		social_democrat = { popularity = 6 }
-		progressive = { popularity = 2 }
-		democratic_socialist = { popularity = 35 }
-		communist = { popularity = 27 }
+		conservative = { popularity = 5 }
+		market_liberal = { popularity = 5 }
+		social_liberal = { popularity = 5 }
+		social_democrat = { popularity = 5 }
+		progressive = { popularity = 1 }
+		democratic_socialist = { popularity = 5 }
+		communist = { popularity = 70 }
 	}
 	
-	ruling_party = democratic_socialist
+	ruling_party = communist
 	last_election = "1995.5.18"
-	election_frequency = 60
-	elections_allowed = yes
+	election_frequency = 48
+	elections_allowed = no
 }
 
 declare_war_on = {

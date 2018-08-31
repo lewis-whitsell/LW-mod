@@ -168,14 +168,7 @@ add_namespace = {
 create_field_marshal = {
 	name = "Geórgios Basiakoúlis"
 	picture = "generals/Georgios_Basiakoulis.dds"
-	traits = { old_guard offensive_doctrine fast_planner }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Andréas Markídis"
-	picture = "generals/Andreas_Markidis.dds"
-	traits = { fortress_buster }
+	traits = {  offensive_doctrine }
 	skill = 1
 }
 
@@ -191,6 +184,17 @@ create_corps_commander = {
 	skill = 1
 }
 
+create_navy_leader = {
+	name = "Cyprus Best"
+	picture = "admirals/Caeser_Taccad.dds"
+	skill = 2
+}
+
+create_navy_leader = {
+	name = "2nd Best"
+	picture = "admirals/Jesus_Millan.dds"
+	skill = 1
+}
 2002.1.1 = {
 	add_ideas = the_euro
 }

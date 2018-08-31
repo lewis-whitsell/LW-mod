@@ -204,30 +204,6 @@ create_country_leader = {
 }
 
 create_corps_commander = {
-	name = "Eduardo Ano"
-	picture = "generals/Eduardo_Ano.dds"
-	skill = 2
-}
-
-create_corps_commander = {
-	name = "Mayoralgo Dela Cruz"
-	picture = "generals/Mayoralgo_Dela_Cruz.dds"
-	skill = 2
-}
-
-create_corps_commander = {
-	name = "Rey Guerrero"
-	picture = "generals/Rey_Guerrero.dds"
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Ricardo Visaya"
-	picture = "generals/Ricardo_Visaya.dds"
-	skill = 1
-}
-
-create_corps_commander = {
 	name = "Romeo Gan"
 	picture = "generals/Romeo_Gan.dds"
 	skill = 1
@@ -248,7 +224,7 @@ create_navy_leader = {
 create_navy_leader = {
 	name = "Jesus Millan"
 	picture = "admirals/Jesus_Millan.dds"
-	skill = 1
+	skill = 2
 }
 
 2010.1.1 = {

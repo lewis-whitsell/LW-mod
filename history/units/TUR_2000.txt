@@ -771,7 +771,7 @@ units = {
 #KTBK = "Cyprus Turkish Peace Force", divisions at brigade-strength
 	division = {
 		name = "KTBK 28. Mekanize Piyade Tümeni"
-		location = 11984
+		location = 4112
 		division_template = "Mechanized Infantry Brigade"
 		start_experience_factor = 0.15
 		force_equipment_variants = { infantry_equipment_1 = { owner = "TUR" }
@@ -780,7 +780,7 @@ units = {
 	}
 	division = {
 		name = "KTBK 29. Mekanize Piyade Tümeni"
-		location = 11984
+		location = 4112
 		division_template = "Mechanized Infantry Brigade"
 		start_experience_factor = 0.15
 		force_equipment_variants = { infantry_equipment_1 = { owner = "TUR" }
@@ -789,7 +789,7 @@ units = {
 	}
 	division = {
 		name = "KTBK 14. Zırhlı Tugay"
-		location = 11984
+		location = 4112
 		division_template = "Armored Brigade"
 		start_experience_factor = 0.15
 		force_equipment_variants = { infantry_equipment_1 = { owner = "TUR" }
@@ -798,7 +798,7 @@ units = {
 	}
 	division = {
 		name = "KTBK 109. Topçu Alayı"
-		location = 11984
+		location = 4112
 		division_template = "Artillery Regiment"
 		start_experience_factor = 0.15
 		force_equipment_variants = { infantry_equipment_1 = { owner = "TUR" }

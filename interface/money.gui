@@ -521,8 +521,9 @@ containerWindowType = {
 		}
 		iconType = {
 			name = "LHD_ico" 
-			position = {x=675 y=200}	
+			position = {x=675 y=225}	
 			spriteType = "GFX_lhd1_medium"
+			scale = 0.5
 		}
 		instantTextboxType = {
 			name = "LHD_stock"
@@ -560,8 +561,9 @@ containerWindowType = {
 		}
 		iconType = {
 			name = "destroyer_ico" 
-			position = {x=675 y=329}	
+			position = {x=677 y=329}	
 			spriteType = "GFX_improved_destroyer_medium"
+			scale = 0.8
 		}
 		instantTextboxType = {
 			name = "destroyer_stock"

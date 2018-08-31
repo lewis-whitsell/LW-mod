@@ -40,6 +40,7 @@ scripted_gui = {
 			make_core_click = {
 				ROOT = {
 					subtract_from_variable = { dx = 50 }
+					add_manpower = -40000
 				}
 				if = {
 					limit = {
@@ -102,7 +103,6 @@ scripted_gui = {
 					level = 1 
 					instant_build = yes 
 				} 
-				state_event = { id = build_building.10 days = 25  }
 				
 				ROOT = {
 					subtract_from_variable = { dx = 200 }
@@ -117,7 +117,7 @@ scripted_gui = {
 				}
 				state_event = { id = build_building.11 days = 25  }
 				ROOT = {
-					subtract_from_variable = { dx = 200 }
+					subtract_from_variable = { dx = 175 }
 				}			
 			}
 			construction_nic_click = { 
@@ -129,7 +129,82 @@ scripted_gui = {
 				}
 				state_event = { id = build_building.12 days = 25  }
 				ROOT = {
-					subtract_from_variable = { dx = 200 }
+					subtract_from_variable = { dx = 175 }
+				}
+			}
+
+
+			construction_port_click = {
+				save_event_target_as = target
+					add_building_construction = { 
+					type = naval_base
+					level = 1 
+					instant_build = yes 
+				} 
+				
+				ROOT = {
+					subtract_from_variable = { dx = 50 }
+				}
+			}
+			construction_airbase_click = {
+				save_event_target_as = target
+					add_building_construction = { 
+					type = air_base
+					level = 1 
+					instant_build = yes 
+				} 
+				
+				ROOT = {
+					subtract_from_variable = { dx = 25 }
+				}
+			}
+			construction_fort_click = {
+				save_event_target_as = target
+					add_building_construction = { 
+					type = bunker
+					level = 1 
+					instant_build = yes 
+				} 
+				
+				ROOT = {
+					subtract_from_variable = { dx = 25 }
+				}
+			}
+			construction_coastfort_click = {
+				save_event_target_as = target
+					add_building_construction = { 
+					type = coastal_bunker
+					level = 1 
+					instant_build = yes
+					province = ROOT 
+				} 
+				
+				ROOT = {
+					subtract_from_variable = { dx = 25 }
+				}
+			}
+			construction_radar_click = {
+				save_event_target_as = target
+					add_building_construction = { 
+					type = radar_station
+					level = 1 
+					instant_build = yes 
+				} 
+				
+				ROOT = {
+					subtract_from_variable = { dx = 75 }
+				}
+			}
+			construction_nuke_click = {
+				save_event_target_as = target
+					add_building_construction = { 
+					type = nuclear_reactor
+					level = 1 
+					instant_build = yes 
+				} 
+				
+				ROOT = {
+					subtract_from_variable = { dx = 450 }
 				}
 			}
 			
@@ -230,6 +305,36 @@ scripted_gui = {
 			construction_syn_click_enabled = {
 				ROOT = {
 					check_variable = { dx > 199.99 }
+				}
+			}
+			construction_port_click_enabled = {
+				ROOT = {
+					check_variable = { dx > 49.99 }
+				}
+			}
+			construction_airbase_click_enabled = {
+				ROOT = {
+					check_variable = { dx > 24.99 }
+				}
+			}
+			construction_fort_click_enabled = {
+				ROOT = {
+					check_variable = { dx > 24.99 }
+				}
+			}
+			construction_coastfort_click_enabled = {
+				ROOT = {
+					check_variable = { dx > 24.99 }
+				}
+			}
+			construction_radar_click_enabled = {
+				ROOT = {
+					check_variable = { dx > 74.99 }
+				}
+			}
+			construction_nuke_click_enabled = {
+				ROOT = {
+					check_variable = { dx > 449.99 }
 				}
 			}
 

@@ -3409,7 +3409,6 @@ focus_tree = {
 				}
 			available_if_capitulated = yes
 			completion_reward = {
-					add_state_core = 698
 					transfer_state = 698
 				}
 
@@ -3444,6 +3443,7 @@ focus_tree = {
 									level = 2
 									instant_build = yes
 								}
+							add_extra_state_shared_building_slots = 4
 						}
 					698 = {
 							add_building_construction = {
@@ -3461,6 +3461,7 @@ focus_tree = {
 									level = 2
 									instant_build = yes
 								}
+							add_extra_state_shared_building_slots = 4
 						}
 				}
 
@@ -3478,10 +3479,15 @@ focus_tree = {
 					factor = 10
 				}
 			completion_reward = {
-					annex_country = {
-							target = URG
-						}
+					transfer_state = 332
+				USA = {
+					transfer_state = 469
+					transfer_state = 470
+					transfer_state = 472
+					transfer_state = 467
+					transfer_state = 682
 				}
+			}
 
 	}
 	focus = {
@@ -3610,8 +3616,9 @@ focus_tree = {
 					factor = 10
 				}
 			completion_reward = {
-
-}
+			transfer_state = 466
+			transfer_state = 683
+			}
 
 	}
 	focus = {
