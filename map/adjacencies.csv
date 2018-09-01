@@ -137,4 +137,16 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 4980;4934;impassable;-1;-1;-1;-1;-1;;Brazil-France Border
 5008;8107;impassable;-1;-1;-1;-1;-1;;Brazil-Guyana Border
 5214;8107;impassable;-1;-1;-1;-1;-1;;Brazil-Guyana Border
+13263;13264;sea;3020;-1;-1;-1;-1;;INS Base1
+13264;13265;sea;2978;-1;-1;-1;-1;;INS Base3
+13264;13261;sea;2978;-1;-1;-1;-1;;INS Base4
+13261;13260;sea;2978;-1;-1;-1;-1;;VIN BASE 1
+13260;13262;sea;2978;-1;-1;-1;-1;;VIN BASE 2
+13265;13269;sea;3603;-1;-1;-1;-1;;INS BASE 5
+13269;13266;sea;3603;-1;-1;-1;-1;;VIN BASE 3
+13269;13272;sea;3603;-1;-1;-1;-1;;VIN BASE 4
+13269;13270;sea;3603;-1;-1;-1;-1;;VIN BASE 5
+13272;13270;sea;3603;-1;-1;-1;-1;;VIN BASE 6
+13272;13273;sea;3603;-1;-1;-1;-1;;VIN BASE 7
+13270;13271;sea;3603;-1;-1;-1;-1;;VIN BASE 8
 -1;-1;;-1;-1;-1;-1;-1;-1
