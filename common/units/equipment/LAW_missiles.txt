@@ -1,7 +1,7 @@
 equipments = {
 
 	coastalmissile_equipment = {
-		year = 1950
+		year = 1980
 
 		is_archetype = yes
 		is_convertable = no
@@ -22,62 +22,11 @@ equipments = {
 	}
 
 	coastalmissile_equipment_1 = {
-		year = 1950
+		year = 1980
 
 		archetype = coastalmissile_equipment
 		priority = 120
 		one_use_only = yes
-
-		reliability = 0.82
-		air_range = 500
-		maximum_speed = 640
-		air_agility = 10
-		air_attack = 60
-		air_defence = 45
-
-		naval_strike_attack = 30
-		naval_strike_targetting = 30
-
-		build_cost_ic = 34
-		resources = {
-			aluminium = 3
-			rubber = 1
-			tungsten = 3
-		}
-	}
-
-	coastalmissile_equipment_2 = {
-		year = 1950
-
-		archetype = coastalmissile_equipment
-		priority = 120
-		one_use_only = yes
-		parent = coastalmissile_equipment_1
-
-		reliability = 0.82
-		air_range = 1000
-		maximum_speed = 700
-		air_agility = 12
-		air_attack = 60
-		air_defence = 45
-
-		naval_strike_attack = 50
-		naval_strike_targetting = 60
-		build_cost_ic = 40
-		resources = {
-			aluminium = 3
-			rubber = 1
-			tungsten = 3
-		}
-	}
-
-	coastalmissile_equipment_3 = {
-		year = 1950
-
-		archetype = coastalmissile_equipment
-		priority = 120
-		one_use_only = yes
-		parent = coastalmissile_equipment_2
 
 		reliability = 0.82
 		air_range = 1500
@@ -95,13 +44,13 @@ equipments = {
 			tungsten = 3
 		}
 	}
-	coastalmissile_equipment_4 = {
-		year = 1950
+	coastalmissile_equipment_2 = {
+		year = 2005
 
 		archetype = coastalmissile_equipment
 		priority = 120
 		one_use_only = yes
-		parent = coastalmissile_equipment_3
+		parent = coastalmissile_equipment_1
 
 		reliability = 0.82
 		air_range = 2000
@@ -119,15 +68,15 @@ equipments = {
 			tungsten = 3
 		}
 	}
-	coastalmissile_equipment_5 = {
-		year = 1950
+	coastalmissile_equipment_3 = {
+		year = 2025
 
 		archetype = coastalmissile_equipment
 		priority = 120
 		one_use_only = yes
-		parent = coastalmissile_equipment_4
+		parent = coastalmissile_equipment_2
 
-		reliability = 0.82
+		reliability = 0.85
 		air_range = 2500
 		maximum_speed = 880
 		air_agility = 18
@@ -892,4 +841,99 @@ equipments = {
 			tungsten = 6
 		}
 	}
+#######################################################
+#######################################################
+
+asbm_equipment = {
+		year = 2010
+
+		is_archetype = yes
+		is_convertable = no
+		is_buildable = no
+		type = { tactical_bomber }
+		group_by = archetype
+		sprite = missile_default
+		air_map_icon_frame = 7
+
+		interface_category = interface_category_air
+
+		# Tactical bomber
+		interface_overview_category_index = 4
+
+		air_superiority = 1
+
+		manpower = 10
+	}
+
+	asbm_equipment_1 = {
+		year = 2010
+
+		archetype = asbm_equipment
+		priority = 120
+		one_use_only = yes
+
+		reliability = 0.70
+		air_range = 450
+		maximum_speed = 6500
+		air_defence = 50
+
+		naval_strike_attack = 60
+		naval_strike_targetting = 3
+
+		build_cost_ic = 600
+		resources = {
+			aluminium = 4
+			oil = 2
+			tungsten = 2
+		}
+	}
+
+	asbm_equipment_2 = {
+		year = 2020
+
+		archetype = asbm_equipment
+		parent = asbm_equipment_1
+		priority = 120
+		one_use_only = yes
+
+		reliability = 0.75
+		air_range = 550
+		maximum_speed = 8000
+		air_defence = 55
+
+		naval_strike_attack = 65
+		naval_strike_targetting = 4
+
+		build_cost_ic = 800
+		resources = {
+			aluminium = 5
+			oil = 2
+			tungsten = 4
+		}
+	}
+
+	asbm_equipment_3 = {
+		year = 2030
+
+		archetype = asbm_equipment
+		parent = asbm_equipment_1
+		priority = 120
+		one_use_only = yes
+
+		reliability = 0.82
+		air_range = 600
+		maximum_speed = 9999
+		air_defence = 65
+
+		naval_strike_attack = 80
+		naval_strike_targetting = 6
+
+		build_cost_ic = 950
+		resources = {
+			aluminium = 5
+			oil = 3
+			tungsten = 4
+		}
+	}
+
 }

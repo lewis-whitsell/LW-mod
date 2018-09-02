@@ -98,6 +98,13 @@ fighter = {
 		type = { strategic_bomber }
 		need = { slbm_equipment = 1 }
 	}
+	asbm = {
+		sprite = missile_default
+		priority = 1
+		active = yes
+		type = { naval_bomber }
+		need = { asbm_equipment = 1 }
+	}
 	cruisemissile = {
 		sprite = missile_default
 		priority = 1

@@ -1,5 +1,20 @@
 technologies = {
 
+	@1960 = 
+	@1970 = 
+	@1980 = 
+	@1990 = 
+	@1995 = 
+	@2000 = 
+	@2005 = 
+	@2010 = 
+	@2015 = 
+	@2020 = 
+	@2025 = 
+	@2030 = 
+
+	@lightorp
+
 	early_helicopter = {
 				
 		path = {
@@ -28,7 +43,7 @@ technologies = {
 			helicopter
 		}
 	}
-	
+###################################################################
 	utility_helicopter_1 = {
 
 		enable_equipments = { 
@@ -249,8 +264,7 @@ technologies = {
 		}
 	}
 	
-	
-	
+###################################################################
 	cargo_helicopter_1 = {
 
 		enable_equipments = { 
@@ -333,7 +347,7 @@ technologies = {
 			helicopter
 		}
 	}
-
+###################################################################
 	attack_helicopter_1 = {
 
 		enable_equipments = { 
@@ -473,7 +487,7 @@ technologies = {
 			helicopter
 		}
 	}
-	
+###################################################################	
 	scout_helicopter_1 = {
 
 		enable_equipments = { 
@@ -584,853 +598,110 @@ technologies = {
 			helicopter
 		}
 	}
-	
-	cruisemissile_1 = {
+###################################################################
+	navy_helo = {
 
-		enable_equipments = { 
-			cruisemissile_equipment_1
-		}
-				
 		path = {
-			leads_to_tech = cruisemissile_2 
+			leads_to_tech = aswhelo_1
 			research_cost_coeff = 1
 		}
+						
+		research_cost = 2
+		start_year = 1960
+
+		folder = {
+			name = helicopter_folder
+			position = { x = 0 y = @1960 }
+		}
 		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			helicopter
+		}
+	}
+
+	aswhelo_1 = {
+
+		path = {
+			leads_to_tech = aswhelo_2 
+			research_cost_coeff = 1
+		}
+						
 		research_cost = 2
 		start_year = 1980
-		
-		folder = {
-			name = helicopter_folder
-			position = { x = 0 y = 0 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			air_equipment
-			light_air
-			rocketry
-			missle
-		}
-	}
-			
-	cruisemissile_2 = {
 
-		enable_equipments = { 
-			cruisemissile_equipment_2
-		}
-				
-		path = {
-			leads_to_tech = cruisemissile_3 
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 2
-		start_year = 1995
-		
-		folder = {
-			name = helicopter_folder
-			position = { x = 0 y = 4 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			air_equipment
-			light_air
-			rocketry
-			missle
-		}
-	}
-	
-	cruisemissile_3 = {
-
-		enable_equipments = { 
-			cruisemissile_equipment_3
-		}
-				
-		path = {
-			leads_to_tech = cruisemissile_4 
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 2
-		start_year = 2005
-		
-		folder = {
-			name = helicopter_folder
-			position = { x = 0 y = 8 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			air_equipment
-			light_air
-			rocketry
-			missle
-		}
-	}
-	
-	cruisemissile_4 = {
-
-		enable_equipments = { 
-			cruisemissile_equipment_4
-		}
-				
-		path = {
-			leads_to_tech = cruisemissile_5 
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 2
-		start_year = 2015
-		
-		folder = {
-			name = helicopter_folder
-			position = { x = 0 y = 12 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			air_equipment
-			light_air
-			rocketry
-			missle
-		}
-	}
-	
-	cruisemissile_5 = {
-
-		enable_equipments = { 
-			cruisemissile_equipment_5
-		}
-				
-		path = {
-			leads_to_tech = cruisemissile_6 
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 2
-		start_year = 2025
-		
-		folder = {
-			name = helicopter_folder
-			position = { x = 0 y = 14 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			air_equipment
-			light_air
-			rocketry
-			missle
-		}
-	}
-	
-	
-	navalcruisemissile_1 = {
-
-#		enable_equipments = { 
-#			navalcruisemissile_equipment_1
-#		}
-		LHD = {
-			shore_bombardment = 0.1
-		}
-		frigate = {
-			shore_bombardment = 0.1
-		}
-		heavy_cruiser = {
-			shore_bombardment = 0.1
-		}
-		destroyer = {
-			shore_bombardment = 0.1
-		}
 		missile_cruiser = {
-			shore_bombardment = 0.1
-		}
-
-		path = {
-			leads_to_tech = navalcruisemissile_2 
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 2
-		start_year = 1980
-		
-		folder = {
-			name = helicopter_folder
-			position = { x = 0 y = 0 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		dependencies = {
-			advanced_rocket_engines = 1
-			cruisemissile_2 = 1
-		}
-		
-		categories = {
-			naval_equipment
-			light_air
-			rocketry
-			missle
-		}
-	}
-	
-	navalcruisemissile_2 = {
-
-#		enable_equipments = { 
-#			navalcruisemissile_equipment_2
-#		}
-		LHD = {
-			shore_bombardment = 0.1
-		}
-		frigate = {
-			shore_bombardment = 0.1
-		}
-		heavy_cruiser = {
-			shore_bombardment = 0.1
-		}
-		destroyer = {
-			shore_bombardment = 0.1
-		}
-		missile_cruiser = {
-			shore_bombardment = 0.1
-		}		
-		path = {
-			leads_to_tech = navalcruisemissile_3 
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 2
-		start_year = 1995
-		
-		folder = {
-			name = helicopter_folder
-			position = { x = 0 y = 4 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		dependencies = {
-			cruisemissile_4 = 1
-		}
-		
-		categories = {
-			naval_equipment
-			light_air
-			rocketry
-			missle
-		}
-	}
-	
-	navalcruisemissile_3 = {
-
-#		enable_equipments = { 
-#			navalcruisemissile_equipment_3
-#		}
-		LHD = {
-			shore_bombardment = 0.1
-		}
-		frigate = {
-			shore_bombardment = 0.1
-		}
-		heavy_cruiser = {
-			shore_bombardment = 0.1
-		}
-		destroyer = {
-			shore_bombardment = 0.1
-		}
-		missile_cruiser = {
-			shore_bombardment = 0.1
-		}		
-		path = {
-			leads_to_tech = navalcruisemissile_4 
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 2
-		start_year = 2005
-		
-		folder = {
-			name = helicopter_folder
-			position = { x = 0 y = 8 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-			light_air
-			rocketry
-			missle
-		}
-	}
-	
-	navalcruisemissile_4 = {
-
-#		enable_equipments = { 
-#			navalcruisemissile_equipment_4
-#		}
-		LHD = {
-			shore_bombardment = 0.1
-		}
-		frigate = {
-			shore_bombardment = 0.1
-		}
-		heavy_cruiser = {
-			shore_bombardment = 0.1
-		}
-		destroyer = {
-			shore_bombardment = 0.1
-		}
-		missile_cruiser = {
-			shore_bombardment = 0.1
-		}		
-		path = {
-			leads_to_tech = navalcruisemissile_5 
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 2
-		start_year = 2015
-		
-		folder = {
-			name = helicopter_folder
-			position = { x = 0 y = 12 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-			light_air
-			rocketry
-			missle
-		}
-	}
-	
-	navalcruisemissile_5 = {
-
-#		enable_equipments = { 
-#			navalcruisemissile_equipment_5
-#		}
-		LHD = {
-			shore_bombardment = 0.1
-		}
-		frigate = {
-			shore_bombardment = 0.1
-		}
-		heavy_cruiser = {
-			shore_bombardment = 0.1
-		}
-		destroyer = {
-			shore_bombardment = 0.1
-		}
-		missile_cruiser = {
-			shore_bombardment = 0.1
-		}		
-		path = {
-			leads_to_tech = navalcruisemissile_6 
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 2
-		start_year = 2025
-		
-		folder = {
-			name = helicopter_folder
-			position = { x = 0 y = 14 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		dependencies = {
-			cruisemissile_5 = 1
-		}
-		
-		categories = {
-			naval_equipment
-			light_air
-			rocketry
-			missle
-		}
-	}
-	
-	coastalmissile_1 = {
-
-		enable_equipments = { 
-			coastalmissile_equipment_1
-		}
-				
-		path = {
-			leads_to_tech = coastalmissile_2 
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 2
-		start_year = 1980
-		
-		folder = {
-			name = helicopter_folder
-			position = { x = 0 y = 0 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		dependencies = {
-			cruisemissile_2 = 1
-		}
-		
-		categories = {
-			naval_equipment
-			light_air
-			rocketry
-			missle
-		}
-	}
-	
-	coastalmissile_2 = {
-
-		enable_equipments = { 
-			coastalmissile_equipment_2
-		}
-				
-		path = {
-			leads_to_tech = coastalmissile_3 
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 2
-		start_year = 1995
-		
-		folder = {
-			name = helicopter_folder
-			position = { x = 0 y = 4 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		dependencies = {
-			cruisemissile_4 = 1
-		}
-		
-		categories = {
-			naval_equipment
-			light_air
-			rocketry
-			missle
-		}
-	}
-	
-	coastalmissile_3 = {
-
-		enable_equipments = { 
-			coastalmissile_equipment_3
-		}
-				
-		path = {
-			leads_to_tech = coastalmissile_4 
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 2
-		start_year = 2005
-		
-		folder = {
-			name = helicopter_folder
-			position = { x = 0 y = 8 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-			light_air
-			rocketry
-			missle
-		}
-	}
-	
-	coastalmissile_4 = {
-
-		enable_equipments = { 
-			coastalmissile_equipment_4
-		}
-				
-		path = {
-			leads_to_tech = coastalmissile_5 
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 2
-		start_year = 2015
-		
-		folder = {
-			name = helicopter_folder
-			position = { x = 0 y = 12 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-			light_air
-			rocketry
-			missle
-		}
-	}
-	
-	coastalmissile_5 = {
-
-		enable_equipments = { 
-			coastalmissile_equipment_5
-		}
-				
-		path = {
-			leads_to_tech = coastalmissile_6 
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 2
-		start_year = 2025
-		
-		folder = {
-			name = helicopter_folder
-			position = { x = 0 y = 14 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		dependencies = {
-			cruisemissile_5 = 1
-		}
-		
-		categories = {
-			naval_equipment
-			light_air
-			rocketry
-			missle
-		}
-	}
-		
-	navalasm_1 = {
-		path = {
-			leads_to_tech = navalasm_2 
-			research_cost_coeff = 1
-		}
-		
+			sub_detection = 0.05
+			sub_attack = 0.02
+		 }
 		carrier = {
-			fire_range = 0.3
-			ap_attack = 0.1
-			attack = 0.1
-		}
-		LHD = {
-			fire_range = 0.3
-			ap_attack = 0.1
-			attack = 0.1
-		}
-		frigate = {
-			fire_range = 0.3
-			ap_attack = 0.1
-			attack = 0.1
-		}
-		heavy_cruiser = {
-			fire_range = 0.3
-			ap_attack = 0.1
-			attack = 0.1
-		}
+			sub_detection = 0.05
+			sub_attack = 0.02
+		 }
 		destroyer = {
-			fire_range = 0.3
-			ap_attack = 0.1
-			attack = 0.1
-		}
-		missile_cruiser = {
-			fire_range = 0.3
-			ap_attack = 0.1
-			attack = 0.1
-		}
-		
-		research_cost = 2
-		start_year = 1980
+			sub_detection = 0.05
+			sub_attack = 0.02
+		 }
+		frigate = {
+			sub_detection = 0.05
+			sub_attack = 0.02
+		 }
+		LHD = {
+			sub_detection = 0.05
+			sub_attack = 0.02
+		 }
 		
 		folder = {
 			name = helicopter_folder
-			position = { x = 0 y = 0 }
+			position = { x = @asw y = @1980 }
 		}
 		
 		ai_will_do = {
 			factor = 1
 		}
 		
-		dependencies = {
-			advanced_rocket_engines = 1
-			coastalmissile_1 = 1
-		}
-		
 		categories = {
-			naval_equipment
-			light_air
-			rocketry
-			missle
+			helicopter
 		}
 	}
 	
-	navalasm_2 = {
-
-	path = {
-			leads_to_tech = navalasm_3 
-			research_cost_coeff = 1
-		}
-		carrier = {
-			fire_range = 0.3
-			ap_attack = 0.1
-			attack = 0.1
-		}
-		LHD = {
-			fire_range = 0.3
-			ap_attack = 0.1
-			attack = 0.1
-		}
-		frigate = {
-			fire_range = 0.3
-			ap_attack = 0.1
-			attack = 0.1
-		}
-		heavy_cruiser = {
-			fire_range = 0.3
-			ap_attack = 0.1
-			attack = 0.1
-		}
-		destroyer = {
-			fire_range = 0.3
-			ap_attack = 0.1
-			attack = 0.1
-		}
-		missile_cruiser = {
-			fire_range = 0.3
-			ap_attack = 0.1
-			attack = 0.1
-		}
-
-		research_cost = 2
-		start_year = 1990
-		
-		folder = {
-			name = helicopter_folder
-			position = { x = 0 y = 2 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		dependencies = {
-			coastalmissile_2 = 1
-		}
-		
-		categories = {
-			naval_equipment
-			light_air
-			rocketry
-			missle
-		}
-	}
-	
-	navalasm_3 = {
+	aswhelo_2 = {
 				
 		path = {
-			leads_to_tech = navalasm_4 
+			leads_to_tech = aswhelo_3 
 			research_cost_coeff = 1
 		}
-		carrier = {
-			fire_range = 0.3
-			ap_attack = 0.1
-			attack = 0.1
-		}
-		LHD = {
-			fire_range = 0.3
-			ap_attack = 0.1
-			attack = 0.1
-		}
-		frigate = {
-			fire_range = 0.3
-			ap_attack = 0.1
-			attack = 0.1
-		}
-		heavy_cruiser = {
-			fire_range = 0.3
-			ap_attack = 0.1
-			attack = 0.1
-		}
-		destroyer = {
-			fire_range = 0.3
-			ap_attack = 0.1
-			attack = 0.1
-		}
-		missile_cruiser = {
-			fire_range = 0.3
-			ap_attack = 0.1
-			attack = 0.1
-		}
 		
-		research_cost = 2
-		start_year = 1995
-		
-		folder = {
-			name = helicopter_folder
-			position = { x = 0 y = 4 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-			light_air
-			rocketry
-			missle
-		}
-	}
-	
-	navalasm_4 = {
-				
-		path = {
-			leads_to_tech = navalasm_5 
-			research_cost_coeff = 1
-		}
-		carrier = {
-			fire_range = 0.3
-			ap_attack = 0.1
-			attack = 0.1
-		}
-		LHD = {
-			fire_range = 0.3
-			ap_attack = 0.1
-			attack = 0.1
-		}
-		frigate = {
-			fire_range = 0.3
-			ap_attack = 0.1
-			attack = 0.1
-		}
-		heavy_cruiser = {
-			fire_range = 0.3
-			ap_attack = 0.1
-			attack = 0.1
-		}
-		destroyer = {
-			fire_range = 0.3
-			ap_attack = 0.1
-			attack = 0.1
-		}
-		missile_cruiser = {
-			fire_range = 0.3
-			ap_attack = 0.1
-			attack = 0.1
-		}
-
 		research_cost = 2
 		start_year = 2000
 		
-		folder = {
-			name = helicopter_folder
-			position = { x = 0 y = 6 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		dependencies = {
-			coastalmissile_3 = 1
-		}
-		
-		categories = {
-			naval_equipment
-			light_air
-			rocketry
-			missle
-		}
-	}
-	
-	navalasm_5 = {
-				
-		path = {
-			leads_to_tech = navalasm_6 
-			research_cost_coeff = 1
-		}
-		carrier = {
-			fire_range = 0.3
-			ap_attack = 0.1
-			attack = 0.1
-		}
-		LHD = {
-			fire_range = 0.3
-			ap_attack = 0.1
-			attack = 0.1
-		}
-		frigate = {
-			fire_range = 0.3
-			ap_attack = 0.1
-			attack = 0.1
-		}
-		heavy_cruiser = {
-			fire_range = 0.3
-			ap_attack = 0.1
-			attack = 0.1
-		}
-		destroyer = {
-			fire_range = 0.3
-			ap_attack = 0.1
-			attack = 0.1
-		}
 		missile_cruiser = {
-			fire_range = 0.3
-			ap_attack = 0.1
-			attack = 0.1
-		}
+			sub_detection = 0.05
+			sub_attack = 0.02
+		 }
+		carrier = {
+			sub_detection = 0.05
+			sub_attack = 0.02
+		 }
+		destroyer = {
+			sub_detection = 0.05
+			sub_attack = 0.02
+		 }
+		frigate = {
+			sub_detection = 0.05
+			sub_attack = 0.02
+		 }
+		LHD = {
+			sub_detection = 0.05
+			sub_attack = 0.02
+		 }
 
-		research_cost = 2
-		start_year = 2005
-		
 		folder = {
 			name = helicopter_folder
-			position = { x = 0 y = 8 }
+			position = { x = @asw y = @2000 }
 		}
 		
 		ai_will_do = {
@@ -1438,176 +709,89 @@ technologies = {
 		}
 		
 		categories = {
-			naval_equipment
-			light_air
-			rocketry
-			missle
+			helicopter
 		}
 	}
 	
-	navalasm_6 = {
-				
+	aswhelo_3 = {
+		
 		path = {
-			leads_to_tech = navalasm_7 
+			leads_to_tech = aswhelo_4 
 			research_cost_coeff = 1
 		}
-		carrier = {
-			fire_range = 0.3
-			ap_attack = 0.1
-			attack = 0.1
-		}
-		LHD = {
-			fire_range = 0.3
-			ap_attack = 0.1
-			attack = 0.1
-		}
-		frigate = {
-			fire_range = 0.3
-			ap_attack = 0.1
-			attack = 0.1
-		}
-		heavy_cruiser = {
-			fire_range = 0.3
-			ap_attack = 0.1
-			attack = 0.1
-		}
-		destroyer = {
-			fire_range = 0.3
-			ap_attack = 0.1
-			attack = 0.1
-		}
-		missile_cruiser = {
-			fire_range = 0.3
-			ap_attack = 0.1
-			attack = 0.1
-		}
-
+		
 		research_cost = 2
 		start_year = 2010
 		
-		folder = {
-			name = helicopter_folder
-			position = { x = 0 y = 10 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		dependencies = {
-			coastalmissile_4 = 1
-		}
-		
-		categories = {
-			naval_equipment
-			light_air
-			rocketry
-			missle
-		}
-	}
-	
-	navalasm_7 = {
-				
-		path = {
-			leads_to_tech = navalasm_8 
-			research_cost_coeff = 1
-		}
-		carrier = {
-			fire_range = 0.3
-			ap_attack = 0.1
-			attack = 0.1
-		}
-		LHD = {
-			fire_range = 0.3
-			ap_attack = 0.1
-			attack = 0.1
-		}
-		frigate = {
-			fire_range = 0.3
-			ap_attack = 0.1
-			attack = 0.1
-		}
-		heavy_cruiser = {
-			fire_range = 0.3
-			ap_attack = 0.1
-			attack = 0.1
-		}
-		destroyer = {
-			fire_range = 0.3
-			ap_attack = 0.1
-			attack = 0.1
-		}
 		missile_cruiser = {
-			fire_range = 0.3
-			ap_attack = 0.1
-			attack = 0.1
-		}
+			sub_detection = 0.05
+			sub_attack = 0.02
+		 }
+		carrier = {
+			sub_detection = 0.05
+			sub_attack = 0.02
+		 }
+		destroyer = {
+			sub_detection = 0.05
+			sub_attack = 0.02
+		 }
+		frigate = {
+			sub_detection = 0.05
+			sub_attack = 0.02
+		 }
+		LHD = {
+			sub_detection = 0.05
+			sub_attack = 0.02
+		 }
 
-		research_cost = 2
-		start_year = 2015
-		
 		folder = {
 			name = helicopter_folder
-			position = { x = 0 y = 12 }
+			position = { x = @asw y = @2010 }
 		}
 		
 		ai_will_do = {
 			factor = 1
 		}
 		
-		dependencies = {
-			coastalmissile_5 = 1
-		}
-		
 		categories = {
-			naval_equipment
-			light_air
-			rocketry
-			missle
+			helicopter
 		}
 	}
 	
-	navalasm_8 = {
+	aswhelo_4 = {
 				
+		path = {
+			leads_to_tech = aswhelo_5 
+			research_cost_coeff = 1
+		}
 		
 		research_cost = 2
-		carrier = {
-			fire_range = 0.3
-			ap_attack = 0.1
-			attack = 0.1
-		}
-		LHD = {
-			fire_range = 0.3
-			ap_attack = 0.1
-			attack = 0.1
-		}
-		frigate = {
-			fire_range = 0.3
-			ap_attack = 0.1
-			attack = 0.1
-		}
-		heavy_cruiser = {
-			fire_range = 0.3
-			ap_attack = 0.1
-			attack = 0.1
-		}
-		destroyer = {
-			fire_range = 0.3
-			ap_attack = 0.1
-			attack = 0.1
-		}
+		start_year = 2020
+		
 		missile_cruiser = {
-			fire_range = 0.3
-			ap_attack = 0.1
-			attack = 0.1
-		}
+			sub_detection = 0.05
+			sub_attack = 0.02
+		 }
+		carrier = {
+			sub_detection = 0.05
+			sub_attack = 0.02
+		 }
+		destroyer = {
+			sub_detection = 0.05
+			sub_attack = 0.02
+		 }
+		frigate = {
+			sub_detection = 0.05
+			sub_attack = 0.02
+		 }
+		LHD = {
+			sub_detection = 0.05
+			sub_attack = 0.02
+		 }
 
-		research_cost = 2
-		start_year = 2025
-		
 		folder = {
 			name = helicopter_folder
-			position = { x = 0 y = 14}
+			position = { x = @asw y = @2020 }
 		}
 		
 		ai_will_do = {
@@ -1615,462 +799,84 @@ technologies = {
 		}
 		
 		categories = {
-			naval_equipment
-			light_air
-			rocketry
-			missle
+			helicopter
 		}
 	}
 	
-	navalaam_1 = {
-	
-		path = {
-			leads_to_tech = navalaam_2 
-			research_cost_coeff = 1
-		}
-		
-		carrier = {
-			anti_air_attack = 0.1
-		}
-		LHD = {
-			anti_air_attack = 0.1
-		}
-		frigate = {
-			anti_air_attack = 0.1
-		}
-		heavy_cruiser = {
-			anti_air_attack = 0.1
-		}
-		destroyer = {
-			anti_air_attack = 0.1
-		}
-		missile_cruiser = {
-			anti_air_attack = 0.1
-		}
+	aswhelo_5 = {
+					
 		research_cost = 2
-		start_year = 1980
-		
-		folder = {
-			name = helicopter_folder
-			position = { x = 0 y = 0 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		dependencies = {
-			advanced_rocket_engines = 1
-			aam_1 = 1
-		}
-		
-		categories = {
-			naval_equipment
-			light_air
-			rocketry
-			missle
-		}
-	}
-	
-	navalaam_2 = {
+		start_year = 2030
 
-	path = {
-			leads_to_tech = navalaam_3 
-			research_cost_coeff = 1
-		}
-		
-		carrier = {
-			anti_air_attack = 0.1
-		}
-		LHD = {
-			anti_air_attack = 0.1
-		}
-		frigate = {
-			anti_air_attack = 0.1
-		}
-		heavy_cruiser = {
-			anti_air_attack = 0.1
-		}
-		destroyer = {
-			anti_air_attack = 0.1
-		}
 		missile_cruiser = {
-			anti_air_attack = 0.1
-		}
-		research_cost = 2
-		start_year = 1990
+			sub_detection = 0.05
+			sub_attack = 0.02
+		 }d
+		carrier = {
+			sub_detection = 0.05
+			sub_attack = 0.02
+		 }
+		destroyer = {
+			sub_detection = 0.05
+			sub_attack = 0.02
+		 }
+		frigate = {
+			sub_detection = 0.05
+			sub_attack = 0.02
+		 }
+		LHD = {
+			sub_detection = 0.05
+			sub_attack = 0.02
+		 }
 		
 		folder = {
 			name = helicopter_folder
-			position = { x = 0 y = 2 }
+			position = { x = @asw y = @2030 }
 		}
 		
 		ai_will_do = {
 			factor = 1
-		}
-		
-		dependencies = {
-			aam_2 = 1
 		}
 		
 		categories = {
-			naval_equipment
-			light_air
-			rocketry
-			missle
+			helicopter
 		}
 	}
-	
-	navalaam_3 = {
-				
-		path = {
-			leads_to_tech = navalaam_4 
-			research_cost_coeff = 1
-		}
-		
-		carrier = {
-			anti_air_attack = 0.1
-		}
-		LHD = {
-			anti_air_attack = 0.1
-		}
-		frigate = {
-			anti_air_attack = 0.1
-		}
-		heavy_cruiser = {
-			anti_air_attack = 0.1
-		}
-		destroyer = {
-			anti_air_attack = 0.1
-		}
-		missile_cruiser = {
-			anti_air_attack = 0.1
-		}
-		research_cost = 2
-		start_year = 1995
-		
-		folder = {
-			name = helicopter_folder
-			position = { x = 0 y = 4 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		dependencies = {
-			aam_5 = 1
-		}
-		
-		categories = {
-			naval_equipment
-			light_air
-			rocketry
-			missle
-		}
-	}
-	
-	navalaam_4 = {
-				
-		path = {
-			leads_to_tech = navalaam_5 
-			research_cost_coeff = 1
-		}
-		
-		carrier = {
-			anti_air_attack = 0.1
-		}
-		LHD = {
-			anti_air_attack = 0.1
-		}
-		frigate = {
-			anti_air_attack = 0.1
-		}
-		heavy_cruiser = {
-			anti_air_attack = 0.1
-		}
-		destroyer = {
-			anti_air_attack = 0.1
-		}
-		missile_cruiser = {
-			anti_air_attack = 0.1
-		}
-		research_cost = 2
-		start_year = 2000
-		
-		folder = {
-			name = helicopter_folder
-			position = { x = 0 y = 6 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		dependencies = {
-			aam_7 = 1
-		}
-		
-		categories = {
-			naval_equipment
-			light_air
-			rocketry
-			missle
-		}
-	}
-	
-	navalaam_5 = {
-				
-		path = {
-			leads_to_tech = navalaam_6 
-			research_cost_coeff = 1
-		}
-		
-		carrier = {
-			anti_air_attack = 0.1
-		}
-		LHD = {
-			anti_air_attack = 0.1
-		}
-		frigate = {
-			anti_air_attack = 0.1
-		}
-		heavy_cruiser = {
-			anti_air_attack = 0.1
-		}
-		destroyer = {
-			anti_air_attack = 0.1
-		}
-		missile_cruiser = {
-			anti_air_attack = 0.1
-		}
-		research_cost = 2
-		start_year = 2005
-		
-		folder = {
-			name = helicopter_folder
-			position = { x = 0 y = 8 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		dependencies = {
-			aam_8 = 1
-		}
-		
-		categories = {
-			naval_equipment
-			light_air
-			rocketry
-			missle
-		}
-	}
-	
-		navalaam_6 = {
-				
-		path = {
-			leads_to_tech = navalaam_7 
-			research_cost_coeff = 1
-		}
-		
-		carrier = {
-			anti_air_attack = 0.1
-		}
-		LHD = {
-			anti_air_attack = 0.1
-		}
-		frigate = {
-			anti_air_attack = 0.1
-		}
-		heavy_cruiser = {
-			anti_air_attack = 0.1
-		}
-		destroyer = {
-			anti_air_attack = 0.1
-		}
-		missile_cruiser = {
-			anti_air_attack = 0.1
-		}
-		research_cost = 2
-		start_year = 2010
-		
-		folder = {
-			name = helicopter_folder
-			position = { x = 0 y = 10 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		
-		categories = {
-			naval_equipment
-			light_air
-			rocketry
-			missle
-		}
-	}
-	
-	navalaam_7 = {
-				
-		path = {
-			leads_to_tech = navalaam_8 
-			research_cost_coeff = 1
-		}
-		
-		carrier = {
-			anti_air_attack = 0.1
-		}
-		LHD = {
-			anti_air_attack = 0.1
-		}
-		frigate = {
-			anti_air_attack = 0.1
-		}
-		heavy_cruiser = {
-			anti_air_attack = 0.1
-		}
-		destroyer = {
-			anti_air_attack = 0.1
-		}
-		missile_cruiser = {
-			anti_air_attack = 0.1
-		}
-		research_cost = 2
-		start_year = 2015
-		
-		folder = {
-			name = helicopter_folder
-			position = { x = 0 y = 12 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		
-		categories = {
-			naval_equipment
-			light_air
-			rocketry
-			missle
-		}
-	}
-		
-	navalaam_8 = {
-						
-		research_cost = 2
-		start_year = 2025
-		
-		carrier = {
-			anti_air_attack = 0.1
-		}
-		LHD = {
-			anti_air_attack = 0.1
-		}
-		frigate = {
-			anti_air_attack = 0.1
-		}
-		heavy_cruiser = {
-			anti_air_attack = 0.1
-		}
-		destroyer = {
-			anti_air_attack = 0.1
-		}
-		missile_cruiser = {
-			anti_air_attack = 0.1
-		}
-		folder = {
-			name = helicopter_folder
-			position = { x = 0 y = 14 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
+###################################################################
+	light_weight_torpedo_1 = {
 
-		categories = {
-			naval_equipment
-			light_air
-			rocketry
-			missle
+		path = {
+			leads_to_tech = light_weight_torpedo_2 
+			research_cost_coeff = 1
 		}
-	}
-	
-	aam_1 = {
 						
 		research_cost = 2
 		start_year = 1980
 		
-		path = {
-			leads_to_tech = aam_2 
-			research_cost_coeff = 1
-		}
-		
-		fighter = {
-			air_attack = 0.05
-		}
-		jet_interceptor = {
-			air_attack = 0.05
-		}		
-		cv_jet_multirole = {
-			air_attack = 0.05
-		}
-		cv_stealth_fighter = {
-			air_attack = 0.05
-		}
-		jump_jet = {
-			air_attack = 0.05
-		}
+		missile_cruiser = {
+			torpedo_attack = 0.02
+			sub_attack = 0.05
+		 }
+		carrier = {
+			torpedo_attack = 0.02
+			sub_attack = 0.05
+		 }
+		destroyer = {
+			torpedo_attack = 0.02
+			sub_attack = 0.05
+		 }
+		frigate = {
+			torpedo_attack = 0.02
+			sub_attack = 0.05
+		 }
+		LHD = {
+			torpedo_attack = 0.02
+			sub_attack = 0.05
+		 }
+
 		folder = {
 			name = helicopter_folder
-			position = { x = 0 y = 0 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		
-		categories = {
-			air_equipment
-			light_air
-			rocketry
-			missle
-		}
-	}
-	
-	aam_2 = {
-						
-		research_cost = 2
-		start_year = 1990
-		
-		path = {
-			leads_to_tech = aam_3 
-			research_cost_coeff = 1
-		}
-		
-		fighter = {
-			air_attack = 0.05
-		}
-		jet_interceptor = {
-			air_attack = 0.05
-		}		
-		cv_jet_multirole = {
-			air_attack = 0.05
-		}
-		cv_stealth_fighter = {
-			air_attack = 0.05
-		}
-		jump_jet = {
-			air_attack = 0.05
-		}
-		folder = {
-			name = helicopter_folder
-			position = { x = 0 y = 2 }
+			position = { x = @lightorp y = @1980 }
 		}
 		
 		ai_will_do = {
@@ -2078,83 +884,44 @@ technologies = {
 		}
 		
 		categories = {
-			air_equipment
-			light_air
-			rocketry
-			missle
+			helicopter
 		}
 	}
 	
-	aam_3 = {
-						
-		research_cost = 2
-		start_year = 1995
-		
+	light_weight_torpedo_2 = {
+				
 		path = {
-			leads_to_tech = aam_4 
+			leads_to_tech = light_weight_torpedo_3 
 			research_cost_coeff = 1
 		}
 		
-		fighter = {
-			air_attack = 0.05
-		}
-		jet_interceptor = {
-			air_attack = 0.05
-		}		
-		cv_jet_multirole = {
-			air_attack = 0.05
-		}
-		cv_stealth_fighter = {
-			air_attack = 0.05
-		}
-		jump_jet = {
-			air_attack = 0.05
-		}
-		folder = {
-			name = helicopter_folder
-			position = { x = 0 y = 4 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			air_equipment
-			light_air
-			rocketry
-			missle
-		}
-	}
-	
-	aam_4 = {
-						
 		research_cost = 2
 		start_year = 2000
+
+		missile_cruiser = {
+			torpedo_attack = 0.02
+			sub_attack = 0.05
+		 }
+		carrier = {
+			torpedo_attack = 0.02
+			sub_attack = 0.05
+		 }
+		destroyer = {
+			torpedo_attack = 0.02
+			sub_attack = 0.05
+		 }
+		frigate = {
+			torpedo_attack = 0.02
+			sub_attack = 0.05
+		 }
+		LHD = {
+			torpedo_attack = 0.02
+			sub_attack = 0.05
+		 }
 		
-		path = {
-			leads_to_tech = aam_5 
-			research_cost_coeff = 1
-		}
-		
-		fighter = {
-			air_attack = 0.05
-		}
-		jet_interceptor = {
-			air_attack = 0.05
-		}		
-		cv_jet_multirole = {
-			air_attack = 0.05
-		}
-		cv_stealth_fighter = {
-			air_attack = 0.05
-		}
-		jump_jet = {
-			air_attack = 0.05
-		}
 		folder = {
 			name = helicopter_folder
-			position = { x = 0 y = 6 }
+			position = { x = @lightorp y = @2000 }
 		}
 		
 		ai_will_do = {
@@ -2162,125 +929,89 @@ technologies = {
 		}
 		
 		categories = {
-			air_equipment
-			light_air
-			rocketry
-			missle
+			helicopter
 		}
 	}
 	
-	aam_5 = {
-						
-		research_cost = 2
-		start_year = 2005
+	light_weight_torpedo_3 = {
 		
 		path = {
-			leads_to_tech = aam_6 
+			leads_to_tech = light_weight_torpedo_4 
 			research_cost_coeff = 1
 		}
 		
-		fighter = {
-			air_attack = 0.05
-		}
-		jet_interceptor = {
-			air_attack = 0.05
-		}		
-		cv_jet_multirole = {
-			air_attack = 0.05
-		}
-		cv_stealth_fighter = {
-			air_attack = 0.05
-		}
-		jump_jet = {
-			air_attack = 0.05
-		}
-		folder = {
-			name = helicopter_folder
-			position = { x = 0 y = 8 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			air_equipment
-			light_air
-			rocketry
-			missle
-		}
-	}
-	
-	aam_6 = {
-						
 		research_cost = 2
 		start_year = 2010
 		
+		missile_cruiser = {
+			torpedo_attack = 0.02
+			sub_attack = 0.05
+		 }
+		carrier = {
+			torpedo_attack = 0.02
+			sub_attack = 0.05
+		 }
+		destroyer = {
+			torpedo_attack = 0.02
+			sub_attack = 0.05
+		 }
+		frigate = {
+			torpedo_attack = 0.02
+			sub_attack = 0.05
+		 }
+		LHD = {
+			torpedo_attack = 0.02
+			sub_attack = 0.05
+		 }
+
+		folder = {
+			name = helicopter_folder
+			position = { x = @lightorp y = @2010 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			helicopter
+		}
+	}
+	
+	light_weight_torpedo_4 = {
+				
 		path = {
-			leads_to_tech = aam_7 
+			leads_to_tech = light_weight_torpedo_5 
 			research_cost_coeff = 1
 		}
 		
-		fighter = {
-			air_attack = 0.05
-		}
-		jet_interceptor = {
-			air_attack = 0.05
-		}		
-		cv_jet_multirole = {
-			air_attack = 0.05
-		}
-		cv_stealth_fighter = {
-			air_attack = 0.05
-		}
-		jump_jet = {
-			air_attack = 0.05
-		}
-		folder = {
-			name = helicopter_folder
-			position = { x = 0 y = 10 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			air_equipment
-			light_air
-			rocketry
-			missle
-		}
-	}
-	
-	aam_7 = {
-						
 		research_cost = 2
-		start_year = 2015
+		start_year = 2020
+
+		missile_cruiser = {
+			torpedo_attack = 0.02
+			sub_attack = 0.05
+		 }
+		carrier = {
+			torpedo_attack = 0.02
+			sub_attack = 0.05
+		 }
+		destroyer = {
+			torpedo_attack = 0.02
+			sub_attack = 0.05
+		 }
+		frigate = {
+			torpedo_attack = 0.02
+			sub_attack = 0.05
+		 }
+		LHD = {
+			torpedo_attack = 0.02
+			sub_attack = 0.05
+		 }
 		
-		path = {
-			leads_to_tech = aam_8 
-			research_cost_coeff = 1
-		}
-		
-		fighter = {
-			air_attack = 0.05
-		}
-		jet_interceptor = {
-			air_attack = 0.05
-		}		
-		cv_jet_multirole = {
-			air_attack = 0.05
-		}
-		cv_stealth_fighter = {
-			air_attack = 0.05
-		}
-		jump_jet = {
-			air_attack = 0.05
-		}
 		folder = {
 			name = helicopter_folder
-			position = { x = 0 y = 12 }
+			position = { x = @lightorp y = @2020 }
 		}
 		
 		ai_will_do = {
@@ -2288,36 +1019,39 @@ technologies = {
 		}
 		
 		categories = {
-			air_equipment
-			light_air
-			rocketry
-			missle
+			helicopter
 		}
 	}
 	
-	aam_8 = {
-						
+	light_weight_torpedo_5 = {
+					
 		research_cost = 2
-		start_year = 2025
+		start_year = 2030
 		
-		fighter = {
-			air_attack = 0.05
-		}
-		jet_interceptor = {
-			air_attack = 0.05
-		}		
-		cv_jet_multirole = {
-			air_attack = 0.05
-		}
-		cv_stealth_fighter = {
-			air_attack = 0.05
-		}
-		jump_jet = {
-			air_attack = 0.05
-		}
+		missile_cruiser = {
+			torpedo_attack = 0.02
+			sub_attack = 0.05
+		 }
+		carrier = {
+			torpedo_attack = 0.02
+			sub_attack = 0.05
+		 }
+		destroyer = {
+			torpedo_attack = 0.02
+			sub_attack = 0.05
+		 }
+		frigate = {
+			torpedo_attack = 0.02
+			sub_attack = 0.05
+		 }
+		LHD = {
+			torpedo_attack = 0.02
+			sub_attack = 0.05
+		 }
+		
 		folder = {
 			name = helicopter_folder
-			position = { x = 0 y = 14 }
+			position = { x = @lightorp y = @2030 }
 		}
 		
 		ai_will_do = {
@@ -2325,404 +1059,10 @@ technologies = {
 		}
 		
 		categories = {
-			air_equipment
-			light_air
-			rocketry
-			missle
+			helicopter
 		}
 	}
-	
-	agm_1 = {
-						
-		research_cost = 2
-		start_year = 1980
-		
-		path = {
-			leads_to_tech = agm_2 
-			research_cost_coeff = 1
-		}
-		
-		fighter = {
-			air_ground_attack = 0.025
-		}
-		cas = {
-			air_ground_attack = 0.05
-		}		
-		cv_jet_multirole = {
-			air_ground_attack = 0.025
-		}	
-		cv_jet_cas = {
-			air_ground_attack = 0.05
-		}
-		cv_stealth_fighter = {
-			air_ground_attack = 0.025
-		}
-		jump_jet = {
-			air_ground_attack = 0.025
-		}
-		jet_tac_bomber = {
-			air_ground_attack = 0.05
-		}
-		
-		folder = {
-			name = helicopter_folder
-			position = { x = 0 y = 0 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		dependencies = {
-			advanced_rocket_engines = 1
-		}
-		
-		categories = {
-			air_equipment
-			light_air
-			rocketry
-			missle
-		}
-	}
-	
-	agm_2 = {
-						
-		research_cost = 2
-		start_year = 1990
-		
-		path = {
-			leads_to_tech = agm_3 
-			research_cost_coeff = 1
-		}
-		
-		fighter = {
-			air_ground_attack = 0.025
-		}
-		cas = {
-			air_ground_attack = 0.05
-		}		
-		cv_jet_multirole = {
-			air_ground_attack = 0.025
-		}	
-		cv_jet_cas = {
-			air_ground_attack = 0.05
-		}
-		cv_stealth_fighter = {
-			air_ground_attack = 0.025
-		}
-		jump_jet = {
-			air_ground_attack = 0.025
-		}
-		jet_tac_bomber = {
-			air_ground_attack = 0.05
-		}
-		
-		folder = {
-			name = helicopter_folder
-			position = { x = 0 y = 2 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			air_equipment
-			light_air
-			rocketry
-			missle
-		}
-	}
-	
-	agm_3 = {
-						
-		research_cost = 2
-		start_year = 1995
-		
-		path = {
-			leads_to_tech = agm_4 
-			research_cost_coeff = 1
-		}
-		
-		fighter = {
-			air_ground_attack = 0.025
-		}
-		cas = {
-			air_ground_attack = 0.05
-		}		
-		cv_jet_multirole = {
-			air_ground_attack = 0.025
-		}	
-		cv_jet_cas = {
-			air_ground_attack = 0.05
-		}
-		cv_stealth_fighter = {
-			air_ground_attack = 0.025
-		}
-		jump_jet = {
-			air_ground_attack = 0.025
-		}
-		jet_tac_bomber = {
-			air_ground_attack = 0.05
-		}
-		
-		folder = {
-			name = helicopter_folder
-			position = { x = 0 y = 4 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			air_equipment
-			light_air
-			rocketry
-			missle
-		}
-	}
-	
-	agm_4 = {
-						
-		research_cost = 2
-		start_year = 2000
-		
-		path = {
-			leads_to_tech = agm_5 
-			research_cost_coeff = 1
-		}
-		
-		
-		fighter = {
-			air_ground_attack = 0.025
-		}
-		cas = {
-			air_ground_attack = 0.05
-		}		
-		cv_jet_multirole = {
-			air_ground_attack = 0.025
-		}	
-		cv_jet_cas = {
-			air_ground_attack = 0.05
-		}
-		cv_stealth_fighter = {
-			air_ground_attack = 0.025
-		}
-		jump_jet = {
-			air_ground_attack = 0.025
-		}
-		jet_tac_bomber = {
-			air_ground_attack = 0.05
-		}
-		
-		folder = {
-			name = helicopter_folder
-			position = { x = 0 y = 6 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			air_equipment
-			light_air
-			rocketry
-			missle
-		}
-	}
-	
-	agm_5 = {
-						
-		research_cost = 2
-		start_year = 2005
-		
-		path = {
-			leads_to_tech = agm_6 
-			research_cost_coeff = 1
-		}
-		
-		
-		fighter = {
-			air_ground_attack = 0.025
-		}
-		cas = {
-			air_ground_attack = 0.05
-		}		
-		cv_jet_multirole = {
-			air_ground_attack = 0.025
-		}	
-		cv_jet_cas = {
-			air_ground_attack = 0.05
-		}
-		cv_stealth_fighter = {
-			air_ground_attack = 0.025
-		}
-		jump_jet = {
-			air_ground_attack = 0.025
-		}
-		jet_tac_bomber = {
-			air_ground_attack = 0.05
-		}
-		
-		folder = {
-			name = helicopter_folder
-			position = { x = 0 y = 8 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			air_equipment
-			light_air
-			rocketry
-			missle
-		}
-	}
-	
-	agm_6 = {
-						
-		research_cost = 2
-		start_year = 2010
-		
-		path = {
-			leads_to_tech = agm_7 
-			research_cost_coeff = 1
-		}
-		
-		fighter = {
-			air_ground_attack = 0.025
-		}
-		cas = {
-			air_ground_attack = 0.05
-		}		
-		cv_jet_multirole = {
-			air_ground_attack = 0.025
-		}	
-		cv_jet_cas = {
-			air_ground_attack = 0.05
-		}
-		cv_stealth_fighter = {
-			air_ground_attack = 0.025
-		}
-		jump_jet = {
-			air_ground_attack = 0.025
-		}
-		jet_tac_bomber = {
-			air_ground_attack = 0.05
-		}
-		
-		folder = {
-			name = helicopter_folder
-			position = { x = 0 y = 10 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			air_equipment
-			light_air
-			rocketry
-			missle
-		}
-	}
-	
-	agm_7 = {
-						
-		research_cost = 2
-		start_year = 2015
-		
-		path = {
-			leads_to_tech = agm_8 
-			research_cost_coeff = 1
-		}
-		
-		fighter = {
-			air_ground_attack = 0.025
-		}
-		cas = {
-			air_ground_attack = 0.05
-		}		
-		cv_jet_multirole = {
-			air_ground_attack = 0.025
-		}	
-		cv_jet_cas = {
-			air_ground_attack = 0.05
-		}
-		cv_stealth_fighter = {
-			air_ground_attack = 0.025
-		}
-		jump_jet = {
-			air_ground_attack = 0.025
-		}
-		jet_tac_bomber = {
-			air_ground_attack = 0.05
-		}
-		
-		folder = {
-			name = helicopter_folder
-			position = { x = 0 y = 12 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			air_equipment
-			light_air
-			rocketry
-			missle
-		}
-	}
-	
-	agm_8 = {
-						
-		research_cost = 2
-		start_year = 2025
-		
-		fighter = {
-			air_ground_attack = 0.025
-		}
-		cas = {
-			air_ground_attack = 0.05
-		}		
-		cv_jet_multirole = {
-			air_ground_attack = 0.025
-		}	
-		cv_jet_cas = {
-			air_ground_attack = 0.05
-		}
-		cv_stealth_fighter = {
-			air_ground_attack = 0.025
-		}
-		jump_jet = {
-			air_ground_attack = 0.025
-		}
-		jet_tac_bomber = {
-			air_ground_attack = 0.05
-		}
-		
-		folder = {
-			name = helicopter_folder
-			position = { x = 0 y = 14 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			air_equipment
-			light_air
-			rocketry
-			missle
-		}
-	}
-	
+###################################################################
+
+
 }
