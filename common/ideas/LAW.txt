@@ -1276,6 +1276,7 @@ political_advisor = {
 			tag = AST
 			tag = CYP
 			}
+			picture = naval_manufacturer_1
 			}
 			research_bonus = {
 				naval_equipment = 0.10
@@ -1316,6 +1317,7 @@ political_advisor = {
 			tag = AST
 			tag = CYP
 			}
+			picture = naval_manufacturer_2
 			}
 			research_bonus = {
 				naval_equipment = 0.10
@@ -1358,6 +1360,7 @@ political_advisor = {
 			tag = AST
 			tag = CYP
 			}
+			picture = naval_manufacturer_3
 			}
 			research_bonus = {
 				naval_equipment = 0.10
@@ -1391,6 +1394,7 @@ political_advisor = {
 			tag = AST
 			tag = CYP
 			}
+			picture = naval_manufacturer_4
 			}
 			research_bonus = {
 				naval_equipment = 0.10
@@ -1422,7 +1426,7 @@ political_advisor = {
 					tag = CYP
 					}
 				}
-
+				picture = industrial_concern_1
 				research_bonus = {industry = 0.1} 
 				modifier = {line_change_production_efficiency_factor = 0.1 industrial_capacity_factory = 0.05 industrial_capacity_dockyard = 0.1 production_factory_max_efficiency_factor = 0.05}
 				traits = { industrial_concern }
@@ -1440,7 +1444,7 @@ political_advisor = {
 					tag = CYP
 					}
 				}
-
+				picture = industrial_concern_2
 				research_bonus = {industry = 0.1} 
 				modifier = {min_export = -0.05}
 				traits = { industrial_concern }
@@ -1458,7 +1462,7 @@ political_advisor = {
 					tag = CYP
 					}
 				}
-
+				picture = industrial_concern_3
 				research_bonus = {industry = 0.1} 
 				modifier = {production_speed_buildings_factor = 0.05}
 				traits = { industrial_concern }
@@ -1483,6 +1487,7 @@ political_advisor = {
 			tag = AST
 			tag = CYP
 			}
+			picture = artillery_manufacturer_1
 			}
 			research_bonus = {infantry_weapons = 0.2}
 			equipment_bonus = {
@@ -1505,6 +1510,7 @@ political_advisor = {
 			tag = AST
 			tag = CYP
 			}
+			picture = artillery_manufacturer_3
 			}
 			research_bonus = {infantry_weapons = 0.1}
 			equipment_bonus = {
@@ -1527,6 +1533,7 @@ political_advisor = {
 			tag = AST
 			tag = CYP
 			}
+			picture = electronics_concern_2
 			}
 			research_bonus = {helicopter = 0.15 infantry_weapons = 0.05}
 			equipment_bonus = {

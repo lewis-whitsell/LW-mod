@@ -1,17 +1,17 @@
 technologies = {
 
-	@1960 = 
-	@1970 = 
-	@1980 = 
-	@1990 = 
-	@1995 = 
-	@2000 = 
-	@2005 = 
-	@2010 = 
-	@2015 = 
-	@2020 = 
-	@2025 = 
-	@2030 = 
+	@1960 = 1
+	@1970 = 3
+	@1980 = 5
+	@1990 = 7
+	@1995 = 9
+	@2000 = 11
+	@2005 = 13
+	@2010 = 15
+	@2015 = 17
+	@2020 = 19
+	@2025 = 21
+	@2030 = 23
 
 	@lightorp
 
@@ -32,7 +32,7 @@ technologies = {
 		
 		folder = {
 			name = helicopter_folder
-			position = { x = 4 y = 0 }
+			position = { x = 4 y = @1980 }
 		}
 		
 		ai_will_do = {
@@ -78,7 +78,7 @@ technologies = {
 		
 		folder = {
 			name = helicopter_folder
-			position = { x = 0 y = 2 }
+			position = { x = 0 y = @1990 }
 		}
 		
 		ai_will_do = {
@@ -116,7 +116,7 @@ technologies = {
 		
 		folder = {
 			name = helicopter_folder
-			position = { x = 0 y = 4 }
+			position = { x = 0 y = @1995 }
 		}
 		
 		ai_will_do = {
@@ -144,7 +144,7 @@ technologies = {
 		
 		folder = {
 			name = helicopter_folder
-			position = { x = 0 y = 6 }
+			position = { x = 0 y = @2000 }
 		}
 		
 		ai_will_do = {
@@ -172,7 +172,7 @@ technologies = {
 		
 		folder = {
 			name = helicopter_folder
-			position = { x = 0 y = 8 }
+			position = { x = 0 y = @2005 }
 		}
 		
 		ai_will_do = {
@@ -200,7 +200,7 @@ technologies = {
 		
 		folder = {
 			name = helicopter_folder
-			position = { x = 0 y = 10 }
+			position = { x = 0 y = @2010 }
 		}
 		
 		ai_will_do = {
@@ -228,7 +228,7 @@ technologies = {
 		
 		folder = {
 			name = helicopter_folder
-			position = { x = 0 y = 12 }
+			position = { x = 0 y = @2015 }
 		}
 		
 		ai_will_do = {
@@ -252,7 +252,7 @@ technologies = {
 		
 		folder = {
 			name = helicopter_folder
-			position = { x = 0 y = 14 }
+			position = { x = 0 y = @2025 }
 		}
 		
 		ai_will_do = {
@@ -285,7 +285,7 @@ technologies = {
 		
 		folder = {
 			name = helicopter_folder
-			position = { x = -4 y = 4 }
+			position = { x = -4 y = @1995 }
 		}
 		
 		ai_will_do = {
@@ -313,7 +313,7 @@ technologies = {
 		
 		folder = {
 			name = helicopter_folder
-			position = { x = -4 y = 6 }
+			position = { x = -4 y = @2005 }
 		}
 		
 		ai_will_do = {
@@ -336,7 +336,7 @@ technologies = {
 		
 		folder = {
 			name = helicopter_folder
-			position = { x = -4 y = 10 }
+			position = { x = -4 y = @2010 }
 		}
 		
 		ai_will_do = {
@@ -369,7 +369,7 @@ technologies = {
 		
 		folder = {
 			name = helicopter_folder
-			position = { x = 4 y = 6 }
+			position = { x = 4 y = @2000 }
 		}
 		
 		ai_will_do = {
@@ -397,7 +397,7 @@ technologies = {
 		
 		folder = {
 			name = helicopter_folder
-			position = { x = 4 y = 8 }
+			position = { x = 4 y = @2005 }
 		}
 		
 		ai_will_do = {
@@ -425,7 +425,7 @@ technologies = {
 		
 		folder = {
 			name = helicopter_folder
-			position = { x = 4 y = 10 }
+			position = { x = 4 y = @2010 }
 		}
 		
 		ai_will_do = {
@@ -453,7 +453,7 @@ technologies = {
 		
 		folder = {
 			name = helicopter_folder
-			position = { x = 4 y = 12 }
+			position = { x = 4 y = @2015 }
 		}
 		
 		ai_will_do = {
@@ -476,7 +476,7 @@ technologies = {
 		
 		folder = {
 			name = helicopter_folder
-			position = { x = 4 y = 14 }
+			position = { x = 4 y = @2025 }
 		}
 		
 		ai_will_do = {
