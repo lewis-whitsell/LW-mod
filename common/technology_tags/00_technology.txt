@@ -77,7 +77,7 @@ technology_categories = {
 	para_tech
 	helicopter
 	mechanized_tech
-	missle
+	missile
 }
 
 technology_folders = {

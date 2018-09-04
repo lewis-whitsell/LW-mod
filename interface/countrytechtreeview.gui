@@ -589,36 +589,36 @@ guiTypes = {
 			}
 
 			gridboxtype = {
-				name = "cruisemissile_1_tree"
-				position = { x=1050 y=170 }
+				name = "cruisemissile_tree"
+				position = { x=200 y=170 }
+				size = { width = 680 height = 800 }
+				slotsize = { width=60 height= 60 }
+				format = "UP"
+			}
+			gridboxtype = {
+				name = "rocket_engines_tree"
+				position = { x=1800 y=170 }
 				size = { width = 680 height = 800 }
 				slotsize = { width=60 height= 60 }
 				format = "UP"
 			}				
 			gridboxtype = {
 				name = "navalaam_1_tree"
-				position = { x=1825 y=172 }
+				position = { x=200 y=172 }
 				size = { width = 680 height = 800 }
 				slotsize = { width=60 height= 60 }
 				format = "UP"
 			}						
 			gridboxtype = {
-				name = "navalasm_1_tree"
-				position = { x=2050 y=172 }
-				size = { width = 680 height = 800 }
-				slotsize = { width=60 height= 60 }
-				format = "UP"
-			}
-			gridboxtype = {
 				name = "aam_1_tree"
-				position = { x=2375 y=172 }
+				position = { x=350 y=172 }
 				size = { width = 680 height = 800 }
 				slotsize = { width=60 height= 60 }
 				format = "UP"
 			}
 			gridboxtype = {
 				name = "agm_1_tree"
-				position = { x=2600 y=172 }
+				position = { x=300 y=172 }
 				size = { width = 680 height = 800 }
 				slotsize = { width=60 height= 60 }
 				format = "UP"
