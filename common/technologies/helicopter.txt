@@ -13,8 +13,10 @@ technologies = {
 	@2025 = 21
 	@2030 = 23
 
-	@lightorp = 10
-	@asw = 8
+	@lightorp = 2
+	@asw = -2
+	@scout = 8
+	@cargo = -4
 
 	early_helicopter = {
 				
@@ -23,17 +25,12 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		path = {
-			leads_to_tech = naval_helicopter_1
-			research_cost_coeff = 1
-		}
-		
 		research_cost = 2
-		start_year = 1980
+		start_year = 1960
 		
 		folder = {
 			name = helicopter_folder
-			position = { x = 4 y = @1980 }
+			position = { x = 4 y = @1960 }
 		}
 		
 		ai_will_do = {
@@ -69,17 +66,12 @@ technologies = {
 			research_cost_coeff = 1
 		}	
 		
-		path = {
-			leads_to_tech = naval_helicopter_1
-			research_cost_coeff = 0.75
-		}
-		
 		research_cost = 2
-		start_year = 1990
+		start_year = 1980
 		
 		folder = {
 			name = helicopter_folder
-			position = { x = 0 y = @1990 }
+			position = { x = 0 y = @1980 }
 		}
 		
 		ai_will_do = {
@@ -113,11 +105,11 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1995
+		start_year = 1990
 		
 		folder = {
 			name = helicopter_folder
-			position = { x = 0 y = @1995 }
+			position = { x = 0 y = @1990 }
 		}
 		
 		ai_will_do = {
@@ -169,11 +161,11 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 2005
+		start_year = 2010
 		
 		folder = {
 			name = helicopter_folder
-			position = { x = 0 y = @2005 }
+			position = { x = 0 y = @2010 }
 		}
 		
 		ai_will_do = {
@@ -197,11 +189,11 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 2010
+		start_year = 2015
 		
 		folder = {
 			name = helicopter_folder
-			position = { x = 0 y = @2010 }
+			position = { x = 0 y = @2015 }
 		}
 		
 		ai_will_do = {
@@ -225,11 +217,11 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 2015
+		start_year = 2020
 		
 		folder = {
 			name = helicopter_folder
-			position = { x = 0 y = @2015 }
+			position = { x = 0 y = @2020 }
 		}
 		
 		ai_will_do = {
@@ -314,7 +306,7 @@ technologies = {
 		
 		folder = {
 			name = helicopter_folder
-			position = { x = -4 y = @2005 }
+			position = { x = @cargo y = @2005 }
 		}
 		
 		ai_will_do = {
@@ -337,7 +329,7 @@ technologies = {
 		
 		folder = {
 			name = helicopter_folder
-			position = { x = -4 y = @2010 }
+			position = { x = @cargo y = @2010 }
 		}
 		
 		ai_will_do = {
@@ -509,7 +501,7 @@ technologies = {
 		
 		folder = {
 			name = helicopter_folder
-			position = { x = 8 y = 6 }
+			position = { x = @scout y = @2000 }
 		}
 		
 		ai_will_do = {
@@ -533,11 +525,11 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 2005
+		start_year = 2010
 		
 		folder = {
 			name = helicopter_folder
-			position = { x = 8 y = 8 }
+			position = { x = @scout y = @2010 }
 		}
 		
 		ai_will_do = {
@@ -565,7 +557,7 @@ technologies = {
 		
 		folder = {
 			name = helicopter_folder
-			position = { x = 8 y = 12 }
+			position = { x = @scout y = @2015 }
 		}
 		
 		ai_will_do = {
@@ -588,7 +580,7 @@ technologies = {
 		
 		folder = {
 			name = helicopter_folder
-			position = { x = 8 y = 14 }
+			position = { x = @scout y = @2025 }
 		}
 		
 		ai_will_do = {
@@ -604,6 +596,10 @@ technologies = {
 
 		path = {
 			leads_to_tech = aswhelo_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = light_weight_torpedo_1
 			research_cost_coeff = 1
 		}
 						
