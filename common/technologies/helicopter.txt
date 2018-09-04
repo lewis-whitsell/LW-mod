@@ -13,7 +13,8 @@ technologies = {
 	@2025 = 21
 	@2030 = 23
 
-	@lightorp
+	@lightorp = 10
+	@asw = 8
 
 	early_helicopter = {
 				
@@ -811,7 +812,7 @@ technologies = {
 		missile_cruiser = {
 			sub_detection = 0.05
 			sub_attack = 0.02
-		 }d
+		 }
 		carrier = {
 			sub_detection = 0.05
 			sub_attack = 0.02

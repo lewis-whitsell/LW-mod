@@ -93,6 +93,7 @@ technology_folders = {
 	air_doctrine_folder
 	electronics_folder
 	helicopter_folder
+	missile_folder
 	#secret_weapons_folder
 }
 

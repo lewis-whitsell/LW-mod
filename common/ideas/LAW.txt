@@ -1267,6 +1267,7 @@ political_advisor = {
 		designer = yes
 		Carrier_Yards = 
 		{	
+			picture = naval_manufacturer_1
 			allowed = {
 			OR = {
 			tag = MAD
@@ -1276,7 +1277,6 @@ political_advisor = {
 			tag = AST
 			tag = CYP
 			}
-			picture = naval_manufacturer_1
 			}
 			research_bonus = {
 				naval_equipment = 0.10
@@ -1308,6 +1308,7 @@ political_advisor = {
 
 		Submarine_Yards = 
 		{	
+			picture = naval_manufacturer_2
 			allowed = {
 			OR = {
 			tag = MAD
@@ -1317,7 +1318,6 @@ political_advisor = {
 			tag = AST
 			tag = CYP
 			}
-			picture = naval_manufacturer_2
 			}
 			research_bonus = {
 				naval_equipment = 0.10
@@ -1351,6 +1351,7 @@ political_advisor = {
 
 		Screen_Yards = 
 		{	
+			picture = naval_manufacturer_3
 			allowed = {
 			OR = {
 			tag = MAD
@@ -1360,7 +1361,6 @@ political_advisor = {
 			tag = AST
 			tag = CYP
 			}
-			picture = naval_manufacturer_3
 			}
 			research_bonus = {
 				naval_equipment = 0.10
@@ -1385,6 +1385,7 @@ political_advisor = {
 
 		Capital_Yards = 
 		{	
+			picture = naval_manufacturer_4
 			allowed = {
 			OR = {
 			tag = MAD
@@ -1394,7 +1395,6 @@ political_advisor = {
 			tag = AST
 			tag = CYP
 			}
-			picture = naval_manufacturer_4
 			}
 			research_bonus = {
 				naval_equipment = 0.10
@@ -1477,7 +1477,7 @@ political_advisor = {
 		
 		Company1 = 
 		{
-			
+			picture = artillery_manufacturer_1
 			allowed = {
 			OR = {
 			tag = MAD
@@ -1487,7 +1487,6 @@ political_advisor = {
 			tag = AST
 			tag = CYP
 			}
-			picture = artillery_manufacturer_1
 			}
 			research_bonus = {infantry_weapons = 0.2}
 			equipment_bonus = {
@@ -1500,7 +1499,7 @@ political_advisor = {
 
 		Company2 = 
 		{
-			
+			picture = artillery_manufacturer_3
 			allowed = {
 			OR = {
 			tag = MAD
@@ -1510,7 +1509,6 @@ political_advisor = {
 			tag = AST
 			tag = CYP
 			}
-			picture = artillery_manufacturer_3
 			}
 			research_bonus = {infantry_weapons = 0.1}
 			equipment_bonus = {
@@ -1533,8 +1531,8 @@ political_advisor = {
 			tag = AST
 			tag = CYP
 			}
-			picture = electronics_concern_2
 			}
+			picture = electronics_concern_2
 			research_bonus = {helicopter = 0.15 infantry_weapons = 0.05}
 			equipment_bonus = {
 			transport_helo_equipment = {build_cost_ic = -0.15 reliability = 0.1}

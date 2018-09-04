@@ -301,7 +301,6 @@ equipments = {
 		reliability = 0.70
 
 		naval_range = 50000
-		manpower = 
 
 		max_strength = 50
 

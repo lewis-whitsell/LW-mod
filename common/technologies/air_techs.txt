@@ -523,7 +523,6 @@ technologies = {
 
 		sub_technologies = {
 			cv_jet_multirole7
-			cv_jet_multirole7
 		}
 		
 		folder = {

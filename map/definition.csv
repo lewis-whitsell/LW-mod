@@ -13215,7 +13215,7 @@
 13214;240;0;0;land;false;hills;1
 13215;243;232;2;land;true;plains;6
 13216;150;184;136;land;true;desert;0
-13217;215;249;255;land;true;plains;6
+13217;223;183;27;land;true;urban;0
 13218;200;100;50;land;false;desert;7
 13219;180;90;45;land;false;desert;7
 13220;10;90;45;land;false;desert;7
@@ -13272,4 +13272,3 @@
 13271;253;39;41;land;true;plains;0
 13272;86;100;18;land;true;urban;0
 13273;16;127;57;land;true;plains;0
-13274;223;183;27;land;true;urban;0

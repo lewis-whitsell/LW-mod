@@ -172,12 +172,12 @@ scripted_gui = {
 			}
 			construction_coastfort_click = {
 				save_event_target_as = target
-					add_building_construction = { 
-					type = coastal_bunker
-					level = 1 
-					instant_build = yes
-					province = ROOT 
-				} 
+#					add_building_construction = { 
+#					type = coastal_bunker
+#					level = 1 
+#					instant_build = yes
+#					province = ROOT 
+#				} 
 				
 				ROOT = {
 					subtract_from_variable = { dx = 25 }

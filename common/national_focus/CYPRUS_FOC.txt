@@ -1,4 +1,4 @@
-add_ideas = LAW_focus_tree = {
+focus_tree = {
 	id = cyprus_focus
 	country = {
 		factor = 0

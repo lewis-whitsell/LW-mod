@@ -55,7 +55,7 @@ technologies = {
 		start_year = 1960
 		
 		folder = {
-			name = electronics_folder
+			name = missile_folder
 			position = { x = 0 y = @1960 }
 		}
 		
@@ -81,8 +81,8 @@ technologies = {
 		research_cost = 2
 		start_year = 1990
 		folder = {
-			name = electronics_folder
-			position = { x = 0 y = @rck1990 }
+			name = missile_folder
+			position = { x = 0 y = @1990 }
 		}
 		
 		categories = {
@@ -118,8 +118,8 @@ technologies = {
 		research_cost = 2
 		start_year = 2000
 		folder = {
-			name = electronics_folder
-			position = { x = 0 y = @rck2000 }
+			name = missile_folder
+			position = { x = 0 y = @2000 }
 		}
 		
 		categories = {
@@ -151,8 +151,8 @@ technologies = {
 		research_cost = 2
 		start_year = 2010
 		folder = {
-			name = electronics_folder
-			position = { x = 0 y = @rck2010 }
+			name = missile_folder
+			position = { x = 0 y = @2010 }
 		}
 		
 		categories = {
@@ -180,8 +180,8 @@ technologies = {
 		research_cost = 2
 		start_year = 2020
 		folder = {
-			name = electronics_folder
-			position = { x = 0 y = @rck2020 }
+			name = missile_folder
+			position = { x = 0 y = @2020 }
 		}
 		
 		categories = {
@@ -218,8 +218,8 @@ technologies = {
 		research_cost = 2
 		start_year = 2002
 		folder = {
-			name = electronics_folder
-			position = { x = @left y = @rck2002 }
+			name = missile_folder
+			position = { x = @left y = @2000 }
 		}
 		
 		categories = {
@@ -252,8 +252,8 @@ technologies = {
 		research_cost = 2
 		start_year = 2010
 		folder = {
-			name = electronics_folder
-			position = { x = @left y = @rck2010 }
+			name = missile_folder
+			position = { x = @left y = @2010 }
 		}
 		
 		categories = {
@@ -286,8 +286,8 @@ technologies = {
 		research_cost = 2
 		start_year = 2015
 		folder = {
-			name = electronics_folder
-			position = { x = @left y = @rck2015 }
+			name = missile_folder
+			position = { x = @left y = @2015 }
 		}
 		
 		categories = {
@@ -315,8 +315,8 @@ technologies = {
 		research_cost = 2
 		start_year = 2020
 		folder = {
-			name = electronics_folder
-			position = { x = @left y = @rck2020 }
+			name = missile_folder
+			position = { x = @left y = @2020 }
 		}
 		
 		categories = {
@@ -348,8 +348,8 @@ technologies = {
 		research_cost = 2
 		start_year = 2010
 		folder = {
-			name = electronics_folder
-			position = { x = @far_left y = @rck2010 }
+			name = missile_folder
+			position = { x = @far_left y = @2010 }
 		}
 		
 		categories = {
@@ -380,8 +380,8 @@ technologies = {
 		research_cost = 2
 		start_year = 2013
 		folder = {
-			name = electronics_folder
-			position = { x = @far_left y = @rck2013 }
+			name = missile_folder
+			position = { x = @far_left y = @2010 }
 		}
 		
 		categories = {
@@ -415,8 +415,8 @@ technologies = {
 		research_cost = 2
 		start_year = 2015
 		folder = {
-			name = electronics_folder
-			position = { x = @far_left y = @rck2015 }
+			name = missile_folder
+			position = { x = @far_left y = @2015 }
 		}
 		
 		categories = {
@@ -448,8 +448,8 @@ technologies = {
 		research_cost = 2
 		start_year = 2020
 		folder = {
-			name = electronics_folder
-			position = { x = @far_left y = @rck2020 }
+			name = missile_folder
+			position = { x = @far_left y = @2020 }
 		}
 		
 		categories = {
@@ -477,8 +477,8 @@ technologies = {
 		research_cost = 2
 		start_year = 2025
 		folder = {
-			name = electronics_folder
-			position = { x = @far_left y = @rck2025 }
+			name = missile_folder
+			position = { x = @far_left y = @2025 }
 		}
 		
 		categories = {
@@ -511,8 +511,8 @@ technologies = {
 		research_cost = 2
 		start_year = 2006
 		folder = {
-			name = naval_folder
-			position = { x = @SLBM y = @2006 }
+			name = missile_folder
+			position = { x = @SLBM y = @2005 }
 		}
 		
 		categories = {
@@ -544,8 +544,8 @@ technologies = {
 		research_cost = 2
 		start_year = 2012
 		folder = {
-			name = naval_folder
-			position = { x = @SLBM y = @2012 }
+			name = missile_folder
+			position = { x = @SLBM y = @2015 }
 		}
 		
 		categories = {
@@ -578,8 +578,8 @@ technologies = {
 		research_cost = 2
 		start_year = 2018
 		folder = {
-			name = naval_folder
-			position = { x = @SLBM y = @2018 }
+			name = missile_folder
+			position = { x = @SLBM y = @2020 }
 		}
 		
 		categories = {
@@ -607,7 +607,7 @@ technologies = {
 		research_cost = 2
 		start_year = 2030
 		folder = {
-			name = naval_folder
+			name = missile_folder
 			position = { x = @SLBM y = @2030 }
 		}
 		
@@ -657,8 +657,8 @@ technologies = {
 		start_year = 1970
 		
 		folder = {
-			name = electronics_folder
-			position = { x = 0 y = @rck1970 }
+			name = missile_folder
+			position = { x = 0 y = @1970 }
 		}
 		
 		ai_will_do = {
@@ -698,8 +698,8 @@ technologies = {
 		start_year = 1980
 		
 		folder = {
-			name = electronics_folder
-			position = { x = 0 y = @rck1980 }
+			name = missile_folder
+			position = { x = 0 y = @1960 }
 		}
 		
 		ai_will_do = {
@@ -740,7 +740,7 @@ technologies = {
 		start_year = 1980
 		
 		folder = {
-			name = missiles_folder
+			name = missile_folder
 			position = { x = 0 y = @1980}
 		}
 		
@@ -775,7 +775,7 @@ technologies = {
 		start_year = 1970
 		
 		folder = {
-			name = missiles_folder
+			name = missile_folder
 			position = { x = 0 y = @1970 }
 		}
 		
@@ -818,7 +818,7 @@ technologies = {
 		start_year = 1980
 		
 		folder = {
-			name = missiles_folder
+			name = missile_folder
 			position = { x = 0 y = @1980 }
 		}
 		
@@ -865,7 +865,7 @@ technologies = {
 		start_year = 1995
 		
 		folder = {
-			name = missiles_folder
+			name = missile_folder
 			position = { x = 0 y = @1995 }
 		}
 		
@@ -911,7 +911,7 @@ technologies = {
 		start_year = 2005
 		
 		folder = {
-			name = missiles_folder
+			name = missile_folder
 			position = { x = 0 y = @2005 }
 		}
 		
@@ -953,7 +953,7 @@ technologies = {
 		start_year = 2020
 		
 		folder = {
-			name = missiles_folder
+			name = missile_folder
 			position = { x = 0 y = @2020 }
 		}
 		
@@ -984,7 +984,7 @@ technologies = {
 		start_year = 1980
 		
 		folder = {
-			name = missiles_folder
+			name = missile_folder
 			position = { x = 0 y = @1980 }
 		}
 		
@@ -1023,7 +1023,7 @@ technologies = {
 		start_year = 2005
 		
 		folder = {
-			name = missiles_folder
+			name = missile_folder
 			position = { x = 0 y = @2005 }
 		}
 		
@@ -1057,7 +1057,7 @@ technologies = {
 		research_cost = 2
 		start_year = 2025		
 		folder = {
-			name = missiles_folder
+			name = missile_folder
 			position = { x = 0 y = @2025}
 		}
 		
@@ -1088,7 +1088,7 @@ technologies = {
 		start_year = 2010
 		
 		folder = {
-			name = missiles_folder
+			name = missile_folder
 			position = { x = 0 y = @2010 }
 		}
 		
@@ -1119,7 +1119,7 @@ technologies = {
 		start_year = 2020
 		
 		folder = {
-			name = missiles_folder
+			name = missile_folder
 			position = { x = 0 y = @2020 }
 		}
 		
@@ -1150,7 +1150,7 @@ technologies = {
 		start_year = 2030
 		
 		folder = {
-			name = missiles_folder
+			name = missile_folder
 			position = { x = 0 y = @2030 }
 		}
 		
@@ -1212,8 +1212,8 @@ technologies = {
 		start_year = 1960
 		
 		folder = {
-			name = missiles_folder
-			position = { x = NAVASM y = @1960 }
+			name = missile_folder
+			position = { x = @NAVASM y = @1960 }
 		}
 		
 		ai_will_do = {
@@ -1273,8 +1273,8 @@ technologies = {
 		start_year = 1980	
 		
 		folder = {
-			name = missiles_folder
-			position = { x = NAVASM y = @1980 }
+			name = missile_folder
+			position = { x = @NAVASM y = @1980 }
 		}
 		
 		ai_will_do = {
@@ -1330,8 +1330,8 @@ technologies = {
 		start_year = 2000
 		
 		folder = {
-			name = missiles_folder
-			position = { x = NAVASM y = @2000 }
+			name = missile_folder
+			position = { x = @NAVASM y = @2000 }
 		}
 		
 		ai_will_do = {
@@ -1391,8 +1391,8 @@ technologies = {
 		start_year = 2015
 		
 		folder = {
-			name = missiles_folder
-			position = { x = NAVASM y = @2015 }
+			name = missile_folder
+			position = { x = @NAVASM y = @2015 }
 		}
 		
 		ai_will_do = {
@@ -1450,8 +1450,8 @@ technologies = {
 		start_year = 2025
 		
 		folder = {
-			name = missiles_folder
-			position = { x = NAVASM y = @2025}
+			name = missile_folder
+			position = { x = @NAVASM y = @2025}
 		}
 		
 		ai_will_do = {
@@ -1495,7 +1495,7 @@ technologies = {
 		start_year = 1960
 		
 		folder = {
-			name = missiles_folder
+			name = missile_folder
 			position = { x = @NAVAAM y = @1960 }
 		}
 		
@@ -1544,7 +1544,7 @@ technologies = {
 		start_year = 1980
 		
 		folder = {
-			name = missiles_folder
+			name = missile_folder
 			position = { x = @NAVAAM y = @1980 }
 		}
 		
@@ -1593,7 +1593,7 @@ technologies = {
 		start_year = 2000
 		
 		folder = {
-			name = missiles_folder
+			name = missile_folder
 			position = { x = @NAVAAM y = @2000 }
 		}
 		
@@ -1642,7 +1642,7 @@ technologies = {
 		start_year = 2010
 		
 		folder = {
-			name = missiles_folder
+			name = missile_folder
 			position = { x = @NAVAAM y = @2010 }
 		}
 		
@@ -1688,7 +1688,7 @@ technologies = {
 		start_year = 2020
 		
 		folder = {
-			name = missiles_folder
+			name = missile_folder
 			position = { x = @NAVAAM y = @2020 }
 		}
 		
@@ -1729,7 +1729,7 @@ technologies = {
 			anti_air_attack = 0.1
 		}
 		folder = {
-			name = missiles_folder
+			name = missile_folder
 			position = { x = @NAVAAM y = @2030 }
 		}
 		
@@ -1771,7 +1771,7 @@ technologies = {
 			air_attack = 0.05
 		}
 		folder = {
-			name = missiles_folder
+			name = missile_folder
 			position = { x = @AAM y = @1960 }
 		}
 		
@@ -1813,7 +1813,7 @@ technologies = {
 			air_attack = 0.05
 		}
 		folder = {
-			name = missiles_folder
+			name = missile_folder
 			position = { x = @AAM y = @1980 }
 		}
 		
@@ -1855,7 +1855,7 @@ technologies = {
 			air_attack = 0.05
 		}
 		folder = {
-			name = missiles_folder
+			name = missile_folder
 			position = { x = @AAM y = @2000  }
 		}
 		
@@ -1897,7 +1897,7 @@ technologies = {
 			air_attack = 0.05
 		}
 		folder = {
-			name = missiles_folder
+			name = missile_folder
 			position = { x = @AAM y = @2010  }
 		}
 		
@@ -1934,7 +1934,7 @@ technologies = {
 			air_attack = 0.05
 		}
 		folder = {
-			name = missiles_folder
+			name = missile_folder
 			position = { x = @AAM y = @2020  }
 		}
 		
@@ -1983,7 +1983,7 @@ technologies = {
 		}
 		
 		folder = {
-			name = missiles_folder
+			name = missile_folder
 			position = { x = @AGM y = @1960 }
 		}
 		
@@ -2033,7 +2033,7 @@ technologies = {
 		}
 		
 		folder = {
-			name = missiles_folder
+			name = missile_folder
 			position = { x = @AGM y = @1980 }
 		}
 		
@@ -2083,7 +2083,7 @@ technologies = {
 		}
 		
 		folder = {
-			name = missiles_folder
+			name = missile_folder
 			position = { x = @AGM y = @2000 }
 		}
 		
@@ -2132,7 +2132,7 @@ technologies = {
 		}
 		
 		folder = {
-			name = missiles_folder
+			name = missile_folder
 			position = { x = @AGM y = @2010  }
 		}
 		
@@ -2181,7 +2181,7 @@ technologies = {
 		}
 		
 		folder = {
-			name = missiles_folder
+			name = missile_folder
 			position = { x = @AGM y = @2020 }
 		}
 		
@@ -2225,7 +2225,7 @@ technologies = {
 		}
 		
 		folder = {
-			name = missiles_folder
+			name = missile_folder
 			position = { x = @AGM y = @2030 }
 		}
 		
