@@ -1,0 +1,1771 @@
+
+	focus = {
+		id = generic_political_focus
+		icon = GFX_demand_territory
+		cost = 10.00
+		x = 11
+		y = 0
+			completion_reward = {
+					add_political_power = 100
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_ideology_focus
+		icon = GFX_propaganda
+		cost = 10.00
+		x = 16
+		y = 0
+			completion_reward = {
+					add_political_power = 100
+				}
+			ai_will_do = {
+					base = 0
+					modifier = {
+							is_historical_focus_on = no
+							add = 25
+						}
+				}
+
+	}
+	focus = {
+		id = generic_ideology_fascist
+		icon = GFX_fascism
+		cost = 10.00
+		mutually_exclusive = {
+			focus = generic_ideology_nationalist
+			focus = generic_ideology_monarchist
+			focus = generic_ideology_islamist
+		}
+		x = 19
+		y = 4
+			completion_reward = {
+					increase_fascist_influence_by_1 = yes
+					add_ideas = idea_focus_generic_neo_fascist_doctrine
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_recruitment_strategies
+		icon = GFX_infantry_japan
+		cost = 10.00
+		x = 14
+		y = 7
+			completion_reward = {
+					add_ideas = idea_focus_new_recruitment_strategies
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_internal_politics
+		icon = GFX_improve_relations
+		cost = 10.00
+		prerequisite = {
+			focus = generic_political_focus
+		}
+		x = 9
+		y = 1
+			completion_reward = {
+					add_political_power = 75
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_recruit_more_administrators
+		icon = GFX_intelligence_exchange
+		cost = 10.00
+		prerequisite = {
+			focus = generic_internal_politics
+		}
+		x = 5
+		y = 2
+			completion_reward = {
+					add_political_power = 15
+					add_war_support = 0.05
+					ruling_party_support_+5 = yes
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_invest_in_public_service
+		icon = GFX_construction3
+		cost = 10.00
+		prerequisite = {
+			focus = generic_recruit_more_administrators
+		}
+		x = 5
+		y = 3
+			completion_reward = {
+					add_ideas = idea_focus_generic_public_service_investment
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_secure_national_unity
+		icon = GFX_national_unity
+		cost = 10.00
+		prerequisite = {
+			focus = generic_internal_politics
+		}
+		x = 5
+		y = 4
+			completion_reward = {
+					add_war_support = 0.05
+					add_stability = 0.05
+					if = {
+							limit = {
+									has_idea = ZIM_disgruntled_veterans
+								}
+							remove_ideas = ZIM_disgruntled_veterans
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_demographic_studies
+		icon = GFX_consumer_goods
+		cost = 10.00
+		prerequisite = {
+			focus = generic_internal_politics
+		}
+		x = 7
+		y = 2
+			completion_reward = {
+					add_political_power = 25
+					add_stability = 0.02
+				}
+
+	}
+	focus = {
+		id = generic_traditional_values
+		icon = GFX_demand_territory2
+		cost = 10.00
+		prerequisite = {
+			focus = generic_demographic_studies
+		}
+		mutually_exclusive = {
+			focus = generic_female_workforce
+		}
+		x = 1
+		y = 3
+			available = {
+					NOT = {
+							has_government = social_democrat
+						}
+					NOT = {
+							has_government = progressive
+						}
+					NOT = {
+							has_government = democratic_socialist
+						}
+					NOT = {
+							has_government = communist
+						}
+				}
+			completion_reward = {
+					add_ideas = idea_focus_male_workforce
+					add_war_support = -0.05
+					if = {
+							limit = {
+									has_democratic_form_of_government = yes
+								}
+							add_popularity = {
+									ideology = conservative
+									popularity = 0.04
+								}
+							add_popularity = {
+									ideology = reactionary
+									popularity = 0.04
+								}
+						}
+					if = {
+							limit = {
+									has_democratic_form_of_government = no
+								}
+							add_popularity = {
+									ideology = fascist
+									popularity = 0.04
+								}
+							add_popularity = {
+									ideology = nationalist
+									popularity = 0.04
+								}
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_female_workforce
+		icon = GFX_national_unity
+		cost = 10.00
+		prerequisite = {
+			focus = generic_demographic_studies
+		}
+		mutually_exclusive = {
+			focus = generic_traditional_values
+		}
+		x = 3
+		y = 3
+			available = {
+					NOT = {
+							has_government = islamist
+						}
+				}
+			completion_reward = {
+					add_ideas = idea_focus_equal_workforce
+					if = {
+							limit = {
+									has_democratic_form_of_government = yes
+								}
+							add_popularity = {
+									ideology = progressive
+									popularity = 0.04
+								}
+							add_popularity = {
+									ideology = democratic_socialist
+									popularity = 0.04
+								}
+						}
+					if = {
+							limit = {
+									has_democratic_form_of_government = no
+								}
+							add_popularity = {
+									ideology = communist
+									popularity = 0.06
+								}
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_education_reform
+		icon = GFX_construction2
+		cost = 10.00
+		prerequisite = {
+			focus = generic_recruit_more_administrators
+		}
+		x = 7
+		y = 3
+			completion_reward = {
+					add_ideas = idea_focus_generic_education_reform
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_expand_the_secret_services
+		icon = GFX_intelligence_exchange
+		cost = 10.00
+		prerequisite = {
+			focus = generic_education_reform
+		}
+		x = 7
+		y = 4
+			completion_reward = {
+					add_ideas = idea_focus_expanded_secret_services
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_foreign_politics
+		icon = GFX_major_alliance
+		cost = 10.00
+		prerequisite = {
+			focus = generic_political_focus
+		}
+		x = 11
+		y = 1
+			completion_reward = {
+					add_political_power = 75
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_recruit_more_diplomats
+		icon = GFX_intelligence_exchange
+		cost = 10.00
+		prerequisite = {
+			focus = generic_foreign_politics
+		}
+		x = 9
+		y = 2
+			completion_reward = {
+					add_political_power = 50
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_isolation
+		icon = GFX_neutrality
+		cost = 10.00
+		prerequisite = {
+			focus = generic_recruit_more_diplomats
+		}
+		mutually_exclusive = {
+			focus = generic_intervention
+		}
+		x = 9
+		y = 3
+			completion_reward = {
+					if = {
+							limit = {
+									has_idea = neutrality_idea
+								}
+							add_political_power = 100
+							add_war_support = 0.05
+						}
+					if = {
+							limit = {
+									NOT = {
+											has_idea = neutrality_idea
+										}
+									NOT = {
+											has_idea = austrian_neutrality
+										}
+								}
+							add_ideas = neutrality_idea
+						}
+					if = {
+							limit = {
+									has_idea = austrian_neutrality
+								}
+							remove_ideas = austrian_neutrality
+							add_ideas = neutrality_idea
+						}#Pretty much specific to Austria.
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_destroy_foreign_influence
+		icon = GFX_destroy_establishment
+		cost = 10.00
+		prerequisite = {
+			focus = generic_isolation
+		}
+		x = 9
+		y = 4
+			completion_reward = {
+					add_ideas = idea_focus_destroyed_foreign_influence
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_defensive_constructions
+		icon = GFX_defence
+		cost = 10.00
+		prerequisite = {
+			focus = generic_destroy_foreign_influence
+		}
+		x = 9
+		y = 5
+			completion_reward = {
+					add_ideas = ENG_defensive_constructions_idea
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_international_alliances
+		icon = GFX_alliance
+		cost = 10.00
+		prerequisite = {
+			focus = generic_foreign_politics
+		}
+		x = 11
+		y = 2
+			completion_reward = {
+					set_rule = {
+							can_create_factions = yes
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_intervention
+		icon = GFX_forceful_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = generic_recruit_more_diplomats
+		}
+		mutually_exclusive = {
+			focus = generic_isolation
+		}
+		x = 11
+		y = 3
+			completion_reward = {
+					if = {
+							limit = {
+									NOT = {
+											has_idea = neutrality_idea
+										}
+									NOT = {
+											has_idea = austrian_neutrality
+										}
+								}
+							add_political_power = 25
+							army_experience = 10
+							navy_experience = 10
+							air_experience = 10
+						}
+					if = {
+							limit = {
+									has_idea = austrian_neutrality
+								}
+							remove_ideas = austrian_neutrality
+							add_political_power = -20
+						}
+					if = {
+							limit = {
+									has_idea = neutrality_idea
+								}
+							remove_ideas = neutrality_idea
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_volunteer_corps
+		icon = GFX_infantry_commonwealth
+		cost = 10.00
+		prerequisite = {
+			focus = generic_intervention
+		}
+		x = 11
+		y = 4
+			completion_reward = {
+					add_ideas = idea_focus_volunteer_corps
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_political_influence_abroad
+		icon = GFX_territorial_claims
+		cost = 10.00
+		prerequisite = {
+			focus = generic_volunteer_corps
+		}
+		x = 11
+		y = 5
+			completion_reward = {
+					if = {
+							limit = {
+									has_government = islamist
+								}
+							every_neighbor_country = {
+									add_popularity = {
+											ideology = islamist
+											popularity = 0.05
+										}
+								}
+						}
+					if = {
+							limit = {
+									has_government = fascist
+								}
+							every_neighbor_country = {
+									add_popularity = {
+											ideology = fascist
+											popularity = 0.05
+										}
+								}
+						}
+					if = {
+							limit = {
+									has_government = nationalist
+								}
+							every_neighbor_country = {
+									add_popularity = {
+											ideology = nationalist
+											popularity = 0.05
+										}
+								}
+						}
+					if = {
+							limit = {
+									has_government = monarchist
+								}
+							every_neighbor_country = {
+									add_popularity = {
+											ideology = monarchist
+											popularity = 0.05
+										}
+								}
+						}
+					if = {
+							limit = {
+									has_government = reactionary
+								}
+							every_neighbor_country = {
+									add_popularity = {
+											ideology = reactionary
+											popularity = 0.05
+										}
+								}
+						}
+					if = {
+							limit = {
+									has_government = conservative
+								}
+							every_neighbor_country = {
+									add_popularity = {
+											ideology = conservative
+											popularity = 0.05
+										}
+								}
+						}
+					if = {
+							limit = {
+									has_government = market_liberal
+								}
+							every_neighbor_country = {
+									add_popularity = {
+											ideology = market_liberal
+											popularity = 0.05
+										}
+								}
+						}
+					if = {
+							limit = {
+									has_government = social_liberal
+								}
+							every_neighbor_country = {
+									add_popularity = {
+											ideology = social_liberal
+											popularity = 0.05
+										}
+								}
+						}
+					if = {
+							limit = {
+									has_government = social_democrat
+								}
+							every_neighbor_country = {
+									add_popularity = {
+											ideology = social_democrat
+											popularity = 0.05
+										}
+								}
+						}
+					if = {
+							limit = {
+									has_government = progressive
+								}
+							every_neighbor_country = {
+									add_popularity = {
+											ideology = progressive
+											popularity = 0.05
+										}
+								}
+						}
+					if = {
+							limit = {
+									has_government = democratic_socialist
+								}
+							every_neighbor_country = {
+									add_popularity = {
+											ideology = democratic_socialist
+											popularity = 0.05
+										}
+								}
+						}
+					if = {
+							limit = {
+									has_government = communist
+								}
+							every_neighbor_country = {
+									add_popularity = {
+											ideology = communist
+											popularity = 0.05
+										}
+								}
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_national_strength
+		icon = GFX_political_pressure
+		cost = 10.00
+		prerequisite = {
+			focus = generic_ideology_focus
+		}
+		mutually_exclusive = {
+			focus = generic_individual_freedoms
+		}
+		x = 15
+		y = 1
+			completion_reward = {
+					add_timed_idea = {
+							idea = idea_focus_generic_national_strength
+							days = 365
+						}
+					if = {
+							limit = {
+									has_democratic_form_of_government = no
+								}
+							add_stability = 0.03
+						}
+					if = {
+							limit = {
+									has_democratic_form_of_government = yes
+								}
+							add_stability = -0.03
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_path_of_order
+		icon = GFX_fascism
+		cost = 10.00
+		prerequisite = {
+			focus = generic_national_strength
+		}
+		mutually_exclusive = {
+			focus = generic_path_of_equality
+		}
+		x = 13
+		y = 2
+			completion_reward = {
+					add_ideas = idea_focus_generic_path_of_order
+					add_popularity = {
+							ideology = nationalist
+							popularity = 0.05
+						}
+					add_popularity = {
+							ideology = fascist
+							popularity = 0.05
+						}
+					add_popularity = {
+							ideology = monarchist
+							popularity = 0.05
+						}
+					if = {
+							limit = {
+									OR = {
+											islamist > 0.1
+											has_country_flag = dominant_religion_islam
+										}
+								}
+							add_popularity = {
+									ideology = islamist
+									popularity = 0.05
+								}
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_ideology_islamist
+		icon = GFX_align_to_pakistan
+		cost = 10.00
+		prerequisite = {
+			focus = generic_path_of_order
+		}
+		mutually_exclusive = {
+			focus = generic_ideology_fascist
+			focus = generic_ideology_nationalist
+			focus = generic_ideology_monarchist
+		}
+		x = 13
+		y = 4
+			available = {
+					islamist > 0.15
+				}
+			completion_reward = {
+					increase_islamist_influence_by_1 = yes
+					add_ideas = idea_focus_generic_path_of_allah
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_shariah_lawcode
+		icon = GFX_align_to_pakistan
+		cost = 10.00
+		prerequisite = {
+			focus = generic_ideology_islamist
+		}
+		x = 13
+		y = 5
+			completion_reward = {
+					increase_islamist_influence_by_1 = yes
+					if = {
+							limit = {
+									NOT = {
+											has_government = islamist
+										}
+								}
+							add_stability = -0.15
+						}
+					add_popularity = {
+							ideology = islamist
+							popularity = 0.2
+						}
+					set_politics = {
+							ruling_party = islamist
+							elections_allowed = no
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_jihad
+		icon = GFX_align_to_pakistan
+		cost = 10.00
+		prerequisite = {
+			focus = generic_shariah_lawcode
+		}
+		x = 13
+		y = 6
+			completion_reward = {
+					increase_islamist_influence_by_2 = yes
+					add_ideas = idea_focus_generic_jihad
+					#Trigger the global news event.
+					news_event = news.2
+					#If the faction is not ideal, leave it.
+					if = {
+							limit = {
+									is_in_faction = yes
+									is_faction_leader = no
+									any_country = {
+											is_in_faction_with = ROOT
+											OR = {
+													NOT = {
+															has_government = islamist
+														}
+													islamist < 0.25
+												}
+										}
+								}
+							random_country = {
+									limit = {
+											is_in_faction_with = ROOT
+											is_faction_leader = yes
+										}
+									remove_from_faction = ROOT
+								}
+						}
+					#Everybody should hate them; except for Islamists of their confession
+					if = {
+							limit = {
+									OR = {
+											has_country_flag = sunni_islam
+											AND = {
+													NOT = {
+															has_country_flag = sunni_islam
+														}
+													NOT = {
+															has_country_flag = shia_islam
+														}
+												}#The rare case of Ibadi or Bug.
+										}
+								}
+							every_country = {
+									limit = {
+											OR = {
+													has_country_flag = shia_islam
+													NOT = {
+															has_government = islamist
+														}
+												}
+										}
+									add_opinion_modifier = {
+											target = ROOT
+											modifier = terrorist_menace
+										}
+									add_opinion_modifier = {
+											target = ROOT
+											modifier = terrorist_menace_trade
+										}
+								}
+						}
+					if = {
+							limit = {
+									has_country_flag = shia_islam
+								}
+							every_country = {
+									limit = {
+											OR = {
+													has_country_flag = sunni_islam
+													NOT = {
+															has_government = islamist
+														}
+												}
+										}
+									add_opinion_modifier = {
+											target = ROOT
+											modifier = terrorist_menace
+										}
+									add_opinion_modifier = {
+											target = ROOT
+											modifier = terrorist_menace_trade
+										}
+								}
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_ideology_monarchist
+		icon = GFX_monarchy
+		cost = 10.00
+		prerequisite = {
+			focus = generic_path_of_order
+		}
+		mutually_exclusive = {
+			focus = generic_ideology_fascist
+			focus = generic_ideology_nationalist
+			focus = generic_ideology_islamist
+		}
+		x = 15
+		y = 4
+			completion_reward = {
+					increase_monarchist_influence_by_1 = yes
+					add_ideas = idea_focus_generic_royal_doctrine
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_empower_the_monarch
+		icon = GFX_monarchy
+		cost = 10.00
+		prerequisite = {
+			focus = generic_ideology_monarchist
+		}
+		x = 15
+		y = 5
+			completion_reward = {
+					increase_monarchist_influence_by_1 = yes
+					if = {
+							limit = {
+									NOT = {
+											has_government = monarchist
+										}
+								}
+							add_stability = -0.10
+						}
+					add_popularity = {
+							ideology = monarchist
+							popularity = 0.2
+						}
+					set_politics = {
+							ruling_party = monarchist
+							elections_allowed = no
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_the_values_of_old
+		icon = GFX_monarchy
+		cost = 10.00
+		prerequisite = {
+			focus = generic_empower_the_monarch
+		}
+		x = 15
+		y = 6
+			completion_reward = {
+					increase_monarchist_influence_by_2 = yes
+					add_ideas = idea_focus_generic_national_heritage
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_path_of_equality
+		icon = GFX_communism4
+		cost = 10.00
+		prerequisite = {
+			focus = generic_national_strength
+		}
+		mutually_exclusive = {
+			focus = generic_path_of_order
+		}
+		x = 16
+		y = 2
+			completion_reward = {
+					add_ideas = idea_focus_generic_path_of_equality
+					add_popularity = {
+							ideology = communist
+							popularity = 0.05
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_individual_freedoms
+		icon = GFX_democracy
+		cost = 10.00
+		prerequisite = {
+			focus = generic_ideology_focus
+		}
+		mutually_exclusive = {
+			focus = generic_national_strength
+		}
+		x = 17
+		y = 1
+			completion_reward = {
+					add_timed_idea = {
+							idea = idea_focus_generic_individual_freedom
+							days = 365
+						}
+					if = {
+							limit = {
+									has_democratic_form_of_government = yes
+								}
+							add_stability = 0.03
+						}
+					if = {
+							limit = {
+									has_democratic_form_of_government = no
+								}
+							add_stability = -0.03
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_ideology_nationalist
+		icon = GFX_fascism2
+		cost = 10.00
+		prerequisite = {
+			focus = generic_path_of_order
+		}
+		mutually_exclusive = {
+			focus = generic_ideology_fascist
+			focus = generic_ideology_monarchist
+			focus = generic_ideology_islamist
+		}
+		x = 17
+		y = 4
+			completion_reward = {
+					increase_nationalist_influence_by_1 = yes
+					add_ideas = idea_focus_generic_nationalist_doctrine
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_national_restoration
+		icon = GFX_fascism2
+		cost = 10.00
+		prerequisite = {
+			focus = generic_ideology_nationalist
+		}
+		x = 17
+		y = 5
+			completion_reward = {
+					increase_nationalist_influence_by_1 = yes
+					if = {
+							limit = {
+									NOT = {
+											has_government = nationalist
+										}
+								}
+							add_stability = -0.15
+						}
+					add_war_support = 0.05
+					add_popularity = {
+							ideology = nationalist
+							popularity = 0.2
+						}
+					set_politics = {
+							ruling_party = nationalist
+							elections_allowed = no
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_path_of_democratic_values
+		icon = GFX_neutrality
+		cost = 10.00
+		prerequisite = {
+			focus = generic_individual_freedoms
+		}
+		mutually_exclusive = {
+			focus = generic_path_of_democratic_freedom
+		}
+		x = 18
+		y = 3
+			completion_reward = {
+					add_popularity = {
+							ideology = conservative
+							popularity = 0.05
+						}
+					add_popularity = {
+							ideology = reactionary
+							popularity = 0.05
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_racial_values
+		icon = GFX_fascism
+		cost = 10.00
+		prerequisite = {
+			focus = generic_ideology_fascist
+		}
+		x = 19
+		y = 5
+			completion_reward = {
+					increase_fascist_influence_by_1 = yes
+					if = {
+							limit = {
+									NOT = {
+											has_government = fascist
+										}
+								}
+							add_stability = -0.15
+						}
+					add_popularity = {
+							ideology = fascist
+							popularity = 0.2
+						}
+					set_politics = {
+							ruling_party = fascist
+							elections_allowed = no
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_unity_and_nation
+		icon = GFX_entente
+		cost = 10.00
+		prerequisite = {
+			focus = generic_racial_values
+			focus = generic_national_restoration
+		}
+		x = 18
+		y = 6
+			completion_reward = {
+					increase_nationalist_influence_by_1 = yes
+					increase_fascist_influence_by_1 = yes
+					add_war_support = 0.05
+					add_ideas = idea_focus_generic_army_of_purity
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_path_of_democratic_freedom
+		icon = GFX_alliance
+		cost = 10.00
+		prerequisite = {
+			focus = generic_individual_freedoms
+		}
+		mutually_exclusive = {
+			focus = generic_path_of_democratic_progress
+			focus = generic_path_of_democratic_values
+		}
+		x = 20
+		y = 3
+			completion_reward = {
+					add_popularity = {
+							ideology = social_liberal
+							popularity = 0.05
+						}
+					add_popularity = {
+							ideology = market_liberal
+							popularity = 0.05
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_ideology_communist
+		icon = GFX_communism
+		cost = 10.00
+		prerequisite = {
+			focus = generic_path_of_equality
+		}
+		x = 21
+		y = 4
+			completion_reward = {
+					increase_communist_influence_by_1 = yes
+					add_ideas = idea_focus_generic_marxist_doctrine
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_revolutionary_committee
+		icon = GFX_communism3
+		cost = 10.00
+		prerequisite = {
+			focus = generic_ideology_communist
+		}
+		x = 21
+		y = 5
+			completion_reward = {
+					increase_communist_influence_by_1 = yes
+					if = {
+							limit = {
+									NOT = {
+											has_government = communist
+										}
+								}
+							add_stability = -0.15
+						}
+					add_popularity = {
+							ideology = communist
+							popularity = 0.2
+						}
+					set_politics = {
+							ruling_party = communist
+							elections_allowed = no
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_will_of_the_people
+		icon = GFX_communism4
+		cost = 10.00
+		prerequisite = {
+			focus = generic_revolutionary_committee
+		}
+		x = 21
+		y = 6
+			completion_reward = {
+					increase_communist_influence_by_2 = yes
+					add_ideas = idea_focus_generic_will_of_the_people
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_path_of_democratic_progress
+		icon = GFX_diplomatic_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = generic_individual_freedoms
+		}
+		mutually_exclusive = {
+			focus = generic_path_of_democratic_freedom
+		}
+		x = 22
+		y = 3
+			completion_reward = {
+					add_popularity = {
+							ideology = democratic_socialist
+							popularity = 0.05
+						}
+					add_popularity = {
+							ideology = progressive
+							popularity = 0.05
+						}
+					add_popularity = {
+							ideology = social_democrat
+							popularity = 0.05
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_ideology_reactionary
+		icon = GFX_democracy
+		cost = 10.00
+		prerequisite = {
+			focus = generic_path_of_democratic_values
+		}
+		mutually_exclusive = {
+			focus = generic_ideology_conservative
+		}
+		x = 23
+		y = 4
+			completion_reward = {
+					increase_reactionary_influence_by_1 = yes
+					add_ideas = idea_focus_generic_reactionary_doctrine
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_national_security
+		icon = GFX_entente
+		cost = 10.00
+		prerequisite = {
+			focus = generic_ideology_reactionary
+		}
+		x = 23
+		y = 5
+			completion_reward = {
+					increase_reactionary_influence_by_1 = yes
+					if = {
+							limit = {
+									NOT = {
+											has_government = reactionary
+										}
+								}
+							add_stability = -0.05
+						}
+					add_popularity = {
+							ideology = reactionary
+							popularity = 0.15
+						}
+					set_politics = {
+							ruling_party = reactionary
+							elections_allowed = yes
+						}
+					add_ideas = idea_focus_national_security
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_ideology_conservative
+		icon = GFX_democracy
+		cost = 10.00
+		prerequisite = {
+			focus = generic_path_of_democratic_values
+		}
+		mutually_exclusive = {
+			focus = generic_ideology_reactionary
+		}
+		x = 25
+		y = 4
+			completion_reward = {
+					increase_conservative_influence_by_1 = yes
+					add_ideas = idea_focus_generic_conservative_doctrine
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_family_values
+		icon = GFX_diplomatic_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = generic_ideology_conservative
+		}
+		x = 25
+		y = 5
+			completion_reward = {
+					increase_conservative_influence_by_1 = yes
+					if = {
+							limit = {
+									NOT = {
+											has_government = conservative
+										}
+								}
+							add_stability = -0.05
+						}
+					add_popularity = {
+							ideology = conservative
+							popularity = 0.15
+						}
+					set_politics = {
+							ruling_party = conservative
+							elections_allowed = yes
+						}
+					add_ideas = idea_focus_family_values
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_realpolitik
+		icon = GFX_demand_sudetenland
+		cost = 10.00
+		prerequisite = {
+			focus = generic_family_values
+			focus = generic_national_security
+		}
+		x = 24
+		y = 6
+			completion_reward = {
+					increase_conservative_influence_by_1 = yes
+					increase_reactionary_influence_by_1 = yes
+					add_political_power = 250
+					add_ideas = idea_focus_generic_realpolitik
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_ideology_libertarian
+		icon = GFX_democracy
+		cost = 10.00
+		prerequisite = {
+			focus = generic_path_of_democratic_freedom
+		}
+		mutually_exclusive = {
+			focus = generic_ideology_social_liberal
+		}
+		x = 27
+		y = 4
+			completion_reward = {
+					increase_market_liberal_influence_by_1 = yes
+					add_ideas = idea_focus_generic_capitalist_doctrine
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_economic_freedoms
+		icon = GFX_trade_deal
+		cost = 10.00
+		prerequisite = {
+			focus = generic_ideology_libertarian
+		}
+		x = 27
+		y = 5
+			completion_reward = {
+					increase_market_liberal_influence_by_1 = yes
+					if = {
+							limit = {
+									NOT = {
+											has_government = market_liberal
+										}
+								}
+							add_stability = -0.05
+						}
+					add_popularity = {
+							ideology = market_liberal
+							popularity = 0.15
+						}
+					set_politics = {
+							ruling_party = market_liberal
+							elections_allowed = yes
+						}
+					add_ideas = idea_focus_economic_freedoms
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_ideology_social_liberal
+		icon = GFX_democracy
+		cost = 10.00
+		prerequisite = {
+			focus = generic_path_of_democratic_freedom
+		}
+		mutually_exclusive = {
+			focus = generic_ideology_libertarian
+		}
+		x = 29
+		y = 4
+			completion_reward = {
+					increase_social_liberal_influence_by_1 = yes
+					add_ideas = idea_focus_generic_liberal_doctrine
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_personal_freedoms
+		icon = GFX_air_defense
+		cost = 10.00
+		prerequisite = {
+			focus = generic_ideology_social_liberal
+		}
+		x = 29
+		y = 5
+			completion_reward = {
+					increase_social_liberal_influence_by_1 = yes
+					if = {
+							limit = {
+									NOT = {
+											has_government = social_liberal
+										}
+								}
+							add_stability = -0.05
+						}
+					add_popularity = {
+							ideology = social_liberal
+							popularity = 0.15
+						}
+					set_politics = {
+							ruling_party = social_liberal
+							elections_allowed = yes
+						}
+					add_ideas = idea_focus_personal_freedoms
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_commerce_efficiency
+		icon = GFX_industry_democratic
+		cost = 10.00
+		prerequisite = {
+			focus = generic_personal_freedoms
+			focus = generic_economic_freedoms
+		}
+		x = 28
+		y = 6
+			completion_reward = {
+					increase_social_liberal_influence_by_1 = yes
+					increase_market_liberal_influence_by_1 = yes
+					add_ideas = idea_focus_generic_commerce_efficiency
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_ideology_social_democrat
+		icon = GFX_democracy
+		cost = 10.00
+		prerequisite = {
+			focus = generic_path_of_democratic_progress
+		}
+		mutually_exclusive = {
+			focus = generic_ideology_socialist
+			focus = generic_ideology_progressive
+		}
+		x = 31
+		y = 4
+			completion_reward = {
+					increase_social_democrat_influence_by_1 = yes
+					add_ideas = idea_focus_generic_social_democrat_doctrine
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_strengthen_unions
+		icon = GFX_tripartite_pact
+		cost = 10.00
+		prerequisite = {
+			focus = generic_ideology_social_democrat
+		}
+		x = 31
+		y = 5
+			completion_reward = {
+					increase_social_democrat_influence_by_1 = yes
+					if = {
+							limit = {
+									NOT = {
+											has_government = social_democrat
+										}
+								}
+							add_stability = -0.05
+						}
+					add_popularity = {
+							ideology = social_democrat
+							popularity = 0.15
+						}
+					set_politics = {
+							ruling_party = social_democrat
+							elections_allowed = yes
+						}
+					add_ideas = idea_focus_strong_unions
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_ideology_progressive
+		icon = GFX_democracy
+		cost = 10.00
+		prerequisite = {
+			focus = generic_path_of_democratic_progress
+		}
+		mutually_exclusive = {
+			focus = generic_ideology_socialist
+			focus = generic_ideology_social_democrat
+		}
+		x = 33
+		y = 4
+			completion_reward = {
+					increase_progressive_influence_by_1 = yes
+					add_ideas = idea_focus_generic_progressive_doctrine
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_environmental_policy
+		icon = GFX_improve_relations
+		cost = 10.00
+		prerequisite = {
+			focus = generic_ideology_progressive
+		}
+		x = 33
+		y = 5
+			completion_reward = {
+					increase_progressive_influence_by_1 = yes
+					if = {
+							limit = {
+									NOT = {
+											has_government = progressive
+										}
+								}
+							add_stability = -0.05
+						}
+					add_popularity = {
+							ideology = progressive
+							popularity = 0.15
+						}
+					set_politics = {
+							ruling_party = progressive
+							elections_allowed = yes
+						}
+					add_ideas = idea_focus_environmental_policy
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_ideology_socialist
+		icon = GFX_democracy
+		cost = 10.00
+		prerequisite = {
+			focus = generic_path_of_democratic_progress
+		}
+		mutually_exclusive = {
+			focus = generic_ideology_progressive
+			focus = generic_ideology_social_democrat
+		}
+		x = 35
+		y = 4
+			completion_reward = {
+					increase_democratic_socialist_influence_by_1 = yes
+					add_ideas = idea_focus_generic_leftist_doctrine
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_crackdown_on_contraceptives
+		icon = GFX_propaganda
+		cost = 10.00
+		prerequisite = {
+			focus = generic_traditional_values
+		}
+		x = 1
+		y = 4
+			available = {
+					NOT = {
+							has_idea = population_growth_explosion
+						}
+				}
+			completion_reward = {
+					increase_birth_rate = yes
+					add_war_support = -0.05
+				}
+
+	}
+	focus = {
+		id = generic_birth_control_programs
+		icon = GFX_radar
+		cost = 10.00
+		prerequisite = {
+			focus = generic_female_workforce
+		}
+		x = 3
+		y = 4
+			available = {
+					NOT = {
+							has_idea = population_growth_decline
+						}
+				}
+			completion_reward = {
+					lower_birth_rate = yes
+					add_war_support = 0.05
+				}
+
+	}
+	focus = {
+		id = generic_redistribution_of_wealth
+		icon = GFX_anti_comintern_pact
+		cost = 10.00
+		prerequisite = {
+			focus = generic_ideology_socialist
+		}
+		x = 35
+		y = 5
+			completion_reward = {
+					increase_democratic_socialist_influence_by_1 = yes
+					if = {
+							limit = {
+									NOT = {
+											has_government = democratic_socialist
+										}
+								}
+							add_stability = -0.05
+						}
+					add_popularity = {
+							ideology = democratic_socialist
+							popularity = 0.15
+						}
+					set_politics = {
+							ruling_party = democratic_socialist
+							elections_allowed = yes
+						}
+					add_ideas = idea_focus_redistribution_of_wealth
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = generic_reckless_progress
+		icon = GFX_research
+		cost = 10.00
+		prerequisite = {
+			focus = generic_redistribution_of_wealth
+			focus = generic_environmental_policy
+			focus = generic_strengthen_unions
+		}
+		x = 33
+		y = 6
+			completion_reward = {
+					increase_democratic_socialist_influence_by_1 = yes
+					increase_progressive_influence_by_1 = yes
+					increase_social_democrat_influence_by_1 = yes
+					add_ideas = idea_focus_generic_reckless_progress
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
