@@ -1,4 +1,3 @@
-
 	focus = {
 		id = generic_political_focus
 		icon = GFX_demand_territory
