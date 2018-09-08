@@ -1679,6 +1679,9 @@ carrier_stats = {
 		}
 
 	start_year = 1980
+	dependency = {
+		carrier_cost = 0
+	}
 
 	XOR = {
             carrier_cost

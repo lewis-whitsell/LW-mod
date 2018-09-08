@@ -10,14 +10,11 @@ country_event = {
 	immediate = {
 		SOV	= {
 			add_manpower = 15000000
-		}
-		
-		
-			
+		}	
 	}
-		option = {
+	option = {
 		name = LAW.1.a # The localisable text that appears on the button.
-		}
+	}
 } 
 country_event = {
 	id = LAW.2
@@ -29,12 +26,86 @@ country_event = {
 	mean_time_to_happen = {days = 2}
 	immediate = {
 		
-		
-		
-			
 	}
-		option = {
+	option = {
 		name = LAW.2.a # The localisable text that appears on the button.
+	}
+} 
+country_event = {
+	id = LAW.3
+	title = LAW.3.t
+	desc = LAW.3.d
+	hidden = no
+	fire_only_once = yes
+	trigger = {date > 2000.1.3}
+	mean_time_to_happen = {days = 2}
+	immediate = {
+		start_civil_war = {
+		    ruling_party = communist
+		    ideology = ROOT
+		    size = 0.4
+		    only_own_territory = no
+		    capital = 282
+		    states = { 
+		        282 533 536 555 529 530 528 
+		    }
+		    keep_unit_leaders = {
+		        750 751 752
+		    }
 		}
+		start_civil_war = {
+		    ruling_party = monarchist
+		    ideology = ROOT
+		    size = 0.4
+		    only_own_territory = no
+		    capital = 282
+		    states = { 
+		        282 533 536 555 529 530 528 
+		    }
+		    keep_unit_leaders = {
+		        750 751 752
+		    }
+		}	
+	}
+	option = {
+		name = LAW.3.a # The localisable text that appears on the button.
+	}
+}
+
+country_event = {
+	id = LAW.4
+	title = LAW.4.t
+	desc = LAW.4.d
+	hidden = no
+	fire_only_once = yes
+	trigger = {date > 2000.1.3}
+	mean_time_to_happen = {days = 2}
+	immediate = {
+		USA = {
+			annex_country = {
+			    target = LIB
+			    transfer_troops = yes
+			}
+		}
+	}
+	option = {
+		name = LAW.4.a # The localisable text that appears on the button.
+	}
+}
+
+country_event = {
+	id = LAW.5
+	title = LAW.5.t
+	desc = LAW.5.d
+	hidden = no
+	fire_only_once = yes
+	trigger = {date > 2000.1.3}
+	mean_time_to_happen = {days = 2}
+	immediate = {
+		
+	}
+	option = {
+		name = LAW.5.a # The localisable text that appears on the button.
+	}
 } 
 
