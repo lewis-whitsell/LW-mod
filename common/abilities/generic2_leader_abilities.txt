@@ -135,5 +135,150 @@ ability = {
 			}
         }
     }
+    air_controller = {
+        name = "Air Controller"
+        desc = ABILITY_AIR_CONTROLLER__DESC
+        
+        sound_effect = command_power_ability_special
+        
+        type = army_leader
+        
+        allowed = {
+            is_border_war = no
+			has_trait = jungle_rat
+        }
+        
+        ai_will_do = {
+            factor = 0
+        }
+        
+        cost = 0.20
+        duration = 240
+		one_time_effect = {
+
+        }
+        unit_modifiers = {
+			jungle = {
+				attack = 0.15
+				defence = 0.10
+				movement = 0.10
+			}
+			marsh = {
+				attack = 0.10
+				defence = 0.05
+				movement = 0.05
+			}
+			forest = {
+				attack = 0.10
+				defence = 0.05
+				movement = 0.05
+			}
+			desert = {
+				attack = 0.10
+				defence = 0.05
+			}
+			plains = {
+				attack = 0.05
+				defence = 0.05
+			}
+        }
+    }
+
+    jamming = {
+        name = "Heavy Jamming"
+        desc = ABILITY_HVY_JAMMING_DESC
+        sound_effect = command_power_ability_special
+        
+        type = army_leader
+        
+        allowed = {
+            is_border_war = no
+			has_trait = jungle_rat
+        }
+        
+        ai_will_do = {
+            factor = 0
+        }
+        
+        cost = 0.20
+        duration = 240
+		one_time_effect = {
+
+        }
+        unit_modifiers = {
+			jungle = {
+				attack = 0.15
+				defence = 0.10
+				movement = 0.10
+			}
+			marsh = {
+				attack = 0.10
+				defence = 0.05
+				movement = 0.05
+			}
+			forest = {
+				attack = 0.10
+				defence = 0.05
+				movement = 0.05
+			}
+			desert = {
+				attack = 0.10
+				defence = 0.05
+			}
+			plains = {
+				attack = 0.05
+				defence = 0.05
+			}
+        }
+    }
+
+    cyber_attack = {
+        name = "Cyber Attack"
+        desc = ABILITY_HVY_JAMMING_DESC
+        sound_effect = command_power_ability_special
+        
+        type = army_leader
+        
+        allowed = {
+            is_border_war = no
+			has_trait = jungle_rat
+			date > 2002.01.01			
+        }
+        
+        ai_will_do = {
+            factor = 0
+        }
+        
+        cost = 0.20
+        duration = 240
+		one_time_effect = {
+
+        }
+        unit_modifiers = {
+			jungle = {
+				attack = 0.15
+				defence = 0.10
+				movement = 0.10
+			}
+			marsh = {
+				attack = 0.10
+				defence = 0.05
+				movement = 0.05
+			}
+			forest = {
+				attack = 0.10
+				defence = 0.05
+				movement = 0.05
+			}
+			desert = {
+				attack = 0.10
+				defence = 0.05
+			}
+			plains = {
+				attack = 0.05
+				defence = 0.05
+			}
+        }
+    }
 
 }

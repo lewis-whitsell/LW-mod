@@ -2764,4 +2764,111 @@ technologies = {
 			mot_rockets
 		}
 	}
+#	spec_forces1 = {
+#		research_cost = 1
+#		start_year = 1970
+#		ai_will_do = {
+#			factor = 10
+#		}
+#		special_force = {
+#
+#		}
+#		heli_special_force = {
+#
+#		}
+#		folder = {
+#			name = support_folder
+#			position = { x = 7 y = @1970 }
+#		}		
+#		categories = {
+#			mot_rockets
+#		}
+#	}
+#
+#	spec_forces_branch10 = {
+#		research_cost = 1
+#		start_year = 1980
+#		ai_will_do = {
+#			factor = 10
+#		}
+#		special_force = {
+#
+#		}
+#		heli_special_force = {
+#
+#		}
+#		folder = {
+#			name = support_folder
+#			position = { x = 7 y = @1980 }
+#		}		
+#		categories = {
+#			mot_rockets
+#		}
+#	}
+#
+#	spec_forces_branch20 = {
+#		research_cost = 1
+#		start_year = 1980
+#		ai_will_do = {
+#			factor = 10
+#		}
+#		special_force = {
+#
+#		}
+#		heli_special_force = {
+#
+#		}
+#		folder = {
+#			name = support_folder
+#			position = { x = 7 y = @1980 }
+#		}		
+#		categories = {
+#			mot_rockets
+#		}
+#
+#	}
+
+#	spec_forces_branch30 = {
+#		research_cost = 1
+#		start_year = 1980
+#		ai_will_do = {
+#			factor = 10
+#		}
+#		special_force = {
+#
+#		}
+#		heli_special_force = {
+#
+#		}
+#		folder = {
+#			name = support_folder
+#			position = { x = 7 y = @1980 }
+#		}		
+#		categories = {
+#			mot_rockets
+#		}
+#
+#	}
+#
+#	spec_forces_branch40 = {
+#		research_cost = 1
+#		start_year = 1980
+#		ai_will_do = {
+#			factor = 10
+#		}
+#		special_force = {
+#
+#		}
+#		heli_special_force = {
+#
+#		}
+#		folder = {
+#			name = support_folder
+#			position = { x = 7 y = @1980 }
+#		}		
+#		categories = {
+#			mot_rockets
+#		}
+#
+#	}
 }
