@@ -251,7 +251,7 @@ ideas = {
 			removal_cost = -1
 			picture = generic_production_bonus
 			modifier = {
-				foreign_subversive_activites = -0.50 
+				foreign_subversive_activites = -0.25
 				economy_cost_factor = -0.25
 			}
 		}
@@ -1307,6 +1307,7 @@ political_advisor = {
 					tag = GRN
 					tag = AST
 					tag = CYP
+					tag = CUB
 				}
 			}
 			research_bonus = {air_equipment = 0.10}
@@ -1391,6 +1392,7 @@ political_advisor = {
 					tag = GRN
 					tag = AST
 					tag = CYP
+					tag = CUB
 				}
 			}
 			research_bonus = {air_equipment = 0.10}
@@ -1445,6 +1447,7 @@ political_advisor = {
 					tag = GRN
 					tag = AST
 					tag = CYP
+					tag = CUB
 				}
 			}
 			research_bonus = {air_equipment = 0.10}
@@ -1481,6 +1484,7 @@ political_advisor = {
 					tag = GRN
 					tag = AST
 					tag = CYP
+					tag = CUB
 				}
 			}
 			research_bonus = {rocketry = 0.10}
@@ -1548,6 +1552,7 @@ political_advisor = {
 					tag = GRN
 					tag = AST
 					tag = CYP
+					tag = CUB
 				}
 			}
 			research_bonus = {
@@ -1589,6 +1594,7 @@ political_advisor = {
 					tag = GRN
 					tag = AST
 					tag = CYP
+					tag = CUB
 				}
 			}
 			research_bonus = {
@@ -1633,6 +1639,7 @@ political_advisor = {
 					tag = GRN
 					tag = AST
 					tag = CYP
+					tag = CUB
 				}
 			}
 			research_bonus = {
@@ -1667,6 +1674,7 @@ political_advisor = {
 					tag = GRN
 					tag = AST
 					tag = CYP
+					tag = CUB
 				}
 			}
 			research_bonus = {
@@ -1697,6 +1705,7 @@ political_advisor = {
 					tag = GRN
 					tag = AST
 					tag = CYP
+					tag = CUB
 					}
 				}
 				picture = industrial_concern_1
@@ -1720,6 +1729,7 @@ political_advisor = {
 					tag = GRN
 					tag = AST
 					tag = CYP
+					tag = CUB
 					}
 				}
 				picture = industrial_concern_2
@@ -1738,6 +1748,7 @@ political_advisor = {
 					tag = GRN
 					tag = AST
 					tag = CYP
+					tag = CUB
 					}
 				}
 				picture = industrial_concern_3
@@ -1764,6 +1775,7 @@ political_advisor = {
 					tag = GRN
 					tag = AST
 					tag = CYP
+					tag = CUB
 				}
 			}
 			research_bonus = {infantry_weapons = 0.2}
@@ -1798,6 +1810,7 @@ political_advisor = {
 					tag = GRN
 					tag = AST
 					tag = CYP
+					tag = CUB
 				}
 			}
 			research_bonus = {infantry_weapons = 0.1}
@@ -1835,6 +1848,7 @@ political_advisor = {
 					tag = GRN
 					tag = AST
 					tag = CYP
+					tag = CUB
 				}
 			}
 			picture = electronics_concern_2

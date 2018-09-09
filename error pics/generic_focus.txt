@@ -2,7 +2,7 @@
 		id = generic_political_focus
 		icon = GFX_demand_territory
 		cost = 10.00
-		x = 11
+		x = 81
 		y = 0
 			completion_reward = {
 					add_political_power = 100
@@ -16,7 +16,7 @@
 		id = generic_ideology_focus
 		icon = GFX_propaganda
 		cost = 10.00
-		x = 16
+		x = 86
 		y = 0
 			completion_reward = {
 					add_political_power = 100
@@ -39,7 +39,7 @@
 			focus = generic_ideology_monarchist
 			focus = generic_ideology_islamist
 		}
-		x = 19
+		x = 89
 		y = 4
 			completion_reward = {
 					increase_fascist_influence_by_1 = yes
@@ -54,7 +54,7 @@
 		id = generic_recruitment_strategies
 		icon = GFX_infantry_japan
 		cost = 10.00
-		x = 14
+		x = 84
 		y = 7
 			completion_reward = {
 					add_ideas = idea_focus_new_recruitment_strategies
@@ -71,7 +71,7 @@
 		prerequisite = {
 			focus = generic_political_focus
 		}
-		x = 9
+		x = 79
 		y = 1
 			completion_reward = {
 					add_political_power = 75
@@ -88,7 +88,7 @@
 		prerequisite = {
 			focus = generic_internal_politics
 		}
-		x = 5
+		x = 75
 		y = 2
 			completion_reward = {
 					add_political_power = 15
@@ -107,7 +107,7 @@
 		prerequisite = {
 			focus = generic_recruit_more_administrators
 		}
-		x = 5
+		x = 75
 		y = 3
 			completion_reward = {
 					add_ideas = idea_focus_generic_public_service_investment
@@ -124,7 +124,7 @@
 		prerequisite = {
 			focus = generic_internal_politics
 		}
-		x = 5
+		x = 75
 		y = 4
 			completion_reward = {
 					add_war_support = 0.05
@@ -148,7 +148,7 @@
 		prerequisite = {
 			focus = generic_internal_politics
 		}
-		x = 7
+		x = 77
 		y = 2
 			completion_reward = {
 					add_political_power = 25
@@ -166,7 +166,7 @@
 		mutually_exclusive = {
 			focus = generic_female_workforce
 		}
-		x = 1
+		x = 71
 		y = 3
 			available = {
 					NOT = {
@@ -227,7 +227,7 @@
 		mutually_exclusive = {
 			focus = generic_traditional_values
 		}
-		x = 3
+		x = 73
 		y = 3
 			available = {
 					NOT = {
@@ -271,7 +271,7 @@
 		prerequisite = {
 			focus = generic_recruit_more_administrators
 		}
-		x = 7
+		x = 77
 		y = 3
 			completion_reward = {
 					add_ideas = idea_focus_generic_education_reform
@@ -288,7 +288,7 @@
 		prerequisite = {
 			focus = generic_education_reform
 		}
-		x = 7
+		x = 77
 		y = 4
 			completion_reward = {
 					add_ideas = idea_focus_expanded_secret_services
@@ -305,7 +305,7 @@
 		prerequisite = {
 			focus = generic_political_focus
 		}
-		x = 11
+		x = 81
 		y = 1
 			completion_reward = {
 					add_political_power = 75
@@ -322,7 +322,7 @@
 		prerequisite = {
 			focus = generic_foreign_politics
 		}
-		x = 9
+		x = 79
 		y = 2
 			completion_reward = {
 					add_political_power = 50
@@ -342,7 +342,7 @@
 		mutually_exclusive = {
 			focus = generic_intervention
 		}
-		x = 9
+		x = 79
 		y = 3
 			completion_reward = {
 					if = {
@@ -383,7 +383,7 @@
 		prerequisite = {
 			focus = generic_isolation
 		}
-		x = 9
+		x = 79
 		y = 4
 			completion_reward = {
 					add_ideas = idea_focus_destroyed_foreign_influence
@@ -400,7 +400,7 @@
 		prerequisite = {
 			focus = generic_destroy_foreign_influence
 		}
-		x = 9
+		x = 79
 		y = 5
 			completion_reward = {
 					add_ideas = ENG_defensive_constructions_idea
@@ -417,7 +417,7 @@
 		prerequisite = {
 			focus = generic_foreign_politics
 		}
-		x = 11
+		x = 81
 		y = 2
 			completion_reward = {
 					set_rule = {
@@ -439,7 +439,7 @@
 		mutually_exclusive = {
 			focus = generic_isolation
 		}
-		x = 11
+		x = 81
 		y = 3
 			completion_reward = {
 					if = {
@@ -482,7 +482,7 @@
 		prerequisite = {
 			focus = generic_intervention
 		}
-		x = 11
+		x = 81
 		y = 4
 			completion_reward = {
 					add_ideas = idea_focus_volunteer_corps
@@ -499,7 +499,7 @@
 		prerequisite = {
 			focus = generic_volunteer_corps
 		}
-		x = 11
+		x = 81
 		y = 5
 			completion_reward = {
 					if = {
@@ -650,7 +650,7 @@
 		mutually_exclusive = {
 			focus = generic_individual_freedoms
 		}
-		x = 15
+		x = 85
 		y = 1
 			completion_reward = {
 					add_timed_idea = {
@@ -685,7 +685,7 @@
 		mutually_exclusive = {
 			focus = generic_path_of_equality
 		}
-		x = 13
+		x = 83
 		y = 2
 			completion_reward = {
 					add_ideas = idea_focus_generic_path_of_order
@@ -731,7 +731,7 @@
 			focus = generic_ideology_nationalist
 			focus = generic_ideology_monarchist
 		}
-		x = 13
+		x = 83
 		y = 4
 			available = {
 					islamist > 0.15
@@ -752,7 +752,7 @@
 		prerequisite = {
 			focus = generic_ideology_islamist
 		}
-		x = 13
+		x = 83
 		y = 5
 			completion_reward = {
 					increase_islamist_influence_by_1 = yes
@@ -785,7 +785,7 @@
 		prerequisite = {
 			focus = generic_shariah_lawcode
 		}
-		x = 13
+		x = 83
 		y = 6
 			completion_reward = {
 					increase_islamist_influence_by_2 = yes
@@ -890,7 +890,7 @@
 			focus = generic_ideology_nationalist
 			focus = generic_ideology_islamist
 		}
-		x = 15
+		x = 85
 		y = 4
 			completion_reward = {
 					increase_monarchist_influence_by_1 = yes
@@ -908,7 +908,7 @@
 		prerequisite = {
 			focus = generic_ideology_monarchist
 		}
-		x = 15
+		x = 85
 		y = 5
 			completion_reward = {
 					increase_monarchist_influence_by_1 = yes
@@ -941,7 +941,7 @@
 		prerequisite = {
 			focus = generic_empower_the_monarch
 		}
-		x = 15
+		x = 85
 		y = 6
 			completion_reward = {
 					increase_monarchist_influence_by_2 = yes
@@ -962,7 +962,7 @@
 		mutually_exclusive = {
 			focus = generic_path_of_order
 		}
-		x = 16
+		x = 86
 		y = 2
 			completion_reward = {
 					add_ideas = idea_focus_generic_path_of_equality
@@ -986,7 +986,7 @@
 		mutually_exclusive = {
 			focus = generic_national_strength
 		}
-		x = 17
+		x = 87
 		y = 1
 			completion_reward = {
 					add_timed_idea = {
@@ -1023,7 +1023,7 @@
 			focus = generic_ideology_monarchist
 			focus = generic_ideology_islamist
 		}
-		x = 17
+		x = 87
 		y = 4
 			completion_reward = {
 					increase_nationalist_influence_by_1 = yes
@@ -1041,7 +1041,7 @@
 		prerequisite = {
 			focus = generic_ideology_nationalist
 		}
-		x = 17
+		x = 87
 		y = 5
 			completion_reward = {
 					increase_nationalist_influence_by_1 = yes
@@ -1078,7 +1078,7 @@
 		mutually_exclusive = {
 			focus = generic_path_of_democratic_freedom
 		}
-		x = 18
+		x = 88
 		y = 3
 			completion_reward = {
 					add_popularity = {
@@ -1102,7 +1102,7 @@
 		prerequisite = {
 			focus = generic_ideology_fascist
 		}
-		x = 19
+		x = 89
 		y = 5
 			completion_reward = {
 					increase_fascist_influence_by_1 = yes
@@ -1136,7 +1136,7 @@
 			focus = generic_racial_values
 			focus = generic_national_restoration
 		}
-		x = 18
+		x = 88
 		y = 6
 			completion_reward = {
 					increase_nationalist_influence_by_1 = yes
@@ -1160,7 +1160,7 @@
 			focus = generic_path_of_democratic_progress
 			focus = generic_path_of_democratic_values
 		}
-		x = 20
+		x = 90
 		y = 3
 			completion_reward = {
 					add_popularity = {
@@ -1184,7 +1184,7 @@
 		prerequisite = {
 			focus = generic_path_of_equality
 		}
-		x = 21
+		x = 91
 		y = 4
 			completion_reward = {
 					increase_communist_influence_by_1 = yes
@@ -1202,7 +1202,7 @@
 		prerequisite = {
 			focus = generic_ideology_communist
 		}
-		x = 21
+		x = 91
 		y = 5
 			completion_reward = {
 					increase_communist_influence_by_1 = yes
@@ -1235,7 +1235,7 @@
 		prerequisite = {
 			focus = generic_revolutionary_committee
 		}
-		x = 21
+		x = 91
 		y = 6
 			completion_reward = {
 					increase_communist_influence_by_2 = yes
@@ -1256,7 +1256,7 @@
 		mutually_exclusive = {
 			focus = generic_path_of_democratic_freedom
 		}
-		x = 22
+		x = 92
 		y = 3
 			completion_reward = {
 					add_popularity = {
@@ -1287,7 +1287,7 @@
 		mutually_exclusive = {
 			focus = generic_ideology_conservative
 		}
-		x = 23
+		x = 93
 		y = 4
 			completion_reward = {
 					increase_reactionary_influence_by_1 = yes
@@ -1305,7 +1305,7 @@
 		prerequisite = {
 			focus = generic_ideology_reactionary
 		}
-		x = 23
+		x = 93
 		y = 5
 			completion_reward = {
 					increase_reactionary_influence_by_1 = yes
@@ -1342,7 +1342,7 @@
 		mutually_exclusive = {
 			focus = generic_ideology_reactionary
 		}
-		x = 25
+		x = 95
 		y = 4
 			completion_reward = {
 					increase_conservative_influence_by_1 = yes
@@ -1360,7 +1360,7 @@
 		prerequisite = {
 			focus = generic_ideology_conservative
 		}
-		x = 25
+		x = 95
 		y = 5
 			completion_reward = {
 					increase_conservative_influence_by_1 = yes
@@ -1395,7 +1395,7 @@
 			focus = generic_family_values
 			focus = generic_national_security
 		}
-		x = 24
+		x = 94
 		y = 6
 			completion_reward = {
 					increase_conservative_influence_by_1 = yes
@@ -1418,7 +1418,7 @@
 		mutually_exclusive = {
 			focus = generic_ideology_social_liberal
 		}
-		x = 27
+		x = 97
 		y = 4
 			completion_reward = {
 					increase_market_liberal_influence_by_1 = yes
@@ -1436,7 +1436,7 @@
 		prerequisite = {
 			focus = generic_ideology_libertarian
 		}
-		x = 27
+		x = 97
 		y = 5
 			completion_reward = {
 					increase_market_liberal_influence_by_1 = yes
@@ -1473,7 +1473,7 @@
 		mutually_exclusive = {
 			focus = generic_ideology_libertarian
 		}
-		x = 29
+		x = 99
 		y = 4
 			completion_reward = {
 					increase_social_liberal_influence_by_1 = yes
@@ -1491,7 +1491,7 @@
 		prerequisite = {
 			focus = generic_ideology_social_liberal
 		}
-		x = 29
+		x = 99
 		y = 5
 			completion_reward = {
 					increase_social_liberal_influence_by_1 = yes
@@ -1526,7 +1526,7 @@
 			focus = generic_personal_freedoms
 			focus = generic_economic_freedoms
 		}
-		x = 28
+		x = 98
 		y = 6
 			completion_reward = {
 					increase_social_liberal_influence_by_1 = yes
@@ -1549,7 +1549,7 @@
 			focus = generic_ideology_socialist
 			focus = generic_ideology_progressive
 		}
-		x = 31
+		x = 101
 		y = 4
 			completion_reward = {
 					increase_social_democrat_influence_by_1 = yes
@@ -1567,7 +1567,7 @@
 		prerequisite = {
 			focus = generic_ideology_social_democrat
 		}
-		x = 31
+		x = 101
 		y = 5
 			completion_reward = {
 					increase_social_democrat_influence_by_1 = yes
@@ -1605,7 +1605,7 @@
 			focus = generic_ideology_socialist
 			focus = generic_ideology_social_democrat
 		}
-		x = 33
+		x = 103
 		y = 4
 			completion_reward = {
 					increase_progressive_influence_by_1 = yes
@@ -1623,7 +1623,7 @@
 		prerequisite = {
 			focus = generic_ideology_progressive
 		}
-		x = 33
+		x = 103
 		y = 5
 			completion_reward = {
 					increase_progressive_influence_by_1 = yes
@@ -1661,7 +1661,7 @@
 			focus = generic_ideology_progressive
 			focus = generic_ideology_social_democrat
 		}
-		x = 35
+		x = 85
 		y = 4
 			completion_reward = {
 					increase_democratic_socialist_influence_by_1 = yes
@@ -1679,7 +1679,7 @@
 		prerequisite = {
 			focus = generic_traditional_values
 		}
-		x = 1
+		x = 71
 		y = 4
 			available = {
 					NOT = {
@@ -1699,7 +1699,7 @@
 		prerequisite = {
 			focus = generic_female_workforce
 		}
-		x = 3
+		x = 73
 		y = 4
 			available = {
 					NOT = {
@@ -1719,7 +1719,7 @@
 		prerequisite = {
 			focus = generic_ideology_socialist
 		}
-		x = 35
+		x = 85
 		y = 5
 			completion_reward = {
 					increase_democratic_socialist_influence_by_1 = yes
@@ -1755,7 +1755,7 @@
 			focus = generic_environmental_policy
 			focus = generic_strengthen_unions
 		}
-		x = 33
+		x = 103
 		y = 6
 			completion_reward = {
 					increase_democratic_socialist_influence_by_1 = yes
