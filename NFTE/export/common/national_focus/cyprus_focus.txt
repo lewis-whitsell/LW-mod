@@ -1,0 +1,3923 @@
+focus_tree = {
+	id = cyprus_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CYP
+		}
+	}
+	default = no
+	focus = {
+		id = CYP_3indstart
+		icon = GFX_goal_generic_construct_civilian
+		cost = 5.00
+		x = 4
+		y = 0
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = CYP_3the_unified_islands_plan
+							bonus = 0.5
+							uses = 3
+							category = construction_tech
+							category = industry
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3armystart
+		icon = GFX_focus_generic_license_production
+		cost = 10.00
+		x = 30
+		y = 0
+			completion_reward = {
+					add_political_power = 120
+				}
+
+	}
+	focus = {
+		id = CYP_3govstart1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 63
+		y = 0
+			completion_reward = {
+					add_ideas = idea_focus_generic_neo_fascist_doctrine
+				}
+
+	}
+	focus = {
+		id = CYP_3mil1
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3indstart
+		}
+		x = 0
+		y = 1
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					random_owned_state = {
+							add_building_construction = {
+									type = arms_factory
+									level = 3
+									instant_build = yes
+								}
+							add_extra_state_shared_building_slots = 3
+						}
+					random_owned_state = {
+							add_building_construction = {
+									type = arms_factory
+									level = 3
+									instant_build = yes
+								}
+							add_extra_state_shared_building_slots = 3
+						}
+					random_owned_state = {
+							add_building_construction = {
+									type = arms_factory
+									level = 3
+									instant_build = yes
+								}
+							add_extra_state_shared_building_slots = 3
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3mil2
+		icon = GFX_focus_chi_army_reform
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3mil1
+		}
+		x = 0
+		y = 2
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					random_owned_state = {
+							add_building_construction = {
+									type = arms_factory
+									level = 3
+									instant_build = yes
+								}
+							add_extra_state_shared_building_slots = 3
+						}
+					random_owned_state = {
+							add_building_construction = {
+									type = arms_factory
+									level = 3
+									instant_build = yes
+								}
+							add_extra_state_shared_building_slots = 3
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3mil3
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3mil2
+		}
+		x = 0
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					random_owned_state = {
+							add_building_construction = {
+									type = arms_factory
+									level = 3
+									instant_build = yes
+								}
+							add_extra_state_shared_building_slots = 3
+						}
+					random_owned_state = {
+							add_building_construction = {
+									type = arms_factory
+									level = 3
+									instant_build = yes
+								}
+							add_extra_state_shared_building_slots = 3
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3mil4
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3mil3
+		}
+		x = 0
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					random_owned_state = {
+							add_building_construction = {
+									type = arms_factory
+									level = 3
+									instant_build = yes
+								}
+							add_extra_state_shared_building_slots = 3
+						}
+					random_owned_state = {
+							add_building_construction = {
+									type = arms_factory
+									level = 3
+									instant_build = yes
+								}
+							add_extra_state_shared_building_slots = 3
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3civ1
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3indstart
+		}
+		x = 2
+		y = 1
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					random_owned_state = {
+							add_building_construction = {
+									type = industrial_complex
+									level = 3
+									instant_build = yes
+								}
+							add_extra_state_shared_building_slots = 3
+						}
+					random_owned_state = {
+							add_building_construction = {
+									type = industrial_complex
+									level = 3
+									instant_build = yes
+								}
+							add_extra_state_shared_building_slots = 3
+						}
+					random_owned_state = {
+							add_building_construction = {
+									type = industrial_complex
+									level = 3
+									instant_build = yes
+								}
+							add_extra_state_shared_building_slots = 3
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3civ2
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3civ1
+		}
+		x = 2
+		y = 2
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					random_owned_state = {
+							add_building_construction = {
+									type = industrial_complex
+									level = 3
+									instant_build = yes
+								}
+							add_extra_state_shared_building_slots = 3
+						}
+					random_owned_state = {
+							add_building_construction = {
+									type = industrial_complex
+									level = 3
+									instant_build = yes
+								}
+							add_extra_state_shared_building_slots = 3
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3civ3
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3civ2
+		}
+		x = 2
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					random_owned_state = {
+							add_building_construction = {
+									type = industrial_complex
+									level = 3
+									instant_build = yes
+								}
+							add_extra_state_shared_building_slots = 3
+						}
+					random_owned_state = {
+							add_building_construction = {
+									type = industrial_complex
+									level = 3
+									instant_build = yes
+								}
+							add_extra_state_shared_building_slots = 3
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3civ4
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3civ3
+		}
+		x = 2
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					random_owned_state = {
+							add_building_construction = {
+									type = industrial_complex
+									level = 3
+									instant_build = yes
+								}
+							add_extra_state_shared_building_slots = 3
+						}
+					random_owned_state = {
+							add_building_construction = {
+									type = industrial_complex
+									level = 3
+									instant_build = yes
+								}
+							add_extra_state_shared_building_slots = 3
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3gov3
+		icon = GFX_focus_generic_tank_production
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3civ4
+		}
+		prerequisite = {
+			focus = CYP_3mil4
+		}
+		x = 1
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = defensive_constructions
+				}
+
+	}
+	focus = {
+		id = CYP_3resource2
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3indstart
+		}
+		x = 5
+		y = 1
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = CYP_3resource
+				}
+
+	}
+	focus = {
+		id = CYP_3alumn
+		icon = GFX_focus_generic_aluminum
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3resource2
+		}
+		x = 4
+		y = 2
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					random_owned_state = {
+							add_resource = {
+									type = aluminium
+									amount = 16
+								}
+						}
+					random_owned_state = {
+							add_resource = {
+									type = aluminium
+									amount = 20
+								}
+						}
+					random_owned_state = {
+							add_resource = {
+									type = aluminium
+									amount = 39
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3oil
+		icon = GFX_goal_generic_oil_refinery
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3alumn
+		}
+		x = 4
+		y = 3
+			ai_will_do = {
+					factor = 1
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					random_owned_state = {
+							add_resource = {
+									type = oil
+									amount = 12
+								}
+						}
+					random_owned_state = {
+							add_resource = {
+									type = oil
+									amount = 22
+								}
+						}
+					random_owned_state = {
+							add_resource = {
+									type = oil
+									amount = 29
+								}
+						}
+					add_tech_bonus = {
+							name = synth_bonus
+							bonus = 0.5
+							uses = 4
+							category = synth_resources
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3chromium
+		icon = GFX_goal_continuous_non_factory_construct
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3oil
+		}
+		x = 4
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					random_owned_state = {
+							add_resource = {
+									type = chromium
+									amount = 36
+								}
+						}
+					random_owned_state = {
+							add_resource = {
+									type = chromium
+									amount = 15
+								}
+						}
+					random_owned_state = {
+							add_resource = {
+									type = chromium
+									amount = 9
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3resource1
+		icon = GFX_focus_generic_steel
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3resource2
+		}
+		x = 6
+		y = 2
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					random_owned_state = {
+							add_resource = {
+									type = steel
+									amount = 54
+								}
+						}
+					random_owned_state = {
+							add_resource = {
+									type = steel
+									amount = 83
+								}
+						}
+					random_owned_state = {
+							add_resource = {
+									type = steel
+									amount = 116
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3rubber
+		icon = GFX_focus_generic_rubber
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3resource1
+		}
+		x = 6
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					random_owned_state = {
+							add_resource = {
+									type = rubber
+									amount = 28
+								}
+						}
+					random_owned_state = {
+							add_resource = {
+									type = rubber
+									amount = 15
+								}
+						}
+					random_owned_state = {
+							add_resource = {
+									type = rubber
+									amount = 9
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3resource3
+		icon = GFX_focus_generic_tungsten
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3rubber
+		}
+		x = 6
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					random_owned_state = {
+							add_resource = {
+									type = tungsten
+									amount = 36
+								}
+						}
+					random_owned_state = {
+							add_resource = {
+									type = tungsten
+									amount = 15
+								}
+						}
+					random_owned_state = {
+							add_resource = {
+									type = tungsten
+									amount = 9
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3indtech5
+		icon = GFX_goal_generic_construction2
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3resource3
+		}
+		prerequisite = {
+			focus = CYP_3chromium
+		}
+		x = 5
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = CYP_3resource2
+				}
+
+	}
+	focus = {
+		id = CYP_3construc1
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3gov3
+		}
+		prerequisite = {
+			focus = CYP_3indtech5
+		}
+		x = 3
+		y = 6
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					every_owned_state = {
+							add_extra_state_shared_building_slots = 5
+						}
+					add_ideas = CYP_3industrial
+				}
+
+	}
+	focus = {
+		id = CYP_3manila_central_railway
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3indstart
+		}
+		x = 9
+		y = 1
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					every_owned_state = {
+							add_building_construction = {
+									type = infrastructure
+									level = 3
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3econ2
+		icon = GFX_focus_generic_treaty
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3manila_central_railway
+		}
+		x = 8
+		y = 2
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = CYP_3grand_deal
+				}
+
+	}
+	focus = {
+		id = CYP_3econ3
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3econ2
+		}
+		x = 8
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = CYP_3trade1
+				}
+
+	}
+	focus = {
+		id = CYP_3develop_mindano
+		icon = GFX_goal_generic_consumer_goods
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3econ3
+		}
+		x = 8
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = CYP_3trade2
+				}
+
+	}
+	focus = {
+		id = CYP_3indtech2
+		icon = GFX_goal_generic_production2
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3manila_central_railway
+		}
+		x = 10
+		y = 2
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = CYP_3the_unified_islands_plan
+							bonus = 0.5
+							uses = 2
+							category = construction_tech
+							category = industry
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3indtech3
+		icon = GFX_goal_generic_production2
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3indtech2
+		}
+		x = 10
+		y = 3
+			ai_will_do = {
+					factor = 1
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = CYP_3ef
+				}
+
+	}
+	focus = {
+		id = CYP_3indtech4
+		icon = GFX_goal_generic_production2
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3indtech3
+		}
+		x = 10
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = CYP_3the_unified_islands_plan
+							bonus = 0.5
+							uses = 3
+							category = construction_tech
+							category = industry
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3additional_research_slot1
+		icon = GFX_focus_research
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3develop_mindano
+		}
+		prerequisite = {
+			focus = CYP_3indtech4
+		}
+		x = 9
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_stability = 0.05
+					add_research_slot = 1
+				}
+
+	}
+	focus = {
+		id = CYP_3rocket1
+		icon = GFX_focus_rocketry
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3additional_research_slot1
+		}
+		x = 8
+		y = 6
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = secret_bonus2
+							bonus = 0.5
+							uses = 2
+							category = rocketry
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3research_new_enegry_options
+		icon = GFX_focus_wonderweapons
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3additional_research_slot1
+		}
+		x = 10
+		y = 6
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = CYP_3research_new_enegry_options
+							bonus = 0.5
+							uses = 1
+							category = nuclear
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3army_modernisation
+		icon = GFX_goal_generic_army_doctrines
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3armystart
+		}
+		x = 15
+		y = 1
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = idea_focus_army_officer_school
+				}
+
+	}
+	focus = {
+		id = CYP_3support1
+		icon = GFX_goal_generic_build_tank
+		cost = 4.00
+		prerequisite = {
+			focus = CYP_3army_modernisation
+		}
+		x = 13
+		y = 2
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = CYP_3army_modernisation
+							bonus = 0.5
+							uses = 2
+							category = support_tech
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3support2
+		icon = GFX_goal_generic_build_tank
+		cost = 4.00
+		prerequisite = {
+			focus = CYP_3support1
+		}
+		x = 13
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = CYP_3army_modernisation
+							bonus = 0.5
+							uses = 2
+							category = support_tech
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3infequip1
+		icon = GFX_focus_secret_rearmament
+		cost = 4.00
+		prerequisite = {
+			focus = CYP_3army_modernisation
+		}
+		x = 15
+		y = 2
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = CYP_3army_modernisation
+							bonus = 0.5
+							uses = 2
+							category = infantry_weapons
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3infequip2
+		icon = GFX_focus_secret_rearmament
+		cost = 4.00
+		prerequisite = {
+			focus = CYP_3infequip1
+		}
+		x = 15
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = CYP_3army_modernisation
+							bonus = 0.5
+							uses = 2
+							category = infantry_weapons
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3mech1
+		icon = GFX_goal_generic_army_motorized
+		cost = 4.00
+		prerequisite = {
+			focus = CYP_3army_modernisation
+		}
+		x = 17
+		y = 2
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = POL_modernising_the_cavalry
+							bonus = 0.75
+							uses = 1
+							category = light_mechanized
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3tank1
+		icon = GFX_goal_generic_army_tanks
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3mech1
+		}
+		x = 17
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = CYP_3create_main_battle_tanks
+							bonus = 0.5
+							uses = 2
+							category = armor
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3armystg2
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3infequip2
+			focus = CYP_3tank1
+			focus = CYP_3support2
+		}
+		x = 15
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = CYP_3arty3
+				}
+
+	}
+	focus = {
+		id = CYP_3import_new_howitzers
+		icon = GFX_goal_generic_army_artillery2
+		cost = 4.00
+		prerequisite = {
+			focus = CYP_3armystg2
+		}
+		x = 13
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = CYP_3import_new_howitzers
+							bonus = 0.5
+							uses = 2
+							category = artillery
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3mech2
+		icon = GFX_goal_generic_army_motorized
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3armystg2
+		}
+		x = 17
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = CYP_3study_european_tanks
+							bonus = 0.5
+							uses = 2
+							category = heavy_mechanized
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3tank2
+		icon = GFX_goal_generic_army_tanks
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3mech2
+		}
+		x = 17
+		y = 6
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = CYP_3study_european_tanks
+							bonus = 0.5
+							uses = 2
+							category = armor
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3army_modernisation2
+		icon = GFX_goal_generic_army_doctrines
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3armystart
+		}
+		x = 21
+		y = 1
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = CYP_3american_advisors
+				}
+
+	}
+	focus = {
+		id = CYP_3leader1
+		icon = GFX_focus_generic_military_mission
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3army_modernisation2
+		}
+		x = 19
+		y = 2
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					army_experience = 10
+					create_corps_commander = {
+							traits = { infantry_officer  career_officer }
+							skill = 2
+							attack_skill = 2
+							defense_skill = 2
+							planning_skill = 2
+							logistics_skill = 2
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3leader2
+		icon = GFX_focus_generic_military_mission
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3leader1
+		}
+		x = 19
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					army_experience = 10
+					create_field_marshal = {
+							name = "Paulino Santo Jr"
+							traits = { combined_arms_expert  career_officer }
+							skill = 2
+							attack_skill = 3
+							defense_skill = 3
+							planning_skill = 3
+							logistics_skill = 3
+						}
+					create_navy_leader = {
+							traits = { fly_swatter  spotter }
+							skill = 2
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3doc1
+		icon = GFX_goal_generic_air_doctrine
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3army_modernisation2
+		}
+		x = 21
+		y = 2
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 0.5
+							uses = 2
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3doc2
+		icon = GFX_goal_generic_air_doctrine
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3doc1
+		}
+		x = 21
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 0.5
+							uses = 2
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3spec1
+		icon = GFX_goal_generic_amCYPbious_assault
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3army_modernisation2
+		}
+		x = 23
+		y = 2
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = special_forces_bonus
+							bonus = 0.5
+							uses = 2
+							category = infantry_weapons
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3spec2
+		icon = GFX_goal_generic_special_forces
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3spec1
+		}
+		x = 23
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = special_forces_bonus
+							bonus = 0.5
+							uses = 2
+							category = infantry_weapons
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3armystg3
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3spec2
+			focus = CYP_3doc2
+			focus = CYP_3leader2
+		}
+		x = 21
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = enigma
+							bonus = 0.5
+							uses = 2
+							category = encryption_tech
+							category = computing_tech
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3leader3
+		icon = GFX_focus_generic_military_mission
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3armystg3
+		}
+		x = 19
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					army_experience = 10
+					create_corps_commander = {
+							traits = { trickster  urban_assault_specialist }
+							skill = 2
+							attack_skill = 2
+							defense_skill = 2
+							planning_skill = 2
+							logistics_skill = 2
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3spec3
+		icon = GFX_goal_generic_amCYPbious_assault
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3armystg3
+		}
+		x = 23
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = CYP_3island_hopping
+					add_tech_bonus = {
+							name = CYP_3spec3
+							bonus = 0.5
+							uses = 1
+							category = land_doctrine
+							category = tp_tech
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3spec4
+		icon = GFX_focus_generic_paratrooper
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3spec3
+		}
+		x = 23
+		y = 6
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = special_forces_bonus
+							bonus = 0.5
+							uses = 2
+							category = marine_tech
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3pacific_navy
+		icon = GFX_goal_generic_navy_battleship
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3armystart
+		}
+		x = 30
+		y = 1
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = CYP_3navy
+				}
+
+	}
+	focus = {
+		id = CYP_3navaldoc1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3pacific_navy
+		}
+		x = 26
+		y = 2
+			ai_will_do = {
+
+}
+			completion_reward = {
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 0.5
+							uses = 2
+							category = naval_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3navaldoc2
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3navaldoc1
+		}
+		x = 26
+		y = 3
+			ai_will_do = {
+
+}
+			completion_reward = {
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 0.5
+							uses = 2
+							category = naval_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3navaldoc3
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3navaldoc2
+		}
+		x = 26
+		y = 4
+			ai_will_do = {
+
+}
+			completion_reward = {
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 0.5
+							uses = 2
+							category = naval_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3navaldoc4
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3navaldoc3
+		}
+		x = 26
+		y = 5
+			ai_will_do = {
+
+}
+			completion_reward = {
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 0.5
+							uses = 2
+							category = naval_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3sub1
+		icon = GFX_goal_generic_wolf_pack
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3pacific_navy
+		}
+		x = 28
+		y = 2
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = POL_import_submarine_technology
+							bonus = 0.5
+							uses = 3
+							category = ss_tech
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3sub3
+		icon = GFX_goal_poland_goal
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3sub1
+		}
+		x = 28
+		y = 3
+			completion_reward = {
+					add_tech_bonus = {
+							name = POL_import_submarine_technology
+							bonus = 0.5
+							uses = 1
+							category = ss_tech
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3sub2
+		icon = GFX_goal_generic_navy_submarine
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3sub3
+		}
+		x = 28
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = POL_commerce_attack
+							bonus = 0.5
+							uses = 1
+							category = ss_tech
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3island_defense
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3pacific_navy
+		}
+		x = 30
+		y = 2
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = POL_coastal_defense
+							bonus = 0.5
+							uses = 2
+							category = dd_tech
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3navyscrn1
+		icon = GFX_focus_generic_destroyer
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3island_defense
+		}
+		x = 30
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = POL_coastal_defense
+							bonus = 0.5
+							uses = 2
+							category = dd_tech
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3navyscrn2
+		icon = GFX_focus_generic_cruiser2
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3navyscrn1
+		}
+		x = 30
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = POL_coastal_defense
+							bonus = 0.5
+							uses = 2
+							category = ca_tech
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3anti_sub_defense_force
+		icon = GFX_goal_generic_navy_anti_submarine
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3sub2
+		}
+		prerequisite = {
+			focus = CYP_3navyscrn2
+		}
+		x = 29
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = POL_a_cruiser_navy
+							bonus = 0.5
+							uses = 2
+							category = naval_bomber
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3carrier1
+		icon = GFX_goal_generic_navy_carrier
+		cost = 4.00
+		prerequisite = {
+			focus = CYP_3pacific_navy
+		}
+		x = 32
+		y = 2
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = POL_a_cv_navy
+							bonus = 0.5
+							uses = 1
+							category = cv_tech
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3carrier2
+		icon = GFX_goal_generic_navy_carrier
+		cost = 4.00
+		prerequisite = {
+			focus = CYP_3carrier1
+		}
+		x = 32
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = POL_a_cv_navy
+							bonus = 0.5
+							uses = 1
+							category = cv_tech
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3carrier3
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 4.00
+		prerequisite = {
+			focus = CYP_3carrier2
+		}
+		x = 32
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = POL_a_cv_navy
+							bonus = 0.5
+							uses = 1
+							category = cv_tech
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3navydef2
+		icon = GFX_goal_generic_navy_battleship
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3navyscrn2
+		}
+		prerequisite = {
+			focus = CYP_3carrier3
+		}
+		x = 31
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = CYP_3navy2
+				}
+
+	}
+	focus = {
+		id = CYP_3navymisc1
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3navydef2
+			focus = CYP_3anti_sub_defense_force
+		}
+		x = 30
+		y = 6
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = CYP_3navy_cost
+				}
+
+	}
+	focus = {
+		id = CYP_3dockyard1
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3pacific_navy
+		}
+		x = 34
+		y = 2
+			ai_will_do = {
+					factor = 2
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 6
+											include_locked = yes
+										}
+								}
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+									type = dockyard
+									level = 5
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3dockyards2
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3dockyard1
+		}
+		x = 34
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 6
+											include_locked = yes
+										}
+								}
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+									type = dockyard
+									level = 5
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3dockyard3
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3dockyards2
+		}
+		x = 34
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 6
+											include_locked = yes
+										}
+								}
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+									type = dockyard
+									level = 5
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3dockyard4
+		icon = GFX_goal_continuous_naval_production
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3dockyard3
+		}
+		x = 34
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 6
+											include_locked = yes
+										}
+								}
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+									type = dockyard
+									level = 5
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3air_innovations
+		icon = GFX_goal_generic_build_airforce
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3armystart
+		}
+		x = 41
+		y = 1
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = POL_air_innovations
+							bonus = 0.5
+							uses = 3
+							category = air_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3airbuild1
+		icon = GFX_goal_generic_air_production
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3air_innovations
+		}
+		x = 37
+		y = 2
+			ai_will_do = {
+					factor = 1
+				}
+			available_if_capitulated = yes
+			complete_tooltip = {
+
+}
+			completion_reward = {
+					random_owned_controlled_state = {
+							prioritize = { 10 }
+							limit = {
+									free_building_slots = {
+											building = air_base
+											size > 1
+										}
+								}
+							add_building_construction = {
+									type = air_base
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3airbuild2
+		icon = GFX_goal_generic_build_airforce
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3airbuild1
+		}
+		x = 37
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					random_owned_state = {
+							add_building_construction = {
+									type = air_base
+									level = 8
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3airbuild3
+		icon = GFX_goal_generic_radar
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3airbuild2
+		}
+		x = 37
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					random_owned_state = {
+							add_building_construction = {
+									type = air_base
+									level = 8
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3airbuild4
+		icon = GFX_goal_generic_air_production
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3airbuild3
+		}
+		x = 37
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = CYP_3airbase
+				}
+
+	}
+	focus = {
+		id = CYP_3light_bomber_focus
+		icon = GFX_goal_generic_CAS
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3air_innovations
+		}
+		x = 39
+		y = 2
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = POL_light_bomber_focus
+							bonus = 0.5
+							uses = 2
+							category = tactical_bomber
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3study_allied_and_axis_naval_tactics
+		icon = GFX_goal_generic_air_bomber
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3light_bomber_focus
+		}
+		x = 39
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = idea_focus_air_force_military_school
+				}
+
+	}
+	focus = {
+		id = CYP_3medium_bomber_focus
+		icon = GFX_goal_generic_occupy_start_war
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3study_allied_and_axis_naval_tactics
+		}
+		x = 39
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = POL_medium_bomber_focus
+							bonus = 0.5
+							uses = 2
+							category = cat_strategic_bomber
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3naval_bomber_experiments
+		icon = GFX_goal_generic_air_naval_bomber
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3air_innovations
+		}
+		x = 41
+		y = 2
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = CYP_3the_unified_islands_plan
+							bonus = 0.5
+							uses = 2
+							category = air_equipment
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3heavy_fighter_concept
+		icon = GFX_goal_generic_air_fighter2
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3naval_bomber_experiments
+		}
+		x = 41
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = fighter_production_bonus
+				}
+
+	}
+	focus = {
+		id = CYP_3airmisc1
+		icon = GFX_goal_generic_air_fighter2
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3heavy_fighter_concept
+		}
+		x = 41
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = CYP_3air3
+				}
+
+	}
+	focus = {
+		id = CYP_3airtech1
+		icon = GFX_focus_generic_cryptologic_bomb
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3airmisc1
+		}
+		prerequisite = {
+			focus = CYP_3medium_bomber_focus
+		}
+		x = 40
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = CYP_3airsup
+				}
+
+	}
+	focus = {
+		id = CYP_3fighter_modernisation
+		icon = GFX_goal_generic_air_fighter
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3air_innovations
+		}
+		x = 43
+		y = 2
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = POL_fighter_modernisation
+							bonus = 0.5
+							uses = 2
+							category = light_fighter
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3air_modernisations_program
+		icon = GFX_goal_generic_air_doctrine
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3fighter_modernisation
+		}
+		x = 43
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = POL_fighter_modernisation
+							bonus = 0.5
+							uses = 2
+							category = light_fighter
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3jet2
+		icon = GFX_focus_chi_flying_tigers
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3air_modernisations_program
+		}
+		x = 43
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = CYP_3air
+				}
+
+	}
+	focus = {
+		id = CYP_3rocket_development
+		icon = GFX_focus_rocketry
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3airmisc1
+		}
+		prerequisite = {
+			focus = CYP_3jet2
+		}
+		x = 42
+		y = 5
+			ai_will_do = {
+					factor = 1
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = POL_rocket_development
+							bonus = 0.5
+							uses = 2
+							category = rocketry
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3airfin
+		icon = GFX_goal_continuous_air_production
+		cost = 20.00
+		prerequisite = {
+			focus = CYP_3airtech1
+			focus = CYP_3rocket_development
+		}
+		x = 41
+		y = 6
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = CYP_3air2
+				}
+
+	}
+	focus = {
+		id = CYP_3airdoc1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3air_innovations
+		}
+		x = 45
+		y = 2
+			ai_will_do = {
+
+}
+			completion_reward = {
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 0.5
+							uses = 2
+							category = air_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3airdoc2
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3airdoc1
+		}
+		x = 45
+		y = 3
+			ai_will_do = {
+
+}
+			completion_reward = {
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 0.5
+							uses = 2
+							category = air_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3airdoc3
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3airdoc2
+		}
+		x = 45
+		y = 4
+			ai_will_do = {
+
+}
+			completion_reward = {
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 0.5
+							uses = 2
+							category = air_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3a_new_regime
+		icon = GFX_goal_generic_attack_allies
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3govstart1
+		}
+		x = 63
+		y = 1
+			ai_will_do = {
+					factor = 2.5
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = idea_focus_generic_path_of_order
+				}
+
+	}
+	focus = {
+		id = CYP_3ideological_fanaticism
+		icon = GFX_goal_generic_propaganda
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3govstart1
+		}
+		x = 61
+		y = 1
+			ai_will_do = {
+					factor = 1
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = infrastructure_project2
+				}
+
+	}
+	focus = {
+		id = CYP_3gov1
+		icon = GFX_focus_generic_self_management
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3govstart1
+		}
+		x = 65
+		y = 1
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_war_support = .05
+					add_stability = .10
+				}
+
+	}
+	focus = {
+		id = CYP_3post_indenpence_stabilization
+		icon = GFX_goal_generic_demand_territory
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3a_new_regime
+		}
+		prerequisite = {
+			focus = CYP_3ideological_fanaticism
+		}
+		prerequisite = {
+			focus = CYP_3gov1
+		}
+		x = 57
+		y = 2
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_political_power = 250
+				}
+
+	}
+	focus = {
+		id = CYP_3support_the_ganap_party
+		icon = GFX_goal_support_fascism
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3post_indenpence_stabilization
+		}
+		x = 52
+		y = 3
+			ai_will_do = {
+					factor = 1
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = ideological_defense
+				}
+
+	}
+	focus = {
+		id = CYP_3goal1
+		icon = GFX_goal_support_democracy
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3support_the_ganap_party
+		}
+		x = 48
+		y = 4
+			ai_will_do = {
+					factor = 5
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_state_core = 458
+					transfer_state = 458
+					458 = {
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+									type = industrial_complex
+									level = 5
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3goal2
+		icon = GFX_goal_generic_military_deal
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3support_the_ganap_party
+		}
+		x = 50
+		y = 4
+			ai_will_do = {
+					factor = 5
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					transfer_state = 897
+				}
+
+	}
+	focus = {
+		id = CYP_3goal4
+		icon = GFX_focus_generic_coastal_fort
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3support_the_ganap_party
+		}
+		x = 54
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					transfer_state = 945
+					945 = {
+							add_core_of = CYP
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = infrastructure
+									level = 3
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = dockyard
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3goal5
+		icon = GFX_focus_prc_remove_chiang_kai_shek
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3support_the_ganap_party
+		}
+		x = 56
+		y = 4
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = GRE
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = ALB
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = BUL
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3addon1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3post_indenpence_stabilization
+		}
+		x = 61
+		y = 3
+			ai_will_do = {
+
+}
+			completion_reward = {
+					set_rule = {
+							can_create_factions = yes
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3build_slot1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3addon1
+		}
+		x = 59
+		y = 4
+			ai_will_do = {
+
+}
+			completion_reward = {
+					every_owned_state = {
+							add_extra_state_shared_building_slots = 3
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3build_slot2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3build_slot1
+		}
+		x = 59
+		y = 5
+			ai_will_do = {
+
+}
+			completion_reward = {
+					every_owned_state = {
+							add_extra_state_shared_building_slots = 3
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3build_slot3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3build_slot2
+		}
+		x = 59
+		y = 6
+			ai_will_do = {
+
+}
+			completion_reward = {
+					every_owned_state = {
+							add_extra_state_shared_building_slots = 3
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3build_slot4
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3build_slot3
+		}
+		x = 59
+		y = 7
+			ai_will_do = {
+
+}
+			completion_reward = {
+					every_owned_state = {
+							add_extra_state_shared_building_slots = 3
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3core1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3addon1
+		}
+		x = 61
+		y = 4
+			ai_will_do = {
+
+}
+			completion_reward = {
+					every_owned_state = {
+							add_core_of = CYP
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3core2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3core1
+		}
+		x = 61
+		y = 5
+			ai_will_do = {
+
+}
+			completion_reward = {
+					every_owned_state = {
+							add_core_of = CYP
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3core3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3core2
+		}
+		x = 61
+		y = 6
+			ai_will_do = {
+
+}
+			completion_reward = {
+					every_owned_state = {
+							add_core_of = CYP
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3core4
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3core3
+		}
+		x = 61
+		y = 7
+			ai_will_do = {
+
+}
+			completion_reward = {
+					every_owned_state = {
+							add_core_of = CYP
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3gov5
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3addon1
+		}
+		x = 63
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = government_expansion
+				}
+
+	}
+	focus = {
+		id = CYP_3gov6
+		icon = GFX_goal_tfv_generic_tech_sharing
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3gov5
+		}
+		x = 63
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = government_expansion
+							add_idea = government_expansion2
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3gov8
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3gov6
+		}
+		x = 63
+		y = 6
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = government_expansion2
+							add_idea = government_expansion3
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3gov9
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3gov8
+		}
+		x = 63
+		y = 7
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = government_expansion3
+							add_idea = government_expansion4
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3may_2nd_uprising
+		icon = GFX_goal_generic_political_pressure
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3gov1
+		}
+		prerequisite = {
+			focus = CYP_3a_new_regime
+		}
+		prerequisite = {
+			focus = CYP_3ideological_fanaticism
+		}
+		x = 69
+		y = 2
+			ai_will_do = {
+					factor = 1
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					set_politics = {
+							parties = {
+									conservative = {
+											popularity = 0
+										}
+									fascist = {
+											popularity = 100
+										}
+									communist = {
+											popularity = 0
+										}
+									reactionary = {
+											popularity = 0
+										}
+								}
+							ruling_party = fascist
+							elections_allowed = no
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3focus_on_war
+		icon = GFX_focus_cze_german_puppet
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3may_2nd_uprising
+		}
+		x = 67
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					set_rule = {
+							can_use_kamikaze_pilots = yes
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3pop1
+		icon = GFX_focus_prc_infiltration
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3focus_on_war
+		}
+		x = 66
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = additional_recruits
+				}
+
+	}
+	focus = {
+		id = CYP_3militarized_police
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3focus_on_war
+		}
+		x = 68
+		y = 4
+			ai_will_do = {
+					factor = 1
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = CYP_3paramilitarism_focus
+				}
+
+	}
+	focus = {
+		id = CYP_3ruin1
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3militarized_police
+		}
+		x = 68
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = CYP_3end1
+				}
+
+	}
+	focus = {
+		id = CYP_3ruin2
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3ruin1
+		}
+		x = 68
+		y = 6
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = CYP_3end1
+							add_idea = CYP_3end2
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3ruin3
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3ruin2
+		}
+		x = 68
+		y = 7
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = CYP_3end2
+							add_idea = CYP_3end3
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3gov4
+		icon = GFX_focus_generic_the_giant_wakes
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3may_2nd_uprising
+		}
+		x = 71
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = CYP_3stablized_state
+				}
+
+	}
+	focus = {
+		id = CYP_3autoc
+		icon = GFX_goal_generic_territory_or_war
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3gov4
+		}
+		mutually_exclusive = {
+			focus = CYP_3freedom
+		}
+		x = 70
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					random_owned_state = {
+							add_manpower = 250000
+						}
+					random_owned_state = {
+							add_manpower = 250000
+						}
+					random_owned_state = {
+							add_manpower = 250000
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3freedom
+		icon = GFX_goal_continuous_boost_freedom
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3gov4
+		}
+		mutually_exclusive = {
+			focus = CYP_3autoc
+		}
+		x = 72
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = idea_focus_generic_national_heritage
+				}
+
+	}
+	focus = {
+		id = CYP_3fighting_men1
+		icon = GFX_goal_generic_small_arms
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3autoc
+			focus = CYP_3freedom
+		}
+		x = 70
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					army_experience = 20
+					add_ideas = CYP_3inf1
+				}
+
+	}
+	focus = {
+		id = CYP_3fighting_men2
+		icon = GFX_goal_generic_political_pressure
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3fighting_men1
+		}
+		x = 70
+		y = 6
+			ai_will_do = {
+					factor = 4
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = CYP_3plan1
+				}
+
+	}
+	focus = {
+		id = CYP_3comp_war
+		icon = GFX_focus_rom_parties_end
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3freedom
+			focus = CYP_3autoc
+		}
+		x = 72
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = CYP_3grand_deal3
+				}
+
+	}
+	focus = {
+		id = CYP_3add_people1
+		icon = GFX_goal_generic_military_deal
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3comp_war
+		}
+		prerequisite = {
+			focus = CYP_3fighting_men2
+		}
+		x = 70
+		y = 7
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					random_owned_state = {
+							add_manpower = 250000
+						}
+					random_owned_state = {
+							add_manpower = 250000
+						}
+					random_owned_state = {
+							add_manpower = 250000
+						}
+					random_owned_state = {
+							add_manpower = 250000
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3add_people2
+		icon = GFX_goal_generic_military_deal
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3add_people1
+		}
+		x = 70
+		y = 8
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					random_owned_state = {
+							add_manpower = 250000
+						}
+					random_owned_state = {
+							add_manpower = 250000
+						}
+					random_owned_state = {
+							add_manpower = 250000
+						}
+					random_owned_state = {
+							add_manpower = 250000
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3add_people3
+		icon = GFX_goal_generic_military_deal
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3add_people2
+		}
+		x = 70
+		y = 9
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					random_owned_state = {
+							add_manpower = 250000
+						}
+					random_owned_state = {
+							add_manpower = 250000
+						}
+					random_owned_state = {
+							add_manpower = 250000
+						}
+					random_owned_state = {
+							add_manpower = 250000
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3add_people4
+		icon = GFX_goal_generic_military_deal
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3add_people3
+		}
+		x = 70
+		y = 10
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					random_owned_state = {
+							add_manpower = 250000
+						}
+					random_owned_state = {
+							add_manpower = 250000
+						}
+					random_owned_state = {
+							add_manpower = 250000
+						}
+					random_owned_state = {
+							add_manpower = 250000
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3peace_keeping_youth
+		icon = GFX_focus_generic_military_academy
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3ruin6
+			focus = CYP_3add_people4
+		}
+		x = 69
+		y = 11
+			ai_will_do = {
+					factor = 1
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = CYP_3military_youth_focus
+				}
+
+	}
+	focus = {
+		id = CYP_3additional_research_slot2
+		icon = GFX_focus_research
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3research_new_enegry_options
+		}
+		prerequisite = {
+			focus = CYP_3rocket1
+		}
+		x = 9
+		y = 7
+			available = {
+					num_of_factories > 50
+				}
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_research_slot = 1
+				}
+
+	}
+	focus = {
+		id = CYP_3arty2
+		icon = GFX_goal_generic_army_artillery2
+		cost = 4.00
+		prerequisite = {
+			focus = CYP_3import_new_howitzers
+		}
+		x = 13
+		y = 6
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = CYP_3import_new_howitzers
+							bonus = 0.5
+							uses = 2
+							category = artillery
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3at1
+		icon = GFX_goal_generic_army_artillery
+		cost = 4.00
+		prerequisite = {
+			focus = CYP_3armystg2
+		}
+		x = 15
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = CYP_3anti_tank_guns
+							bonus = 0.5
+							uses = 2
+							category = cat_anti_tank
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3doc3
+		icon = GFX_goal_generic_air_doctrine
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3armystg3
+		}
+		x = 21
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 0.5
+							uses = 2
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3goal3
+		icon = GFX_goal_generic_trade
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3support_the_ganap_party
+		}
+		x = 52
+		y = 4
+			ai_will_do = {
+					factor = 1
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = LBA
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3claim3
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3goal3
+		}
+		x = 52
+		y = 5
+			ai_will_do = {
+					factor = 1
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					transfer_state = 450
+					450 = {
+							add_core_of = CYP
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = infrastructure
+									level = 3
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = dockyard
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3war3
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3claim3
+		}
+		x = 52
+		y = 6
+			ai_will_do = {
+					factor = 1
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					448 = {
+							add_core_of = CYP
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = infrastructure
+									level = 3
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = dockyard
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3vic3
+		icon = GFX_focus_generic_strike_at_democracy2
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3war3
+		}
+		x = 52
+		y = 7
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = ALG
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = NIG
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3claim4
+		icon = GFX_goal_generic_defence
+		cost = 2.00
+		prerequisite = {
+			focus = CYP_3goal4
+		}
+		x = 54
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					transfer_state = 164
+					164 = {
+							add_core_of = CYP
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = infrastructure
+									level = 3
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3war4
+		icon = GFX_focus_jap_cast_the_die
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3claim4
+		}
+		x = 54
+		y = 6
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = EGY
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3vic4
+		icon = GFX_focus_rom_abdicate
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3war4
+		}
+		x = 54
+		y = 7
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					transfer_state = 187
+					187 = {
+							add_core_of = CYP
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = infrastructure
+									level = 3
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3claim5
+		icon = GFX_focus_renounce_the_treaty_of_triannon
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3goal5
+		}
+		x = 56
+		y = 5
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = LEB
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = SYR
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = ISR
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3war5
+		icon = GFX_focus_generic_military_mission
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3claim5
+		}
+		x = 56
+		y = 6
+			completion_reward = {
+					declare_war_on = {
+							target = TUR
+							type = annex_everything
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3vic5
+		icon = GFX_goal_molotov_ribbentrop_pact
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3war5
+		}
+		x = 56
+		y = 7
+			completion_reward = {
+					TUR = {
+							every_owned_state = {
+									add_core_of = CYP
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3greater_CYPlippines_established
+		icon = GFX_goal_generic_military_deal
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3vic5
+			focus = CYP_3vic4
+			focus = CYP_3vic3
+		}
+		x = 54
+		y = 8
+			ai_will_do = {
+					factor = 1
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_political_power = 120
+					add_ideas = CYP_3greater
+				}
+
+	}
+	focus = {
+		id = CYP_3claim1
+		icon = GFX_goal_generic_production
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3goal1
+		}
+		x = 48
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					458 = {
+							add_extra_state_shared_building_slots = 6
+							add_building_construction = {
+									type = industrial_complex
+									level = 5
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3war1
+		icon = GFX_goal_generic_production
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3claim1
+		}
+		x = 48
+		y = 6
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					458 = {
+							add_resource = {
+									type = steel
+									amount = 16
+								}
+							add_resource = {
+									type = aluminium
+									amount = 37
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3claim2
+		icon = GFX_focus_generic_strike_at_democracy3
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3goal2
+		}
+		x = 50
+		y = 5
+			available = {
+					country_exists = USA
+				}
+			ai_will_do = {
+					factor = 1
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_state_core = 898
+					transfer_state = 898
+				}
+
+	}
+	focus = {
+		id = CYP_3war2
+		icon = GFX_goal_generic_construction
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3claim2
+		}
+		x = 50
+		y = 6
+			ai_will_do = {
+					factor = 1
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					897 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 3
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+					898 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 3
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3vic1
+		icon = GFX_goal_generic_consumer_goods
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3war1
+		}
+		x = 48
+		y = 7
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					annex_country = {
+							target = TUN
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3aa1
+		icon = GFX_focus_generic_air_defense
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3at1
+		}
+		x = 15
+		y = 6
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = CYP_3arty1
+				}
+
+	}
+	focus = {
+		id = CYP_3armyupgradef
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3tank2
+			focus = CYP_3aa1
+			focus = CYP_3arty2
+		}
+		mutually_exclusive = {
+			focus = CYP_3armyupgradef2
+		}
+		x = 15
+		y = 7
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = CYP_3arty2
+				}
+
+	}
+	focus = {
+		id = CYP_3leader4
+		icon = GFX_focus_generic_military_mission
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3leader3
+		}
+		x = 19
+		y = 6
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					army_experience = 10
+					create_corps_commander = {
+							traits = { armor_officer }
+							skill = 2
+							attack_skill = 2
+							defense_skill = 2
+							planning_skill = 2
+							logistics_skill = 2
+						}
+					create_navy_leader = {
+							traits = { air_controller }
+							skill = 2
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3doc4
+		icon = GFX_goal_generic_air_doctrine
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3doc3
+		}
+		x = 21
+		y = 6
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 0.5
+							uses = 2
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3vic2
+		icon = GFX_goal_generic_national_unity
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3war2
+		}
+		x = 50
+		y = 7
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = MOR
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3Gvic1
+		icon = GFX_focus_generic_provoke_border_clashes
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3vic1
+		}
+		prerequisite = {
+			focus = CYP_3vic2
+		}
+		x = 49
+		y = 8
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+
+}
+
+	}
+	focus = {
+		id = CYP_3armyupgradef2
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3leader4
+			focus = CYP_3doc4
+			focus = CYP_3spec4
+		}
+		mutually_exclusive = {
+			focus = CYP_3armyupgradef
+		}
+		x = 21
+		y = 7
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = idea_focus_generic_army_of_purity
+				}
+
+	}
+	focus = {
+		id = CYP_3units1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3armyupgradef
+			focus = CYP_3armyupgradef2
+		}
+		x = 19
+		y = 8
+			available = {
+
+}
+			completion_reward = {
+					load_oob = "CYP_unit1"
+					create_corps_commander = {
+							traits = { career_officer  armor_officer }
+							skill = 2
+							attack_skill = 2
+							defense_skill = 2
+							planning_skill = 2
+							logistics_skill = 2
+						}
+					create_navy_leader = {
+							traits = { blockade_runner }
+							skill = 2
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3units2
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3armyupgradef
+			focus = CYP_3armyupgradef2
+		}
+		x = 17
+		y = 8
+			available = {
+
+}
+			completion_reward = {
+					load_oob = "CYP_unit2"
+					create_corps_commander = {
+							traits = { fortress_buster  naval_invader }
+							skill = 2
+							attack_skill = 2
+							defense_skill = 2
+							planning_skill = 2
+							logistics_skill = 2
+						}
+					create_navy_leader = {
+							traits = { seawolf  spotter }
+							skill = 2
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3pop2
+		icon = GFX_focus_prc_infiltration
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3pop1
+		}
+		x = 66
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = additional_recruits
+							add_idea = additional_recruits2
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3pop3
+		icon = GFX_focus_prc_infiltration
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3pop2
+		}
+		x = 66
+		y = 6
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = additional_recruits2
+							add_idea = additional_recruits3
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3pop4
+		icon = GFX_focus_prc_infiltration
+		cost = 5.00
+		prerequisite = {
+			focus = CYP_3pop3
+		}
+		x = 66
+		y = 7
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = additional_recruits3
+							add_idea = additional_recruits4
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3ruin4
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3ruin3
+		}
+		prerequisite = {
+			focus = CYP_3pop4
+		}
+		x = 68
+		y = 8
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = CYP_3end3
+							add_idea = CYP_3end4
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3ruin5
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3ruin4
+		}
+		x = 68
+		y = 9
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = CYP_3end4
+							add_idea = CYP_3end5
+						}
+				}
+
+	}
+	focus = {
+		id = CYP_3ruin6
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		cost = 10.00
+		prerequisite = {
+			focus = CYP_3ruin5
+		}
+		x = 68
+		y = 10
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = CYP_3end5
+							add_idea = CYP_3end6
+						}
+				}
+
+	}
+}
