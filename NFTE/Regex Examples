@@ -1,0 +1,3 @@
+Regex Examples
+
+everything incl new lines till char X: ((.|\n)*)?X

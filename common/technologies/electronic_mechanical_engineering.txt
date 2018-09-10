@@ -1190,4 +1190,350 @@ technologies = {
 			computing_tech
 		}
 	}
+
+	ew_start = {
+		
+		path = {
+			leads_to_tech = ecm1
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = eecm1
+			research_cost_coeff = 1
+		}
+	
+		research_cost = 1
+		start_year = 1960
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = @1960 }
+		}
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}
+
+	ecm1 = {
+		
+		path = {
+			leads_to_tech = ecm2
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = cyberwar1
+			research_cost_coeff = 1
+		}
+	
+		research_cost = 1
+		start_year = 1960
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = @1960 }
+		}
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}
+
+	ecm2 = {
+		
+		path = {
+			leads_to_tech = ecm2
+			research_cost_coeff = 1
+		}
+	
+		research_cost = 1
+		start_year = 1960
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = @1960 }
+		}
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}
+
+	ecm3 = {
+		
+		path = {
+			leads_to_tech = ecm2
+			research_cost_coeff = 1
+		}
+	
+		research_cost = 1
+		start_year = 1960
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = @1960 }
+		}
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}
+
+	ecm4 = {
+		
+		path = {
+			leads_to_tech = ecm2
+			research_cost_coeff = 1
+		}
+	
+		research_cost = 1
+		start_year = 1960
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = @1960 }
+		}
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}
+
+	ecm5 = {
+		
+		path = {
+			leads_to_tech = ecm2
+			research_cost_coeff = 1
+		}
+	
+		research_cost = 1
+		start_year = 1960
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = @1960 }
+		}
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}
+
+	eecm1 = {
+		
+		path = {
+			leads_to_tech = eecm2
+			research_cost_coeff = 1
+		}
+	
+		research_cost = 1
+		start_year = 1960
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = @1960 }
+		}
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}	
+	
+	eecm2 = {
+		
+		path = {
+			leads_to_tech = eecm3
+			research_cost_coeff = 1
+		}
+	
+		research_cost = 1
+		start_year = 1960
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = @1960 }
+		}
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}	
+
+	eecm3 = {
+		
+		path = {
+			leads_to_tech = eecm4
+			research_cost_coeff = 1
+		}
+	
+		research_cost = 1
+		start_year = 1960
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = @1960 }
+		}
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}	
+
+	eecm4 = {
+		
+		path = {
+			leads_to_tech = eecm5
+			research_cost_coeff = 1
+		}
+	
+		research_cost = 1
+		start_year = 1960
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = @1960 }
+		}
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}
+
+	cyberwar1 = {
+		
+		path = {
+			leads_to_tech = cyberwar2
+			research_cost_coeff = 1
+		}
+	
+		research_cost = 1
+		start_year = 1960
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = @1960 }
+		}
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}
+
+	cyberwar2 = {
+		
+		path = {
+			leads_to_tech = cyberwar3
+			research_cost_coeff = 1
+		}
+	
+		research_cost = 1
+		start_year = 1960
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = @1960 }
+		}
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}
+
+	cyberwar3 = {
+		
+		path = {
+			leads_to_tech = cyberwar4
+			research_cost_coeff = 1
+		}
+	
+		research_cost = 1
+		start_year = 1960
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = @1960 }
+		}
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}
+
+	cyberwar4 = {
+		
+		path = {
+			leads_to_tech = cyberwar5
+			research_cost_coeff = 1
+		}
+	
+		research_cost = 1
+		start_year = 1960
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = @1960 }
+		}
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}	
 }
