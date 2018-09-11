@@ -1,0 +1,15 @@
+idea_categories = {
+	
+	navy_upgrades = {
+		slot = frigate_focus
+		slot = destroyer_focus
+		slot = cruiser_focus
+		slot = carrier_focus
+		slot = lhd_focus
+
+		cost = 0
+		removal_cost = 0
+
+	}
+	
+}

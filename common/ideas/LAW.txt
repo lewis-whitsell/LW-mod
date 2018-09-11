@@ -1884,4 +1884,447 @@ political_advisor = {
 			modifier ={ army_infantry_attack_factor = 0.02 }
 		}
 	} 
+
+	frigate_focus ={
+		designer = yes
+
+		frigate_level1 ={
+
+			allowed = { always = no }
+
+			picture = industrial_concern_1
+
+			equipment_bonus = {
+				frigate = {
+			    	build_cost_ic = -0.4 
+			    	fire_range = -0.2
+			    	naval_speed = -0.2 
+			    	evasion = -0.2
+			    	surface_detection = -0.2
+			    	sub_detection = -0.2
+			    	surface_visibility = -0.2
+			    	naval_range = -0.2
+			    }
+			}
+
+
+		}
+
+		frigate_level2 ={
+
+			allowed = { always = no }
+
+			picture = industrial_concern_1
+
+			equipment_bonus = {
+			    frigate = {
+			    	build_cost_ic = 0.2 
+			    	fire_range = 0.15
+			    	naval_speed = 0.15 
+			    	evasion = 0.15
+			    	surface_detection = 0.15
+			    	sub_detection = 0.15
+			    	surface_visibility = 0.15
+			    	naval_range = 0.15
+			    }
+
+			}
+
+
+		}
+
+		frigate_level3 ={
+
+			allowed = { always = no }
+
+			picture = industrial_concern_1
+
+			equipment_bonus = {
+				frigate = {
+			    	build_cost_ic = -0.3 
+			    	fire_range = -0.1
+			    	naval_speed = -0.05 
+			    	evasion = -0.1
+			    	surface_detection = -0.1
+			    	sub_detection = -0.15
+			    	surface_visibility = -0.15
+			    	naval_range = -0.1
+			    }
+			}
+
+
+		}
+
+		frigate_level4 ={
+
+			allowed = { always = no }
+
+			picture = industrial_concern_1
+
+			equipment_bonus = {
+				frigate = {
+			    	build_cost_ic = 0.2 
+			    	fire_range = 0.15
+			    	naval_speed = 0.15 
+			    	evasion = 0.15
+			    	surface_detection = 0.15
+			    	sub_detection = 0.15
+			    	surface_visibility = 0.15
+			    	naval_range = 0.15
+			    }
+			}
+
+
+		}
+
+	}
+	destroyer_focus ={
+		designer = yes
+
+		destroyer_level1 ={
+
+			allowed = { always = no }
+
+			picture = industrial_concern_1
+
+			equipment_bonus = {
+				destroyer = {
+					build_cost_ic = -0.4 
+			    	fire_range = -0.2
+			    	naval_speed = -0.2 
+			    	evasion = -0.2
+			    	surface_detection = -0.2
+			    	sub_detection = -0.2
+			    	surface_visibility = -0.2
+			    	naval_range = -0.2
+				}
+			}
+
+
+		}
+
+		destroyer_level2 ={
+
+			allowed = { always = no }
+
+			picture = industrial_concern_1
+
+			equipment_bonus = {
+				destroyer  = {
+			    	build_cost_ic = 0.2 
+			    	fire_range = 0.15
+			    	naval_speed = 0.15 
+			    	evasion = 0.15
+			    	surface_detection = 0.15
+			    	sub_detection = 0.15
+			    	surface_visibility = 0.15
+			    	naval_range = 0.15
+
+				}
+			}
+
+
+		}
+
+		destroyer_level3 ={
+
+			allowed = { always = no }
+
+			picture = industrial_concern_1
+
+			equipment_bonus = {
+				destroyer = {
+			    	build_cost_ic = -0.3 
+			    	fire_range = -0.1
+			    	naval_speed = -0.05 
+			    	evasion = -0.1
+			    	surface_detection = -0.1
+			    	sub_detection = -0.15
+			    	surface_visibility = -0.15
+			    	naval_range = -0.1
+
+				}
+			}
+
+
+		}
+
+		destroyer_level4 ={
+
+			allowed = { always = no }
+
+			picture = industrial_concern_1
+
+			equipment_bonus = {
+				destroyer = {
+			    	build_cost_ic = 0.2 
+			    	fire_range = 0.15
+			    	naval_speed = 0.15 
+			    	evasion = 0.15
+			    	surface_detection = 0.15
+			    	sub_detection = 0.15
+			    	surface_visibility = 0.15
+			    	naval_range = 0.15
+				}
+			}
+
+
+		}
+
+	}
+	cruiser_focus ={
+		designer = yes
+
+		cruiser_level1 ={
+
+			allowed = { always = no }
+
+			picture = industrial_concern_1
+
+			equipment_bonus = {
+				cruiser = {
+					build_cost_ic = -0.4 
+			    	fire_range = -0.2
+			    	naval_speed = -0.2 
+			    	evasion = -0.2
+			    	surface_detection = -0.2
+			    	sub_detection = -0.2
+			    	surface_visibility = -0.2
+			    	naval_range = -0.2
+
+				}
+			}
+
+
+		}
+
+		cruiser_level2 ={
+
+			allowed = { always = no }
+
+			picture = industrial_concern_1
+
+			equipment_bonus = {
+				cruiser  = {
+			    	build_cost_ic = 0.2 
+			    	fire_range = 0.15
+			    	naval_speed = 0.15 
+			    	evasion = 0.15
+			    	surface_detection = 0.15
+			    	sub_detection = 0.15
+			    	surface_visibility = 0.15
+			    	naval_range = 0.15
+
+				}
+			}
+
+
+		}
+
+		cruiser_level3 ={
+
+			allowed = { always = no }
+
+			picture = industrial_concern_1
+
+			equipment_bonus = {
+				cruiser = {
+			    	build_cost_ic = -0.3 
+			    	fire_range = -0.1
+			    	naval_speed = -0.05 
+			    	evasion = -0.1
+			    	surface_detection = -0.1
+			    	sub_detection = -0.15
+			    	surface_visibility = -0.15
+			    	naval_range = -0.1
+
+				}
+			}
+
+
+		}
+
+		cruiser_level4 ={
+
+			allowed = { always = no }
+
+			picture = industrial_concern_1
+
+			equipment_bonus = {
+				cruiser = {
+			    	build_cost_ic = 0.2 
+			    	fire_range = 0.15
+			    	naval_speed = 0.15 
+			    	evasion = 0.15
+			    	surface_detection = 0.15
+			    	sub_detection = 0.15
+			    	surface_visibility = 0.15
+			    	naval_range = 0.15
+				}
+			}
+
+
+		}
+
+	}
+	carrier_focus ={
+		designer = yes
+
+		carrier_level1 ={
+
+			allowed = { always = no }
+
+			picture = industrial_concern_1
+
+			equipment_bonus = {
+				carrier = {
+			    	build_cost_ic = -0.4 
+			    	fire_range = -0.2
+			    	naval_speed = -0.2 
+			    	evasion = -0.2
+			    	surface_detection = -0.2
+			    	sub_detection = -0.2
+			    	surface_visibility = -0.2
+			    	naval_range = -0.2
+			    	carrier_size = -0.15
+			    }
+			}
+
+
+		}
+
+		carrier_level2 ={
+
+			allowed = { always = no }
+
+			picture = industrial_concern_1
+
+			equipment_bonus = {
+				carrier = {
+			    	build_cost_ic = 0.2 
+			    	fire_range = 0.15
+			    	naval_speed = 0.15 
+			    	evasion = 0.15
+			    	surface_detection = 0.15
+			    	sub_detection = 0.15
+			    	surface_visibility = 0.15
+			    	naval_range = 0.15
+			    	carrier_size = 0.2
+			    }
+			}
+
+
+		}
+
+		carrier_level3 ={
+
+			allowed = { always = no }
+
+			picture = industrial_concern_1
+
+			equipment_bonus = {
+				carrier = {
+
+				}
+			}
+
+
+		}
+
+		carrier_level4 ={
+
+			allowed = { always = no }
+
+			picture = industrial_concern_1
+
+			equipment_bonus = {
+				carrier = {
+
+				}
+			}
+
+
+		}
+
+	}
+	lhd_focus ={
+		designer = yes
+
+		lhd_level1 ={
+
+			allowed = { always = no }
+
+			picture = industrial_concern_1
+
+			equipment_bonus = {
+				LHD = {
+			    	build_cost_ic = -0.4 
+			    	fire_range = -0.2
+			    	naval_speed = -0.2 
+			    	evasion = -0.2
+			    	surface_detection = -0.2
+			    	sub_detection = -0.2
+			    	surface_visibility = -0.2
+			    	naval_range = -0.2
+			    	carrier_size = -0.15
+			    }
+			}
+
+
+		}
+
+		lhd_level2 ={
+
+			allowed = { always = no }
+
+			picture = industrial_concern_1
+
+			equipment_bonus = {
+				LHD = {
+			    	build_cost_ic = 0.2 
+			    	fire_range = 0.15
+			    	naval_speed = 0.15 
+			    	evasion = 0.15
+			    	surface_detection = 0.15
+			    	sub_detection = 0.15
+			    	surface_visibility = 0.15
+			    	naval_range = 0.15
+			    	carrier_size = 0.2
+			    }
+			}
+
+
+		}
+
+		lhd_level3 ={
+
+			allowed = { always = no }
+
+			picture = industrial_concern_1
+
+			equipment_bonus = {
+				lhd = {
+
+				}
+			}
+
+
+		}
+
+		lhd_level4 ={
+
+			allowed = { always = no }
+
+			picture = industrial_concern_1
+
+			equipment_bonus = {
+				lhd = {
+
+				}
+			}
+
+
+		}
+
+	}
 }

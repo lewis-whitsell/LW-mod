@@ -164,6 +164,7 @@ scripted_gui = {
 					type = bunker
 					level = 1 
 					instant_build = yes 
+					province = THIS
 				} 
 				
 				ROOT = {
