@@ -9,17 +9,17 @@ focus_tree = {
 	}
 	default = no
 	focus = {
-		id = MAD_4indstart
-		icon = GFX_goal_generic_construct_civilian
+		id = MAD_indstart
+		icon = central_management
 		cost = 5.00
-		x = 4
+		x = 5
 		y = 0
 			ai_will_do = {
 					factor = 10
 				}
 			completion_reward = {
 					add_tech_bonus = {
-							name = MAD_4the_unified_islands_plan
+							name = MAD_the_unified_islands_plan
 							bonus = 0.5
 							uses = 3
 							category = construction_tech
@@ -29,10 +29,10 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4armystart
-		icon = GFX_focus_generic_license_production
+		id = MAD_armystart
+		icon = license_production
 		cost = 10.00
-		x = 30
+		x = 21
 		y = 0
 			completion_reward = {
 					add_political_power = 120
@@ -40,56 +40,100 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4govstart1
-		icon = GFX_goal_unknown
+		id = MAD_gov4
+		icon = the_giant_wakes
 		cost = 10.00
-		x = 63
-		y = 0
-			completion_reward = {
-					add_ideas = idea_focus_generic_neo_fascist_doctrine
-				}
-
-	}
-	focus = {
-		id = MAD_4mil4
-		icon = GFX_goal_generic_construct_mil_factory
-		cost = 5.00
-		x = 0
+		x = 55
 		y = 4
 			ai_will_do = {
 					factor = 10
 				}
-			prerequisite = {
-				focus = MAD_4mil3
-			}
 			completion_reward = {
-					random_owned_state = {
-							add_building_construction = {
-									type = arms_factory
-									level = 3
-									instant_build = yes
-								}
-							add_extra_state_shared_building_slots = 3
-						}
-					random_owned_state = {
-							add_building_construction = {
-									type = arms_factory
-									level = 3
-									instant_build = yes
-								}
-							add_extra_state_shared_building_slots = 3
-						}
+					add_ideas = LAW_stablized_state
 				}
 
 	}
 	focus = {
-		id = MAD_4mil1
-		icon = GFX_goal_generic_construct_mil_factory
+		id = MAD_ideology_monarchist
+		icon = monarchy
+		cost = 10.00
+		x = 74
+		y = 3
+			completion_reward = {
+					increase_monarchist_influence_by_1 = yes
+					add_ideas = idea_focus_generic_royal_doctrine
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = MAD_empower_the_monarch
+		icon = monarchy
+		cost = 10.00
+		x = 74
+		y = 4
+			completion_reward = {
+					increase_monarchist_influence_by_1 = yes
+					if = {
+							limit = {
+									NOT = {
+											has_government = monarchist
+										}
+								}
+							add_stability = -0.10
+						}
+					add_popularity = {
+							ideology = monarchist
+							popularity = 0.2
+						}
+					set_politics = {
+							ruling_party = monarchist
+							elections_allowed = no
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = MAD_goverment_rebirth
+		icon = industry_united_states
+		cost = 10.00
+		x = 57
+		y = 0
+			completion_reward = {
+					add_political_power = 250
+				}
+
+	}
+	focus = {
+		id = MAD_airtech1
+		icon = cryptologic_bomb
+		cost = 5.00
+		x = 32
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			prerequisite = {
+			focus = MAD_study_planes2
+			}
+			completion_reward = {
+					add_ideas = LAW_airsup
+				}
+
+	}
+	focus = {
+		id = MAD_mil1
+		icon = industry_military
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4indstart
+			focus = MAD_indstart
 		}
-		x = 0
+		x = 1
 		y = 1
 			ai_will_do = {
 					factor = 10
@@ -123,13 +167,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4mil2
-		icon = GFX_focus_chi_army_reform
+		id = MAD_mil2
+		icon = industry_military
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4mil1
+			focus = MAD_mil1
 		}
-		x = 0
+		x = 1
 		y = 2
 			ai_will_do = {
 					factor = 10
@@ -155,13 +199,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4mil3
-		icon = GFX_goal_generic_construct_mil_factory
+		id = MAD_mil3
+		icon = industry_military
 		cost = 10.00
 		prerequisite = {
-			focus = MAD_4mil2
+			focus = MAD_mil2
 		}
-		x = 0
+		x = 1
 		y = 3
 			ai_will_do = {
 					factor = 10
@@ -187,13 +231,45 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4civ1
-		icon = GFX_goal_generic_construct_civ_factory
+		id = MAD_mil4
+		icon = industry_military
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4indstart
+			focus = MAD_mil3
 		}
-		x = 2
+		x = 1
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					random_owned_state = {
+							add_building_construction = {
+									type = arms_factory
+									level = 3
+									instant_build = yes
+								}
+							add_extra_state_shared_building_slots = 3
+						}
+					random_owned_state = {
+							add_building_construction = {
+									type = arms_factory
+									level = 3
+									instant_build = yes
+								}
+							add_extra_state_shared_building_slots = 3
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_civ1
+		icon = industry_civilian
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_indstart
+		}
+		x = 3
 		y = 1
 			ai_will_do = {
 					factor = 10
@@ -228,13 +304,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4civ2
-		icon = GFX_goal_generic_construct_civ_factory
+		id = MAD_civ2
+		icon = industry_civilian
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4civ1
+			focus = MAD_civ1
 		}
-		x = 2
+		x = 3
 		y = 2
 			ai_will_do = {
 					factor = 10
@@ -260,13 +336,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4civ3
-		icon = GFX_goal_generic_construct_civ_factory
+		id = MAD_civ3
+		icon = industry_civilian
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4civ2
+			focus = MAD_civ2
 		}
-		x = 2
+		x = 3
 		y = 3
 			ai_will_do = {
 					factor = 10
@@ -292,13 +368,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4civ4
-		icon = GFX_goal_generic_construct_civ_factory
+		id = MAD_civ4
+		icon = industry_civilian
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4civ3
+			focus = MAD_civ3
 		}
-		x = 2
+		x = 3
 		y = 4
 			ai_will_do = {
 					factor = 10
@@ -324,16 +400,16 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4gov3
-		icon = GFX_focus_generic_tank_production
+		id = MAD_gov3
+		icon = defence
 		cost = 10.00
 		prerequisite = {
-			focus = MAD_4civ4
+			focus = MAD_civ4
 		}
 		prerequisite = {
-			focus = MAD_4mil4
+			focus = MAD_mil4
 		}
-		x = 1
+		x = 2
 		y = 5
 			ai_will_do = {
 					factor = 10
@@ -344,13 +420,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4resource2
-		icon = GFX_goal_generic_neutrality_focus
+		id = MAD_resource2
+		icon = continuous_non_factory_construct
 		cost = 10.00
 		prerequisite = {
-			focus = MAD_4indstart
+			focus = MAD_indstart
 		}
-		x = 5
+		x = 6
 		y = 1
 			ai_will_do = {
 					factor = 10
@@ -361,13 +437,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4alumn
-		icon = GFX_focus_generic_aluminum
+		id = MAD_alumn
+		icon = continuous_non_factory_construct
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4resource2
+			focus = MAD_resource2
 		}
-		x = 4
+		x = 5
 		y = 2
 			ai_will_do = {
 					factor = 10
@@ -395,13 +471,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4oil
-		icon = GFX_goal_generic_oil_refinery
+		id = MAD_oil
+		icon = continuous_non_factory_construct
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4alumn
+			focus = MAD_alumn
 		}
-		x = 4
+		x = 5
 		y = 3
 			ai_will_do = {
 					factor = 1
@@ -436,13 +512,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4chromium
-		icon = GFX_goal_continuous_non_factory_construct
+		id = MAD_chromium
+		icon = continuous_non_factory_construct
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4oil
+			focus = MAD_oil
 		}
-		x = 4
+		x = 5
 		y = 4
 			ai_will_do = {
 					factor = 10
@@ -470,13 +546,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4resource1
-		icon = GFX_focus_generic_steel
+		id = MAD_resource1
+		icon = continuous_non_factory_construct
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4resource2
+			focus = MAD_resource2
 		}
-		x = 6
+		x = 7
 		y = 2
 			ai_will_do = {
 					factor = 10
@@ -504,13 +580,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4rubber
-		icon = GFX_focus_generic_rubber
+		id = MAD_rubber
+		icon = continuous_non_factory_construct
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4resource1
+			focus = MAD_resource1
 		}
-		x = 6
+		x = 7
 		y = 3
 			ai_will_do = {
 					factor = 10
@@ -538,13 +614,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4resource3
-		icon = GFX_focus_generic_tungsten
+		id = MAD_resource3
+		icon = continuous_non_factory_construct
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4rubber
+			focus = MAD_rubber
 		}
-		x = 6
+		x = 7
 		y = 4
 			ai_will_do = {
 					factor = 10
@@ -572,16 +648,16 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4indtech5
-		icon = GFX_goal_generic_construction2
+		id = MAD_indtech5
+		icon = construction2
 		cost = 10.00
 		prerequisite = {
-			focus = MAD_4resource3
+			focus = MAD_resource3
 		}
 		prerequisite = {
-			focus = MAD_4chromium
+			focus = MAD_chromium
 		}
-		x = 5
+		x = 6
 		y = 5
 			ai_will_do = {
 					factor = 10
@@ -592,16 +668,16 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4construc1
-		icon = GFX_goal_generic_construct_infrastructure
+		id = MAD_construc1
+		icon = infrastructure
 		cost = 10.00
 		prerequisite = {
-			focus = MAD_4gov3
+			focus = MAD_gov3
 		}
 		prerequisite = {
-			focus = MAD_4indtech5
+			focus = MAD_indtech5
 		}
-		x = 3
+		x = 4
 		y = 6
 			ai_will_do = {
 					factor = 10
@@ -615,11 +691,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4manila_central_railway
-		icon = GFX_goal_generic_construct_infrastructure
+		id = MAD_railway_builder
+		icon = infrastructure
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4indstart
+			focus = MAD_indstart
 		}
 		x = 9
 		y = 1
@@ -638,71 +714,20 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4econ2
-		icon = GFX_focus_generic_treaty
+		id = MAD_indtech2
+		icon = production2
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4manila_central_railway
+			focus = MAD_railway_builder
 		}
-		x = 8
-		y = 2
-			ai_will_do = {
-					factor = 10
-				}
-			completion_reward = {
-					add_ideas = LAW_grand_deal
-				}
-
-	}
-	focus = {
-		id = MAD_4econ3
-		icon = GFX_goal_generic_positive_trade_relations
-		cost = 5.00
-		prerequisite = {
-			focus = MAD_4econ2
-		}
-		x = 8
-		y = 3
-			ai_will_do = {
-					factor = 10
-				}
-			completion_reward = {
-					add_ideas = LAW_trade1
-				}
-
-	}
-	focus = {
-		id = MAD_4develop_mindano
-		icon = GFX_goal_generic_consumer_goods
-		cost = 5.00
-		prerequisite = {
-			focus = MAD_4econ3
-		}
-		x = 8
-		y = 4
-			ai_will_do = {
-					factor = 10
-				}
-			completion_reward = {
-					add_ideas = LAW_trade2
-				}
-
-	}
-	focus = {
-		id = MAD_4indtech2
-		icon = GFX_goal_generic_production2
-		cost = 5.00
-		prerequisite = {
-			focus = MAD_4manila_central_railway
-		}
-		x = 10
+		x = 9
 		y = 2
 			ai_will_do = {
 					factor = 10
 				}
 			completion_reward = {
 					add_tech_bonus = {
-							name = MAD_4the_unified_islands_plan
+							name = MAD_the_unified_islands_plan
 							bonus = 0.5
 							uses = 2
 							category = construction_tech
@@ -712,13 +737,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4indtech3
-		icon = GFX_goal_generic_production2
+		id = MAD_indtech3
+		icon = production2
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4indtech2
+			focus = MAD_indtech2
 		}
-		x = 10
+		x = 9
 		y = 3
 			ai_will_do = {
 					factor = 1
@@ -730,20 +755,20 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4indtech4
-		icon = GFX_goal_generic_production2
+		id = MAD_indtech4
+		icon = production2
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4indtech3
+			focus = MAD_indtech3
 		}
-		x = 10
+		x = 9
 		y = 4
 			ai_will_do = {
 					factor = 10
 				}
 			completion_reward = {
 					add_tech_bonus = {
-							name = MAD_4the_unified_islands_plan
+							name = MAD_the_unified_islands_plan
 							bonus = 0.5
 							uses = 3
 							category = construction_tech
@@ -753,14 +778,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4additional_research_slot1
-		icon = GFX_focus_research
+		id = MAD_additional_research_slot1
+		icon = research
 		cost = 10.00
 		prerequisite = {
-			focus = MAD_4develop_mindano
-		}
-		prerequisite = {
-			focus = MAD_4indtech4
+			focus = MAD_indtech4
 		}
 		x = 9
 		y = 5
@@ -775,11 +797,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4rocket1
-		icon = GFX_focus_rocketry
+		id = MAD_rocket1
+		icon = rocketry
 		cost = 10.00
 		prerequisite = {
-			focus = MAD_4additional_research_slot1
+			focus = MAD_additional_research_slot1
 		}
 		x = 8
 		y = 6
@@ -797,11 +819,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4research_new_enegry_options
-		icon = GFX_focus_wonderweapons
+		id = MAD_research_new_enegry_options
+		icon = nuclear_weapons
 		cost = 10.00
 		prerequisite = {
-			focus = MAD_4additional_research_slot1
+			focus = MAD_additional_research_slot1
 		}
 		x = 10
 		y = 6
@@ -811,7 +833,7 @@ focus_tree = {
 			available_if_capitulated = yes
 			completion_reward = {
 					add_tech_bonus = {
-							name = MAD_4research_new_enegry_options
+							name = MAD_research_new_enegry_options
 							bonus = 0.5
 							uses = 1
 							category = nuclear
@@ -820,13 +842,37 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4army_modernisation
-		icon = GFX_goal_generic_army_doctrines
+		id = MAD_additional_research_slot2
+		icon = research
 		cost = 10.00
 		prerequisite = {
-			focus = MAD_4armystart
+			focus = MAD_research_new_enegry_options
 		}
-		x = 15
+		prerequisite = {
+			focus = MAD_rocket1
+		}
+		x = 9
+		y = 7
+			available = {
+					num_of_factories > 50
+				}
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_research_slot = 1
+				}
+
+	}
+	focus = {
+		id = MAD_army_modernisation
+		icon = tank2
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_armystart
+		}
+		x = 13
 		y = 1
 			ai_will_do = {
 					factor = 10
@@ -838,64 +884,20 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4support1
-		icon = GFX_goal_generic_build_tank
+		id = MAD_infequip1
+		icon = small_arms5
 		cost = 4.00
 		prerequisite = {
-			focus = MAD_4army_modernisation
+			focus = MAD_army_modernisation
 		}
-		x = 13
+		x = 12
 		y = 2
 			ai_will_do = {
 					factor = 10
 				}
 			completion_reward = {
 					add_tech_bonus = {
-							name = MAD_4army_modernisation
-							bonus = 0.5
-							uses = 2
-							category = support_tech
-						}
-				}
-
-	}
-	focus = {
-		id = MAD_4support2
-		icon = GFX_goal_generic_build_tank
-		cost = 4.00
-		prerequisite = {
-			focus = MAD_4support1
-		}
-		x = 13
-		y = 3
-			ai_will_do = {
-					factor = 10
-				}
-			completion_reward = {
-					add_tech_bonus = {
-							name = MAD_4army_modernisation
-							bonus = 0.5
-							uses = 2
-							category = support_tech
-						}
-				}
-
-	}
-	focus = {
-		id = MAD_4infequip1
-		icon = GFX_focus_secret_rearmament
-		cost = 4.00
-		prerequisite = {
-			focus = MAD_4army_modernisation
-		}
-		x = 15
-		y = 2
-			ai_will_do = {
-					factor = 10
-				}
-			completion_reward = {
-					add_tech_bonus = {
-							name = MAD_4army_modernisation
+							name = MAD_army_modernisation
 							bonus = 0.5
 							uses = 2
 							category = infantry_weapons
@@ -904,20 +906,20 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4infequip2
-		icon = GFX_focus_secret_rearmament
+		id = MAD_infequip2
+		icon = small_arms5
 		cost = 4.00
 		prerequisite = {
-			focus = MAD_4infequip1
+			focus = MAD_infequip1
 		}
-		x = 15
+		x = 12
 		y = 3
 			ai_will_do = {
 					factor = 10
 				}
 			completion_reward = {
 					add_tech_bonus = {
-							name = MAD_4army_modernisation
+							name = MAD_army_modernisation
 							bonus = 0.5
 							uses = 2
 							category = infantry_weapons
@@ -926,13 +928,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4mech1
-		icon = GFX_goal_generic_army_motorized
+		id = MAD_mech1
+		icon = motorized
 		cost = 4.00
 		prerequisite = {
-			focus = MAD_4army_modernisation
+			focus = MAD_army_modernisation
 		}
-		x = 17
+		x = 14
 		y = 2
 			ai_will_do = {
 					factor = 10
@@ -949,13 +951,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4tank1
-		icon = GFX_goal_generic_army_tanks
+		id = MAD_tank1
+		icon = tank
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4mech1
+			focus = MAD_mech1
 		}
-		x = 17
+		x = 14
 		y = 3
 			ai_will_do = {
 					factor = 10
@@ -963,7 +965,7 @@ focus_tree = {
 			available_if_capitulated = yes
 			completion_reward = {
 					add_tech_bonus = {
-							name = MAD_4create_main_battle_tanks
+							name = MAD_create_main_battle_tanks
 							bonus = 0.5
 							uses = 2
 							category = armor
@@ -972,32 +974,36 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4armystg2
-		icon = GFX_goal_generic_axis_build_infantry
-		cost = 10.00
+		id = MAD_spec2
+		icon = special_forces
+		cost = 5.00
 		prerequisite = {
-			focus = MAD_4infequip2
-			focus = MAD_4tank1
-			focus = MAD_4support2
+			focus = MAD_tank1
+			focus = MAD_infequip2
 		}
-		x = 15
+		x = 13
 		y = 4
 			ai_will_do = {
 					factor = 10
 				}
 			completion_reward = {
-					add_ideas = LAW_arty3
+					add_tech_bonus = {
+							name = special_forces_bonus
+							bonus = 0.5
+							uses = 2
+							category = infantry_weapons
+						}
 				}
 
 	}
 	focus = {
-		id = MAD_4import_new_howitzers
-		icon = GFX_goal_generic_army_artillery2
+		id = MAD_at1
+		icon = artillery
 		cost = 4.00
 		prerequisite = {
-			focus = MAD_4armystg2
+			focus = MAD_spec2
 		}
-		x = 13
+		x = 12
 		y = 5
 			ai_will_do = {
 					factor = 10
@@ -1005,29 +1011,29 @@ focus_tree = {
 			available_if_capitulated = yes
 			completion_reward = {
 					add_tech_bonus = {
-							name = MAD_4import_new_howitzers
+							name = MAD_anti_tank_guns
 							bonus = 0.5
 							uses = 2
-							category = artillery
+							category = cat_anti_tank
 						}
 				}
 
 	}
 	focus = {
-		id = MAD_4mech2
-		icon = GFX_goal_generic_army_motorized
+		id = MAD_mech2
+		icon = motorized
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4armystg2
+			focus = MAD_spec2
 		}
-		x = 17
+		x = 14
 		y = 5
 			ai_will_do = {
 					factor = 10
 				}
 			completion_reward = {
 					add_tech_bonus = {
-							name = MAD_4study_european_tanks
+							name = MAD_study_european_tanks
 							bonus = 0.5
 							uses = 2
 							category = heavy_mechanized
@@ -1036,13 +1042,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4tank2
-		icon = GFX_goal_generic_army_tanks
+		id = MAD_tank2
+		icon = tank
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4mech2
+			focus = MAD_mech2
 		}
-		x = 17
+		x = 14
 		y = 6
 			ai_will_do = {
 					factor = 10
@@ -1050,7 +1056,7 @@ focus_tree = {
 			available_if_capitulated = yes
 			completion_reward = {
 					add_tech_bonus = {
-							name = MAD_4study_european_tanks
+							name = MAD_study_european_tanks
 							bonus = 0.5
 							uses = 2
 							category = armor
@@ -1059,13 +1065,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4army_modernisation2
-		icon = GFX_goal_generic_army_doctrines
+		id = MAD_army_modernisation2
+		icon = tank2
 		cost = 10.00
 		prerequisite = {
-			focus = MAD_4armystart
+			focus = MAD_armystart
 		}
-		x = 21
+		x = 17
 		y = 1
 			ai_will_do = {
 					factor = 10
@@ -1076,13 +1082,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4leader1
-		icon = GFX_focus_generic_military_mission
+		id = MAD_leader1
+		icon = military_mission
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4army_modernisation2
+			focus = MAD_army_modernisation2
 		}
-		x = 19
+		x = 16
 		y = 2
 			ai_will_do = {
 					factor = 10
@@ -1101,13 +1107,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4leader2
-		icon = GFX_focus_generic_military_mission
+		id = MAD_leader2
+		icon = military_mission
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4leader1
+			focus = MAD_leader1
 		}
-		x = 19
+		x = 16
 		y = 3
 			ai_will_do = {
 					factor = 10
@@ -1116,6 +1122,7 @@ focus_tree = {
 					army_experience = 10
 					create_field_marshal = {
 							name = "Paulino Santo Jr"
+							picture = "Portrait_Philippines_Land_General_4.dds"
 							traits = { combined_arms_expert  career_officer }
 							skill = 2
 							attack_skill = 3
@@ -1131,13 +1138,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4doc1
-		icon = GFX_goal_generic_air_doctrine
+		id = MAD_doc1
+		icon = air_doctrine
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4army_modernisation2
+			focus = MAD_army_modernisation2
 		}
-		x = 21
+		x = 18
 		y = 2
 			ai_will_do = {
 					factor = 10
@@ -1153,13 +1160,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4doc2
-		icon = GFX_goal_generic_air_doctrine
+		id = MAD_doc2
+		icon = air_doctrine
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4doc1
+			focus = MAD_doc1
 		}
-		x = 21
+		x = 18
 		y = 3
 			ai_will_do = {
 					factor = 10
@@ -1175,59 +1182,14 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4spec1
-		icon = GFX_goal_generic_amMADbious_assault
-		cost = 5.00
-		prerequisite = {
-			focus = MAD_4army_modernisation2
-		}
-		x = 23
-		y = 2
-			ai_will_do = {
-					factor = 10
-				}
-			completion_reward = {
-					add_tech_bonus = {
-							name = special_forces_bonus
-							bonus = 0.5
-							uses = 2
-							category = infantry_weapons
-						}
-				}
-
-	}
-	focus = {
-		id = MAD_4spec2
-		icon = GFX_goal_generic_special_forces
-		cost = 5.00
-		prerequisite = {
-			focus = MAD_4spec1
-		}
-		x = 23
-		y = 3
-			ai_will_do = {
-					factor = 10
-				}
-			completion_reward = {
-					add_tech_bonus = {
-							name = special_forces_bonus
-							bonus = 0.5
-							uses = 2
-							category = infantry_weapons
-						}
-				}
-
-	}
-	focus = {
-		id = MAD_4armystg3
-		icon = GFX_goal_generic_axis_build_infantry
+		id = MAD_armystg3
+		icon = fascism
 		cost = 10.00
 		prerequisite = {
-			focus = MAD_4spec2
-			focus = MAD_4doc2
-			focus = MAD_4leader2
+			focus = MAD_leader2
+			focus = MAD_doc2
 		}
-		x = 21
+		x = 17
 		y = 4
 			ai_will_do = {
 					factor = 10
@@ -1244,13 +1206,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4leader3
-		icon = GFX_focus_generic_military_mission
+		id = MAD_leader3
+		icon = military_mission
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4armystg3
+			focus = MAD_armystg3
 		}
-		x = 19
+		x = 16
 		y = 5
 			ai_will_do = {
 					factor = 10
@@ -1269,60 +1231,57 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4spec3
-		icon = GFX_goal_generic_amMADbious_assault
+		id = MAD_doc3
+		icon = air_doctrine
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4armystg3
+			focus = MAD_armystg3
 		}
-		x = 23
+		x = 18
 		y = 5
 			ai_will_do = {
 					factor = 10
 				}
-			available_if_capitulated = yes
 			completion_reward = {
-					add_ideas = LAW_island_hopping
 					add_tech_bonus = {
-							name = MAD_4spec3
+							name = land_doc_bonus
 							bonus = 0.5
-							uses = 1
+							uses = 2
 							category = land_doctrine
-							category = tp_tech
 						}
 				}
 
 	}
 	focus = {
-		id = MAD_4spec4
-		icon = GFX_focus_generic_paratrooper
+		id = MAD_doc4
+		icon = air_doctrine
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4spec3
+			focus = MAD_doc3
 		}
-		x = 23
+		x = 18
 		y = 6
 			ai_will_do = {
 					factor = 10
 				}
 			completion_reward = {
 					add_tech_bonus = {
-							name = special_forces_bonus
+							name = land_doc_bonus
 							bonus = 0.5
 							uses = 2
-							category = marine_tech
+							category = land_doctrine
 						}
 				}
 
 	}
 	focus = {
-		id = MAD_4pacific_navy
-		icon = GFX_goal_generic_navy_battleship
+		id = MAD_navy_start
+		icon = navy
 		cost = 10.00
 		prerequisite = {
-			focus = MAD_4armystart
+			focus = MAD_armystart
 		}
-		x = 30
+		x = 25
 		y = 1
 			ai_will_do = {
 					factor = 10
@@ -1334,13 +1293,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4navaldoc1
-		icon = GFX_goal_unknown
+		id = MAD_navaldoc1
+		icon = naval_doctrine
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4pacific_navy
+			focus = MAD_navy_start
 		}
-		x = 26
+		x = 21
 		y = 2
 			ai_will_do = {
 
@@ -1356,13 +1315,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4navaldoc2
-		icon = GFX_goal_unknown
+		id = MAD_navaldoc2
+		icon = naval_doctrine
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4navaldoc1
+			focus = MAD_navaldoc1
 		}
-		x = 26
+		x = 21
 		y = 3
 			ai_will_do = {
 
@@ -1378,13 +1337,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4navaldoc3
-		icon = GFX_goal_unknown
+		id = MAD_navaldoc3
+		icon = naval_doctrine
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4navaldoc2
+			focus = MAD_navaldoc2
 		}
-		x = 26
+		x = 21
 		y = 4
 			ai_will_do = {
 
@@ -1400,13 +1359,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4navaldoc4
-		icon = GFX_goal_unknown
+		id = MAD_navaldoc4
+		icon = naval_doctrine
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4navaldoc3
+			focus = MAD_navaldoc3
 		}
-		x = 26
+		x = 21
 		y = 5
 			ai_will_do = {
 
@@ -1422,13 +1381,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4sub1
-		icon = GFX_goal_generic_wolf_pack
+		id = MAD_sub1
+		icon = submarines
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4pacific_navy
+			focus = MAD_navy_start
 		}
-		x = 28
+		x = 23
 		y = 2
 			ai_will_do = {
 					factor = 10
@@ -1445,13 +1404,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4sub3
-		icon = GFX_goal_poland_goal
+		id = MAD_sub3
+		icon = submarines
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4sub1
+			focus = MAD_sub1
 		}
-		x = 28
+		x = 23
 		y = 3
 			completion_reward = {
 					add_tech_bonus = {
@@ -1464,13 +1423,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4sub2
-		icon = GFX_goal_generic_navy_submarine
+		id = MAD_sub2
+		icon = submarines
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4sub3
+			focus = MAD_sub3
 		}
-		x = 28
+		x = 23
 		y = 4
 			ai_will_do = {
 					factor = 10
@@ -1487,13 +1446,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4island_defense
-		icon = GFX_goal_generic_navy_cruiser
+		id = MAD_navy_destroyer1
+		icon = anti_submarine
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4pacific_navy
+			focus = MAD_navy_start
 		}
-		x = 30
+		x = 25
 		y = 2
 			ai_will_do = {
 					factor = 10
@@ -1510,13 +1469,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4navyscrn1
-		icon = GFX_focus_generic_destroyer
+		id = MAD_navy_destroyer2
+		icon = anti_submarine
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4island_defense
+			focus = MAD_navy_destroyer1
 		}
-		x = 30
+		x = 25
 		y = 3
 			ai_will_do = {
 					factor = 10
@@ -1532,13 +1491,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4navyscrn2
-		icon = GFX_focus_generic_cruiser2
+		id = MAD_navy_destroyer3
+		icon = cruisers
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4navyscrn1
+			focus = MAD_navy_destroyer2
 		}
-		x = 30
+		x = 25
 		y = 4
 			ai_will_do = {
 					factor = 10
@@ -1550,21 +1509,20 @@ focus_tree = {
 							uses = 2
 							category = ca_tech
 						}
-
 				}
 
 	}
 	focus = {
-		id = MAD_4anti_sub_defense_force
-		icon = GFX_goal_generic_navy_anti_submarine
+		id = MAD_anti_sub
+		icon = anti_submarine
 		cost = 10.00
 		prerequisite = {
-			focus = MAD_4sub2
+			focus = MAD_sub2
 		}
 		prerequisite = {
-			focus = MAD_4navyscrn2
+			focus = MAD_navy_destroyer3
 		}
-		x = 29
+		x = 24
 		y = 5
 			ai_will_do = {
 					factor = 10
@@ -1581,13 +1539,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4carrier1
-		icon = GFX_goal_generic_navy_carrier
+		id = MAD_carrier1
+		icon = carriers
 		cost = 4.00
 		prerequisite = {
-			focus = MAD_4pacific_navy
+			focus = MAD_navy_start
 		}
-		x = 32
+		x = 27
 		y = 2
 			ai_will_do = {
 					factor = 10
@@ -1603,13 +1561,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4carrier2
-		icon = GFX_goal_generic_navy_carrier
+		id = MAD_carrier2
+		icon = carriers
 		cost = 4.00
 		prerequisite = {
-			focus = MAD_4carrier1
+			focus = MAD_carrier1
 		}
-		x = 32
+		x = 27
 		y = 3
 			ai_will_do = {
 					factor = 10
@@ -1625,13 +1583,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4carrier3
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		id = MAD_carrier3
+		icon = carriers
 		cost = 4.00
 		prerequisite = {
-			focus = MAD_4carrier2
+			focus = MAD_carrier2
 		}
-		x = 32
+		x = 27
 		y = 4
 			ai_will_do = {
 					factor = 10
@@ -1647,16 +1605,16 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4navydef2
-		icon = GFX_goal_generic_navy_battleship
+		id = MAD_navydef2
+		icon = battleships
 		cost = 10.00
 		prerequisite = {
-			focus = MAD_4navyscrn2
+			focus = MAD_navy_destroyer3
 		}
 		prerequisite = {
-			focus = MAD_4carrier3
+			focus = MAD_carrier3
 		}
-		x = 31
+		x = 26
 		y = 5
 			ai_will_do = {
 					factor = 10
@@ -1667,14 +1625,14 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4navymisc1
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		id = MAD_navymisc1
+		icon = navy2
 		cost = 10.00
 		prerequisite = {
-			focus = MAD_4navydef2
-			focus = MAD_4anti_sub_defense_force
+			focus = MAD_navydef2
+			focus = MAD_anti_sub
 		}
-		x = 30
+		x = 25
 		y = 6
 			ai_will_do = {
 					factor = 10
@@ -1685,13 +1643,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4dockyard1
-		icon = GFX_goal_generic_construct_naval_dockyard
+		id = MAD_dockyard1
+		icon = naval_dockyards
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4pacific_navy
+			focus = MAD_navy_start
 		}
-		x = 34
+		x = 29
 		y = 2
 			ai_will_do = {
 					factor = 2
@@ -1717,13 +1675,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4dockyards2
-		icon = GFX_goal_generic_construct_naval_dockyard
+		id = MAD_dockyards2
+		icon = naval_dockyards
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4dockyard1
+			focus = MAD_dockyard1
 		}
-		x = 34
+		x = 29
 		y = 3
 			ai_will_do = {
 					factor = 10
@@ -1748,13 +1706,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4dockyard3
-		icon = GFX_goal_generic_construct_naval_dockyard
+		id = MAD_dockyard3
+		icon = naval_dockyards
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4dockyards2
+			focus = MAD_dockyards2
 		}
-		x = 34
+		x = 29
 		y = 4
 			ai_will_do = {
 					factor = 10
@@ -1779,13 +1737,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4dockyard4
-		icon = GFX_goal_continuous_naval_production
+		id = MAD_dockyard4
+		icon = naval_dockyards
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4dockyard3
+			focus = MAD_dockyard3
 		}
-		x = 34
+		x = 29
 		y = 5
 			ai_will_do = {
 					factor = 10
@@ -1811,13 +1769,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4air_innovations
-		icon = GFX_goal_generic_build_airforce
+		id = MAD_air_innovations
+		icon = airforce
 		cost = 10.00
 		prerequisite = {
-			focus = MAD_4armystart
+			focus = MAD_armystart
 		}
-		x = 41
+		x = 33
 		y = 1
 			ai_will_do = {
 					factor = 10
@@ -1834,132 +1792,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4airbuild1
-		icon = GFX_goal_generic_air_production
+		id = MAD_study_planes1
+		icon = bombs2
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4air_innovations
+			focus = MAD_air_innovations
 		}
-		x = 37
-		y = 2
-			ai_will_do = {
-					factor = 1
-				}
-			available_if_capitulated = yes
-			complete_tooltip = {
-				}
-			completion_reward = {
-						random_owned_controlled_state = {
-							prioritize = { 10 }
-							limit = {
-									free_building_slots = {
-											building = air_base
-											size > 1
-										}
-								}
-							add_building_construction = {
-									type = air_base
-									level = 2
-									instant_build = yes
-								}
-						}
-				}
-
-	}
-	focus = {
-		id = MAD_4airbuild2
-		icon = GFX_goal_generic_build_airforce
-		cost = 5.00
-		prerequisite = {
-			focus = MAD_4airbuild1
-		}
-		x = 37
-		y = 3
-			ai_will_do = {
-					factor = 10
-				}
-			completion_reward = {
-					random_owned_state = {
-							add_building_construction = {
-									type = air_base
-									level = 8
-									instant_build = yes
-								}
-						}
-				}
-
-	}
-	focus = {
-		id = MAD_4airbuild3
-		icon = GFX_goal_generic_radar
-		cost = 5.00
-		prerequisite = {
-			focus = MAD_4airbuild2
-		}
-		x = 37
-		y = 4
-			ai_will_do = {
-					factor = 10
-				}
-			completion_reward = {
-					random_owned_state = {
-							add_building_construction = {
-									type = air_base
-									level = 8
-									instant_build = yes
-								}
-						}
-				}
-
-	}
-	focus = {
-		id = MAD_4airbuild4
-		icon = GFX_goal_generic_air_production
-		cost = 5.00
-		prerequisite = {
-			focus = MAD_4airbuild3
-		}
-		x = 37
-		y = 5
-			ai_will_do = {
-					factor = 10
-				}
-			completion_reward = {
-					add_ideas = LAW_airbase
-				}
-
-	}
-	focus = {
-		id = MAD_4light_bomber_focus
-		icon = GFX_goal_generic_CAS
-		cost = 5.00
-		prerequisite = {
-			focus = MAD_4air_innovations
-		}
-		x = 39
-		y = 2
-			ai_will_do = {
-					factor = 10
-				}
-			available_if_capitulated = yes
-			completion_reward = {
-					add_tech_bonus = {
-							name = POL_light_bomber_focus
-							bonus = 0.5
-							uses = 2
-							category = tactical_bomber
-						}
-				}
-
-	}
-	focus = {
-		id = MAD_4study_allied_and_axis_naval_tactics
-		icon = GFX_goal_generic_air_bomber
-		cost = 5.00
-		prerequisite = {
-			focus = MAD_4light_bomber_focus
-		}
-		x = 39
+		x = 32
 		y = 3
 			ai_will_do = {
 					factor = 10
@@ -1971,60 +1810,14 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4medium_bomber_focus
-		icon = GFX_goal_generic_occupy_start_war
+		id = MAD_study_planes2
+		icon = fighter
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4study_allied_and_axis_naval_tactics
+			focus = MAD_study_planes1
 		}
-		x = 39
+		x = 32
 		y = 4
-			ai_will_do = {
-					factor = 10
-				}
-			available_if_capitulated = yes
-			completion_reward = {
-					add_tech_bonus = {
-							name = POL_medium_bomber_focus
-							bonus = 0.5
-							uses = 2
-							category = cat_strategic_bomber
-						}
-				}
-
-	}
-	focus = {
-		id = MAD_4naval_bomber_experiments
-		icon = GFX_goal_generic_air_naval_bomber
-		cost = 5.00
-		prerequisite = {
-			focus = MAD_4air_innovations
-		}
-		x = 41
-		y = 2
-			ai_will_do = {
-					factor = 10
-				}
-			available_if_capitulated = yes
-			completion_reward = {
-					add_tech_bonus = {
-							name = MAD_4the_unified_islands_plan
-							bonus = 0.5
-							uses = 2
-							category = air_equipment
-						}
-				}
-
-	}
-	focus = {
-		id = MAD_4heavy_fighter_concept
-		icon = GFX_goal_generic_air_fighter2
-		cost = 5.00
-		prerequisite = {
-			focus = MAD_4naval_bomber_experiments
-		}
-		x = 41
-		y = 3
 			ai_will_do = {
 					factor = 10
 				}
@@ -2035,51 +1828,31 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4airmisc1
-		icon = GFX_goal_generic_air_fighter2
+		id = MAD_study_planes3
+		icon = bombs
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4heavy_fighter_concept
+			focus = MAD_air_innovations
 		}
-		x = 41
+		x = 34
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = LAW_air
+				}
+
+	}
+	focus = {
+		id = MAD_study_planes4
+		icon = air_doctrine
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_study_planes3
+		}
+		x = 34
 		y = 4
-			ai_will_do = {
-					factor = 10
-				}
-			completion_reward = {
-					add_ideas = LAW_air3
-				}
-
-	}
-	focus = {
-		id = MAD_4airtech1
-		icon = GFX_focus_generic_cryptologic_bomb
-		cost = 5.00
-		prerequisite = {
-			focus = MAD_4airmisc1
-		}
-		prerequisite = {
-			focus = MAD_4medium_bomber_focus
-		}
-		x = 40
-		y = 5
-			ai_will_do = {
-					factor = 10
-				}
-			completion_reward = {
-				add_ideas = LAW_airsup
-				}
-
-	}
-	focus = {
-		id = MAD_4fighter_modernisation
-		icon = GFX_goal_generic_air_fighter
-		cost = 5.00
-		prerequisite = {
-			focus = MAD_4air_innovations
-		}
-		x = 43
-		y = 2
 			ai_will_do = {
 					factor = 10
 				}
@@ -2095,57 +1868,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4air_modernisations_program
-		icon = GFX_goal_generic_air_doctrine
+		id = MAD_rocket_development
+		icon = rocketry
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4fighter_modernisation
+			focus = MAD_study_planes4
 		}
-		x = 43
-		y = 3
-			ai_will_do = {
-					factor = 10
-				}
-			available_if_capitulated = yes
-			completion_reward = {
-				add_tech_bonus = {
-							name = POL_fighter_modernisation
-							bonus = 0.5
-							uses = 2
-							category = light_fighter
-						}
-				}
-
-	}
-	focus = {
-		id = MAD_4jet2
-		icon = GFX_focus_chi_flying_tigers
-		cost = 5.00
-		prerequisite = {
-			focus = MAD_4air_modernisations_program
-		}
-		x = 43
-		y = 4
-			ai_will_do = {
-					factor = 10
-				}
-			completion_reward = {
-			add_ideas = LAW_air
-
-			}
-
-	}
-	focus = {
-		id = MAD_4rocket_development
-		icon = GFX_focus_rocketry
-		cost = 5.00
-		prerequisite = {
-			focus = MAD_4airmisc1
-		}
-		prerequisite = {
-			focus = MAD_4jet2
-		}
-		x = 42
+		x = 34
 		y = 5
 			ai_will_do = {
 					factor = 1
@@ -2162,14 +1891,14 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4airfin
-		icon = GFX_goal_continuous_air_production
+		id = MAD_airfin
+		icon = continuous_air_production
 		cost = 20.00
 		prerequisite = {
-			focus = MAD_4airtech1
-			focus = MAD_4rocket_development
+			focus = MAD_airtech1
+			focus = MAD_rocket_development
 		}
-		x = 41
+		x = 33
 		y = 6
 			ai_will_do = {
 					factor = 10
@@ -2180,13 +1909,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4airdoc1
-		icon = GFX_goal_unknown
+		id = MAD_airdoc1
+		icon = air_doctrine
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4air_innovations
+			focus = MAD_air_innovations
 		}
-		x = 45
+		x = 36
 		y = 2
 			ai_will_do = {
 
@@ -2202,13 +1931,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4airdoc2
-		icon = GFX_goal_unknown
+		id = MAD_airdoc2
+		icon = air_doctrine
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4airdoc1
+			focus = MAD_airdoc1
 		}
-		x = 45
+		x = 36
 		y = 3
 			ai_will_do = {
 
@@ -2224,13 +1953,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4airdoc3
-		icon = GFX_goal_unknown
+		id = MAD_airdoc3
+		icon = air_doctrine
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4airdoc2
+			focus = MAD_airdoc2
 		}
-		x = 45
+		x = 36
 		y = 4
 			ai_will_do = {
 
@@ -2246,91 +1975,66 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4a_new_regime
-		icon = GFX_goal_generic_attack_allies
-		cost = 5.00
+		id = MAD_national_strength
+		icon = political_pressure
+		cost = 10.00
 		prerequisite = {
-			focus = MAD_4govstart1
+			focus = MAD_goverment_rebirth
 		}
-		x = 63
+		x = 48
 		y = 1
-			ai_will_do = {
-					factor = 2.5
-				}
-			available_if_capitulated = yes
 			completion_reward = {
-					add_ideas = idea_focus_generic_path_of_order
+					add_timed_idea = {
+							idea = idea_focus_generic_national_strength
+							days = 365
+						}
+					if = {
+							limit = {
+									has_democratic_form_of_government = no
+								}
+							add_stability = 0.03
+						}
+					if = {
+							limit = {
+									has_democratic_form_of_government = yes
+								}
+							add_stability = -0.03
+						}
+				}
+			ai_will_do = {
+					factor = 10
 				}
 
 	}
 	focus = {
-		id = MAD_4ideological_fanaticism
-		icon = GFX_goal_generic_propaganda
-		cost = 5.00
+		id = MAD_peace_keeping_youth
+		icon = military_mission
+		cost = 10.00
 		prerequisite = {
-			focus = MAD_4govstart1
+			focus = MAD_national_strength
 		}
-		x = 61
-		y = 1
+		x = 43
+		y = 2
 			ai_will_do = {
 					factor = 1
 				}
 			available_if_capitulated = yes
 			completion_reward = {
-					add_ideas = infrastructure_project2
+					add_ideas = LAW_military_youth_focus
 				}
 
 	}
 	focus = {
-		id = MAD_4gov1
-		icon = GFX_focus_generic_self_management
+		id = MAD_support_the_party
+		icon = race_relations2
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4govstart1
+			focus = MAD_peace_keeping_youth
 		}
-		x = 65
-		y = 1
-			ai_will_do = {
-					factor = 10
-				}
-			completion_reward = {
-					add_war_support = .05
-					add_stability = .10
-				}
-
-	}
-	focus = {
-		id = MAD_4post_indenpence_stabilization
-		icon = GFX_goal_generic_demand_territory
-		cost = 5.00
-		prerequisite = {
-			focus = MAD_4a_new_regime
+		mutually_exclusive = {
+			focus = MAD_post_indenpence_stabilization
 		}
-		prerequisite = {
-			focus = MAD_4ideological_fanaticism
-		}
-		prerequisite = {
-			focus = MAD_4gov1
-		}
-		x = 57
-		y = 2
-			ai_will_do = {
-					factor = 10
-				}
-			available_if_capitulated = yes
-			completion_reward = {
-					add_political_power = 250
-				}
-
-	}
-	focus = {
-		id = MAD_4support_the_ganap_party
-		icon = GFX_goal_support_fascism
-		cost = 5.00
-		prerequisite = {
-			focus = MAD_4post_indenpence_stabilization
-		}
-		x = 52
+		x = 42
 		y = 3
 			ai_will_do = {
 					factor = 1
@@ -2342,13 +2046,67 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4goal1
-		icon = GFX_goal_support_democracy
+		id = MAD_post_indenpence_stabilization
+		icon = demand_territory
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4support_the_ganap_party
+			focus = MAD_peace_keeping_youth
 		}
-		x = 48
+		mutually_exclusive = {
+			focus = MAD_support_the_party
+		}
+		x = 44
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_political_power = 250
+				}
+
+	}
+	focus = {
+		id = MAD_goal3
+		icon = constitution
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_support_the_party
+			focus = MAD_post_indenpence_stabilization
+		}
+		x = 43
+		y = 4
+			ai_will_do = {
+					factor = 1
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					422 = {
+							add_core_of = MAD
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = infrastructure
+									level = 3
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = dockyard
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_goal1
+		icon = constitution
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_support_the_party
+			focus = MAD_post_indenpence_stabilization
+		}
+		x = 39
 		y = 4
 			ai_will_do = {
 					factor = 5
@@ -2369,31 +2127,117 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4goal2
-		icon = GFX_goal_generic_military_deal
+		id = MAD_goal2
+		icon = constitution
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4support_the_ganap_party
+			focus = MAD_support_the_party
+			focus = MAD_post_indenpence_stabilization
 		}
-		x = 50
+		x = 41
 		y = 4
 			ai_will_do = {
 					factor = 5
 				}
 			available_if_capitulated = yes
 			completion_reward = {
-					transfer_state = 659
+					add_state_core = 856
+					transfer_state = 856
 				}
 
 	}
 	focus = {
-		id = MAD_4goal4
-		icon = GFX_focus_generic_coastal_fort
+		id = MAD_claim3
+		icon = renounce_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_goal3
+		}
+		x = 43
+		y = 5
+			ai_will_do = {
+					factor = 1
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					422 = {
+							add_core_of = MAD
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = infrastructure
+									level = 3
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = dockyard
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_war3
+		icon = war
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_claim3
+		}
+		x = 43
+		y = 6
+			ai_will_do = {
+					factor = 1
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					transfer_state = 648
+					648 = {
+							add_core_of = PHI
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = infrastructure
+									level = 3
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = dockyard
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_vic3
+		icon = industry_democratic4
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_war3
+		}
+		x = 43
+		y = 7
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = JAP
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_goal4
+		icon = constitution
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4support_the_ganap_party
+			focus = MAD_support_the_party
+			focus = MAD_post_indenpence_stabilization
 		}
-		x = 54
+		x = 45
 		y = 4
 			ai_will_do = {
 					factor = 10
@@ -2418,770 +2262,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4goal5
-		icon = GFX_focus_prc_remove_chiang_kai_shek
-		cost = 5
-		prerequisite = {
-			focus = MAD_4support_the_ganap_party
-		}
-		x = 56
-		y = 4
-			completion_reward = {
-					create_wargoal = {
-							type = annex_everything
-							target = OMA
-						}
-					create_wargoal = {
-							type = annex_everything
-							target = YEM
-						}
-				}
-
-	}
-	focus = {
-		id = MAD_4addon1
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = MAD_4post_indenpence_stabilization
-		}
-		x = 61
-		y = 3
-			ai_will_do = {
-
-}
-			completion_reward = {
-					set_rule = {
-							can_create_factions = yes
-						}
-				}
-
-	}
-	focus = {
-		id = MAD_4build_slot1
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = MAD_4addon1
-		}
-		x = 59
-		y = 4
-			ai_will_do = {
-
-}
-			completion_reward = {
-					every_owned_state = {
-							add_extra_state_shared_building_slots = 3
-						}
-				}
-
-	}
-	focus = {
-		id = MAD_4build_slot2
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = MAD_4build_slot1
-		}
-		x = 59
-		y = 5
-			ai_will_do = {
-
-}
-			completion_reward = {
-					every_owned_state = {
-							add_extra_state_shared_building_slots = 3
-						}
-				}
-
-	}
-	focus = {
-		id = MAD_4build_slot3
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = MAD_4build_slot2
-		}
-		x = 59
-		y = 6
-			ai_will_do = {
-
-}
-			completion_reward = {
-					every_owned_state = {
-							add_extra_state_shared_building_slots = 3
-						}
-				}
-
-	}
-	focus = {
-		id = MAD_4build_slot4
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = MAD_4build_slot3
-		}
-		x = 59
-		y = 7
-			ai_will_do = {
-
-}
-			completion_reward = {
-					every_owned_state = {
-							add_extra_state_shared_building_slots = 3
-						}
-				}
-
-	}
-	focus = {
-		id = MAD_4core1
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = MAD_4addon1
-		}
-		x = 61
-		y = 4
-			ai_will_do = {
-
-}
-			completion_reward = {
-					every_owned_state = {
-							add_core_of = MAD
-						}
-				}
-
-	}
-	focus = {
-		id = MAD_4core2
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = MAD_4core1
-		}
-		x = 61
-		y = 5
-			ai_will_do = {
-
-}
-			completion_reward = {
-					every_owned_state = {
-							add_core_of = MAD
-						}
-				}
-
-	}
-	focus = {
-		id = MAD_4core3
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = MAD_4core2
-		}
-		x = 61
-		y = 6
-			ai_will_do = {
-
-}
-			completion_reward = {
-					every_owned_state = {
-							add_core_of = MAD
-						}
-				}
-
-	}
-	focus = {
-		id = MAD_4core4
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = MAD_4core3
-		}
-		x = 61
-		y = 7
-			ai_will_do = {
-
-}
-			completion_reward = {
-					every_owned_state = {
-							add_core_of = MAD
-						}
-				}
-
-	}
-	focus = {
-		id = MAD_4gov5
-		icon = GFX_goal_generic_intelligence_exchange
-		cost = 5.00
-		prerequisite = {
-			focus = MAD_4addon1
-		}
-		x = 63
-		y = 4
-			ai_will_do = {
-					factor = 10
-				}
-			completion_reward = {
-					add_ideas = government_expansion
-				}
-
-	}
-	focus = {
-		id = MAD_4gov6
-		icon = GFX_goal_tfv_generic_tech_sharing
-		cost = 5.00
-		prerequisite = {
-			focus = MAD_4gov5
-		}
-		x = 63
-		y = 5
-			ai_will_do = {
-					factor = 10
-				}
-			completion_reward = {
-					swap_ideas = {
-							remove_idea = government_expansion
-							add_idea = government_expansion2
-						}
-				}
-
-	}
-	focus = {
-		id = MAD_4gov8
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = MAD_4gov6
-		}
-		x = 63
-		y = 6
-			completion_reward = {
-					swap_ideas = {
-							remove_idea = government_expansion2
-							add_idea = government_expansion3
-						}
-				}
-
-	}
-	focus = {
-		id = MAD_4gov9
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = MAD_4gov8
-		}
-		x = 63
-		y = 7
-			completion_reward = {
-					swap_ideas = {
-							remove_idea = government_expansion3
-							add_idea = government_expansion4
-						}
-				}
-
-	}
-	focus = {
-		id = MAD_4may_2nd_uprising
-		icon = GFX_goal_generic_political_pressure
-		cost = 5.00
-		prerequisite = {
-			focus = MAD_4gov1
-		}
-		prerequisite = {
-			focus = MAD_4a_new_regime
-		}
-		prerequisite = {
-			focus = MAD_4ideological_fanaticism
-		}
-		x = 69
-		y = 2
-			ai_will_do = {
-					factor = 1
-				}
-			available_if_capitulated = yes
-			completion_reward = {
-					set_politics = {
-							parties = {
-									conservative = {
-											popularity = 0
-										}
-									fascist = {
-											popularity = 100
-										}
-									communist = {
-											popularity = 0
-										}
-									reactionary = {
-											popularity = 0
-										}
-								}
-							ruling_party = fascist
-							elections_allowed = no
-						}
-				}
-
-	}
-	focus = {
-		id = MAD_4focus_on_war
-		icon = GFX_focus_cze_german_puppet
-		cost = 10.00
-		prerequisite = {
-			focus = MAD_4may_2nd_uprising
-		}
-		x = 67
-		y = 3
-			ai_will_do = {
-					factor = 10
-				}
-			completion_reward = {
-					set_rule = {
-							can_use_kamikaze_pilots = yes
-						}
-				}
-
-	}
-	focus = {
-		id = MAD_4pop1
-		icon = GFX_focus_prc_infiltration
-		cost = 5.00
-		prerequisite = {
-			focus = MAD_4focus_on_war
-		}
-		x = 66
-		y = 4
-			ai_will_do = {
-					factor = 10
-				}
-			completion_reward = {
-					add_ideas = additional_recruits
-				}
-
-	}
-	focus = {
-		id = MAD_4militarized_police
-		icon = GFX_goal_generic_axis_build_infantry
-		cost = 10.00
-		prerequisite = {
-			focus = MAD_4focus_on_war
-		}
-		x = 68
-		y = 4
-			ai_will_do = {
-					factor = 1
-				}
-			available_if_capitulated = yes
-			completion_reward = {
-					add_ideas = LAW_paramilitarism_focus
-				}
-
-	}
-	focus = {
-		id = MAD_4ruin1
-		icon = GFX_focus_generic_anti_fascist_diplomacy
-		cost = 10.00
-		prerequisite = {
-			focus = MAD_4militarized_police
-		}
-		x = 68
-		y = 5
-			ai_will_do = {
-					factor = 10
-				}
-			completion_reward = {
-					add_ideas = LAW_ruin_1
-				}
-
-	}
-	focus = {
-		id = MAD_4ruin2
-		icon = GFX_focus_generic_anti_fascist_diplomacy
-		cost = 10.00
-		prerequisite = {
-			focus = MAD_4ruin1
-		}
-		x = 68
-		y = 6
-			ai_will_do = {
-					factor = 10
-				}
-			completion_reward = {
-				swap_ideas = {
-					remove_idea = MAD_4end1
-					add_idea = MAD_4end2
-						}
-				}
-
-	}
-	focus = {
-		id = MAD_4ruin3
-		icon = GFX_focus_generic_anti_fascist_diplomacy
-		cost = 10.00
-		prerequisite = {
-			focus = MAD_4ruin2
-		}
-		x = 68
-		y = 7
-			ai_will_do = {
-					factor = 10
-				}
-			completion_reward = {
-				swap_ideas = {
-					remove_idea = MAD_4end2
-					add_idea = MAD_4end3
-						}
-				}
-
-	}
-	focus = {
-		id = MAD_4gov4
-		icon = GFX_focus_generic_the_giant_wakes
-		cost = 10.00
-		prerequisite = {
-			focus = MAD_4may_2nd_uprising
-		}
-		x = 71
-		y = 3
-			ai_will_do = {
-					factor = 10
-				}
-			completion_reward = {
-					add_ideas = LAW_stablized_state
-				}
-
-	}
-	focus = {
-		id = MAD_4autoc
-		icon = GFX_goal_generic_territory_or_war
-		cost = 10.00
-		prerequisite = {
-			focus = MAD_4gov4
-		}
-		mutually_exclusive = {
-			focus = MAD_4freedom
-		}
-		x = 70
-		y = 4
-			ai_will_do = {
-					factor = 10
-				}
-			completion_reward = {
-					random_owned_state = {
-							add_manpower = 250000
-						}
-					random_owned_state = {
-							add_manpower = 250000
-						}
-					random_owned_state = {
-							add_manpower = 250000
-						}
-				}
-
-	}
-	focus = {
-		id = MAD_4freedom
-		icon = GFX_goal_continuous_boost_freedom
-		cost = 10.00
-		prerequisite = {
-			focus = MAD_4gov4
-		}
-		mutually_exclusive = {
-			focus = MAD_4autoc
-		}
-		x = 72
-		y = 4
-			ai_will_do = {
-					factor = 10
-				}
-			completion_reward = {
-					add_ideas = idea_focus_generic_national_heritage
-				}
-
-	}
-	focus = {
-		id = MAD_4fighting_men1
-		icon = GFX_goal_generic_small_arms
-		cost = 10.00
-		prerequisite = {
-			focus = MAD_4autoc
-			focus = MAD_4freedom
-		}
-		x = 70
-		y = 5
-			ai_will_do = {
-					factor = 10
-				}
-			available_if_capitulated = yes
-			completion_reward = {
-					army_experience = 20
-					add_ideas = LAW_inf1
-				}
-
-	}
-	focus = {
-		id = MAD_4fighting_men2
-		icon = GFX_goal_generic_political_pressure
-		cost = 5.00
-		prerequisite = {
-			focus = MAD_4fighting_men1
-		}
-		x = 70
-		y = 6
-			ai_will_do = {
-					factor = 4
-				}
-			available_if_capitulated = yes
-			completion_reward = {
-					add_ideas = LAW_plan1
-				}
-
-	}
-	focus = {
-		id = MAD_4peace_keeping_youth
-		icon = GFX_focus_generic_military_academy
-		cost = 10.00
-		prerequisite = {
-			focus = MAD_4ruin6
-			focus = MAD_4add_people4
-		}
-		x = 69
-		y = 11
-			ai_will_do = {
-					factor = 1
-				}
-			available_if_capitulated = yes
-			completion_reward = {
-					add_ideas = LAW_military_youth_focus
-				}
-
-	}
-	focus = {
-		id = MAD_4add_people1
-		icon = GFX_goal_generic_military_deal
-		cost = 10.00
-		prerequisite = {
-			focus = MAD_4comp_war
-		}
-		prerequisite = {
-			focus = MAD_4fighting_men2
-		}
-		x = 70
-		y = 7
-			ai_will_do = {
-					factor = 10
-				}
-			completion_reward = {
-					random_owned_state = {
-							add_manpower = 250000
-						}
-					random_owned_state = {
-							add_manpower = 250000
-						}
-					random_owned_state = {
-							add_manpower = 250000
-						}
-					random_owned_state = {
-							add_manpower = 250000
-						}
-				}
-
-	}
-	focus = {
-		id = MAD_4additional_research_slot2
-		icon = GFX_focus_research
-		cost = 10.00
-		prerequisite = {
-			focus = MAD_4research_new_enegry_options
-		}
-		prerequisite = {
-			focus = MAD_4rocket1
-		}
-		x = 9
-		y = 7
-			available = {
-					num_of_factories > 50
-				}
-			available_if_capitulated = yes
-			ai_will_do = {
-					factor = 10
-				}
-			completion_reward = {
-					add_research_slot = 1
-				}
-
-	}
-	focus = {
-		id = MAD_4arty2
-		icon = GFX_goal_generic_army_artillery2
-		cost = 4.00
-		prerequisite = {
-			focus = MAD_4import_new_howitzers
-		}
-		x = 13
-		y = 6
-			ai_will_do = {
-					factor = 10
-				}
-			completion_reward = {
-					add_tech_bonus = {
-							name = MAD_4import_new_howitzers
-							bonus = 0.5
-							uses = 2
-							category = artillery
-						}
-				}
-
-	}
-	focus = {
-		id = MAD_4at1
-		icon = GFX_goal_generic_army_artillery
-		cost = 4.00
-		prerequisite = {
-			focus = MAD_4armystg2
-		}
-		x = 15
-		y = 5
-			ai_will_do = {
-					factor = 10
-				}
-			available_if_capitulated = yes
-			completion_reward = {
-					add_tech_bonus = {
-							name = MAD_4anti_tank_guns
-							bonus = 0.5
-							uses = 2
-							category = cat_anti_tank
-						}
-				}
-
-	}
-	focus = {
-		id = MAD_4doc3
-		icon = GFX_goal_generic_air_doctrine
-		cost = 5.00
-		prerequisite = {
-			focus = MAD_4armystg3
-		}
-		x = 21
-		y = 5
-			ai_will_do = {
-					factor = 10
-				}
-			completion_reward = {
-					add_tech_bonus = {
-							name = land_doc_bonus
-							bonus = 0.5
-							uses = 2
-							category = land_doctrine
-						}
-				}
-
-	}
-	focus = {
-		id = MAD_4goal3
-		icon = GFX_goal_generic_trade
-		cost = 5.00
-		prerequisite = {
-			focus = MAD_4support_the_ganap_party
-		}
-		x = 52
-		y = 4
-			ai_will_do = {
-					factor = 1
-				}
-			available_if_capitulated = yes
-			completion_reward = {
-					transfer_state = 422
-				}
-
-	}
-	focus = {
-		id = MAD_4claim3
-		icon = GFX_goal_generic_more_territorial_claims
-		cost = 10.00
-		prerequisite = {
-			focus = MAD_4goal3
-		}
-		x = 52
-		y = 5
-			ai_will_do = {
-					factor = 1
-				}
-			available_if_capitulated = yes
-			completion_reward = {
-					422 = {
-							add_core_of = MAD
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-									type = infrastructure
-									level = 3
-									instant_build = yes
-								}
-							add_building_construction = {
-									type = dockyard
-									level = 2
-									instant_build = yes
-								}
-						}
-				}
-
-	}
-	focus = {
-		id = MAD_4war3
-		icon = GFX_goal_generic_construct_civ_factory
-		cost = 10.00
-		prerequisite = {
-			focus = MAD_4claim3
-		}
-		x = 52
-		y = 6
-			ai_will_do = {
-					factor = 1
-				}
-			available_if_capitulated = yes
-			completion_reward = {
-					422 = {
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-									type = infrastructure
-									level = 3
-									instant_build = yes
-								}
-							add_building_construction = {
-									type = dockyard
-									level = 2
-									instant_build = yes
-								}
-						}
-				}
-
-	}
-	focus = {
-		id = MAD_4vic3
-		icon = GFX_focus_generic_strike_at_democracy2
-		cost = 10.00
-		prerequisite = {
-			focus = MAD_4war3
-		}
-		x = 52
-		y = 7
-			ai_will_do = {
-					factor = 10
-				}
-				completion_reward = {
-					create_wargoal = { type = annex_everything target = RAJ }
-					create_wargoal = { type = annex_everything target = BNG }
-					create_wargoal = { type = annex_everything target = PAK }
-				}
-
-	}
-	focus = {
-		id = MAD_4claim4
-		icon = GFX_goal_generic_defence
+		id = MAD_claim4
+		icon = renounce_treaty
 		cost = 2.00
 		prerequisite = {
-			focus = MAD_4goal4
+			focus = MAD_goal4
 		}
-		x = 54
+		x = 45
 		y = 5
 			ai_will_do = {
 					factor = 10
@@ -3219,13 +2306,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4war4
-		icon = GFX_focus_jap_cast_the_die
+		id = MAD_war4
+		icon = war
 		cost = 10.00
 		prerequisite = {
-			focus = MAD_4claim4
+			focus = MAD_claim4
 		}
-		x = 54
+		x = 45
 		y = 6
 			ai_will_do = {
 					factor = 10
@@ -3245,14 +2332,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4vic4
-		icon = GFX_focus_rom_abdicate
+		id = MAD_vic4
+		icon = industry_democratic4
 		cost = 10.00
-			prerequisite = {
-			focus = MAD_4war4
+		prerequisite = {
+			focus = MAD_war4
 		}
-
-		x = 54
+		x = 45
 		y = 7
 			ai_will_do = {
 					factor = 10
@@ -3278,13 +2364,35 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4claim5
-		icon = GFX_focus_renounce_the_treaty_of_triannon
+		id = MAD_goal5
+		icon = constitution
 		cost = 10.00
 		prerequisite = {
-			focus = MAD_4goal5
+			focus = MAD_support_the_party
+			focus = MAD_post_indenpence_stabilization
 		}
-		x = 56
+		x = 47
+		y = 4
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = UAE
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = QAT
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_claim5
+		icon = renounce_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_goal5
+		}
+		x = 47
 		y = 5
 			completion_reward = {
 					create_wargoal = {
@@ -3299,13 +2407,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4war5
-		icon = GFX_focus_generic_military_mission
+		id = MAD_war5
+		icon = war
 		cost = 10.00
 		prerequisite = {
-			focus = MAD_4claim5
+			focus = MAD_claim5
 		}
-		x = 56
+		x = 47
 		y = 6
 			completion_reward = {
 					declare_war_on = {
@@ -3316,32 +2424,32 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4vic5
-		icon = GFX_goal_molotov_ribbentrop_pact
+		id = MAD_vic5
+		icon = industry_democratic4
 		cost = 10.00
 		prerequisite = {
-			focus = MAD_4war5
+			focus = MAD_war5
 		}
-		x = 56
+		x = 47
 		y = 7
 			completion_reward = {
-					declare_war_on = {
-							target = IRQ
-							type = annex_everything
-						}
-				}
+				declare_war_on = {
+						target = IRQ
+						type = annex_everything
+					}
+			}
 
 	}
 	focus = {
-		id = MAD_4greater_MADlippines_established
-		icon = GFX_goal_generic_military_deal
+		id = MAD_greater_philippines_established
+		icon = military_deal
 		cost = 10.00
 		prerequisite = {
-			focus = MAD_4vic5
-			focus = MAD_4vic4
-			focus = MAD_4vic3
+			focus = MAD_vic5
+			focus = MAD_vic4
+			focus = MAD_vic3
 		}
-		x = 54
+		x = 45
 		y = 8
 			ai_will_do = {
 					factor = 1
@@ -3349,20 +2457,284 @@ focus_tree = {
 			available_if_capitulated = yes
 			completion_reward = {
 					add_political_power = 120
-					add_ideas = LAW_greater
+					add_ideas = LAW_greater_philipines
 				}
 
 	}
 	focus = {
-		id = MAD_4comp_war
-		icon = GFX_focus_rom_parties_end
+		id = MAD_female_workforce
+		icon = national_unity
 		cost = 10.00
 		prerequisite = {
-			focus = MAD_4freedom
-			focus = MAD_4autoc
+			focus = MAD_national_strength
 		}
-		x = 72
+		x = 53
+		y = 2
+			available = {
+					NOT = {
+							has_government = islamist
+						}
+				}
+			completion_reward = {
+					add_ideas = idea_focus_equal_workforce
+					if = {
+							limit = {
+									has_democratic_form_of_government = yes
+								}
+							add_popularity = {
+									ideology = progressive
+									popularity = 0.04
+								}
+							add_popularity = {
+									ideology = democratic_socialist
+									popularity = 0.04
+								}
+						}
+					if = {
+							limit = {
+									has_democratic_form_of_government = no
+								}
+							add_popularity = {
+									ideology = communist
+									popularity = 0.06
+								}
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = MAD_crackdown_on_contraceptives
+		icon = propaganda
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_female_workforce
+		}
+		mutually_exclusive = {
+			focus = MAD_birth_control_programs
+		}
+		x = 51
+		y = 3
+			available = {
+					NOT = {
+							has_idea = population_growth_explosion
+						}
+				}
+			completion_reward = {
+					increase_birth_rate = yes
+					add_war_support = -0.05
+				}
+
+	}
+	focus = {
+		id = MAD_focus_on_war
+		icon = dangerous_laws
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_crackdown_on_contraceptives
+		}
+		x = 51
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					set_rule = {
+							can_use_kamikaze_pilots = yes
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_pop1
+		icon = entente
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_focus_on_war
+		}
+		x = 50
 		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = additional_recruits
+				}
+
+	}
+	focus = {
+		id = MAD_militarized_police
+		icon = national_greatness
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_focus_on_war
+		}
+		x = 52
+		y = 5
+			ai_will_do = {
+					factor = 1
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = LAW_paramilitarism_focus
+				}
+
+	}
+	focus = {
+		id = LAW_ruin1
+		icon = war3
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_militarized_police
+		}
+		x = 52
+		y = 6
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = LAW_ruin_1
+				}
+
+	}
+	focus = {
+		id = LAW_ruin2
+		icon = war3
+		cost = 10.00
+		prerequisite = {
+			focus = LAW_ruin1
+		}
+		x = 52
+		y = 7
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = LAW_ruin1
+							add_idea = LAW_ruin2
+						}
+				}
+
+	}
+	focus = {
+		id = LAW_ruin3
+		icon = war3
+		cost = 10.00
+		prerequisite = {
+			focus = LAW_ruin2
+		}
+		x = 52
+		y = 8
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = LAW_ruin2
+							add_idea = LAW_ruin3
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_autoc
+		icon = territory_or_war
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_gov4
+		}
+		mutually_exclusive = {
+			focus = MAD_freedom
+		}
+		x = 54
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					random_owned_state = {
+							add_manpower = 250000
+						}
+					random_owned_state = {
+							add_manpower = 250000
+						}
+					random_owned_state = {
+							add_manpower = 250000
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_freedom
+		icon = continuous_boost_freedom
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_gov4
+		}
+		mutually_exclusive = {
+			focus = MAD_autoc
+		}
+		x = 56
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = idea_focus_generic_national_heritage
+				}
+
+	}
+	focus = {
+		id = MAD_fighting_men1
+		icon = small_arms
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_autoc
+			focus = MAD_freedom
+		}
+		x = 54
+		y = 6
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					army_experience = 20
+					add_ideas = LAW_inf1
+				}
+
+	}
+	focus = {
+		id = MAD_fighting_men2
+		icon = political_pressure
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_fighting_men1
+		}
+		x = 54
+		y = 7
+			ai_will_do = {
+					factor = 4
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = LAW_plan1
+				}
+
+	}
+	focus = {
+		id = MAD_comp_war
+		icon = destroy_society
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_freedom
+			focus = MAD_autoc
+		}
+		x = 56
+		y = 6
 			ai_will_do = {
 					factor = 10
 				}
@@ -3372,37 +2744,1437 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4claim1
-		icon = GFX_goal_generic_production
-		cost = 5.00
+		id = MAD_add_people1
+		icon = military_deal
+		cost = 10.00
 		prerequisite = {
-			focus = MAD_4goal1
+			focus = MAD_comp_war
 		}
-		x = 48
-		y = 5
+		prerequisite = {
+			focus = MAD_fighting_men2
+		}
+		x = 54
+		y = 8
 			ai_will_do = {
 					factor = 10
 				}
 			completion_reward = {
-					281 = {
-							add_extra_state_shared_building_slots = 6
-							add_building_construction = {
-									type = industrial_complex
-									level = 5
-									instant_build = yes
-								}
+					random_owned_state = {
+							add_manpower = 250000
+						}
+					random_owned_state = {
+							add_manpower = 250000
+						}
+					random_owned_state = {
+							add_manpower = 250000
+						}
+					random_owned_state = {
+							add_manpower = 250000
 						}
 				}
 
 	}
 	focus = {
-		id = MAD_4war1
-		icon = GFX_goal_generic_production
+		id = MAD_add_people2
+		icon = military_deal
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_add_people1
+		}
+		x = 54
+		y = 9
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					random_owned_state = {
+							add_manpower = 250000
+						}
+					random_owned_state = {
+							add_manpower = 250000
+						}
+					random_owned_state = {
+							add_manpower = 250000
+						}
+					random_owned_state = {
+							add_manpower = 250000
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_add_people3
+		icon = military_deal
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_add_people2
+		}
+		x = 54
+		y = 10
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					random_owned_state = {
+							add_manpower = 250000
+						}
+					random_owned_state = {
+							add_manpower = 250000
+						}
+					random_owned_state = {
+							add_manpower = 250000
+						}
+					random_owned_state = {
+							add_manpower = 250000
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_birth_control_programs
+		icon = radar
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_female_workforce
+		}
+		mutually_exclusive = {
+			focus = MAD_crackdown_on_contraceptives
+		}
+		x = 55
+		y = 3
+			available = {
+					NOT = {
+							has_idea = population_growth_decline
+						}
+				}
+			completion_reward = {
+					lower_birth_rate = yes
+					add_war_support = 0.05
+				}
+
+	}
+	focus = {
+		id = MAD_ideology_focus
+		icon = propaganda
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_goverment_rebirth
+		}
+		x = 67
+		y = 1
+			completion_reward = {
+					add_political_power = 100
+				}
+			ai_will_do = {
+					base = 0
+					modifier = {
+							is_historical_focus_on = no
+							add = 25
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_political_focus
+		icon = demand_territory
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_ideology_focus
+		}
+		x = 62
+		y = 2
+			completion_reward = {
+					add_political_power = 100
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = MAD_internal_politics
+		icon = improve_relations
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_political_focus
+		}
+		mutually_exclusive = {
+			focus = MAD_foreign_politics
+		}
+		x = 59
+		y = 3
+			completion_reward = {
+					add_political_power = 75
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = MAD_foreign_politics
+		icon = major_alliance
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_political_focus
+		}
+		mutually_exclusive = {
+			focus = MAD_internal_politics
+		}
+		x = 61
+		y = 3
+			completion_reward = {
+					add_political_power = 75
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = MAD_recruit_more_diplomats
+		icon = intelligence_exchange
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_political_focus
+		}
+		mutually_exclusive = {
+			focus = MAD_international_alliances
+		}
+		x = 63
+		y = 3
+			completion_reward = {
+					add_political_power = 50
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = MAD_isolation
+		icon = neutrality
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_recruit_more_diplomats
+		}
+		x = 63
+		y = 4
+			completion_reward = {
+					if = {
+							limit = {
+									has_idea = neutrality_idea
+								}
+							add_political_power = 100
+							add_war_support = 0.05
+						}
+					if = {
+							limit = {
+									NOT = {
+											has_idea = neutrality_idea
+										}
+									NOT = {
+											has_idea = austrian_neutrality
+										}
+								}
+							add_ideas = neutrality_idea
+						}
+					if = {
+							limit = {
+									has_idea = austrian_neutrality
+								}
+							remove_ideas = austrian_neutrality
+							add_ideas = neutrality_idea
+						}
+				}
+			#Pretty much specific to Austria.
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = MAD_destroy_foreign_influence
+		icon = destroy_establishment
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_isolation
+		}
+		x = 63
+		y = 5
+			completion_reward = {
+					add_ideas = idea_focus_destroyed_foreign_influence
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = MAD_defensive_constructions
+		icon = defence
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_destroy_foreign_influence
+		}
+		x = 63
+		y = 6
+			completion_reward = {
+					add_ideas = ENG_defensive_constructions_idea
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = MAD_international_alliances
+		icon = alliance
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_political_focus
+		}
+		mutually_exclusive = {
+			focus = MAD_recruit_more_diplomats
+		}
+		x = 65
+		y = 3
+			completion_reward = {
+					set_rule = {
+							can_create_factions = yes
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = MAD_intervention
+		icon = forceful_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_international_alliances
+		}
+		x = 65
+		y = 4
+			completion_reward = {
+					if = {
+							limit = {
+									NOT = {
+											has_idea = neutrality_idea
+										}
+									NOT = {
+											has_idea = austrian_neutrality
+										}
+								}
+							add_political_power = 25
+							army_experience = 10
+							navy_experience = 10
+							air_experience = 10
+						}
+					if = {
+							limit = {
+									has_idea = austrian_neutrality
+								}
+							remove_ideas = austrian_neutrality
+							add_political_power = -20
+						}
+					if = {
+							limit = {
+									has_idea = neutrality_idea
+								}
+							remove_ideas = neutrality_idea
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = MAD_volunteer_corps
+		icon = infantry_commonwealth
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_intervention
+		}
+		x = 65
+		y = 5
+			completion_reward = {
+					add_ideas = idea_focus_volunteer_corps
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = MAD_political_influence_abroad
+		icon = territorial_claims
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_volunteer_corps
+		}
+		x = 65
+		y = 6
+			completion_reward = {
+					if = {
+							limit = {
+									has_government = islamist
+								}
+							every_neighbor_country = {
+									add_popularity = {
+											ideology = islamist
+											popularity = 0.05
+										}
+								}
+						}
+					if = {
+							limit = {
+									has_government = fascist
+								}
+							every_neighbor_country = {
+									add_popularity = {
+											ideology = fascist
+											popularity = 0.05
+										}
+								}
+						}
+					if = {
+							limit = {
+									has_government = nationalist
+								}
+							every_neighbor_country = {
+									add_popularity = {
+											ideology = nationalist
+											popularity = 0.05
+										}
+								}
+						}
+					if = {
+							limit = {
+									has_government = monarchist
+								}
+							every_neighbor_country = {
+									add_popularity = {
+											ideology = monarchist
+											popularity = 0.05
+										}
+								}
+						}
+					if = {
+							limit = {
+									has_government = reactionary
+								}
+							every_neighbor_country = {
+									add_popularity = {
+											ideology = reactionary
+											popularity = 0.05
+										}
+								}
+						}
+					if = {
+							limit = {
+									has_government = conservative
+								}
+							every_neighbor_country = {
+									add_popularity = {
+											ideology = conservative
+											popularity = 0.05
+										}
+								}
+						}
+					if = {
+							limit = {
+									has_government = market_liberal
+								}
+							every_neighbor_country = {
+									add_popularity = {
+											ideology = market_liberal
+											popularity = 0.05
+										}
+								}
+						}
+					if = {
+							limit = {
+									has_government = social_liberal
+								}
+							every_neighbor_country = {
+									add_popularity = {
+											ideology = social_liberal
+											popularity = 0.05
+										}
+								}
+						}
+					if = {
+							limit = {
+									has_government = social_democrat
+								}
+							every_neighbor_country = {
+									add_popularity = {
+											ideology = social_democrat
+											popularity = 0.05
+										}
+								}
+						}
+					if = {
+							limit = {
+									has_government = progressive
+								}
+							every_neighbor_country = {
+									add_popularity = {
+											ideology = progressive
+											popularity = 0.05
+										}
+								}
+						}
+					if = {
+							limit = {
+									has_government = democratic_socialist
+								}
+							every_neighbor_country = {
+									add_popularity = {
+											ideology = democratic_socialist
+											popularity = 0.05
+										}
+								}
+						}
+					if = {
+							limit = {
+									has_government = communist
+								}
+							every_neighbor_country = {
+									add_popularity = {
+											ideology = communist
+											popularity = 0.05
+										}
+								}
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = MAD_path_of_order
+		icon = fascism
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_ideology_focus
+		}
+		mutually_exclusive = {
+			focus = MAD_path_of_islam
+			focus = MAD_path_of_equality
+			focus = MAD_individual_freedoms
+		}
+		x = 69
+		y = 2
+			completion_reward = {
+					add_ideas = idea_focus_generic_path_of_order
+					add_popularity = {
+							ideology = nationalist
+							popularity = 0.05
+						}
+					add_popularity = {
+							ideology = fascist
+							popularity = 0.05
+						}
+					add_popularity = {
+							ideology = monarchist
+							popularity = 0.05
+						}
+					if = {
+							limit = {
+									OR = {
+											islamist > 0.1
+											has_country_flag = dominant_religion_islam
+										}
+								}
+							add_popularity = {
+									ideology = islamist
+									popularity = 0.05
+								}
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = MAD_ideology_nationalist
+		icon = fascism2
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_path_of_order
+		}
+		mutually_exclusive = {
+			focus = MAD_ideology_fascist
+		}
+		x = 68
+		y = 4
+			completion_reward = {
+					increase_nationalist_influence_by_1 = yes
+					add_ideas = idea_focus_generic_nationalist_doctrine
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = MAD_national_restoration
+		icon = fascism2
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_ideology_nationalist
+		}
+		x = 68
+		y = 5
+			completion_reward = {
+					increase_nationalist_influence_by_1 = yes
+					if = {
+							limit = {
+									NOT = {
+											has_government = nationalist
+										}
+								}
+							add_stability = -0.15
+						}
+					add_war_support = 0.05
+					add_popularity = {
+							ideology = nationalist
+							popularity = 0.2
+						}
+					set_politics = {
+							ruling_party = nationalist
+							elections_allowed = no
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = MAD_ideology_fascist
+		icon = fascism
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_path_of_order
+		}
+		mutually_exclusive = {
+			focus = MAD_ideology_nationalist
+		}
+		x = 70
+		y = 4
+			completion_reward = {
+					increase_fascist_influence_by_1 = yes
+					add_ideas = idea_focus_generic_neo_fascist_doctrine
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = MAD_racial_values
+		icon = fascism
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_ideology_fascist
+		}
+		x = 70
+		y = 5
+			completion_reward = {
+					increase_fascist_influence_by_1 = yes
+					if = {
+							limit = {
+									NOT = {
+											has_government = fascist
+										}
+								}
+							add_stability = -0.15
+						}
+					add_popularity = {
+							ideology = fascist
+							popularity = 0.2
+						}
+					set_politics = {
+							ruling_party = fascist
+							elections_allowed = no
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = MAD_unity_and_nation
+		icon = entente
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_national_restoration
+			focus = MAD_racial_values
+		}
+		x = 69
+		y = 6
+			completion_reward = {
+					increase_nationalist_influence_by_1 = yes
+					increase_fascist_influence_by_1 = yes
+					add_war_support = 0.05
+					add_ideas = idea_focus_generic_army_of_purity
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = MAD_path_of_islam
+		icon = align_to_pakistan
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_ideology_focus
+		}
+		mutually_exclusive = {
+			focus = MAD_path_of_order
+			focus = MAD_path_of_equality
+			focus = MAD_individual_freedoms
+		}
+		x = 72
+		y = 2
+
+	}
+	focus = {
+		id = MAD_ideology_islamist
+		icon = align_to_pakistan
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_path_of_islam
+		}
+		x = 72
+		y = 3
+			available = {
+					islamist > 0.15
+				}
+			completion_reward = {
+					increase_islamist_influence_by_1 = yes
+					add_ideas = idea_focus_generic_path_of_allah
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = MAD_shariah_lawcode
+		icon = align_to_pakistan
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_ideology_islamist
+		}
+		x = 72
+		y = 4
+			completion_reward = {
+					increase_islamist_influence_by_1 = yes
+					if = {
+							limit = {
+									NOT = {
+											has_government = islamist
+										}
+								}
+							add_stability = -0.15
+						}
+					add_popularity = {
+							ideology = islamist
+							popularity = 0.2
+						}
+					set_politics = {
+							ruling_party = islamist
+							elections_allowed = no
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = MAD_jihad
+		icon = align_to_pakistan
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_shariah_lawcode
+		}
+		x = 72
+		y = 5
+			completion_reward = {
+					increase_islamist_influence_by_2 = yes
+					add_ideas = idea_focus_generic_jihad
+					#Trigger the global news event.
+					news_event = news.2
+					#If the faction is not ideal, leave it.
+					if = {
+							limit = {
+									is_in_faction = yes
+									is_faction_leader = no
+									any_country = {
+											is_in_faction_with = ROOT
+											OR = {
+													NOT = {
+															has_government = islamist
+														}
+													islamist < 0.25
+												}
+										}
+								}
+							random_country = {
+									limit = {
+											is_in_faction_with = ROOT
+											is_faction_leader = yes
+										}
+									remove_from_faction = ROOT
+								}
+						}
+					#Everybody should hate them; except for Islamists of their confession
+					if = {
+							limit = {
+									OR = {
+											has_country_flag = sunni_islam
+											AND = {
+													NOT = {
+															has_country_flag = sunni_islam
+														}
+													NOT = {
+															has_country_flag = shia_islam
+														}
+												}
+										}
+								}
+							#The rare case of Ibadi or Bug.
+							every_country = {
+									limit = {
+											OR = {
+													has_country_flag = shia_islam
+													NOT = {
+															has_government = islamist
+														}
+												}
+										}
+									add_opinion_modifier = {
+											target = ROOT
+											modifier = terrorist_menace
+										}
+									add_opinion_modifier = {
+											target = ROOT
+											modifier = terrorist_menace_trade
+										}
+								}
+						}
+					if = {
+							limit = {
+									has_country_flag = shia_islam
+								}
+							every_country = {
+									limit = {
+											OR = {
+													has_country_flag = sunni_islam
+													NOT = {
+															has_government = islamist
+														}
+												}
+										}
+									add_opinion_modifier = {
+											target = ROOT
+											modifier = terrorist_menace
+										}
+									add_opinion_modifier = {
+											target = ROOT
+											modifier = terrorist_menace_trade
+										}
+								}
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = MAD_path_of_equality
+		icon = communism4
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_ideology_focus
+		}
+		mutually_exclusive = {
+			focus = MAD_path_of_order
+			focus = MAD_path_of_islam
+			focus = MAD_individual_freedoms
+		}
+		x = 75
+		y = 2
+			completion_reward = {
+					add_ideas = idea_focus_generic_path_of_equality
+					add_popularity = {
+							ideology = communist
+							popularity = 0.05
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = MAD_ideology_communist
+		icon = communism
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_path_of_equality
+		}
+		mutually_exclusive = {
+			focus = MAD_ideology_socialist
+		}
+		x = 76
+		y = 3
+			completion_reward = {
+					increase_communist_influence_by_1 = yes
+					add_ideas = idea_focus_generic_marxist_doctrine
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = MAD_revolutionary_committee
+		icon = communism3
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_ideology_communist
+		}
+		x = 76
+		y = 4
+			completion_reward = {
+					increase_communist_influence_by_1 = yes
+					if = {
+							limit = {
+									NOT = {
+											has_government = communist
+										}
+								}
+							add_stability = -0.15
+						}
+					add_popularity = {
+							ideology = communist
+							popularity = 0.2
+						}
+					set_politics = {
+							ruling_party = communist
+							elections_allowed = no
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = MAD_will_of_the_people
+		icon = communism4
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_revolutionary_committee
+		}
+		x = 76
+		y = 5
+			completion_reward = {
+					increase_communist_influence_by_2 = yes
+					add_ideas = idea_focus_generic_will_of_the_people
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = MAD_individual_freedoms
+		icon = democracy
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_ideology_focus
+		}
+		mutually_exclusive = {
+			focus = MAD_path_of_order
+			focus = MAD_path_of_islam
+			focus = MAD_path_of_equality
+		}
+		x = 83
+		y = 2
+			completion_reward = {
+					add_timed_idea = {
+							idea = idea_focus_generic_individual_freedom
+							days = 365
+						}
+					if = {
+							limit = {
+									has_democratic_form_of_government = yes
+								}
+							add_stability = 0.03
+						}
+					if = {
+							limit = {
+									has_democratic_form_of_government = no
+								}
+							add_stability = -0.03
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = MAD_path_of_democratic_values
+		icon = neutrality
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_individual_freedoms
+		}
+		mutually_exclusive = {
+			focus = MAD_path_of_democratic_freedom
+			focus = MAD_path_of_democratic_progress
+		}
+		x = 79
+		y = 3
+			completion_reward = {
+					add_popularity = {
+							ideology = conservative
+							popularity = 0.05
+						}
+					add_popularity = {
+							ideology = reactionary
+							popularity = 0.05
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = MAD_ideology_reactionary
+		icon = democracy
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_path_of_democratic_values
+		}
+		mutually_exclusive = {
+			focus = MAD_ideology_conservative
+		}
+		x = 78
+		y = 4
+			completion_reward = {
+					increase_reactionary_influence_by_1 = yes
+					add_ideas = idea_focus_generic_reactionary_doctrine
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = MAD_national_security
+		icon = entente
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_ideology_reactionary
+		}
+		x = 78
+		y = 5
+			completion_reward = {
+					increase_reactionary_influence_by_1 = yes
+					if = {
+							limit = {
+									NOT = {
+											has_government = reactionary
+										}
+								}
+							add_stability = -0.05
+						}
+					add_popularity = {
+							ideology = reactionary
+							popularity = 0.15
+						}
+					set_politics = {
+							ruling_party = reactionary
+							elections_allowed = yes
+						}
+					add_ideas = idea_focus_national_security
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = MAD_ideology_conservative
+		icon = democracy
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_path_of_democratic_values
+		}
+		mutually_exclusive = {
+			focus = MAD_ideology_reactionary
+		}
+		x = 80
+		y = 4
+			completion_reward = {
+					increase_conservative_influence_by_1 = yes
+					add_ideas = idea_focus_generic_conservative_doctrine
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = MAD_family_values
+		icon = diplomatic_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_ideology_conservative
+		}
+		x = 80
+		y = 5
+			completion_reward = {
+					increase_conservative_influence_by_1 = yes
+					if = {
+							limit = {
+									NOT = {
+											has_government = conservative
+										}
+								}
+							add_stability = -0.05
+						}
+					add_popularity = {
+							ideology = conservative
+							popularity = 0.15
+						}
+					set_politics = {
+							ruling_party = conservative
+							elections_allowed = yes
+						}
+					add_ideas = idea_focus_family_values
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = MAD_realpolitik
+		icon = demand_sudetenland
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_family_values
+			focus = MAD_national_security
+		}
+		x = 79
+		y = 6
+			completion_reward = {
+					increase_conservative_influence_by_1 = yes
+					increase_reactionary_influence_by_1 = yes
+					add_political_power = 250
+					add_ideas = idea_focus_generic_realpolitik
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = MAD_path_of_democratic_freedom
+		icon = alliance
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_individual_freedoms
+		}
+		mutually_exclusive = {
+			focus = MAD_path_of_democratic_values
+			focus = MAD_path_of_democratic_progress
+		}
+		x = 83
+		y = 3
+			completion_reward = {
+					add_popularity = {
+							ideology = social_liberal
+							popularity = 0.05
+						}
+					add_popularity = {
+							ideology = market_liberal
+							popularity = 0.05
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = MAD_ideology_libertarian
+		icon = democracy
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_path_of_democratic_freedom
+		}
+		mutually_exclusive = {
+			focus = MAD_ideology_social_liberal
+		}
+		x = 82
+		y = 4
+			completion_reward = {
+					increase_market_liberal_influence_by_1 = yes
+					add_ideas = idea_focus_generic_capitalist_doctrine
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = MAD_economic_freedoms
+		icon = trade_deal
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_ideology_libertarian
+		}
+		x = 82
+		y = 5
+			completion_reward = {
+					increase_market_liberal_influence_by_1 = yes
+					if = {
+							limit = {
+									NOT = {
+											has_government = market_liberal
+										}
+								}
+							add_stability = -0.05
+						}
+					add_popularity = {
+							ideology = market_liberal
+							popularity = 0.15
+						}
+					set_politics = {
+							ruling_party = market_liberal
+							elections_allowed = yes
+						}
+					add_ideas = idea_focus_economic_freedoms
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = MAD_ideology_social_liberal
+		icon = democracy
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_path_of_democratic_freedom
+		}
+		mutually_exclusive = {
+			focus = MAD_ideology_libertarian
+		}
+		x = 84
+		y = 4
+			completion_reward = {
+					increase_social_liberal_influence_by_1 = yes
+					add_ideas = idea_focus_generic_liberal_doctrine
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = MAD_personal_freedoms
+		icon = air_defense
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_ideology_social_liberal
+		}
+		x = 84
+		y = 5
+			completion_reward = {
+					increase_social_liberal_influence_by_1 = yes
+					if = {
+							limit = {
+									NOT = {
+											has_government = social_liberal
+										}
+								}
+							add_stability = -0.05
+						}
+					add_popularity = {
+							ideology = social_liberal
+							popularity = 0.15
+						}
+					set_politics = {
+							ruling_party = social_liberal
+							elections_allowed = yes
+						}
+					add_ideas = idea_focus_personal_freedoms
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = MAD_commerce_efficiency
+		icon = industry_democratic
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_personal_freedoms
+			focus = MAD_economic_freedoms
+		}
+		x = 83
+		y = 6
+			completion_reward = {
+					increase_social_liberal_influence_by_1 = yes
+					increase_market_liberal_influence_by_1 = yes
+					add_ideas = idea_focus_generic_commerce_efficiency
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = MAD_path_of_democratic_progress
+		icon = diplomatic_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_individual_freedoms
+		}
+		mutually_exclusive = {
+			focus = MAD_path_of_democratic_values
+			focus = MAD_path_of_democratic_freedom
+		}
+		x = 87
+		y = 3
+			completion_reward = {
+					add_popularity = {
+							ideology = democratic_socialist
+							popularity = 0.05
+						}
+					add_popularity = {
+							ideology = progressive
+							popularity = 0.05
+						}
+					add_popularity = {
+							ideology = social_democrat
+							popularity = 0.05
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = MAD_ideology_social_democrat
+		icon = democracy
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_path_of_democratic_progress
+		}
+		mutually_exclusive = {
+			focus = MAD_ideology_progressive
+		}
+		x = 86
+		y = 4
+			completion_reward = {
+					increase_social_democrat_influence_by_1 = yes
+					add_ideas = idea_focus_generic_social_democrat_doctrine
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = MAD_strengthen_unions
+		icon = tripartite_pact
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_ideology_social_democrat
+		}
+		x = 86
+		y = 5
+			completion_reward = {
+					increase_social_democrat_influence_by_1 = yes
+					if = {
+							limit = {
+									NOT = {
+											has_government = social_democrat
+										}
+								}
+							add_stability = -0.05
+						}
+					add_popularity = {
+							ideology = social_democrat
+							popularity = 0.15
+						}
+					set_politics = {
+							ruling_party = social_democrat
+							elections_allowed = yes
+						}
+					add_ideas = idea_focus_strong_unions
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = MAD_claim1
+		icon = renounce_treaty
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4claim1
+			focus = MAD_goal1
 		}
-		x = 48
+		x = 39
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = UAE
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = QAT
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_war1
+		icon = war
+		cost = 5.00
+		prerequisite = {
+			focus = MAD_claim1
+		}
+		x = 39
 		y = 6
 			ai_will_do = {
 					factor = 10
@@ -3422,13 +4194,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4claim2
-		icon = GFX_focus_generic_strike_at_democracy3
+		id = MAD_claim2
+		icon = renounce_treaty
 		cost = 10.00
 		prerequisite = {
-			focus = MAD_4goal2
+			focus = MAD_goal2
 		}
-		x = 50
+		x = 41
 		y = 5
 			available = {
 					country_exists = USA
@@ -3438,19 +4210,19 @@ focus_tree = {
 				}
 			available_if_capitulated = yes
 			completion_reward = {
-					add_state_core = 856
-					transfer_state = 856
+					add_state_core = 638
+					transfer_state = 638
 				}
 
 	}
 	focus = {
-		id = MAD_4war2
-		icon = GFX_goal_generic_construction
+		id = MAD_war2
+		icon = war
 		cost = 10.00
 		prerequisite = {
-			focus = MAD_4claim2
+			focus = MAD_claim2
 		}
-		x = 50
+		x = 41
 		y = 6
 			ai_will_do = {
 					factor = 1
@@ -3495,13 +4267,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4vic1
-		icon = GFX_goal_generic_consumer_goods
+		id = MAD_vic1
+		icon = industry_democratic4
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4war1
+			focus = MAD_war1
 		}
-		x = 48
+		x = 39
 		y = 7
 			ai_will_do = {
 					factor = 10
@@ -3515,13 +4287,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4aa1
-		icon = GFX_focus_generic_air_defense
+		id = MAD_aa1
+		icon = air_defense
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4at1
+			focus = MAD_at1
 		}
-		x = 15
+		x = 12
 		y = 6
 			ai_will_do = {
 					factor = 10
@@ -3532,18 +4304,17 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4armyupgradef
-		icon = GFX_focus_generic_strike_at_democracy1
+		id = MAD_armyupgradef
+		icon = army_officers
 		cost = 10.00
 		prerequisite = {
-			focus = MAD_4tank2
-			focus = MAD_4aa1
-			focus = MAD_4arty2
+			focus = MAD_aa1
+			focus = MAD_tank2
 		}
 		mutually_exclusive = {
-			focus = MAD_4armyupgradef2
+			focus = MAD_armyupgradef2
 		}
-		x = 15
+		x = 13
 		y = 7
 			ai_will_do = {
 					factor = 10
@@ -3554,13 +4325,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4leader4
-		icon = GFX_focus_generic_military_mission
+		id = MAD_leader4
+		icon = military_mission
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4leader3
+			focus = MAD_leader3
 		}
-		x = 19
+		x = 16
 		y = 6
 			ai_will_do = {
 					factor = 10
@@ -3583,58 +4354,35 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4doc4
-		icon = GFX_goal_generic_air_doctrine
-		cost = 5.00
-		prerequisite = {
-			focus = MAD_4doc3
-		}
-		x = 21
-		y = 6
-			ai_will_do = {
-					factor = 10
-				}
-			completion_reward = {
-					add_tech_bonus = {
-							name = land_doc_bonus
-							bonus = 0.5
-							uses = 2
-							category = land_doctrine
-						}
-				}
-
-	}
-	focus = {
-		id = MAD_4vic2
-		icon = GFX_goal_generic_national_unity
+		id = MAD_vic2
+		icon = industry_democratic4
 		cost = 10.00
 		prerequisite = {
-			focus = MAD_4war2
+			focus = MAD_war2
 		}
-		x = 50
+		x = 41
 		y = 7
 			ai_will_do = {
 					factor = 10
 				}
 			completion_reward = {
-					create_wargoal = {
-							type = annex_everything
-							target = USA
-						}
+					create_wargoal = { type = annex_everything target = RAJ }
+					create_wargoal = { type = annex_everything target = BNG }
+					create_wargoal = { type = annex_everything target = PAK }
 				}
 
 	}
 	focus = {
-		id = MAD_4Gvic1
-		icon = GFX_focus_generic_provoke_border_clashes
+		id = MAD_Gvic1
+		icon = race_relations
 		cost = 10.00
 		prerequisite = {
-			focus = MAD_4vic1
+			focus = MAD_vic1
 		}
 		prerequisite = {
-			focus = MAD_4vic2
+			focus = MAD_vic2
 		}
-		x = 49
+		x = 40
 		y = 8
 			ai_will_do = {
 					factor = 10
@@ -3645,18 +4393,17 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4armyupgradef2
-		icon = GFX_focus_generic_strike_at_democracy1
+		id = MAD_armyupgradef2
+		icon = infantry_axis2
 		cost = 10.00
 		prerequisite = {
-			focus = MAD_4leader4
-			focus = MAD_4doc4
-			focus = MAD_4spec4
+			focus = MAD_leader4
+			focus = MAD_doc4
 		}
 		mutually_exclusive = {
-			focus = MAD_4armyupgradef
+			focus = MAD_armyupgradef
 		}
-		x = 21
+		x = 17
 		y = 7
 			ai_will_do = {
 					factor = 10
@@ -3667,14 +4414,14 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4units1
-		icon = GFX_goal_unknown
+		id = MAD_units1
+		icon = special_forces
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4armyupgradef
-			focus = MAD_4armyupgradef2
+			focus = MAD_armyupgradef
+			focus = MAD_armyupgradef2
 		}
-		x = 19
+		x = 16
 		y = 8
 			available = {
 
@@ -3690,21 +4437,21 @@ focus_tree = {
 							logistics_skill = 2
 						}
 					create_navy_leader = {
-							traits = { blockade_runner}
+							traits = { blockade_runner }
 							skill = 2
 						}
 				}
 
 	}
 	focus = {
-		id = MAD_4units2
-		icon = GFX_goal_unknown
+		id = MAD_units2
+		icon = defence
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4armyupgradef
-			focus = MAD_4armyupgradef2
+			focus = MAD_armyupgradef
+			focus = MAD_armyupgradef2
 		}
-		x = 17
+		x = 14
 		y = 8
 			available = {
 
@@ -3727,14 +4474,14 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4pop2
-		icon = GFX_focus_prc_infiltration
+		id = MAD_pop2
+		icon = entente
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4pop1
+			focus = MAD_pop1
 		}
-		x = 66
-		y = 5
+		x = 50
+		y = 6
 			ai_will_do = {
 					factor = 10
 				}
@@ -3747,14 +4494,14 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4pop3
-		icon = GFX_focus_prc_infiltration
+		id = MAD_pop3
+		icon = entente
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4pop2
+			focus = MAD_pop2
 		}
-		x = 66
-		y = 6
+		x = 50
+		y = 7
 			ai_will_do = {
 					factor = 10
 				}
@@ -3767,14 +4514,14 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4pop4
-		icon = GFX_focus_prc_infiltration
+		id = MAD_pop4
+		icon = entente
 		cost = 5.00
 		prerequisite = {
-			focus = MAD_4pop3
+			focus = MAD_pop3
 		}
-		x = 66
-		y = 7
+		x = 50
+		y = 8
 			ai_will_do = {
 					factor = 10
 				}
@@ -3787,77 +4534,86 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4ruin4
-		icon = GFX_focus_generic_anti_fascist_diplomacy
+		id = LAW_ruin4
+		icon = war3
 		cost = 10.00
 		prerequisite = {
-			focus = MAD_4ruin3
+			focus = LAW_ruin3
 		}
 		prerequisite = {
-			focus = MAD_4pop4
+			focus = MAD_pop4
 		}
-		x = 68
-		y = 8
-			ai_will_do = {
-					factor = 10
-				}
-			completion_reward = {
-				swap_ideas = {
-					remove_idea = MAD_4end3
-					add_idea = MAD_4end4
-						}
-				}
-
-	}
-	focus = {
-		id = MAD_4ruin5
-		icon = GFX_focus_generic_anti_fascist_diplomacy
-		cost = 10.00
-		prerequisite = {
-			focus = MAD_4ruin4
-		}
-		x = 68
+		x = 51
 		y = 9
 			ai_will_do = {
 					factor = 10
 				}
 			completion_reward = {
-				swap_ideas = {
-					remove_idea = MAD_4end4
-					add_idea = MAD_4end5
+					422 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = infrastructure
+									level = 3
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = dockyard
+									level = 2
+									instant_build = yes
+								}
 						}
 				}
 
 	}
 	focus = {
-		id = MAD_4ruin6
-		icon = GFX_focus_generic_anti_fascist_diplomacy
+		id = LAW_ruin5
+		icon = war3
 		cost = 10.00
 		prerequisite = {
-			focus = MAD_4ruin5
+			focus = LAW_ruin4
 		}
-		x = 68
+		x = 51
 		y = 10
 			ai_will_do = {
 					factor = 10
 				}
 			completion_reward = {
-				swap_ideas = {
-					remove_idea = MAD_4end5
-					add_idea = MAD_4end6
+					swap_ideas = {
+							remove_idea = LAW_ruin4
+							add_idea = LAW_ruin5
 						}
 				}
 
 	}
 	focus = {
-		id = MAD_4add_people2
-		icon = GFX_goal_generic_military_deal
+		id = LAW_ruin6
+		icon = war3
 		cost = 10.00
 		prerequisite = {
-			focus = MAD_4add_people1
+			focus = LAW_ruin5
 		}
-		x = 70
-		y = 8
+		x = 51
+		y = 11
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = LAW_ruin5
+							add_idea = LAW_ruin6
+						}
+				}
+
+	}
+	focus = {
+		id = MAD_add_people4
+		icon = military_deal
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_add_people3
+		}
+		x = 54
+		y = 11
 			ai_will_do = {
 					factor = 10
 				}
@@ -3878,59 +4634,339 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MAD_4add_people3
-		icon = GFX_goal_generic_military_deal
+		id = MAD_recruitment_strategies
+		icon = infantry_japan
 		cost = 10.00
 		prerequisite = {
-			focus = MAD_4add_people2
+			focus = MAD_jihad
+			focus = MAD_will_of_the_people
+			focus = MAD_the_values_of_old
 		}
-		x = 70
-		y = 9
+		x = 74
+		y = 6
+			completion_reward = {
+					add_ideas = idea_focus_new_recruitment_strategies
+				}
 			ai_will_do = {
 					factor = 10
-				}
-			completion_reward = {
-					random_owned_state = {
-							add_manpower = 250000
-						}
-					random_owned_state = {
-							add_manpower = 250000
-						}
-					random_owned_state = {
-							add_manpower = 250000
-						}
-					random_owned_state = {
-							add_manpower = 250000
-						}
 				}
 
 	}
 	focus = {
-		id = MAD_4add_people4
-		icon = GFX_goal_generic_military_deal
+		id = MAD_recruit_more_administrators
+		icon = intelligence_exchange
 		cost = 10.00
 		prerequisite = {
-			focus = MAD_4add_people3
+			focus = MAD_internal_politics
 		}
-		x = 70
-		y = 10
+		x = 59
+		y = 4
+			completion_reward = {
+					add_political_power = 15
+					add_war_support = 0.05
+					ruling_party_support_+5 = yes
+				}
 			ai_will_do = {
 					factor = 10
 				}
+
+	}
+	focus = {
+		id = MAD_invest_in_public_service
+		icon = construction3
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_recruit_more_administrators
+		}
+		x = 59
+		y = 5
 			completion_reward = {
-					random_owned_state = {
-							add_manpower = 250000
+					add_ideas = idea_focus_generic_public_service_investment
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = MAD_secure_national_unity
+		icon = national_unity
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_invest_in_public_service
+		}
+		x = 59
+		y = 6
+			completion_reward = {
+					add_war_support = 0.05
+					add_stability = 0.05
+					if = {
+							limit = {
+									has_idea = ZIM_disgruntled_veterans
+								}
+							remove_ideas = ZIM_disgruntled_veterans
 						}
-					random_owned_state = {
-							add_manpower = 250000
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = MAD_demographic_studies
+		icon = consumer_goods
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_foreign_politics
+		}
+		x = 61
+		y = 4
+			completion_reward = {
+					add_political_power = 25
+					add_stability = 0.02
+				}
+
+	}
+	focus = {
+		id = MAD_traditional_values
+		icon = demand_territory2
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_birth_control_programs
+		}
+		x = 55
+		y = 4
+			available = {
+					NOT = {
+							has_government = social_democrat
 						}
-					random_owned_state = {
-							add_manpower = 250000
+					NOT = {
+							has_government = progressive
 						}
-					random_owned_state = {
-							add_manpower = 250000
+					NOT = {
+							has_government = democratic_socialist
 						}
+					NOT = {
+							has_government = communist
+						}
+				}
+			completion_reward = {
+					add_ideas = idea_focus_male_workforce
+					add_war_support = -0.05
+					if = {
+							limit = {
+									has_democratic_form_of_government = yes
+								}
+							add_popularity = {
+									ideology = conservative
+									popularity = 0.04
+								}
+							add_popularity = {
+									ideology = reactionary
+									popularity = 0.04
+								}
+						}
+					if = {
+							limit = {
+									has_democratic_form_of_government = no
+								}
+							add_popularity = {
+									ideology = fascist
+									popularity = 0.04
+								}
+							add_popularity = {
+									ideology = nationalist
+									popularity = 0.04
+								}
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = MAD_education_reform
+		icon = construction2
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_demographic_studies
+		}
+		x = 61
+		y = 5
+			completion_reward = {
+					add_ideas = idea_focus_generic_education_reform
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = MAD_expand_the_secret_services
+		icon = intelligence_exchange
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_education_reform
+		}
+		x = 61
+		y = 6
+			completion_reward = {
+					add_ideas = idea_focus_expanded_secret_services
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = MAD_the_values_of_old
+		icon = monarchy
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_redistribution_of_wealth
+		}
+		x = 74
+		y = 5
+			completion_reward = {
+					increase_monarchist_influence_by_2 = yes
+					add_ideas = idea_focus_generic_national_heritage
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = MAD_ideology_progressive
+		icon = democracy
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_path_of_democratic_progress
+		}
+		mutually_exclusive = {
+			focus = MAD_ideology_social_democrat
+		}
+		x = 88
+		y = 4
+			completion_reward = {
+					increase_progressive_influence_by_1 = yes
+					add_ideas = idea_focus_generic_progressive_doctrine
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = MAD_environmental_policy
+		icon = improve_relations
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_ideology_progressive
+		}
+		x = 88
+		y = 5
+			completion_reward = {
+					increase_progressive_influence_by_1 = yes
+					if = {
+							limit = {
+									NOT = {
+											has_government = progressive
+										}
+								}
+							add_stability = -0.05
+						}
+					add_popularity = {
+							ideology = progressive
+							popularity = 0.15
+						}
+					set_politics = {
+							ruling_party = progressive
+							elections_allowed = yes
+						}
+					add_ideas = idea_focus_environmental_policy
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = MAD_ideology_socialist
+		icon = democracy
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_path_of_equality
+		}
+		mutually_exclusive = {
+			focus = MAD_ideology_communist
+		}
+		x = 74
+		y = 3
+			completion_reward = {
+					increase_democratic_socialist_influence_by_1 = yes
+					add_ideas = idea_focus_generic_leftist_doctrine
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = MAD_redistribution_of_wealth
+		icon = anti_comintern_pact
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_ideology_socialist
+		}
+		x = 74
+		y = 4
+			completion_reward = {
+					increase_democratic_socialist_influence_by_1 = yes
+					if = {
+							limit = {
+									NOT = {
+											has_government = democratic_socialist
+										}
+								}
+							add_stability = -0.05
+						}
+					add_popularity = {
+							ideology = democratic_socialist
+							popularity = 0.15
+						}
+					set_politics = {
+							ruling_party = democratic_socialist
+							elections_allowed = yes
+						}
+					add_ideas = idea_focus_redistribution_of_wealth
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
+	}
+	focus = {
+		id = MAD_reckless_progress
+		icon = research
+		cost = 10.00
+		prerequisite = {
+			focus = MAD_environmental_policy
+			focus = MAD_strengthen_unions
+		}
+		x = 87
+		y = 6
+			completion_reward = {
+					increase_democratic_socialist_influence_by_1 = yes
+					increase_progressive_influence_by_1 = yes
+					increase_social_democrat_influence_by_1 = yes
+					add_ideas = idea_focus_generic_reckless_progress
+				}
+			ai_will_do = {
+					factor = 10
 				}
 
 	}
 }
+

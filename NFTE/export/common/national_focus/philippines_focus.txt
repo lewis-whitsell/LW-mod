@@ -10,9 +10,9 @@ focus_tree = {
 	default = no
 	focus = {
 		id = PHI_indstart
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_central_management
 		cost = 5.00
-		x = 4
+		x = 5
 		y = 0
 			ai_will_do = {
 					factor = 10
@@ -30,7 +30,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_armystart
-		icon = GFX_focus_generic_license_production
+		icon = GFX_license_production
 		cost = 10.00
 		x = 21
 		y = 0
@@ -41,9 +41,9 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_gov4
-		icon = GFX_focus_generic_the_giant_wakes
+		icon = GFX_the_giant_wakes
 		cost = 10.00
-		x = 58
+		x = 55
 		y = 4
 			ai_will_do = {
 					factor = 10
@@ -57,7 +57,7 @@ focus_tree = {
 		id = PHI_ideology_monarchist
 		icon = GFX_monarchy
 		cost = 10.00
-		x = 77
+		x = 74
 		y = 3
 			completion_reward = {
 					increase_monarchist_influence_by_1 = yes
@@ -72,7 +72,7 @@ focus_tree = {
 		id = PHI_empower_the_monarch
 		icon = GFX_monarchy
 		cost = 10.00
-		x = 77
+		x = 74
 		y = 4
 			completion_reward = {
 					increase_monarchist_influence_by_1 = yes
@@ -100,20 +100,37 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_goverment_rebirth
-		icon = GFX_goal_unknown
+		icon = GFX_industry_united_states
 		cost = 10.00
-		x = 60
+		x = 57
 		y = 0
+			completion_reward = {
+					add_political_power = 250
+				}
+
+	}
+	focus = {
+		id = PHI_airtech1
+		icon = GFX_cryptologic_bomb
+		cost = 5.00
+		x = 32
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = LAW_airsup
+				}
 
 	}
 	focus = {
 		id = PHI_mil1
-		icon = GFX_goal_industry_military
+		icon = GFX_industry_military
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_indstart
 		}
-		x = 0
+		x = 1
 		y = 1
 			ai_will_do = {
 					factor = 10
@@ -148,12 +165,12 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_mil2
-		icon = GFX_focus_chi_army_reform
+		icon = GFX_industry_military
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_mil1
 		}
-		x = 0
+		x = 1
 		y = 2
 			ai_will_do = {
 					factor = 10
@@ -180,12 +197,12 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_mil3
-		icon = GFX_goal_industry_military
+		icon = GFX_industry_military
 		cost = 10.00
 		prerequisite = {
 			focus = PHI_mil2
 		}
-		x = 0
+		x = 1
 		y = 3
 			ai_will_do = {
 					factor = 10
@@ -212,12 +229,12 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_mil4
-		icon = GFX_goal_industry_military
+		icon = GFX_industry_military
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_mil3
 		}
-		x = 0
+		x = 1
 		y = 4
 			ai_will_do = {
 					factor = 10
@@ -244,12 +261,12 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_civ1
-		icon = GFX_goal_industry_civilian
+		icon = GFX_industry_civilian
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_indstart
 		}
-		x = 2
+		x = 3
 		y = 1
 			ai_will_do = {
 					factor = 10
@@ -285,12 +302,12 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_civ2
-		icon = GFX_goal_industry_civilian
+		icon = GFX_industry_civilian
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_civ1
 		}
-		x = 2
+		x = 3
 		y = 2
 			ai_will_do = {
 					factor = 10
@@ -317,12 +334,12 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_civ3
-		icon = GFX_goal_industry_civilian
+		icon = GFX_industry_civilian
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_civ2
 		}
-		x = 2
+		x = 3
 		y = 3
 			ai_will_do = {
 					factor = 10
@@ -349,12 +366,12 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_civ4
-		icon = GFX_goal_industry_civilian
+		icon = GFX_industry_civilian
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_civ3
 		}
-		x = 2
+		x = 3
 		y = 4
 			ai_will_do = {
 					factor = 10
@@ -381,7 +398,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_gov3
-		icon = GFX_focus_generic_tank_production
+		icon = GFX_defence
 		cost = 10.00
 		prerequisite = {
 			focus = PHI_civ4
@@ -389,7 +406,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PHI_mil4
 		}
-		x = 1
+		x = 2
 		y = 5
 			ai_will_do = {
 					factor = 10
@@ -401,12 +418,12 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_resource2
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_continuous_non_factory_construct
 		cost = 10.00
 		prerequisite = {
 			focus = PHI_indstart
 		}
-		x = 5
+		x = 6
 		y = 1
 			ai_will_do = {
 					factor = 10
@@ -418,12 +435,12 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_alumn
-		icon = GFX_focus_generic_aluminum
+		icon = GFX_continuous_non_factory_construct
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_resource2
 		}
-		x = 4
+		x = 5
 		y = 2
 			ai_will_do = {
 					factor = 10
@@ -452,12 +469,12 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_oil
-		icon = GFX_goal_generic_oil_refinery
+		icon = GFX_continuous_non_factory_construct
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_alumn
 		}
-		x = 4
+		x = 5
 		y = 3
 			ai_will_do = {
 					factor = 1
@@ -493,12 +510,12 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_chromium
-		icon = GFX_goal_continuous_non_factory_construct
+		icon = GFX_continuous_non_factory_construct
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_oil
 		}
-		x = 4
+		x = 5
 		y = 4
 			ai_will_do = {
 					factor = 10
@@ -527,12 +544,12 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_resource1
-		icon = GFX_focus_generic_steel
+		icon = GFX_continuous_non_factory_construct
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_resource2
 		}
-		x = 6
+		x = 7
 		y = 2
 			ai_will_do = {
 					factor = 10
@@ -561,12 +578,12 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_rubber
-		icon = GFX_focus_generic_rubber
+		icon = GFX_continuous_non_factory_construct
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_resource1
 		}
-		x = 6
+		x = 7
 		y = 3
 			ai_will_do = {
 					factor = 10
@@ -595,12 +612,12 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_resource3
-		icon = GFX_focus_generic_tungsten
+		icon = GFX_continuous_non_factory_construct
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_rubber
 		}
-		x = 6
+		x = 7
 		y = 4
 			ai_will_do = {
 					factor = 10
@@ -629,7 +646,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_indtech5
-		icon = GFX_goal_generic_construction2
+		icon = GFX_construction2
 		cost = 10.00
 		prerequisite = {
 			focus = PHI_resource3
@@ -637,7 +654,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PHI_chromium
 		}
-		x = 5
+		x = 6
 		y = 5
 			ai_will_do = {
 					factor = 10
@@ -649,7 +666,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_construc1
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_infrastructure
 		cost = 10.00
 		prerequisite = {
 			focus = PHI_gov3
@@ -657,7 +674,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PHI_indtech5
 		}
-		x = 3
+		x = 4
 		y = 6
 			ai_will_do = {
 					factor = 10
@@ -671,13 +688,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = PHI_manila_central_railway
-		icon = GFX_goal_generic_construct_infrastructure
+		id = PHI_railway_builder
+		icon = GFX_infrastructure
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_indstart
 		}
-		x = 8
+		x = 9
 		y = 1
 			ai_will_do = {
 					factor = 10
@@ -695,12 +712,12 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_indtech2
-		icon = GFX_goal_generic_production2
+		icon = GFX_production2
 		cost = 5.00
 		prerequisite = {
-			focus = PHI_manila_central_railway
+			focus = PHI_railway_builder
 		}
-		x = 8
+		x = 9
 		y = 2
 			ai_will_do = {
 					factor = 10
@@ -718,12 +735,12 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_indtech3
-		icon = GFX_goal_generic_production2
+		icon = GFX_production2
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_indtech2
 		}
-		x = 8
+		x = 9
 		y = 3
 			ai_will_do = {
 					factor = 1
@@ -736,12 +753,12 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_indtech4
-		icon = GFX_goal_generic_production2
+		icon = GFX_production2
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_indtech3
 		}
-		x = 8
+		x = 9
 		y = 4
 			ai_will_do = {
 					factor = 10
@@ -759,12 +776,12 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_additional_research_slot1
-		icon = GFX_focus_research
+		icon = GFX_research
 		cost = 10.00
 		prerequisite = {
 			focus = PHI_indtech4
 		}
-		x = 8
+		x = 9
 		y = 5
 			ai_will_do = {
 					factor = 10
@@ -778,12 +795,12 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_rocket1
-		icon = GFX_focus_rocketry
+		icon = GFX_rocketry
 		cost = 10.00
 		prerequisite = {
 			focus = PHI_additional_research_slot1
 		}
-		x = 7
+		x = 8
 		y = 6
 			ai_will_do = {
 					factor = 10
@@ -800,12 +817,12 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_research_new_enegry_options
-		icon = GFX_focus_wonderweapons
+		icon = GFX_nuclear_weapons
 		cost = 10.00
 		prerequisite = {
 			focus = PHI_additional_research_slot1
 		}
-		x = 9
+		x = 10
 		y = 6
 			ai_will_do = {
 					factor = 10
@@ -823,7 +840,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_additional_research_slot2
-		icon = GFX_focus_research
+		icon = GFX_research
 		cost = 10.00
 		prerequisite = {
 			focus = PHI_research_new_enegry_options
@@ -831,7 +848,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PHI_rocket1
 		}
-		x = 8
+		x = 9
 		y = 7
 			available = {
 					num_of_factories > 50
@@ -847,7 +864,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_army_modernisation
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_tank2
 		cost = 10.00
 		prerequisite = {
 			focus = PHI_armystart
@@ -865,7 +882,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_infequip1
-		icon = GFX_focus_secret_rearmament
+		icon = GFX_small_arms5
 		cost = 4.00
 		prerequisite = {
 			focus = PHI_army_modernisation
@@ -887,7 +904,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_infequip2
-		icon = GFX_focus_secret_rearmament
+		icon = GFX_small_arms5
 		cost = 4.00
 		prerequisite = {
 			focus = PHI_infequip1
@@ -909,7 +926,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_mech1
-		icon = GFX_goal_generic_army_motorized
+		icon = GFX_motorized
 		cost = 4.00
 		prerequisite = {
 			focus = PHI_army_modernisation
@@ -932,7 +949,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_tank1
-		icon = GFX_goal_generic_army_tanks
+		icon = GFX_tank
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_mech1
@@ -955,7 +972,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_spec2
-		icon = GFX_goal_generic_special_forces
+		icon = GFX_special_forces
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_tank1
@@ -978,7 +995,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_at1
-		icon = GFX_goal_generic_army_artillery
+		icon = GFX_artillery
 		cost = 4.00
 		prerequisite = {
 			focus = PHI_spec2
@@ -1001,7 +1018,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_mech2
-		icon = GFX_goal_generic_army_motorized
+		icon = GFX_motorized
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_spec2
@@ -1023,7 +1040,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_tank2
-		icon = GFX_goal_generic_army_tanks
+		icon = GFX_tank
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_mech2
@@ -1046,7 +1063,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_army_modernisation2
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_tank2
 		cost = 10.00
 		prerequisite = {
 			focus = PHI_armystart
@@ -1063,7 +1080,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_leader1
-		icon = GFX_focus_generic_military_mission
+		icon = GFX_military_mission
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_army_modernisation2
@@ -1088,7 +1105,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_leader2
-		icon = GFX_focus_generic_military_mission
+		icon = GFX_military_mission
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_leader1
@@ -1119,7 +1136,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_doc1
-		icon = GFX_goal_air_doctrine
+		icon = GFX_air_doctrine
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_army_modernisation2
@@ -1141,7 +1158,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_doc2
-		icon = GFX_goal_air_doctrine
+		icon = GFX_air_doctrine
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_doc1
@@ -1163,7 +1180,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_armystg3
-		icon = GFX_goal_generic_axis_build_infantry
+		icon = GFX_fascism
 		cost = 10.00
 		prerequisite = {
 			focus = PHI_leader2
@@ -1187,7 +1204,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_leader3
-		icon = GFX_focus_generic_military_mission
+		icon = GFX_military_mission
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_armystg3
@@ -1212,7 +1229,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_doc3
-		icon = GFX_goal_air_doctrine
+		icon = GFX_air_doctrine
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_armystg3
@@ -1234,7 +1251,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_doc4
-		icon = GFX_goal_generic_air_doctrine
+		icon = GFX_air_doctrine
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_doc3
@@ -1255,8 +1272,8 @@ focus_tree = {
 
 	}
 	focus = {
-		id = PHI_pacific_navy
-		icon = GFX_goal_generic_navy_battleship
+		id = PHI_navy_start
+		icon = GFX_navy
 		cost = 10.00
 		prerequisite = {
 			focus = PHI_armystart
@@ -1274,10 +1291,10 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_navaldoc1
-		icon = GFX_focus_naval_doctrine
+		icon = GFX_naval_doctrine
 		cost = 5.00
 		prerequisite = {
-			focus = PHI_pacific_navy
+			focus = PHI_navy_start
 		}
 		x = 21
 		y = 2
@@ -1296,7 +1313,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_navaldoc2
-		icon = GFX_focus_naval_doctrine
+		icon = GFX_naval_doctrine
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_navaldoc1
@@ -1318,7 +1335,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_navaldoc3
-		icon = GFX_focus_naval_doctrine
+		icon = GFX_naval_doctrine
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_navaldoc2
@@ -1340,7 +1357,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_navaldoc4
-		icon = GFX_focus_naval_doctrine
+		icon = GFX_naval_doctrine
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_navaldoc3
@@ -1362,10 +1379,10 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_sub1
-		icon = GFX_goal_submarines
+		icon = GFX_submarines
 		cost = 5.00
 		prerequisite = {
-			focus = PHI_pacific_navy
+			focus = PHI_navy_start
 		}
 		x = 23
 		y = 2
@@ -1385,7 +1402,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_sub3
-		icon = GFX_goal_submarines
+		icon = GFX_submarines
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_sub1
@@ -1404,7 +1421,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_sub2
-		icon = GFX_goal_submarines
+		icon = GFX_submarines
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_sub3
@@ -1426,11 +1443,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = PHI_island_defense
-		icon = GFX_goal_amphibious_assault
+		id = PHI_navy_destroyer1
+		icon = GFX_anti_submarine
 		cost = 5.00
 		prerequisite = {
-			focus = PHI_pacific_navy
+			focus = PHI_navy_start
 		}
 		x = 25
 		y = 2
@@ -1449,11 +1466,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = PHI_navyscrn1
-		icon = GFX_focus_generic_destroyer
+		id = PHI_navy_destroyer2
+		icon = GFX_anti_submarine
 		cost = 5.00
 		prerequisite = {
-			focus = PHI_island_defense
+			focus = PHI_navy_destroyer1
 		}
 		x = 25
 		y = 3
@@ -1471,11 +1488,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = PHI_navyscrn2
-		icon = GFX_focus_generic_cruiser2
+		id = PHI_navy_destroyer3
+		icon = GFX_cruisers
 		cost = 5.00
 		prerequisite = {
-			focus = PHI_navyscrn1
+			focus = PHI_navy_destroyer2
 		}
 		x = 25
 		y = 4
@@ -1493,14 +1510,14 @@ focus_tree = {
 
 	}
 	focus = {
-		id = PHI_anti_sub_defense_force
-		icon = GFX_goal_generic_navy_anti_submarine
+		id = PHI_anti_sub
+		icon = GFX_anti_submarine
 		cost = 10.00
 		prerequisite = {
 			focus = PHI_sub2
 		}
 		prerequisite = {
-			focus = PHI_navyscrn2
+			focus = PHI_navy_destroyer3
 		}
 		x = 24
 		y = 5
@@ -1520,10 +1537,10 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_carrier1
-		icon = GFX_goal_carriers
+		icon = GFX_carriers
 		cost = 4.00
 		prerequisite = {
-			focus = PHI_pacific_navy
+			focus = PHI_navy_start
 		}
 		x = 27
 		y = 2
@@ -1542,7 +1559,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_carrier2
-		icon = GFX_goal_carriers
+		icon = GFX_carriers
 		cost = 4.00
 		prerequisite = {
 			focus = PHI_carrier1
@@ -1564,7 +1581,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_carrier3
-		icon = GFX_goal_carriers
+		icon = GFX_carriers
 		cost = 4.00
 		prerequisite = {
 			focus = PHI_carrier2
@@ -1586,10 +1603,10 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_navydef2
-		icon = GFX_goal_generic_navy_battleship
+		icon = GFX_battleships
 		cost = 10.00
 		prerequisite = {
-			focus = PHI_navyscrn2
+			focus = PHI_navy_destroyer3
 		}
 		prerequisite = {
 			focus = PHI_carrier3
@@ -1606,11 +1623,11 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_navymisc1
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		icon = GFX_navy2
 		cost = 10.00
 		prerequisite = {
 			focus = PHI_navydef2
-			focus = PHI_anti_sub_defense_force
+			focus = PHI_anti_sub
 		}
 		x = 25
 		y = 6
@@ -1624,10 +1641,10 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_dockyard1
-		icon = GFX_goal_naval_dockyards
+		icon = GFX_naval_dockyards
 		cost = 5.00
 		prerequisite = {
-			focus = PHI_pacific_navy
+			focus = PHI_navy_start
 		}
 		x = 29
 		y = 2
@@ -1656,7 +1673,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_dockyards2
-		icon = GFX_goal_naval_dockyards
+		icon = GFX_naval_dockyards
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_dockyard1
@@ -1687,7 +1704,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_dockyard3
-		icon = GFX_goal_naval_dockyards
+		icon = GFX_naval_dockyards
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_dockyards2
@@ -1718,7 +1735,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_dockyard4
-		icon = GFX_goal_naval_dockyards
+		icon = GFX_naval_dockyards
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_dockyard3
@@ -1750,12 +1767,12 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_air_innovations
-		icon = GFX_goal_generic_build_airforce
+		icon = GFX_airforce
 		cost = 10.00
 		prerequisite = {
 			focus = PHI_armystart
 		}
-		x = 34
+		x = 33
 		y = 1
 			ai_will_do = {
 					factor = 10
@@ -1772,34 +1789,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = PHI_light_bomber_focus
-		icon = GFX_goal_generic_CAS
+		id = PHI_study_planes1
+		icon = GFX_bombs2
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_air_innovations
-		}
-		x = 32
-		y = 2
-			ai_will_do = {
-					factor = 10
-				}
-			available_if_capitulated = yes
-			completion_reward = {
-					add_tech_bonus = {
-							name = POL_light_bomber_focus
-							bonus = 0.5
-							uses = 2
-							category = tactical_bomber
-						}
-				}
-
-	}
-	focus = {
-		id = PHI_study_allied_and_axis_naval_tactics
-		icon = GFX_goal_generic_air_bomber
-		cost = 5.00
-		prerequisite = {
-			focus = PHI_light_bomber_focus
 		}
 		x = 32
 		y = 3
@@ -1813,60 +1807,14 @@ focus_tree = {
 
 	}
 	focus = {
-		id = PHI_medium_bomber_focus
-		icon = GFX_goal_generic_occupy_start_war
+		id = PHI_study_planes2
+		icon = GFX_fighter
 		cost = 5.00
 		prerequisite = {
-			focus = PHI_study_allied_and_axis_naval_tactics
+			focus = PHI_study_planes1
 		}
 		x = 32
 		y = 4
-			ai_will_do = {
-					factor = 10
-				}
-			available_if_capitulated = yes
-			completion_reward = {
-					add_tech_bonus = {
-							name = POL_medium_bomber_focus
-							bonus = 0.5
-							uses = 2
-							category = cat_strategic_bomber
-						}
-				}
-
-	}
-	focus = {
-		id = PHI_naval_bomber_experiments
-		icon = GFX_goal_generic_air_naval_bomber
-		cost = 5.00
-		prerequisite = {
-			focus = PHI_air_innovations
-		}
-		x = 34
-		y = 2
-			ai_will_do = {
-					factor = 10
-				}
-			available_if_capitulated = yes
-			completion_reward = {
-					add_tech_bonus = {
-							name = PHI_the_unified_islands_plan
-							bonus = 0.5
-							uses = 2
-							category = air_equipment
-						}
-				}
-
-	}
-	focus = {
-		id = PHI_heavy_fighter_concept
-		icon = GFX_goal_generic_air_fighter2
-		cost = 5.00
-		prerequisite = {
-			focus = PHI_naval_bomber_experiments
-		}
-		x = 34
-		y = 3
 			ai_will_do = {
 					factor = 10
 				}
@@ -1877,97 +1825,14 @@ focus_tree = {
 
 	}
 	focus = {
-		id = PHI_airmisc1
-		icon = GFX_goal_generic_air_fighter2
-		cost = 5.00
-		prerequisite = {
-			focus = PHI_heavy_fighter_concept
-		}
-		x = 34
-		y = 4
-			ai_will_do = {
-					factor = 10
-				}
-			completion_reward = {
-					add_ideas = LAW_air3
-				}
-
-	}
-	focus = {
-		id = PHI_airtech1
-		icon = GFX_focus_generic_cryptologic_bomb
-		cost = 5.00
-		prerequisite = {
-			focus = PHI_airmisc1
-		}
-		prerequisite = {
-			focus = PHI_medium_bomber_focus
-		}
-		x = 33
-		y = 5
-			ai_will_do = {
-					factor = 10
-				}
-			completion_reward = {
-					add_ideas = LAW_airsup
-				}
-
-	}
-	focus = {
-		id = PHI_fighter_modernisation
-		icon = GFX_goal_generic_air_fighter
+		id = PHI_study_planes3
+		icon = GFX_bombs
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_air_innovations
 		}
-		x = 36
-		y = 2
-			ai_will_do = {
-					factor = 10
-				}
-			available_if_capitulated = yes
-			completion_reward = {
-					add_tech_bonus = {
-							name = POL_fighter_modernisation
-							bonus = 0.5
-							uses = 2
-							category = light_fighter
-						}
-				}
-
-	}
-	focus = {
-		id = PHI_air_modernisations_program
-		icon = GFX_goal_generic_air_doctrine
-		cost = 5.00
-		prerequisite = {
-			focus = PHI_fighter_modernisation
-		}
-		x = 36
+		x = 34
 		y = 3
-			ai_will_do = {
-					factor = 10
-				}
-			available_if_capitulated = yes
-			completion_reward = {
-					add_tech_bonus = {
-							name = POL_fighter_modernisation
-							bonus = 0.5
-							uses = 2
-							category = light_fighter
-						}
-				}
-
-	}
-	focus = {
-		id = PHI_jet2
-		icon = GFX_focus_chi_flying_tigers
-		cost = 5.00
-		prerequisite = {
-			focus = PHI_air_modernisations_program
-		}
-		x = 36
-		y = 4
 			ai_will_do = {
 					factor = 10
 				}
@@ -1977,16 +1842,36 @@ focus_tree = {
 
 	}
 	focus = {
-		id = PHI_rocket_development
-		icon = GFX_focus_rocketry
+		id = PHI_study_planes4
+		icon = GFX_air_doctrine
 		cost = 5.00
 		prerequisite = {
-			focus = PHI_airmisc1
+			focus = PHI_study_planes3
 		}
+		x = 34
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = POL_fighter_modernisation
+							bonus = 0.5
+							uses = 2
+							category = light_fighter
+						}
+				}
+
+	}
+	focus = {
+		id = PHI_rocket_development
+		icon = GFX_rocketry
+		cost = 5.00
 		prerequisite = {
-			focus = PHI_jet2
+			focus = PHI_study_planes4
 		}
-		x = 35
+		x = 34
 		y = 5
 			ai_will_do = {
 					factor = 1
@@ -2004,13 +1889,13 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_airfin
-		icon = GFX_goal_continuous_air_production
+		icon = GFX_continuous_air_production
 		cost = 20.00
 		prerequisite = {
 			focus = PHI_airtech1
 			focus = PHI_rocket_development
 		}
-		x = 34
+		x = 33
 		y = 6
 			ai_will_do = {
 					factor = 10
@@ -2022,12 +1907,12 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_airdoc1
-		icon = GFX_goal_unknown
+		icon = GFX_air_doctrine
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_air_innovations
 		}
-		x = 38
+		x = 36
 		y = 2
 			ai_will_do = {
 
@@ -2044,12 +1929,12 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_airdoc2
-		icon = GFX_goal_unknown
+		icon = GFX_air_doctrine
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_airdoc1
 		}
-		x = 38
+		x = 36
 		y = 3
 			ai_will_do = {
 
@@ -2066,12 +1951,12 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_airdoc3
-		icon = GFX_goal_unknown
+		icon = GFX_air_doctrine
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_airdoc2
 		}
-		x = 38
+		x = 36
 		y = 4
 			ai_will_do = {
 
@@ -2093,7 +1978,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PHI_goverment_rebirth
 		}
-		x = 51
+		x = 48
 		y = 1
 			completion_reward = {
 					add_timed_idea = {
@@ -2120,12 +2005,12 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_peace_keeping_youth
-		icon = GFX_focus_generic_military_academy
+		icon = GFX_military_mission
 		cost = 10.00
 		prerequisite = {
 			focus = PHI_national_strength
 		}
-		x = 46
+		x = 43
 		y = 2
 			ai_will_do = {
 					factor = 1
@@ -2137,8 +2022,8 @@ focus_tree = {
 
 	}
 	focus = {
-		id = PHI_support_the_ganap_party
-		icon = GFX_goal_support_fascism
+		id = PHI_support_the_party
+		icon = GFX_race_relations2
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_peace_keeping_youth
@@ -2146,7 +2031,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = PHI_post_indenpence_stabilization
 		}
-		x = 45
+		x = 42
 		y = 3
 			ai_will_do = {
 					factor = 1
@@ -2159,15 +2044,15 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_post_indenpence_stabilization
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_demand_territory
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_peace_keeping_youth
 		}
 		mutually_exclusive = {
-			focus = PHI_support_the_ganap_party
+			focus = PHI_support_the_party
 		}
-		x = 47
+		x = 44
 		y = 3
 			ai_will_do = {
 					factor = 10
@@ -2180,13 +2065,13 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_goal3
-		icon = GFX_goal_generic_trade
+		icon = GFX_constitution
 		cost = 5.00
 		prerequisite = {
-			focus = PHI_support_the_ganap_party
+			focus = PHI_support_the_party
 			focus = PHI_post_indenpence_stabilization
 		}
-		x = 46
+		x = 43
 		y = 4
 			ai_will_do = {
 					factor = 1
@@ -2208,13 +2093,13 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_goal1
-		icon = GFX_goal_support_democracy
+		icon = GFX_constitution
 		cost = 5.00
 		prerequisite = {
-			focus = PHI_support_the_ganap_party
+			focus = PHI_support_the_party
 			focus = PHI_post_indenpence_stabilization
 		}
-		x = 42
+		x = 39
 		y = 4
 			ai_will_do = {
 					factor = 5
@@ -2238,13 +2123,13 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_goal2
-		icon = GFX_goal_generic_military_deal
+		icon = GFX_constitution
 		cost = 5.00
 		prerequisite = {
-			focus = PHI_support_the_ganap_party
+			focus = PHI_support_the_party
 			focus = PHI_post_indenpence_stabilization
 		}
-		x = 44
+		x = 41
 		y = 4
 			ai_will_do = {
 					factor = 5
@@ -2257,12 +2142,12 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_claim3
-		icon = GFX_goal_generic_more_territorial_claims
+		icon = GFX_renounce_treaty
 		cost = 10.00
 		prerequisite = {
 			focus = PHI_goal3
 		}
-		x = 46
+		x = 43
 		y = 5
 			ai_will_do = {
 					factor = 1
@@ -2289,12 +2174,12 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_war3
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_war
 		cost = 10.00
 		prerequisite = {
 			focus = PHI_claim3
 		}
-		x = 46
+		x = 43
 		y = 6
 			ai_will_do = {
 					factor = 1
@@ -2321,12 +2206,12 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_vic3
-		icon = GFX_focus_generic_strike_at_democracy2
+		icon = GFX_industry_democratic4
 		cost = 10.00
 		prerequisite = {
 			focus = PHI_war3
 		}
-		x = 46
+		x = 43
 		y = 7
 			ai_will_do = {
 					factor = 10
@@ -2341,13 +2226,13 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_goal4
-		icon = GFX_focus_generic_coastal_fort
+		icon = GFX_constitution
 		cost = 5.00
 		prerequisite = {
-			focus = PHI_support_the_ganap_party
+			focus = PHI_support_the_party
 			focus = PHI_post_indenpence_stabilization
 		}
-		x = 48
+		x = 45
 		y = 4
 			ai_will_do = {
 					factor = 10
@@ -2373,12 +2258,12 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_claim4
-		icon = GFX_goal_generic_defence
+		icon = GFX_renounce_treaty
 		cost = 2.00
 		prerequisite = {
 			focus = PHI_goal4
 		}
-		x = 48
+		x = 45
 		y = 5
 			ai_will_do = {
 					factor = 10
@@ -2400,12 +2285,12 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_war4
-		icon = GFX_focus_jap_cast_the_die
+		icon = GFX_war
 		cost = 10.00
 		prerequisite = {
 			focus = PHI_claim4
 		}
-		x = 48
+		x = 45
 		y = 6
 			ai_will_do = {
 					factor = 10
@@ -2420,12 +2305,12 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_vic4
-		icon = GFX_focus_rom_abdicate
+		icon = GFX_industry_democratic4
 		cost = 10.00
 		prerequisite = {
 			focus = PHI_war4
 		}
-		x = 48
+		x = 45
 		y = 7
 			ai_will_do = {
 					factor = 10
@@ -2440,13 +2325,13 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_goal5
-		icon = GFX_focus_prc_remove_chiang_kai_shek
+		icon = GFX_constitution
 		cost = 10.00
 		prerequisite = {
-			focus = PHI_support_the_ganap_party
+			focus = PHI_support_the_party
 			focus = PHI_post_indenpence_stabilization
 		}
-		x = 50
+		x = 47
 		y = 4
 			completion_reward = {
 					create_wargoal = {
@@ -2466,12 +2351,12 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_claim5
-		icon = GFX_focus_renounce_the_treaty_of_triannon
+		icon = GFX_renounce_treaty
 		cost = 10.00
 		prerequisite = {
 			focus = PHI_goal5
 		}
-		x = 50
+		x = 47
 		y = 5
 			completion_reward = {
 					create_wargoal = {
@@ -2491,12 +2376,12 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_war5
-		icon = GFX_focus_generic_military_mission
+		icon = GFX_war
 		cost = 10.00
 		prerequisite = {
 			focus = PHI_claim5
 		}
-		x = 50
+		x = 47
 		y = 6
 			completion_reward = {
 					declare_war_on = {
@@ -2514,12 +2399,12 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_vic5
-		icon = GFX_goal_molotov_ribbentrop_pact
+		icon = GFX_industry_democratic4
 		cost = 10.00
 		prerequisite = {
 			focus = PHI_war5
 		}
-		x = 50
+		x = 47
 		y = 7
 			completion_reward = {
 					INS = {
@@ -2532,14 +2417,14 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_greater_philippines_established
-		icon = GFX_goal_generic_military_deal
+		icon = GFX_military_deal
 		cost = 10.00
 		prerequisite = {
 			focus = PHI_vic5
 			focus = PHI_vic4
 			focus = PHI_vic3
 		}
-		x = 48
+		x = 45
 		y = 8
 			ai_will_do = {
 					factor = 1
@@ -2558,7 +2443,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PHI_national_strength
 		}
-		x = 56
+		x = 53
 		y = 2
 			available = {
 					NOT = {
@@ -2605,7 +2490,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = PHI_birth_control_programs
 		}
-		x = 54
+		x = 51
 		y = 3
 			available = {
 					NOT = {
@@ -2620,12 +2505,12 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_focus_on_war
-		icon = GFX_focus_cze_german_puppet
+		icon = GFX_dangerous_laws
 		cost = 10.00
 		prerequisite = {
 			focus = PHI_crackdown_on_contraceptives
 		}
-		x = 54
+		x = 51
 		y = 4
 			ai_will_do = {
 					factor = 10
@@ -2639,12 +2524,12 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_pop1
-		icon = GFX_focus_prc_infiltration
+		icon = GFX_entente
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_focus_on_war
 		}
-		x = 53
+		x = 50
 		y = 5
 			ai_will_do = {
 					factor = 10
@@ -2656,12 +2541,12 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_militarized_police
-		icon = GFX_goal_generic_axis_build_infantry
+		icon = GFX_national_greatness
 		cost = 10.00
 		prerequisite = {
 			focus = PHI_focus_on_war
 		}
-		x = 55
+		x = 52
 		y = 5
 			ai_will_do = {
 					factor = 1
@@ -2673,13 +2558,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = PHI_ruin1
-		icon = GFX_focus_generic_anti_fascist_diplomacy
+		id = LAW_ruin1
+		icon = GFX_war3
 		cost = 10.00
 		prerequisite = {
 			focus = PHI_militarized_police
 		}
-		x = 55
+		x = 52
 		y = 6
 			ai_will_do = {
 					factor = 10
@@ -2690,48 +2575,48 @@ focus_tree = {
 
 	}
 	focus = {
-		id = PHI_ruin2
-		icon = GFX_focus_generic_anti_fascist_diplomacy
+		id = LAW_ruin2
+		icon = GFX_war3
 		cost = 10.00
 		prerequisite = {
-			focus = PHI_ruin1
+			focus = LAW_ruin1
 		}
-		x = 55
+		x = 52
 		y = 7
 			ai_will_do = {
 					factor = 10
 				}
 			completion_reward = {
 					swap_ideas = {
-							remove_idea = PHI_end1
-							add_idea = PHI_end2
+							remove_idea = LAW_ruin1
+							add_idea = LAW_ruin2
 						}
 				}
 
 	}
 	focus = {
-		id = PHI_ruin3
-		icon = GFX_focus_generic_anti_fascist_diplomacy
+		id = LAW_ruin3
+		icon = GFX_war3
 		cost = 10.00
 		prerequisite = {
-			focus = PHI_ruin2
+			focus = LAW_ruin2
 		}
-		x = 55
+		x = 52
 		y = 8
 			ai_will_do = {
 					factor = 10
 				}
 			completion_reward = {
 					swap_ideas = {
-							remove_idea = PHI_end2
-							add_idea = PHI_end3
+							remove_idea = LAW_ruin2
+							add_idea = LAW_ruin3
 						}
 				}
 
 	}
 	focus = {
 		id = PHI_autoc
-		icon = GFX_goal_generic_territory_or_war
+		icon = GFX_territory_or_war
 		cost = 10.00
 		prerequisite = {
 			focus = PHI_gov4
@@ -2739,7 +2624,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = PHI_freedom
 		}
-		x = 57
+		x = 54
 		y = 5
 			ai_will_do = {
 					factor = 10
@@ -2759,7 +2644,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_freedom
-		icon = GFX_goal_continuous_boost_freedom
+		icon = GFX_continuous_boost_freedom
 		cost = 10.00
 		prerequisite = {
 			focus = PHI_gov4
@@ -2767,7 +2652,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = PHI_autoc
 		}
-		x = 59
+		x = 56
 		y = 5
 			ai_will_do = {
 					factor = 10
@@ -2779,13 +2664,13 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_fighting_men1
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_small_arms
 		cost = 10.00
 		prerequisite = {
 			focus = PHI_autoc
 			focus = PHI_freedom
 		}
-		x = 57
+		x = 54
 		y = 6
 			ai_will_do = {
 					factor = 10
@@ -2799,12 +2684,12 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_fighting_men2
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_political_pressure
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_fighting_men1
 		}
-		x = 57
+		x = 54
 		y = 7
 			ai_will_do = {
 					factor = 4
@@ -2817,13 +2702,13 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_comp_war
-		icon = GFX_focus_rom_parties_end
+		icon = GFX_destroy_society
 		cost = 10.00
 		prerequisite = {
 			focus = PHI_freedom
 			focus = PHI_autoc
 		}
-		x = 59
+		x = 56
 		y = 6
 			ai_will_do = {
 					factor = 10
@@ -2835,7 +2720,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_add_people1
-		icon = GFX_goal_generic_military_deal
+		icon = GFX_military_deal
 		cost = 10.00
 		prerequisite = {
 			focus = PHI_comp_war
@@ -2843,7 +2728,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PHI_fighting_men2
 		}
-		x = 57
+		x = 54
 		y = 8
 			ai_will_do = {
 					factor = 10
@@ -2866,12 +2751,12 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_add_people2
-		icon = GFX_goal_generic_military_deal
+		icon = GFX_military_deal
 		cost = 10.00
 		prerequisite = {
 			focus = PHI_add_people1
 		}
-		x = 57
+		x = 54
 		y = 9
 			ai_will_do = {
 					factor = 10
@@ -2894,12 +2779,12 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_add_people3
-		icon = GFX_goal_generic_military_deal
+		icon = GFX_military_deal
 		cost = 10.00
 		prerequisite = {
 			focus = PHI_add_people2
 		}
-		x = 57
+		x = 54
 		y = 10
 			ai_will_do = {
 					factor = 10
@@ -2930,7 +2815,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = PHI_crackdown_on_contraceptives
 		}
-		x = 58
+		x = 55
 		y = 3
 			available = {
 					NOT = {
@@ -2950,7 +2835,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PHI_goverment_rebirth
 		}
-		x = 70
+		x = 67
 		y = 1
 			completion_reward = {
 					add_political_power = 100
@@ -2971,7 +2856,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PHI_ideology_focus
 		}
-		x = 65
+		x = 62
 		y = 2
 			completion_reward = {
 					add_political_power = 100
@@ -2991,7 +2876,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = PHI_foreign_politics
 		}
-		x = 62
+		x = 59
 		y = 3
 			completion_reward = {
 					add_political_power = 75
@@ -3011,7 +2896,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = PHI_internal_politics
 		}
-		x = 64
+		x = 61
 		y = 3
 			completion_reward = {
 					add_political_power = 75
@@ -3031,7 +2916,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = PHI_international_alliances
 		}
-		x = 66
+		x = 63
 		y = 3
 			completion_reward = {
 					add_political_power = 50
@@ -3048,7 +2933,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PHI_recruit_more_diplomats
 		}
-		x = 66
+		x = 63
 		y = 4
 			completion_reward = {
 					if = {
@@ -3090,7 +2975,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PHI_isolation
 		}
-		x = 66
+		x = 63
 		y = 5
 			completion_reward = {
 					add_ideas = idea_focus_destroyed_foreign_influence
@@ -3107,7 +2992,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PHI_destroy_foreign_influence
 		}
-		x = 66
+		x = 63
 		y = 6
 			completion_reward = {
 					add_ideas = ENG_defensive_constructions_idea
@@ -3127,7 +3012,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = PHI_recruit_more_diplomats
 		}
-		x = 68
+		x = 65
 		y = 3
 			completion_reward = {
 					set_rule = {
@@ -3146,7 +3031,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PHI_international_alliances
 		}
-		x = 68
+		x = 65
 		y = 4
 			completion_reward = {
 					if = {
@@ -3189,7 +3074,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PHI_intervention
 		}
-		x = 68
+		x = 65
 		y = 5
 			completion_reward = {
 					add_ideas = idea_focus_volunteer_corps
@@ -3206,7 +3091,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PHI_volunteer_corps
 		}
-		x = 68
+		x = 65
 		y = 6
 			completion_reward = {
 					if = {
@@ -3359,7 +3244,7 @@ focus_tree = {
 			focus = PHI_path_of_equality
 			focus = PHI_individual_freedoms
 		}
-		x = 72
+		x = 69
 		y = 2
 			completion_reward = {
 					add_ideas = idea_focus_generic_path_of_order
@@ -3403,7 +3288,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = PHI_ideology_fascist
 		}
-		x = 71
+		x = 68
 		y = 4
 			completion_reward = {
 					increase_nationalist_influence_by_1 = yes
@@ -3421,7 +3306,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PHI_ideology_nationalist
 		}
-		x = 71
+		x = 68
 		y = 5
 			completion_reward = {
 					increase_nationalist_influence_by_1 = yes
@@ -3458,7 +3343,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = PHI_ideology_nationalist
 		}
-		x = 73
+		x = 70
 		y = 4
 			completion_reward = {
 					increase_fascist_influence_by_1 = yes
@@ -3476,7 +3361,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PHI_ideology_fascist
 		}
-		x = 73
+		x = 70
 		y = 5
 			completion_reward = {
 					increase_fascist_influence_by_1 = yes
@@ -3510,7 +3395,7 @@ focus_tree = {
 			focus = PHI_national_restoration
 			focus = PHI_racial_values
 		}
-		x = 72
+		x = 69
 		y = 6
 			completion_reward = {
 					increase_nationalist_influence_by_1 = yes
@@ -3525,7 +3410,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_path_of_islam
-		icon = GFX_goal_unknown
+		icon = GFX_align_to_pakistan
 		cost = 10.00
 		prerequisite = {
 			focus = PHI_ideology_focus
@@ -3535,7 +3420,7 @@ focus_tree = {
 			focus = PHI_path_of_equality
 			focus = PHI_individual_freedoms
 		}
-		x = 75
+		x = 72
 		y = 2
 
 	}
@@ -3546,7 +3431,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PHI_path_of_islam
 		}
-		x = 75
+		x = 72
 		y = 3
 			available = {
 					islamist > 0.15
@@ -3567,7 +3452,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PHI_ideology_islamist
 		}
-		x = 75
+		x = 72
 		y = 4
 			completion_reward = {
 					increase_islamist_influence_by_1 = yes
@@ -3600,7 +3485,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PHI_shariah_lawcode
 		}
-		x = 75
+		x = 72
 		y = 5
 			completion_reward = {
 					increase_islamist_influence_by_2 = yes
@@ -3706,7 +3591,7 @@ focus_tree = {
 			focus = PHI_path_of_islam
 			focus = PHI_individual_freedoms
 		}
-		x = 78
+		x = 75
 		y = 2
 			completion_reward = {
 					add_ideas = idea_focus_generic_path_of_equality
@@ -3730,7 +3615,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = PHI_ideology_socialist
 		}
-		x = 79
+		x = 76
 		y = 3
 			completion_reward = {
 					increase_communist_influence_by_1 = yes
@@ -3748,7 +3633,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PHI_ideology_communist
 		}
-		x = 79
+		x = 76
 		y = 4
 			completion_reward = {
 					increase_communist_influence_by_1 = yes
@@ -3781,7 +3666,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PHI_revolutionary_committee
 		}
-		x = 79
+		x = 76
 		y = 5
 			completion_reward = {
 					increase_communist_influence_by_2 = yes
@@ -3804,7 +3689,7 @@ focus_tree = {
 			focus = PHI_path_of_islam
 			focus = PHI_path_of_equality
 		}
-		x = 86
+		x = 83
 		y = 2
 			completion_reward = {
 					add_timed_idea = {
@@ -3840,7 +3725,7 @@ focus_tree = {
 			focus = PHI_path_of_democratic_freedom
 			focus = PHI_path_of_democratic_progress
 		}
-		x = 82
+		x = 79
 		y = 3
 			completion_reward = {
 					add_popularity = {
@@ -3867,7 +3752,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = PHI_ideology_conservative
 		}
-		x = 81
+		x = 78
 		y = 4
 			completion_reward = {
 					increase_reactionary_influence_by_1 = yes
@@ -3885,7 +3770,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PHI_ideology_reactionary
 		}
-		x = 81
+		x = 78
 		y = 5
 			completion_reward = {
 					increase_reactionary_influence_by_1 = yes
@@ -3922,7 +3807,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = PHI_ideology_reactionary
 		}
-		x = 83
+		x = 80
 		y = 4
 			completion_reward = {
 					increase_conservative_influence_by_1 = yes
@@ -3940,7 +3825,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PHI_ideology_conservative
 		}
-		x = 83
+		x = 80
 		y = 5
 			completion_reward = {
 					increase_conservative_influence_by_1 = yes
@@ -3975,7 +3860,7 @@ focus_tree = {
 			focus = PHI_family_values
 			focus = PHI_national_security
 		}
-		x = 82
+		x = 79
 		y = 6
 			completion_reward = {
 					increase_conservative_influence_by_1 = yes
@@ -3999,7 +3884,7 @@ focus_tree = {
 			focus = PHI_path_of_democratic_values
 			focus = PHI_path_of_democratic_progress
 		}
-		x = 86
+		x = 83
 		y = 3
 			completion_reward = {
 					add_popularity = {
@@ -4026,7 +3911,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = PHI_ideology_social_liberal
 		}
-		x = 85
+		x = 82
 		y = 4
 			completion_reward = {
 					increase_market_liberal_influence_by_1 = yes
@@ -4044,7 +3929,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PHI_ideology_libertarian
 		}
-		x = 85
+		x = 82
 		y = 5
 			completion_reward = {
 					increase_market_liberal_influence_by_1 = yes
@@ -4081,7 +3966,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = PHI_ideology_libertarian
 		}
-		x = 87
+		x = 84
 		y = 4
 			completion_reward = {
 					increase_social_liberal_influence_by_1 = yes
@@ -4099,7 +3984,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PHI_ideology_social_liberal
 		}
-		x = 87
+		x = 84
 		y = 5
 			completion_reward = {
 					increase_social_liberal_influence_by_1 = yes
@@ -4134,7 +4019,7 @@ focus_tree = {
 			focus = PHI_personal_freedoms
 			focus = PHI_economic_freedoms
 		}
-		x = 86
+		x = 83
 		y = 6
 			completion_reward = {
 					increase_social_liberal_influence_by_1 = yes
@@ -4154,10 +4039,10 @@ focus_tree = {
 			focus = PHI_individual_freedoms
 		}
 		mutually_exclusive = {
-			focus = PHI_path_of_democratic_freedom
 			focus = PHI_path_of_democratic_values
+			focus = PHI_path_of_democratic_freedom
 		}
-		x = 90
+		x = 87
 		y = 3
 			completion_reward = {
 					add_popularity = {
@@ -4188,7 +4073,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = PHI_ideology_progressive
 		}
-		x = 89
+		x = 86
 		y = 4
 			completion_reward = {
 					increase_social_democrat_influence_by_1 = yes
@@ -4206,7 +4091,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PHI_ideology_social_democrat
 		}
-		x = 89
+		x = 86
 		y = 5
 			completion_reward = {
 					increase_social_democrat_influence_by_1 = yes
@@ -4235,12 +4120,12 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_claim1
-		icon = GFX_goal_generic_production
+		icon = GFX_renounce_treaty
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_goal1
 		}
-		x = 42
+		x = 39
 		y = 5
 			ai_will_do = {
 					factor = 10
@@ -4259,12 +4144,12 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_war1
-		icon = GFX_goal_generic_production
+		icon = GFX_war
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_claim1
 		}
-		x = 42
+		x = 39
 		y = 6
 			ai_will_do = {
 					factor = 10
@@ -4285,12 +4170,12 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_claim2
-		icon = GFX_focus_generic_strike_at_democracy3
+		icon = GFX_renounce_treaty
 		cost = 10.00
 		prerequisite = {
 			focus = PHI_goal2
 		}
-		x = 44
+		x = 41
 		y = 5
 			available = {
 					country_exists = USA
@@ -4307,12 +4192,12 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_war2
-		icon = GFX_goal_generic_construction
+		icon = GFX_war
 		cost = 10.00
 		prerequisite = {
 			focus = PHI_claim2
 		}
-		x = 44
+		x = 41
 		y = 6
 			ai_will_do = {
 					factor = 1
@@ -4358,12 +4243,12 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_vic1
-		icon = GFX_goal_generic_consumer_goods
+		icon = GFX_race_relations
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_war1
 		}
-		x = 42
+		x = 39
 		y = 7
 			ai_will_do = {
 					factor = 10
@@ -4377,7 +4262,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_aa1
-		icon = GFX_focus_generic_air_defense
+		icon = GFX_air_defense
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_at1
@@ -4394,7 +4279,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_armyupgradef
-		icon = GFX_focus_generic_strike_at_democracy1
+		icon = GFX_army_officers
 		cost = 10.00
 		prerequisite = {
 			focus = PHI_aa1
@@ -4415,7 +4300,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_leader4
-		icon = GFX_focus_generic_military_mission
+		icon = GFX_military_mission
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_leader3
@@ -4444,12 +4329,12 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_vic2
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_industry_democratic4
 		cost = 10.00
 		prerequisite = {
 			focus = PHI_war2
 		}
-		x = 44
+		x = 41
 		y = 7
 			ai_will_do = {
 					factor = 10
@@ -4464,7 +4349,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_Gvic1
-		icon = GFX_focus_generic_provoke_border_clashes
+		icon = GFX_provoke_border_clashes
 		cost = 10.00
 		prerequisite = {
 			focus = PHI_vic1
@@ -4472,7 +4357,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PHI_vic2
 		}
-		x = 43
+		x = 40
 		y = 8
 			ai_will_do = {
 					factor = 10
@@ -4484,7 +4369,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_armyupgradef2
-		icon = GFX_focus_generic_strike_at_democracy1
+		icon = GFX_infantry_axis2
 		cost = 10.00
 		prerequisite = {
 			focus = PHI_leader4
@@ -4505,7 +4390,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_units1
-		icon = GFX_goal_unknown
+		icon = GFX_special_forces
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_armyupgradef
@@ -4535,7 +4420,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_units2
-		icon = GFX_goal_unknown
+		icon = GFX_defence
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_armyupgradef
@@ -4565,12 +4450,12 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_pop2
-		icon = GFX_focus_prc_infiltration
+		icon = GFX_entente
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_pop1
 		}
-		x = 53
+		x = 50
 		y = 6
 			ai_will_do = {
 					factor = 10
@@ -4585,12 +4470,12 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_pop3
-		icon = GFX_focus_prc_infiltration
+		icon = GFX_entente
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_pop2
 		}
-		x = 53
+		x = 50
 		y = 7
 			ai_will_do = {
 					factor = 10
@@ -4605,12 +4490,12 @@ focus_tree = {
 	}
 	focus = {
 		id = PHI_pop4
-		icon = GFX_focus_prc_infiltration
+		icon = GFX_entente
 		cost = 5.00
 		prerequisite = {
 			focus = PHI_pop3
 		}
-		x = 53
+		x = 50
 		y = 8
 			ai_will_do = {
 					factor = 10
@@ -4624,76 +4509,76 @@ focus_tree = {
 
 	}
 	focus = {
-		id = PHI_ruin4
-		icon = GFX_focus_generic_anti_fascist_diplomacy
+		id = LAW_ruin4
+		icon = GFX_war3
 		cost = 10.00
 		prerequisite = {
-			focus = PHI_ruin3
+			focus = LAW_ruin3
 		}
 		prerequisite = {
 			focus = PHI_pop4
 		}
-		x = 54
+		x = 51
 		y = 9
 			ai_will_do = {
 					factor = 10
 				}
 			completion_reward = {
 					swap_ideas = {
-							remove_idea = PHI_end3
-							add_idea = PHI_end4
+							remove_idea = LAW_ruin3
+							add_idea = LAW_ruin4
 						}
 				}
 
 	}
 	focus = {
-		id = PHI_ruin5
-		icon = GFX_focus_generic_anti_fascist_diplomacy
+		id = LAW_ruin5
+		icon = GFX_war3
 		cost = 10.00
 		prerequisite = {
-			focus = PHI_ruin4
+			focus = LAW_ruin4
 		}
-		x = 54
+		x = 51
 		y = 10
 			ai_will_do = {
 					factor = 10
 				}
 			completion_reward = {
 					swap_ideas = {
-							remove_idea = PHI_end4
-							add_idea = PHI_end5
+							remove_idea = LAW_ruin4
+							add_idea = LAW_ruin5
 						}
 				}
 
 	}
 	focus = {
-		id = PHI_ruin6
-		icon = GFX_focus_generic_anti_fascist_diplomacy
+		id = LAW_ruin6
+		icon = GFX_war3
 		cost = 10.00
 		prerequisite = {
-			focus = PHI_ruin5
+			focus = LAW_ruin5
 		}
-		x = 54
+		x = 51
 		y = 11
 			ai_will_do = {
 					factor = 10
 				}
 			completion_reward = {
 					swap_ideas = {
-							remove_idea = PHI_end5
-							add_idea = PHI_end6
+							remove_idea = LAW_ruin5
+							add_idea = LAW_ruin6
 						}
 				}
 
 	}
 	focus = {
 		id = PHI_add_people4
-		icon = GFX_goal_generic_military_deal
+		icon = GFX_military_deal
 		cost = 10.00
 		prerequisite = {
 			focus = PHI_add_people3
 		}
-		x = 57
+		x = 54
 		y = 11
 			ai_will_do = {
 					factor = 10
@@ -4723,7 +4608,7 @@ focus_tree = {
 			focus = PHI_will_of_the_people
 			focus = PHI_the_values_of_old
 		}
-		x = 77
+		x = 74
 		y = 6
 			completion_reward = {
 					add_ideas = idea_focus_new_recruitment_strategies
@@ -4740,7 +4625,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PHI_internal_politics
 		}
-		x = 62
+		x = 59
 		y = 4
 			completion_reward = {
 					add_political_power = 15
@@ -4759,7 +4644,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PHI_recruit_more_administrators
 		}
-		x = 62
+		x = 59
 		y = 5
 			completion_reward = {
 					add_ideas = idea_focus_generic_public_service_investment
@@ -4776,7 +4661,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PHI_invest_in_public_service
 		}
-		x = 62
+		x = 59
 		y = 6
 			completion_reward = {
 					add_war_support = 0.05
@@ -4800,7 +4685,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PHI_foreign_politics
 		}
-		x = 64
+		x = 61
 		y = 4
 			completion_reward = {
 					add_political_power = 25
@@ -4815,7 +4700,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PHI_birth_control_programs
 		}
-		x = 58
+		x = 55
 		y = 4
 			available = {
 					NOT = {
@@ -4873,7 +4758,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PHI_demographic_studies
 		}
-		x = 64
+		x = 61
 		y = 5
 			completion_reward = {
 					add_ideas = idea_focus_generic_education_reform
@@ -4890,7 +4775,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PHI_education_reform
 		}
-		x = 64
+		x = 61
 		y = 6
 			completion_reward = {
 					add_ideas = idea_focus_expanded_secret_services
@@ -4907,7 +4792,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PHI_redistribution_of_wealth
 		}
-		x = 77
+		x = 74
 		y = 5
 			completion_reward = {
 					increase_monarchist_influence_by_2 = yes
@@ -4928,7 +4813,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = PHI_ideology_social_democrat
 		}
-		x = 91
+		x = 88
 		y = 4
 			completion_reward = {
 					increase_progressive_influence_by_1 = yes
@@ -4946,7 +4831,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PHI_ideology_progressive
 		}
-		x = 91
+		x = 88
 		y = 5
 			completion_reward = {
 					increase_progressive_influence_by_1 = yes
@@ -4983,7 +4868,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = PHI_ideology_communist
 		}
-		x = 77
+		x = 74
 		y = 3
 			completion_reward = {
 					increase_democratic_socialist_influence_by_1 = yes
@@ -5001,7 +4886,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PHI_ideology_socialist
 		}
-		x = 77
+		x = 74
 		y = 4
 			completion_reward = {
 					increase_democratic_socialist_influence_by_1 = yes
@@ -5036,7 +4921,7 @@ focus_tree = {
 			focus = PHI_environmental_policy
 			focus = PHI_strengthen_unions
 		}
-		x = 90
+		x = 87
 		y = 6
 			completion_reward = {
 					increase_democratic_socialist_influence_by_1 = yes

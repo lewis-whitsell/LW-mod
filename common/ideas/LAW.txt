@@ -354,7 +354,7 @@ ideas = {
 			}
 		}
 
-		LAW_ruin_1 = {
+		LAW_ruin1 = {
 			allowed = {
 				OR = {
 				tag = MAD
@@ -377,7 +377,7 @@ ideas = {
 
 		}
 
-		LAW_ruin_2 = {
+		LAW_ruin2 = {
 			allowed = {
 				OR = {
 				tag = MAD
@@ -401,7 +401,7 @@ ideas = {
 
 		}
 
-		LAW_ruin_3 = {
+		LAW_ruin3 = {
 			allowed = {
 				OR = {
 				tag = MAD
@@ -426,7 +426,7 @@ ideas = {
 
 		}
 
-		LAW_ruin_4 = {
+		LAW_ruin4 = {
 			allowed = {
 				OR = {
 				tag = MAD
@@ -452,7 +452,7 @@ ideas = {
 
 		}
 
-		LAW_ruin_5 = {
+		LAW_ruin5 = {
 			allowed = {
 				OR = {
 				tag = MAD
@@ -478,7 +478,7 @@ ideas = {
 			 }
 
 		}
-		LAW_ruin_6 = {
+		LAW_ruin6 = {
 			allowed = {
 				OR = {
 				tag = MAD
@@ -645,121 +645,27 @@ ideas = {
 				}
 
 		}
+		LAW_air2 = {
+			allowed = {
+				OR = {
+				tag = MAD
+				tag = CUB
+				tag = PHI
+				tag = DEN
+				tag = GRN
+				tag = AST
+				tag = CYP
+				}
+			}
+				picture = strategic_bombing_focus
+				removal_cost = -1
+				modifier = {
+					air_ace_generation_chance_factor = 0.05
+					local_resources_factor = 0.05
+				}
+
+		}
 		LAW_aircost1 = {
-				
-			allowed = {
-				OR = {
-				tag = MAD
-				tag = CUB
-				tag = PHI
-				tag = DEN
-				tag = GRN
-				tag = AST
-				tag = CYP
-				}
-			}
-
-				allowed_civil_war = {
-					always = yes
-				}
-				
-				removal_cost = -1
-			
-				picture = generic_air_bonus
-				
-				equipment_bonus = {
-					jet_multirole_equipment = {
-					build_cost_ic = -0.05 instant = yes
-					}
-					nav_bomber_equipment = {
-					build_cost_ic = -0.05 instant = yes
-					}
-					ucav_equipment ={
-					build_cost_ic = -0.05 instant = yes
-					}
-					jet_strat_bomber_equipment = {
-					build_cost_ic = -0.05 instant = yes
-					}
-				}
-			}
-
-			LAW_aircost1 = {
-				
-			allowed = {
-				OR = {
-				tag = MAD
-				tag = CUB
-				tag = PHI
-				tag = DEN
-				tag = GRN
-				tag = AST
-				tag = CYP
-				}
-			}
-
-				allowed_civil_war = {
-					always = yes
-				}
-				
-				removal_cost = -1
-			
-				picture = generic_air_bonus
-				
-				equipment_bonus = {
-					jet_multirole_equipment = {
-					build_cost_ic = -0.05 instant = yes
-					}
-					nav_bomber_equipment = {
-					build_cost_ic = -0.05 instant = yes
-					}
-					ucav_equipment ={
-					build_cost_ic = -0.05 instant = yes
-					}
-					jet_strat_bomber_equipment = {
-					build_cost_ic = -0.05 instant = yes
-					}
-				}
-			}
-
-			LAW_aircost1 = {
-				
-			allowed = {
-				OR = {
-				tag = MAD
-				tag = CUB
-				tag = PHI
-				tag = DEN
-				tag = GRN
-				tag = AST
-				tag = CYP
-				}
-			}
-
-				allowed_civil_war = {
-					always = yes
-				}
-				
-				removal_cost = -1
-			
-				picture = generic_air_bonus
-				
-				equipment_bonus = {
-					jet_multirole_equipment = {
-					build_cost_ic = -0.05 instant = yes
-					}
-					nav_bomber_equipment = {
-					build_cost_ic = -0.05 instant = yes
-					}
-					ucav_equipment ={
-					build_cost_ic = -0.05 instant = yes
-					}
-					jet_strat_bomber_equipment = {
-					build_cost_ic = -0.05 instant = yes
-					}
-				}
-			}
-
-			LAW_aircost1 = {
 				
 			allowed = {
 				OR = {

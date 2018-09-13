@@ -1,5 +1,25 @@
 spriteTypes = {	
-
+	
+	spriteType = {
+		name = "GFX_naval_battlemap_overlay1"
+		texturefile = "gfx/interface/navalcombat/naval_battlemap_overlay1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_naval_battle_leader_frame"
+		texturefile = "gfx/interface/navalcombat/naval_battle_leader_frame.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_naval_battle_top_window"
+		texturefile = "gfx/interface/navalcombat/naval_battle_top_window.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"		
+	}	
+	
+	spriteType = {
+		name = "GFX_naval_battle_bottom_window"
+		texturefile = "gfx/interface/navalcombat/naval_battle_bottom_window.dds"
+	}	
 	
 	# ---------------------------------------------------------------------------
 	# Code expects GFX_navalcombat_ship_icon_ + sprite_name set in subunit defs
