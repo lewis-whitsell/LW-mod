@@ -20,7 +20,7 @@ state={
 		}
 
 	}
-	manpower=58000
+	manpower=14562113
 	buildings_max_level_factor=1.000
 	state_category=state_level_10
 	provinces={

@@ -11648,6 +11648,63 @@ spriteTypes = {
 		textureFile = "gfx/interface/technologies/Generic/support/CC2035.dds"
 	}
 
+	#### Artillery/SPA/AA/AT Subtech ####
+	
+	SpriteType = {
+		name = "GFX_Arty_upgrade_1_medium"
+		texturefile = "gfx/interface/technologies/Generic/Subtechs//MRSI_1985.dds"
+	}
+	SpriteType = {
+		name = "GFX_Arty_upgrade_2_medium"
+		texturefile = "gfx/interface/technologies/Generic/Subtechs//Propellant_Charges_2005.dds"
+	}
+	SpriteType = {
+		name = "GFX_Arty_upgrade_3_medium"
+		texturefile = "gfx/interface/technologies/Generic/Subtechs//FireControl_2005.dds"
+	}
+	SpriteType = {
+		name = "GFX_Arty_upgrade_4_medium"
+		texturefile = "gfx/interface/technologies/Generic/Subtechs//MRSI_2025.dds"
+	}
+	SpriteType = {
+		name = "GFX_Arty_upgrade_5_medium"
+		texturefile = "gfx/interface/technologies/Generic/Subtechs//Bulk_loaded_liquid_Propellants_2035.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_AT_upgrade_1_medium"
+		texturefile = "gfx/interface/technologies/Generic/Subtechs//SACLOS.dds"
+	}
+	SpriteType = {
+		name = "GFX_AT_upgrade_2_medium"
+		texturefile = "gfx/interface/technologies/Generic/Subtechs//Strapdown_FireForget_System.dds"
+	}
+	SpriteType = {
+		name = "GFX_AT_upgrade_3_medium"
+		texturefile = "gfx/interface/technologies/Generic/Subtechs//Improved_Tandem_Charge.dds"
+	}
+	SpriteType = {
+		name = "GFX_AT_upgrade_4_medium"
+		texturefile = "gfx/interface/technologies/Generic/Subtechs//Loitering_Munition.dds"
+	}
+	
+	SpriteType = {
+        name = "GFX_AA_upgrade_1_medium"
+        texturefile = "gfx/interface/technologies/Generic/Subtechs//Second_Gen_Battery_Coolant_Unit.dds"
+    }
+	SpriteType = {
+        name = "GFX_AA_upgrade_2_medium"
+        texturefile = "gfx/interface/technologies/Generic/Subtechs//Fourth_Gen_Early_Cooled_Infrared_Focal_Plane_Array.dds"
+    }
+	SpriteType = {
+        name = "GFX_AA_upgrade_3_medium"
+        texturefile = "gfx/interface/technologies/Generic/Subtechs//Third_Gen_Rosette_Scanning_IR_UV.dds"
+    }
+	SpriteType = {
+        name = "GFX_AA_upgrade_4_medium"
+        texturefile = "gfx/interface/technologies/Generic/Subtechs//CooledUncooled_Focal_Plane_Array_indium_gallium_arsenide_sensor.dds"
+    }
+
 
 
 

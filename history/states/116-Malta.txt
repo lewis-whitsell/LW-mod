@@ -2,7 +2,7 @@ state=
 {
 	id=116
 	name="STATE_116"
-	manpower = 420330
+	manpower = 4203300
 	state_category = state_level_5
 	history= {
 		owner = CYP
