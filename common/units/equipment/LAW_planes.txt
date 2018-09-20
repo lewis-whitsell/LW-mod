@@ -2127,7 +2127,7 @@ equipments = {
 		year = 2020
 
 		air_range = 3190
-		maximum_speed = 3500
+ 		maximum_speed = 3500
 		air_agility = 288
 		air_attack = 114
 		air_defence = 67

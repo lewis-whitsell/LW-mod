@@ -47,7 +47,7 @@ ideas = {
 		}
 		
 		oil_production_bonus = {
-			picture = resource_production
+ 			picture = resource_production
 			allowed = { always = no }
 			removal_cost = -1
 			

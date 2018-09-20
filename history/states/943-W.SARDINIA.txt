@@ -35,7 +35,7 @@ state={
 		add_core_of = ITA
 
 	}
-	manpower=4990000
+	manpower=7658098
 	buildings_max_level_factor=1.000
 	state_category=state_level_15
 }

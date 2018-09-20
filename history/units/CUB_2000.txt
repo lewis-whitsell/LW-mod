@@ -1,127 +1,391 @@
-﻿division_template = {
-	name = "Infantry Division"
+﻿
+division_template = {
+	name = "CUB Starting Garri"
 	
 	regiments = {
-		mountaineers = { x = 0 y = 0 }
+		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
-		marine = { x = 1 y = 0 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+
+		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }
+
+		artillery_brigade = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
+		artillery_brigade = { x = 2 y = 2 }
+		artillery_brigade = { x = 2 y = 3 }
+		artillery_brigade = { x = 2 y = 4 }
+
 		infantry = { x = 3 y = 0 }
-		infantry = { x = 3 y = 1 }
-		infantry = { x = 3 y = 2 }
+		anti_tank_brigade = { x = 3 y = 1 }
+		anti_tank_brigade = { x = 3 y = 2 }
+		anti_air_brigade = { x = 3 y = 3 }
 	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
-	}
+
 }
+
 division_template = {
-	name = "Motorized Brigade"
+	name = "CUB Starting INF"
 	
 	regiments = {
-		motorized = { x = 0 y = 0 }
-		motorized = { x = 0 y = 1 }
-		motorized = { x = 0 y = 2 }
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+
+		artillery_brigade = { x = 1 y = 0 } 
+		artillery_brigade = { x = 1 y = 1 }
+		artillery_brigade = { x = 1 y = 2 }
+
+		anti_tank_brigade = { x = 2 y = 0 }
+
 	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-	}
+
 }
+
 division_template = {
-	name = "Armored Brigade"
+	name = "CUB Starting ToDo"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+
+		artillery_brigade = { x = 1 y = 0 } 
+	
+		anti_tank_brigade = { x = 1 y = 1 }
+
+	}
+
+}
+
+division_template = {
+	name = "CUB Starting ARM"
 	
 	regiments = {
 		modern_armor = { x = 0 y = 0 }
 		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		sp_artillery_brigade = { x = 2 y = 0 }
+		sp_artillery_brigade = { x = 2 y = 1 }
+
+
 	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
-	}
+
 }
 
+division_template = {
+	name = "CUB Starting Marine Division"
+	
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 0 y = 3 }
+		marine = { x = 0 y = 4 }
+	}
+
+}
+
+	
 units = {
-	
+
 	division = {
-		name = "1st Infantry Division"
-		location = 7622
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
+		name = "CUB Starting Marine 1"
+		location = 315
+		division_template = "CUB Starting Marine Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "CUB Starting Marine 2"
+		location = 315
+		division_template = "CUB Starting Marine Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "CUB Starting Marine 3"
+		location = 315
+		division_template = "CUB Starting Marine Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "CUB Starting Marine 4"
+		location = 315
+		division_template = "CUB Starting Marine Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "CUB Starting Marine 5"
+		location = 315
+		division_template = "CUB Starting Marine Division"
+		start_experience_factor = 0.75
+	}
+
+	division = {
+		name = "CUB Starting Todo 1"
+		location = 315
+		division_template = "CUB Starting ARM"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "CUB Starting Todo 2"
+		location = 315
+		division_template = "CUB Starting ARM"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "CUB Starting Todo 3"
+		location = 315
+		division_template = "CUB Starting ARM"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "CUB Starting Todo 4"
+		location = 315
+		division_template = "CUB Starting ARM"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "CUB Starting Todo 5"
+		location = 315
+		division_template = "CUB Starting ARM"
+		start_experience_factor = 0.5
+	}
+
+
+	division = {
+		name = "CUB Starting ARM 1"
+		location = 315
+		division_template = "CUB Starting ARM"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "CUB Starting ARM 2"
+		location = 315
+		division_template = "CUB Starting ARM"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "CUB Starting ARM 3"
+		location = 315
+		division_template = "CUB Starting ARM"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "CUB Starting ARM 4"
+		location = 315
+		division_template = "CUB Starting ARM"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "CUB Starting ARM 5"
+		location = 315
+		division_template = "CUB Starting ARM"
+		start_experience_factor = 0.5
 	}
 	
 	division = {
-		name = "2nd Infantry Division"
-		location = 7622
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
+		name = "CUB Starting Army Garri 1"
+		location = 315
+		division_template = "CUB Starting Garri"
+		start_experience_factor = 0.5
 	}
-	
+
 	division = {
-		name = "3rd Infantry Division"
-		location = 1550
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
+		name = "CUB Starting Army Garri 2"
+		location = 315
+		division_template = "CUB Starting Garri"
+		start_experience_factor = 0.5
 	}
-	
+
 	division = {
-		name = "4th Infantry Division"
-		location = 7590
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
+		name = "CUB Starting Army Garri 3"
+		location = 315
+		division_template = "CUB Starting Garri"
+		start_experience_factor = 0.5
 	}
-	
+
 	division = {
-		name = "1st Armored Brigade"
-		location = 7622
-		division_template = "Armored Brigade"
-		start_experience_factor = 0.3
+		name = "CUB Starting Army Garri 4"
+		location = 315
+		division_template = "CUB Starting Garri"
+		start_experience_factor = 0.5
 	}
-	
+
 	division = {
-		name = "2nd Armored Brigade"
-		location = 7590
-		division_template = "Armored Brigade"
-		start_experience_factor = 0.3
+		name = "CUB Starting Army Garri 5"
+		location = 315
+		division_template = "CUB Starting Garri"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "CUB Starting Army Garri 6"
+		location = 315
+		division_template = "CUB Starting Garri"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "CUB Starting Army Garri 7"
+		location = 315
+		division_template = "CUB Starting Garri"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "CUB Starting Army Garri 8"
+		location = 315
+		division_template = "CUB Starting Garri"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "CUB Starting Army Garri 9"
+		location = 315
+		division_template = "CUB Starting Garri"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "CUB Starting Army Garri 10"
+		location = 315
+		division_template = "CUB Starting Garri"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "CUB Starting Army Garri 11"
+		location = 315
+		division_template = "CUB Starting Garri"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "CUB Starting Army Garri 12"
+		location = 315
+		division_template = "CUB Starting Garri"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "CUB Starting Army Garri 13"
+		location = 315
+		division_template = "CUB Starting Garri"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "CUB Starting Army Garri 14"
+		location = 315
+		division_template = "CUB Starting Garri"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "CUB Starting Army Garri 15"
+		location = 315
+		division_template = "CUB Starting Garri"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "CUB Starting Army Garri 16"
+		location = 315
+		division_template = "CUB Starting Garri"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "CUB Starting Army Garri 17"
+		location = 315
+		division_template = "CUB Starting Garri"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "CUB Starting Army Garri 18"
+		location = 315
+		division_template = "CUB Starting Garri"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "CUB Starting Army Garri 19"
+		location = 315
+		division_template = "CUB Starting Garri"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "CUB Starting Army Garri 20"
+		location = 315
+		division_template = "CUB Starting Garri"
+		start_experience_factor = 0.5
 	}
 	
 	navy = {
-		name = "Marina de Guerra Revolucionaria"
-		base = 7622
-		location = 7622
-		ship = { name = "Pauk II-class frigate" definition = frigate equipment = { submarine_1 = { amount = 1 owner = VEN } } }
+		name = "Offshore Combat Force"
+		base = 315
+		location = 315
+		ship = { name = "Refurb FF 1" definition = frigate equipment = { frigate_1 = { amount = 1 owner = CUB } } }
+		ship = { name = "Refurb FF 2" definition = frigate equipment = { frigate_1 = { amount = 1 owner = CUB } } }
+		ship = { name = "Refurb FF 3" definition = frigate equipment = { frigate_1 = { amount = 1 owner = CUB } } }
+		ship = { name = "Refurb FF 4" definition = frigate equipment = { frigate_1 = { amount = 1 owner = CUB } } }
+		ship = { name = "Refurb FF 5" definition = frigate equipment = { frigate_1 = { amount = 1 owner = CUB } } }
+		ship = { name = "Refurb FF 6" definition = frigate equipment = { frigate_1 = { amount = 1 owner = CUB } } }
+		ship = { name = "Refurb FF 7" definition = frigate equipment = { frigate_1 = { amount = 1 owner = CUB } } }
+		ship = { name = "Refurb FF 8" definition = frigate equipment = { frigate_1 = { amount = 1 owner = CUB } } }
+		ship = { name = "Refurb FF 9" definition = frigate equipment = { frigate_1 = { amount = 1 owner = CUB } } }
+		ship = { name = "Refurb FF 10" definition = frigate equipment = { frigate_1 = { amount = 1 owner = CUB } } }
+		ship = { name = "Refurb DD 1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CUB } } }
+		ship = { name = "Refurb DD 2" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CUB } } }
+
+		ship = {
+			name = "Refurb CV 1" 
+			definition = LHD 
+			equipment = { LHD_1 = { amount = 1 owner = CUB } }
+			air_wings = {
+			}
+		}
 	}
-	
+
+	navy = {
+		name = "Offshore Combat Force 2"
+		base = 315
+		location = 315
+		ship = { name = "Refurb FF 11" definition = frigate equipment = { frigate_1 = { amount = 1 owner = CUB } } }
+		ship = { name = "Refurb FF 12" definition = frigate equipment = { frigate_1 = { amount = 1 owner = CUB } } }
+		ship = { name = "Refurb FF 13" definition = frigate equipment = { frigate_1 = { amount = 1 owner = CUB } } }
+		ship = { name = "Refurb FF 14" definition = frigate equipment = { frigate_1 = { amount = 1 owner = CUB } } }
+		ship = { name = "Refurb FF 15" definition = frigate equipment = { frigate_1 = { amount = 1 owner = CUB } } }
+		ship = { name = "Refurb FF 16" definition = frigate equipment = { frigate_1 = { amount = 1 owner = CUB } } }
+		ship = { name = "Refurb FF 17" definition = frigate equipment = { frigate_1 = { amount = 1 owner = CUB } } }
+		ship = { name = "Refurb FF 18" definition = frigate equipment = { frigate_1 = { amount = 1 owner = CUB } } }
+		ship = { name = "Refurb FF 19" definition = frigate equipment = { frigate_1 = { amount = 1 owner = CUB } } }
+		ship = { name = "Refurb FF 110" definition = frigate equipment = { frigate_1 = { amount = 1 owner = CUB } } }
+		ship = { name = "Refurb DD 11" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CUB } } }
+		ship = { name = "Refurb DD 12" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CUB } } }
+
+		ship = {
+			name = "Refurb CV 11" 
+			definition = LHD 
+			equipment = { LHD_1 = { amount = 1 owner = CUB } }
+			air_wings = {
+			}
+		}
+	}
+
 }
-
-### Air OOB ###
-
-air_wings = {
-	318 = {
-		#MiG-29
-		jet_multirole_equipment_5 = {
-			owner = "CUB" 
-			amount = 20
-		}
-
-	}
-	318 = {
-		#MiG-23
-		jet_multirole_equipment_5 = {
-			owner = "CUB" 
-			amount = 30
-		}
-
-	}
-	318 = {
-		#MiG-21
-		jet_multirole_equipment_4 = {
-			owner = "CUB" 
-			amount = 150
-		}
-
-	}
-}
+ 
