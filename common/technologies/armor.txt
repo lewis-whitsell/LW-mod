@@ -672,8 +672,7 @@ technologies = {
 		enable_equipments = {
 			armored_personnel_carrier_1
 		}
-		sub_technologies = {		
-			recon_mechanized_1	
+		sub_technologies = {			
 			sp_rocket1	
 		}
 		research_cost = 1
@@ -704,8 +703,7 @@ technologies = {
 		enable_equipments = {
 			armored_personnel_carrier_2
 		}
-		sub_technologies = {		
-			recon_mechanized_2	
+		sub_technologies = {			
 			sp_rocket2	
 		}
 		research_cost = 1
@@ -736,8 +734,7 @@ technologies = {
 		enable_equipments = {
 			armored_personnel_carrier_3
 		}
-		sub_technologies = {		
-			recon_mechanized_3	
+		sub_technologies = {			
 			sp_rocket4	
 		}
 		research_cost = 1
@@ -768,8 +765,7 @@ technologies = {
 		enable_equipments = {
 			armored_personnel_carrier_4
 		}
-		sub_technologies = {		
-			recon_mechanized_4	
+		sub_technologies = {			
 			sp_rocket4	
 		}
 		research_cost = 1
@@ -801,7 +797,6 @@ technologies = {
 			armored_personnel_carrier_5
 		}
 		sub_technologies = {		
-			recon_mechanized_5
 			sp_rocket6		
 		}
 		research_cost = 1
@@ -990,122 +985,6 @@ technologies = {
 			name = armour_folder
 			position = { x = @marine_line y = @2025 }
 		}
-		
-		categories = {
-			motorized_equipment
-			mechanized_tech
-			cat_mechanized_equipment
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	recon_mechanized_1 = {
-	
-		enable_subunits = {
-			recon_mechanized
-		}	
-
-		enable_equipments = {
-			recon_mechanized_equipment_1
-		}	
-
-		research_cost = 2
-		start_year = 1942
-		
-		categories = {
-			motorized_equipment
-			mechanized_tech
-			cat_mechanized_equipment
-		}
-		
-		ai_will_do = {
-			factor = 2
-		}
-	}
-
-#1944
-	
-	recon_mechanized_2 = {
-
-		enable_equipments = {
-		recon_mechanized_equipment_2
-		}
-		
-
-		research_cost = 2
-		start_year = 1944
-		
-		categories = {
-			motorized_equipment
-			mechanized_tech
-			cat_mechanized_equipment
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-#1947	
-	
-	recon_mechanized_3 = {
-
-		enable_equipments = {
-		recon_mechanized_equipment_3
-		}
-		
-
-		research_cost = 2
-		start_year = 1947
-		
-		categories = {
-			motorized_equipment
-			mechanized_tech
-			cat_mechanized_equipment
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-#1950	
-	
-	recon_mechanized_4 = {
-
-		enable_equipments = {
-		recon_mechanized_equipment_4
-		}
-		
-
-		research_cost = 2
-		start_year = 1950
-		
-		categories = {
-			motorized_equipment
-			mechanized_tech
-			cat_mechanized_equipment
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-#1955	
-	
-	recon_mechanized_5 = {
-
-		enable_equipments = {
-		recon_mechanized_equipment_5
-		}
-		
-
-		research_cost = 2
-		start_year = 1955
 		
 		categories = {
 			motorized_equipment

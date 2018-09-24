@@ -1,0 +1,784 @@
+Arty_upgrade_1 = {
+
+
+		path = {
+			leads_to_tech = artillery_1 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = SP_arty_equipment_1 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = Arty_upgrade_2 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = Arty_upgrade_3 
+			research_cost_coeff = 1
+		}
+		
+		Arty_Bat = {
+			defense = 0.01
+		}
+		Arty_Battery = {
+			defense = 0.01
+		}
+		SP_Arty_Bat = {
+			defense = 0.01
+		}
+		SP_Arty_Battery = {
+			defense = 0.01
+		}
+		
+		research_cost = 1
+		start_year = 1980
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = @1985 }
+		}
+		
+		categories = {
+			Cat_ARTILLERY #Generic for all artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Arty_upgrade_2 = {
+
+
+		path = {
+			leads_to_tech = artillery_2 
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = Arty_upgrade_4 
+			research_cost_coeff = 1
+		}
+		
+		Arty_Bat = {
+		breakthrough = 0.01
+			
+		}
+		Arty_Battery = {
+			breakthrough = 0.01
+		}
+		SP_Arty_Bat = {
+			breakthrough = 0.01
+		}
+		SP_Arty_Battery = {
+			breakthrough = 0.01
+		}
+
+		research_cost = 1
+		start_year = 2000
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -1 y = @2005 }
+		}
+		
+		categories = {
+			Cat_ARTILLERY #Generic for all artillery
+			Cat_ARTY
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Arty_upgrade_3 = {
+
+
+		path = {
+			leads_to_tech = SP_arty_equipment_2 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = Arty_upgrade_4 
+			research_cost_coeff = 1
+		}
+
+		Arty_Bat = {
+			soft_attack = 0.01
+		}
+		Arty_Battery = {
+			soft_attack = 0.01
+		}
+		SP_Arty_Bat = {
+			soft_attack = 0.01
+		}
+		SP_Arty_Battery = {
+			soft_attack = 0.01
+		}
+		
+		research_cost = 1
+		start_year = 2000
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 1 y = @2005 }
+		}
+		
+		categories = {
+			Cat_ARTILLERY #Generic for all artillery
+			Cat_SP_ARTY
+			Cat_SP_R_ARTY
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	Arty_upgrade_4 = {
+
+
+		path = {
+			leads_to_tech = artillery_3 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = SP_arty_equipment_3 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = Arty_upgrade_5 
+			research_cost_coeff = 1
+		}
+		
+		
+		Arty_Bat = {
+			hard_attack = 0.01
+		}
+		Arty_Battery = {
+			hard_attack = 0.01
+		}
+		SP_Arty_Bat = {
+			hard_attack = 0.01
+		}
+		SP_Arty_Battery = {
+			hard_attack = 0.01
+		}
+		
+		research_cost = 1
+		start_year = 2020
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = @2025 }
+		}
+		
+		categories = {
+			Cat_ARTILLERY #Generic for all artillery
+			Cat_ARTY
+			Cat_SP_ARTY
+			Cat_SP_R_ARTY
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	Arty_upgrade_5 = {
+
+
+		path = {
+			leads_to_tech = artillery_4 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = SP_arty_equipment_4 
+			research_cost_coeff = 1
+		}
+		
+		Arty_Bat = {
+			soft_attack = 0.01
+		}
+		Arty_Battery = {
+			soft_attack = 0.01
+		}
+		SP_Arty_Bat = {
+			soft_attack = 0.01
+		}
+		SP_Arty_Battery = {
+			soft_attack = 0.01
+		}
+
+		research_cost = 1
+		start_year = 2030
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = @2035 }
+		}
+		
+		categories = {
+			Cat_ARTILLERY #Generic for all artillery
+			Cat_ARTY
+			Cat_SP_ARTY
+			Cat_SP_R_ARTY
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	AT_upgrade_1 = {
+
+		category_all_infantry = {
+			hard_attack = 0.01
+		}			
+		
+		path = {
+			leads_to_tech = Anti_tank_1 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = AT_upgrade_3 
+			research_cost_coeff = 1
+		}
+		# path = {
+			# leads_to_tech = SP_artillery_1 
+			# research_cost_coeff = 1
+		# }
+		
+		research_cost = 1
+		start_year = 1980
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 9 y = @1985 }
+		}
+		
+		categories = {
+			Cat_AT
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#2005
+	AT_upgrade_2 = {
+
+		category_all_infantry = {
+			defense = 0.01
+		}
+		
+		path = {
+			leads_to_tech = AT_upgrade_3 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = Anti_tank_2 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 2000
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 11 y = @2005 }
+		}
+		
+		categories = {
+			Cat_AT
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#2025
+	AT_upgrade_3 = {
+
+		category_all_infantry = {
+			breakthrough = 0.01
+		}
+		
+		path = {
+			leads_to_tech = Anti_tank_3 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 2020
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 9 y = @2025 }
+		}
+		
+		categories = {
+			Cat_AT
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#2035
+	AT_upgrade_4 = {
+
+		category_all_infantry = {
+			hard_attack = 0.01
+		}
+		
+		path = {
+			leads_to_tech = Anti_tank_4 
+			research_cost_coeff = 1
+		}
+		# path = {
+			# leads_to_tech = SP_artillery_1 
+			# research_cost_coeff = 1
+		# }
+		
+		research_cost = 1
+		start_year = 2030
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 11 y = @2035 }
+		}
+		
+		categories = {
+			Cat_AT
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	AA_upgrade_1 = {
+		
+		category_all_infantry = {
+			air_attack = 0.01
+		}
+		
+		path = {
+			leads_to_tech = Anti_Air_1 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = AA_upgrade_2 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = AA_upgrade_3 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.2
+		start_year = 1980
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 10 y = @1985 }
+		}
+		
+		categories = {
+			Cat_AA
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	AA_upgrade_2 = {
+		
+		category_all_infantry = {
+			air_attack = 0.01
+		}
+		
+		path = {
+			leads_to_tech = AA_upgrade_3 
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = Anti_Air_3 
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.2
+		start_year = 2000
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 9 y = @2005 }
+		}
+		
+		categories = {
+			Cat_AA
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#2005
+	AA_upgrade_3 = {
+		
+		category_all_infantry = {
+			air_attack = 0.01
+		}
+		
+		path = {
+			leads_to_tech = Anti_Air_2 
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.2
+		start_year = 2000
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 11 y = @2005 }
+		}
+		
+		categories = {
+			Cat_AA
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	AA_upgrade_4 = {
+		
+		category_all_infantry = {
+			air_attack = 0.01
+		}
+		
+		path = {
+			leads_to_tech = Anti_Air_4 
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.2
+		start_year = 2030
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 10 y = @2035 }
+		}
+		
+		categories = {
+			Cat_AA
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	###------> Special Forces <><> <><> <><> <><> <><>
+	
+	tech_special_forces = {
+		category_special_forces = {
+			acclimatization_hot_climate_gain_factor = 0.05
+			acclimatization_cold_climate_gain_factor = 0.05
+		}
+
+		path = {
+			leads_to_tech = advanced_special_forces
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = improved_special_forces
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1938
+		folder = {
+			name = infantry_folder
+			position = { x = 1 y = @1938 }
+		}
+		
+		categories = {
+			mountaineers_tech
+			marine_tech
+			para_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
+
+
+	advanced_special_forces = {
+		xor={
+			improved_special_forces
+		}
+
+		category_special_forces = {
+			max_organisation = 5
+			defense = 0.05
+		}
+
+		special_forces_training_time_factor = 0.1
+		
+		path = {
+			leads_to_tech = extreme_environment_training
+			research_cost_coeff = 1
+		}
+
+
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = @1940 }
+		}
+		
+		categories = {
+			mountaineers_tech
+			marine_tech
+			para_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
+
+	improved_special_forces = {
+		xor={
+			advanced_special_forces
+		}
+
+		special_forces_cap = 0.05
+		special_forces_training_time_factor = -0.1
+		
+		path = {
+			leads_to_tech = survival_training
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = @1940 }
+		}
+		
+		categories = {
+			mountaineers_tech
+			marine_tech
+			para_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
+
+	extreme_environment_training = {
+
+		category_special_forces = {
+			acclimatization_hot_climate_gain_factor = 0.50
+			acclimatization_cold_climate_gain_factor = 0.50
+		}
+		
+		special_forces_no_supply_grace = 48
+		special_forces_training_time_factor = 0.1
+		
+		path = {
+			leads_to_tech = elite_forces
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1943
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = @1943 }
+		}
+		
+		categories = {
+
+			mountaineers_tech
+			marine_tech
+			para_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+		}
+
+
+
+
+	}
+
+	survival_training = {
+
+		category_special_forces = {
+			acclimatization_hot_climate_gain_factor = 0.20
+			acclimatization_cold_climate_gain_factor = 0.20
+		}
+		
+		special_forces_out_of_supply_factor = -0.1
+		
+		path = {
+			leads_to_tech = elite_forces
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1943
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = @1943 }
+		}
+		
+		categories = {
+			mountaineers_tech
+			marine_tech
+			para_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
+
+	elite_forces = {
+		category_special_forces = {
+			acclimatization_hot_climate_gain_factor = 0.10
+			acclimatization_cold_climate_gain_factor = 0.10
+			max_organisation = 2
+			soft_attack = 0.03
+		}
+		
+		special_forces_no_supply_grace = 24
+		
+		path = {
+			leads_to_tech = elite_forces_02
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1946
+		folder = {
+			name = infantry_folder
+			position = { x = 1 y = @1946 }
+		}
+		
+		categories = {
+			mountaineers_tech
+			marine_tech
+			para_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
+	
+	elite_forces_02 = {
+		category_special_forces = {
+			acclimatization_hot_climate_gain_factor = 0.10
+			acclimatization_cold_climate_gain_factor = 0.10
+			max_organisation = 2
+			soft_attack = 0.03
+		}
+		
+		special_forces_no_supply_grace = 24
+		
+		path = {
+			leads_to_tech = elite_forces_03
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1950
+		folder = {
+			name = infantry_folder
+			position = { x = 1 y = @1950 }
+		}
+		
+		categories = {
+			mountaineers_tech
+			marine_tech
+			para_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
+	
+	elite_forces_03 = {
+		category_special_forces = {
+			acclimatization_hot_climate_gain_factor = 0.10
+			acclimatization_cold_climate_gain_factor = 0.10
+			max_organisation = 2
+			soft_attack = 0.03
+		}
+		
+		special_forces_no_supply_grace = 24
+
+		research_cost = 2
+		start_year = 1954
+		folder = {
+			name = infantry_folder
+			position = { x = 1 y = @1954 }
+		}
+		
+		categories = {
+			mountaineers_tech
+			marine_tech
+			para_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
+	
+jungle_warfare = {
+
+		research_cost = 1
+
+		# only from focus!!! #####
+		allow = {
+			always = no
+		}
+
+
+		#If you change these
+		#Change the custom tooltip too: RAJ_jungle_training_effect
+		marine = {
+			jungle = {
+				attack = 0.05 
+				movement = 0.1
+			}
+		}
+
+		mountaineers = {
+			jungle = {
+				attack = 0.05
+				movement = 0.1
+			}
+		}
+
+		paratrooper = {
+			jungle = {
+				attack = 0.05
+				movement = 0.1
+			}
+		}
+
+	}

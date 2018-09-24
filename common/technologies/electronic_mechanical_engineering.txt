@@ -7,12 +7,10 @@
 @2008 = 12
 @2010 = 14
 @2012 = 16
-@2014 = 18
-@2016 = 20
-@2018 = 22
-@2020 = 24
-@2024 = 26
-@2028 = 28
+@2015 = 18
+@2020 = 20
+@2025 = 22
+@2030 = 24
 
 @rck1950 = 2
 @rck1960 = 4
@@ -29,7 +27,7 @@
 @rck2025 = 26
 @ECM = -1
 @ECCM = 1
-@CYBER = -2
+@CYBER = -3
 
 @far_left = -4
 @more_left = -3
@@ -91,16 +89,16 @@ technologies = {
 		land_reinforce_rate = 0.02
 		
 		path = {
-			leads_to_tech = modern_detection_devices
+			leads_to_tech = modern_radar
 			research_cost_coeff = 1
 		}
 		
 		research_cost = 1
-		start_year = 1990
+		start_year = 2000
 		
 		folder = {
 			name = electronics_folder
-			position = { x = @left y = @1990 }
+			position = { x = @left y = @2000 }
 		}
 		
 		folder = {
@@ -117,10 +115,10 @@ technologies = {
 		}
 	}
 	
-	modern_detection_devices = {
+	modern_radar = {
 		
 		path = {
-			leads_to_tech = modern_detection_devices2
+			leads_to_tech = modern_radar2
 			research_cost_coeff = 1
 		}
 		enable_building = {
@@ -129,61 +127,7 @@ technologies = {
 		}
 		
 		research_cost = 1.5
-		start_year = 2000
-		
-		folder = {
-			name = electronics_folder
-			position = { x = @left y = @2000 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			electronics
-			radar_tech
-		}
-	}
-	modern_detection_devices2 = {
-		path = {
-			leads_to_tech = modern_detection_devices3
-			research_cost_coeff = 1
-		}
-		enable_building = {
-			building = radar_station
-			level = 3
-		}
-		
-		research_cost = 1.5
-		start_year = 2000
-		
-		folder = {
-			name = electronics_folder
-			position = { x = @left y = @2002 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			electronics
-			radar_tech
-		}
-	}
-	modern_detection_devices3 = {
-		path = {
-			leads_to_tech = modern_detection_devices4
-			research_cost_coeff = 1
-		}
-		enable_building = {
-			building = radar_station
-			level = 4
-		}
-		
-		research_cost = 1.5
-		start_year = 2000
+		start_year = 2004
 		
 		folder = {
 			name = electronics_folder
@@ -199,9 +143,63 @@ technologies = {
 			radar_tech
 		}
 	}
-		modern_detection_devices4 = {
+	modern_radar2 = {
 		path = {
-			leads_to_tech = modern_detection_devices5
+			leads_to_tech = modern_radar3
+			research_cost_coeff = 1
+		}
+		enable_building = {
+			building = radar_station
+			level = 3
+		}
+		
+		research_cost = 1.5
+		start_year = 2010
+		
+		folder = {
+			name = electronics_folder
+			position = { x = @left y = @2010 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+	}
+	modern_radar3 = {
+		path = {
+			leads_to_tech = modern_radar4
+			research_cost_coeff = 1
+		}
+		enable_building = {
+			building = radar_station
+			level = 4
+		}
+		
+		research_cost = 1.5
+		start_year = 2015
+		
+		folder = {
+			name = electronics_folder
+			position = { x = @left y = @2015 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+	}
+		modern_radar4 = {
+		path = {
+			leads_to_tech = modern_radar5
 			research_cost_coeff = 1
 		}
 		enable_building = {
@@ -210,11 +208,11 @@ technologies = {
 		}
 		
 		research_cost = 1.5
-		start_year = 2000
+		start_year = 2025
 		
 		folder = {
 			name = electronics_folder
-			position = { x = @left y = @2006 }
+			position = { x = @left y = @2025 }
 		}
 		
 		ai_will_do = {
@@ -375,11 +373,11 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 2000
+		start_year = 2002
 		
 		folder = {
 			name = electronics_folder
-			position = { x = @center y = @2000 }
+			position = { x = @center y = @2002 }
 		}
 		
 		ai_will_do = {
@@ -402,11 +400,11 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 2002
+		start_year = 2006
 		
 		folder = {
 			name = electronics_folder
-			position = { x = @center y = @2002 }
+			position = { x = @center y = @2006 }
 		}
 		
 		ai_will_do = {
@@ -424,11 +422,11 @@ technologies = {
 		encryption = 1
 		
 		research_cost = 1
-		start_year = 2006
+		start_year = 2010
 		
 		folder = {
 			name = electronics_folder
-			position = { x = @center y = @2006 }
+			position = { x = @center y = @2010 }
 		}
 		
 		ai_will_do = {
@@ -451,11 +449,11 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 2000
+		start_year = 2002
 		
 		folder = {
 			name = electronics_folder
-			position = { x = @right y = @2000 }
+			position = { x = @right y = @2002 }
 		}
 		
 		ai_will_do = {
@@ -478,11 +476,11 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 2002
+		start_year = 2006
 		
 		folder = {
 			name = electronics_folder
-			position = { x = @right y = @2002 }
+			position = { x = @right y = @2006 }
 		}
 		
 		ai_will_do = {
@@ -500,11 +498,11 @@ technologies = {
 		decryption = 1
 		
 		research_cost = 1
-		start_year = 2006
+		start_year = 2010
 		
 		folder = {
 			name = electronics_folder
-			position = { x = @right y = @2006 }
+			position = { x = @right y = @2010 }
 		}
 		
 		ai_will_do = {
@@ -1326,10 +1324,10 @@ technologies = {
 
 		encryption_factor = 0.2
 
-		start_year = 2014
+		start_year = 2012
 		folder = {
 			name = electronics_folder
-			position = { x = @ECM y = @2014 }
+			position = { x = @ECM y = @2012 }
 		}
 		
 		ai_will_do = {
@@ -1400,10 +1398,10 @@ technologies = {
 		decryption_factor = 0.2
 
 		research_cost = 1
-		start_year = 2002
+		start_year = 2006
 		folder = {
 			name = electronics_folder
-			position = { x = @ECCM y = @2002 }
+			position = { x = @ECCM y = @2006 }
 		}
 		
 		ai_will_do = {
@@ -1426,10 +1424,10 @@ technologies = {
 		decryption_factor = 0.2
 
 		research_cost = 1
-		start_year = 2006
+		start_year = 2010
 		folder = {
 			name = electronics_folder
-			position = { x = @ECCM y = @2006 }
+			position = { x = @ECCM y = @2010 }
 		}
 		
 		ai_will_do = {
@@ -1452,10 +1450,10 @@ technologies = {
 		decryption_factor = 0.2
 
 		research_cost = 1
-		start_year = 2012
+		start_year = 2015
 		folder = {
 			name = electronics_folder
-			position = { x = @ECCM y = @2012 }
+			position = { x = @ECCM y = @2015 }
 		}
 		
 		ai_will_do = {
@@ -1478,10 +1476,10 @@ technologies = {
 		decryption_factor = 0.2
 
 		research_cost = 1
-		start_year = 2002
+		start_year = 2004
 		folder = {
 			name = electronics_folder
-			position = { x = @CYBER y = @2002 }
+			position = { x = @CYBER y = @2004 }
 		}
 		
 		ai_will_do = {
@@ -1519,17 +1517,12 @@ technologies = {
 	}
 
 	cyberwar3 = {
-		
-		path = {
-			leads_to_tech = cyberwar4
-			research_cost_coeff = 1
-		}
-	
+			
 		research_cost = 1
-		start_year = 2016
+		start_year = 2015
 		folder = {
 			name = electronics_folder
-			position = { x = @CYBER y = @2016 }
+			position = { x = @CYBER y = @2015 }
 		}
 		
 		ai_will_do = {
@@ -1541,28 +1534,5 @@ technologies = {
 			computing_tech
 		}
 	}
-
-	cyberwar4 = {
-		
-		path = {
-			leads_to_tech = cyberwar5
-			research_cost_coeff = 1
-		}
 	
-		research_cost = 1
-		start_year = 2028
-		folder = {
-			name = electronics_folder
-			position = { x = @CYBER y = @2028 }
-		}
-		
-		ai_will_do = {
-			factor = 25
-		}
-		
-		categories = {
-			electronics
-			computing_tech
-		}
-	}	
 }

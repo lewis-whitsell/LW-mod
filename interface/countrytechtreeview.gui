@@ -2378,7 +2378,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "transport1_tree"
-				position = { x = 1225 y = 32 }
+				position = { x = 1675 y = 32 }
 				size = { width = 400 height = 1000 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
@@ -3836,7 +3836,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "2014"
+					text = "2015"
 					maxWidth = 130
 					maxHeight = 32
 					format = left
@@ -3849,7 +3849,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "2016"
+					text = "2020"
 					maxWidth = 130
 					maxHeight = 32
 					format = left
@@ -3862,7 +3862,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "2018"
+					text = "2025"
 					maxWidth = 130
 					maxHeight = 32
 					format = left
@@ -3875,7 +3875,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "2020"
+					text = "2030"
 					maxWidth = 130
 					maxHeight = 32
 					format = left
@@ -3898,7 +3898,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "ew_eng_subtitle"
-				position = { x = 800 y = 100 }
+				position = { x = 850 y = 100 }
 				font = "hoi_36header"
 				borderSize = {x = 0 y = 4}
 				text = "Electronic Warfare"
@@ -3927,7 +3927,7 @@ guiTypes = {
 			
 			gridboxtype = {
 				name = "ew_start_tree"
-				position = { x=750 y=172 }
+				position = { x=800 y=172 }
 				size = { width = 480 height = 650 }
 				slotsize = { width=60 height= 60 }
 				format = "UP"
