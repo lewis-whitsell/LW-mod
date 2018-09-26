@@ -66,7 +66,7 @@ technologies = {
 		
 		research_cost = 1
 		start_year = 1970
-		
+
 		folder = {
 			name = armour_folder
 			position = { x = @main_tank_line y = @1970 }
@@ -408,6 +408,7 @@ technologies = {
 		sub_technologies = {
 			airborne_ifv_infantry1
 			tankdestroyer1
+			sp_rocket1
 		}
 		
 		research_cost = 1
@@ -441,6 +442,7 @@ technologies = {
 		sub_technologies = {
 			airborne_ifv_infantry2
 			tankdestroyer2
+			sp_rocket2
 		}
 		research_cost = 1
 		start_year = 1990
@@ -473,6 +475,7 @@ technologies = {
 		sub_technologies = {
 			airborne_ifv_infantry3
 			tankdestroyer3
+			sp_rocket3
 		}
 		
 		research_cost = 1
@@ -506,6 +509,7 @@ technologies = {
 		sub_technologies = {
 			airborne_ifv_infantry4
 			tankdestroyer4
+			sp_rocket4
 		}
 		
 		research_cost = 1
@@ -539,6 +543,7 @@ technologies = {
 		sub_technologies = {
 			airborne_ifv_infantry5
 			tankdestroyer5
+			sp_rocket5
 		}
 		
 		research_cost = 1
@@ -672,9 +677,6 @@ technologies = {
 		enable_equipments = {
 			armored_personnel_carrier_1
 		}
-		sub_technologies = {			
-			sp_rocket1	
-		}
 		research_cost = 1
 		start_year = 1970
 		
@@ -702,9 +704,6 @@ technologies = {
 		
 		enable_equipments = {
 			armored_personnel_carrier_2
-		}
-		sub_technologies = {			
-			sp_rocket2	
 		}
 		research_cost = 1
 		start_year = 1990
@@ -734,9 +733,6 @@ technologies = {
 		enable_equipments = {
 			armored_personnel_carrier_3
 		}
-		sub_technologies = {			
-			sp_rocket4	
-		}
 		research_cost = 1
 		start_year = 2006
 		
@@ -765,9 +761,6 @@ technologies = {
 		enable_equipments = {
 			armored_personnel_carrier_4
 		}
-		sub_technologies = {			
-			sp_rocket4	
-		}
 		research_cost = 1
 		start_year = 2016
 		
@@ -795,9 +788,6 @@ technologies = {
 		
 		enable_equipments = {
 			armored_personnel_carrier_5
-		}
-		sub_technologies = {		
-			sp_rocket6		
 		}
 		research_cost = 1
 		start_year = 2020
