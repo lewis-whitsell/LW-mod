@@ -1114,7 +1114,7 @@ technologies = {
 		}
 		
 		categories = {
-			artillery
+			armor
 		}
 	}
 
@@ -1135,7 +1135,7 @@ technologies = {
 		}
 		
 		categories = {
-			artillery
+			armor
 		}
 	}
 
@@ -1156,7 +1156,7 @@ technologies = {
 		}
 		
 		categories = {
-			artillery
+			armor
 		}
 	}
 
@@ -1177,7 +1177,7 @@ technologies = {
 		}
 		
 		categories = {
-			artillery
+			armor
 		}
 	}
 
@@ -1198,8 +1198,296 @@ technologies = {
 		}
 		
 		categories = {
-			artillery
+			armor
 		}
 	}
+
+	medrange_sp_aa1 = {
+
+		enable_equipments = {
+			SPAA_hvy_equipment_1
+		}
+		
+		path = {
+			leads_to_tech = medrange_sp_aa2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1990
+		
+		folder = {
+			name = armour_folder
+			position = { x = 3 y = @1990 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		dependencies = {
+			advanced_rocket_engines = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}
+			
+	medrange_sp_aa2 = {
+
+		enable_equipments = {
+			SPAA_hvy_equipment_2
+		}
+		
+		path = {
+			leads_to_tech = medrange_sp_aa3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 2006
+		
+		folder = {
+			name = armour_folder
+			position = { x = 3 y = @2006 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}
+			
+	medrange_sp_aa3 = {
+
+		enable_equipments = {
+			SPAA_hvy_equipment_3
+		}
+		
+		path = {
+			leads_to_tech = medrange_sp_aa4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 2010
+		
+		folder = {
+			name = armour_folder
+			position = { x = 3 y = @2010 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}
+			
+	medrange_sp_aa4 = {
+
+		enable_equipments = {
+			SPAA_hvy_equipment_4
+		}
+		
+		path = {
+			leads_to_tech = medrange_sp_aa5
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 2016
+		
+		folder = {
+			name = armour_folder
+			position = { x = 3 y = @2016 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}
+			
+	medrange_sp_aa5 = {
+
+		enable_equipments = {
+			SPAA_hvy_equipment_5
+		}
+		
+		research_cost = 1
+
+		start_year = 2020
+		
+		folder = {
+			name = armour_folder
+			position = { x = 3 y = @2020 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}	
+			
+	sp_aa1 = {
+
+		enable_equipments = {
+			SPAA_light_equipment_1
+		}
+		
+		path = {
+			leads_to_tech = sp_aa2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = medrange_sp_aa1
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1970
+		
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = @1970 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}
+		
+	sp_aa2 = {
+
+		enable_equipments = {
+			SPAA_light_equipment_2
+		}
+		
+		path = {
+			leads_to_tech = sp_aa3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1990
+		
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = @1990 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}
+		
+	sp_aa3 = {
+
+		enable_equipments = {
+			SPAA_light_equipment_3
+		}
+		
+		path = {
+			leads_to_tech = sp_aa4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 2006
+		
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = @2006 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}
+		
+	sp_aa4 = {
+
+		enable_equipments = {
+			SPAA_light_equipment_4
+		}
+		
+		path = {
+			leads_to_tech = sp_aa5
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 2010
+		
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = @2010 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}	
 	
+	sp_aa5 = {
+
+		enable_equipments = {
+			SPAA_light_equipment_5
+		}
+				
+		research_cost = 1
+
+		start_year = 2018
+		
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = @2018 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}	
+		
 }

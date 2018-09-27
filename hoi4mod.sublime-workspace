@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"Isr",
+				"Israel"
+			],
+			[
+				"caus",
+				"casualties"
+			],
+			[
+				"Isre",
+				"Israeli"
+			],
+			[
+				"retor",
+				"rhetoric"
+			],
+			[
+				"Arab",
+				"Arabia"
+			],
+			[
+				"Is",
+				"Israel"
+			],
+			[
 				"inc",
 				"incband"
 			]
@@ -11,6 +35,80 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "common/technologies/support.txt",
+			"settings":
+			{
+				"buffer_size": 11334,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "events/LAW.txt",
+			"settings":
+			{
+				"buffer_size": 3368,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "common/technologies/air_techs.txt",
+			"settings":
+			{
+				"buffer_size": 28611,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "common/units/equipment/LAW_SPAA.txt",
+			"settings":
+			{
+				"buffer_size": 6996,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "common/technologies/armor.txt",
+			"settings":
+			{
+				"buffer_size": 18680,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "\n\t\n\t\n\t\n\t\n\t\n\n\t\n\t#2035\n\t\n\n\t\n\t\n\t\n\n\t###------> Special Forces <><> <><> <><> <><> <><>\n\t\n\ttech_special_forces = {\n\t\tcategory_special_forces = {\n\t\t\tacclimatization_hot_climate_gain_factor = 0.05\n\t\t\tacclimatization_cold_climate_gain_factor = 0.05\n\t\t}\n\n\t\tpath = {\n\t\t\tleads_to_tech = advanced_special_forces\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\n\t\tpath = {\n\t\t\tleads_to_tech = improved_special_forces\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\n\t\tresearch_cost = 2\n\t\tstart_year = 1938\n\t\tfolder = {\n\t\t\tname = infantry_folder\n\t\t\tposition = { x = 1 y = @1938 }\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tmountaineers_tech\n\t\t\tmarine_tech\n\t\t\tpara_tech\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 0.7\n\t\t}\n\t}\n\n\n\tadvanced_special_forces = {\n\t\txor={\n\t\t\timproved_special_forces\n\t\t}\n\n\t\tcategory_special_forces = {\n\t\t\tmax_organisation = 5\n\t\t\tdefense = 0.05\n\t\t}\n\n\t\tspecial_forces_training_time_factor = 0.1\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = extreme_environment_training\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\n\n\t\tresearch_cost = 2\n\t\tstart_year = 1940\n\t\tfolder = {\n\t\t\tname = infantry_folder\n\t\t\tposition = { x = 0 y = @1940 }\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tmountaineers_tech\n\t\t\tmarine_tech\n\t\t\tpara_tech\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 0.7\n\t\t}\n\t}\n\n\timproved_special_forces = {\n\t\txor={\n\t\t\tadvanced_special_forces\n\t\t}\n\n\t\tspecial_forces_cap = 0.05\n\t\tspecial_forces_training_time_factor = -0.1\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = survival_training\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\n\t\tresearch_cost = 2\n\t\tstart_year = 1940\n\t\tfolder = {\n\t\t\tname = infantry_folder\n\t\t\tposition = { x = 2 y = @1940 }\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tmountaineers_tech\n\t\t\tmarine_tech\n\t\t\tpara_tech\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 0.7\n\t\t}\n\t}\n\n\textreme_environment_training = {\n\n\t\tcategory_special_forces = {\n\t\t\tacclimatization_hot_climate_gain_factor = 0.50\n\t\t\tacclimatization_cold_climate_gain_factor = 0.50\n\t\t}\n\t\t\n\t\tspecial_forces_no_supply_grace = 48\n\t\tspecial_forces_training_time_factor = 0.1\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = elite_forces\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\n\t\tresearch_cost = 2\n\t\tstart_year = 1943\n\t\tfolder = {\n\t\t\tname = infantry_folder\n\t\t\tposition = { x = 0 y = @1943 }\n\t\t}\n\t\t\n\t\tcategories = {\n\n\t\t\tmountaineers_tech\n\t\t\tmarine_tech\n\t\t\tpara_tech\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 0.7\n\t\t}\n\n\n\n\n\t}\n\n\tsurvival_training = {\n\n\t\tcategory_special_forces = {\n\t\t\tacclimatization_hot_climate_gain_factor = 0.20\n\t\t\tacclimatization_cold_climate_gain_factor = 0.20\n\t\t}\n\t\t\n\t\tspecial_forces_out_of_supply_factor = -0.1\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = elite_forces\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\n\t\tresearch_cost = 2\n\t\tstart_year = 1943\n\t\tfolder = {\n\t\t\tname = infantry_folder\n\t\t\tposition = { x = 2 y = @1943 }\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tmountaineers_tech\n\t\t\tmarine_tech\n\t\t\tpara_tech\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 0.7\n\t\t}\n\t}\n\n\telite_forces = {\n\t\tcategory_special_forces = {\n\t\t\tacclimatization_hot_climate_gain_factor = 0.10\n\t\t\tacclimatization_cold_climate_gain_factor = 0.10\n\t\t\tmax_organisation = 2\n\t\t\tsoft_attack = 0.03\n\t\t}\n\t\t\n\t\tspecial_forces_no_supply_grace = 24\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = elite_forces_02\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\n\t\tresearch_cost = 2\n\t\tstart_year = 1946\n\t\tfolder = {\n\t\t\tname = infantry_folder\n\t\t\tposition = { x = 1 y = @1946 }\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tmountaineers_tech\n\t\t\tmarine_tech\n\t\t\tpara_tech\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 0.7\n\t\t}\n\t}\n\t\n\telite_forces_02 = {\n\t\tcategory_special_forces = {\n\t\t\tacclimatization_hot_climate_gain_factor = 0.10\n\t\t\tacclimatization_cold_climate_gain_factor = 0.10\n\t\t\tmax_organisation = 2\n\t\t\tsoft_attack = 0.03\n\t\t}\n\t\t\n\t\tspecial_forces_no_supply_grace = 24\n\t\t\n\t\tpath = {\n\t\t\tleads_to_tech = elite_forces_03\n\t\t\tresearch_cost_coeff = 1\n\t\t}\n\n\t\tresearch_cost = 2\n\t\tstart_year = 1950\n\t\tfolder = {\n\t\t\tname = infantry_folder\n\t\t\tposition = { x = 1 y = @1950 }\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tmountaineers_tech\n\t\t\tmarine_tech\n\t\t\tpara_tech\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 0.7\n\t\t}\n\t}\n\t\n\telite_forces_03 = {\n\t\tcategory_special_forces = {\n\t\t\tacclimatization_hot_climate_gain_factor = 0.10\n\t\t\tacclimatization_cold_climate_gain_factor = 0.10\n\t\t\tmax_organisation = 2\n\t\t\tsoft_attack = 0.03\n\t\t}\n\t\t\n\t\tspecial_forces_no_supply_grace = 24\n\n\t\tresearch_cost = 2\n\t\tstart_year = 1954\n\t\tfolder = {\n\t\t\tname = infantry_folder\n\t\t\tposition = { x = 1 y = @1954 }\n\t\t}\n\t\t\n\t\tcategories = {\n\t\t\tmountaineers_tech\n\t\t\tmarine_tech\n\t\t\tpara_tech\n\t\t}\n\t\t\n\t\tai_will_do = {\n\t\t\tfactor = 0.7\n\t\t}\n\t}\n\t\njungle_warfare = {\n\n\t\tresearch_cost = 1\n\n\t\t# only from focus!!! #####\n\t\tallow = {\n\t\t\talways = no\n\t\t}\n\n\n\t\t#If you change these\n\t\t#Change the custom tooltip too: RAJ_jungle_training_effect\n\t\tmarine = {\n\t\t\tjungle = {\n\t\t\t\tattack = 0.05 \n\t\t\t\tmovement = 0.1\n\t\t\t}\n\t\t}\n\n\t\tmountaineers = {\n\t\t\tjungle = {\n\t\t\t\tattack = 0.05\n\t\t\t\tmovement = 0.1\n\t\t\t}\n\t\t}\n\n\t\tparatrooper = {\n\t\t\tjungle = {\n\t\t\t\tattack = 0.05\n\t\t\t\tmovement = 0.1\n\t\t\t}\n\t\t}\n\n\t}",
+			"file": "toaddtext.txt",
+			"file_size": 12180,
+			"file_write_time": 131822285051909138,
+			"settings":
+			{
+				"buffer_size": 4739,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "common/units/LAW_SPAA_brigade.txt",
+			"settings":
+			{
+				"buffer_size": 1795,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "interface/countrytechtreeview.gui",
+			"settings":
+			{
+				"buffer_size": 132872,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "Packages/PackageDev/Package/Convert to ....sublime-build",
 	"build_system_choices":
@@ -52,16 +150,12 @@
 		"selected_items":
 		[
 			[
-				"PAKE",
+				"Package Control: install",
 				"Package Control: Install Package"
 			],
 			[
 				"Package Control: ",
-				"Package Control: Install Package"
-			],
-			[
-				"Package Control: install",
-				"Package Control: Install Package"
+				"Package Control: Add Repository"
 			],
 			[
 				"sy",
@@ -122,152 +216,161 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/Lewis/Documents/GitHub/LW-mod",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/common"
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common"
 	],
 	"file_history":
 	[
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/common/units/air.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/common/technologies/air_techs.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/common/ideas/LAW.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/common/ideas/philipines.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/common/defines/42_defines.lua",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/common/defines/00_defines.lua",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/events/LAW.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/common/autonomous_states/Soviet_Socialist_Republic.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/common/technologies/infantry.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/common/units/LAW_infantry.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/common/scripted_guis/st_state_transfer.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/common/units/equipment/LAW_planes.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/units/CYP_2000.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/interface/countryconstructionsview.gui",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/common/abilities/generic2_leader_abilities.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/common/ideas/generic.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/942-W.SICILY.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/common/technologies/missile.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/943-W.SARDINIA.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/units/CUB_2000.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/930-E.MADA.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/941-S.SICILY.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/931-S.MADA.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/929-W.MADA.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/928-N.MADA.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/common/ai_templates/generic.txt",
-		"/C/Users/Lewis/Desktop/missiles.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/common/scripted_guis/st_country_spells.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/interface/money.gui",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/interface/statetransf.gui",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/interface/Technologies.gfx",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/interface/Technologies_USA.gfx",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/common/aces/00_aces.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/common/resources/00_resources.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/common/national_focus/test.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/error pics/generic_focus.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/common/national_focus/philippines_focus.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/common/national_focus/generic.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/common/units/LAW_air.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/common/technologies/naval.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/common/units/sp_artillery_brigade.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/common/units/equipment/LAW_missiles.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/interface/countrytechtreeview.gui",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/common/technologies/helicopter.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/common/technologies/electronic_mechanical_engineering.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/interface/goals.gfx",
-		"/C/Users/Lewis/Desktop/text pastry",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/common/ideas/millennium_chaos.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/common/units/equipment/LAW_destroyers.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/common/units/destroyer.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/common/units/equipment/LAW_support.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/common/ideas/CYPRUS.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/common/units/equipment/LAW_helicopters.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/common/units/equipment/LAW_mechanized.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/common/ideas/romania.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/common/units/equipment/LAW_missile_cruisers.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/common/units/equipment/LAW_submarines.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/common/units/equipment/carriers.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/common/units/equipment/tank_modern.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/common/technologies/tests",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/276-Canada.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/432-Assam.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/433-Manipur.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/434-Arunachal Pradesh.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/441-Kashmir.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/789-Sikkim.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/330-Mongolia.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/915-Palestinian West Bank.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/554-Syria.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/695-Curacao.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/694-French Caribbean.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/686-Puerto Rico.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/720-South Georgia.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/507-Southern Chile.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/816-Southern Malaya.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/817-Northern Malay.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/892-Prachuap Khiri Khan.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/724-Khorat.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/464-Nova Scotia.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/465-New Brunswick.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/468-Nunavut.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/961-LAKES.N.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/962-LAKES.E.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/countries/SAU.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/countries/SAU - Saudi Arabia.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/688-Chaco Boreal.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/common/on_actions/money_on_actions.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/474-Yucatan.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/475-Chiapas.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/476-Oaxaca.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/477-Veracruz.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/478-Nayarit.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/479-Tamaulipas.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/480-Coahuila.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/481-Sinaloa.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/482-Chihuahua.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/483-Sonora.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/484-Baja California.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/485-Guerrero.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/313-Guatemala.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/311-BritMex.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/314-El Salvador.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/312-Honduras.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/317-Nicaragua.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/316-Costa Rica.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/304-Panama.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/685-Panama Canal.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/889-Western Panama.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/909-Darien.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/430-Bangladesh.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/670-Laos.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/286-Indochina.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/324-Bhutan.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/584-Turkmenistan.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/799-Anau.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/801-Dasoguz.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/802-Lebap.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/803-Mary.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/585-Uzbekistan.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/587-Western Kazakstan.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/821-Qashqadaryo.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/823-Tashkent.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/405-Atyrau.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/732-Pamir.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/586-Kyrgyzstan.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/822-Northern Pamir.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/832-Nagorno-Karabakh.txt",
-		"/C/Users/Lewis/Documents/GitHub/LW-mod/history/states/230-Armenia.txt"
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/map/buildings.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/technologies/artillery.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/units/equipment/tank_heavy.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/units/LAW_mech.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/units/equipment/anti_air.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/units/equipment/tank_medium.txt",
+		"/C/Users/lewis/Documents/Mods for Games/HOI4MULTI/REF/modern_day_4_hoi/interface/Technologies.gfx",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/units/equipment/LAW_mechanized.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/technologies/naval.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/localisation/wars_l_english.yml",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/events/LAW.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/national_focus/philippines_focus.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/national_focus/australia.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/national_focus/DENMARK_FOC.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/national_focus/CYPRUS_FOC.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/national_focus/GREENLAND_FOC.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/units/DEN_2000.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/ideas/LAW.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/interface/goals.gfx",
+		"/F/SteamLibrary/steamapps/common/Hearts of Iron IV/interface/navalcombat.gfx",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/interface/navalcombat.gfx",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/interface/Technologies.gfx",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/on_actions/money_on_actions.txt",
+		"/C/Users/lewis/Documents/Mods for Games/HOI4MULTI/REF/1956/common/technologies/infantry_extra_tech.txt",
+		"/C/Users/lewis/Documents/Mods for Games/HOI4MULTI/REF/1956/common/technologies/infantry.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/technologies/helicopter.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/lewis.mod",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/states/836-Northern Cyprus.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/states/183-Cyprus.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/states/116-Malta.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/states/1-France.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/states/177-Balearic Islands.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/states/115-Sicily.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/states/101-Greenland.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/states/100-Iceland.txt",
+		"/C/Users/lewis/Documents/Mods for Games/HOI4MULTI/REF/modern_day_4_hoi/interface/countrytechtreeview.gfx",
+		"/C/Users/lewis/Documents/Mods for Games/HOI4MULTI/REF/modern_day_4_hoi/interface/general_stuff.gfx",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/units/equipment/LAW_planes.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/states/946-W.GREEN.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/states/947-C.GREEN.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/states/948-SE.GREEN.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/states/949-E.GREEN.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/states/114-Sardinia.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/technologies/electronic_mechanical_engineering.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/map/supplyareas/119-SupplyArea.txt",
+		"/C/Users/lewis/Documents/Mods for Games/HOI4MULTI/REF/1956/common/technologies/industry.txt",
+		"/C/Users/lewis/Documents/Mods for Games/HOI4MULTI/REF/modern_day_4_hoi/common/technologies/fixed_wing.txt",
+		"/C/Users/lewis/Documents/Mods for Games/HOI4MULTI/REF/modern_day_4_hoi/common/technologies/air_techs.txt",
+		"/C/Users/lewis/Documents/Mods for Games/HOI4MULTI/REF/modern_day_4_hoi/common/technologies/anti_air.txt",
+		"/C/Users/lewis/Documents/Mods for Games/HOI4MULTI/REF/modern_day_4_hoi/common/technologies/anti_tank.txt",
+		"/C/Users/lewis/Documents/Mods for Games/HOI4MULTI/REF/modern_day_4_hoi/common/technologies/artillery.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/units/recon.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/interface/countrytechtreeview.gui",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/national_focus/MADAGASCAR_FOC.txt",
+		"/F/SteamLibrary/steamapps/common/Hearts of Iron IV/interface/goals.gfx",
+		"/F/SteamLibrary/steamapps/common/Hearts of Iron IV/common/national_focus/generic.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/SAF - South Africa.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/units/equipment/LAW_LHD.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/interface/statetransf.gui",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/scripted_guis/st_state_transfer.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/idea_tags/04_navy_upgrades.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/units/equipment/LAW_carriers.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/ideas/_event.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/units/equipment/LAW_frigates.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/units/LAW_armor.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/interface/countrytradeview.gfx",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/states/973-sprat.8.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/country_leader/politician_traits.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/states/879-Paracel Islands.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/scripted_guis/money_buymenu.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/technologies/air_techs.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/lewis.mod",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/map/strategicregions/75-South China Sea.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/technologies/missile.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/interface/money.gui",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/localisation/st_manager_l_english.yml",
+		"/C/Users/lewis/Documents/Mods for Games/HOI4MULTI/REF/modern_day_4_hoi/interface/frontendmainview.gui",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/units/LAW_frigate.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/technology_tags/00_technology.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/ai_strategy/SOV.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/NFTE/export/common/national_focus/philippines_focus.txt",
+		"/C/Users/lewis/Documents/Mount&Blade Warband/Characters/Lewiski Von Whitsell.txt",
+		"/C/Users/lewis/Documents/Mount&Blade Warband/rgl_config.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/ideas/philipines.txt",
+		"/C/Users/lewis/Documents/Mods for Games/HOI4MULTI/lewis.mod",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/pdx_launcher/user_settings.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/logs/error.log",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/map/supplyareas/438-SupplyArea - Copy.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/states/974-yemen.island.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/units/equipment/LAW_submarines.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/interface/countrytechnologyview.gui",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/buildings/00_buildings.txt",
+		"/C/Users/lewis/AppData/Local/Temp/Temp1_cwic.zip/history/states/857-North Maluku.txt",
+		"/C/Users/lewis/AppData/Local/Temp/Temp1_cwic.zip/history/states/876-Yanam.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/states/965-CUBA.W.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/states/969-sprat.4.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/states/970-sprat.5.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/states/968-sprat.3.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/history/states/294-Oman.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/states/971-sprat.6.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/states/966-sprat.1.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/testsing map/map/strategicregions/69-Eastern mediterranean Sea.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/states/967-sprat.2.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/states/975-yemen.island.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/states/974-parcels.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/history/states/969-sprat.4.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/focus 2.xh4prj",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/states/972-sprat.7.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/history/states/64-Brandenburg.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/history/states/592-Guangzhou.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/history/states/591-Hainan.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/map/strategicregions/267-Yemen.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/map/supplyareas/362-SupplyArea.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/history/states/318-Haiti.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/testsing map/map/strategicregions/266-Gulf of Tonkin.txt",
+		"/C/Users/lewis/AppData/Local/Temp/Temp1_cwic.zip/map/supplyareas/67-SupplyArea.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/testsing map/map/airports.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/testsing map/map/adjacency_rules.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/countries/CAN.txt",
+		"/C/Users/lewis/Documents/Mods for Games/HOI4MULTI/REF/modern_day_4_hoi/interface/navalcombat.gfx",
+		"/C/Users/lewis/Documents/Mods for Games/HOI4MULTI/REF/modern_day_4_hoi/interface/naviesview.gui",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/interface/countryconstructionsview.gui",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/localisation/ideas_MD_l_english.yml",
+		"/F/SteamLibrary/steamapps/common/Hearts of Iron IV/interface/navalcombat.gui",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/ideas/usa.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/localisation/traits_MD_l_english.yml",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/country_leader/00_traits.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/ai_strategy/PAK.txt"
 	],
 	"find":
 	{
-		"height": 40.0
+		"height": 41.0
 	},
 	"find_in_files":
 	{
 		"height": 108.0,
 		"where_history":
 		[
-			"C:\\Users\\Lewis\\Documents\\GitHub\\LW-mod\\localisation",
-			"C:\\Users\\Lewis\\Documents\\GitHub\\LW-mod\\",
-			"C:\\Users\\Lewis\\Documents\\GitHub\\LW-mod\\history\\states",
+			"F:\\SteamLibrary\\steamapps\\common\\Hearts of Iron IV\\localisation",
+			"C:\\Users\\lewis\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\MM Dawn LW mod\\common\\ideas",
+			"C:\\Users\\lewis\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\MM Dawn LW mod\\interface",
+			"<open folders>",
+			"C:\\Users\\lewis\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\MM Dawn LW mod\\",
+			"C:\\Users\\lewis\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\MM Dawn LW mod\\map\\strategicregions",
+			"C:\\Users\\lewis\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\MM Dawn LW mod\\",
+			"C:\\Users\\lewis\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\MM Dawn LW mod\\map\\strategicregions",
+			"C:\\Users\\lewis\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\MM Dawn LW mod\\history\\states",
+			"<open files>",
+			"F:\\SteamLibrary\\steamapps\\common\\Hearts of Iron IV",
+			"<open files>",
 			"C:\\Users\\lewis\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\MM Dawn LW mod\\history\\states",
 			"C:\\Users\\lewis\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\MM Dawn LW mod\\history\\countries\\states",
 			"C:\\Users\\lewis\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\MM Dawn LW mod\\history\\countries",
@@ -281,134 +384,134 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"ANTAGONIZE",
-			"VOLUNTEE",
-			"xp",
-			"MAX_XP",
-			"1.0",
-			"CYP",
-			"7193",
-			"base = 7193\n\t\tlocation = 7193",
-			"getpr",
-			"theater",
-			"supply",
-			"tdebug",
-			".get",
-			"THIS",
-			"factory",
-			"special_forces",
-			"1.5",
-			"tag = CUB",
-			"tag = AST\n\t\t\t\t\ttag = CYP",
-			"id = generic_",
-			"x = 51",
-			"x = 53",
-			"x = 55",
-			"x = 57",
-			"x = 59",
-			"x = 61",
-			"x = 63",
-			"x = 64",
-			"x = 65",
-			"x = 66",
-			"x = 67",
-			"x = 68",
-			"x = 69",
-			"x = 70",
-			"x = 71",
-			"x = 72",
-			"x = 73",
-			"x = 74",
-			"x = 75",
-			"x = 77",
-			"x = 78",
-			"x = 79",
-			"x = 81",
-			"x = 83",
-			"id = generic_",
-			"x = 35",
-			"x = 33",
-			"x = 31",
-			"x = 29",
-			"x = 28",
-			"X = 27",
-			"x = 25",
-			"x = 24",
-			"x = 23",
-			"x = 22",
-			"x = 21",
-			"x = 20",
-			"x = 19",
-			"x = 18",
-			"x = 17",
-			"x = 16",
-			"x = 15",
-			"x = 14",
-			"x = 13",
-			"x = 11",
-			"x = 9",
-			"X = 7",
-			"X = 5",
-			"x = 3",
-			"x = 2",
-			"x = 1",
-			"x = 1 ",
-			"OR = {\n\t\t\t\ttag = MAD\n\t\t\t\ttag = PHI\n\t\t\t\ttag = DEN\n\t\t\t\ttag = GRN\n\t\t\t\ttag = AST\n\t\t\t\ttag = CYP\n\t\t\t}",
-			"tag = MAD\n\t\t\ttag = PHI\n\t\t\ttag = DEN\n\t\t\ttag = GRN\n\t\t\ttag = AST\n\t\t\ttag = CYP",
-			"build_cost_ic = -0.05 reliability = 0.1 air_attack = 0.05 ap_attack = 0.1",
-			"build_cost_ic = -0.05 reliability = 0.2 air_attack = 0.05 ap_attack = 0.1",
-			"reliability = 0.2 \n\t\t\t\tsoft_attack = 0.1 \n\t\t\t\tbreakthrough = 0.1",
-			"reliability = 0.2 soft_attack = 0.1 breakthrough = 0.1",
-			"air_agility = 0.10 maximum_speed = 0.1 build_cost_ic = -0.15 reliability = 0.1",
-			"air_bombing = 0.10 maximum_speed = 0.1 build_cost_ic = -0.15 reliability = 0.1",
-			"air_agility = 0.1 \n\t\t\t\tair_bombing = 0.10 \n\t\t\t\tmaximum_speed = 0.1 \n\t\t\t\treliability = 0.05",
-			"air_agility = 0.1 air_bombing = 0.10 maximum_speed = 0.1 reliability = 0.05",
-			"air_agility = 0.1 \n\t\t\t\tmaximum_speed = 0.1 \n\t\t\t\tbuild_cost_ic = -0.15 \n\t\t\t\tair_attack = 0.10 \n\t\t\t\treliability = 0.1",
-			"air_agility = 0.1 maximum_speed = 0.1 build_cost_ic = -0.15 air_attack = 0.10 reliability = 0.1",
-			"air_agility = 0.1 maximum_speed = 0.1 build_cost_ic = -0.1 air_attack = 0.10 reliability = 0.1",
-			"air_agility = 0.1 \n\t\t\t\tmaximum_speed = 0.1 \n\t\t\t\tbuild_cost_ic = -0.1 \n\t\t\t\treliability = 0.1",
-			"air_agility = 0.1 maximum_speed = 0.1 build_cost_ic = -0.1 reliability = 0.1",
-			"air_ground_attack = 0.15 \n\t\t\t\tair_range = 0.05 \n\t\t\t\tbuild_cost_ic = -0.05 \n\t\t\t\treliability = 0.1",
-			"air_ground_attack = 0.15 \n\t\t\t\tair_range = 0.05 \n\t\t\t\tair_defence = 0.05 \n\t\t\t\treliability = 0.1",
-			"air_ground_attack = 0.15 air_range = 0.05 build_cost_ic = -0.05 reliability = 0.1",
-			"air_ground_attack = 0.15 \n\t\t\t\tair_range = 0.05 \n\t\t\t\tbuild_cost_ic = -0.05 \n\t\t\t\treliability = 0.1",
-			"air_ground_attack = 0.15 air_range = 0.05 build_cost_ic = -0.05 reliability = 0.1",
-			"build_cost_ic = -0.15 breakthrough = 0.1 defense = 0.1",
-			"y =",
-			"manu",
-			"_folder",
-			"position = { x = ",
-			"sub_attack = 0.02",
-			"= 0.02",
-			"= 0.05",
-			"sub_detection",
-			"sub_detection = 0.05\n\t\tsub_attack = 0.02",
-			"sub_attack = .02",
-			"sub_detection = 0.0",
-			"sub_detection = 0.05",
-			"{}",
-			"aswhelo",
-			"path = {\n\t\t\tleads_to_tech = attack_helicopter_",
-			"enable_equipments = { \n\t\t\tattack_helicopter_equipment_.\n\t\t}",
-			"enable_equipments = { \n\t\t\tattack_helicopter_equipment_4\n\t\t}",
-			"enable_equipments = { \n\t\t\tattack_helicopter_equipment",
-			"\n\tattack_helicopter_",
-			"}\n\n\tattack_helicopter_",
-			"\tattack_helicopter",
-			"leads_to_tech = slbm",
-			"slbm_equipment_",
-			"}\n\t\n\tslbm",
-			"parent = coastalmissile_equipment_",
-			"coastalmissile_equipment_",
-			"parent = coastalmissile_equipment_",
-			"\tcoastalmissile_equipment_",
-			"coastalmissile",
-			"\tsrbm",
-			"srbm1 = {",
+			"1500",
+			"2018",
 			"2010",
-			"2005",
+			"2006",
+			"2000",
+			"2006",
+			"2000",
+			"1990",
+			"1980",
+			"x = 4",
+			"armor_folder",
+			"artillery_folder",
+			"80%",
+			"2012",
+			"2000",
+			"1990",
+			"1980",
+			"2015",
+			"2009",
+			"tank_tree",
+			"x = 10",
+			"x = 16",
+			"categories = {\n\t\t\tartillery\n\t\t}",
+			"light_tank_aa_equipment",
+			"heavy_tank_aa_equipment",
+			"SPAA_heavy_equipment",
+			"heavy_tank_aa_equipment",
+			"SPAA_light",
+			"light_tank_aa_equipment",
+			"2009",
+			"2003",
+			"1990",
+			"x = -5",
+			"4",
+			"x = 5",
+			"/Generic",
+			"arty/arty_upgrade",
+			"AA_upgrade_1",
+			"gfx/interface/technologies/Generic/Subtechs//",
+			"gfx/interface/technologies/artillery",
+			"artillery",
+			"2018",
+			"Subtechs//",
+			"gfx/interface/technologies/Generic/Subtechs//",
+			"2015",
+			"2009",
+			"2006",
+			"2000",
+			"Cat_SP_R_ARTY",
+			"Cat_SP_ARTY",
+			"Cat_ARTY",
+			"Cat_ARTILLERY",
+			"1980",
+			"x = 0",
+			"x = 3",
+			"x = -3",
+			"2003",
+			"2000",
+			"1980",
+			"x = -4",
 			"2020",
-			"NAVAL"
+			"2025",
+			"2015",
+			"antitank",
+			"2006",
+			"2020",
+			"2025",
+			"x = -8",
+			"ery_folder",
+			"1580",
+			"y_folder",
+			"folder",
+			"subtech",
+			"folder",
+			"x = 10",
+			"AA_upgrade",
+			"2015",
+			"2012",
+			"2009",
+			"2000",
+			"1980",
+			"Cat_AA",
+			"upgrade",
+			"2006",
+			"2002",
+			"2000",
+			"2006",
+			"2002",
+			"2000",
+			"encry",
+			"2020",
+			"2012",
+			"2008",
+			"2004",
+			"2000",
+			"1990",
+			"2000",
+			"modern_detection_devices",
+			"radar",
+			"2012",
+			"2018",
+			"2000",
+			"eccm",
+			"2020",
+			"2002",
+			"2012",
+			"2006",
+			"2004",
+			"2002",
+			"position = { x = 0 y = }",
+			"position = { x = 0 y =",
+			"y = 140 }\n\t\t\t\t\ttextureFile = \"\"",
+			"2016",
+			"2028",
+			"2024",
+			"2016",
+			"@2016",
+			"@2014",
+			"@2016",
+			"@2024",
+			"2028",
+			"@2030",
+			"@2028",
+			"electronics",
+			"_tree",
+			"sub_technologies = {\t\t\n\t\t\trecon_mechanized_",
+			"stealth_figh",
+			"enable_equipments = {\n\t\t\tjet_CAS_equipment_"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -416,70 +519,65 @@
 		"regex": false,
 		"replace_history":
 		[
-			"CUB",
-			"tag = AST\n\t\t\t\t\ttag = CYP\n\t\t\t\t\ttag = CUB",
-			"id = PHI_",
-			"x = 71",
-			"x = 73",
-			"x = 75",
-			"x = 77",
-			"x = 79",
-			"x = 81",
-			"x = 83",
-			"x = 84",
-			"x = 85",
-			"x = 86",
-			"x = 87",
-			"x = 88",
-			"x = 89",
-			"x = 90",
-			"x = 91",
-			"x = 92",
-			"x = 93",
-			"x = 94",
-			"x = 95",
-			"x = 97",
-			"x = 98",
-			"x = 99",
-			"x = 101",
-			"x = 103",
-			"id = PHI_",
-			"x = 85",
-			"x = 83",
-			"x = 81",
-			"x = 79",
-			"x = 78",
-			"x = 77",
-			"x = 75",
-			"x = 74",
-			"x = 73",
-			"x = 72",
-			"x = 71",
-			"x = 70",
-			"x = 69",
-			"x = 68",
-			"x = 67",
-			"x = 66",
-			"x = 65",
-			"x = 64",
-			"x = 63",
-			"x = 61",
-			"x = 59",
-			"x = 57",
-			"x = 55",
-			"x = 53",
-			"x = 52",
-			"x = 51",
-			"missiles_folder",
-			"OR = {\n\t\t\t\ttag = MAD\n\t\t\t\ttag = CUB",
-			"OR = {\n\t\t\t\ttag = MAD\n\t\t\t\ttag = PHI",
-			"OR = {\n\t\t\t\ttag = MAD",
-			"owner = CUB",
-			"owner = BRA",
-			"owner = ARG",
-			"owner = CHL",
-			"owner = COL",
-			"owner = CHL",
+			"armour_folder",
+			"SPAA_light_equipment",
+			"SPAA_hvy_equipment",
+			"SPAA_heavy_equipment",
+			"SPAA_light_equipment",
+			"SPAA_light",
+			"@2018",
+			"@2015",
+			"@2025",
+			"@2030",
+			"prerequisite = {\n\t\t\tfocus = GRN_",
+			"prerequisite = {\n\t\t\tfocus = AST_",
+			"id = GRN_",
+			"AST_",
+			"focus = AST_ruin",
+			"id = AST_ruin",
+			"id = PHI_ruin",
+			"focus = PHI_ruin",
+			"focus = CYP_ruin",
+			"id = CYP_ruin",
+			"focus = DEN_ruin",
+			"id = DEN_ruin",
+			"id = DEN_ruin1",
+			"DEN_",
+			"CYP_",
+			"MAD_",
+			"icon = ",
+			"PHI_study_planes3",
+			"PHI_study_planes2",
+			"PHI_study_planes1",
+			"PHI_support_the_party",
+			"PHI_railway_builder",
+			"LAW_ruin",
+			"PHI_ruin",
+			"icon = ",
+			"PHI_navy_start",
+			"PHI_anti_sub",
+			"PHI_navy_destroyer3",
+			"PHI_navy_destroyer2",
+			"PHI_navy_destroyer1",
+			"",
+			"x = @NAVASM",
+			"@2020",
+			"@2015",
+			"@2005",
+			"@2010",
+			"@2000",
+			"engineer",
+			"677",
+			"owner = BRA\n\t\tadd_core_of = BRA",
+			"owner = USA\n\t\tadd_core_of = USA",
+			"has_tech=naval_bomber",
+			"add_equipment_to_stockpile = { type = jet_cas_equipment_1  amount = 1  }",
+			"leads_to_tech = ssn",
+			"ssn. =",
+			"",
+			"sskstock",
+			"frigatestock",
+			"frigate",
 			"owner = MOR",
 			"owner = MAL",
 			"owner = NGR",
@@ -543,7 +641,8 @@
 			"support",
 			"support_line",
 			"LHD_lower_line",
-			"LHD_main_line"
+			"LHD_main_line",
+			"SLBM"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -554,14 +653,1955 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "common/technologies/support.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11334,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								213,
+								213
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										216,
+										217
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										189,
+										190
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"syntax": "Packages/HOI4/hoi4.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "events/LAW.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3368,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2881,
+								2881
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										3180,
+										3181
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										3098,
+										3099
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										3083,
+										3084
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										2820,
+										2821
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"syntax": "Packages/HOI4/hoi4.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2832.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "common/technologies/air_techs.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 28611,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1361,
+								1361
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": 23,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										1452,
+										1453
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										1360,
+										1361
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"history_list_is_closing": true,
+							"syntax": "Packages/HOI4/hoi4.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 976.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "common/units/equipment/LAW_SPAA.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6996,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3948,
+								3966
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"syntax": "Packages/HOI4/hoi4.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3875.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "common/technologies/armor.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 18680,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								16826,
+								16826
+							],
+							[
+								16898,
+								16898
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										16977,
+										16978
+									],
+									"2":
+									[
+										16899,
+										16900
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									],
+									"2":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										16728,
+										16729
+									],
+									"2":
+									[
+										16881,
+										16882
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										16977,
+										16978
+									],
+									"2":
+									[
+										16899,
+										16900
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									],
+									"2":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										16728,
+										16729
+									],
+									"2":
+									[
+										16881,
+										16882
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"history_list_is_closing": true,
+							"syntax": "Packages/HOI4/hoi4.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2675.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 5,
+					"file": "toaddtext.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4739,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10,
+								10
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										641,
+										642
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										27,
+										28
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"syntax": "Packages/HOI4/hoi4.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 48.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "common/technologies/air_techs.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 28611,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								25526,
+								25526
+							],
+							[
+								25600,
+								25600
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": 23,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										1452,
+										1453
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										1360,
+										1361
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"history_list_is_closing": true,
+							"syntax": "Packages/HOI4/hoi4.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 8674.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "common/units/LAW_SPAA_brigade.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1795,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								307,
+								327
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										338,
+										339
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										302,
+										303
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"syntax": "Packages/HOI4/hoi4.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "common/technologies/armor.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 18680,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								907,
+								907
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										16977,
+										16978
+									],
+									"2":
+									[
+										16899,
+										16900
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									],
+									"2":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										16728,
+										16729
+									],
+									"2":
+									[
+										16881,
+										16882
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										16977,
+										16978
+									],
+									"2":
+									[
+										16899,
+										16900
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									],
+									"2":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										16728,
+										16729
+									],
+									"2":
+									[
+										16881,
+										16882
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"history_list_is_closing": true,
+							"syntax": "Packages/HOI4/hoi4.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1009.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "interface/countrytechtreeview.gui",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 132872,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								69188,
+								69194
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 48489.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 28.0
+		"height": 25.0
 	},
 	"input":
 	{
@@ -576,11 +2616,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.449116939368,
 			1.0
 		],
 		"rows":
@@ -614,7 +2661,7 @@
 	"project": "hoi4mod.sublime-project",
 	"replace":
 	{
-		"height": 72.0
+		"height": 46.0
 	},
 	"save_all_on_build": false,
 	"select_file":
@@ -624,56 +2671,516 @@
 		"selected_items":
 		[
 			[
-				"air",
-				"common\\units\\air.txt"
-			],
-			[
-				"airt",
+				"air_tech",
 				"common\\technologies\\air_techs.txt"
-			],
-			[
-				"defines",
-				"common\\defines\\42_defines.lua"
-			],
-			[
-				"cub_2000",
-				"history\\units\\CUB_2000.txt"
-			],
-			[
-				"cyp_2000",
-				"history\\units\\CYP_2000.txt"
-			],
-			[
-				"plane",
-				"common\\units\\equipment\\LAW_planes.txt"
-			],
-			[
-				"missi",
-				"common\\technologies\\missile.txt"
 			],
 			[
 				"law",
 				"events\\LAW.txt"
 			],
 			[
+				"support",
+				"common\\technologies\\support.txt"
+			],
+			[
+				"armor",
+				"common\\technologies\\armor.txt"
+			],
+			[
+				"ARTIL",
+				"common\\technologies\\artillery.txt"
+			],
+			[
+				"money",
+				"common\\on_actions\\money_on_actions.txt"
+			],
+			[
+				"electro",
+				"common\\technologies\\electronic_mechanical_engineering.txt"
+			],
+			[
+				"armo",
+				"common\\technologies\\armor.txt"
+			],
+			[
+				"recon",
+				"common\\units\\recon.txt"
+			],
+			[
+				"air",
+				"common\\technologies\\air_techs.txt"
+			],
+			[
+				"planes",
+				"common\\units\\equipment\\LAW_planes.txt"
+			],
+			[
+				"tech",
+				"interface\\Technologies.gfx"
+			],
+			[
+				"100",
+				"history\\states\\100-Iceland.txt"
+			],
+			[
+				"949",
+				"history\\states\\949-E.GREEN.txt"
+			],
+			[
+				"948",
+				"history\\states\\948-SE.GREEN.txt"
+			],
+			[
+				"947",
+				"history\\states\\947-C.GREEN.txt"
+			],
+			[
+				"946",
+				"history\\states\\946-W.GREEN.txt"
+			],
+			[
+				"101",
+				"history\\states\\101-Greenland.txt"
+			],
+			[
+				"115",
+				"history\\states\\115-Sicily.txt"
+			],
+			[
+				"177",
+				"history\\states\\177-Balearic Islands.txt"
+			],
+			[
+				"114",
+				"history\\states\\114-Sardinia.txt"
+			],
+			[
+				"116",
+				"history\\states\\116-Malta.txt"
+			],
+			[
+				"183",
+				"history\\states\\183-Cyprus.txt"
+			],
+			[
+				"836",
+				"history\\states\\836-Northern Cyprus.txt"
+			],
+			[
+				"den_",
+				"history\\units\\DEN_2000.txt"
+			],
+			[
+				"greenland",
+				"common\\national_focus\\GREENLAND_FOC.txt"
+			],
+			[
+				"phili",
+				"common\\national_focus\\philippines_focus.txt"
+			],
+			[
+				"cyp",
+				"common\\national_focus\\CYPRUS_FOC.txt"
+			],
+			[
+				"denmark",
+				"common\\national_focus\\DENMARK_FOC.txt"
+			],
+			[
+				"cyprus",
+				"common\\national_focus\\CYPRUS_FOC.txt"
+			],
+			[
+				"mada",
+				"common\\national_focus\\MADAGASCAR_FOC.txt"
+			],
+			[
 				"phil",
 				"common\\national_focus\\philippines_focus.txt"
 			],
 			[
-				"PHI",
-				"common\\national_focus\\philippines_focus.txt"
+				"goal",
+				"interface\\goals.gfx"
 			],
 			[
-				"GENER",
-				"common\\national_focus\\generic.txt"
+				"navalcom",
+				"interface\\navalcombat.gfx"
 			],
 			[
-				"destroy",
-				"common\\units\\equipment\\LAW_destroyers.txt"
+				"law\\",
+				"localisation\\wars_l_english.yml"
 			],
 			[
-				"",
+				"lhd",
+				"common\\units\\equipment\\LAW_LHD.txt"
+			],
+			[
+				"carrier",
+				"common\\units\\equipment\\LAW_carriers.txt"
+			],
+			[
+				"naval",
 				"common\\technologies\\naval.txt"
+			],
+			[
+				"frigate",
+				"common\\units\\equipment\\LAW_frigates.txt"
+			],
+			[
+				"helo",
+				"common\\technologies\\helicopter.txt"
+			],
+			[
+				"engi",
+				"common\\technologies\\electronic_mechanical_engineering.txt"
+			],
+			[
+				"saf",
+				"history\\countries\\SAF - South Africa.txt"
+			],
+			[
+				"missile",
+				"common\\technologies\\missile.txt"
+			],
+			[
+				"879",
+				"history\\states\\879-Paracel Islands.txt"
+			],
+			[
+				"South China Sea",
+				"map\\strategicregions\\75-South China Sea.txt"
+			],
+			[
+				"parce",
+				"history\\states\\879-Paracel Islands.txt"
+			],
+			[
+				"ST_",
+				"common\\scripted_guis\\st_state_transfer.txt"
+			],
+			[
+				"973",
+				"history\\states\\973-sprat.8.txt"
+			],
+			[
+				"974",
+				"history\\states\\974-yemen.island.txt"
+			],
+			[
+				"cyprus_f",
+				"common\\national_focus\\CYPRUS_FOC.txt"
+			],
+			[
+				"law_sub",
+				"common\\units\\equipment\\LAW_submarines.txt"
+			],
+			[
+				"can",
+				"history\\countries\\CAN.txt"
+			],
+			[
+				"USA",
+				"common\\ideas\\usa.txt"
+			],
+			[
+				"GREEN",
+				"common\\national_focus\\GREENLAND_FOC.txt"
+			],
+			[
+				"DEN",
+				"history\\countries\\DEN.txt"
+			],
+			[
+				"AST",
+				"history\\countries\\AST - Australia.txt"
+			],
+			[
+				"MAD",
+				"history\\countries\\MAD - Madagascar.txt"
+			],
+			[
+				"phi",
+				"history\\countries\\PHI - Philippines.txt"
+			],
+			[
+				"grn",
+				"history\\countries\\GRN - Greenland.txt"
+			],
+			[
+				"ETH",
+				"history\\countries\\ETH - Ethiopia.txt"
+			],
+			[
+				"BKF",
+				"history\\countries\\BKF - Burkina Faso.txt"
+			],
+			[
+				"SAF",
+				"history\\countries\\SAF - South Africa.txt"
+			],
+			[
+				"MZB",
+				"history\\countries\\MZB - Mozambique.txt"
+			],
+			[
+				"310",
+				"history\\states\\310-French SA.txt"
+			],
+			[
+				"CYP",
+				"common\\national_focus\\CYPRUS_FOC.txt"
+			],
+			[
+				"TUR",
+				"history\\units\\TUR_2000.txt"
+			],
+			[
+				"cub_2",
+				"history\\units\\CUB_2000.txt"
+			],
+			[
+				"PHIL",
+				"common\\countries\\Philippines.txt"
+			],
+			[
+				"315",
+				"history\\states\\315-Cuba.txt"
+			],
+			[
+				"CUB_2",
+				"history\\units\\CUB_2000.txt"
+			],
+			[
+				"SOV_2000",
+				"history\\units\\SOV_2000.txt"
+			],
+			[
+				"SYR",
+				"history\\units\\SYR_2000.txt"
+			],
+			[
+				"SYRIA",
+				"common\\countries\\Syria.txt"
+			],
+			[
+				"842",
+				"history\\states\\842-Cabinda.txt"
+			],
+			[
+				"829",
+				"history\\states\\829-Grenada.txt"
+			],
+			[
+				"820",
+				"history\\states\\820-Malawi.txt"
+			],
+			[
+				"819",
+				"history\\states\\819-Swaziland.txt"
+			],
+			[
+				"817",
+				"history\\states\\817-Northern Malay.txt"
+			],
+			[
+				"797",
+				"history\\states\\797-South Ossetia.txt"
+			],
+			[
+				"780",
+				"history\\states\\780-Burundi.txt"
+			],
+			[
+				"775",
+				"history\\states\\775-Conakry.txt"
+			],
+			[
+				"585",
+				"history\\states\\585-Uzbekistan.txt"
+			],
+			[
+				"553",
+				"history\\states\\553-Lebanon.txt"
+			],
+			[
+				"551",
+				"history\\states\\551-Khartoum.txt"
+			],
+			[
+				"548",
+				"history\\states\\548-Uganda.txt"
+			],
+			[
+				"541",
+				"history\\states\\541-South West Africa.txt"
+			],
+			[
+				"455",
+				"history\\states\\455-Jordan.txt"
+			],
+			[
+				"432",
+				"history\\states\\432-Assam.txt"
+			],
+			[
+				"430",
+				"history\\states\\430-Bangladesh.txt"
+			],
+			[
+				"330",
+				"history\\states\\330-Mongolia.txt"
+			],
+			[
+				"324",
+				"history\\states\\324-Bhutan.txt"
+			],
+			[
+				"318",
+				"history\\states\\318-Haiti.txt"
+			],
+			[
+				"305",
+				"history\\states\\305-Ecuador.txt"
+			],
+			[
+				"302",
+				"history\\states\\302-bolivia.txt"
+			],
+			[
+				"300",
+				"history\\states\\300-Uruguay.txt"
+			],
+			[
+				"297",
+				"history\\states\\297-Belgian Africa.txt"
+			],
+			[
+				"296",
+				"history\\states\\296-Portugal Africa.txt"
+			],
+			[
+				"294",
+				"history\\states\\294-Oman.txt"
+			],
+			[
+				"286",
+				"history\\states\\286-Indochina.txt"
+			],
+			[
+				"269",
+				"history\\states\\269-British Somaliland.txt"
+			],
+			[
+				"green",
+				"common\\ideas\\GREENLAND.txt"
+			],
+			[
+				"denmar",
+				"common\\ideas\\denmark.txt"
+			],
+			[
+				"ideas/ast",
+				"common\\ideas\\australia.txt"
+			],
+			[
+				"subma",
+				"common\\units\\equipment\\submarines.txt"
+			],
+			[
+				"FRIGATE",
+				"common\\units\\equipment\\LAW_frigates.txt"
+			],
+			[
+				"78",
+				"history\\states\\78-Bessarabia.txt"
+			],
+			[
+				"857",
+				"history\\states\\857- Transnistria.txt"
+			],
+			[
+				"SOV",
+				"history\\countries\\SOV - Soviet union.txt"
+			],
+			[
+				"UKR",
+				"events\\Ukraine.txt"
+			],
+			[
+				"HLS",
+				"history\\countries\\HLS - HolySee.txt"
+			],
+			[
+				"231",
+				"history\\states\\231-Georgia.txt"
+			],
+			[
+				"WSH",
+				"history\\countries\\WSH - West Sahara.txt"
+			],
+			[
+				"TEST",
+				"common\\technologies\\tests"
+			],
+			[
+				"NAVAL",
+				"common\\technologies\\naval.txt"
+			],
+			[
+				"usa",
+				"history\\countries\\USA - USA.txt"
+			],
+			[
+				"mal",
+				"history\\countries\\MAL - Mali.txt"
+			],
+			[
+				"alg",
+				"history\\countries\\ALG - Algeria.txt"
+			],
+			[
+				"ivo",
+				"events\\IvoryCoast.txt"
+			],
+			[
+				"515",
+				"history\\states\\515-Central Africa.txt"
+			],
+			[
+				"748",
+				"history\\states\\748-Eastern Niger.txt"
+			],
+			[
+				"478",
+				"history\\states\\478-Nayarit.txt"
+			],
+			[
+				"747",
+				"history\\states\\747-Niger Desert.txt"
+			],
+			[
+				"840",
+				"history\\states\\840-Ida-Viru.txt"
+			],
+			[
+				"453",
+				"history\\states\\453-Sinai.txt"
+			],
+			[
+				"813",
+				"history\\states\\813-Northern Sinai.txt"
+			],
+			[
+				"413",
+				"history\\states\\413-Khuzestan.txt"
+			],
+			[
+				"554",
+				"history\\states\\554-Syria.txt"
+			],
+			[
+				"785",
+				"history\\states\\785-Kosovo.txt"
 			]
 		],
 		"width": 0.0
@@ -704,7 +3211,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 272.0,
+	"side_bar_width": 286.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

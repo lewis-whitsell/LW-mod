@@ -1424,23 +1424,24 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "gen1_mbt_tree"
-				position = { x = -40 y = 172 }
+				position = { x = 100 y = 172 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
-			
-			gridboxtype = {
-				name = "motorized_infantry_tree"
-				position = { x = 20% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
+
 			gridboxtype = {
 				name = "amphibious1_tree"
-				position = { x = 0 y = 172 }
-				size = { width = 80% height = 80% }
+				position = { x = 1000 y = 172 }
+				size = { width = 10% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+
+			gridboxtype = {
+				name = "sp_aa1_tree"
+				position = { x = 200 y = 172 }
+				size = { width = 10% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
@@ -1763,22 +1764,22 @@ guiTypes = {
 			
 			gridboxtype = {
 				name = "gw_artillery_tree"
-				position = { x = 750 y = 172 }
-				size = { width = 1500 height = 1500 }
+				position = { x = 150 y = 172 }
+				size = { width = 70% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
 			gridboxtype = {
 				name = "interwar_antiair_tree"
-				position = { x = -300 y = 172 }
-				size = { width = 1500 height = 1500 }
+				position = { x = 1500 y = 172 }
+				size = { width = 15% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
 			gridboxtype = {
 				name = "antitank_tree"
-				position = { x = 0 y = 172 }
-				size = { width = 1500 height = 1500 }
+				position = { x = 150 y = 172 }
+				size = { width = 15% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}

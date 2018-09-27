@@ -1227,13 +1227,12 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_artillery3_medium"
-		texturefile = "gfx/interface/technologies/arty/artillery3.dds"
-	}	
+		texturefile = "gfx/interface/technologies/artillery3.dds"
+		}	
 	
 	SpriteType = {
 		name = "GFX_artillery2_medium"
-		texturefile = "gfx/interface/technologies/arty/artillery2.dds"
-	}	
+		texturefile = "gfx/interface/technologies/artillery2.dds"	}	
 	
 	SpriteType = {
 		name = "GFX_artillery1_medium"

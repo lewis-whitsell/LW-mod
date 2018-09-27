@@ -36,10 +36,6 @@ technologies = {
 			leads_to_tech = rocket_artillery
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = sp_aa1
-			research_cost_coeff = 1
-		}
 		
 		research_cost = 1.5
 		
@@ -452,7 +448,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 5 y = @1980 }
+			position = { x = 4 y = @1980 }
 		}
 		
 		ai_will_do = {
@@ -483,11 +479,11 @@ technologies = {
 		
 		research_cost = 1
 
-		start_year = 1990
+		start_year = 2000
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 5 y = @1990 }
+			position = { x = 4 y = @2000 }
 		}
 		
 		ai_will_do = {
@@ -520,11 +516,11 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 2003
+		start_year = 2006
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 5 y = @2003 }
+			position = { x = 4 y = @2006 }
 		}
 		
 		ai_will_do = {
@@ -551,11 +547,11 @@ technologies = {
 		
 		research_cost = 1
 
-		start_year = 2009
+		start_year = 2012
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 5 y = @2009 }
+			position = { x = 4 y = @2012 }
 		}
 		
 		ai_will_do = {
@@ -578,7 +574,7 @@ technologies = {
 		}
 		folder = {
 			name = artillery_folder
-			position = { x = -5 y = @1980 }
+			position = { x = -4 y = @1980 }
 		}
 	
 		research_cost = 0.5
@@ -605,7 +601,7 @@ technologies = {
 		}
 		folder = {
 			name = artillery_folder
-			position = { x = -5 y = @2000 }
+			position = { x = -4 y = @2000 }
 		}
 	
 		research_cost = 0.5
@@ -631,7 +627,7 @@ technologies = {
 		}
 		folder = {
 			name = artillery_folder
-			position = { x = -5 y = @2006 }
+			position = { x = -4 y = @2006 }
 		}
 	
 		research_cost = 0.5
@@ -658,7 +654,7 @@ technologies = {
 		}
 		folder = {
 			name = artillery_folder
-			position = { x = -5 y = @2012 }
+			position = { x = -4 y = @2012 }
 		}
 	
 		research_cost = 0.5
@@ -681,7 +677,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = -5 y = @2015 }
+			position = { x = -4 y = @2015 }
 		}
 	
 		research_cost = 0.5
@@ -1341,473 +1337,6 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
-		}
-	}
-
-
-	medrange_sp_aa1 = {
-
-		enable_equipments = {
-			heavy_tank_aa_equipment_1
-		}
-		
-		path = {
-			leads_to_tech = medrange_sp_aa2
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1
-
-		start_year = 1980
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 16 y = @1980 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		dependencies = {
-			advanced_rocket_engines = 1
-		}
-		
-		categories = {
-			artillery
-		}
-	}
-			
-	medrange_sp_aa2 = {
-
-		enable_equipments = {
-			heavy_tank_aa_equipment_2
-		}
-		
-		path = {
-			leads_to_tech = medrange_sp_aa3
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1
-
-		start_year = 1990
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 16 y = @1990 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			artillery
-		}
-	}
-			
-	medrange_sp_aa3 = {
-
-		enable_equipments = {
-			heavy_tank_aa_equipment_3
-		}
-		
-		path = {
-			leads_to_tech = medrange_sp_aa4
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1
-
-		start_year = 2000
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 16 y = @2000 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			artillery
-		}
-	}
-			
-	medrange_sp_aa4 = {
-
-		enable_equipments = {
-			heavy_tank_aa_equipment_4
-		}
-		
-		path = {
-			leads_to_tech = medrange_sp_aa5
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1
-
-		start_year = 2012
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 16 y = @2012 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			artillery
-		}
-	}
-			
-	medrange_sp_aa5 = {
-
-		enable_equipments = {
-			heavy_tank_aa_equipment_5
-		}
-		
-		research_cost = 1
-
-		start_year = 2018
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 16 y = @2018 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			artillery
-		}
-	}	
-			
-	shortrange_sp_aa1 = {
-
-		enable_equipments = {
-			medium_tank_aa_equipment_1
-		}
-		
-		path = {
-			leads_to_tech = shortrange_sp_aa2
-			research_cost_coeff = 1
-		}
-
-		
-		research_cost = 1
-
-		start_year = 1980
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 13 y = @1980 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		dependencies = {
-			advanced_rocket_engines = 1
-		}
-		
-		categories = {
-			artillery
-		}
-	}	
-			
-	shortrange_sp_aa2 = {
-
-		enable_equipments = {
-			medium_tank_aa_equipment_2
-		}
-		
-		path = {
-			leads_to_tech = shortrange_sp_aa3
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1
-
-		start_year = 2000
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 13 y = @2000 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			artillery
-		}
-	}
-			
-	shortrange_sp_aa3 = {
-
-		enable_equipments = {
-			medium_tank_aa_equipment_3
-		}
-		
-		path = {
-			leads_to_tech = shortrange_sp_aa4
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1
-
-		start_year = 2009
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 13 y = @2009 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			artillery
-		}
-	}
-			
-	shortrange_sp_aa4 = {
-
-		enable_equipments = {
-			medium_tank_aa_equipment_4
-		}
-		
-		research_cost = 1
-
-		start_year = 2015
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 13 y = @2015 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			artillery
-		}
-	}
-
-	sp_aa1 = {
-
-		enable_equipments = {
-			light_tank_aa_equipment_1
-		}
-		
-		path = {
-			leads_to_tech = sp_aa2
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = shortrange_sp_aa1
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = medrange_sp_aa1
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1
-
-		start_year = 1970
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 10 y = @1970 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			artillery
-		}
-	}
-		
-	sp_aa2 = {
-
-		enable_equipments = {
-			light_tank_aa_equipment_2
-		}
-		
-		path = {
-			leads_to_tech = sp_aa3
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1
-
-		start_year = 1980
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 10 y = @1980 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			artillery
-		}
-	}
-		
-	sp_aa3 = {
-
-		enable_equipments = {
-			light_tank_aa_equipment_3
-		}
-		
-		path = {
-			leads_to_tech = sp_aa4
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1
-
-		start_year = 1990
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 10 y = @1990 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			artillery
-		}
-	}
-		
-	sp_aa4 = {
-
-		enable_equipments = {
-			light_tank_aa_equipment_4
-		}
-		
-		path = {
-			leads_to_tech = sp_aa5
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1
-
-		start_year = 2000
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 10 y = @2000 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			artillery
-		}
-	}	
-	
-	sp_aa5 = {
-
-		enable_equipments = {
-			light_tank_aa_equipment_5
-		}
-		
-		path = {
-			leads_to_tech = sp_aa6
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1
-
-		start_year = 2006
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 10 y = @2006 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			artillery
-		}
-	}	
-	
-	sp_aa6 = {
-
-		enable_equipments = {
-			light_tank_aa_equipment_6
-		}
-		
-		path = {
-			leads_to_tech = sp_aa7
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1
-
-		start_year = 2009
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 10 y = @2009 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			artillery
-		}
-	}	
-	
-	sp_aa7 = {
-
-		enable_equipments = {
-			light_tank_aa_equipment_7
-		}
-		
-		research_cost = 1
-
-		start_year = 2015
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 10 y = @2015 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			artillery
 		}
 	}
 	
