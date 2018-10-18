@@ -143,10 +143,10 @@ set_politics = {
 
 	}
 	
-	ruling_party = democratic_socialist
+	ruling_party = nationalist
 	last_election = "1999.12.5"
 	election_frequency = 60
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 create_country_leader = {

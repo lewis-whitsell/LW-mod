@@ -106,7 +106,6 @@ on_actions = {
 							has_war = yes
 						}
 					}
-				}
 					set_variable = { nerfeco = 0}
 				}
 
@@ -257,4 +256,4 @@ on_actions = {
             	}
         }
     }
-    }
+    

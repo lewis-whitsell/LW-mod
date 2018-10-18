@@ -150,7 +150,7 @@ country_event = {
 			start_civil_war = {
 			    ruling_party = islamist
 			    ideology = ROOT
-			    size = 0.4
+			    size = 0.6
 			    only_own_territory = yes
 			    capital = 282
 			    states = { 
@@ -184,40 +184,137 @@ country_event = {
 	immediate = {
 
 		PRC = {
+			annex_country = {
+			    target = CHI
+			    transfer_troops = yes
+			}
+			annex_country = {
+			    target = MCU
+			    transfer_troops = yes
+			}
+			annex_country = {
+			    target = HKN
+			    transfer_troops = yes
+			}
+
 			start_civil_war = {
 			    ruling_party = ROOT
-			    ideology = market_liberal
+			    ideology = conservative
 			    size = 0.4
 			    only_own_territory = yes
-			    capital = 569
+			    capital = 524
 			    states = { 
-			    	592 594 728 591 599 593 613 596 606 598 595 600 597
+			    	524 592 594 728 591 599 593 613 596 606 598 595 600 597 729 326
 			    }
 			    keep_unit_leaders = {
 
 			    }
 			}
 		}
+	}
+	option = {
+		name = LAW.5.a # The localisable text that appears on the button.
+	}
+} 
 
-		CHI = {
+country_event = {
+	id = LAW.6
+	title = LAW.6.t
+	desc = LAW.6.d
+	hidden = no
+	fire_only_once = yes
+	trigger = {date > 2000.6.27}
+	mean_time_to_happen = {days = 2}
+	immediate = {
+
+		PRK = {
 			declare_war_on = {
-			    target = PRC
+			    target = D02
 			    type = annex_everything
 			}
 		}
+	}
+	option = {
+		name = LAW.6.a # The localisable text that appears on the button.
+	}
+} 
+
+country_event = {
+	id = LAW.7
+	title = LAW.7.t
+	desc = LAW.7.d
+	hidden = no
+	fire_only_once = yes
+	trigger = {date > 2000.6.29}
+	mean_time_to_happen = {days = 2}
+	immediate = {
 
 		KOR = {
-			declare_war_on = {
-			    target = PRK
+			create_faction = "Actual Greater East Asia Co-Prosperity Sphere"
+			add_to_faction = JAP
+			add_to_faction = D02
+			create_wargoal = {
 			    type = annex_everything
+			    target = PRK
 			}
 		}
 
+		JAP = {
+			swap_ideas = 
+				{
+					remove_idea = japanese_article_9
+    				add_idea = japanese_article_9_LAW
+				}
+				add_core = {
+					613
+					606
+					598
+					596
+				}
+		}
 
 
 	}
 	option = {
-		name = LAW.5.a # The localisable text that appears on the button.
+		name = LAW.7.a # The localisable text that appears on the button.
+	}
+}
+
+country_event = {
+	id = LAW.8
+	title = LAW.8.t
+	desc = LAW.8.d
+	hidden = no
+	fire_only_once = yes
+	trigger = {date > 2000.7.1}
+	mean_time_to_happen = {days = 2}
+	immediate = {
+		PAK ={
+			create_wargoal = {
+			    type = take_state
+			    target = PRC
+			    generator = {619 287 618 617 788}
+			}
+		}
+
+		RAJ ={
+			create_wargoal = {
+			    type = liberate_wargoal
+			    target = TIB
+			}
+		}
+
+		MYA ={
+			create_wargoal = {
+			    type = take_state
+			    target = PRC
+			    generator = {325}
+			}
+			add_core = {325}
+		}
+	}
+	option = {
+		name = LAW.8.a # The localisable text that appears on the button.
 	}
 } 
 
