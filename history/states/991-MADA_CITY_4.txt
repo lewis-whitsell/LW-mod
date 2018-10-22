@@ -1,0 +1,36 @@
+state={
+	id=991
+	name="STATE_991"
+	provinces={
+		13342 13344 13346 13347 13348 13350 13351 
+	}
+	resources={
+		oil = 36
+		aluminium = 24
+		chromium= 10.000
+		steel = 30
+	}
+
+	history={
+		owner = MAD
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 1
+			dockyard = 3
+			13344 = {
+				naval_base = 3
+
+			}
+
+		}
+		victory_points = {
+			13348 5
+			#13344 5
+		}
+
+	}
+	manpower=8746230
+	buildings_max_level_factor=1.000
+	state_category=state_level_11
+}
