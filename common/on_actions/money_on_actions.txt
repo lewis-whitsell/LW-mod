@@ -70,6 +70,7 @@ on_actions = {
 					}
 					every_country={
 					set_variable = { debttotal = 0}
+					set_variable = { civfacmoney = 0}
 					}
 		}
 	}
@@ -202,6 +203,7 @@ on_actions = {
 				set_variable ={overcome= nmn}
 				multiply_variable = {var = nmn value = taxrate}
             	add_to_variable = { var = dx value = nmn  }
+            	
             	round_variable = dx
 
 

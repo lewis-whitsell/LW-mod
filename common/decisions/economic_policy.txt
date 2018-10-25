@@ -45,6 +45,45 @@ economic_policy = {
 		}
 	}
 
+		plus_factories_money = {
+		visible = {
+		
+		}
+		available = {
+			AND ={
+				num_of_available_civilian_factories > 0
+				has_manpower > 3500
+			}
+		}
+		complete_effect = {
+			add_to_variable = { civfacmoney = 1 }
+			add_manpower = -3500
+		}
+		
+		icon = communism
+		
+		days_re_enable = 5
+		cost = 10
+	}
+
+	minus_factories_money = {
+		visible = {
+			ROOT.civfacmoney > 0
+		}
+		available = {
+			ROOT.civfacmoney > 0
+		}
+		complete_effect = {
+			add_to_variable = { civfacmoney = -1 }
+			add_manpower = 3500
+		}
+		
+		icon = communism
+		
+		days_re_enable = 5
+		cost = 100
+	}
+
 
 
 	seize_the_means_of_production = {
