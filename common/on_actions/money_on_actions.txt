@@ -71,6 +71,9 @@ on_actions = {
 					every_country={
 					set_variable = { debttotal = 0}
 					set_variable = { civfacmoney = 0}
+					set_variable = { base_infra = 0}
+					
+
 					}
 		}
 	}
@@ -82,8 +85,22 @@ on_actions = {
 				clear_variable = allexpenses
 				clear_variable =  nmn
 
+				set_variable = { core_tax = num_core_states}
+				multiply_variable = {core_tax value = 0.5}
+
+				set_variable = { colony_tax = num_owned_states}
+				multiply_variable = {core_tax value = 0.1}
+
+				set_variable = { science_cost = amount_research_slots}
+				multiply_variable = {amount_research_slots = education_percent}
+
+				
+				
+
+				
+
 				set_variable = { nmn = num_of_civilian_factories}
-				divide_variable = { var = nmn value = 10 }
+				divide_variable = { var = nmn value = 4 }
 
 				every_country={
 				limit={
@@ -93,38 +110,8 @@ on_actions = {
 				set_variable = { tax_to_overlord =overcome}
 				}
 
-				every_country= {
-					limit= {
-						OR = {
-							AND = {
-								has_war = no
-								is_ai = no
-								or = {
-									NOT = {has_idea = war_economy}
-									NOT = {has_idea = tot_economic_mobilisation}	
-								}
-							}
-							has_war = yes
-						}
-					}
-					set_variable = { nerfeco = 0}
-				}
-
-				every_country={
-					limit={
-						AND = {
-							has_war = no
-							is_ai = no
-							OR ={
-								has_idea = war_economy
-								has_idea = tot_economic_mobilisation	
-							}
-						}
-					}
-					set_variable = { nerfeco = 20}	
-				}
-
-				set_variable = { tax= num_of_controlled_states}
+				set_variable = { tax= num_of_core_states}
+				add_variable = {tax = -num}
 				divide_variable = { var = tax value = 15 }
 				set_variable = { nc= num_of_controlled_states}
 				divide_variable = { var = nc value = 35 }
