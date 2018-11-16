@@ -232,17 +232,22 @@ ability = {
         }
     }
 
-    cyber_attack = {
-        name = "Cyber Attack"
-        desc = ABILITY_HVY_JAMMING_DESC
+    chemical_strike = {
+        name = "Chemical Weapon Strike"
+        desc = ABILITY_CHEM_DESC
+        
         sound_effect = command_power_ability_special
         
         type = army_leader
         
         allowed = {
             is_border_war = no
-			has_trait = jungle_rat
-			date > 2002.01.01			
+        }
+
+        visible = {
+        	has_trait = harsh_leader
+        	has_tech = chemical_weapons
+        	check_variable = { chemical_stockpile > 0 }
         }
         
         ai_will_do = {
@@ -252,7 +257,10 @@ ability = {
         cost = 0.20
         duration = 240
 		one_time_effect = {
-
+			add_opinion_modifier = {
+			    target = ROOT
+			    modifier = used_chemical_weapons
+			}
         }
         unit_modifiers = {
 			jungle = {
