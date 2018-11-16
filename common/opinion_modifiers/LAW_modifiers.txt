@@ -1,0 +1,16 @@
+#########################################################################
+# OPINION MODIFIERS
+##########################################################################
+# value
+# min_trust
+# max_trust
+# decay
+# months/years/days = timer
+# trade = yes/noopinion_modifiers = {
+	used_chem_weapons = {
+		value = -30
+		min_trust = -10
+		days = 10
+		decay = 1
+	}
+}

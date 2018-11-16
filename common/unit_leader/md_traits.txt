@@ -18,4 +18,20 @@ leader_traits = {
 		}
 	}
 
+	cas_expert = { 
+		type = corps_commander
+		gain_xp = {
+			opponent = { has_combat_modifier = enemy_air_superiority }
+		}
+		
+		cost = 2000
+		
+		corps_commander_modifier = {
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 }

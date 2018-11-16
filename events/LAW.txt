@@ -310,7 +310,7 @@ country_event = {
 			    target = PRC
 			    generator = {325}
 			}
-			add_core = {325}
+			add_state_core = {325}
 		}
 	}
 	option = {
