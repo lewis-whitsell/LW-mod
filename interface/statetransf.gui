@@ -40,7 +40,9 @@ guiTypes = {
 		}
 
 	}
-	
+
+
+		
 	containerWindowType = {
 		name = "st_state_manager_powers_container"
 		position = {x=1250 y=170}
@@ -122,11 +124,11 @@ guiTypes = {
 			pdx_tooltip = "construction_nic_TT"
 		}
 		buttonType = {
-			name = "construction_port" 
+			name = "add_homes" 
 			position = {x=273 y=80}		
-			spriteType = "GFX_buildings_strip"
-			frame = 6
-			pdx_tooltip = "construction_port"
+			spriteType = "GFX_global_alert_icons"
+			frame = 16
+			pdx_tooltip = "add_homes_TT"
 		}
 		buttonType = {
 			name = "construction_airbase" 
@@ -193,27 +195,13 @@ guiTypes = {
 			pdx_tooltip = "add_resources_rubber_TT"
 		}
 		buttonType = {
-			name = "add_homes" 
+			name = "construction_rocket" 
 			position = {x=323 y=125}		
-			spriteType = "GFX_global_alert_icons"
-			frame = 16
-			pdx_tooltip = "add_homes_TT"
-		}
-		buttonType = {
-			name = "construction_fort" 
-			position = {x=373 y=125}		
 			spriteType = "GFX_buildings_strip"
-			frame = 7
-			pdx_tooltip = "construction_fort"
+			frame = 1
+			pdx_tooltip = "construction_rocket"
 		}
-		buttonType = {
-			name = "construction_coastfort" 
-			position = {x=423 y=125}		
-			spriteType = "GFX_buildings_strip"
-			frame = 8
-			pdx_tooltip = "construction_coastfort"
-		}
-		
+				
 		instantTextboxType = {
 			name = "mark_button"
 			position = {x=32 y=39}
@@ -311,9 +299,11 @@ guiTypes = {
 		
 		buttonType = {
 			name = "award_states" 
-			position = {x=420 y=20}	
+			position = {x=205 y=30}	
 			shortcut = "ctrl+t"
-			spriteType = "GFX_global_alert_icons"
+			spriteType = "GFX_accept_decline_icon"
+			 frame = 2
+			 scale = 3
 			pdx_tooltip = "AWARD_STATES"
 			pdx_tooltip_delayed = "AWARD_STATES_DELAYED"
 		}
