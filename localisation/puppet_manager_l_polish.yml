@@ -1,0 +1,65 @@
+﻿l_polish:
+ PUPPETMAN_STATE_TRANSFER:0 "§HPrzejmij Prowincję§!\n\nPrzejmujesz wybraną prowincję za §H50§!£pol_power\n\nMożna przejmować tylko prowincje narodowe lub z roszczeniami!\n\n§RZwiększa autonomię o 5-30%£autonomy_texticon!§!"
+ PUPPETMAN_STATE_TRANSFER_DELAYED:0 "\n§HWzrost w autonomi:§!\n §R+5%§!£autonomy_texticon  dla kolonii\n §R+10%§!£autonomy_texticon  dla prowincji nie będącej narodową\n §R+30%§!£autonomy_texticon  dla prowincji narodowej§!"
+ 
+ PUPPETMAN_MASTER_STATE_TRANSFER:0 "§HZwróć prowincję narodową§!\n\nZwraca prowincję narodową za §H50§!£pol_power\n\n\n§GZmniejsza autonomię o 20%£autonomy_texticon!§!"
+ 
+ PUPPETMAN_STATE_CLAIM:0 "§HStwórz Roszczenia§!\n\nTworzy roszczenia do wybranej prowincji za §H100§!£pol_power\n[Root.puppetman_state_claim_tooltip]"
+ puppetman_state_claim_yes:0 "\n\n§RTworzenie roszczeń zajmuje 60 dni§!\n§GMożna przejmować prowincje z roszczeniami§!"
+ puppetman_state_claim_no1:0 "\n\n§RMożna tworzyć roszczenia do tylko jednej prowincji na raz!§!"
+ puppetman_state_claim_no2:0 "\n\n§RDemokratyczne państwa nie mogą tworzyć roszczeń!§!"
+ puppetman_state_claim_no3:0 "\n\n§RPosiadamy jusz roszczenia do tej prowincji!§!"
+ 
+ PUPPETMAN_MASTER_STATE_MARK_FOR_TRANSFER:0 "§HOznacz prowincje pod transfer§!\nOznacz prowincje które chcesz przenieść.\n[This.mark_state_tooltip]"
+ PUPPETMAN_MASTER_STATE_UNMARK_FOR_TRANSFER:0 "§HOdznacz prowincje§!\nOdznacz wybraną prowincje.\n"
+ mark_state_yes:0 ""
+ mark_state_no:0 "\n§ROznaczona!§!"
+ 
+ STATES_TAKEN:0 "Prowincje przejęte przez władcę"
+ 
+ CLAIMING_INFO_YES:0 "Roszczenie: [?claiming_day]/60"
+ CLAIMING_INFO_NO:0 ""
+ 
+ FOUND_NIM:0 "§HUfunduj Narodowy Ruch Integracyjny§!\n\nUfunduj N.R.I. w wybranym podmiocie za §H100§!£pol_power\n\nAktywiści NRI-u będą pracować przez rok, zmniejszając autonomię podmiotu o §H3§!£autonomy_texticon  dziennie\n\n[This.found_nim_tooltip]"
+ FOUND_NIM_DELAYED:0 ""
+ found_nim_yes:0 ""
+ found_nim_no:0 "§RAktywiści NRI-u już tutaj działają§!"
+ 
+ CLAIM_COLONIES:0 "§HStwórz Roszczenia do kolonii§!\n\nRość sobie prawo do wszystkich kolonii podmiotu za §H200§!£pol_power\n\n\n[This.claim_colonies_tooltip]"
+ CLAIM_COLONIES_DELAYED:0 "\nOtrzymasz roszczenie do każdej nienarodowej prowincji poza obszarem stolicy (bez połączenia z nią).\n§GProwincje te można następnie zająć§!"
+ claim_colonies_yes:0 ""
+ claim_colonies_no:0 "§RTen kraj nie posiada kolonii!§!"
+ 
+ RELOCATE_CIV_INDUSTRY:0 "§HPrzenieś Przemysł Cywilny§!\n\nTymczasowo przenieś swój przemysł cywilny do [This.GetName] za §H100§!£pol_power\n\n\n[Root.relocate_civilian_industry_tooltip]\n\n[This.relocate_civilian_industry_tooltip]"
+ RELOCATE_CIV_INDUSTRY_DELAYED:0 "\nPrzeniesiesz produkcję cywilną do innego kraju na pół roku\n§GTwój współczynnik produkcji dóbr konsumpcyjnych zostanie zmniejszony o 20%, podczas gdy współczynnik wybranego kraju zostanie zwiększony§!"
+ relocate_civilian_industry_yes:0 "§RZwiększa autonomię o 3£autonomy_texticon  dziennie!§!"
+ relocate_civilian_industry_no:0 "§RPrzenieśliśmy już nasz przemysł cywilny!§!"
+ relocate_civilian_industry_subject_no:0 "§RKraj ten musi mieć do dyspozycji przynajmniej 15 fabryk cywilnych§!"
+ 
+ LET_HIM_GO:0 "§HNadaj Niezależność Podmiotowi§!\n\nUdziel niezależności podmiotu za §H50§!£pol_power.\n\n\n"
+ LET_HIM_GO_DELAYED:0 "\nW teraz wolnym kraju odbędą się wybory, które zdecydują o przyszłości państwa. Typ starego rządu będzie miał wpływ na wynik wyborów."
+ 
+ AWARD_STATES:0 "§HPrzekaż prowincje§!\n\nPrzekaż oznaczone prowincje temu państwu za §H[?Root.marked_states]§!£pol_power.\n\n\n"
+ AWARD_STATES_DELAYED:0 "Wszystkie zaznaczone prowincje zostaną przeniesione do wybranego kraju (max 10 na raz). Cena za każdy transfer prowincji to §H10§!£pol_power"
+ #ideas
+ civilian_industry_relocated_in:0 "Przeniesiony Przemysł Cywilny"
+ civilian_industry_relocated_out:0 "Przeniesiony Przemysł Cywilny"
+ national_integration_movement:0 "Narodowy Ruch Integracyjny"
+ #Events
+ puppetman.1.t:0 "Prowincja Została Zajęta"
+ puppetman.1.d:0 "Jedna z naszych prowincji została zajęta przez [From.GetName]. Ta prowincja była wcześniej naszym spornym terytorium, więc wiadomo było, że to może się zdarzyć."
+ puppetman.1.a:0 "Jak oni mogli?!"
+ puppetman.2.t:0 "Zwrot Prowincji Narodowej"
+ puppetman.2.d:0 "Jedna z naszych prowincji narodowych została zwrócona przez [From.GetName]. Ta prowincja była wcześniej naszym spornym terytorium, więc wiadomo było, że to może się zdarzyć."
+ puppetman.2.a:0 "Zadziałali wielkodusznie"
+ puppetman.3.t:0 "Roszczenia zostały ukończone"
+ puppetman.3.d:0 "Naszym dyplomatom udało sie stworzyć roszczenia do jednej z prowincji naszego podmiotu politycznego"
+ puppetman.3.a:0 "Dobra robota"
+ puppetman.4.t:0 "Pierwsze Wolne Wybory"
+ puppetman.4.desc:0 "Jesteśmy teraz wolnym narodem i sami możemy wybrać nasz rząd. Którą ścieżkę wybierzemy? Demokratyczni, faszyści, komuniści, a może staniemy się neutralni?"
+ puppetman.4.a:0 "Powołanie demokratycznego rządu"
+ puppetman.4.b:0 "Powołanie faszystowskiego rządu"
+ puppetman.4.c:0 "Powołanie komunistycznego rządu"
+ puppetman.4.d:0 "Powołanie neutralnego rządu"
+ 
+ 

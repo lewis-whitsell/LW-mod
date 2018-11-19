@@ -1,0 +1,309 @@
+﻿capital = 230
+
+oob = "ARM_2000"
+
+set_research_slots = 3
+set_convoys = 40
+set_stability = 0.4
+
+set_country_flag = country_language_armenian
+
+set_technology = {
+	jet_multirole1=1
+	jet_multirole2=1
+	jet_multirole3=1
+	jet_CAS1=1
+	cv_jet_CAS1=1
+	jet_CAS2=1
+	cv_jet_CAS2=1
+	naval_bomber1=1
+	naval_bomber2=1
+	naval_bomber3=1
+	jet_tactical_bomber1=1
+	jet_tactical_bomber2=1
+	jet_strategic_bomber1=1
+	jet_strategic_bomber2=1
+	transport1=1
+	gen1_ucav=1
+	gen1_mbt=1
+	gen2_mbt=1
+	gen3_mbt=1
+	gen3_light=1
+	gen1_ifv=1
+	airborne_ifv_infantry1=1
+	gen1_apc=1
+	
+	recon_mechanized_1=1
+	sp_rocket1=1
+	gw_artillery=1
+	interwar_artillery=1
+	rocket_artillery=1
+	sp_artillery1=1
+	interwar_antiair=1
+	antitank=1
+	antitank1=1
+	medrange_sp_aa1=1
+	shortrange_sp_aa1=1
+	sp_aa1=1
+	sp_aa2=1
+	cold_war_engineering=1
+	modern_communication_systems=1
+	modern_university_systems=1
+	internet=1
+	experimental_rockets=1
+	rocket_engines=1
+	improved_rocket_engines=1
+	advanced_rocket_engines=1
+	early_helicopter=1
+	assembly_line=1
+	software1=1
+	software2=1
+	software3=1
+	machine_tools1=1
+	machine_tools2=1
+	machine_tools3=1
+	manufacturing1=1
+	robotics1=1
+	construction1=1
+	excavation1=1
+	oil1=1
+	oil2=1
+	infantry_weapons=1
+	infantry_weapons1=1
+	rail_integration_system=1
+	infantry_weapons2=1
+	improved_infantry_weapons=1
+	support_weapons=1
+	squad_automatic_weapon=1
+	tandem_charge_warheads=1
+	night_vision=1
+	body_armor=1
+	body_armor2=1
+	camouflage=1
+	special_forces=1
+	motorised_infantry=1
+	motorized_rocket_unit=1
+	cold_war_ship_design=1
+
+	frigate1=1
+	destroyer1=1
+	destroyer_improved_engines=1
+	destroyer_advanced_engines=1
+	destroyer2=1
+	missile_cruiser1=1
+	carrier1=1
+	lhd1=1
+	submarine1=1
+	submarine_nuclear_reactor=1
+	submarine2=1
+
+	tech_support=1
+	tech_engineers=1
+	tech_recon=1
+	tech_military_police=1
+	tech_maintenance_company=1
+	tech_field_hospital=1
+	tech_logistics_company=1
+	tech_signal_company=1
+}
+
+give_guarantee = NGK
+
+add_ideas = {
+	population_growth_stagnation
+	limited_conscription
+}
+
+add_opinion_modifier = { target = TUR modifier = rival }
+add_opinion_modifier = { target = AZR modifier = rival }
+give_military_access = NGK
+
+set_politics = {
+	parties = {
+		reactionary = { popularity = 30 }
+		conservative = { popularity = 40 }
+		market_liberal = { popularity = 15 }
+		progressive = { popularity = 3 }
+		democratic_socialist = { popularity = 2 }
+		communist = { popularity = 10 }
+	}
+	
+	ruling_party = conservative
+	last_election = "1998.3.30"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+create_country_leader = {
+	name = "Robert Kocharyan"
+	picture = "Robert_Kocharyan.dds"
+	ideology = fiscal_conservative
+}
+
+create_field_marshal = {
+	name = "Movses Hakobyan"
+	picture = "Portrait_Movses_Hakobyan.dds"
+	traits = { old_guard organisational_leader }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Haykaz Papik Baghmanyan"
+	picture = "Portrait_Haykaz_Baghmanyan.dds"
+	traits = { bearer_of_artillery }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Stepan Robert Galstyan"
+	picture = "Portrait_Stepan_Galstyan.dds"
+	traits = { commando }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Onik viktor Gasparyan"
+	picture = "Portrait_Onik_Gasparyan.dds"
+	traits = { trait_engineer }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Aris Brutyan"
+	picture = "Portrait_Aris_Brutyan.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Artak Davtyan"
+	picture = "Portrait_Artak_Davtyan.dds"
+	traits = { panzer_leader }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Albert Mardoyan"
+	picture = "Portrait_Albert_Mardoyan.dds"
+	traits = { fortress_buster }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Avetik Muradyan"
+	picture = "Portrait_Avetik_Muradyan.dds"
+	traits = { commando }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Armen Vardanyan"
+	picture = "Portrait_Armen_Vardanyan.dds"
+	traits = { fortress_buster }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Temur Shahnazaryan"
+	picture = "Portrait_Temur_Shahnazaryan.dds"
+	traits = { trickster }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Ishkan Matevosyan"
+	picture = "Portrait_Ishkan_Matevosyan.dds"
+	traits = { trait_engineer }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Vardan Nshanyan"
+	picture = "Portrait_Vardan_Nshanyan.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Poghos Poghosyan"
+	picture = "Portrait_Poghos_Poghosyan.dds"
+	traits = { ranger }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Norayr Yolchyan"
+	picture = "Portrait_Norayr_Yolchyan.dds"
+	traits = { trait_engineer }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Tiran Khacatryan"
+	picture = "Portrait_Tiran_Khacatryan.dds"
+	traits = { ranger }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Kamo Qochunts"
+	picture = "Portrait_Kamo_Qochunts.dds"
+	traits = { urban_assault_specialist }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Hayk Karapetyan"
+	picture = "Portrait_Hayk_Karapetyan.dds"
+	traits = { trait_engineer }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Aleksan Aleksanyan"
+	picture = "Portrait_Aleksan_Aleksanyan.dds"
+	traits = { hill_fighter }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Genadi Tavaratsyan"
+	picture = "Portrait_Genadi_Tavaratsyan.dds"
+	traits = { panzer_leader }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Henrik Muradyan"
+	picture = "Portrait_Henrik_Muradyan.dds"
+	traits = { urban_assault_specialist }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Kamavor Khachatryan"
+	picture = "Portrait_Kamavor_Khachatryan.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Vahan Avetisyan"
+	picture = "Portrait_Vahan_Avetisyan.dds"
+	traits = { trickster }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Artur Chatyan"
+	picture = "Portrait_Artur_Chatyan.dds"
+	traits = { trickster }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Yuri Khachaturov"
+	picture = "Portrait_Yuri_Khachaturov.dds"
+	traits = {  }
+	skill = 1
+}

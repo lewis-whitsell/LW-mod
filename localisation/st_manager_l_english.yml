@@ -1,0 +1,46 @@
+﻿l_english:
+ 
+ ST_STATE_MARK_FOR_TRANSFER:0 "§HMark State for Transfer§!\nMark the selected state so it can be transfered \n"
+ ST_STATE_UNMARK_FOR_TRANSFER:0 "§HUnmark State§!\nUnmarks the selected state\n"
+ mark_state_yes:0 ""
+ mark_state_no:0 "\n  §RMarked!§!"
+ 
+ MARK_ALL_STATES:0 "§HMark All States§!\n\nMark all states of this country\n\n"
+ MARK_ALL_STATES_DELAYED:0 ""
+ 
+ MARK_COLONIES:0 "§HMark Colonies§!\n\nMark all colonial states of this country\n\n"
+ MARK_COLONIES_DELAYED:0 ""
+ 
+ CLEAR_ALL_MARKINGS:0 "§HClear All Marks§!\n\nEvery mark on world will be removed\n\n"
+ CLEAR_ALL_MARKINGS_DELAYED:0 ""
+
+ AWARD_STATES:0 "§HTransfer States§!\n\nTransfer marked states to this country\n\n"
+ AWARD_STATES_DELAYED:0 ""
+ 
+ ST_TOOLTIP_on:0 "§HActivate 'State Transfer Tool'§!"
+ ST_TOOLTIP_off:0 "§HDeactivate 'State Transfer Tool'§!"
+ transfer_states_on:0 "State Transfer Tool: £trigger_no"
+ transfer_states_off:0 "State Transfer Tool: £trigger_yes"
+ 
+ mark_status_marked:0   "     Unmark State "
+ mark_status_unmarked:0 "      Mark State  "
+
+ urbanization_TT:0 "§HAdd 1 Build Slot\n50 million!§!"
+ construction_cic_TT:0 "§HAdd 1 Civ Factory\n200 million!§!"
+ construction_mic_TT:0 "§HAdd 1 Mil Factory\n175 million!§!"
+ make_core_TT:0 "§HMake state core\n100 million and 40k Manpower!§!"
+ add_resources_steel_TT:0 "§HAdd 1 - 10 steel\n100 million!§!"
+ add_resources_aluminium_TT:0 "§HAdd 1 - 10 aluminium \n100 million!§!"
+ add_resources_tungston_TT:0 "§HAdd 1 - 10 tungston\n100 million!§!"
+ add_resources_chromium_TT:0 "§HAdd 1 - 10 chromium\n100 million!§!"
+ add_resources_oil_TT:0 "§HAdd 1 - 10 oil\n100 million!§!"
+ add_resources_rubber_TT:0 "§HAdd 1 - 10 rubber\n100 million!§!"
+ add_homes_TT:0 "§HAdd 100k - 1M people\n200 million!§!"
+ construction_nic_TT:0 "§HAdd Naval Dockyard\n175 million!§!"
+ construction_port:0 "§HAdd Naval Port\n50 million!§!"
+ construction_airbase:0 "§HAdd Airbase\n25 million!§!"
+  construction_radar:0 "§HAdd radar\n75 million!§!"
+ construction_fort:0 "§HAdd Land Fort\n25 million!§!"
+ construction_coastfort:0 "§HAdd Coastal Fort\n25 million!§!"
+ construction_nuke:0 "§HAdd Nuke Factory\n450 million!§!"
+ 
