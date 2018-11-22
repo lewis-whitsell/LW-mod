@@ -11,15 +11,22 @@ technologies = {
 	@2008 = 16
 	@2010 = 18
 	@2012 = 20
+	@2014 = 22
 
-
-	tech_support = {
+	###Command & Control Equipment###
+	
+	#1970
+	support_equipment = {
 
 		enable_equipments = {
 			support_equipment_0
 		}
 		
-		
+		path = {
+			leads_to_tech = support_equipment1
+			research_cost_coeff = 1
+		}
+
 		path = {
 			leads_to_tech = tech_engineers
 			research_cost_coeff = 1
@@ -62,11 +69,86 @@ technologies = {
 		}
 		
 		ai_will_do = {
+			factor = 3
+		}
+	}
+	#1990
+	support_equipment1 = {
+
+		enable_equipments = {
+			support_equipment_1
+		}
+				
+		path = {
+			leads_to_tech = support_equipment2
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.4
+		start_year = 2003
+		folder = {
+			name = support_folder
+			position = { x = 0 y = @2003 }
+		}
+		
+		categories = {
+			support_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	#2000
+	support_equipment2 = {
+
+		enable_equipments = {
+			support_equipment_2
+		}
+		
+		path = {
+			leads_to_tech = support_equipment3
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 2008
+		folder = {
+			name = support_folder
+			position = { x = 0 y = @2008 }
+		}
+		
+		categories = {
+			support_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#2006
+	support_equipment3 = {
+
+		enable_equipments = {
+			support_equipment_3
+		}
+		
+		research_cost = 1.6
+		start_year = 2014
+		folder = {
+			name = support_folder
+			position = { x = 0 y = @2014 }
+		}
+		
+		categories = {
+			support_tech
+		}
+		
+		ai_will_do = {
 			factor = 1
 		}
 	}
 
-	
 	tech_engineers = {
 
 		enable_subunits = {
@@ -84,7 +166,7 @@ technologies = {
 		start_year = 2000
 		folder = {
 			name = support_folder
-			position = { x = 0 y = @2000 }
+			position = { x = 2 y = @2000 }
 		}
 		
 		categories = {
@@ -117,7 +199,7 @@ technologies = {
 		start_year = 2003
 		folder = {
 			name = support_folder
-			position = { x = 0 y = @2003 }
+			position = { x = 2 y = @2003 }
 		}
 		
 		categories = {
@@ -147,7 +229,7 @@ technologies = {
 		start_year = 2008
 		folder = {
 			name = support_folder
-			position = { x = 0 y = @2006 }
+			position = { x = 2 y = @2006 }
 		}
 		
 		categories = {
@@ -173,7 +255,7 @@ technologies = {
 		start_year = 2014
 		folder = {
 			name = support_folder
-			position = { x = 0 y = @2010 }
+			position = { x = 2 y = @2010 }
 		}
 		
 		categories = {
@@ -200,7 +282,7 @@ technologies = {
 		start_year = 2000
 		folder = {
 			name = support_folder
-			position = { x = 2 y = @2000 }
+			position = { x = 4 y = @2000 }
 		}
 		
 		categories = {
@@ -227,7 +309,7 @@ technologies = {
 		start_year = 2003
 		folder = {
 			name = support_folder
-			position = { x = 2 y = @2003 }
+			position = { x = 4 y = @2003 }
 		}
 		
 		categories = {
@@ -253,7 +335,7 @@ technologies = {
 		start_year = 2008
 		folder = {
 			name = support_folder
-			position = { x = 2 y = @2006 }
+			position = { x = 4 y = @2006 }
 		}
 		
 		categories = {
@@ -274,7 +356,7 @@ technologies = {
 		start_year = 2014
 		folder = {
 			name = support_folder
-			position = { x = 2 y = @2010 }
+			position = { x = 4 y = @2010 }
 		}
 		
 		categories = {
@@ -301,7 +383,7 @@ technologies = {
 		start_year = 2000
 		folder = {
 			name = support_folder
-			position = { x = 4 y = @2000 }
+			position = { x = 6 y = @2000 }
 		}
 		
 		categories = {
@@ -329,7 +411,7 @@ technologies = {
 		start_year = 2003
 		folder = {
 			name = support_folder
-			position = { x = 4 y = @2003 }
+			position = { x = 6 y = @2003 }
 		}
 		
 		categories = {
@@ -355,7 +437,7 @@ technologies = {
 		start_year = 2008
 		folder = {
 			name = support_folder
-			position = { x = 4 y = @2006 }
+			position = { x = 6 y = @2006 }
 		}
 		
 		categories = {
@@ -376,7 +458,7 @@ technologies = {
 		start_year = 2014
 		folder = {
 			name = support_folder
-			position = { x = 4 y = @2010 }
+			position = { x = 6 y = @2010 }
 		}
 		
 		categories = {
@@ -403,7 +485,7 @@ technologies = {
 		start_year = 2000
 		folder = {
 			name = support_folder
-			position = { x = 6 y = @2000 }
+			position = { x = 8 y = @2000 }
 		}
 		
 		categories = {
@@ -432,7 +514,7 @@ technologies = {
 		start_year = 2003
 		folder = {
 			name = support_folder
-			position = { x = 6 y = @2003 }
+			position = { x = 8 y = @2003 }
 		}
 		
 		categories = {
@@ -459,7 +541,7 @@ technologies = {
 		start_year = 2008
 		folder = {
 			name = support_folder
-			position = { x = 6 y = @2006 }
+			position = { x = 8 y = @2006 }
 		}
 		
 		categories = {
@@ -481,7 +563,7 @@ technologies = {
 		start_year = 2014
 		folder = {
 			name = support_folder
-			position = { x = 6 y = @2010 }
+			position = { x = 8 y = @2010 }
 		}
 		
 		categories = {
@@ -513,7 +595,7 @@ technologies = {
 		start_year = 2000
 		folder = {
 			name = support_folder
-			position = { x = 8 y = @2000 }
+			position = { x = 10 y = @2000 }
 		}
 		
 		categories = {
@@ -542,7 +624,7 @@ technologies = {
 		start_year = 2003
 		folder = {
 			name = support_folder
-			position = { x = 8 y = @2003 }
+			position = { x = 10 y = @2003 }
 		}
 		
 		categories = {
@@ -570,7 +652,7 @@ technologies = {
 		start_year = 2008
 		folder = {
 			name = support_folder
-			position = { x = 8 y = @2006 }
+			position = { x = 10 y = @2006 }
 		}
 		
 		categories = {
@@ -593,7 +675,7 @@ technologies = {
 		start_year = 2014
 		folder = {
 			name = support_folder
-			position = { x = 8 y = @2010 }
+			position = { x = 10 y = @2010 }
 		}
 		
 		categories = {
@@ -625,7 +707,7 @@ technologies = {
 		start_year = 2000
 		folder = {
 			name = support_folder
-			position = { x = 10 y = @2000 }
+			position = { x = 12 y = @2000 }
 		}
 		
 		categories = {
@@ -654,7 +736,7 @@ technologies = {
 		start_year = 2003
 		folder = {
 			name = support_folder
-			position = { x = 10 y = @2003 }
+			position = { x = 12 y = @2003 }
 		}
 		
 		categories = {
@@ -681,7 +763,7 @@ technologies = {
 		start_year = 2008
 		folder = {
 			name = support_folder
-			position = { x = 10 y = @2006 }
+			position = { x = 12 y = @2006 }
 		}
 		
 		categories = {
@@ -703,7 +785,7 @@ technologies = {
 		start_year = 2014
 		folder = {
 			name = support_folder
-			position = { x = 10 y = @2010 }
+			position = { x = 12 y = @2010 }
 		}
 		
 		categories = {
@@ -737,7 +819,7 @@ technologies = {
 		start_year = 2000
 		folder = {
 			name = support_folder
-			position = { x = 12 y = @2000 }
+			position = { x = 14 y = @2000 }
 		}
 		
 		categories = {
@@ -767,7 +849,7 @@ technologies = {
 		start_year = 2003
 		folder = {
 			name = support_folder
-			position = { x = 12 y = @2003 }
+			position = { x = 14 y = @2003 }
 		}
 		
 		categories = {
@@ -795,7 +877,7 @@ technologies = {
 		start_year = 2008
 		folder = {
 			name = support_folder
-			position = { x = 12 y = @2006 }
+			position = { x = 14 y = @2006 }
 		}
 		
 		categories = {
@@ -818,7 +900,7 @@ technologies = {
 		start_year = 2014
 		folder = {
 			name = support_folder
-			position = { x = 12 y = @2010 }
+			position = { x = 14 y = @2010 }
 		}
 		
 		categories = {
