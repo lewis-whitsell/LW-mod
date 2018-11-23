@@ -13,16 +13,13 @@ technologies = {
 @2025 = 20
 @2030 = 22
 
-@AAM = 5
-@ASM = 7
+@cruiseMissile  = 1
+@SLBM = 3
+@mainMissile = 5
+@AAM = 7
+@ASM = 9
 @NAVAAM = 13
-@AGM = 9
-@IRBM = 3
-@ICBM = 0
-@CRUISE = -8
-@NCM = -2
-@COASTM = 2
-
+@AGM = 15
 
 @far_left = -6
 @more_left = -4
@@ -36,7 +33,7 @@ technologies = {
 
 	rocket_engines = {
 
-		show_equipment_icon = no
+		show_equipment_icon = yes
 		
 		rocket_artillery = {
 			soft_attack = 0.05
@@ -49,27 +46,7 @@ technologies = {
 		}
 		
 		path = {
-			leads_to_tech = irbm1 
-			research_cost_coeff = 1
-		}
-
-		path = {
-			leads_to_tech = cruisemissile 
-			research_cost_coeff = 1
-		}
-
-		path = {
-			leads_to_tech = navalaam_1 
-			research_cost_coeff = 1
-		}
-
-		path = {
-			leads_to_tech = aam_1 
-			research_cost_coeff = 1
-		}
-
-		path = {
-			leads_to_tech = agm_1 
+			leads_to_tech = srbm1 
 			research_cost_coeff = 1
 		}
 		
@@ -91,6 +68,141 @@ technologies = {
 		}		
 	}
 ###################################################################
+	srbm1 = {
+
+		enable_equipments = {
+			srbm_equipment_1
+		}
+		path = {
+			leads_to_tech = srbm2
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 1980
+		folder = {
+			name = missile_folder
+			position = { x = 0 y = @1980 }
+		}
+		
+		categories = {
+			nuclear
+			rocketry
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	
+	srbm2 = {
+	
+		enable_equipments = {
+			srbm_equipment_2
+		}
+
+		path = {
+			leads_to_tech = irbm1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = srbm3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = slbm1
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 1990
+		folder = {
+			name = missile_folder
+			position = { x = 0 y = @1990 }
+		}
+		
+		categories = {
+			nuclear
+			rocketry
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	
+	srbm3 = {
+
+		enable_equipments = {
+			srbm_equipment_3
+		}
+	
+		path = {
+			leads_to_tech = srbm4
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 2005
+		folder = {
+			name = missile_folder
+			position = { x = 0 y = @2005 }
+		}
+		
+		categories = {
+			nuclear
+			rocketry
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+
+	srbm4 = {
+
+		enable_equipments = {
+			srbm_equipment_4
+		}
+	
+		research_cost = 2
+		start_year = 2020
+		folder = {
+			name = missile_folder
+			position = { x = 0 y = @2020 }
+		}
+		
+		categories = {
+			nuclear
+			rocketry
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+###################################################################
 	irbm1 = {
 
 		enable_equipments = {
@@ -107,10 +219,10 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1980
+		start_year = 2000
 		folder = {
 			name = missile_folder
-			position = { x = @IRBM y = @1980 }
+			position = { x = @left y = @2000 }
 		}
 		
 		categories = {
@@ -141,10 +253,10 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1990
+		start_year = 2010
 		folder = {
 			name = missile_folder
-			position = { x = @IRBM y = @1990 }
+			position = { x = @left y = @2010 }
 		}
 		
 		categories = {
@@ -175,10 +287,10 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 2010
+		start_year = 2015
 		folder = {
 			name = missile_folder
-			position = { x = @IRBM y = @2010 }
+			position = { x = @left y = @2015 }
 		}
 		
 		categories = {
@@ -204,10 +316,10 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 2025
+		start_year = 2020
 		folder = {
 			name = missile_folder
-			position = { x = @IRBM y = @2025 }
+			position = { x = @left y = @2020 }
 		}
 		
 		categories = {
@@ -237,10 +349,10 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		research_cost = 2
-		start_year = 1995
+		start_year = 2010
 		folder = {
 			name = missile_folder
-			position = { x = @ICBM y = @1995 }
+			position = { x = @far_left y = @2010 }
 		}
 		
 		categories = {
@@ -269,10 +381,10 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		research_cost = 2
-		start_year = 2005
+		start_year = 2020
 		folder = {
 			name = missile_folder
-			position = { x = @ICBM y = @2005 }
+			position = { x = @far_left y = @2020 }
 		}
 		
 		categories = {
@@ -298,12 +410,16 @@ technologies = {
 		}
 
 		decryption = 1
-
+	
+		path = {
+			leads_to_tech = icbm4
+			research_cost_coeff = 1
+		}
 		research_cost = 2
-		start_year = 2015
+		start_year = 2030
 		folder = {
 			name = missile_folder
-			position = { x = @ICBM y = @2015 }
+			position = { x = @far_left y = @2030 }
 		}
 		
 		categories = {
@@ -323,6 +439,175 @@ technologies = {
 	}
 	
 ###################################################################
+	slbm1 = {
+
+		enable_equipments = {
+			slbm_equipment_1
+		}
+	
+		path = {
+			leads_to_tech = slbm2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 2006
+		folder = {
+			name = missile_folder
+			position = { x = @SLBM y = @2005 }
+		}
+		
+		categories = {
+			nuclear
+			rocketry
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	
+	slbm2 = {
+
+		enable_equipments = {
+			slbm_equipment_2
+		}
+	
+		path = {
+			leads_to_tech = slbm3
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 2012
+		folder = {
+			name = missile_folder
+			position = { x = @SLBM y = @2015 }
+		}
+		
+		categories = {
+			nuclear
+			rocketry
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	
+	slbm3 = {
+
+		enable_equipments = {
+			slbm_equipment_3
+		}
+		
+		path = {
+			leads_to_tech = slbm4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 2018
+		folder = {
+			name = missile_folder
+			position = { x = @SLBM y = @2020 }
+		}
+		
+		categories = {
+			nuclear
+			rocketry
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	
+	slbm4 = {
+
+		enable_equipments = {
+			slbm_equipment_4
+		}
+		
+		research_cost = 2
+		start_year = 2030
+		folder = {
+			name = missile_folder
+			position = { x = @SLBM y = @2030 }
+		}
+		
+		categories = {
+			nuclear
+			rocketry
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+
+	improved_rocket_engines = {
+
+		show_equipment_icon = yes
+		
+		# can build v2s
+		
+		#enable_equipments = {
+		#	rocket_interceptor_equipment_2
+		#	guided_missile_equipment_2
+		#}
+		
+		rocket_artillery = {
+			soft_attack = 0.05
+		}
+		rocket_artillery_brigade = {
+			soft_attack = 0.05
+		}
+		motorized_rocket_brigade = {
+			soft_attack = 0.05
+		}
+				
+		research_cost = 1.5
+		start_year = 1970
+		
+		folder = {
+			name = missile_folder
+			position = { x = 0 y = @1970 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			rocketry
+		}
+	}
+
+###################################################################
 ###################################################################	
 ###################################################################
 ###################################################################	
@@ -341,12 +626,21 @@ technologies = {
 			leads_to_tech = coastalmissile_1 
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = seeker_1 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = navalasm_1  
+			research_cost_coeff = 1
+		}
+		
 		research_cost = 2
-		start_year = 1980
+		start_year = 1960
 		
 		folder = {
 			name = missile_folder
-			position = { x = @CRUISE y = @1980}
+			position = { x = 0 y = @1960}
 		}
 		
 		ai_will_do = {
@@ -361,6 +655,61 @@ technologies = {
 		}
 	}
 
+	seeker_1 = {
+				
+		path = {
+			leads_to_tech = advanced_rocket_engines 
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 1970
+		
+		folder = {
+			name = missile_folder
+			position = { x = @far_right y = @1970 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			air_equipment
+			light_air
+			rocketry
+			missile
+		}
+	}
+
+		advanced_rocket_engines = {
+
+		show_equipment_icon = yes
+		rocket_artillery = {
+			soft_attack = 0.05
+		}
+		rocket_artillery_brigade = {
+			soft_attack = 0.05
+		}
+		motorized_rocket_brigade = {
+			soft_attack = 0.05
+		}
+		research_cost = 1.5
+		start_year = 1980
+		
+		folder = {
+			name = missile_folder
+			position = { x = @far_right y = @1980 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			rocketry
+			missile
+		}
+	}
 ###################################################################	
 	navalcruisemissile_1 = {
 
@@ -390,7 +739,7 @@ technologies = {
 		
 		folder = {
 			name = missile_folder
-			position = { x = @NCM y = @1990 }
+			position = { x = @center_right y = @1990 }
 		}
 		
 		ai_will_do = {
@@ -433,7 +782,7 @@ technologies = {
 		
 		folder = {
 			name = missile_folder
-			position = { x = @NCM y = @1995 }
+			position = { x = @center_right y = @1995 }
 		}
 		
 		ai_will_do = {
@@ -476,7 +825,7 @@ technologies = {
 		
 		folder = {
 			name = missile_folder
-			position = { x = @NCM y = @2005 }
+			position = { x = @center_right y = @2005 }
 		}
 		
 		ai_will_do = {
@@ -508,13 +857,17 @@ technologies = {
 		missile_cruiser = {
 			shore_bombardment = 0.1
 		}		
+		path = {
+			leads_to_tech = navalcruisemissile_5 
+			research_cost_coeff = 1
+		}
 		
 		research_cost = 2
 		start_year = 2020
 		
 		folder = {
 			name = missile_folder
-			position = { x = @NCM y = @2020 }
+			position = { x = @center_right y = @2020 }
 		}
 		
 		ai_will_do = {
@@ -545,7 +898,7 @@ technologies = {
 		
 		folder = {
 			name = missile_folder
-			position = { x = @COASTM y = @1980 }
+			position = { x = @far_left y = @1980 }
 		}
 		
 		ai_will_do = {
@@ -571,13 +924,17 @@ technologies = {
 			leads_to_tech = coastalmissile_3 
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = coastalmissile_3 
+			research_cost_coeff = 1
+		}
 		
 		research_cost = 2
 		start_year = 2005
 		
 		folder = {
 			name = missile_folder
-			position = { x = @COASTM y = @2005 }
+			position = { x = @far_left y = @2005 }
 		}
 		
 		ai_will_do = {
@@ -598,12 +955,17 @@ technologies = {
 		enable_equipments = { 
 			coastalmissile_equipment_3
 		}
+				
+		path = {
+			leads_to_tech = coastalmissile_4 
+			research_cost_coeff = 1
+		}
 		
 		research_cost = 2
 		start_year = 2025		
 		folder = {
 			name = missile_folder
-			position = { x = @COASTM y = @2025}
+			position = { x = @far_left y = @2025}
 		}
 		
 		ai_will_do = {
@@ -656,7 +1018,7 @@ technologies = {
 		}
 				
 		path = {
-			leads_to_tech = asbm_3 
+			leads_to_tech = asbm_2 
 			research_cost_coeff = 1
 		}
 		
@@ -685,7 +1047,11 @@ technologies = {
 		enable_equipments = { 
 			asbm_equipment_1
 		}
-
+				
+		path = {
+			leads_to_tech = asbm_2 
+			research_cost_coeff = 1
+		}
 		
 		research_cost = 2
 		start_year = 2030
@@ -755,7 +1121,7 @@ technologies = {
 		
 		folder = {
 			name = missile_folder
-			position = { x = @center y = @1980 }
+			position = { x = @center_left y = @1980 }
 		}
 		
 		ai_will_do = {
@@ -812,7 +1178,7 @@ technologies = {
 		
 		folder = {
 			name = missile_folder
-			position = { x = @center y = @2000 }
+			position = { x = @center_left y = @2000 }
 		}
 		
 		ai_will_do = {
@@ -870,7 +1236,7 @@ technologies = {
 		
 		folder = {
 			name = missile_folder
-			position = { x = @center y = @2015 }
+			position = { x = @center_left y = @2015 }
 		}
 		
 		ai_will_do = {
@@ -926,7 +1292,7 @@ technologies = {
 		
 		folder = {
 			name = missile_folder
-			position = { x = @center y = @2025}
+			position = { x = @center_left y = @2025}
 		}
 		
 		ai_will_do = {
@@ -940,11 +1306,57 @@ technologies = {
 			missile
 		}
 	}
-###################################################################		
+###################################################################	
 	navalaam_1 = {
 				
 		path = {
 			leads_to_tech = navalaam_2 
+			research_cost_coeff = 1
+		}
+		
+		carrier = {
+			anti_air_attack = 0.1
+		}
+		LHD = {
+			anti_air_attack = 0.1
+		}
+		frigate = {
+			anti_air_attack = 0.1
+		}
+		heavy_cruiser = {
+			anti_air_attack = 0.1
+		}
+		destroyer = {
+			anti_air_attack = 0.1
+		}
+		missile_cruiser = {
+			anti_air_attack = 0.1
+		}
+		research_cost = 2
+		start_year = 1960
+		
+		folder = {
+			name = missile_folder
+			position = { x = @NAVAAM y = @1960 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		
+		categories = {
+			naval_equipment
+			light_air
+			rocketry
+			missile
+		}
+	}
+	
+	navalaam_2 = {
+				
+		path = {
+			leads_to_tech = navalaam_3 
 			research_cost_coeff = 1
 		}
 		
@@ -987,10 +1399,10 @@ technologies = {
 		}
 	}
 	
-	navalaam_2 = {
+	navalaam_3 = {
 				
 		path = {
-			leads_to_tech = navalaam_3 
+			leads_to_tech = navalaam_4 
 			research_cost_coeff = 1
 		}
 		
@@ -1032,10 +1444,10 @@ technologies = {
 		}
 	}
 	
-	navalaam_3 = {
+	navalaam_4 = {
 				
 		path = {
-			leads_to_tech = navalaam_4 
+			leads_to_tech = navalaam_5 
 			research_cost_coeff = 1
 		}
 		
@@ -1078,10 +1490,10 @@ technologies = {
 		}
 	}
 	
-	navalaam_4 = {
+	navalaam_5 = {
 				
 		path = {
-			leads_to_tech = navalaam_5 
+			leads_to_tech = navalaam_6 
 			research_cost_coeff = 1
 		}
 		
@@ -1124,7 +1536,7 @@ technologies = {
 		}
 	}
 		
-	navalaam_5 = {
+	navalaam_6 = {
 						
 		research_cost = 2
 		start_year = 2030
@@ -1167,10 +1579,52 @@ technologies = {
 	aam_1 = {
 						
 		research_cost = 2
-		start_year = 1980
+		start_year = 1960
 		
 		path = {
 			leads_to_tech = aam_2 
+			research_cost_coeff = 1
+		}
+		
+		fighter = {
+			air_attack = 0.05
+		}
+		jet_interceptor = {
+			air_attack = 0.05
+		}		
+		cv_jet_multirole = {
+			air_attack = 0.05
+		}
+		cv_stealth_fighter = {
+			air_attack = 0.05
+		}
+		jump_jet = {
+			air_attack = 0.05
+		}
+		folder = {
+			name = missile_folder
+			position = { x = @AAM y = @1960 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			air_equipment
+			light_air
+			rocketry
+			missile
+		}
+	}
+	
+	aam_2 = {
+						
+		research_cost = 2
+		start_year = 1980
+		
+		path = {
+			leads_to_tech = aam_3 
 			research_cost_coeff = 1
 		}
 		
@@ -1206,13 +1660,13 @@ technologies = {
 		}
 	}
 	
-	aam_2 = {
+	aam_3 = {
 						
 		research_cost = 2
 		start_year = 2000
 		
 		path = {
-			leads_to_tech = aam_3 
+			leads_to_tech = aam_4 
 			research_cost_coeff = 1
 		}
 		
@@ -1248,13 +1702,13 @@ technologies = {
 		}
 	}
 	
-	aam_3 = {
+	aam_4 = {
 						
 		research_cost = 2
 		start_year = 2010
 		
 		path = {
-			leads_to_tech = aam_4 
+			leads_to_tech = aam_5 
 			research_cost_coeff = 1
 		}
 		
@@ -1290,7 +1744,7 @@ technologies = {
 		}
 	}
 	
-	aam_4 = {
+	aam_5 = {
 						
 		research_cost = 2
 		start_year = 2020
@@ -1330,10 +1784,59 @@ technologies = {
 	agm_1 = {
 						
 		research_cost = 2
-		start_year = @1980
+		start_year = 1960
 		
 		path = {
 			leads_to_tech = agm_2
+			research_cost_coeff = 1
+		}
+		
+		fighter = {
+			air_ground_attack = 0.025
+		}
+		cas = {
+			air_ground_attack = 0.05
+		}		
+		cv_jet_multirole = {
+			air_ground_attack = 0.025
+		}	
+		cv_jet_cas = {
+			air_ground_attack = 0.05
+		}
+		cv_stealth_fighter = {
+			air_ground_attack = 0.025
+		}
+		jump_jet = {
+			air_ground_attack = 0.025
+		}
+		jet_tac_bomber = {
+			air_ground_attack = 0.05
+		}
+		
+		folder = {
+			name = missile_folder
+			position = { x = @AGM y = @1960 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			air_equipment
+			light_air
+			rocketry
+			missile
+		}
+	}
+	
+	agm_2 = {
+						
+		research_cost = 2
+		start_year = @1980
+		
+		path = {
+			leads_to_tech = agm_3
 			research_cost_coeff = 1
 		}
 		
@@ -1377,13 +1880,13 @@ technologies = {
 		}
 	}
 	
-	agm_2 = {
+	agm_3 = {
 						
 		research_cost = 2
 		start_year = 2000
 		
 		path = {
-			leads_to_tech = agm_3
+			leads_to_tech = agm_4
 			research_cost_coeff = 1
 		}
 		
@@ -1427,13 +1930,13 @@ technologies = {
 		}
 	}
 	
-	agm_3 = {
+	agm_4 = {
 						
 		research_cost = 2
 		start_year = 2010
 		
 		path = {
-			leads_to_tech = agm_4
+			leads_to_tech = agm_5
 			research_cost_coeff = 1
 		}
 		
@@ -1476,13 +1979,13 @@ technologies = {
 		}
 	}
 	
-	agm_4 = {
+	agm_5 = {
 						
 		research_cost = 2
 		start_year = 2020
 		
 		path = {
-			leads_to_tech = agm_5
+			leads_to_tech = agm_6
 			research_cost_coeff = 1
 		}
 		
@@ -1525,7 +2028,7 @@ technologies = {
 		}
 	}
 	
-	agm_5 = {
+	agm_6 = {
 						
 		research_cost = 2
 		start_year = 2030
