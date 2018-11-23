@@ -9,6 +9,16 @@ technologies = {
 	@2015 = 14
 	@2020 = 16
 	@2025 = 18
+
+	@far_left = -6
+	@more_left = -4
+	@left = -3
+	@center_left = -2
+	@center = 0
+	@center_right = 2
+	@right = 3
+	@more_right = 4
+	@far_right = 6
 	
 	## MR Fighters, CV Fighters ##	
 
@@ -1438,7 +1448,7 @@ technologies = {
 		start_year = 1995
 		folder = {
 			name = air_techs_folder
-			position = { x = 0 y = @1980 }
+			position = { x = 0 y = @1995 }
 		}
 		
 		categories = {
@@ -1522,10 +1532,10 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 2010
+		start_year = 2013
 		folder = {
 			name = air_techs_folder
-			position = { x = 0 y = @2010 }
+			position = { x = 0 y = @2013 }
 		}
 		
 		categories = {
@@ -1544,36 +1554,6 @@ technologies = {
 		enable_equipments = {
 			ucav_equipment_5
 		}
-		path = {
-			leads_to_tech = gen5_ucav
-			research_cost_coeff = 1
-		}
-		research_cost = 2
-		start_year = 2015
-		folder = {
-			name = air_techs_folder
-			position = { x = 0 y = @2015 }
-		}
-		
-		categories = {
-			medium_air
-			tactical_bomber
-			air_equipment
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	gen5_ucav = {
-
-		enable_equipments = {
-			ucav_equipment_6
-		}
-		path = {
-			leads_to_tech = gen6_ucav
-			research_cost_coeff = 1
-		}
 		research_cost = 2
 		start_year = 2020
 		folder = {
@@ -1591,30 +1571,7 @@ technologies = {
 			factor = 1
 		}
 	}
-	gen6_ucav = {
-
-		enable_equipments = {
-			ucav_equipment_7
-		}
-
-		research_cost = 2
-		start_year = 2025
-		folder = {
-			name = air_techs_folder
-			position = { x = 0 y = @2025 }
-		}
-		
-		categories = {
-			medium_air
-			tactical_bomber
-			air_equipment
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
+	
 	###################################################################
 	utility_helicopter_1 = {
 
