@@ -1000,7 +1000,7 @@ guiTypes = {
 			}
 
 			gridboxtype = {
-				name = "tech_support_tree"
+				name = "CCC_equipment0_tree"
 				position = { x = 100 y = 160 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
