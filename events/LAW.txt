@@ -228,10 +228,9 @@ country_event = {
 	immediate = {
 
 		PRK = {
-			declare_war_on = {
-			    target = D02
-			    type = annex_everything
-			}
+			send_volunteer_size = 20
+			send_volunteer_divisions_required = -0.85
+				send_volunteers_tension = -0.85
 		}
 	}
 	option = {
