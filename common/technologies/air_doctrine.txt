@@ -1,41 +1,6 @@
 #Written by Hiddengearz
 
 technologies = {
-
-	# formation_flying = {
-		#xor = { force_rotation }
-		## EFFECT ########
-		# air_superiority_detect_factor = 0.15
-		##########
-		
-		# path = {
-			# leads_to_tech = jsead
-			# research_cost_coeff = 1
-		# }
-		
-		# doctrine = yes	
-		# research_cost = 1.5
-		
-		# categories = {
-			# air_doctrine
-			# Cat_battlefield_support_tree
-			# Cat_battlefield_support
-		# }
-		
-		# folder = {
-			# name = air_doctrine_folder
-			# position = { x = 0 y = 0 }
-		# }
-		
-		# ai_will_do = {
-			# factor = 1
-		# }
-		
-		# ai_research_weights = {
-			# air_doctrine = -1.0
-			# light_air = -2.0
-		# }
-	# }
 		
 	jsead = {
 		xor = { offensive_focus }	
@@ -1111,271 +1076,104 @@ technologies = {
 			heavy_air = -1.5
 		}
 	}
-#	
-#	air_defence = {
-#
-#		# EFFECT ########
-#		air_interception_attack_factor = 0.05
-#		###########
-#		
-#		path = {
-#			leads_to_tech = dispersed_fighting
-#			research_cost_coeff = 1
-#		}
-#		
-#		doctrine = yes	
-#		research_cost = 1.5
-#		
-#		categories = {
-#			air_doctrine
-#			Cat_strategic_destruction_tree
-#		}
-#		
-#		folder = {
-#			name = air_doctrine_folder
-#			position = { x = 2 y = 4 }
-#		}
-#		
-#		ai_will_do = {
-#			factor = 1
-#		}
-#		
-#		ai_research_weights = {
-#			air_doctrine = -1.0
-#			light_air = -2.0
-#		}
-#	}
-#
-#	battlefield_destruction = {
-#
-#		# EFFECT ########
-#		#air_cas_ground_attack_factor = 0.25
-#		###########
-#		
-#		path = {
-#			leads_to_tech = dive_bombing
-#			research_cost_coeff = 1
-#		}
-#		
-#		doctrine = yes	
-#		research_cost = 2
-#		
-#		categories = {
-#			air_doctrine
-#			Cat_battlefield_support_tree
-#		}
-#		
-#		folder = {
-#			name = air_doctrine_folder
-#			position = { x = 0 y = 0 }
-#		}
-#		
-#		ai_will_do = {
-#			factor = 1
-#		}
-#		
-#		ai_research_weights = {
-#			air_doctrine = -1.0
-#			light_air = -1.0
-#			medium_air = -1.0
-#		}
-#	}
-#
-#	cas_ace_initiative = {
-#
-#		# EFFECT ########
-#		cas_ace_chance = 1.0
-#		###########
-#		
-#		doctrine = yes	
-#		research_cost = 2
-#		
-#		categories = {
-#			air_doctrine
-#			Cat_battlefield_support_tree
-#		}
-#		
-#		folder = {
-#			name = air_doctrine_folder
-#			position = { x = -2 y = 8 }
-#		}
-#		
-#		ai_will_do = {
-#			factor = 1
-#		}
-#		
-#		ai_research_weights = {
-#			air_doctrine = -1.0
-#			light_air = -1.0
-#			medium_air = -1.0
-#		}
-#	}
-#
-#	bomber_veteran_initiative = {
-#
-#		# EFFECT ########
-#		air_strategic_bomber_defence_factor = 0.2
-#		###########
-#		
-#		path = {
-#			leads_to_tech = bomber_ace_initiative
-#			research_cost_coeff = 1
-#		}
-#		
-#		doctrine = yes	
-#		research_cost = 2
-#		
-#		categories = {
-#			air_doctrine
-#			Cat_operational_integrity_tree
-#		}
-#		
-#		folder = {
-#			name = air_doctrine_folder
-#			position = { x = -1 y = 8 }
-#		}
-#		
-#		ai_will_do = {
-#			factor = 1
-#		}
-#		
-#		ai_research_weights = {
-#			air_doctrine = -1.0
-#			medium_air = -0.5
-#			heavy_air = -1.5
-#		}
-#	}
-#	
-#	bomber_ace_initiative = {
-#
-#		# EFFECT ########
-#		bomber_ace_chance = 1.0
-#		###########
-#		
-#		doctrine = yes	
-#		research_cost = 2
-#		
-#		categories = {
-#			air_doctrine
-#			Cat_operational_integrity_tree
-#		}
-#		
-#		folder = {
-#			name = air_doctrine_folder
-#			position = { x = -1 y = 10 }
-#		}
-#		
-#		ai_will_do = {
-#			factor = 1
-#		}
-#		
-#		ai_research_weights = {
-#			air_doctrine = -1.0
-#			medium_air = -0.5
-#			heavy_air = -1.5
-#		}
-#	}
-#	
-#	dead_reckoning_bombing = {
-#
-#		# EFFECT ########
-#		air_strategic_bomber_night_penalty = -0.6
-#		###########
-#		
-#		path = {
-#			leads_to_tech = infiltration_bombing
-#			research_cost_coeff = 1
-#		}
-#		
-#		doctrine = yes	
-#		research_cost = 2
-#		
-#		categories = {
-#			air_doctrine
-#			Cat_strategic_destruction_tree
-#		}
-#		
-#		
-#		
-#		folder = {
-#			name = air_doctrine_folder
-#			position = { x = -2 y = 8 }
-#		}
-#		
-#		ai_will_do = {
-#			factor = 1
-#		}
-#		
-#		ai_research_weights = {
-#			air_doctrine = -1.0
-#			medium_air = -0.5
-#			heavy_air = -1.5
-#		}
-#	}
-#	
-#	pathfinder_groups = {
-#
-#		# EFFECT ########
-#		air_strategic_bomber_night_penalty = -0.9
-#		###########
-#			
-#		doctrine = yes	
-#		research_cost = 2
-#		
-#		categories = {
-#			air_doctrine
-#			Cat_strategic_destruction_tree
-#		}
-#		
-#		folder = {
-#			name = air_doctrine_folder
-#			position = { x = -2 y = 12 }
-#		}
-#		
-#		ai_will_do = {
-#			factor = 1
-#		}
-#		
-#		ai_research_weights = {
-#			air_doctrine = -1.0
-#			medium_air = -0.5
-#			heavy_air = -1.5
-#		}
-#	}
-#	
-#	escort_relay_system = {
-#
-#		# EFFECT ########
-#		air_strategic_bomber_defence_factor = 0.2
-#		###########
-#		
-#		path = {
-#			leads_to_tech = flying_fortress
-#			research_cost_coeff = 1
-#		}
-#		
-#		doctrine = yes	
-#		research_cost = 2
-#		
-#		categories = {
-#			air_doctrine
-#			Cat_strategic_destruction_tree
-#		}
-#		
-#		folder = {
-#			name = air_doctrine_folder
-#			position = { x = 2 y = 8 }
-#		}
-#		
-#		ai_will_do = {
-#			factor = 1
-#		}
-#		
-#		ai_research_weights = {
-#			air_doctrine = -1.0
-#			medium_air = -0.5
-#			heavy_air = -1.5
-#		}
-#	}
-#
+
+	###------> Drop Tanks  <><> <><> <><> <><> <><>
+	
+	droptank1 = {
+
+		path = {
+			leads_to_tech = droptank2
+			research_cost_coeff = 1
+		}
+
+				
+		research_cost = 2
+		start_year = 1939
+
+		folder = {
+			name = air_doctrine_folder
+			position = { x = 0 y = 2 }
+		}
+		
+		categories = {
+			air_doctrine
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	droptank2 = {
+
+		path = {
+			leads_to_tech = droptank3
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 2
+		start_year = 1942
+
+		folder = {
+			name = air_doctrine_folder
+			position = { x = 0 y = 4 }
+		}
+		
+		categories = {
+			air_doctrine
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	droptank3 = {
+	
+		path = {
+			leads_to_tech = droptank4
+			research_cost_coeff = 1
+		}
+
+		
+		research_cost = 2
+		start_year = 1948
+
+		folder = {
+			name = air_doctrine_folder
+			position = { x = 0 y = 8 }
+		}
+		
+		categories = {
+			air_doctrine
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	droptank4 = {
+	
+
+		research_cost = 2
+		start_year = 1955
+
+		folder = {
+			name = air_doctrine_folder
+			position = { x = 0 y = 12 }
+		}
+		
+		categories = {
+			air_doctrine
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+###------> X   <><> <><> <><> <><> <><>
+
 }

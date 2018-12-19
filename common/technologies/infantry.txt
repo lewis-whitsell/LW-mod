@@ -21,13 +21,13 @@ technologies = {
 	@infantry_weapons_bonus_line_top = 3
 	@infantry_weapons_bonus_line_center = 4
 	@infantry_weapons_bonus_line_bottom = 5
-	@support_weapons_line_top = 7
-	@support_weapons_line_center = 8
-	@support_weapons_line_bottom = 9
-	@night_vision_line = 11
-	@special_forces_line = 13
-	@body_armor_line = 15
-	@camouflage_line = 17
+	@support_weapons_line_top = 6
+	@support_weapons_line_center = 7
+	@support_weapons_line_bottom = 8
+	@night_vision_line = 10
+	@special_forces_line = 12
+	@body_armor_line = 14
+	@camouflage_line = 16
 	@support_line = 19
 	@motorised_line = 21
 
@@ -72,10 +72,6 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		path = {
-			leads_to_tech = motorised_infantry
-			research_cost_coeff = 1
-		}
 
 		research_cost = 1.5
 		start_year = 1955
@@ -2536,7 +2532,7 @@ technologies = {
 		
 		folder = {
 			name = support_folder
-			position = { x = 7 y = 9 }
+			position = { x = 4 y = 9 }
 		}
 		
 		sub_technologies = {

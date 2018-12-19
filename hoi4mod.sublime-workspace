@@ -36,124 +36,71 @@
 	"buffers":
 	[
 		{
-			"file": "common/unit_leader/00_traits.txt",
-			"settings":
-			{
-				"buffer_size": 21562,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Program Files (x86)/Steam/steamapps/common/Hearts of Iron IV/interface/landcombat.gfx",
-			"settings":
-			{
-				"buffer_size": 4778,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "common/unit_leader/md_traits.txt",
-			"settings":
-			{
-				"buffer_size": 483,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "common/on_actions/money_on_actions.txt",
-			"settings":
-			{
-				"buffer_size": 10197,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "common/technologies/naval.txt",
-			"settings":
-			{
-				"buffer_size": 26351,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "common/units/LAW_subs.txt",
-			"settings":
-			{
-				"buffer_size": 351,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "common/units/equipment/LAW_submarines.txt",
-			"settings":
-			{
-				"buffer_size": 7292,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "interface/countrytechtreeview.gui",
 			"settings":
 			{
-				"buffer_size": 131957,
+				"buffer_size": 114962,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "interface/money.gui",
+			"file": "common/technologies/infantry.txt",
 			"settings":
 			{
-				"buffer_size": 20141,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "interface/statetransf.gui",
-			"settings":
-			{
-				"buffer_size": 6846,
+				"buffer_size": 38997,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "Searching 15210 files for \"accept_decline_icon\"\n\nC:\\Program Files (x86)\\Steam\\steamapps\\common\\Hearts of Iron IV\\dlc\\dlc018_together_for_victory\\dlc018.zip:\n    File too large, skipping\n\nC:\\Program Files (x86)\\Steam\\steamapps\\common\\Hearts of Iron IV\\dlc\\dlc022_waking_the_tiger\\dlc022.zip:\n    File too large, skipping\n\nC:\\Program Files (x86)\\Steam\\steamapps\\common\\Hearts of Iron IV\\interface\\countrydiplomacyview.gfx:\n  614  \t\n  615  \tspriteType = {\n  616: \t\tname = \"GFX_accept_decline_icon\"\n  617: \t\ttextureFile = \"gfx/interface/accept_decline_icon.dds\"\n  618  \t\teffectFile = \"gfx/FX/buttonstate_nodowneffect.lua\"\n  619  \t\tnoOfFrames = 3\n\nC:\\Program Files (x86)\\Steam\\steamapps\\common\\Hearts of Iron IV\\interface\\countrydiplomacyview.gui:\n  918  \t\t\tname = \"accept_icon\"\n  919  \t\t\tposition = { x = 204 y = 4 }\n  920: \t\t\tspriteType =\"GFX_accept_decline_icon\"\n  921  \t\t}\n  922  \t}\n  ...\n 1382  \t\t\t\tname = \"accept_icon\"\n 1383  \t\t\t\tposition = { x = 432 y = 204 }\n 1384: \t\t\t\tspriteType =\"GFX_accept_decline_icon\"\n 1385  \t\t\t}\n 1386  \t\t\t\n ....\n 2030  \t\t\t\tname = \"accept_icon\"\n 2031  \t\t\t\tposition = { x = 432 y = 204 }\n 2032: \t\t\t\tspriteType =\"GFX_accept_decline_icon\"\n 2033  \t\t\t}\n 2034  \t\t\t\n ....\n 2116  \t\t\t\tname = \"accept_icon\"\n 2117  \t\t\t\tposition = { x = 432 y = 204 }\n 2118: \t\t\t\tspriteType =\"GFX_accept_decline_icon\"\n 2119  \t\t\t}\n 2120  \t\t\t\n ....\n 2200  \t\t\t\tname = \"accept_icon\"\n 2201  \t\t\t\tposition = { x = 432 y = 204 }\n 2202: \t\t\t\tspriteType =\"GFX_accept_decline_icon\"\n 2203  \t\t\t}\n 2204  \t\t\t\n ....\n 2373  \t\t\t\tname = \"accept_icon\"\n 2374  \t\t\t\tposition = { x = 400 y = 322 }\n 2375: \t\t\t\tspriteType =\"GFX_accept_decline_icon\"\n 2376  \t\t\t}\n 2377  \t\t\t\n ....\n 2530  \t\t\t\tname = \"accept_icon\"\n 2531  \t\t\t\tposition = { x = 432 y = 263 }\n 2532: \t\t\t\tspriteType =\"GFX_accept_decline_icon\"\n 2533  \t\t\t}\n 2534  \t\t\t\n ....\n 2614  \t\t\t\tname = \"accept_icon\"\n 2615  \t\t\t\tposition = { x = 432 y = 254 }\n 2616: \t\t\t\tspriteType =\"GFX_accept_decline_icon\"\n 2617  \t\t\t}\n 2618  \t\t\t\n ....\n 2728  \t\t\t\tname = \"accept_icon\"\n 2729  \t\t\t\tposition = { x = 425 y = 510 }\n 2730: \t\t\t\tspriteType =\"GFX_accept_decline_icon\"\n 2731  \t\t\t}\n 2732  \n ....\n 2926  \t\t\t\tname = \"accept_icon\"\n 2927  \t\t\t\tposition = { x = 425 y = 510 }\n 2928: \t\t\t\tspriteType =\"GFX_accept_decline_icon\"\n 2929  \t\t\t}\n 2930  \n ....\n 3202  \t\t\t\tname = \"accept_icon\"\n 3203  \t\t\t\tposition = { x = 432 y = 225 }\n 3204: \t\t\t\tspriteType =\"GFX_accept_decline_icon\"\n 3205  \t\t\t}\n 3206  \t\t\t\n ....\n 3306  \t\t\t\tname = \"accept_icon\"\n 3307  \t\t\t\tposition = { x = 432 y = 265 }\n 3308: \t\t\t\tspriteType =\"GFX_accept_decline_icon\"\n 3309  \t\t\t}\n 3310  \t\t\t\n ....\n 3420  \t\t\t\tname = \"accept_icon\"\n 3421  \t\t\t\tposition = { x = 432 y = 265 }\n 3422: \t\t\t\tspriteType =\"GFX_accept_decline_icon\"\n 3423  \t\t\t}\n 3424  \t\t\t\n ....\n 4133  \t\t\t\tname = \"accept_icon\"\n 4134  \t\t\t\tposition = { x = 403 y = 562 }\n 4135: \t\t\t\tspriteType =\"GFX_accept_decline_icon\"\n 4136  \t\t\t}\n 4137  \t\t\t\n\nC:\\Program Files (x86)\\Steam\\steamapps\\common\\Hearts of Iron IV\\interface\\musicplayer.gui:\n  261  \t\tbuttonType = {\n  262  \t\t\tname = \"disable_track_button\"\n  263: \t\t\tquadTextureSprite =\"GFX_accept_decline_icon\"\n  264  \t\t\tposition = { x= 34 y = 4 }\n  265  \t\t}\n\nC:\\Program Files (x86)\\Steam\\steamapps\\common\\Hearts of Iron IV\\wiki\\load.php@debug=false&lang=en&modules=ext.categoryTree.css%7Cmediawiki.action.view.categoryPage.styles%7Cmediawiki.helplink%2CsectionAnchor%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.page.gallery.styles%7Cmediawiki.skinning.inte.css:\n    ERROR: Unable to open file\n\nC:\\Program Files (x86)\\Steam\\steamapps\\common\\Hearts of Iron IV\\wiki\\load.php@debug=false&lang=en&modules=ext.categoryTree.css%7Cmediawiki.action.view.categoryPage.styles%7Cmediawiki.helplink%2CsectionAnchor%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cskins.vector.styles&only.css:\n    ERROR: Unable to open file\n\nC:\\Program Files (x86)\\Steam\\steamapps\\common\\Hearts of Iron IV\\wiki\\load.php@debug=false&lang=en&modules=mediawiki.action.view.categoryPage.styles%7Cmediawiki.helplink%2CsectionAnchor%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.page.gallery.styles%7Cmediawiki.skinning.interface%7Cskins.vector.st.css:\n    ERROR: Unable to open file\n\nC:\\Program Files (x86)\\Steam\\steamapps\\common\\Hearts of Iron IV\\wiki\\load.php@debug=false&lang=en&modules=mediawiki.action.view.categoryPage.styles%7Cmediawiki.helplink%2CsectionAnchor%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cskins.vector.styles&only=styles&skin=vector.css:\n    ERROR: Unable to open file\n\nC:\\Program Files (x86)\\Steam\\steamapps\\common\\Hearts of Iron IV\\wiki\\load.php@debug=false&lang=en&modules=mediawiki.action.view.filepage%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles&only=styles&skin=vector.css:\n    ERROR: Unable to open file\n\n17 matches across 3 files\n",
+			"file": "interface/Technologies.gfx",
 			"settings":
 			{
-				"buffer_size": 4823,
-				"line_ending": "Windows",
-				"name": "Find Results",
-				"scratch": true
-			}
-		},
-		{
-			"file": "/C/Program Files (x86)/Steam/steamapps/common/Hearts of Iron IV/interface/countrydiplomacyview.gui",
-			"settings":
-			{
-				"buffer_size": 120985,
+				"buffer_size": 321054,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "common/ideas/LAW.txt",
+			"file": "common/technologies/electronic_mechanical_engineering.txt",
 			"settings":
 			{
-				"buffer_size": 31502,
+				"buffer_size": 25763,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "events/LAW.txt",
+			"file": "common/technologies/support.txt",
 			"settings":
 			{
-				"buffer_size": 5056,
+				"buffer_size": 12471,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/lewis/Documents/Mods for Games/REF/1956/common/technologies/r56e_etax.txt",
+			"settings":
+			{
+				"buffer_size": 19840,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/lewis/Documents/Mods for Games/REF/1956/common/technologies/r56e_etat.txt",
+			"settings":
+			{
+				"buffer_size": 17874,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "common/technologies/air_doctrine.txt",
+			"settings":
+			{
+				"buffer_size": 18870,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		}
@@ -265,10 +212,52 @@
 	"expanded_folders":
 	[
 		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod",
-		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/interface"
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/technology_tags"
 	],
 	"file_history":
 	[
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/technology_tags/00_technology.txt",
+		"/C/Users/lewis/Documents/Mods for Games/REF/1956/interface/countrytechtreeview.gui",
+		"/C/Users/lewis/Documents/Mods for Games/REF/1956/interface/countrytechnologyview.gui",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/technologies/testing.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/technologies/missile.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/interface/countrytechnologyview.gfx",
+		"/C/Users/lewis/Documents/Mods for Games/REF/Main/common/terrain/00_terrain.txt",
+		"/C/Users/lewis/Documents/Mods for Games/REF/modern_day_4_hoi/interface/countrytechtreeview.gfx",
+		"/C/Users/lewis/Documents/Mods for Games/REF/modern_day_4_hoi/interface/countrytechnologyview.gfx",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/interface/Technologies.gfx",
+		"/C/Program Files (x86)/Steam/steamapps/common/Arma 3/Missions/readme.txt",
+		"/C/Users/lewis/Downloads/Meteor - Grim Memories (single).zip",
+		"/C/Users/lewis/Documents/Mods for Games/REF/Main/map/colors.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/interface/countrytechtreeview.gui",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/technologies/support.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/units/equipment/LAW_support.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/technologies/air_techs.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/technologies/infantry.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/units/LAW_air.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/units/air.txt",
+		"/C/Users/lewis/Documents/Mods for Games/HOI4MULTI/REF/modern_day_4_hoi/interface/Technologies.gfx",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/units/LAW_subs.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/unit_leader/00_traits.txt",
+		"/C/Program Files (x86)/Steam/steamapps/common/Hearts of Iron IV/interface/landcombat.gfx",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/unit_leader/md_traits.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/on_actions/money_on_actions.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/technologies/naval.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/units/equipment/LAW_submarines.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/events/LAW.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/ideas/LAW.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/interface/statetransf.gui",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/interface/money.gui",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/technologies/helicopter.txt",
+		"/C/Program Files (x86)/Steam/steamapps/common/Hearts of Iron IV/interface/countrydiplomacyview.gui",
+		"/C/Users/lewis/Documents/Mods for Games/HOI4MULTI/REF/modern_day_4_hoi/common/technologies/air_techs.txt",
+		"/C/Users/lewis/Documents/Mods for Games/HOI4MULTI/REF/modern_day_4_hoi/common/technologies/fixed_wing.txt",
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/technologies/air_doctrine.txt",
+		"/C/Users/lewis/Documents/Mods for Games/HOI4MULTI/REF/modern_day_4_hoi/interface/countrytechtreeview.gui",
+		"/C/Users/lewis/Documents/Mods for Games/HOI4MULTI/REF/modern_day_4_hoi/interface/countrytechnologyview.gfx",
+		"/C/Users/lewis/Documents/Mods for Games/HOI4MULTI/REF/modern_day_4_hoi/interface/countrytechtreeview.gfx",
+		"/C/Users/lewis/Documents/Mods for Games/HOI4MULTI/REF/modern_day_4_hoi/common/technologies/air_doctrine.txt",
 		"/C/Users/lewis/AppData/Local/Temp/Temp1_state_transfer_MP.zip/interface/statetransf.gui",
 		"/C/Program Files (x86)/Steam/steamapps/common/Hearts of Iron IV/interface/landcombat.gui",
 		"/C/Program Files (x86)/Steam/steamapps/common/Hearts of Iron IV/common/modifiers/01_event_modifiers.txt",
@@ -279,13 +268,9 @@
 		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/defines/00_defines.lua",
 		"/C/Program Files (x86)/Steam/steamapps/common/Hearts of Iron IV/interface/general_stuff.gfx",
 		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/interface/traittreewindow.gui",
-		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/events/LAW.txt",
-		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/ideas/LAW.txt",
 		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/decisions/economic_policy.txt",
 		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/map/definition.csv",
-		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/on_actions/money_on_actions.txt",
 		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/localisation/money_l_english.yml",
-		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/technologies/air_techs.txt",
 		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/units/equipment/LAW_SPAA.txt",
 		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/technologies/armor.txt",
 		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/states/990-MADA_CITY_3.txt",
@@ -300,7 +285,6 @@
 		"/F/SteamLibrary/steamapps/common/Hearts of Iron IV/common/decisions/JAP.txt",
 		"/F/SteamLibrary/steamapps/common/Hearts of Iron IV/common/decisions/GER.txt",
 		"/F/SteamLibrary/steamapps/common/Hearts of Iron IV/common/terrain/00_terrain.txt",
-		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/technologies/support.txt",
 		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/decisions/LAW.txt",
 		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/states/930-E.MADA.txt",
 		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/map/supplyareas/143-SupplyArea.txt",
@@ -334,7 +318,6 @@
 		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/states/900-Gorizia.txt",
 		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/states/39-Britain.txt",
 		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/ideas/japan.txt",
-		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/interface/countrytechtreeview.gui",
 		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/states/102-Slovenia.txt",
 		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/history/states/982-CYPRUS_CAP_3.txt",
 		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/history/states/981-CYPRUS_CAP_2.txt",
@@ -358,55 +341,21 @@
 		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/units/LAW_mech.txt",
 		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/units/equipment/anti_air.txt",
 		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/units/equipment/tank_medium.txt",
-		"/C/Users/lewis/Documents/Mods for Games/HOI4MULTI/REF/modern_day_4_hoi/interface/Technologies.gfx",
 		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/units/equipment/LAW_mechanized.txt",
-		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/technologies/naval.txt",
 		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/localisation/wars_l_english.yml",
 		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/national_focus/philippines_focus.txt",
-		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/national_focus/australia.txt",
-		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/national_focus/DENMARK_FOC.txt",
-		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/national_focus/CYPRUS_FOC.txt",
-		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/national_focus/GREENLAND_FOC.txt",
-		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/units/DEN_2000.txt",
-		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/interface/goals.gfx",
-		"/F/SteamLibrary/steamapps/common/Hearts of Iron IV/interface/navalcombat.gfx",
-		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/interface/navalcombat.gfx",
-		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/interface/Technologies.gfx",
-		"/C/Users/lewis/Documents/Mods for Games/HOI4MULTI/REF/1956/common/technologies/infantry_extra_tech.txt",
-		"/C/Users/lewis/Documents/Mods for Games/HOI4MULTI/REF/1956/common/technologies/infantry.txt",
-		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/technologies/helicopter.txt",
-		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/lewis.mod",
-		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/states/836-Northern Cyprus.txt",
-		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/states/183-Cyprus.txt",
-		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/states/116-Malta.txt",
-		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/states/1-France.txt",
-		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/states/177-Balearic Islands.txt",
-		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/states/115-Sicily.txt",
-		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/states/101-Greenland.txt",
-		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/states/100-Iceland.txt",
-		"/C/Users/lewis/Documents/Mods for Games/HOI4MULTI/REF/modern_day_4_hoi/interface/countrytechtreeview.gfx",
-		"/C/Users/lewis/Documents/Mods for Games/HOI4MULTI/REF/modern_day_4_hoi/interface/general_stuff.gfx",
-		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/units/equipment/LAW_planes.txt",
-		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/states/946-W.GREEN.txt",
-		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/states/947-C.GREEN.txt",
-		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/states/948-SE.GREEN.txt",
-		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/states/949-E.GREEN.txt",
-		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/history/states/114-Sardinia.txt",
-		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/technologies/electronic_mechanical_engineering.txt",
-		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/map/supplyareas/119-SupplyArea.txt",
-		"/C/Users/lewis/Documents/Mods for Games/HOI4MULTI/REF/1956/common/technologies/industry.txt",
-		"/C/Users/lewis/Documents/Mods for Games/HOI4MULTI/REF/modern_day_4_hoi/common/technologies/fixed_wing.txt",
-		"/C/Users/lewis/Documents/Mods for Games/HOI4MULTI/REF/modern_day_4_hoi/common/technologies/air_techs.txt"
+		"/C/Users/lewis/Documents/Paradox Interactive/Hearts of Iron IV/mod/MM Dawn LW mod/common/national_focus/australia.txt"
 	],
 	"find":
 	{
-		"height": 41.0
+		"height": 61.0
 	},
 	"find_in_files":
 	{
 		"height": 108.0,
 		"where_history":
 		[
+			"C:\\Users\\lewis\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\MM Dawn LW mod\\interface",
 			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Hearts of Iron IV",
 			"F:\\SteamLibrary\\steamapps\\common\\Hearts of Iron IV\\",
 			"C:\\Users\\lewis\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\MM Dawn LW mod\\",
@@ -436,141 +385,156 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"tank",
-			"light",
-			"art",
-			"balis",
-			"submarine1",
-			"_stats",
-			"accept_decline_icon",
-			"global_modifier",
-			"air_",
-			"has_combat_modifier",
-			"river_crossing",
-			"skilled",
-			"mad_dog",
-			"108",
-			"13427",
-			"13505",
-			"94",
-			"13412",
-			"94",
-			"13412",
-			"1340",
-			"55",
-			"13373",
-			"\\n",
-			"civfactorymoney",
-			"resource",
-			";false;urban;0",
-			"13314",
-			"13327",
-			"13326",
-			"113",
-			"11",
-			"1",
-			"11315",
-			"11316",
-			";142",
-			"182;110",
-			"182;200",
-			"182;201",
-			"182;202",
-			"182;203",
-			"178;106",
-			"200",
-			";11",
-			"13291",
-			"112",
-			"285",
-			"178",
-			"106",
-			"urban",
-			"279",
-			"50",
-			"plains",
-			"274",
-			"76",
-			"liberate_wargoal",
-			"LAW.4",
-			"LAW.5",
-			"Oxidizer",
-			"TRANSPORT",
-			"Oxidizer",
-			"1500",
-			"2018",
+			"dependencies = {\n\t\t\tjet_engines = 1\n\t\t}",
+			"etat_folder",
+			"droptank55",
+			"droptank45",
+			"droptank44",
+			"2002",
+			"=",
+			"motorized",
+			"rocket",
+			"motor",
+			"electronics",
+			"elec",
+			"support",
+			"rocket",
+			"rockets",
+			"electronics",
+			"experimental_rockets",
+			"rocket_engines",
+			"rocket",
+			"missile",
+			"172",
+			"40",
+			"33",
+			"helicopter",
+			"folder_tab",
+			"1180",
+			"heli",
+			"helo",
+			"missile",
+			"motor",
+			"heli",
+			"position = { x = 0",
+			"elect",
+			"air_doc",
+			"rocket",
+			"missile_folder",
+			"ew_start",
+			"rocket_engines",
+			"infantry_folder",
+			"GFX_battlefield_destruction_bg",
+			"infantry_folder",
+			"slm",
+			"CCC_equipment_0",
+			"support_",
+			"SUPPORT_EQUIP",
+			"SUPPORT",
+			"navalcruisemissile",
+			"PATH",
+			" x = @",
+			"@",
+			"cruiseMissile",
+			"mainMissile",
+			"NAVAAM",
+			"cruisemissile",
+			"cruisemissile1",
+			"support_equipment",
+			"xx =",
 			"2010",
-			"2006",
+			"2004",
 			"2000",
-			"2006",
-			"2000",
-			"1990",
-			"1980",
-			"x = 4",
-			"armor_folder",
-			"artillery_folder",
-			"80%",
-			"2012",
-			"2000",
-			"1990",
-			"1980",
-			"2015",
-			"2009",
-			"tank_tree",
-			"x = 10",
-			"x = 16",
-			"categories = {\n\t\t\tartillery\n\t\t}",
-			"light_tank_aa_equipment",
-			"heavy_tank_aa_equipment",
-			"SPAA_heavy_equipment",
-			"heavy_tank_aa_equipment",
-			"SPAA_light",
-			"light_tank_aa_equipment",
-			"2009",
-			"2003",
-			"1990",
-			"x = -5",
-			"4",
-			"x = 5",
-			"/Generic",
-			"arty/arty_upgrade",
-			"AA_upgrade_1",
-			"gfx/interface/technologies/Generic/Subtechs//",
-			"gfx/interface/technologies/artillery",
-			"artillery",
-			"2018",
-			"Subtechs//",
-			"gfx/interface/technologies/Generic/Subtechs//",
-			"2015",
-			"2009",
-			"2006",
-			"2000",
-			"Cat_SP_R_ARTY",
-			"Cat_SP_ARTY",
-			"Cat_ARTY",
-			"Cat_ARTILLERY",
-			"1980",
+			"position = { x = 2",
 			"x = 0",
-			"x = 3",
-			"x = -3",
-			"2003",
-			"2000",
-			"1980",
-			"x = -4",
-			"2020",
-			"2025",
+			"x = 2",
+			"x = 4",
+			" = 6",
+			"x = 8",
+			"x = 10",
+			"x = 12",
+			"@support_line",
+			"1990",
+			"support_e",
+			"path",
+			"2005",
+			"2008",
+			"naval",
 			"2015",
-			"antitank",
-			"2006",
+			"2005",
+			"icbm",
+			"2012",
+			"2008",
+			"2005",
+			"2000",
+			"2014",
+			"2003",
+			"1990",
+			"@cruiseMissile ",
+			"cruisem",
+			"cruise",
+			"@center_right",
+			"naval",
+			"@far_left",
+			"coast",
+			"@far_left",
+			"x = 0",
+			"@2000",
+			"2004",
+			"2010",
+			"2016",
 			"2020",
-			"2025"
+			"x = 2",
+			"x = 0",
+			"x = 2",
+			"x = 4",
+			"x = 6",
+			"x = 8",
+			"x = 10",
+			"x = 12",
+			"@support_line",
+			"infantry_folder",
+			"support_line",
+			"\t\t\tleads_to_tech = navalaam_",
+			"\t\t\tleads_to_tech = aam_",
+			"leads_to_tech = agm_",
+			"\tagm_",
+			"\taam_",
+			"\tnavalaam_",
+			"@center_left",
+			"2030",
+			"2020",
+			"2010",
+			"2020",
+			"2015",
+			"2010",
+			"2000",
+			"@left",
+			"missile",
+			"helicopter",
+			"helo"
 		],
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": false,
+		"regex": true,
 		"replace_history":
 		[
+			"electronics_folder",
+			"support_folder",
+			"x =",
+			"x = 2",
+			"x = 4",
+			"x = 6",
+			"x = 8",
+			"x = 10",
+			"x = 12",
+			"x = 14",
+			"x = 2",
+			"x = 4",
+			"x = 6",
+			"x = 8",
+			"x = 10",
 			"armour_folder",
 			"SPAA_light_equipment",
 			"SPAA_hvy_equipment",
@@ -683,18 +647,7 @@
 			"12512",
 			"GRE",
 			"CYP",
-			"DEN",
-			"6287",
-			"7193",
-			"12406",
-			"Starting Garri",
-			"",
-			"support_equipment",
-			"support",
-			"support_line",
-			"LHD_lower_line",
-			"LHD_main_line",
-			"SLBM"
+			"DEN"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -710,196 +663,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "common/unit_leader/00_traits.txt",
+					"file": "interface/countrytechtreeview.gui",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 21562,
+						"buffer_size": 114962,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								8016,
-								8016
-							]
-						],
-						"settings":
-						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.clone": 70,
-							"bracket_highlighter.clone_locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.clone_regions":
-							[
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content"
-							],
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content"
-							],
-							"syntax": "Packages/HOI4/hoi4.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 3237.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 12,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/C/Program Files (x86)/Steam/steamapps/common/Hearts of Iron IV/interface/landcombat.gfx",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4778,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2762,
-								2762
+								73176,
+								73176
 							]
 						],
 						"settings":
@@ -923,61 +699,61 @@
 							},
 							"bracket_highlighter.clone_regions":
 							[
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content"
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
 							],
 							"bracket_highlighter.locations":
 							{
@@ -996,1057 +772,87 @@
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content"
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
 							],
 							"syntax": "Packages/Text/Plain text.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1443.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "common/unit_leader/md_traits.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 483,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								435,
-								435
-							]
-						],
-						"settings":
-						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.clone": -1,
-							"bracket_highlighter.clone_locations":
-							{
-								"close":
-								{
-									"1":
-									[
-										519,
-										520
-									]
-								},
-								"icon":
-								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/curly_bracket.png",
-										"region.purplish"
-									]
-								},
-								"open":
-								{
-									"1":
-									[
-										16,
-										17
-									]
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.clone_regions":
-							[
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content"
-							],
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-									"1":
-									[
-										438,
-										439
-									]
-								},
-								"icon":
-								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/curly_bracket.png",
-										"region.purplish"
-									]
-								},
-								"open":
-								{
-									"1":
-									[
-										434,
-										435
-									]
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content"
-							],
-							"syntax": "Packages/HOI4/hoi4.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 36.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "common/on_actions/money_on_actions.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 10197,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3589,
-								3594
-							]
-						],
-						"settings":
-						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.clone": -1,
-							"bracket_highlighter.clone_locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-									"1":
-									[
-										2134,
-										2135
-									]
-								}
-							},
-							"bracket_highlighter.clone_regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content"
-							],
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-									"1":
-									[
-										3597,
-										3598
-									]
-								},
-								"icon":
-								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/curly_bracket.png",
-										"region.purplish"
-									]
-								},
-								"open":
-								{
-									"1":
-									[
-										3570,
-										3571
-									]
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content"
-							],
-							"syntax": "Packages/HOI4/hoi4.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 812.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "common/technologies/naval.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 26351,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								18927,
-								18923
-							]
-						],
-						"settings":
-						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.clone": -1,
-							"bracket_highlighter.clone_locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.clone_regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content"
-							],
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-									"1":
-									[
-										18926,
-										18927
-									]
-								},
-								"icon":
-								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/curly_bracket.png",
-										"region.purplish"
-									]
-								},
-								"open":
-								{
-									"1":
-									[
-										18898,
-										18899
-									]
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content"
-							],
-							"syntax": "Packages/HOI4/hoi4.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 19786.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "common/units/LAW_subs.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 351,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								127,
-								127
-							]
-						],
-						"settings":
-						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.clone": -1,
-							"bracket_highlighter.clone_locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.clone_regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content"
-							],
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-									"1":
-									[
-										350,
-										351
-									]
-								},
-								"icon":
-								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/curly_bracket.png",
-										"region.purplish"
-									]
-								},
-								"open":
-								{
-									"1":
-									[
-										125,
-										126
-									]
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content"
-							],
-							"syntax": "Packages/HOI4/hoi4.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "common/units/equipment/LAW_submarines.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 7292,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								13,
-								13
-							]
-						],
-						"settings":
-						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.clone": -1,
-							"bracket_highlighter.clone_locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.clone_regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content"
-							],
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-									"1":
-									[
-										13,
-										14
-									]
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content"
-							],
-							"syntax": "Packages/HOI4/hoi4.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 39838.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "interface/countrytechtreeview.gui",
+					"buffer": 1,
+					"file": "common/technologies/infantry.txt",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 131957,
+						"buffer_size": 38997,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								32630,
-								32630
+								552,
+								552
 							]
 						],
 						"settings":
@@ -2057,12 +863,27 @@
 							{
 								"close":
 								{
+									"1":
+									[
+										37252,
+										37253
+									]
 								},
 								"icon":
 								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
 								},
 								"open":
 								{
+									"1":
+									[
+										36561,
+										36562
+									]
 								},
 								"unmatched":
 								{
@@ -2070,31 +891,21 @@
 							},
 							"bracket_highlighter.clone_regions":
 							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
@@ -2110,21 +921,31 @@
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content"
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
 							],
 							"bracket_highlighter.locations":
 							{
@@ -2139,35 +960,30 @@
 								},
 								"unmatched":
 								{
+									"1":
+									[
+										15,
+										16
+									]
 								}
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
@@ -2183,224 +999,57 @@
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content"
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
 							],
-							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"syntax": "Packages/HOI4/hoi4.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 17999.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "interface/money.gui",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 20141,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.clone": -1,
-							"bracket_highlighter.clone_locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.clone_regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content"
-							],
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content"
-							],
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 273.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
-					"file": "interface/statetransf.gui",
+					"buffer": 2,
+					"file": "interface/Technologies.gfx",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6846,
+						"buffer_size": 321054,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								826,
-								826
+								56447,
+								56453
 							]
 						],
 						"settings":
@@ -2424,31 +1073,21 @@
 							},
 							"bracket_highlighter.clone_regions":
 							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
@@ -2464,21 +1103,31 @@
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content"
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
 							],
 							"bracket_highlighter.locations":
 							{
@@ -2497,31 +1146,21 @@
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
@@ -2537,128 +1176,63 @@
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content"
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
 							],
 							"syntax": "Packages/Text/Plain text.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 780.0,
+						"translation.y": 27969.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 3,
+					"file": "common/technologies/electronic_mechanical_engineering.txt",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4823,
+						"buffer_size": 25763,
 						"regions":
 						{
-							"match":
-							{
-								"flags": 112,
-								"regions":
-								[
-									[
-										474,
-										493
-									],
-									[
-										533,
-										552
-									],
-									[
-										840,
-										859
-									],
-									[
-										990,
-										1009
-									],
-									[
-										1142,
-										1161
-									],
-									[
-										1294,
-										1313
-									],
-									[
-										1446,
-										1465
-									],
-									[
-										1598,
-										1617
-									],
-									[
-										1750,
-										1769
-									],
-									[
-										1902,
-										1921
-									],
-									[
-										2054,
-										2073
-									],
-									[
-										2203,
-										2222
-									],
-									[
-										2352,
-										2371
-									],
-									[
-										2504,
-										2523
-									],
-									[
-										2656,
-										2675
-									],
-									[
-										2808,
-										2827
-									],
-									[
-										3042,
-										3061
-									]
-								],
-								"scope": ""
-							}
 						},
 						"selection":
 						[
 							[
-								849,
-								849
+								7241,
+								7261
 							]
 						],
 						"settings":
 						{
 							"bracket_highlighter.busy": false,
-							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone": 50,
 							"bracket_highlighter.clone_locations":
 							{
 								"close":
@@ -2672,40 +1246,25 @@
 								},
 								"unmatched":
 								{
-									"1":
-									[
-										1325,
-										1326
-									]
 								}
 							},
 							"bracket_highlighter.clone_regions":
 							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
@@ -2721,30 +1280,144 @@
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content"
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
 							],
 							"bracket_highlighter.locations":
 							{
 								"close":
 								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/HOI4/hoi4.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4543.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "common/technologies/support.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12471,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1289,
+								1289
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
 									"1":
 									[
-										870,
-										871
+										2206,
+										2207
 									]
 								},
 								"icon":
@@ -2759,8 +1432,96 @@
 								{
 									"1":
 									[
-										451,
-										452
+										1878,
+										1879
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										1292,
+										1293
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										1227,
+										1228
 									]
 								},
 								"unmatched":
@@ -2769,31 +1530,21 @@
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
@@ -2809,164 +1560,49 @@
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content"
-							],
-							"detect_indentation": false,
-							"line_numbers": false,
-							"output_tag": 1,
-							"result_base_dir": "",
-							"result_file_regex": "^([^ \t].*):$",
-							"result_line_regex": "^ +([0-9]+):",
-							"scroll_past_end": true,
-							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "/C/Program Files (x86)/Steam/steamapps/common/Hearts of Iron IV/interface/countrydiplomacyview.gui",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 120985,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								21248,
-								21271
-							]
-						],
-						"settings":
-						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.clone": -1,
-							"bracket_highlighter.clone_locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.clone_regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content"
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
 							],
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"syntax": "Packages/HOI4/hoi4.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 11303.0,
+						"translation.y": 819.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 12,
-					"file": "common/ideas/LAW.txt",
+					"buffer": 5,
+					"file": "/C/Users/lewis/Documents/Mods for Games/REF/1956/common/technologies/r56e_etax.txt",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 31502,
+						"buffer_size": 19840,
 						"regions":
 						{
 						},
@@ -2981,6 +1617,79 @@
 						{
 							"bracket_highlighter.busy": false,
 							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
 							"bracket_highlighter.locations":
 							{
 								"close":
@@ -2998,31 +1707,21 @@
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
@@ -3038,47 +1737,57 @@
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content"
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
 							],
 							"syntax": "Packages/HOI4/hoi4.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 11544.0,
+						"translation.y": 702.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 13,
-					"file": "events/LAW.txt",
+					"buffer": 6,
+					"file": "/C/Users/lewis/Documents/Mods for Games/REF/1956/common/technologies/r56e_etat.txt",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5056,
+						"buffer_size": 17874,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2640,
-								2635
+								6892,
+								9815
 							]
 						],
 						"settings":
@@ -3102,61 +1811,243 @@
 							},
 							"bracket_highlighter.clone_regions":
 							[
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
-								"bh_single_quote_content"
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/HOI4/hoi4.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 9106.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "common/technologies/air_doctrine.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 18870,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								724,
+								724
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+									"1":
+									[
+										18869,
+										18870
+									]
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
 							],
 							"bracket_highlighter.locations":
 							{
@@ -3164,8 +2055,8 @@
 								{
 									"1":
 									[
-										3411,
-										3412
+										820,
+										821
 									]
 								},
 								"icon":
@@ -3180,8 +2071,8 @@
 								{
 									"1":
 									[
-										2627,
-										2628
+										54,
+										55
 									]
 								},
 								"unmatched":
@@ -3190,77 +2081,72 @@
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content"
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
 							],
 							"syntax": "Packages/HOI4/hoi4.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 143.0,
+						"translation.y": 26.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 0,
 					"type": "text"
 				}
-			]
-		},
-		{
-			"sheets":
-			[
 			]
 		}
 	],
@@ -3281,18 +2167,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.919998621042,
 			1.0
 		],
 		"rows":
@@ -3326,7 +2205,7 @@
 	"project": "hoi4mod.sublime-project",
 	"replace":
 	{
-		"height": 42.0
+		"height": 113.0
 	},
 	"save_all_on_build": false,
 	"select_file":
@@ -3335,6 +2214,38 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"air_doc",
+				"common\\technologies\\air_doctrine.txt"
+			],
+			[
+				"MISSILE",
+				"common\\technologies\\missile.txt"
+			],
+			[
+				"supp",
+				"common\\units\\equipment\\LAW_support.txt"
+			],
+			[
+				"infa",
+				"common\\technologies\\infantry.txt"
+			],
+			[
+				"support",
+				"common\\technologies\\support.txt"
+			],
+			[
+				"air",
+				"common\\units\\air.txt"
+			],
+			[
+				"miss",
+				"common\\technologies\\missile.txt"
+			],
+			[
+				"helo",
+				"common\\technologies\\helicopter.txt"
+			],
 			[
 				"naval",
 				"common\\technologies\\naval.txt"
@@ -3400,10 +2311,6 @@
 				"common\\technologies\\air_techs.txt"
 			],
 			[
-				"support",
-				"common\\technologies\\support.txt"
-			],
-			[
 				"armor",
 				"common\\technologies\\armor.txt"
 			],
@@ -3422,10 +2329,6 @@
 			[
 				"recon",
 				"common\\units\\recon.txt"
-			],
-			[
-				"air",
-				"common\\technologies\\air_techs.txt"
 			],
 			[
 				"planes",
@@ -3538,10 +2441,6 @@
 			[
 				"frigate",
 				"common\\units\\equipment\\LAW_frigates.txt"
-			],
-			[
-				"helo",
-				"common\\technologies\\helicopter.txt"
 			],
 			[
 				"engi",
@@ -3826,26 +2725,6 @@
 			[
 				"WSH",
 				"history\\countries\\WSH - West Sahara.txt"
-			],
-			[
-				"TEST",
-				"common\\technologies\\tests"
-			],
-			[
-				"NAVAL",
-				"common\\technologies\\naval.txt"
-			],
-			[
-				"usa",
-				"history\\countries\\USA - USA.txt"
-			],
-			[
-				"mal",
-				"history\\countries\\MAL - Mali.txt"
-			],
-			[
-				"alg",
-				"history\\countries\\ALG - Algeria.txt"
 			]
 		],
 		"width": 0.0
@@ -3876,7 +2755,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 293.0,
+	"side_bar_width": 320.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

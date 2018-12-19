@@ -1,8 +1,11 @@
+@1960 = 0
+@1970 = 0
 @1980 = 0
 @1990 = 2
 @2000 = 4
 @2002 = 6
 @2004 = 8
+@2005 = 9
 @2006 = 10
 @2008 = 12
 @2010 = 14
@@ -28,6 +31,14 @@
 @ECM = -1
 @ECCM = 1
 @CYBER = -3
+
+@cruiseMissile  = 1
+@SLBM = 3
+@mainMissile = 5
+@AAM = 7
+@ASM = 9
+@NAVAAM = 13
+@AGM = 15
 
 @far_left = -4
 @more_left = -3
@@ -515,31 +526,31 @@ technologies = {
 		}
 	}
 	
-		experimental_rockets = {
-
-
-		
-		path = {
-			leads_to_tech = rocket_engines 
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1.5
-		start_year = 1950
-		
-		folder = {
-			name = electronics_folder
-			position = { x = 0 y = @rck1950 }
-		}
-	
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			rocketry
-		}
-	}
+#		experimental_rockets = {
+#
+#
+		#
+#		path = {
+#			leads_to_tech = rocket_engines 
+#			research_cost_coeff = 1
+#		}
+		#
+#		research_cost = 1.5
+#		start_year = 1950
+		#
+#		folder = {
+#			name = electronics_folder
+#			position = { x = 0 y = @rck1950 }
+#		}
+	#
+#		ai_will_do = {
+#			factor = 1
+#		}
+		#
+#		categories = {
+#			rocketry
+#		}
+#	}
 			
 	atomic_research = {
 
@@ -1532,6 +1543,413 @@ technologies = {
 		categories = {
 			electronics
 			computing_tech
+		}
+	}
+
+	rocket_engines = {
+
+		show_equipment_icon = yes
+		
+		rocket_artillery = {
+			soft_attack = 0.05
+		}
+		rocket_artillery_brigade = {
+			soft_attack = 0.05
+		}
+		motorized_rocket_brigade = {
+			soft_attack = 0.05
+		}
+		
+		path = {
+			leads_to_tech = srbm1 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1960
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = @1960 }
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			rocketry
+		}		
+	}
+###################################################################
+	srbm1 = {
+
+		enable_equipments = {
+			srbm_equipment_1
+		}
+		path = {
+			leads_to_tech = srbm2
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 1980
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = @1980 }
+		}
+		
+		categories = {
+			nuclear
+			rocketry
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	
+	srbm2 = {
+	
+		enable_equipments = {
+			srbm_equipment_2
+		}
+
+		path = {
+			leads_to_tech = irbm1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = srbm3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = slbm1
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 1990
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = @1990 }
+		}
+		
+		categories = {
+			nuclear
+			rocketry
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	
+	srbm3 = {
+
+		enable_equipments = {
+			srbm_equipment_3
+		}
+	
+		path = {
+			leads_to_tech = srbm4
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 2005
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = @2005 }
+		}
+		
+		categories = {
+			nuclear
+			rocketry
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+
+	srbm4 = {
+
+		enable_equipments = {
+			srbm_equipment_4
+		}
+	
+		research_cost = 2
+		start_year = 2020
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = @2020 }
+		}
+		
+		categories = {
+			nuclear
+			rocketry
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+###################################################################
+	irbm1 = {
+
+		enable_equipments = {
+			irbm_equipment_1
+		}
+				
+		path = {
+			leads_to_tech = icbm1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = irbm2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 2000
+		folder = {
+			name = electronics_folder
+			position = { x = @left y = @2000 }
+		}
+		
+		categories = {
+			nuclear
+			rocketry
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	
+	irbm2 = {
+
+		enable_equipments = {
+			irbm_equipment_2
+		}
+		
+		path = {
+			leads_to_tech = irbm3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 2010
+		folder = {
+			name = electronics_folder
+			position = { x = @left y = @2010 }
+		}
+		
+		categories = {
+			nuclear
+			rocketry
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	
+	irbm3 = {
+
+		enable_equipments = {
+			irbm_equipment_3
+		}
+		
+		path = {
+			leads_to_tech = irbm4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 2015
+		folder = {
+			name = electronics_folder
+			position = { x = @left y = @2015 }
+		}
+		
+		categories = {
+			nuclear
+			rocketry
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	
+	irbm4 = {
+
+		enable_equipments = {
+			irbm_equipment_4
+		}
+		
+		research_cost = 2
+		start_year = 2020
+		folder = {
+			name = electronics_folder
+			position = { x = @left y = @2020 }
+		}
+		
+		categories = {
+			nuclear
+			rocketry
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+###################################################################
+	icbm1 = {
+
+		enable_equipments = {
+			icbm_equipment_1
+		}
+	
+		path = {
+			leads_to_tech = icbm2
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 2010
+		folder = {
+			name = electronics_folder
+			position = { x = @far_left y = @2010 }
+		}
+		
+		categories = {
+			nuclear
+			rocketry
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	
+	icbm2 = {
+	
+		enable_equipments = {
+			icbm_equipment_2
+		}
+		path = {
+			leads_to_tech = icbm3
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 2020
+		folder = {
+			name = electronics_folder
+			position = { x = @far_left y = @2020 }
+		}
+		
+		categories = {
+			nuclear
+			rocketry
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	
+	icbm3 = {
+
+		enable_equipments = {
+			icbm_equipment_3
+		}
+
+		decryption = 1
+	
+		path = {
+			leads_to_tech = icbm4
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 2030
+		folder = {
+			name = electronics_folder
+			position = { x = @far_left y = @2030 }
+		}
+		
+		categories = {
+			nuclear
+			rocketry
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
 		}
 	}
 	
