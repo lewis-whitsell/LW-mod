@@ -1630,7 +1630,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = cruisemissile
+			leads_to_tech = coastalmissile_1 
 			research_cost_coeff = 1
 		}
 		research_cost = 2
@@ -1717,40 +1717,6 @@ technologies = {
 			}
 		}
 	}
-###################################################################
-
-	
-	cruisemissile = {
-
-		enable_equipments = { 
-			cruisemissile_equipment_1
-		}
-				
-		path = {
-			leads_to_tech = coastalmissile_1 
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 2
-		start_year = 1990
-		
-		folder = {
-			name = missile_folder
-			position = { x = 2 y = @1990}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			air_equipment
-			light_air
-			rocketry
-			missile
-		}
-	}
-
 	
 ###################################################################	
 	
@@ -1769,7 +1735,7 @@ technologies = {
 		start_year = 2000
 		
 		folder = {
-			name = missile_folder
+			name = electronics_folder
 			position = { x = 0 y = @2000 }
 		}
 		
@@ -1801,7 +1767,7 @@ technologies = {
 		start_year = 2010
 		
 		folder = {
-			name = missile_folder
+			name = electronics_folder
 			position = { x = 0 y = @2010 }
 		}
 		
@@ -1827,7 +1793,7 @@ technologies = {
 		research_cost = 2
 		start_year = 2025		
 		folder = {
-			name = missile_folder
+			name = electronics_folder
 			position = { x = 0 y = @2025}
 		}
 		

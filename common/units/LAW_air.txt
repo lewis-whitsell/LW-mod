@@ -78,13 +78,6 @@ fighter = {
 		need = { jet_interceptor_equipment = 1 }
 		categories = { category_fighter }
 	}
-	cruisemissile = {
-		sprite = missile_default
-		priority = 1
-		active = yes
-		type = { strategic_bomber naval_bomber}
-		need = { cruisemissile_equipment = 1 }
-	}
 	coastalmissile = {
 		sprite = missile_default
 		priority = 1
@@ -126,6 +119,6 @@ fighter = {
 		active = yes
 		type = { fighter interceptor strategic_bomber cas naval_bomber }
 		need = { Strike_fighter_equipment = 1 }
-		categories = { category_fighter category_Strike_fighter }
+		categories = { category_fighter }
 	}	
 }
