@@ -2,36 +2,23 @@
 
 @headline = 0
 
-@frigate_upper_line = 2
-@frigate_line = 3
-@frigate_lower_line = 4
+@frigate_line = 2
 
-@destroyer_upper_line = 6
-@destroyer_main_line = 7
-@destroyer_lower_line = 8
+@destroyer_main_line = 4
 
-@cruiser_upper_line = 10
-@cruiser_main_line = 11
-@cruiser_lower_line = 12
+@cruiser_main_line = 6
 
-@carrier_upper_line = 14
-@carrier_main_line = 16
-@carrier_catapult_upg_up =17
-@carrier_lower_line = 18
-@carrier_catapult_upg_dwn = 19
+@carrier_main_line = 8
+
+@LHD_main_line = 10
+
+@sub_upg_mid = 12	
+@submarine_main_line = 13
 
 
-@LHD_upper_line = 21
-@LHD_main_line = 22
-@LHD_lower_line = 23
+@submarine_lower_line = 14
 
-@ssn = 26
-@sub_upg_mid = 27	
-@ssbn = 28
-@submarine_main_line = 30
-@submarine_lower_line = 32
-@ASM = 11
-@SLBM = 34
+@holder = 20
 
 #year coordinates
 
@@ -474,73 +461,6 @@ technologies = {
 		}
 	}
 	
-	destroyer_improved_engines = {
-	
-		destroyer = {
-			naval_range = 0.05
-			naval_speed = 0.1
-			build_cost_ic = 0.02
-		}
-		
-		path = {
-			leads_to_tech = destroyer_advanced_engines
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 0.5
-		
-		start_year = 2000
-		
-		folder = {
-			name = naval_folder
-			position = {
-				x = @destroyer_upper_line
-				y = @2000_2
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-			dd_tech
-		}
-		
-	}
-	
-	destroyer_advanced_engines = {
-	
-		destroyer = {
-			naval_range = 0.1
-			naval_speed = 0.1
-			build_cost_ic = 0.02
-		}
-		
-		research_cost = 1.25
-		
-		start_year = 2003
-		
-		folder = {
-			name = naval_folder
-			position = {
-				x = @destroyer_upper_line
-				y = @2003
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-			dd_tech
-		}
-		
-	}
-	
 	destroyer2 = {
 		
 		enable_equipments = {
@@ -549,11 +469,6 @@ technologies = {
 		
 		path = {
 			leads_to_tech = destroyer3
-			research_cost_coeff = 1
-		}
-
-		path = {
-			leads_to_tech = destroyer_improved_engines
 			research_cost_coeff = 1
 		}
 	
@@ -590,11 +505,6 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		path = {
-			leads_to_tech = modern_destroyer_armament
-			research_cost_coeff = 1
-		}
-		
 		research_cost = 1.75
 
 		start_year = 2004
@@ -616,38 +526,7 @@ technologies = {
 			dd_tech
 		}
 	}
-	
-	modern_destroyer_armament = {
 		
-		destroyer = {
-			attack = 0.15
-			torpedo_attack = 0.15
-			sub_attack = 0.15
-			build_cost_ic = 0.05
-		}
-		
-		research_cost = 2.25
-
-		start_year = 2006
-		
-		folder = {
-			name = naval_folder
-			position = {
-				x = @destroyer_upper_line
-				y = @2006
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-			dd_tech
-		}
-	}
-	
 	destroyer4 = {
 		
 		enable_equipments = {
@@ -719,12 +598,7 @@ technologies = {
 		enable_equipments = {
 			destroyer_6
 		}
-		
-		path = {
-			leads_to_tech = future_destroyer_armament
-			research_cost_coeff = 1
-		}
-		
+				
 		research_cost = 3
 
 		start_year = 2030
@@ -746,38 +620,6 @@ technologies = {
 			dd_tech
 		}
 	}
-	
-	future_destroyer_armament = {
-		
-		destroyer = {
-			attack = 0.2
-			torpedo_attack = 0.2
-			sub_attack = 0.2
-			sub_detection = 0.3
-		}
-		
-		research_cost = 1.75
-
-		start_year = 2030
-		
-		folder = {
-			name = naval_folder
-			position = {
-				x = @destroyer_main_line
-				y = @2030_3
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-			dd_tech
-		}
-	}
-
 	
 	##MISSILE CRUISERS##
 	
@@ -994,12 +836,7 @@ technologies = {
 			leads_to_tech = carrier2
 			research_cost_coeff = 1
 		}
-		
-		path = {
-			leads_to_tech = carrier_nuclear_reactor
-			research_cost_coeff = 1
-		}
-		
+			
 		
 		research_cost = 3
 		
@@ -1037,7 +874,7 @@ technologies = {
 		folder = {
 			name = naval_folder
 			position = {
-				x = @carrier_upper_line
+				x = @holder
 				y = @1960_2
 			}
 		}
@@ -1071,7 +908,7 @@ technologies = {
 		folder = {
 			name = naval_folder
 			position = {
-				x = @carrier_catapult_upg_up
+				x = @holder
 				y = @2000
 			}
 		}
@@ -1100,70 +937,7 @@ technologies = {
 		folder = {
 			name = naval_folder
 			position = {
-				x = @carrier_catapult_upg_up
-				y = @2002
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-			cv_tech
-		}
-		
-	}
-
-	carrier_def1 = {
-	
-		carrier = {
-			carrier_size = 0.2
-		}
-		
-		path = {
-			leads_to_tech = carrier_def2
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1
-		
-		start_year = 2000
-		
-		folder = {
-			name = naval_folder
-			position = {
-				x = @carrier_catapult_upg_dwn
-				y = @2000
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-			cv_tech
-		}
-		
-	}
-
-	carrier_def2 = {
-	
-		carrier = {
-			carrier_size = 0.2
-		}
-		
-		research_cost = 1
-		
-		start_year = 2002
-		
-		folder = {
-			name = naval_folder
-			position = {
-				x = @carrier_catapult_upg_dwn
+				x = @holder
 				y = @2002
 			}
 		}
@@ -1609,7 +1383,7 @@ technologies = {
 		folder = {
 			name = naval_folder
 			position = {
-				x = @submarine_lower_line
+				x = @holder
 				y = @1960
 			}
 		}
@@ -1642,7 +1416,7 @@ technologies = {
 		
 		folder = {
 			name = naval_folder
-			position = { x = @ssn y = @1980 }
+			position = { x = @sub_upg_mid y = @1980 }
 		}
 		
 		ai_will_do = {
@@ -1698,17 +1472,13 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		path = {
-			leads_to_tech = ballistic_submarine_3 
-			research_cost_coeff = 1
-		}
 		
 		research_cost = 3
 		start_year = 2000
 
 		folder = {
 			name = naval_folder
-			position = { x = @ssn y = @2000 }
+			position = { x = @sub_upg_mid y = @2000 }
 		}
 		
 		ai_will_do = {
@@ -1761,18 +1531,13 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		path = {
-			leads_to_tech = ballistic_submarine_4
-			research_cost_coeff = 1
-		}
-		
 		research_cost = 3
 
 		start_year = 2008
 		
 		folder = {
 			name = naval_folder
-			position = { x = @ssn y = @2008 }
+			position = { x = @sub_upg_mid y = @2008 }
 		}
 		
 		ai_will_do = {
@@ -1836,7 +1601,7 @@ technologies = {
 		
 		folder = {
 			name = naval_folder
-			position = { x = @ssn y = @2014 }
+			position = { x = @sub_upg_mid y = @2014 }
 		}
 		
 		ai_will_do = {
@@ -1899,7 +1664,7 @@ technologies = {
 
 		folder = {
 			name = naval_folder
-			position = { x = @ssn y = @2020 }
+			position = { x = @sub_upg_mid y = @2020 }
 		}
 		
 		ai_will_do = {
@@ -1953,7 +1718,7 @@ technologies = {
 		
 		folder = {
 			name = naval_folder
-			position = { x = @ssn y = @2030 }
+			position = { x = @sub_upg_mid y = @2030 }
 		}
 		
 		ai_will_do = {
@@ -2080,7 +1845,7 @@ technologies = {
 		folder = {
 			name = naval_folder
 			position = {
-				x = @submarine_lower_line
+				x = @holder
 				y = @2006
 			}
 		}
@@ -2177,7 +1942,7 @@ technologies = {
 		folder = {
 			name = naval_folder
 			position = {
-				x = @submarine_lower_line
+				x = @holder
 				y = @2025
 			}
 		}

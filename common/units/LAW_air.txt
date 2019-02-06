@@ -31,13 +31,6 @@ fighter = {
 		need = { cv_jet_cas_equipment = 1 }
 		categories = { category_cas }
 	}
-	nav_bomber = {
-		sprite = nav_bomber
-		priority = 1
-		active = yes
-		type = { naval_bomber }
-		need = { nav_bomber_equipment = 1 }
-	}
 	stealth_strategic_bomber = {
 		sprite = heavy_plane
 		priority = 1
@@ -76,13 +69,7 @@ fighter = {
 		type = { air_transport }
 		need = { transport_plane_equipment = 1 }
 	}
-	mach2stratbomber = {
-		sprite = machstratbomber
-		priority = 1
-		active = yes
-		type = { strategic_bomber }
-		need = { mach2stratbomber_equipment = 1 }
-	}
+
 	jet_interceptor = {
 		sprite = jet_interceptor
 		priority = 1
@@ -90,20 +77,6 @@ fighter = {
 		type = { fighter }
 		need = { jet_interceptor_equipment = 1 }
 		categories = { category_fighter }
-	}
-	slbm = {
-		sprite = missile_default
-		priority = 1
-		active = yes
-		type = { strategic_bomber }
-		need = { slbm_equipment = 1 }
-	}
-	asbm = {
-		sprite = missile_default
-		priority = 1
-		active = yes
-		type = { naval_bomber }
-		need = { asbm_equipment = 1 }
 	}
 	cruisemissile = {
 		sprite = missile_default
@@ -126,13 +99,6 @@ fighter = {
 		type = { cas fighter }
 		need = { attack_helicopter_equipment = 1 }
 	}
-	light_attack_helicoptor = {
-		sprite = light_plane
-		priority = 1
-		active = yes
-		type = { cas fighter }
-		need = { scout_helicopter_equipment = 1 }
-	}
 	icbm = {
 		sprite = missile_default
 		priority = 1
@@ -153,5 +119,13 @@ fighter = {
 		active = yes
 		type = { tactical_bomber strategic_bomber }
 		need = { irbm_equipment = 1 }
+	}
+	Strike_fighter = { #Rev 1
+		sprite = strike_fighter
+		priority = 1
+		active = yes
+		type = { fighter interceptor strategic_bomber cas naval_bomber }
+		need = { Strike_fighter_equipment = 1 }
+		categories = { category_fighter category_Strike_fighter }
 	}	
 }

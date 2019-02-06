@@ -299,7 +299,7 @@ technologies = {
 	strike_jet1 = {
 
 		enable_equipments = {
-			
+			Strike_fighter_equipment_1
 		}
 
 #		dependencies = {
@@ -420,7 +420,7 @@ technologies = {
 	strike_jet2 = {
 
 		enable_equipments = {
-			
+			Strike_fighter_equipment_2
 		}
 
 #		dependencies = {
@@ -540,7 +540,7 @@ technologies = {
 	strike_jet3 = {
 
 		enable_equipments = {
-			
+			Strike_fighter_equipment_3
 		}
 
 #		dependencies = {

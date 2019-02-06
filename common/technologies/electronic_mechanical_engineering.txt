@@ -1630,7 +1630,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = slbm1
+			leads_to_tech = cruisemissile
 			research_cost_coeff = 1
 		}
 		research_cost = 2
@@ -1715,6 +1715,131 @@ technologies = {
 				factor = 2
 				is_major = yes
 			}
+		}
+	}
+###################################################################
+
+	
+	cruisemissile = {
+
+		enable_equipments = { 
+			cruisemissile_equipment_1
+		}
+				
+		path = {
+			leads_to_tech = coastalmissile_1 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1990
+		
+		folder = {
+			name = missile_folder
+			position = { x = 2 y = @1990}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			air_equipment
+			light_air
+			rocketry
+			missile
+		}
+	}
+
+	
+###################################################################	
+	
+	coastalmissile_1 = {
+
+		enable_equipments = { 
+			coastalmissile_equipment_1
+		}
+				
+		path = {
+			leads_to_tech = coastalmissile_2 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 2000
+		
+		folder = {
+			name = missile_folder
+			position = { x = 0 y = @2000 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		
+		categories = {
+			naval_equipment
+			light_air
+			rocketry
+			missile
+		}
+	}
+	
+	coastalmissile_2 = {
+
+		enable_equipments = { 
+			coastalmissile_equipment_2
+		}
+				
+		path = {
+			leads_to_tech = coastalmissile_3 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 2010
+		
+		folder = {
+			name = missile_folder
+			position = { x = 0 y = @2010 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		
+		categories = {
+			naval_equipment
+			light_air
+			rocketry
+			missile
+		}
+	}
+	
+	coastalmissile_3 = {
+
+		enable_equipments = { 
+			coastalmissile_equipment_3
+		}
+						
+		research_cost = 2
+		start_year = 2025		
+		folder = {
+			name = missile_folder
+			position = { x = 0 y = @2025}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			light_air
+			rocketry
+			missile
 		}
 	}
 ###################################################################
