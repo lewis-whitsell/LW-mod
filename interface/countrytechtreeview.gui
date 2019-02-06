@@ -3117,17 +3117,9 @@ guiTypes = {
 				hide = yes
 				alwaystransparent = yes
 			}			
-			
-			gridboxtype = {
-				name = "ew_start_tree"
-				position = { x=750 y=172 }
-				size = { width = 480 height = 650 }
-				slotsize = { width=60 height= 60 }
-				format = "UP"				
-			}
 
 			gridboxtype = {
-				name = "rocket_engines_tree"
+				name = "srbm1_tree"
 				position = { x=1100 y=170 }
 				size = { width = 680 height = 800 }
 				slotsize = { width=60 height= 60 }
