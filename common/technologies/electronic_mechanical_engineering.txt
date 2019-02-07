@@ -86,12 +86,7 @@ technologies = {
 			name = electronics_folder
 			position = { x = @left y = @2000 }
 		}
-		
-		folder = {
-			name = support_folder
-			position = { x = 11 y = 9 } # x = 12 y = 0
-		}
-		
+				
 		ai_will_do = {
 			factor = 3
 		}
@@ -729,7 +724,7 @@ technologies = {
 		
 		folder = {
 			name = electronics_folder
-			position = { x = @center y = @2000 }
+			position = { x = @right y = @2000 }
 		}
 		
 		ai_will_do = {
@@ -761,7 +756,7 @@ technologies = {
 		
 		folder = {
 			name = electronics_folder
-			position = { x = @center y = @2010 }
+			position = { x = @right y = @2010 }
 		}
 		
 		ai_will_do = {
@@ -787,7 +782,7 @@ technologies = {
 		start_year = 2025		
 		folder = {
 			name = electronics_folder
-			position = { x = @center y = @2025}
+			position = { x = @right y = @2025}
 		}
 		
 		ai_will_do = {

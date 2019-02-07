@@ -9,7 +9,9 @@ technology_categories = {
 	Cat_battlefield_support_tree
 	Cat_battlefield_support
 	Cat_SP_ARTY
+	Cat_ARTY
 	Cat_ARTILLERY
+	Cat_SP_R_ARTY
 	Cat_AA
 	Cat_AT
 }

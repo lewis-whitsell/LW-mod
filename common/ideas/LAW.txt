@@ -717,17 +717,6 @@ ideas = {
 			}
 			removal_cost = -1
 			picture = generic_morale_bonus
-			allowed = {
-				OR = {
-				tag = MAD
-				tag = CUB
-				tag = PHI
-				tag = DEN
-				tag = GRN
-				tag = AST
-				tag = CYP
-				}
-			}
 			modifier = {
 				political_power_factor = 0.1 
 				army_morale_factor = 0.05
@@ -1670,7 +1659,7 @@ political_advisor = {
 		
 		designer = yes
 		
-		Company1 = 
+		infantry_maker = 
 		{
 			picture = artillery_manufacturer_1
 			allowed = {
@@ -1701,11 +1690,14 @@ political_advisor = {
 					ap_attack = 0.2 
 					hard_attack = 0.1
 				}
+				CCC_equipment = {
+					build_cost_ic = -0.1 
+				}
 			}
 			modifier ={	production_factory_max_efficiency_factor = 0.05}
 		}
 
-		Company2 = 
+		aa_maker = 
 		{
 			picture = artillery_manufacturer_3
 			allowed = {
@@ -1740,10 +1732,10 @@ political_advisor = {
 					ap_attack = 0.1
 				}
 			}
-			modifier ={research_time_factor = -0.01}
+			modifier ={research_time_factor = -0.02}
 		}
 
-		Company3 = 
+		helo_maker = 
 		{
 			
 			allowed = {
@@ -1763,10 +1755,7 @@ political_advisor = {
 				infantry_weapons = 0.05
 			}
 			equipment_bonus = {
-				transport_helo_equipment = {
-					build_cost_ic = -0.15 
-					reliability = 0.1
-				}
+
 				attack_helicopter_equipment = {
 					build_cost_ic = 0.05 
 					reliability = 0.1 
@@ -1774,10 +1763,7 @@ political_advisor = {
 					hard_attack = 0.05 
 					supply_consumption = 0.05
 				}
-				scout_helicopter_equipment = {
-					build_cost_ic = -0.15 
-					reliability = 0.1 
-				}
+
 				utility_helicopter_equipment = {
 					build_cost_ic = -0.05 
 					reliability = 0.1 
