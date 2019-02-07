@@ -14,10 +14,6 @@
 
 @sub_upg_mid = 12	
 @submarine_main_line = 13
-
-
-@submarine_lower_line = 14
-
 @holder = 20
 
 #year coordinates

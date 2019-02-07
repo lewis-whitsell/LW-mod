@@ -463,7 +463,7 @@ equipments = {
 		reliability = 0.8
 
 		lend_lease_cost = 8
-
+ 
 	}
 
 	nav_bomber_equipment_4 = {
@@ -1316,7 +1316,7 @@ equipments = {
 		
 		manpower = 10
 	}
-	
+
 	ucav_equipment_1 = {
 		archetype = ucav_equipment
 		priority = 120

@@ -547,6 +547,32 @@ technologies = {
 		}
 	}
 	
+	stealth_fighter_frame1 = {
+
+		enable_equipments = {
+			stealth_fighter_equipment_1
+		}													
+		research_cost = 5
+		start_year = 2015
+
+		folder = {
+			name = air_techs_folder
+			position = { x = 2 y = @2015 }
+		}
+		
+		categories = {
+			light_air
+			jet_technology
+			air_equipment
+			cat_heavy_fighter
+			cat_int_fighter
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	stealth_fighter_frame2 = {
 
 		enable_equipments = {
@@ -611,31 +637,7 @@ technologies = {
 		}
 	}
 		
-	stealth_fighter_frame1 = {
 
-		enable_equipments = {
-			stealth_fighter_equipment_1
-		}													
-		research_cost = 5
-		start_year = 2015
-
-		folder = {
-			name = air_techs_folder
-			position = { x = 2 y = @2015 }
-		}
-		
-		categories = {
-			light_air
-			jet_technology
-			air_equipment
-			cat_heavy_fighter
-			cat_int_fighter
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
 
 	## CAS, CV CAS ##
 	
@@ -706,7 +708,6 @@ technologies = {
 				has_tech = jet_CAS2
 			}
 		}
-
 	}
 	
 	jet_CAS2 = {

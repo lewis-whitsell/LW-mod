@@ -564,11 +564,10 @@ technologies = {
 		}
 	}
 	tech_military_police5 = {
-
-		enable_subunits = {
-			military_police
-		}
 		
+		military_police = {
+			suppression_factor = 0.1
+		}
 		path = {
 			leads_to_tech = tech_military_police6
 			research_cost_coeff = 1

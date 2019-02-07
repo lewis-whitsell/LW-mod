@@ -498,13 +498,6 @@ guiTypes = {
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
-			gridboxtype = {
-				name = "cold_war_engineering_tree"
-				position = { x= 100 y=160 }
-				slotsize = { width=70 height= 70 }
-				format = "LEFT"
-			}
-
 		}
 
 		containerWindowType = {
@@ -1865,7 +1858,7 @@ guiTypes = {
 			}
 
 			gridboxtype = {
-				name = "gen1_ucav_tree"
+				name = "jet_tactical_bomber1_tree"
 				position = { x = 1075 y = 32 }
 				size = { width = 400 height = 1000 }
 				slotsize = { width = 70 height = 70 }
@@ -2878,12 +2871,6 @@ guiTypes = {
 #				}
 			}
 
-			gridboxtype = {
-				name = "droptank1_tree"
-				position = { x = 1475 y = 172 }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
 		}
 		
 		containerWindowType = {

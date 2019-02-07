@@ -46,8 +46,6 @@ equipments = {
 		visual_level = 0
 	}
 
-
-
 	# Post Cold War Equipment
 	infantry_equipment_1 = {
 		archetype = infantry_equipment
