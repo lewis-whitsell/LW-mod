@@ -2183,6 +2183,7 @@ guiTypes = {
 				}
 				
 			}
+		
 
 				instantTextBoxType = {
 					name = "industry_subtitle"
