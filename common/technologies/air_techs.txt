@@ -578,10 +578,6 @@ technologies = {
 		enable_equipments = {
 			mr_stealth_fighter_equipment_1
 		}
-
-		dependencies = {
-            stealth_fighter_frame2 = 1
-        }
 		
 		sub_technologies = {
 			cv_stealth_fighter_frame2

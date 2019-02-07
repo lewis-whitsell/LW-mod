@@ -1,0 +1,77 @@
+#to turn off a feature, replace 'yes' with 'no'. The ones that are already set to no are broken, do not set them to yes.
+#this checks for divisions with missing namegroups
+check_missing_division_name_group = yes
+#this makes the check for missing namegroups skip files with 'unlock' in their name (such as unlock_marines.txt) to avoid giving false positives on OOBs that are used to unlock templates
+skip_unlock = yes
+#this checks for comments indicating a general has been updated. It does not check for unupdated generals, just comments.
+check_for_old_generals = no
+#this checks for tags without namelists
+check_for_name_lists = yes
+#this checks to make sure brackets are being used correctly
+check_for_brackets = yes
+#this checks for locs that are defined twice
+check_for_double_locs = yes
+#this checks for missing graphics
+check_for_missing_gfx = yes
+#this checks to make sure focuses referenced elsewhere actually exist
+check_for_missing_focus = yes
+#this checks to make sure all provinces have at least one core at game start
+check_for_missing_cores = yes
+#this checks for missing OOBs
+check_for_missing_oobs = yes
+#this checks for events that are missing graphics
+check_events_for_graphics = yes
+#checks for events that are missing options
+check_events_for_options = yes
+#checks for events that are missing titles
+check_events_for_titles = yes
+#checks for events that are missing descriptions
+check_events_for_descriptions = yes
+#checks hidden events for visible content
+check_hidden_events = yes
+#checks if events with ai_chance fields have only one option
+check_ai_chance_usage = yes
+#checks if events that load oobs also have custom tooltips
+check_load_oob_usage = yes
+#checks event options each have separate localizations
+check_for_duplicate_options_loc = yes
+#this checks to make sure endlines are used properly
+check_endlines = yes
+#this checks to make sure all generals referenced in effects actually exist
+check_generals = yes
+#this lists the ID of all unique generals
+list_general_ids = no
+#this checks to make sure = no is not used anywhere where it would screw up a tooltip.
+check_for_equals_no = yes
+#this checks for unused oobs
+check_for_unused_oobs = yes
+#This checks for missing localization. Currently just events and focuses though.
+check_for_missing_loc = no
+#This checks that each diplo relations effect checks that its subject still exists.
+check_for_alive_checks = yes
+#This checks for missing '='.
+check_for_missing_equals = yes
+#This checks that each event or focus id is only defined once
+check_for_duplicate_ids = yes
+#This checks that every event that is called is defined and that every non-MTTH event is called at least once
+check_for_event_use = yes
+#This checks that flags that are used or changed are ever set and vice versa.
+check_flag_usage = yes
+#This checks that ideas are ever added if used
+check_idea_usage = yes
+#This checks if mutually exclusive focuses all list each other as mutually exclusive
+check_mutually_exclusive_focuses = yes
+#this checks for if a tag has naval techs, but does not have the prerec invisible tech granted by naval decisisions. Specific to KR's naval rework
+check_naval_tech = yes
+#this checks for if units in OOBs have templates defined for them
+check_oob_templates = yes
+#this checks for if templates have namegroups properly defined
+check_template_namegroup = yes
+#this checks for if templates have names
+check_template_names = yes
+#this checks for if division templates in a OOB are defined after the units are defined
+check_OOB_order = yes
+#this checks to see if referenced ideologies actually exist
+check_ideologies = yes
+#this checks for non-existent states in focus trees, decisions, and events
+check_states = yes

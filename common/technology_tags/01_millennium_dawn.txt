@@ -4,6 +4,14 @@
 technology_categories = {
 	light_mechanized
 	heavy_mechanized
+	Cat_operational_integrity_tree
+	Cat_operational_integrity
+	Cat_battlefield_support_tree
+	Cat_battlefield_support
+	Cat_SP_ARTY
+	Cat_ARTILLERY
+	Cat_AA
+	Cat_AT
 }
 
  

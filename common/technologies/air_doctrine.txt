@@ -529,35 +529,6 @@ technologies = {
 	####################################
 	############ END TREE ##############
 	####################################
-	# force_rotation = {
-		#xor = { formation_flying }	
-		###EFFECT ########
-		# air_interception_detect_factor = 0.20
-		##########
-		
-		# path = {
-			# leads_to_tech = offensive_focus
-			# research_cost_coeff = 1
-		# }
-		
-		# doctrine = yes	
-		# research_cost = 1.5
-		
-		# categories = {
-			# air_doctrine
-			# Cat_operational_integrity_tree
-			# Cat_operational_integrity
-		# }
-		
-		# folder = {
-			# name = air_doctrine_folder
-			# position = { x = 0 y = 0 }
-		# }
-		
-		# ai_will_do = {
-			# factor = 1
-		# }
-	# }
 	
 	offensive_focus = {
 		xor = { jsead }	
@@ -906,13 +877,7 @@ technologies = {
 		# EFFECT ########
 		air_cas_present_factor = 0.20
 		air_strategic_bomber_bombing_factor = 0.1
-		#equipment_bonus = {
-		#	guided_missile = {	<-----this is SAM unit, wanted TBM.
-		#		air_ground_attack = 0.15
-		#	}
-		#}				
-		###########
-		
+	
 		path = {
 			leads_to_tech = alcm_raid_oi
 			research_cost_coeff = 1

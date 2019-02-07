@@ -1299,12 +1299,7 @@ technologies = {
 			leads_to_tech = submarine_nuclear_reactor
 			research_cost_coeff = 1
 		}
-		
-		path = {
-			leads_to_tech = submarine_cold_war_torpedo
-			research_cost_coeff = 1
-		}
-		
+				
 		research_cost = 0.75
 		
 		start_year = 1960
@@ -1361,39 +1356,6 @@ technologies = {
 		
 	}
 	
-	submarine_cold_war_torpedo = {
-		
-		submarine = {
-			torpedo_attack = 0.2
-		}
-		
-		path = {
-			leads_to_tech = submarine_modern_torpedo
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1.25
-		
-		start_year = 1960
-		
-		folder = {
-			name = naval_folder
-			position = {
-				x = @holder
-				y = @1960
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-			ss_tech
-		}
-		
-	}
 	
 	ssn1 = {
 
@@ -1586,11 +1548,6 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		path = {
-			leads_to_tech = ballistic_submarine_5
-			research_cost_coeff = 1
-		}
-		
 		research_cost = 3
 
 		start_year = 2014
@@ -1647,11 +1604,6 @@ technologies = {
 		
 		path = {
 			leads_to_tech = ssn6 
-			research_cost_coeff = 1
-		}
-		
-		path = {
-			leads_to_tech = ballistic_submarine_6
 			research_cost_coeff = 1
 		}
 		
@@ -1823,40 +1775,6 @@ technologies = {
 		
 	}
 	
-	submarine_modern_torpedo = {
-		
-		submarine = {
-			torpedo_attack = 0.2
-		}
-		
-		path = {
-			leads_to_tech = submarine_future_torpedo
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1.25
-		
-		start_year = 2006
-		
-		folder = {
-			name = naval_folder
-			position = {
-				x = @holder
-				y = @2006
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-			ss_tech
-		}
-		
-	}
-	
 	submarine4 = {
 		
 		enable_equipments = {
@@ -1924,36 +1842,7 @@ technologies = {
 		}
 		
 	}
-	
-	submarine_future_torpedo = {
 		
-		submarine = {
-			torpedo_attack = 0.25
-		}
-		
-		research_cost = 2
-		
-		start_year = 2025
-		
-		folder = {
-			name = naval_folder
-			position = {
-				x = @holder
-				y = @2025
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-			ss_tech
-		}
-		
-	}
-	
 	submarine6 = {
 		
 		enable_equipments = {

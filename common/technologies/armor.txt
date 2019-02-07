@@ -28,7 +28,7 @@ technologies = {
 		start_year = 1955
 		
 		folder = {
-			name = armour_folder
+			name = armor_folder
 			position = { x = @main_tank_line y = @1955 }
 		}
 		
@@ -68,7 +68,7 @@ technologies = {
 		start_year = 1970
 
 		folder = {
-			name = armour_folder
+			name = armor_folder
 			position = { x = @main_tank_line y = @1970 }
 		}
 		
@@ -97,7 +97,7 @@ technologies = {
 		start_year = 1990
 		
 		folder = {
-			name = armour_folder
+			name = armor_folder
 			position = { x = @main_tank_line y = @1990 }
 		}
 		
@@ -126,7 +126,7 @@ technologies = {
 		start_year = 2000
 		
 		folder = {
-			name = armour_folder
+			name = armor_folder
 			position = { x = @main_tank_line y = @2000 }
 		}
 		
@@ -155,7 +155,7 @@ technologies = {
 		start_year = 2010
 		
 		folder = {
-			name = armour_folder
+			name = armor_folder
 			position = { x = @main_tank_line y = @2010 }
 		}
 		
@@ -184,7 +184,7 @@ technologies = {
 		start_year = 2018
 		
 		folder = {
-			name = armour_folder
+			name = armor_folder
 			position = { x = @main_tank_line y = @2018 }
 		}
 		
@@ -213,7 +213,7 @@ technologies = {
 		start_year = 2025
 		
 		folder = {
-			name = armour_folder
+			name = armor_folder
 			position = { x = @main_tank_line y = @2025 }
 		}
 		
@@ -242,7 +242,7 @@ technologies = {
 		start_year = 2030
 		
 		folder = {
-			name = armour_folder
+			name = armor_folder
 			position = { x = @main_tank_line y = @2030 }
 		}
 		
@@ -266,7 +266,7 @@ technologies = {
 		start_year = 1970
 		
 		folder = {
-			name = armour_folder
+			name = armor_folder
 			position = { x = @light_tank_line y = @1970 }
 		}
 		
@@ -295,7 +295,7 @@ technologies = {
 		start_year = 1990
 		
 		folder = {
-			name = armour_folder
+			name = armor_folder
 			position = { x = @light_tank_line y = @1990 }
 		}
 		
@@ -324,7 +324,7 @@ technologies = {
 		start_year = 2006
 		
 		folder = {
-			name = armour_folder
+			name = armor_folder
 			position = { x = @light_tank_line y = @2006 }
 		}
 		
@@ -353,7 +353,7 @@ technologies = {
 		start_year = 2018
 		
 		folder = {
-			name = armour_folder
+			name = armor_folder
 			position = { x = @light_tank_line y = @2018 }
 		}
 		
@@ -382,7 +382,7 @@ technologies = {
 		start_year = 2025
 		
 		folder = {
-			name = armour_folder
+			name = armor_folder
 			position = { x = @light_tank_line y = @2025 }
 		}
 		
@@ -415,7 +415,7 @@ technologies = {
 		start_year = 1970
 		
 		folder = {
-			name = armour_folder
+			name = armor_folder
 			position = { x = @ifv_line y = @1970 }
 		}
 		
@@ -448,7 +448,7 @@ technologies = {
 		start_year = 1990
 		
 		folder = {
-			name = armour_folder
+			name = armor_folder
 			position = { x = @ifv_line y = @1990 }
 		}
 		
@@ -482,7 +482,7 @@ technologies = {
 		start_year = 2006
 		
 		folder = {
-			name = armour_folder
+			name = armor_folder
 			position = { x = @ifv_line y = @2006 }
 		}
 		
@@ -516,7 +516,7 @@ technologies = {
 		start_year = 2018
 		
 		folder = {
-			name = armour_folder
+			name = armor_folder
 			position = { x = @ifv_line y = @2018 }
 		}
 		
@@ -550,7 +550,7 @@ technologies = {
 		start_year = 2025
 		
 		folder = {
-			name = armour_folder
+			name = armor_folder
 			position = { x = @ifv_line y = @2025 }
 		}
 		
@@ -681,7 +681,7 @@ technologies = {
 		start_year = 1970
 		
 		folder = {
-			name = armour_folder
+			name = armor_folder
 			position = { x = @apc_line y = @1970 }
 		}
 		
@@ -709,7 +709,7 @@ technologies = {
 		start_year = 1990
 		
 		folder = {
-			name = armour_folder
+			name = armor_folder
 			position = { x = @apc_line y = @1990 }
 		}
 		
@@ -737,7 +737,7 @@ technologies = {
 		start_year = 2006
 		
 		folder = {
-			name = armour_folder
+			name = armor_folder
 			position = { x = @apc_line y = @2006 }
 		}
 		
@@ -765,7 +765,7 @@ technologies = {
 		start_year = 2016
 		
 		folder = {
-			name = armour_folder
+			name = armor_folder
 			position = { x = @apc_line y = @2016 }
 		}
 		
@@ -793,7 +793,7 @@ technologies = {
 		start_year = 2020
 		
 		folder = {
-			name = armour_folder
+			name = armor_folder
 			position = { x = @apc_line y = @2020 }
 		}
 		
@@ -822,7 +822,7 @@ technologies = {
 		start_year = 2030
 		
 		folder = {
-			name = armour_folder
+			name = armor_folder
 			position = { x = @apc_line y = @2030 }
 		}
 		
@@ -853,7 +853,7 @@ technologies = {
 		research_cost = 2
 		start_year = 1990
 		folder = {
-			name = armour_folder
+			name = armor_folder
 			position = { x = @marine_line y = @1990 }
 		}
 		
@@ -884,7 +884,7 @@ technologies = {
 		research_cost = 2
 		start_year = 2000
 		folder = {
-			name = armour_folder
+			name = armor_folder
 			position = { x = @marine_line y = @2000 }
 		}
 		
@@ -915,7 +915,7 @@ technologies = {
 		research_cost = 3
 		start_year = 2006
 		folder = {
-			name = armour_folder
+			name = armor_folder
 			position = { x = @marine_line y = @2006 }
 		}
 		
@@ -946,7 +946,7 @@ technologies = {
 		research_cost = 2
 		start_year = 2016
 		folder = {
-			name = armour_folder
+			name = armor_folder
 			position = { x = @marine_line y = @2016 }
 		}
 		
@@ -972,7 +972,7 @@ technologies = {
 		research_cost = 2
 		start_year = 2025
 		folder = {
-			name = armour_folder
+			name = armor_folder
 			position = { x = @marine_line y = @2025 }
 		}
 		
@@ -1218,7 +1218,7 @@ technologies = {
 		start_year = 1990
 		
 		folder = {
-			name = armour_folder
+			name = armor_folder
 			position = { x = 3 y = @1990 }
 		}
 		
@@ -1251,7 +1251,7 @@ technologies = {
 		start_year = 2006
 		
 		folder = {
-			name = armour_folder
+			name = armor_folder
 			position = { x = 3 y = @2006 }
 		}
 		
@@ -1280,7 +1280,7 @@ technologies = {
 		start_year = 2010
 		
 		folder = {
-			name = armour_folder
+			name = armor_folder
 			position = { x = 3 y = @2010 }
 		}
 		
@@ -1309,7 +1309,7 @@ technologies = {
 		start_year = 2016
 		
 		folder = {
-			name = armour_folder
+			name = armor_folder
 			position = { x = 3 y = @2016 }
 		}
 		
@@ -1333,7 +1333,7 @@ technologies = {
 		start_year = 2020
 		
 		folder = {
-			name = armour_folder
+			name = armor_folder
 			position = { x = 3 y = @2020 }
 		}
 		
@@ -1366,7 +1366,7 @@ technologies = {
 		start_year = 1970
 		
 		folder = {
-			name = armour_folder
+			name = armor_folder
 			position = { x = 0 y = @1970 }
 		}
 		
@@ -1395,7 +1395,7 @@ technologies = {
 		start_year = 1990
 		
 		folder = {
-			name = armour_folder
+			name = armor_folder
 			position = { x = 0 y = @1990 }
 		}
 		
@@ -1424,7 +1424,7 @@ technologies = {
 		start_year = 2006
 		
 		folder = {
-			name = armour_folder
+			name = armor_folder
 			position = { x = 0 y = @2006 }
 		}
 		
@@ -1453,7 +1453,7 @@ technologies = {
 		start_year = 2010
 		
 		folder = {
-			name = armour_folder
+			name = armor_folder
 			position = { x = 0 y = @2010 }
 		}
 		
@@ -1477,7 +1477,7 @@ technologies = {
 		start_year = 2018
 		
 		folder = {
-			name = armour_folder
+			name = armor_folder
 			position = { x = 0 y = @2018 }
 		}
 		

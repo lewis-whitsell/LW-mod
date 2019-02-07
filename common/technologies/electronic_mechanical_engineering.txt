@@ -729,7 +729,7 @@ technologies = {
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 0 y = @2000 }
+			position = { x = @center y = @2000 }
 		}
 		
 		ai_will_do = {
@@ -761,7 +761,7 @@ technologies = {
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 0 y = @2010 }
+			position = { x = @center y = @2010 }
 		}
 		
 		ai_will_do = {
@@ -787,7 +787,7 @@ technologies = {
 		start_year = 2025		
 		folder = {
 			name = electronics_folder
-			position = { x = 0 y = @2025}
+			position = { x = @center y = @2025}
 		}
 		
 		ai_will_do = {

@@ -1,0 +1,733 @@
+﻿division_template = {
+	name = "Airmobie Division"
+	
+	regiments = {
+		airmobile = { x = 0 y = 0 }
+		airmobile = { x = 0 y = 1 }
+		airmobile = { x = 0 y = 2 }
+		airmobile = { x = 0 y = 3 }
+		airmobile = { x = 0 y = 4 }
+		airmobile = { x = 1 y = 0 }
+		airmobile = { x = 1 y = 1 }
+		airmobile = { x = 1 y = 2 }
+		attack_helo = { x = 1 y = 3 }
+		attack_helo = { x = 1 y = 4 }
+		
+
+	}
+	
+	support = {
+		armored_engineers = { x = 0 y = 0 }
+		recon_mechanized = { x = 0 y = 1 }
+		maintenance_company = { x = 0 y = 2 }
+		rocket_artillery = { x = 0 y = 3 }
+		general_aviation_battalion = { x = 0 y = 4 }		
+	}
+	priority = 1
+}
+
+division_template = {
+	name = "Airmobie Division"
+	
+	regiments = {
+		airmobile = { x = 0 y = 0 }
+		airmobile = { x = 0 y = 1 }
+		airmobile = { x = 0 y = 2 }
+		airmobile = { x = 0 y = 3 }
+		airmobile = { x = 0 y = 4 }
+		airmobile = { x = 1 y = 0 }
+		airmobile = { x = 1 y = 1 }
+		airmobile = { x = 1 y = 2 }
+		attack_helo = { x = 1 y = 3 }
+		attack_helo = { x = 1 y = 4 }
+		
+
+	}
+	
+	support = {
+		engineers = { x = 0 y = 0 }
+		recon_mechanized = { x = 0 y = 1 }
+		maintenance_company = { x = 0 y = 2 }
+		rocket_artillery = { x = 0 y = 3 }
+		general_aviation_battalion = { x = 0 y = 4 }		
+	}
+	priority = 2
+}
+
+division_template = {
+	name = "Main Tank Division"
+	
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+		mechanized = { x = 2 y = 2 }
+		sp_artillery_brigade = { x = 3 y = 0 }
+		sp_artillery_brigade = { x = 3 y = 0 }
+		light_sp_anti_air_brigade = { x = 4 y = 0 }
+		medium_sp_anti_air_brigade = { x = 4 y = 1 }
+
+	}
+	
+	support = {
+		armored_engineers = { x = 0 y = 0 }
+		recon_mechanized = { x = 0 y = 1 }
+		maintenance_company = { x = 0 y = 2 }
+		rocket_artillery = { x = 0 y = 3 }
+		general_aviation_battalion = { x = 0 y = 4 }		
+	}
+	priority = 1
+}
+
+division_template = {
+	name = "Mech Marine Division"
+	
+	regiments = {
+		mechanized_marine = { x = 0 y = 0 }
+		mechanized_marine = { x = 0 y = 1 }
+		mechanized_marine = { x = 0 y = 2 }
+		mechanized_marine = { x = 0 y = 3 }
+		mechanized_marine = { x = 0 y = 4 }
+	}
+	
+	support = {
+		armored_engineers = { x = 0 y = 0 }
+		recon_mechanized = { x = 0 y = 1 }
+		rocket_artillery = { x = 0 y = 2 }
+		attack_helo_support = { x = 0 y = 3 }
+		general_aviation_battalion = { x = 0 y = 4 }		
+	}
+	priority = 2
+}
+
+division_template = {
+	name = "Airborne Mech Division"
+	
+	regiments = {
+		mechanized_airborne = { x = 0 y = 0 }
+		mechanized_airborne = { x = 0 y = 1 }
+		mechanized_airborne = { x = 0 y = 2 }
+		mechanized_airborne = { x = 0 y = 3 }
+	}
+	
+	support = {
+		armored_engineers = { x = 0 y = 0 }
+		recon_mechanized = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		anti_tank = { x = 0 y = 3 }		
+	}
+	priority = 2
+}
+
+division_template = {
+	name = "Spetsnaz Attack Group"
+	
+	regiments = {
+		heli_special_force = { x = 0 y = 0 }
+		heli_special_force = { x = 0 y = 1 }
+		heli_special_force = { x = 0 y = 2 }
+	}
+	priority = 2
+}
+
+division_template = {
+	name = "20 W Division"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		artillery = { x = 2 y = 0 }
+		artillery = { x = 2 y = 1 }
+		anti_tank = { x = 2 y = 2 }
+		anti_air = { x = 2 y = 3 }
+		
+
+	}
+	
+	support = {
+		engineer = { x = 0 y = 0 }
+		anti_tank = { x = 0 y = 1 }
+		field_hospital = { x = 0 y = 2 }
+		artillery = { x = 0 y = 3 }
+		logistics_company = { x = 0 y = 4 }		
+	}
+	priority = 1
+}
+
+division_template = {
+	name = "40 W Division"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }
+		artillery = { x = 2 y = 0 }
+		artillery = { x = 2 y = 1 }
+		artillery = { x = 2 y = 2 }
+		artillery = { x = 2 y = 3 }
+		artillery = { x = 2 y = 4 }
+		anti_tank = { x = 3 y = 0 }
+		anti_tank = { x = 3 y = 1 }
+		anti_tank = { x = 3 y = 2 }
+		anti_air = { x = 3 y = 3 }
+		anti_air = { x = 3 y = 4 }
+		
+
+	}
+	
+	support = {
+		engineer = { x = 0 y = 0 }
+		anti_tank = { x = 0 y = 1 }
+		field_hospital = { x = 0 y = 2 }
+		artillery = { x = 0 y = 3 }
+		logistics_company = { x = 0 y = 4 }		
+	}
+	priority = 1
+}
+
+units = {
+	
+	division = {
+		name = "1st Mech Marine Division"
+		location = 6380
+		division_template = "Mech Marine Division"
+		start_experience_factor = 0.75
+	}
+
+	division = {
+		name = "2nd Mech Marine Division"
+		location = 6380
+		division_template = "Mech Marine Division"
+		start_experience_factor = 0.75
+	}
+
+	division = {
+		name = "3rd Mech Marine Division"
+		location = 6380
+		division_template = "Mech Marine Division"
+		start_experience_factor = 0.75
+	}
+
+	division = {
+		name = "4th Mech Marine Division"
+		location = 6380
+		division_template = "Mech Marine Division"
+		start_experience_factor = 0.75
+	}
+
+	division = {
+		name = "5th Mech Marine Division"
+		location = 6380
+		division_template = "Mech Marine Division"
+		start_experience_factor = 0.75
+	}
+
+	division = {
+		name = "6th Mech Marine Division"
+		location = 6380
+		division_template = "Mech Marine Division"
+		start_experience_factor = 0.75
+	}
+
+	division = {
+		name = "7th Mech Marine Division"
+		location = 6380
+		division_template = "Mech Marine Division"
+		start_experience_factor = 0.75
+	}
+
+	division = {
+		name = "8th Mech Marine Division"
+		location = 6380
+		division_template = "Mech Marine Division"
+		start_experience_factor = 0.75
+	}
+
+	division = {
+		name = "9th Mech Marine Division"
+		location = 6380
+		division_template = "Mech Marine Division"
+		start_experience_factor = 0.75
+	}
+
+	division = {
+		name = "10th Mech Marine Division"
+		location = 6380
+		division_template = "Mech Marine Division"
+		start_experience_factor = 0.75
+	}
+
+	division = {
+		name = "1st Guards Division"
+		location = 11349
+		division_template = "40 W Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "2nd Guards Division"
+		location = 11349
+		division_template = "40 W Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "3rd Guards Division"
+		location = 11349
+		division_template = "40 W Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "4th Guards Division"
+		location = 11349
+		division_template = "40 W Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "5th Guards Division"
+		location = 11349
+		division_template = "40 W Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "6th Guards Division"
+		location = 11349
+		division_template = "40 W Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "7th Guards Division"
+		location = 11349
+		division_template = "40 W Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "8th Guards Division"
+		location = 11349
+		division_template = "40 W Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "9th Guards Division"
+		location = 11349
+		division_template = "40 W Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "10th Guards Division"
+		location = 11349
+		division_template = "40 W Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "11th Guards Division"
+		location = 11349
+		division_template = "40 W Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "12th Guards Division"
+		location = 11349
+		division_template = "40 W Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "13th Guards Division"
+		location = 11349
+		division_template = "40 W Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "14th Guards Division"
+		location = 11349
+		division_template = "40 W Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "15th Guards Division"
+		location = 11349
+		division_template = "40 W Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "16th Guards Division"
+		location = 11349
+		division_template = "40 W Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "17th Guards Division"
+		location = 11349
+		division_template = "40 W Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "18th Guards Division"
+		location = 11349
+		division_template = "40 W Division"
+		start_experience_factor = 0.75
+	}
+
+	division = {
+		name = "1st Inf Division"
+		location = 3151
+		division_template = "20 W Division"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "2nd Inf Division"
+		location = 3151
+		division_template = "20 W Division"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "3rd Inf Division"
+		location = 3151
+		division_template = "20 W Division"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "4th Inf Division"
+		location = 3151
+		division_template = "20 W Division"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "5th Inf Division"
+		location = 3151
+		division_template = "20 W Division"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "6th Inf Division"
+		location = 3151
+		division_template = "20 W Division"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "7th Inf Division"
+		location = 3151
+		division_template = "20 W Division"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "8th Inf Division"
+		location = 3151
+		division_template = "20 W Division"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "9th Inf Division"
+		location = 3151
+		division_template = "20 W Division"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "10th Inf Division"
+		location = 3151
+		division_template = "20 W Division"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "11th Inf Division"
+		location = 3151
+		division_template = "20 W Division"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "12th Inf Division"
+		location = 3151
+		division_template = "20 W Division"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "13th Inf Division"
+		location = 3151
+		division_template = "20 W Division"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "14th Inf Division"
+		location = 3151
+		division_template = "20 W Division"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "15th Inf Division"
+		location = 3151
+		division_template = "20 W Division"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "16th Inf Division"
+		location = 3151
+		division_template = "20 W Division"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "17th Inf Division"
+		location = 3151
+		division_template = "20 W Division"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "18th Inf Division"
+		location = 3151
+		division_template = "20 W Division"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "19th Inf Division"
+		location = 3151
+		division_template = "20 W Division"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "20th Inf Division"
+		location = 3151
+		division_template = "20 W Division"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "21st Inf Division"
+		location = 3151
+		division_template = "20 W Division"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "22nd Inf Division"
+		location = 3151
+		division_template = "20 W Division"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "23th Inf Division"
+		location = 3151
+		division_template = "20 W Division"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "24th Inf Division"
+		location = 3151
+		division_template = "20 W Division"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "25th Inf Division"
+		location = 3151
+		division_template = "20 W Division"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "26th Inf Division"
+		location = 3151
+		division_template = "20 W Division"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "27th Inf Division"
+		location = 3151
+		division_template = "20 W Division"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "28th Inf Division"
+		location = 3151
+		division_template = "20 W Division"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "29th Inf Division"
+		location = 3151
+		division_template = "20 W Division"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "30th Inf Division"
+		location = 3151
+		division_template = "20 W Division"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "31st Inf Division"
+		location = 3151
+		division_template = "20 W Division"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "32nd Inf Division"
+		location = 3151
+		division_template = "20 W Division"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "33th Inf Division"
+		location = 3151
+		division_template = "20 W Division"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "1. Airmobile Division"
+		location = 9417
+		division_template = "Airmobie Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "2. Airmobile Division"
+		location = 9417
+		division_template = "Airmobie Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "3. Airmobile Division"
+		location = 9417
+		division_template = "Airmobie Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "4. Airmobile Division"
+		location = 9417
+		division_template = "Airmobie Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "5. Airmobile Division"
+		location = 9417
+		division_template = "Airmobie Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "6. Airmobile Division"
+		location = 9417
+		division_template = "Airmobie Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "7. Airmobile Division"
+		location = 9417
+		division_template = "Airmobie Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "8. Airmobile Division"
+		location = 9417
+		division_template = "Airmobie Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "9. Airmobile Division"
+		location = 9417
+		division_template = "Airmobie Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "10. Airmobile Division"
+		location = 9417
+		division_template = "Airmobie Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "11. Airmobile Division"
+		location = 9417
+		division_template = "Airmobie Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "12. Airmobile Division"
+		location = 9417
+		division_template = "Airmobie Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "13. Airmobile Division"
+		location = 9417
+		division_template = "Airmobie Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "14. Airmobile Division"
+		location = 9417
+		division_template = "Airmobie Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "15. Airmobile Division"
+		location = 9417
+		division_template = "Airmobie Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "16. Airmobile Division"
+		location = 9417
+		division_template = "Airmobie Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "17. Airmobile Division"
+		location = 9417
+		division_template = "Airmobie Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "18. Airmobile Division"
+		location = 9417
+		division_template = "Airmobie Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "19. Airmobile Division"
+		location = 9417
+		division_template = "Airmobie Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "20. Airmobile Division"
+		location = 9417
+		division_template = "Airmobie Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "21. Airmobile Division"
+		location = 9417
+		division_template = "Airmobie Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "22. Airmobile Division"
+		location = 9417
+		division_template = "Airmobie Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "23. Airmobile Division"
+		location = 9417
+		division_template = "Airmobie Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "24. Airmobile Division"
+		location = 9417
+		division_template = "Airmobie Division"
+		start_experience_factor = 0.75
+	}
+
+
+
+
+
+
+
+}
+
