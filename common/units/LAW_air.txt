@@ -1,5 +1,5 @@
 sub_units = {
-	jet_multirole = {
+	fighter = {
 		sprite = jet_multirole
 		priority = 1
 		active = yes

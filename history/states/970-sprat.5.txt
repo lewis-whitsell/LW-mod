@@ -1,0 +1,33 @@
+state={
+	id=970
+	name="STATE_970"
+	provinces={
+		13270 13273 
+	}
+	manpower=13269548
+	buildings_max_level_factor=1.000
+	state_category=state_level_18
+	resources={
+		oil=54.000
+	}
+
+	history={
+		owner = PRC
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 2
+			air_base = 2
+			13270 = {
+				naval_base = 3
+
+			}
+			13273 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = PRC 
+		victory_points = { 13270 1 }
+}

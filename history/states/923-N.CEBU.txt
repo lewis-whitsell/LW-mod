@@ -1,0 +1,35 @@
+state={
+	id=923
+	name="STATE_923"
+	provinces={
+		1368 7423 10302 
+	}
+	manpower=3500000
+	buildings_max_level_factor=1.000
+	state_category=state_level_10
+	resources={
+		oil = 36
+		aluminium = 24
+	}
+	history={
+		owner = PHI
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			dockyard  = 1
+			industrial_complex = 3
+			7423 = {
+				naval_base = 2
+
+			}
+			
+		}
+		victory_points = {
+			7423 10 
+		}
+
+		add_core_of = PHI
+
+	}
+
+}

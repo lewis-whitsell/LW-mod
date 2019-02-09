@@ -1,0 +1,29 @@
+state={
+	id=948
+	name="STATE_948"
+	provinces={
+		13066 
+	}
+	history={
+		owner = GRN
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 2
+			arms_factory = 1
+			dockyard = 2
+			13066 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = GRN
+		victory_points = {
+			13066 5 
+		}
+
+	}
+	manpower=14875231
+	buildings_max_level_factor=1.000
+	state_category=state_level_10
+}

@@ -3,7 +3,7 @@
 modifiers = {
 	### Fighters ###
 	fighter_good = {
-		type = { jet_multirole jet_interceptor }
+		type = { fighter interceptor }
 		chance = 0.9
 		effect = {
 			air_attack_factor = 0.03
@@ -12,7 +12,7 @@ modifiers = {
 		}
 	}
 	fighter_unique = {
-		type = { jet_multirole jet_interceptor }
+		type = { fighter interceptor }
 		chance = 0.4
 		effect = {
 			air_attack_factor = 0.06
@@ -21,7 +21,7 @@ modifiers = {
 		}
 	}
 	fighter_genius = {
-		type = { jet_multirole jet_interceptor }
+		type = { fighter interceptor }
 		chance = 0.05
 		effect = {
 			air_attack_factor = 0.1
@@ -32,7 +32,11 @@ modifiers = {
 
 	### Bombers ###
 	bomber_good = {
+<<<<<<< HEAD
 		type = { jet_strat_bomber stealth_strategic_bomber }
+=======
+		type = strategic_bomber
+>>>>>>> parent of fe4fb959... ridding map and states for now + change aces to new aircraft
 		chance = 0.9
 		effect = {
 			air_strategic_bomber_bombing_factor = 0.05
@@ -40,7 +44,11 @@ modifiers = {
 		}
 	}
 	bomber_unique = {
+<<<<<<< HEAD
 		type = { jet_strat_bomber stealth_strategic_bomber }
+=======
+		type = strategic_bomber
+>>>>>>> parent of fe4fb959... ridding map and states for now + change aces to new aircraft
 		chance = 0.4
 		effect = {
 			air_strategic_bomber_bombing_factor = 0.10
@@ -48,7 +56,11 @@ modifiers = {
 		}
 	}
 	bomber_genius = {
+<<<<<<< HEAD
 		type = { jet_strat_bomber stealth_strategic_bomber }
+=======
+		type = strategic_bomber
+>>>>>>> parent of fe4fb959... ridding map and states for now + change aces to new aircraft
 		chance = 0.05
 		effect = {
 			air_strategic_bomber_bombing_factor = 0.15
@@ -58,7 +70,11 @@ modifiers = {
 
 	### Support ###
 	support_good = {
+<<<<<<< HEAD
 		type = { jet_cas cv_jet_cas attack_helicoptor strike_fighter ucav stealth_tactical_bomber }
+=======
+		type = { cas tactical_bomber naval_bomber }
+>>>>>>> parent of fe4fb959... ridding map and states for now + change aces to new aircraft
 		chance = 0.9
 		effect = {
 			naval_strike_targetting_factor = 0.05
@@ -67,7 +83,11 @@ modifiers = {
 		}
 	}
 	support_unique = {
+<<<<<<< HEAD
 		type = { jet_cas cv_jet_cas attack_helicoptor strike_fighter ucav stealth_tactical_bomber }
+=======
+		type = { cas tactical_bomber naval_bomber }
+>>>>>>> parent of fe4fb959... ridding map and states for now + change aces to new aircraft
 		chance = 0.4
 		effect = {
 			naval_strike_targetting_factor = 0.1
@@ -76,7 +96,11 @@ modifiers = {
 		}
 	}
 	support_genius = {
+<<<<<<< HEAD
 		type = { jet_cas cv_jet_cas attack_helicoptor strike_fighter ucav stealth_tactical_bomber }
+=======
+		type = { cas tactical_bomber naval_bomber }
+>>>>>>> parent of fe4fb959... ridding map and states for now + change aces to new aircraft
 		chance = 0.05
 		effect = {
 			naval_strike_targetting_factor = 0.15
